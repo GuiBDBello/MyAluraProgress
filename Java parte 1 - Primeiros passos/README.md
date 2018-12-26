@@ -27,3 +27,10 @@
 
 - Instalar JDK pelo site da Oracle
 - Configurar variável de ambiente (adicionar à PATH a pasta bin do diretório de instalação do JDK)
+
+### Atividade 05 - Compile e rode seu primeiro programa Java:
+
+- Todo programa Java deve possuir, no mínimo, uma classe e um método (main)
+01. Crie um programa com a extensão .java
+02. Compile-o pelo prompt/terminal, utilizando o comando `javac 'NomeDoPrograma.java'`
+03. Execute-o pelo prompt/terminal, utilizando o comando `java 'NomeDoPrograma'`
