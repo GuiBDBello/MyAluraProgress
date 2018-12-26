@@ -1,22 +1,29 @@
 # Java parte 1: Primeiros passos
 
-01 Introdução:
+## Aula 01 - O que é Java?
 
+### Atividade 02 - A plataforma Java:
 
-02 A plataforma Java:
+- Portável (diversos OS)
+- Fácil
+- Segura
+- Onipresente (lugares onde está, perde apenas para o Javascript)
 
--Portável (diversos OS)
--Fácil
--Segura
--Onipresente (lugares onde está, perde apenas para o Javascript)
+#### JVM:
 
-  JVM:
+- Problema: Cada aparelho tinha uma linguagem própria (não existia padronização).
+- Solução: Escrever um único código-fonte (Java), gerando um "executável" (bytecode/.class), que seria processado por uma "máquina virtual", traduzindo-o para diversas plataformas (hardware/OS).
 
--Problema: Cada aparelho tinha uma linguagem própria (não existia padronização).
--Solução: Escrever um único código-fonte (Java), gerando um "executável" (bytecode/.class), que seria processado por uma "máquina virtual", traduzindo-o para diversas plataformas (hardware/OS).
-
-  Plataforma JAVA:
+#### Plataforma JAVA:
   
-1. Máquina Virtual - JVM
-2. Bibliotecas - API
-3. Linguagens (várias linguagens geram bytecode Java)
+- Máquina Virtual - JVM
+- Bibliotecas - API
+- Linguagens (várias linguagens geram bytecode Java)
+
+
+## Aula 02 - Instalação e o primeiro programa
+
+### Atividade 02 - Instalação do JDK no Windows:
+
+- Instalar JDK pelo site da Oracle
+- Configurar variável de ambiente (adicionar à PATH a pasta bin do diretório de instalação do JDK)
