@@ -47,3 +47,13 @@
 - Workspace: Diretório que contém vários projetos do mesmo 'interesse'
 - View: 'Janela' com diversas ferramentas
 - Perspectiva: Conjunto de Views
+
+### Atividade 05 - Nosso programa rodando no Eclipse:
+
+- Criar classe Programa dentro de src
+- javaw não abre o prompt/terminal
+
+#### Navigator:
+
+- View Navigator: Mostra o 'File System' do projeto (similar ao Explorer do Windows)
+- O Eclipse salva os arquivos .class dentro da pasta do projeto, em bin\
