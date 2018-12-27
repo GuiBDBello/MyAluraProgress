@@ -69,11 +69,35 @@
 
 #### Convenções de código:
 
-- Classe: UpperCamelCase (Ex.: NomeDaMinhaClasse)
-- Variável: 'tipo' lowerCamelCase (Ex.: int nomeDaMinhaVariavel)
+- Classe: UpperCamelCase (**Ex.:** NomeDaMinhaClasse)
+- Variável: 'tipo' lowerCamelCase (**Ex.:** int nomeDaMinhaVariavel)
 
 ### Atividade 04 - Tipo flutuante: double:
 
 - Utiliza-se a palavra-chave 'double' para declarar o tipo 'Ponto Flutuante' (decimal)
-- Em Java, os números decimais devem ser separados por ponto, nunca por vírgula (Ex.: 2.2, 5.55)
+- Em Java, os números decimais devem ser separados por ponto, nunca por vírgula (**Ex.:** 2.2, 5.55)
 - O Java é fortemente tipado, ou seja, você precisa declarar as variáveis e seus tipos para utilizá-las
+
+### Atividade 07 - Conversões e outros tipos:
+
+#### Casting:
+
+- Para converter um double para inteiro deve-se realizar o casting (**Ex.:** int valor = (int) 25.25)
+- Em alguns casos, como ao converter double para int, alguns dados serão perdidos
+
+#### Tamanho de variáveis:
+
+- Uma variável de tipo byte aceita números entre -128 e 127 (8 bits)
+- Uma variável de tipo short aceita números entre -32,768 e 32,767 (16 bits)
+- Uma variável de tipo int aceita números entre -2,147,483,648 e 2,147,483,647 (32 bits)
+- Uma variável de tipo long aceita números entre -9,223,372,036,854,775,808 e 9,223,372,036,854,775,807 (64 bits)
+
+- Quando um long ultrapassa o tamanho de um int, deve-se inserir ao final de seu valor a letra 'L' para indicar que o valor ultrapassou o limite do int
+
+#### Curiosidade 0.30000000000000004:
+
+- https://0.30000000000000004.com/
+
+#### Float:
+
+- Ao declarar uma variável do tipo float e atribuir um valor decimal a ela, o Java reconhece esse valor decimal como double. Por isso, deve-se utilizar o literal 'f' sempre que um valor decimal for declarado a uma variável do tipo float (**Ex.:** float pontoFlutuante = 3.14f;)
