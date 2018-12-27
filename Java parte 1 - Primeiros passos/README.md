@@ -175,3 +175,7 @@
 ### Atividade 01 - Laço com while:
 
 - while ('condicao') { 'codigo'; 'condicao'++; }
+
+### Atividade 06 - Laço com for:
+
+- for ('declaracao/inicializacao'; 'condicao'; 'incrementacao') { 'codigo' }
