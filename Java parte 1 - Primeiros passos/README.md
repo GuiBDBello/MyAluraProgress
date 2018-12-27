@@ -142,3 +142,18 @@
 #### Atalho main:
 
 - Digite 'main', pressione 'Ctrl + Espaco' e 'Enter'
+
+
+## Aula 06 - Praticando condicionais
+
+### Atividade 01 - Testes com IF:
+
+#### Atalho System.out.println():
+
+- Digite 'sysout', pressione 'Ctrl + Espaço'
+
+- Sintaxe: if ('variavel' 'condicionador' 'valor') { 'codigoTrue' } else { 'codigoFalse' }
+
+#### Dica do Eclipse:
+
+- Duplo clique em qualquer uma das views maximiza-a. Faz-se o mesmo para minimizá-la.
