@@ -70,4 +70,10 @@
 #### Convenções de código:
 
 - Classe: UpperCamelCase (Ex.: NomeDaMinhaClasse)
-- Variável: lowerCamelCase (Ex.: nomeDaMinhaVariavel)
+- Variável: 'tipo' lowerCamelCase (Ex.: int nomeDaMinhaVariavel)
+
+### Atividade 04 - Tipo flutuante: double:
+
+- Utiliza-se a palavra-chave 'double' para declarar o tipo 'Ponto Flutuante' (decimal)
+- Em Java, os números decimais devem ser separados por ponto, nunca por vírgula (Ex.: 2.2, 5.55)
+- O Java é fortemente tipado, ou seja, você precisa declarar as variáveis e seus tipos para utilizá-las
