@@ -162,3 +162,9 @@
 
 - **Ex.:** boolean verificacao = numero > 0;
 - if ('boolean') { 'codigo' }
+
+### Atividade 08 - Escopo e inicialização de variáveis:
+
+- Escopo: é o 'alcance' que uma variável possui (os lugares onde ela é acessável)
+- Uma variável existe apenas dentro do bloco em que ela foi criada
+- Uma variável que não foi inicializada ocasiona um erro de compilação
