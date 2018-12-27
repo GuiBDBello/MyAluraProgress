@@ -101,3 +101,30 @@
 #### Float:
 
 - Ao declarar uma variável do tipo float e atribuir um valor decimal a ela, o Java reconhece esse valor decimal como double. Por isso, deve-se utilizar o literal 'f' sempre que um valor decimal for declarado a uma variável do tipo float (**Ex.:** float pontoFlutuante = 3.14f;)
+
+### Atividade 10 - Para saber mais: Type Casting:
+
+#### Cast implícito/explícito:
+
+| PARA / DE | byte   | short   | char   | int   | long   | float   | double |
+| ---       | ---    | ---     | ---    | ---   | ---    | ---     | ---    |
+| byte      | ----   | Impl.   | (char) | Impl. | Impl.  | Impl.   | Impl.  |
+| short     | (byte) | ----    | (char) | Impl. | Impl.  | Impl.   | Impl.  |
+| char      | (byte) | (short) | ----   | Impl. | Impl.  | Impl.   | Impl.  |
+| int       | (byte) | (short) | (char) | ----  | Impl.  | Impl.   | Impl.  |
+| long      | (byte) | (short) | (char) | (int) | ----   | Impl.   | Impl.  |
+| float     | (byte) | (short) | (char) | (int) | (long) | ----    | Impl.  |
+| double    | (byte) | (short) | (char) | (int) | (long) | (float) | ----   |
+
+#### Tipos primitivos e seus tamanhos:
+
+| TIPO    | TAMANHO |
+| ---     | ---     |
+| boolean | 1 bit   |
+| byte    | 1 byte  |
+| short   | 2 bytes |
+| char    | 2 bytes |
+| int     | 4 bytes |
+| float   | 4 bytes |
+| long    | 8 bytes |
+| double  | 8 bytes |
