@@ -34,3 +34,16 @@
 01. Crie um programa com a extensão .java
 02. Compile-o pelo prompt/terminal, utilizando o comando `javac 'NomeDoPrograma.java'`
 03. Execute-o pelo prompt/terminal, utilizando o comando `java 'NomeDoPrograma'`
+
+
+## Aula 03 - Começando com Eclipse
+
+### Atividade 01 - Instalando o Eclipse:
+
+- Download: https://www.eclipse.org/downloads/
+
+#### Eclipse IDE:
+
+- Workspace: Diretório que contém vários projetos do mesmo 'interesse'
+- View: 'Janela' com diversas ferramentas
+- Perspectiva: Conjunto de Views
