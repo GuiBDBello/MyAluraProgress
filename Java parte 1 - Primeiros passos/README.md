@@ -179,3 +179,8 @@
 ### Atividade 06 - Laço com for:
 
 - for ('declaracao/inicializacao'; 'condicao'; 'incrementacao') { 'codigo' }
+
+### Atividade 10 - Mais laços com break:
+
+- No Java, pode-se codificar vários laços aninhados, mas não é considerado uma boa prática pois pode causar problemas de performance, entre outros
+- break: encerra a execução do laço mais interno
