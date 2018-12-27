@@ -157,3 +157,8 @@
 #### Dica do Eclipse:
 
 - Duplo clique em qualquer uma das views maximiza-a. Faz-se o mesmo para minimizá-la.
+
+### Atividade 04 - Boolean condicionais:
+
+- **Ex.:** boolean verificacao = numero > 0;
+- if ('boolean') { 'codigo' }
