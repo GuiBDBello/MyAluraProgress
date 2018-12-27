@@ -50,10 +50,24 @@
 
 ### Atividade 05 - Nosso programa rodando no Eclipse:
 
+- Criar um novo projeto Java de nome sintaxe-basica
 - Criar classe Programa dentro de src
 - javaw não abre o prompt/terminal
 
 #### Navigator:
 
 - View Navigator: Mostra o 'File System' do projeto (similar ao Explorer do Windows)
-- O Eclipse salva os arquivos .class dentro da pasta do projeto, em bin\
+- O Eclipse salva os arquivos .class dentro da pasta do projeto, no diretório bin\
+
+
+## Aula 04 - Tipos e variáveis
+
+### Atividade 01 - Tipo inteiro: int:
+
+- Criar um novo projeto Java de nome sintaxe-variaveis-e-fluxo
+- Criar nova classe TestaVariaveis dentro de src
+
+#### Convenções de código:
+
+- Classe: UpperCamelCase (Ex.: NomeDaMinhaClasse)
+- Variável: lowerCamelCase (Ex.: nomeDaMinhaVariavel)
