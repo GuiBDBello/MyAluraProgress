@@ -152,7 +152,7 @@
 
 - Digite 'sysout', pressione 'Ctrl + Espaço'
 
-- Sintaxe: if ('variavel' 'condicionador' 'valor') { 'codigoTrue' } else { 'codigoFalse' }
+- if ('variavel' 'condicionador' 'valor') { 'codigoTrue' } else { 'codigoFalse' }
 
 #### Dica do Eclipse:
 
@@ -168,3 +168,10 @@
 - Escopo: é o 'alcance' que uma variável possui (os lugares onde ela é acessável)
 - Uma variável existe apenas dentro do bloco em que ela foi criada
 - Uma variável que não foi inicializada ocasiona um erro de compilação
+
+
+## Aula 07 - Controlando fluxo com laços
+
+### Atividade 01 - Laço com while:
+
+- while ('condicao') { 'codigo'; 'condicao'++; }
