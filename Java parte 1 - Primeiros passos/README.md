@@ -136,3 +136,9 @@
 
 - O char, internamente, guarda um número
 - Utilizando a tabela ASCII, em números decimais, esse número é lido como um caractere de 16 bits
+
+### Atividade 04 - Variáveis guardam valores:
+
+#### Atalho main:
+
+- Digite 'main', pressione 'Ctrl + Espaco' e 'Enter'
