@@ -1,4 +1,4 @@
-public class TesteMultiplo3 {
+public class DesafioMultiplo3 {
 	public static void main(String[] args) {
 		
 		// Opção 1:
