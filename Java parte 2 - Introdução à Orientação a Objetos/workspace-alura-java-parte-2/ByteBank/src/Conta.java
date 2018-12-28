@@ -3,6 +3,8 @@ public class Conta {
 	int agencia = 42;
 	int numero;
 	String titular;
+	String cpf;
+	String profissao;
 
 	public void deposita(double valor) {
 		this.saldo += valor;
@@ -18,5 +20,17 @@ public class Conta {
 			//System.out.println("O valor R$" + valor + " não está disponível para saque.");
 			return false;
 		}
+	}
+	
+	public boolean transfere(double valor, Conta conta) {
+		if (this.saldo >= valor) {
+			this.saldo -= valor;
+			conta.deposita(valor);
+			return true;
+		}
+		//if (this.saca(valor)) {;
+		//conta.deposita(valor);
+		//}
+		return false;
 	}
 }
