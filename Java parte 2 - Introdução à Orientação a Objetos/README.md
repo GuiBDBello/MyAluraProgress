@@ -21,3 +21,10 @@
 ### Atividade 01 - Primeira classe - Contas:
 
 - Deve-se definir quais dados (atributos) e comportamentos (métodos) das Classes
+
+### Atividade 02 - Instanciação, atributos e referências:
+
+- Atributos: os dados da conta
+- Objeto/Instância: classe 'construída'
+- Instanciação: ação de construir o Objeto
+- Referências: ao instanciar um Objeto (new), não é retornado à variável um Objeto, mas uma referência. O objeto nunca está dentro da variável, apenas uma referência a ele
