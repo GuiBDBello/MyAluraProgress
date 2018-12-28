@@ -33,3 +33,8 @@
 
 - Quando um Objeto é instanciado, os valores de seus atributos com tipos primitivos são inicializados, por padrão, com o valor 0 (zero)
 - Se o valor de um atributo é alterado diretamente na Classe, todas as instâncias criadas a partir da alteração, por padrão, vão ser inicializadas com esse valor
+
+### Atividade 08 - Referências vs Objetos:
+
+- Quando é utilizado 'new' em uma Classe e atribuído a uma variável, cria-se uma **referência**
+- Quando atribui-se uma variável já instanciada do tipo 'NomeClasse' a outra variável do mesmo tipo, essa nova variável recebe apenas a referência do Objeto
