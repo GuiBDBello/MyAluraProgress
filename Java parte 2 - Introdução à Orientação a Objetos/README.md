@@ -38,3 +38,12 @@
 
 - Quando é utilizado 'new' em uma Classe e atribuído a uma variável, cria-se uma **referência**
 - Quando atribui-se uma variável já instanciada do tipo 'NomeClasse' a outra variável do mesmo tipo, essa nova variável recebe apenas a referência do Objeto
+
+
+## Aula 03 - Definindo comportamento
+
+### Atividade 01 - Nosso primeiro método:
+
+- Método: bloco de código que representa um comportamento e executa uma funcionalidade da aplicação
+- Sintaxe: 'modificador' 'retorno' 'nomeMetodo'(['tipo' 'parametro']) { ['retorno'] }
+- this: palavra-chave do Java que indica uma referência ao Objeto que está em uso durante a execução
