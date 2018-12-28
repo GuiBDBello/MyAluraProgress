@@ -54,3 +54,13 @@
 - O tipo do retorno do método deve ser definido na sua declaração
 - O retorno ocorre por meio da palavra-chave 'return' e o valor a ser retornado
 - Um método com retorno pode ser atribuído a uma variável
+
+
+## Aula 04 - Composição de objetos
+
+### Atividade 01 - Composição de Objetos:
+
+- Muitos atributos dentro da mesma Classe podem dificultar a leitura da mesma
+- Para contornar esse problema, pode-se criar um atributo que contém vários atributos, ou seja, um Objeto
+- **Ex.:** Dentro da classe Conta, cria-se um atributo Cliente, que possui nome, cpf, profissao, etc.
+- Isso otimiza a leitura das Classes, e facilita o entendimento do projeto como um todo (desacoplamento)
