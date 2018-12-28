@@ -47,3 +47,10 @@
 - Método: bloco de código que representa um comportamento e executa uma funcionalidade da aplicação
 - Sintaxe: 'modificador' 'retorno' 'nomeMetodo'(['tipo' 'parametro']) { ['retorno'] }
 - this: palavra-chave do Java que indica uma referência ao Objeto que está em uso durante a execução
+
+### Atividade 05 - Métodos com retorno:
+
+- Diferença entre função e método: A função necessita explicitar onde ela será executada, o método já é orientado a ser executado a partir de certa Classe
+- O tipo do retorno do método deve ser definido na sua declaração
+- O retorno ocorre por meio da palavra-chave 'return' e o valor a ser retornado
+- Um método com retorno pode ser atribuído a uma variável
