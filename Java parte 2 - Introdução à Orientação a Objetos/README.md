@@ -28,3 +28,8 @@
 - Objeto/Instância: classe 'construída'
 - Instanciação: ação de construir o Objeto
 - Referências: ao instanciar um Objeto (new), não é retornado à variável um Objeto, mas uma referência. O objeto nunca está dentro da variável, apenas uma referência a ele
+
+### Atividade 06 - Valores default de atributos:
+
+- Quando um Objeto é instanciado, os valores de seus atributos com tipos primitivos são inicializados, por padrão, com o valor 0 (zero)
+- Se o valor de um atributo é alterado diretamente na Classe, todas as instâncias criadas a partir da alteração, por padrão, vão ser inicializadas com esse valor
