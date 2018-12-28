@@ -15,3 +15,9 @@
 - Código universal
 - Simples manutenção (necessário alterar o código em apenas um lugar)
 - Facilidade ao inserir/alterar funcionalidades/comportamentos
+
+## Aula 02 - Introdução à Orientação a Objetos
+
+### Atividade 01 - Primeira classe - Contas:
+
+- Deve-se definir quais dados (atributos) e comportamentos (métodos) das Classes
