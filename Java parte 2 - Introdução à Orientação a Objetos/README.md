@@ -68,4 +68,13 @@
 ### Atividade 03 - Referência Null:
 
 - Uma referência atribuída a um Objeto é denominada 'associação'
-- Quando um Objeto não foi instanciado (referência/valor 'null'), ao acessar algum atributo desse Objeto ocorre um NullPointerException
+- Quando um Objeto não foi instanciado (referência/valor 'null'), ao tentar acessar algum atributo desse Objeto ocorre um NullPointerException
+- Ao tentar acessar um atributo de um Objeto, deve-se sempre instanciá-lo primeiro, evitando assim as NullPointerExceptions
+
+
+## Aula 05 - Encapsulamento e visibilidade
+
+### Atividade 01 - Atributos privados e encapsulamento:
+
+- O ideal ao trabalhar com Objetos é utilizar sempre seus métodos, e não permitir acesso diretamente aos atributos
+- private: palavra-chave que altera o modificador de acesso de uma variável, método ou Classe, não permitindo acesso externo à Classe que pertence
