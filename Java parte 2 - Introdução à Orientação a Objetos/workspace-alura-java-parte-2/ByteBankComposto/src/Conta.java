@@ -1,8 +1,12 @@
 public class Conta {
-	double saldo;
-	int agencia = 42;
-	int numero;
+	private double saldo;
+	private int agencia = 42;
+	private int numero;
 	Cliente titular = new Cliente();
+	
+	public double pegaSaldo() {
+		return this.saldo;
+	}
 
 	public void deposita(double valor) {
 		this.saldo += valor;
