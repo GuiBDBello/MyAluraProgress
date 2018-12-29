@@ -78,3 +78,9 @@
 
 - O ideal ao trabalhar com Objetos é utilizar sempre seus métodos, e não permitir acesso diretamente aos atributos
 - private: palavra-chave que altera o modificador de acesso de uma variável, método ou Classe, não permitindo acesso externo à Classe que pertence
+
+### Atividade 03 - Getters e Setters:
+
+- 'tipo' getAtributo() e 'void' setAtributo('tipo' 'param'): convenção Java de métodos getters e setters
+- Ao digitar 'getAtri' e pressionar 'Ctrl + Espaço', o Eclipse autocompleta getters e setters para você
+- O encapsulamento facilita a manutenção, pois centraliza comportamentos da classe em um lugar só, e caso seja necessária efetuar uma mudança no código, será feita apenas uma vez
