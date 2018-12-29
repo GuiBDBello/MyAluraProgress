@@ -91,3 +91,19 @@
 
 - Source > Generate Getters and Setters...
 - Selecione os atributos que deseja gerar os métodos
+
+
+## Aula 06 - Construtores e membros estáticos
+
+### Atividade 01 - Construtores:
+
+- O construtor define os parâmetros de inicialização de um Objeto
+- Construtor **não** é um método
+- Um construtor padrão inicializa os atributos com valor zero e null
+- Pode-se definir no construtor os atributos obrigatórios à sua criação
+- Caso você não definir nenhum construtor, o Java define um como padrão, sem parâmetros e sem código
+
+#### View Outline:
+
+- Mostra todos os atributos e métodos de uma Classe
+- 'Ctrl + O' também mostra o Outline
