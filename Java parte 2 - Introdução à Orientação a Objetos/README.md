@@ -64,3 +64,8 @@
 - Para contornar esse problema, pode-se criar um atributo que contém vários atributos, ou seja, um Objeto
 - **Ex.:** Dentro da classe Conta, cria-se um atributo Cliente, que possui nome, cpf, profissao, etc.
 - Isso otimiza a leitura das Classes, e facilita o entendimento do projeto como um todo (desacoplamento)
+
+### Atividade 03 - Referência Null:
+
+- Uma referência atribuída a um Objeto é denominada 'associação'
+- Quando um Objeto não foi instanciado (referência/valor 'null'), ao acessar algum atributo desse Objeto ocorre um NullPointerException
