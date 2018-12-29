@@ -84,3 +84,10 @@
 - 'tipo' getAtributo() e 'void' setAtributo('tipo' 'param'): convenção Java de métodos getters e setters
 - Ao digitar 'getAtri' e pressionar 'Ctrl + Espaço', o Eclipse autocompleta getters e setters para você
 - O encapsulamento facilita a manutenção, pois centraliza comportamentos da classe em um lugar só, e caso seja necessária efetuar uma mudança no código, será feita apenas uma vez
+
+### Atividade 05 - Getters e Setters de referência:
+
+#### Gerar Getters e Setters (Eclipse):
+
+- Source > Generate Getters and Setters...
+- Selecione os atributos que deseja gerar os métodos
