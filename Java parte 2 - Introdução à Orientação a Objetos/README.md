@@ -112,3 +112,8 @@
 
 - Atributo compartilhado entre todos Objetos da mesma Classe
 - this: "Pertence ao Objeto/instância", static: "Pertence à Classe"
+
+### Atividade 07 - Para saber mais: reaproveitamento entre construtores:
+
+- Para evitar código duplicado, pode-se realizar a chamada de um construtor dentro de outro
+- Para isso, utiliza-se o 'this()'
