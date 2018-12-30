@@ -107,3 +107,8 @@
 
 - Mostra todos os atributos e métodos de uma Classe
 - 'Ctrl + O' também mostra o Outline
+
+### Atividade 04 - Static:
+
+- Atributo compartilhado entre todos Objetos da mesma Classe
+- this: "Pertence ao Objeto/instância", static: "Pertence à Classe"
