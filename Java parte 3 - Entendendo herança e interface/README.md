@@ -34,3 +34,10 @@
 
 - Caso exista um método de assinatura 'public void nomeMetodo(int numero)', se for escrito um novo método de assinatura 'public void nomeMetodo(int numero, String nome)', a criação desse novo método é chamada de **sobrecarga**
 - A sobrecarga não leva em conta a visibilidade ou retorno do método, apenas os parâmetros e não depende da herança
+
+## Aula 03 - Entendendo Polimorfismo
+
+### Atividade 01 - Introdução ao Polimorfismo:
+
+- Uma Classe Pai pode receber uma referência de um Objeto que é uma Classe Filha dela
+- Em alguns casos de Polimorfismo, não é possível chamar diretamente um método do Objeto instanciado (Classe Filha), pois o tipo do Objeto de referência (Classe Pai) não possui os métodos da Classe Filha
