@@ -14,3 +14,17 @@
 - Classe Pai/Mãe, Base class, Super class: A classe base, que será herdada pelas classes filhas
 - Classe Filha: Classe que herda as características e comportamentos da Classe Pai
 - Ao construir um Objeto da Classe Filha, ele herda todos os atributos e métodos da hierarquia
+
+### Atividade 02 - Reescrita de métodos:
+
+#### Atalho para adicionar comentário:
+
+- Ctrl + /
+
+- 'protected': Modificador de visibilidade que representa 'public' para os filhos da Classe e 'private' para outras Classes
+- 'super': Indica que o atributo é da Classe Pai
+
+#### Reescrita de métodos:
+
+- Utiliza-se a mesma assinatura (modificador, retorno, nome e parâmetros) do método original
+- Redefine apenas o comportamento do método
