@@ -12,7 +12,7 @@
 ### Atividade 01 - Herança no diagrama de classes:
 
 - Classe Pai/Mãe, Base class, Super class: A classe base, que será herdada pelas classes filhas
-- Classe Filha: Classe que herda as características e comportamentos da Classe Pai
+- Classe Filha, Sub class: Classe que herda as características e comportamentos da Classe Pai
 - Ao construir um Objeto da Classe Filha, ele herda todos os atributos e métodos da hierarquia
 
 ### Atividade 02 - Reescrita de métodos:
@@ -26,5 +26,11 @@
 
 #### Reescrita de métodos:
 
+- Também chamada de **sobrescrita**
 - Utiliza-se a mesma assinatura (modificador, retorno, nome e parâmetros) do método original
 - Redefine apenas o comportamento do método
+
+### Atividade 09 - Para saber mais: Sobrecarga:
+
+- Caso exista um método de assinatura 'public void nomeMetodo(int numero)', se for escrito um novo método de assinatura 'public void nomeMetodo(int numero, String nome)', a criação desse novo método é chamada de **sobrecarga**
+- A sobrecarga não leva em conta a visibilidade ou retorno do método, apenas os parâmetros e não depende da herança
