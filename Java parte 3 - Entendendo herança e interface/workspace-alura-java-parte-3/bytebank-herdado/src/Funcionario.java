@@ -4,16 +4,12 @@ public class Funcionario {
 	private String cpf;
 	private double salario;
 	
-	public Funcionario() {
-		
-	}
-	
 	public double getBonificacao() {
-		return salario * 0.1;
+		return this.salario * 0.1;
 	}
 
 	public String getNome() {
-		return nome;
+		return this.nome;
 	}
 
 	public void setNome(String nome) {
@@ -21,7 +17,7 @@ public class Funcionario {
 	}
 
 	public String getCpf() {
-		return cpf;
+		return this.cpf;
 	}
 
 	public void setCpf(String cpf) {
@@ -29,7 +25,7 @@ public class Funcionario {
 	}
 
 	public double getSalario() {
-		return salario;
+		return this.salario;
 	}
 
 	public void setSalario(double salario) {
