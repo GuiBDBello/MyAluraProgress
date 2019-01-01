@@ -47,3 +47,17 @@
 - O polimorfismo evita a duplicação de métodos para Classes em hierarquia
 - Cria-se apenas um método genérico, com a Classe Pai, para não criar um método específico para cada Classe Filha
 - Mesmo usando uma referência genérica (Classe Pai), ao executar o código será chamado um método específico (da Classe Filha)
+
+### Atividade 06 - Resumo herança:
+
+- **Um Objeto nunca muda seu tipo**
+
+#### Reutilização de código:
+
+- Ao herdar uma Classe, são herdadas as características e comportamentos dela
+
+#### Polimorfismo:
+
+- Um Objeto do tipo da Classe Pai pode receber uma referência de um Objeto de uma Classe Filha
+- O polimorfismo permite usar referências mais genéricas para a comunicação com um objeto
+- O uso de referências mais genéricas permite desacoplar sistemas
