@@ -41,3 +41,9 @@
 
 - Uma Classe Pai pode receber uma referência de um Objeto que é uma Classe Filha dela
 - Em alguns casos de Polimorfismo, não é possível chamar diretamente um método do Objeto instanciado (Classe Filha), pois o tipo do Objeto de referência (Classe Pai) não possui os métodos da Classe Filha
+
+### Atividade 02 - Aplicando Polimorfismo:
+
+- O polimorfismo evita a duplicação de métodos para Classes em hierarquia
+- Cria-se apenas um método genérico, com a Classe Pai, para não criar um método específico para cada Classe Filha
+- Mesmo usando uma referência genérica (Classe Pai), ao executar o código será chamado um método específico (da Classe Filha)
