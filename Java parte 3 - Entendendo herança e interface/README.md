@@ -73,3 +73,12 @@
 ### Atividade 03 - Conta Corrente e Poupança:
 
 - @Override: redefine o comportamento de um método. Ao sobrescrever um método, sua assinatura deve ser igual ao original
+
+
+## Aula 05 - Classes e métodos abstratos
+
+### Atividade 01 - Classes abstratas:
+
+- Uma Classe Abstrata é uma Classe que não deveria existir (concretamente), é apenas um conceito
+- 'abstract': palavra-chave que determina uma Classe ou Método Abstrato
+- Uma Classe Abstrata não pode ser Instanciada
