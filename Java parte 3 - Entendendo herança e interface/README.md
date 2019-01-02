@@ -108,3 +108,14 @@
 - Dentro de uma interface não há nada concreto
 - 'implements': palavra-chave utilizada para implementar uma interface (semelhante ao 'extends')
 - Sintaxe: 'modificador' 'abstract' 'interface' 'NomeDaInterface' { }
+
+
+## Aula 07 - Praticando herança e interfaces
+
+### Atividade 01 - Revendo a composição:
+
+- A interface, diferente da herança, não faz Reutilização de código, apenas Polimorfismo
+- Quando queremos aplicar Reutilização de código e Polimorfismo em nosso projeto, utilizamos a herança
+- Quando queremos aplicar Polimorfismo em nosso projeto, utilizamos interfaces
+- Quando queremos aplicar Reutilização de código em nosso projeto, utilizamos Composição com Java (criar uma nova Classe e vincular à existente, e esta será instanciada nas Classes que o código era repetido)
+- Esse relacionamento entre Classes é chamado de Composição (quando um é criado, o outro também; quando um morre, o outro também)
