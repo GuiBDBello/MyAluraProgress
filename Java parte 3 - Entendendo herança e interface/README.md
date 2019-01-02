@@ -88,3 +88,4 @@
 - Um método Abstrato não possui corpo, ele deve ser implementado nas Classes Filhas
 - Um método Abstrato em uma Classe Pai obriga as Classes Filhas a implementá-lo
 - Sintaxe: 'modificador' 'abstract' 'retorno' 'nomeDoMetodo'();
+- Um método Abstrato só pode ser criado em uma Classe Abstrata
