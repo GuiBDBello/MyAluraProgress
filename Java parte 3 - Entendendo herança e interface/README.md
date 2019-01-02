@@ -89,3 +89,10 @@
 - Um método Abstrato em uma Classe Pai obriga as Classes Filhas a implementá-lo
 - Sintaxe: 'modificador' 'abstract' 'retorno' 'nomeDoMetodo'();
 - Um método Abstrato só pode ser criado em uma Classe Abstrata
+
+
+## Aula 06 - Interfaces
+
+### Atividade 01 - Mais uma classe abstrata:
+
+- Para dividir melhor suas Classes, pode-se criar uma Classe Abstrata intermediária que apenas algumas das Classes Filhas herdarão, ficando com três níveis na hierarquia
