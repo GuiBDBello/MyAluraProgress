@@ -82,3 +82,9 @@
 - Uma Classe Abstrata é uma Classe que não deveria existir (concretamente), é apenas um conceito
 - 'abstract': palavra-chave que determina uma Classe ou Método Abstrato
 - Uma Classe Abstrata não pode ser Instanciada
+
+### Atividade 03 - Métodos abstratos:
+
+- Um método Abstrato não possui corpo, ele deve ser implementado nas Classes Filhas
+- Um método Abstrato em uma Classe Pai obriga as Classes Filhas a implementá-lo
+- Sintaxe: 'modificador' 'abstract' 'retorno' 'nomeDoMetodo'();
