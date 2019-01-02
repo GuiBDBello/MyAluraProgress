@@ -1,4 +1,4 @@
-// Gerente é Autenticável, Gerente herda da Classe Autenticavel
+// Gerente é Funcionário, Gerente herda da Classe Funcionario
 public class Gerente extends Funcionario {
 
 	public double getBonificacao() {

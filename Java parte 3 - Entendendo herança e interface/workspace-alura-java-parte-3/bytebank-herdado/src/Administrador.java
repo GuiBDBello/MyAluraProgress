@@ -1,4 +1,4 @@
-// Administrador é Autenticável, Administrador herda da Classe Autenticavel
+// Administrador é Funcionario, Administrador herda da Classe Funcionário
 public class Administrador extends Funcionario {
 
 	@Override
