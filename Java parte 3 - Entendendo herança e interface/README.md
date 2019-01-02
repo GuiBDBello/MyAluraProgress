@@ -61,3 +61,11 @@
 - Um Objeto do tipo da Classe Pai pode receber uma referência de um Objeto de uma Classe Filha
 - O polimorfismo permite usar referências mais genéricas para a comunicação com um objeto
 - O uso de referências mais genéricas permite desacoplar sistemas
+
+
+## Aula 04 - Herança e o uso construtores
+
+### Atividade 01 - Herança e construtores:
+
+- Ao herdar uma Classe são herdados suas características (atributos) e seus comportamentos (métodos), mas não herda seus Construtores, portanto devem ser reescritos
+- Um Construtor de uma Classe Filha deve chamar um Construtor da Classe Pai com a palavra-chave 'super'
