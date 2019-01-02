@@ -69,3 +69,7 @@
 
 - Ao herdar uma Classe são herdados suas características (atributos) e seus comportamentos (métodos), mas não herda seus Construtores, portanto devem ser reescritos
 - Um Construtor de uma Classe Filha deve chamar um Construtor da Classe Pai com a palavra-chave 'super'
+
+### Atividade 03 - Conta Corrente e Poupança:
+
+- @Override: redefine o comportamento de um método. Ao sobrescrever um método, sua assinatura deve ser igual ao original
