@@ -101,3 +101,10 @@
 
 - No Java não existe herança múltipla
 - Algumas circunstâncias não serão resolvidas pela herança. Deve-se implementar uma 'interface'
+
+### Atividade 03 - A primeira interface:
+
+- 'interface': palavra-chave que substitui 'class'. É uma Classe Abstrata com todos os métodos Abstratos
+- Dentro de uma interface não há nada concreto
+- 'implements': palavra-chave utilizada para implementar uma interface (semelhante ao 'extends')
+- Sintaxe: 'modificador' 'abstract' 'interface' 'NomeDaInterface' { }
