@@ -96,3 +96,8 @@
 ### Atividade 01 - Mais uma classe abstrata:
 
 - Para dividir melhor suas Classes, pode-se criar uma Classe Abstrata intermediária que apenas algumas das Classes Filhas herdarão, ficando com três níveis na hierarquia
+
+### Atividade 02 - Herança multipla?
+
+- No Java não existe herança múltipla
+- Algumas circunstâncias não serão resolvidas pela herança. Deve-se implementar uma 'interface'

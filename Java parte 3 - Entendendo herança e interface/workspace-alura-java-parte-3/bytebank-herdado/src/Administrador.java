@@ -1,5 +1,5 @@
-// Administrador é um Funcionário Autenticável, Administrador herda da Classe FuncionarioAutenticavel
-public class Administrador extends FuncionarioAutenticavel {
+// Administrador é Autenticável, Administrador herda da Classe Autenticavel
+public class Administrador extends Funcionario {
 
 	@Override
 	public double getBonificacao() {
