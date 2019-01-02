@@ -1,6 +1,8 @@
 public class TesteFuncionario {
 	public static void main(String[] args) {
 		
+		Cliente cliente = new Cliente();
+		
 		Funcionario funcionario = new Gerente();
 		
 		funcionario.setNome("Guilherme Brunetto Dall Bello");
