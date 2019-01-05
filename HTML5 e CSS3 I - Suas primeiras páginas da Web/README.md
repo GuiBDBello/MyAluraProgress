@@ -111,3 +111,24 @@ O HTML nos permite especificar caracteres especiais por meio das **entidades**. 
 - `&pound;`: &pound;
 - `&reg;`: &reg;
 - `&hearts;`: &hearts;
+
+
+## Aula 04 - O navegador trabalhando a nosso favor
+
+### Atividade 01 - Primeiros passos com o Console do Navegador:
+
+- É possível utilizar o Console para testar facilmente alterações no HTML e CSS, além de encontrar bugs com facilidade
+- Abrir: 'F12' ou 'Ctrl + Shift + I'
+
+#### Network:
+
+- Requisições que o browser faz para carregar a página;
+
+#### Elements:
+
+- Mostra a estrutura do HTML da página
+- Ao selecionar um elemento ('tag'), é mostrado o 'style' do elemento selecionado
+- Analisando a janela Elements, pode-se encontrar erros no HTML
+- Analisando a janela 'style' (ao selecionar um elemento), pode-se encontrar erros no CSS
+- Pode-se testar o HTML diretamente no navegador, alterando o estilo de um elemento na aba 'style'
+- Na janela 'style', pode-se testar rapidamente uma alteração no estilo utilizando o seletor 'element.style'
