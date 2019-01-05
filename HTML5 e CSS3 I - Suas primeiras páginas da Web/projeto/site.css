@@ -28,3 +28,16 @@ footer {
 nav a {
 	color: #F2FFFC;
 }
+ul {
+	color: pink;
+}
+ul li {
+	color: inherit;
+}
+main a {
+	color: #851944;
+}
+aside a {
+	color: inherit;
+	font-family: "Open Sans Condensed", sans-serif;
+}
