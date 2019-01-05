@@ -71,3 +71,7 @@
 - Alterar fonte: **font-family**
 - Pode-se inserir uma fonte específica (**Ex.:** "Arial") ou uma família (**Ex.:** sans-serif). A família não necessita estar entre aspas
 - Também poderão ser definidas várias fontes diferentes, separando-as por vírgula (**Ex.:** "Arial", sans-serif)
+
+### Atividade 08 - Google Fonts:
+
+- A Google disponibiliza o serviço chamado [Google Fonts](https://fonts.google.com/), que possui várias fontes para serem utilizadas no desenvolvimento de sites
