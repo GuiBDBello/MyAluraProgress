@@ -75,3 +75,39 @@
 ### Atividade 08 - Google Fonts:
 
 - A Google disponibiliza o serviço chamado [Google Fonts](https://fonts.google.com/), que possui várias fontes para serem utilizadas no desenvolvimento de sites
+
+
+## Aula 03 - Aprofundando no HTML
+
+### Atividade 01 - Aprofundando no HTML:
+
+#### Link relativo:
+
+Qualquer link que não comece com 'http' é considerado um link relativo. Exemplos de links relativos:
+- Endereço a partir do local do arquivo atual: href="blog.html"
+- Endereço após o domínio: href="/projeto/blog.html"
+- Endereço após o protocolo: href="//alura.com.br/projeto/blog.html"
+
+#### Tags:
+
+Um HTML semântico melhora a acessibilidade do site para todos. Algumas tags que auxiliam na semântica do HTML são:
+- &lt;nav&gt;: é uma tag que auxilia na navegação da página. Agrega semântica ao HTML, facilitando também para os buscadores (google e afins) encontrar conteúdos específicos em seu site
+- &lt;main&gt;: conteúdo principal da página
+- &lt;header&gt;: cabeçalho da página ou de uma região dela
+- &lt;footer&gt;: rodapé da página ou de uma região dela
+- &lt;aside&gt;: conteúdo auxiliar ao conteúdo principal, como links relacionados ao conteúdo
+- &lt;article&gt;: conteúdo que, por si só, já tem um sentido completo, como um post de um blog ou uma notícia
+- &lt;section&gt;: parte/seção de uma página ou texto
+- &lt;blockquote&gt;: indica uma citação
+- &lt;cite&gt;: indica o autor de uma citação (deve ser utilizado dentro de um &lt;blockquote&gt;)
+
+- Pode-se definir os atributos de elementos que estão dentro de outros elementos utilizando um arquivo .css. É necessário separá-los por 'Espaco' para determinar, hierarquicamente, qual elemento (o último da hierarquia) receberá os atributos definidos naquele seletor
+
+#### Entidades:
+
+O HTML nos permite especificar caracteres especiais por meio das **entidades**. Algumas delas são:
+- `&euro;`: &euro;
+- `&yen;`: &yen;
+- `&pound;`: &pound;
+- `&reg;`: &reg;
+- `&hearts;`: &hearts;
