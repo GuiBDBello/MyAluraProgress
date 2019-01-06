@@ -153,3 +153,18 @@ O HTML nos permite especificar caracteres especiais por meio das **entidades**. 
 - 'line-height': controla o espaço entre as linhas de texto
 - **Ex.:** line-height: 30px (tamanho do espaçamento entre as linhas do texto)
 - **Ex.:** line-height: 1.5 (aumenta em 50% o tamanho do espaçamento entre as linhas do texto)
+
+
+## Aula 06 - Construindo uma base sólida
+
+### Atividade 01 - Construindo uma base sólida:
+
+#### base.css/reset.css:
+
+É um padrão de arquivo que remove o estilo padrão dos navegadores
+- Será utilizado o arquivo encontrado em https://meyerweb.com/eric/tools/css/reset/
+- Deve ser o primeiro estilo importado da página, pois serve como base para os outros estilos
+- Alguns arquivos 'reset' populares são:
+	1. Eric Meyer: arquivo bem pequeno; deixa todos os elementos com mesma aparência e tamanho de fonte; usa a fonte padrão do navegador
+	2. Normalize: arquivo um pouco maior, mas com ajustes mais finos; já define fontes e tamanhos padrão para alguns elementos; corrige diversas inconsistências entre navegadores
+	3. YUI (Yahoo!): arquivo bem pequeno, com um efeito bem parecido com o do Eric Meyer, mas com alguns ajustes mais específicos
