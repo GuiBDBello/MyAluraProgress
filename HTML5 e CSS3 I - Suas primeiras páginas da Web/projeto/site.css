@@ -41,12 +41,16 @@ nav a {
 }
 ul {
 	color: pink;
+	list-style-type: none;
 }
 ul li {
 	color: inherit;
 }
 main a {
 	color: #851944;
+}
+aside {
+	text-align: center;
 }
 aside a {
 	color: inherit;
