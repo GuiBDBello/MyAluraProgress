@@ -162,9 +162,14 @@ O HTML nos permite especificar caracteres especiais por meio das **entidades**. 
 #### base.css/reset.css:
 
 É um padrão de arquivo que remove o estilo padrão dos navegadores
-- Será utilizado o arquivo encontrado em https://meyerweb.com/eric/tools/css/reset/
 - Deve ser o primeiro estilo importado da página, pois serve como base para os outros estilos
 - Alguns arquivos 'reset' populares são:
-	1. Eric Meyer: arquivo bem pequeno; deixa todos os elementos com mesma aparência e tamanho de fonte; usa a fonte padrão do navegador
-	2. Normalize: arquivo um pouco maior, mas com ajustes mais finos; já define fontes e tamanhos padrão para alguns elementos; corrige diversas inconsistências entre navegadores
+	1. Eric Meyer: arquivo bem pequeno; deixa todos os elementos com mesma aparência e tamanho de fonte; usa a fonte padrão do navegador https://meyerweb.com/eric/tools/css/reset/
+	2. Normalize: arquivo um pouco maior, mas com ajustes mais finos; já define fontes e tamanhos padrão para alguns elementos; corrige diversas inconsistências entre navegadores http://necolas.github.io/normalize.css/
 	3. YUI (Yahoo!): arquivo bem pequeno, com um efeito bem parecido com o do Eric Meyer, mas com alguns ajustes mais específicos
+
+### Atividade 06 - Outros resets:
+
+- Uma das diferenças mais notáveis entre o Normalize e o reset do Eric Meyer é que o Normalize não apenas remove o estilo padrão do navegador como também define alguns estilos úteis, como tamanhos de fontes para cabeçalhos e estilos de fontes para elementos &lt;em&gt; e &lt;strong&gt;.
+- Note que esses padrões não são mais dependentes de navegador: o Normalize que os define. Assim, qualquer navegador deve mostrar nossa página do mesmo jeito.
+- O Normalize também cuida de alguns detalhes mais avançados que o reset que estamos usando não cuida. Isso tem seu preço: o Normalize tem 7 KB, enquanto o reset do Eric Meyer tem apenas 1 KB. Assim, cada um tem suas vantagens e desvantagens.
