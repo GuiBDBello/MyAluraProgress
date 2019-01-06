@@ -41,10 +41,18 @@ blockquote {
 aside {
 	background-color: #3C1D3D;
 	color: #F2FFFC;
+	text-align: center;
 }
 aside h1 {
 	font-size: 30px;
 	margin-bottom: 25px;
+}
+aside a {
+	color: inherit;
+	font-family: "Open Sans Condensed", sans-serif;
+}
+aside li {
+	display: inline-block;
 }
 footer {
 	background-color: black;
@@ -62,13 +70,6 @@ ul li {
 }
 main a {
 	color: #851944;
-}
-aside {
-	text-align: center;
-}
-aside a {
-	color: inherit;
-	font-family: "Open Sans Condensed", sans-serif;
 }
 strong {
 	font-weight: bold;

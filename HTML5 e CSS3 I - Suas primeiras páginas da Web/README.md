@@ -173,3 +173,13 @@ O HTML nos permite especificar caracteres especiais por meio das **entidades**. 
 - Uma das diferenças mais notáveis entre o Normalize e o reset do Eric Meyer é que o Normalize não apenas remove o estilo padrão do navegador como também define alguns estilos úteis, como tamanhos de fontes para cabeçalhos e estilos de fontes para elementos &lt;em&gt; e &lt;strong&gt;.
 - Note que esses padrões não são mais dependentes de navegador: o Normalize que os define. Assim, qualquer navegador deve mostrar nossa página do mesmo jeito.
 - O Normalize também cuida de alguns detalhes mais avançados que o reset que estamos usando não cuida. Isso tem seu preço: o Normalize tem 7 KB, enquanto o reset do Eric Meyer tem apenas 1 KB. Assim, cada um tem suas vantagens e desvantagens.
+
+
+## Aula 07 - Um pouquinho de posicionamento
+
+### Atividade 01 - Um pouquinho de posicionamento:
+
+- 'display': determina o posicionamento do elemento:
+	1. 'inline': alinha com o resto do texto (não tem tamanho regulável)
+	2. 'block': empilha com o resto dos elementos
+	3. 'inline-block': alinha com o resto do texto, mas em formato de blocos (tem tamanho regulável)
