@@ -2,6 +2,7 @@ body {
 	font-family: "Crimson Text", "Times New Roman", serif;
 	background-color: #F2FFFC;
 	font-size: 120%;
+	line-height: 1.5;
 }
 main h1 {
 	background-color: #851944;
