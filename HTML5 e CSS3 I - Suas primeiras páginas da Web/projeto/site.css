@@ -10,6 +10,10 @@ main h1 {
 	padding: 25px;
 	margin: 0;
 }
+main div {
+	width: 720px;
+	margin: auto;
+}
 h1, h2 {
 	font-family: "Open Sans Condensed", "Arial", sans-serif;
 }
