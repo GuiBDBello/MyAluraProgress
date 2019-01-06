@@ -147,3 +147,9 @@ O HTML nos permite especificar caracteres especiais por meio das **entidades**. 
 	1. border-box: mede o tamanho do elemento a partir das bordas
 	2. content-box: mede o tamanho do conteúdo do elemento
 	3. padding-box: mede o tamanho do elemento a partir do padding
+
+### Atividade 05 - Espaçamento no texto:
+
+- 'line-height': controla o espaço entre as linhas de texto
+- **Ex.:** line-height: 30px (tamanho do espaçamento entre as linhas do texto)
+- **Ex.:** line-height: 1.5 (aumenta em 50% o tamanho do espaçamento entre as linhas do texto)
