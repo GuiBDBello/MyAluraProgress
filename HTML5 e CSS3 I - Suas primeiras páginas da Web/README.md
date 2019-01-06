@@ -132,3 +132,18 @@ O HTML nos permite especificar caracteres especiais por meio das **entidades**. 
 - Analisando a janela 'style' (ao selecionar um elemento), pode-se encontrar erros no CSS
 - Pode-se testar o HTML diretamente no navegador, alterando o estilo de um elemento na aba 'style'
 - Na janela 'style', pode-se testar rapidamente uma alteração no estilo utilizando o seletor 'element.style'
+
+
+## Aula 05 - Aprimorando o layout
+
+### Atividade 01 - Melhorando o Layout:
+
+- 'padding': espaço dentro do elemento
+- 'margin': espaço fora do elemento
+- 'border': adiciona uma borda no elemento. O 'border' fica entre o 'padding' e o 'margin'
+- A aba 'Computed' que fica ao lado direito da aba 'Elements' do Console do Navegador mostra como o navegador interpreta o 'box model' do elemento
+- 'box model': mostra o 'padding', 'border', 'margin' e o conteúdo do elemento
+- 'box-sizing': define o tamanho do elemento, onde:
+	1. border-box: mede o tamanho do elemento a partir das bordas
+	2. content-box: mede o tamanho do conteúdo do elemento
+	3. padding-box: mede o tamanho do elemento a partir do padding
