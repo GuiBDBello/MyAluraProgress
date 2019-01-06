@@ -21,6 +21,7 @@ h1, h2 {
 }
 p {
 	text-align: justify;
+	margin: 20px 0;
 }
 blockquote {
 	background-color: #D9E5E3;
