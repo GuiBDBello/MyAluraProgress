@@ -183,3 +183,18 @@ O HTML nos permite especificar caracteres especiais por meio das **entidades**. 
 	1. 'inline': alinha com o resto do texto (não tem tamanho regulável)
 	2. 'block': empilha com o resto dos elementos
 	3. 'inline-block': alinha com o resto do texto, mas em formato de blocos (tem tamanho regulável)
+
+
+## Aula 08 - Mais seletores
+
+### Atividade 01 - Usando Mais Seletores:
+
+#### Id:
+- 'id': nome do elemento. Serve como identificador de um elemento. Não pode repetir
+- '#': seletor de 'id'
+- **Ex.:** #nome-do-id { }
+
+#### Class:
+- 'class': "categoria" de elementos. Pode repetir em vários elementos
+- '.': seletor de 'class'
+- Pode-se combinar várias 'class' no mesmo elemento para formar o estilo das páginas
