@@ -198,3 +198,7 @@ O HTML nos permite especificar caracteres especiais por meio das **entidades**. 
 - 'class': "categoria" de elementos. Pode repetir em vários elementos
 - '.': seletor de 'class'
 - Pode-se combinar várias 'class' no mesmo elemento para formar o estilo das páginas
+
+### Atividade 09 - Mais de um seletor por elemento:
+
+O navegador escolhe o estilo dos seletores mais específicos quando há conflito. Se não há conflito entre o estilo definido em dois seletores diferentes, ou seja, se a mesma propriedade não tem valores diferentes em cada seletor, tanto propriedades do seletor menos específico como do mais específico serão utilizadas.
