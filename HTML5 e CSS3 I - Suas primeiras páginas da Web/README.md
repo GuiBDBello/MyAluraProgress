@@ -206,3 +206,16 @@ O navegador escolhe o estilo dos seletores mais específicos quando há conflito
 ### Atividade 11 - Conflito entre classe e id:
 
 O seletor de id é muito mais específico que o seletor de classe ou de tag. Por isso, o estilo dele prevalece.
+
+
+## Aula 09 - Nem tudo é o que parece
+
+### Atividade 01 - Nem tudo é o que parece:
+
+- 'text-transform': pode converter a caixa do texto (maiúsculas/minúsculas). O efeito disso vai além do visual, pois também auxilia a leitura da página pelo navegador, melhorando sua acessibilidade
+- Image replacement: É a ação de adicionar uma imagem pelo CSS, o que aumenta a semântica para com o navegador
+- Como fazer:
+	1. remover a imagem, adicionando um texto em seu lugar
+	2. aplicar uma identação negativa até remover o texto de sua tela (**Ex.:** text-indent: -9999px;)
+	3. criar uma classe e adicionar uma imagem (**Ex.:** background-image: url(image.jpg);)
+	4. atribuir as classes com as respectivas imagens aos seus links
