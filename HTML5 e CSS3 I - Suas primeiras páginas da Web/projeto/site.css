@@ -54,9 +54,10 @@ aside a {
 .icones-sociais li {
 	display: inline-block;
 }
-footer {
-	background-color: black;
-	color: #F2FFFC;
+#rodape-pagina {
+    background-color: #000;
+    color: #F2FFFC;
+    padding: 20px;
 }
 nav a {
 	color: #F2FFFC;
