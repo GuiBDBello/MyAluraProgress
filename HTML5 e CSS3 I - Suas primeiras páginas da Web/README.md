@@ -202,3 +202,7 @@ O HTML nos permite especificar caracteres especiais por meio das **entidades**. 
 ### Atividade 09 - Mais de um seletor por elemento:
 
 O navegador escolhe o estilo dos seletores mais específicos quando há conflito. Se não há conflito entre o estilo definido em dois seletores diferentes, ou seja, se a mesma propriedade não tem valores diferentes em cada seletor, tanto propriedades do seletor menos específico como do mais específico serão utilizadas.
+
+### Atividade 11 - Conflito entre classe e id:
+
+O seletor de id é muito mais específico que o seletor de classe ou de tag. Por isso, o estilo dele prevalece.
