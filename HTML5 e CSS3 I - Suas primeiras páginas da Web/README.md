@@ -219,3 +219,8 @@ O seletor de id é muito mais específico que o seletor de classe ou de tag. Por
 	2. aplicar uma identação negativa até remover o texto de sua tela (**Ex.:** text-indent: -9999px;)
 	3. criar uma classe e adicionar uma imagem (**Ex.:** background-image: url(image.jpg);)
 	4. atribuir as classes com as respectivas imagens aos seus links
+
+### Atividade 08 - Outras formas de image replacement:
+
+- 'font-size': 0;
+- 'color': transparent;
