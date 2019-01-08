@@ -83,3 +83,13 @@ article {
     border-bottom: 1px solid #CCC;
     margin-bottom: 20px;
 }
+.leia-mais {
+	font-size: 38px;
+	padding: 10px;
+	margin: 10px 0;
+	box-sizing: border-box;
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+	background-color: #EEEFFF;
+}
