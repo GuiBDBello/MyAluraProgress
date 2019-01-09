@@ -235,3 +235,13 @@ O seletor de id é muito mais específico que o seletor de classe ou de tag. Por
 - floats em sequência ficam na mesma linha
 - 'clear': se o elemento possui um 'float' ao redor dele, "empurra" o 'float' para baixo
 - 'clearfix': classe que ajusta páginas com elementos 'float', se tornou um "padrão" pelo uso popular
+
+
+## Aula 11 - Elementos onde queremos
+
+### Atividade 01 - Elementos onde quisermos:
+
+- 'position': desloca o elemento pela página com auxílio das propriedade 'top', 'left', 'bottom' e 'right'
+	1. relative: relativo à posição original do mesmo. Mantém o fluxo da página
+	2. absolute: relativo à janela do navegador. O elemento sai do fluxo da página, alterando-o
+	3. fixed: relativo à tela. O elemento sai do fluxo da página, alterando-o
