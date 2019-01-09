@@ -224,3 +224,14 @@ O seletor de id é muito mais específico que o seletor de classe ou de tag. Por
 
 - 'font-size': 0;
 - 'color': transparent;
+
+
+## Aula 10 - Posicionamento mais a fundo
+
+### Atividade 01 - Posicionamento mais a fundo:
+
+- 'float': retira um elemento do fluxo, fazendo-o "flutuar" ao redor do conteúdo (para os cantos da página)
+- O 'float' faz um elemento flutuar ao lado desejado, porém ele continua na mesma posição (altura) que estava anteriormente
+- floats em sequência ficam na mesma linha
+- 'clear': se o elemento possui um 'float' ao redor dele, "empurra" o 'float' para baixo
+- 'clearfix': classe que ajusta páginas com elementos 'float', se tornou um "padrão" pelo uso popular

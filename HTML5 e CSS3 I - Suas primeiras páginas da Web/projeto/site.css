@@ -27,6 +27,7 @@ h1 {
 }
 h2 {
 	font-size: 30px;
+	clear: both;
 }
 p {
 	text-align: justify;
@@ -112,4 +113,27 @@ article {
 	display: inline-block;
 	text-align: center;
 	background-color: #EEEFFF;
+}
+.fiat {
+	float: right;
+}
+.petrobras {
+	float: left;
+}
+aside, img {
+	width: 20%;
+	float: right;
+	border-left: 10px solid black;
+	border-bottom: 10px solid black;
+	box-sizing: border-box;
+}
+aside {
+	clear: right;
+}
+main {
+	width: 80%;
+	float: left;
+}
+footer {
+	clear: both;
 }
