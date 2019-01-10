@@ -6,6 +6,7 @@
 		<meta charset="UTF-8">
 		<link rel="icon" href="favicon.png">
 		<link rel="stylesheet" href="./css/site.css">
+		<link rel="stylesheet" href="./css/portfolio.css">
 		<!-- carrega a fonte Crimson Text nas versões normal, itálico e negrito -->
 		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600">
 		<!-- carrega a fonte Open Sans Condensed na versão negrito, -->
@@ -14,7 +15,52 @@
 	</head>
 	<body>
 		<main>
-			Imagine um Portfólio aqui.
+			<h1>Portfolio</h1>
+			<div>
+				<p>Veja abaixo a lista dos meus projetos mais relevantes</p>
+				<ul class="caixinha">
+					<li>
+						<a href="http://bmw.com">
+							<figure>
+								<img src="./img/bmw.png" alt="Site da BMW">
+								<figcaption>
+									BMW.com: reformulação de design e implementação de HTML, CSS e JavaScript
+								</figcaption>
+							</figure>
+						</a>
+					</li>
+					<li>
+						<a href="http://uol.com.br">
+							<figure>
+								<img src="./img/uol.png" alt="Site da UOL">
+								<figcaption>
+									UOL.com.br: reformulação de design e implementação de HTML, CSS e JavaScript
+								</figcaption>
+							</figure>
+						</a>
+					</li>
+					<li>
+						<a href="http://www.ibm.com.br">
+							<figure>
+								<img src="./img/ibm.png" alt="Site da IBM">
+								<figcaption>
+									IBM.com: aplicação de progressive enhancement em conjunto com aplicação back-end
+								</figcaption>
+							</figure>
+						</a>
+					</li>
+					<li>
+						<a href="http://g1.com.br">
+							<figure>
+								<img src="./img/g1.png" alt="Site da G1">
+								<figcaption>
+									G1.com.br: reformulação de design e implementação de HTML, CSS e JavaScript
+								</figcaption>
+							</figure>
+						</a>
+					</li>
+				</ul>
+			</div>
 		</main>
 		<img class="minha-foto" src="./img/eu.jpg" alt="Foto de João da Silva">
 		<aside>
@@ -30,11 +76,11 @@
 			</nav>
 			<!-- Links das redes sociais -->
 			<ul class="icones-sociais">
-				<li><a href="https://github.com/joaodasilva"><img src="github.png" alt="Github"></a>
+				<li><a class="github" href="https://github.com/joaodasilva">Github</a>
 				</li>
-				<li><a href="https://twitter.com/joaodasilva"><img src="twitter.png" alt="Twitter"></a>
+				<li><a class="twitter" href="https://twitter.com/joaodasilva">Twitter</a>
 				</li>
-				<li><a href="https://br.linkedin.com/pub/joão-da-silva/32/4/508"><img src="linkedin.png" alt="LinkedIn"></a></li>
+				<li><a class="linkedin" href="https://br.linkedin.com/pub/joão-da-silva/32/4/508">LinkedIn</a></li>
 			</ul>
 		</aside>
 		<footer id="rodape-pagina">

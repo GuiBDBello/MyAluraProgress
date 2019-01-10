@@ -245,3 +245,10 @@ O seletor de id é muito mais específico que o seletor de classe ou de tag. Por
 	1. relative: relativo à posição original do mesmo. Mantém o fluxo da página
 	2. absolute: relativo à janela do navegador. O elemento sai do fluxo da página, alterando-o
 	3. fixed: relativo à tela. O elemento sai do fluxo da página, alterando-o
+
+
+## Aula 12 - Desafios finais
+
+### Atividade 04 - Desenvolvendo a página de portfolio:
+
+- 'figure': indica uma imagem com uma legenda. Deve-se utilizar para a legenda a tag 'figcaption'
