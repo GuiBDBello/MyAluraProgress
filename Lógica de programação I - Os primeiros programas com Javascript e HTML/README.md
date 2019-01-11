@@ -39,3 +39,9 @@ Como falava o antigo filósofo Aristóteles: bem começado, metade feito.
 - Para o navegador interpretar uma instrução JavaScript, não basta colocarmos a instrução JavaScript direto no HTML. Temos que utilizar a tag &lt;script&gt;. Dessa forma o navegador saberá que deve processar essa parte do código como linguagem JavaScript e não como HTML;
 - A primeira instrução que vimos do JavaScript foi o alert, que recebe como parâmetro um texto;
 - Por último, aprendemos que todo texto em JavaScript vem entre aspas.
+
+### Atividade 10 - Extensão de arquivo e convenção:
+
+#### Convenção HTML:
+
+- Uma convenção muito utilizada é criar arquivos com letras minúsculas e se houver mais de uma palavra usamos um "_" como separador
