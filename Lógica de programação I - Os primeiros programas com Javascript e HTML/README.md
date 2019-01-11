@@ -49,3 +49,17 @@ Como falava o antigo filósofo Aristóteles: bem começado, metade feito.
 ### Atividade 13 - A importância da tag meta:
 
 - Em alguns casos, o formato do arquivo pode ser incompatível com &lt;meta charset="UTF-8"&gt;, ou seja, deve-se mudar a formatação do **arquivo** para UTF-8
+
+
+## Aula 02 - Comunique-se com o usuário
+
+### Atividade 01 - Recapitulando:
+
+- Convenção HTML: Tags devem ser escritas com letras minúsculas;
+- Convenção JavaScript: A linguagem é case-sensitive, diferenciando maiúsculas e minúsculas;
+- 'Ctrl + N': Abre um novo arquivo no Sublime;
+
+- Estrutura mínima para criar um programa:
+`<meta charset="UTF-8">
+<script>
+</script>`
