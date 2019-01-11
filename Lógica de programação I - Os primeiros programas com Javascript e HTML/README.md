@@ -74,3 +74,8 @@ Como falava o antigo filósofo Aristóteles: bem começado, metade feito.
 - Para concatenar duas Strings, usa-se o operador '+': document.write("Eu sou" + "o Douglas");
 - Quando o operador é utilizado entre uma String e um número, eles também são concatenados;
 - Porém, quando o operador é utilizado entre dois números, somam-se os números;
+
+### Atividade 06 - Operações com textos e números:
+
+- Assim como a matemática, a programação prioriza multiplicações e divisões sobre soma e subtração
+- Para indicar uma ordem nas operações, deve-se utilizar parênteses, assim como na matemática, os parênteses são considerados primeiramente
