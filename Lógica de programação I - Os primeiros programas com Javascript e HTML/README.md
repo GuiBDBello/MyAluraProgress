@@ -97,3 +97,12 @@ var ano = 2018;
 ### Atividade 06 - Variáveis:
 
 - Math.round(numero): Arredonda 'numero' para decimal;
+
+
+## Aula 04 - Crie suas próprias funcionalidades
+
+### Atividade 02 - Funções:
+
+- Por convenção Javascript, as funções ficam no início do código
+- O nome da função deve ser um verbo, pois indica uma **ação** do programa
+- Uma função é um bloco de código que serve de "atalho" para várias outras instruções
