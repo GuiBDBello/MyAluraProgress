@@ -44,4 +44,8 @@ Como falava o antigo filósofo Aristóteles: bem começado, metade feito.
 
 #### Convenção HTML:
 
-- Uma convenção muito utilizada é criar arquivos com letras minúsculas e se houver mais de uma palavra usamos um "_" como separador
+- Uma convenção muito utilizada é criar arquivos com letras minúsculas e se houver mais de uma palavra usamos um " _ " como separador
+
+### Atividade 13 - A importância da tag meta:
+
+- Em alguns casos, o formato do arquivo pode ser incompatível com &lt;meta charset="UTF-8"&gt;, ou seja, deve-se mudar a formatação do **arquivo** para UTF-8
