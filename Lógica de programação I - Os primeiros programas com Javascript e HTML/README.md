@@ -16,3 +16,13 @@
 - 'F12': abrir janela das ferramentas de desenvolvedor (DevTools)
 
 Como falava o antigo filósofo Aristóteles: bem começado, metade feito.
+
+### Atividade 06 - Dê olá ao mundo:
+
+- HTML é estático, não é dinâmico
+- Javascript é dinâmico
+
+#### Javascript:
+
+- A tag &lt;script&gt;&lt;/script&gt; define que seu conteúdo contém um código Javascript, assim fazendo o navegador interpretar seu conteúdo como Javascript
+- Ao pressionar a tecla F12, um depurador do Javascript é aberto (Console). Esse depurador mostra erros de sintaxe no código Javascript
