@@ -60,6 +60,8 @@ Como falava o antigo filósofo Aristóteles: bem começado, metade feito.
 - 'Ctrl + N': Abre um novo arquivo no Sublime;
 
 - Estrutura mínima para criar um programa:
-`<meta charset="UTF-8">
+```
+<meta charset="UTF-8">
 <script>
-</script>`
+</script>
+```
