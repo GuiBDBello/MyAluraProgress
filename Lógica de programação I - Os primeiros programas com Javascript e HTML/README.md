@@ -65,3 +65,12 @@ Como falava o antigo filósofo Aristóteles: bem começado, metade feito.
 <script>
 </script>
 ```
+
+### Atividade 04 - Concatenação:
+
+- Escrever na página (HTML) pelo JavaScript: document.write("");
+- O JavaScript interage dinamicamente com o HTML;
+- document.write("") pode conter tags HTML: document.write("Meu nome é &lt;br&gt; Guilherme");
+- Para concatenar duas Strings, usa-se o operador '+': document.write("Eu sou" + "o Douglas");
+- Quando o operador é utilizado entre uma String e um número, eles também são concatenados;
+- Porém, quando o operador é utilizado entre dois números, somam-se os números;
