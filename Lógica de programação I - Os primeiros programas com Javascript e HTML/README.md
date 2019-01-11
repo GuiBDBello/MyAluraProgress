@@ -93,3 +93,7 @@ var ano = 2018;
 ```
 
 > O processo de "raciocínio" do JavaScript será questionar se determinado trecho está entre aspas. Se estiver, é uma string; se não, será feita uma próxima pergunta: trata-se de um número? Caso a resposta seja "não", significa que se trata de uma variável.
+
+### Atividade 06 - Variáveis:
+
+- Math.round(numero): Arredonda 'numero' para decimal;
