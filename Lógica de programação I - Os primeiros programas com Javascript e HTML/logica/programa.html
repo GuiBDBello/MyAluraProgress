@@ -2,21 +2,24 @@
 <script>
 
 	function pulaLinha() {
-		document.write("<br>");
-		document.write("<br>");
+		document.write("<br><br>");
+	}
+
+	function mostra(frase) {
+		document.write(frase);
+		pulaLinha();
 	}
 
 	var ano = 2019;
-	document.write("Guilherme tem " + (ano - 1997) + " anos");
-	
-	pulaLinha();
+	mostra("Guilherme tem " + (ano - 1997) + " anos");
+	//pulaLinha();
 	
 	var ano = 2020;
-	document.write("Guilherme tem " + (ano - 1997) + " anos");
-
-	pulaLinha();
+	mostra("Guilherme tem " + (ano - 1997) + " anos");
+	//pulaLinha();
 
 	var ano = 2021;
-	document.write("Guilherme tem " + (ano - 1997) + " anos");
+	mostra("Guilherme tem " + (ano - 1997) + " anos");
+	mostra("Olá pessoal");
 
 </script>

@@ -106,3 +106,8 @@ var ano = 2018;
 - Por convenção Javascript, as funções ficam no início do código
 - O nome da função deve ser um verbo, pois indica uma **ação** do programa
 - Uma função é um bloco de código que serve de "atalho" para várias outras instruções
+- Sintaxe: function 'nomeDaFuncaoSemParametro'() { }
+
+### Atividade 05 - Funções com parâmetros:
+
+- Sintaxe: function 'nomeDaFuncao'('variavel') { }
