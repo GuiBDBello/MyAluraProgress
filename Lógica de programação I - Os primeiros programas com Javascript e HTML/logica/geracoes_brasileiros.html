@@ -1,0 +1,19 @@
+<meta charset="UTF-8">
+<script>
+
+	function pulaLinha() {
+		document.write("<br>");
+	}
+
+	function mostra(frase) {
+		document.write(frase);
+		pulaLinha();
+	}
+
+	var anoInicial = 1500;
+	var anoAtual = 2019;
+	var geracao = ((anoAtual - anoInicial) / 28);
+
+	mostra("A geração dos brasileiros (a partir de 1500) é a " + Math.round(geracao) + "° geração.");
+
+</script>
