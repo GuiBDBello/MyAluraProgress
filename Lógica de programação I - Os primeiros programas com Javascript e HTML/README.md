@@ -111,3 +111,12 @@ var ano = 2018;
 ### Atividade 05 - Funções com parâmetros:
 
 - Sintaxe: function 'nomeDaFuncao'('variavel') { }
+
+
+## Aula 05 - Pratique resolvendo problemas do seu dia a dia
+
+### Atividade 05 - Retorno de funções:
+
+- 'NaN': Not a Number. Ocorre quando uma operação matemática possui um valor 'undefined'
+- Uma função pode retornar um valor, que pode ser salvo em uma variável
+- 'return' 'valor': define o valor retornado de uma função
