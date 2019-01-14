@@ -120,3 +120,7 @@ var ano = 2018;
 - 'NaN': Not a Number. Ocorre quando uma operação matemática possui um valor 'undefined'
 - Uma função pode retornar um valor, que pode ser salvo em uma variável
 - 'return' 'valor': define o valor retornado de uma função
+
+### Atividade 11 - Interagindo com usuário:
+
+- 'prompt()': função Javascript que recebe como parâmetro o texto que será exibido na caixa de diálogo e retorna o valor escrito pelo usuário (input/entrada)
