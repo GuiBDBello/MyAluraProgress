@@ -139,3 +139,7 @@ var ano = 2018;
 - 'if() { }': denota uma condição que deve ser cumprida para executar o código dentro de seu bloco
 - '>, <, ==, !=': operadores lógicos que indicam 'maior, menor, igual, diferente'
 - Uma condição (if) sempre retorna 'true' ou 'false'
+
+## Atividade 07 - Melhorando programa de IMC:
+
+- '&&', '||': operadores que significam, respectivamente, "e" e "ou"
