@@ -133,3 +133,9 @@ var ano = 2018;
 - O retorno da função 'prompt()' é sempre do tipo texto
 - O Javascript converte o tipo texto em número quando há uma multiplicação ou divisão
 - 'parseInt()': função que converte texto em número (inteiro)
+
+## Atividade 05 - Trabalhando com condições:
+
+- 'if() { }': denota uma condição que deve ser cumprida para executar o código dentro de seu bloco
+- '>, <, ==, !=': operadores lógicos que indicam 'maior, menor, igual, diferente'
+- Uma condição (if) sempre retorna 'true' ou 'false'
