@@ -143,3 +143,11 @@ var ano = 2018;
 ## Atividade 07 - Melhorando programa de IMC:
 
 - '&&', '||': operadores que significam, respectivamente, "e" e "ou"
+
+## Atividade 09 - Jogo de adivinhação:
+
+- 'else': condição contrária do 'if'. Significa, literalmente, "se não". É executado quando o 'if' correspondente é 'false'
+- 'Math.random()': gera um número aleatório. Para gerar um número decimal, multiplica seu retorno por 10
+- Combine o 'Math.random() * 10' com o 'Math.round()' para gerar um número de 0 a 10
+- O número gerado por 'Math.random() * numero' será entre 0 e o número multiplicado
+- 'console.log()': escreve o parâmetro no 'Console' do navegador
