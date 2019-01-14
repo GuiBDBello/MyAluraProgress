@@ -22,4 +22,14 @@
 
 	mostra(nomeInformado + ", seu IMC é: " + imc);
 
+	if (imc < 18.5) {
+		mostra("Seu IMC está abaixo do ideal.");
+	}
+	if (imc >= 18.5 && imc <= 35) {
+		mostra("Seu IMC está na faixa ideal.");
+	}
+	if (imc > 35) {
+		mostra("Seu IMC está acima do ideal.");
+	}
+
 </script>
