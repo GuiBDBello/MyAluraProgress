@@ -124,3 +124,12 @@ var ano = 2018;
 ### Atividade 11 - Interagindo com usuário:
 
 - 'prompt()': função Javascript que recebe como parâmetro o texto que será exibido na caixa de diálogo e retorna o valor escrito pelo usuário (input/entrada)
+
+
+## Aula 06 - Execute códigos diferentes dependendo da condição
+
+## Atividade 01 - Convertendo texto em números:
+
+- O retorno da função 'prompt()' é sempre do tipo texto
+- O Javascript converte o tipo texto em número quando há uma multiplicação ou divisão
+- 'parseInt()': função que converte texto em número (inteiro)
