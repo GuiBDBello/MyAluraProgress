@@ -10,7 +10,11 @@
 		pulaLinha();
 	}
 
-	var numeroPensado = Math.round(Math.random() * 10);
+	function sorteia(numeroMaximo) {
+		return Math.round(Math.random() * numeroMaximo);
+	}
+
+	var numeroPensado = sorteia(parseInt(prompt("Digite o número máximo a ser sorteado (entre 0 e...):")));
 	console.log(numeroPensado);
 
 	var chute = parseInt(prompt("Digite seu chute!"));
@@ -18,7 +22,11 @@
 	if (chute == numeroPensado) {
 		mostra("Você acertou!")
 	} else {
-		mostra("Você errou! O número pensado foi: " + numeroPensado);
+		if (chute > numeroPensado) {
+			mostra("Você errou! Seu número foi maior que o número sorteado.<br>O número sorteado foi: " + numeroPensado);
+		} else {
+			mostra("Você errou! Seu número foi menor que o número sorteado.<br>O número sorteado foi: " + numeroPensado);
+		}
 	}
 
 </script>
