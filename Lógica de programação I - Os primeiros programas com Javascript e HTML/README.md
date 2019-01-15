@@ -172,3 +172,7 @@ var ano = 2018;
 ### Atividade 15 - Interrompendo uma repetição:
 
 - 'break;': quebra a execução do primeiro laço acima
+
+### Atividade 17 - Repetições aninhadas:
+
+- Dois laços de repetição aninhados formam uma matriz (NxN, onde N é o número de repetições de cada laço)
