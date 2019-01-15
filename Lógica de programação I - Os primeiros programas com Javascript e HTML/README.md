@@ -128,26 +128,33 @@ var ano = 2018;
 
 ## Aula 06 - Execute códigos diferentes dependendo da condição
 
-## Atividade 01 - Convertendo texto em números:
+### Atividade 01 - Convertendo texto em números:
 
 - O retorno da função 'prompt()' é sempre do tipo texto
 - O Javascript converte o tipo texto em número quando há uma multiplicação ou divisão
 - 'parseInt()': função que converte texto em número (inteiro)
 
-## Atividade 05 - Trabalhando com condições:
+### Atividade 05 - Trabalhando com condições:
 
 - 'if() { }': denota uma condição que deve ser cumprida para executar o código dentro de seu bloco
 - '>, <, ==, !=': operadores lógicos que indicam 'maior, menor, igual, diferente'
 - Uma condição (if) sempre retorna 'true' ou 'false'
 
-## Atividade 07 - Melhorando programa de IMC:
+### Atividade 07 - Melhorando programa de IMC:
 
 - '&&', '||': operadores que significam, respectivamente, "e" e "ou"
 
-## Atividade 09 - Jogo de adivinhação:
+### Atividade 09 - Jogo de adivinhação:
 
 - 'else': condição contrária do 'if'. Significa, literalmente, "se não". É executado quando o 'if' correspondente é 'false'
 - 'Math.random()': gera um número aleatório. Para gerar um número decimal, multiplica seu retorno por 10
 - Combine o 'Math.random() * 10' com o 'Math.round()' para gerar um número de 0 a 10
 - O número gerado por 'Math.random() * numero' será entre 0 e o número multiplicado
 - 'console.log()': escreve o parâmetro no 'Console' do navegador
+
+
+## Aula 07 - Repita tarefas
+
+### Atividade 01 - Repetir enquanto...
+
+- 'while() { }': repete o que está dentro do bloco de código até que a condição seja verdadeira
