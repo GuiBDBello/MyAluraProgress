@@ -155,6 +155,12 @@ var ano = 2018;
 
 ## Aula 07 - Repita tarefas
 
-### Atividade 01 - Repetir enquanto...
+### Atividade 01 - Repetir enquanto...:
 
 - 'while() { }': repete o que está dentro do bloco de código até que a condição seja verdadeira
+
+### Atividade 09 - Outra forma de repetir:
+
+- 'for("inicializacao"; "condicao"; "incremento";) { }'
+- **Ex.:** for(var contador = 1; contador <= 10; contador++) { }
+- 'nomeVariavel++;': denominado **pós-incremento**, é equivalente à sintaxe 'nomeVariavel = nomeVariavel + 1;'
