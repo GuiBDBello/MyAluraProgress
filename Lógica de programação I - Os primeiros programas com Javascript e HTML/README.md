@@ -164,3 +164,7 @@ var ano = 2018;
 - 'for("inicializacao"; "condicao"; "incremento";) { }'
 - **Ex.:** for(var contador = 1; contador <= 10; contador++) { }
 - 'nomeVariavel++;': denominado **pós-incremento**, é equivalente à sintaxe 'nomeVariavel = nomeVariavel + 1;'
+
+### Atividade 12 - Acumulando valores:
+
+- Para acumular um valor dentro de um laço de repetição, deve-se inicializar a variável **fora** do laço, para apenas incrementá-la dentro do laço. Caso contrário, a cada iteração, ela será reinicializada
