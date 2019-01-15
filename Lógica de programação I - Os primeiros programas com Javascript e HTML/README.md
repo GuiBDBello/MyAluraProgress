@@ -176,3 +176,8 @@ var ano = 2018;
 ### Atividade 17 - Repetições aninhadas:
 
 - Dois laços de repetição aninhados formam uma matriz (NxN, onde N é o número de repetições de cada laço)
+
+### Atividade 18 - Para saber mais: parseFloat e quando usar:
+
+- 'parseFloat("");': função Javascript que converte um texto em um número com ponto flutuante (decimal)
+- **Ex.:** parseFloat("12.13");
