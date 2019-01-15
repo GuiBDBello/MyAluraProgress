@@ -17,16 +17,28 @@
 	var numeroPensado = sorteia(parseInt(prompt("Digite o número máximo a ser sorteado (entre 0 e...):")));
 	console.log(numeroPensado);
 
-	var chute = parseInt(prompt("Digite seu chute!"));
+	var tentativas = 1;
 
-	if (chute == numeroPensado) {
-		mostra("Você acertou!")
-	} else {
-		if (chute > numeroPensado) {
-			mostra("Você errou! Seu número foi maior que o número sorteado.<br>O número sorteado foi: " + numeroPensado);
+	while (tentativas <= 3) {
+		var chute = parseInt(prompt("Digite seu chute!"));
+
+		if (chute == numeroPensado) {
+			mostra("Você acertou!");
+			break;
 		} else {
-			mostra("Você errou! Seu número foi menor que o número sorteado.<br>O número sorteado foi: " + numeroPensado);
+			if (tentativas >= 3) {
+				mostra("Você perdeu! O número sorteado foi: " + numeroPensado);
+			} else {
+				if (chute > numeroPensado) {
+					mostra("Você errou! Seu número foi maior que o número sorteado.");
+				} else {
+					mostra("Você errou! Seu número foi menor que o número sorteado.");
+				}
+			}
 		}
+		tentativas++;
 	}
+
+	mostra("FIM");
 
 </script>

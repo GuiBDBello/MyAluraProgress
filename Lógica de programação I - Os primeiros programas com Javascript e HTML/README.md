@@ -168,3 +168,7 @@ var ano = 2018;
 ### Atividade 12 - Acumulando valores:
 
 - Para acumular um valor dentro de um laço de repetição, deve-se inicializar a variável **fora** do laço, para apenas incrementá-la dentro do laço. Caso contrário, a cada iteração, ela será reinicializada
+
+### Atividade 15 - Interrompendo uma repetição:
+
+- 'break;': quebra a execução do primeiro laço acima
