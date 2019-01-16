@@ -191,3 +191,8 @@ var ano = 2018;
 - 'elemento.value' = atributo do elemento que retorna seu valor (se for um campo de texto, retorna o texto digitado)
 - 'elemento.onclick = nomeFuncao;': atributo do elemento que executa uma função quando o elemento for clicado
 - No Javascript, ao escrever 'nomeFuncao', é retornado o código da função, em texto. Porém, ao escrever 'nomeFuncao()', a função é executada
+
+### Atividade 05 - Melhorando a usabilidade:
+
+- 'elemento.value = "";': zera o valor do elemento. **Ex.:** input.value = "";
+- 'elemento.focus();': foca no elemento. **Ex.:** input.focus();
