@@ -181,3 +181,13 @@ var ano = 2018;
 
 - 'parseFloat("");': função Javascript que converte um texto em um número com ponto flutuante (decimal)
 - **Ex.:** parseFloat("12.13");
+
+
+## Aula 08 - Interaja de maneira diferente com o usuário
+
+### Atividade 01 - Campo de texto e botão:
+
+- 'document.querySelector("elemento");': retorna um elemento HTML
+- 'elemento.value' = atributo do elemento que retorna seu valor (se for um campo de texto, retorna o texto digitado)
+- 'elemento.onclick = nomeFuncao;': atributo do elemento que executa uma função quando o elemento for clicado
+- No Javascript, ao escrever 'nomeFuncao', é retornado o código da função, em texto. Porém, ao escrever 'nomeFuncao()', a função é executada
