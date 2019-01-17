@@ -196,3 +196,12 @@ var ano = 2018;
 
 - 'elemento.value = "";': zera o valor do elemento. **Ex.:** input.value = "";
 - 'elemento.focus();': foca no elemento. **Ex.:** input.focus();
+
+
+## Aula 09 - Trabalhe com muitos dados
+
+### Atividade 01 - Armazenando muitos dados:
+
+- 'var array = [1, 2, 3];': um array é uma variável que pode armazenar vários valores, em diferentes posições. Na declaração, o valor de cada posição é separado por vírgula (,)
+- No Javascript, a primeira posição de um array é a posição **zero** [0]
+- 'array.length': retorna a quantidade de elementos que o array possui
