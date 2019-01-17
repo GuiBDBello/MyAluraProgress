@@ -205,3 +205,7 @@ var ano = 2018;
 - 'var array = [1, 2, 3];': um array é uma variável que pode armazenar vários valores, em diferentes posições. Na declaração, o valor de cada posição é separado por vírgula (,)
 - No Javascript, a primeira posição de um array é a posição **zero** [0]
 - 'array.length': retorna a quantidade de elementos que o array possui
+
+### Atividade 08 - Manipulando Array:
+
+- 'array.push(valor);': adiciona um valor em um array
