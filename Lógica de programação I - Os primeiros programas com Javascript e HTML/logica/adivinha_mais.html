@@ -6,9 +6,7 @@
 <script>
 
 	function verifica() {
-
 		var achou = false;
-
 		for (var posicao = 0; posicao < segredos.length; posicao++) {
 			if (input.value == segredos[posicao]) {
 				alert("Você ACERTOU!");
@@ -16,17 +14,52 @@
 				break;
 			}
 		}
-
 		if (achou == false) {
 			alert("Você ERROU!");
 		}
-
 		input.value = "";
 		input.focus();
 	}
 
-	//var segredo = Math.round(Math.random() * 10);
-	var segredos = [2, 3, 5, 7, 10];
+	function sorteia() {
+		return Math.round(Math.random() * 10);
+	}
+
+	function sorteiaNumeros(quantidade) {
+		var segredos = [];
+		var numero = 1;
+
+		while(numero <= quantidade) {
+			// Sorteia um número aleatório
+			var numeroAleatorio = sorteia();
+
+			if (numeroAleatorio !== 0) {
+				var achou = false;
+				// Varre o array dos números já gerados
+				for (var posicao = 0; posicao < segredos.length; posicao++) {
+					// Compara o valor da posição atual do array com o novo número gerado
+					if (segredos[posicao] == numeroAleatorio) {
+						// Se forem iguais, encerra o laço e gera outro valor aleatório
+						achou = true;
+						break;
+					}
+					// Se não forem iguais, segue a execução...
+				}
+				// ... e adiciona o número aleatório no array
+				if (achou == false) {
+					segredos.push(numeroAleatorio);
+					numero++;
+				}
+			}
+		}
+
+		return segredos;
+	}
+
+	var segredos = sorteiaNumeros(3);
+
+	console.log(segredos);
+
 	var input = document.querySelector("input");
 	input.focus();
 
