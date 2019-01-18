@@ -40,3 +40,12 @@
 
 - 'brush.font = "tamanhopx fonte"': propriedade do pincel que define o tamanho da fonte e o tipo da fonte
 - 'brush.fillText("texto", x, y)': função do pincel que define um texto e as coordenadas do local onde ele deve renderizar
+
+
+## Aula 03 - Interagindo com o usuário
+
+### Atividade 01 - Nossa tela está viva, ela responde!:
+
+- Quando uma função é associada ao 'onclick', o navegador envia um parâmetro à função, e é possível acessar esse evento desde que exista um parâmetro na função atribuída ao 'onclick'
+- É o navegador quem define o parâmetro 'evento'
+- 'MouseEvent': é o nome do evento acionado quando ocorre um clique do mouse em um elemento com a propriedade 'onclick' definida
