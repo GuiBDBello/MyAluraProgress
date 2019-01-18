@@ -68,3 +68,9 @@
 ### Atividade 07 - O bolão que deseja emagrecer!:
 
 - 'evento.altKey': propriedade do evento que retorna 'true' quando a tecla 'Alt' está sendo pressionada
+
+### Atividade 08 - Desenhando com o mouse:
+
+- 'canvas.onmousemove': propriedade do canvas que define quando o mouse está se movimentando sob o canvas
+- 'canvas.onmousedown': propriedade do canvas que define quando o botão esquerdo do mouse está sendo pressionado
+- 'canvas.onmouseup': propriedade do canvas que define quando o botão esquerdo parou de ser pressionado
