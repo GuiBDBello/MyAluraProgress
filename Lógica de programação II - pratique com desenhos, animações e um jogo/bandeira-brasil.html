@@ -1,0 +1,24 @@
+<canvas width="1280" height="720"></canvas>
+
+<script>
+
+	var canvas = document.querySelector("canvas");
+	var brush = canvas.getContext("2d");
+
+	brush.fillStyle = "green";
+	brush.fillRect(0, 0, 1280, 720);
+
+	brush.fillStyle = "yellow";
+	brush.beginPath();
+	brush.moveTo(640, 50);
+	brush.lineTo(50, 360);
+	brush.lineTo(640, 670);
+	brush.lineTo(1230, 360);
+	brush.fill();
+
+	brush.fillStyle = "darkblue";
+	brush.beginPath();
+	brush.arc(640, 360, 225, 0, 2 * 3.14);
+	brush.fill();
+
+</script>
