@@ -56,3 +56,7 @@
 - 'event.pageY': propriedade do evento que representa um pixel no eixo Y do canvas
 - 'canvas.offsetLeft/canvas.offsetTop': propriedade do canvas que representa o deslocamento de um lado específico do canvas
 - Isso permite obter as coordenadas exatas do clique do mouse dentro de um canvas
+
+### Atividade 04 - Trocando de cor:
+
+- 'canvas.oncontextmenu': propriedade do canvas que é chamada quando ocorre um clique com o botão **direito** do mouse
