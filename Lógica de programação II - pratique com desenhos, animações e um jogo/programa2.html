@@ -1,0 +1,20 @@
+<canvas width="1280" height="720"></canvas>
+
+<script>
+
+	function desenhaQuadradoVerde() {
+		var canvas = document.querySelector("canvas");
+		var brush = canvas.getContext("2d");
+
+		brush.fillStyle = "green";
+		brush.fillStroke = "black";
+
+		brush.fillRect(0, 0, 50, 50);
+		brush.strokeRect(0, 0, 50, 50);
+	}
+
+	desenhaQuadradoVerde();
+	desenhaQuadradoVerde();
+	desenhaQuadradoVerde();
+
+</script>
