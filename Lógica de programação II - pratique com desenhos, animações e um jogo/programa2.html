@@ -2,19 +2,23 @@
 
 <script>
 
-	function desenhaQuadrado(x, y, cor) {
+	function desenhaQuadrado(x, y, color, width, height) {
 		var canvas = document.querySelector("canvas");
 		var brush = canvas.getContext("2d");
 
-		brush.fillStyle = cor;
+		brush.fillStyle = color;
 		brush.strokeStyle = "black";
 
 		brush.fillRect(x, y, 50, 50);
 		brush.strokeRect(x, y, 50, 50);
 	}
 
-	desenhaQuadrado(0, 0, "green");
-	desenhaQuadrado(50, 0, "green");
-	desenhaQuadrado(100, 0, "green");
+	var x = 0;
+	while(x < 1200) {
+		for(var y = 0; y < 700; y = y + 50) {
+			desenhaQuadrado(x, y, "green");
+		}
+		x = x + 50;
+	}
 
 </script>
