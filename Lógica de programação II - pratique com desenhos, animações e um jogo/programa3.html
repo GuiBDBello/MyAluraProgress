@@ -1,0 +1,18 @@
+<canvas width="600"  height="400"></canvas>
+
+<script>
+
+	function exibeAlerta(evento) {
+		alert('Cliquei');
+		console.log(evento);
+	}
+
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+
+    pincel.fillStyle = 'grey';
+    pincel.fillRect(0, 0, 600, 400);
+
+    tela.onclick = exibeAlerta;
+
+</script>
