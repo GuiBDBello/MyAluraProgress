@@ -2,19 +2,19 @@
 
 <script>
 
-	function desenhaQuadradoVerde() {
+	function desenhaQuadrado(x, y, cor) {
 		var canvas = document.querySelector("canvas");
 		var brush = canvas.getContext("2d");
 
-		brush.fillStyle = "green";
-		brush.strokeStyle = "red";
+		brush.fillStyle = cor;
+		brush.strokeStyle = "black";
 
-		brush.fillRect(0, 0, 50, 50);
-		brush.strokeRect(0, 0, 50, 50);
+		brush.fillRect(x, y, 50, 50);
+		brush.strokeRect(x, y, 50, 50);
 	}
 
-	desenhaQuadradoVerde();
-	desenhaQuadradoVerde();
-	desenhaQuadradoVerde();
+	desenhaQuadrado(0, 0, "green");
+	desenhaQuadrado(50, 0, "green");
+	desenhaQuadrado(100, 0, "green");
 
 </script>
