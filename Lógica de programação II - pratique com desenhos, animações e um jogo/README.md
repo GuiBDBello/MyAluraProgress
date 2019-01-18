@@ -32,5 +32,5 @@
 
 ### Atividade 01 - Repetir código não rola, não é mesmo?:
 
-- 'brush.fillStroke': propriedade do pincel que define a cor da borda
+- 'brush.strokeStyle': propriedade do pincel que define a cor da borda
 - 'brush.strokeRect(x, y, largura, altura)': função do pincel que desenha uma borda
