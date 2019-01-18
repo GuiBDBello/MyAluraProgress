@@ -14,3 +14,10 @@
 - 'canvas.getContext('2d')': função do quadro (canvas) que define que o contexto da tela tem 2 dimensões (2d), e retorna um pincel (brush)
 - 'brush.fillRect(xInicial, yInicial, xFinal, yFinal)': função do brush (pincel) que define uma área retangular a ser preenchida
 - 'brush.fillStyle': propriedade do pincel que recebe uma cor. Deve ser definido antes do 'fillRect()'
+
+### Atividade 05 - A vida não é só feita de retângulos!:
+
+- 'brush.beginPath()': função do pincel que começa a "escrita" de um caminho
+- 'brush.moveTo(x, y)': função do pincel que define a posição do pincel numa coordenada (vértice)
+- 'brush.lineTo(x, y)': função do pincel que traça uma linha do vértice atual ao parâmetro
+- 'brush.fill()': função do pincel que preenche o conteúdo entre os vértices
