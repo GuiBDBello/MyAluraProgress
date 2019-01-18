@@ -8,6 +8,8 @@
     pincel.fillRect(0, 0, 600, 400);
 
     var raio = 10;
+    var incremento = 10;
+    var decremento = 5;
 
     function desenhaCirculo(evento) {
 
@@ -16,12 +18,12 @@
 
         console.log(x + ',' + y);
 
-        if (evento.shiftKey && raio < 40) {
-           raio = raio + 10;
-        }
-
-        if (evento.altKey && raio > 10) {
-           raio = raio - 5;
+        if (evento.shiftKey && evento.altKey) {
+            alert('Pressione apenas uma tecla por vez, por favor!');
+        } else if (evento.shiftKey && raio + incremento <= 40) {
+           raio = raio + incremento;
+        } else if (evento.altKey && raio - decremento >= 10) {
+           raio = raio - decremento;
         }
 
         pincel.fillStyle = 'blue';
