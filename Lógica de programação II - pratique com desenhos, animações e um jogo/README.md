@@ -34,3 +34,9 @@
 
 - 'brush.strokeStyle': propriedade do pincel que define a cor da borda
 - 'brush.strokeRect(x, y, largura, altura)': função do pincel que desenha uma borda
+
+
+### Atividade 06 - Frações:
+
+- 'brush.font = "tamanhopx fonte"': propriedade do pincel que define o tamanho da fonte e o tipo da fonte
+- 'brush.fillText("texto", x, y)': função do pincel que define um texto e as coordenadas do local onde ele deve renderizar
