@@ -1,5 +1,11 @@
-<canvas width="640" height="480"></canvas>
+<canvas width="1280" height="720"></canvas>
 
 <script>
-	
+
+	var canvas = document.querySelector("canvas");
+	var brush = canvas.getContext("2d");
+
+	brush.fillStyle = "lightgrey";
+	brush.fillRect(0, 0, 640, 480);
+
 </script>
