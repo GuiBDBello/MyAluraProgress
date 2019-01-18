@@ -64,3 +64,7 @@
 ### Atividade 05 - Era uma vez uma bolinha que virou um bolão!:
 
 - 'evento.shiftKey': propriedade do evento que retorna 'true' quando a tecla 'Shift' está sendo pressionada
+
+### Atividade 07 - O bolão que deseja emagrecer!:
+
+- 'evento.altKey': propriedade do evento que retorna 'true' quando a tecla 'Alt' está sendo pressionada
