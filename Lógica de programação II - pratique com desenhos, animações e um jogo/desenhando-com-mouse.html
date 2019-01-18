@@ -9,11 +9,7 @@
 
     var pintando = false;
 
-    tela.onmousemove = desenhaCirculo;
-    tela.onmousedown = habilitaPintar;
-    tela.onmouseup = desabilitaPintar;
-
-    function desenhaCirculo(evento) {
+    tela.onmousemove = function desenhaCirculo(evento) {
         if (pintando) {
             var x = evento.pageX - tela.offsetLeft;
             var y = evento.pageY - tela.offsetTop;
@@ -25,11 +21,10 @@
         }
     }
 
-    function habilitaPintar(evento) {
+    tela.onmousedown = function () {
         pintando = true;
     }
-
-    function desabilitaPintar(evento) {
+    tela.onmouseup = function () {
         pintando = false;
     }
 
