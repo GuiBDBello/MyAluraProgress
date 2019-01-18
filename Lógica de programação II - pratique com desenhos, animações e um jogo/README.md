@@ -78,3 +78,7 @@
 #### Funções anônimas:
 
 - Uma função anônima é uma função que não possui nome, e não pode existir solta. Ela deve ser atribuída diretamente a uma variável ou propriedade
+
+### Atividade 09 - Desenhando com o mouse com infinitas cores:
+
+- '&lt;input type="color"&gt;': botão que mostra uma paleta de cores para selecioná-las
