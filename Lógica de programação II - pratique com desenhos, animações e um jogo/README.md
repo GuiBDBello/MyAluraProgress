@@ -74,3 +74,7 @@
 - 'canvas.onmousemove': propriedade do canvas que define quando o mouse está se movimentando sob o canvas
 - 'canvas.onmousedown': propriedade do canvas que define quando o botão esquerdo do mouse está sendo pressionado
 - 'canvas.onmouseup': propriedade do canvas que define quando o botão esquerdo parou de ser pressionado
+
+#### Funções anônimas:
+
+- Uma função anônima é uma função que não possui nome, e não pode existir solta. Ela deve ser atribuída diretamente a uma variável ou propriedade
