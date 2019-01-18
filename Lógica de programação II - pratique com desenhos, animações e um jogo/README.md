@@ -49,3 +49,10 @@
 - Quando uma função é associada ao 'onclick', o navegador envia um parâmetro à função, e é possível acessar esse evento desde que exista um parâmetro na função atribuída ao 'onclick'
 - É o navegador quem define o parâmetro 'evento'
 - 'MouseEvent': é o nome do evento acionado quando ocorre um clique do mouse em um elemento com a propriedade 'onclick' definida
+
+### Atividade 02 - Mouse, diga-me em que posição estás:
+
+- 'event.pageX': propriedade do evento que representa um pixel no eixo X do canvas
+- 'event.pageY': propriedade do evento que representa um pixel no eixo Y do canvas
+- 'canvas.offsetLeft/canvas.offsetTop': propriedade do canvas que representa o deslocamento de um lado específico do canvas
+- Isso permite obter as coordenadas exatas do clique do mouse dentro de um canvas
