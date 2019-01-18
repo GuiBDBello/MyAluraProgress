@@ -7,6 +7,7 @@
         var y = evento.pageY - tela.offsetTop;
 
         pincel.beginPath();
+        pincel.fillStyle = cores[corAtiva];
         pincel.arc(x, y, 10, 0, 2 * 3.14);
         pincel.fill();
 
@@ -15,17 +16,8 @@
 
     function mudaCor() {
         corAtiva++;
-        if (corAtiva != 0 && corAtiva != 1 && corAtiva != 2) {
+        if (corAtiva >= cores.length) {
             corAtiva = 0;
-        }
-        if (corAtiva == 0) {
-            pincel.fillStyle = cores[0];
-        }
-        if (corAtiva == 1) {
-            pincel.fillStyle = cores[1];
-        }
-        if (corAtiva == 2) {
-            pincel.fillStyle = cores[2];
         }
         return false;
     }
@@ -38,7 +30,6 @@
 
     pincel.fillStyle = 'grey';
     pincel.fillRect(0, 0, 600, 400);
-    pincel.fillStyle = 'blue';
 
     tela.onclick = desenhaCirculo;
     tela.oncontextmenu = mudaCor;
