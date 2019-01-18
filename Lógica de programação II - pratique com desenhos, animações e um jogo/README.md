@@ -21,3 +21,8 @@
 - 'brush.moveTo(x, y)': função do pincel que define a posição do pincel numa coordenada (vértice)
 - 'brush.lineTo(x, y)': função do pincel que traça uma linha do vértice atual ao parâmetro
 - 'brush.fill()': função do pincel que preenche o conteúdo entre os vértices
+
+### Atividade 06 - Tem espaço para círculo também?:
+
+- 'brush.arc(x, y, raio, anguloInicial, anguloFinal)': função do pincel que define uma área circular a ser preenchida
+- Documentação da API Canvas 2D: https://developer.mozilla.org/pt-BR/docs/Web/API/CanvasRenderingContext2D
