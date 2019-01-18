@@ -60,3 +60,7 @@
 ### Atividade 04 - Trocando de cor:
 
 - 'canvas.oncontextmenu': propriedade do canvas que é chamada quando ocorre um clique com o botão **direito** do mouse
+
+### Atividade 05 - Era uma vez uma bolinha que virou um bolão!:
+
+- 'evento.shiftKey': propriedade do evento que retorna 'true' quando a tecla 'Shift' está sendo pressionada
