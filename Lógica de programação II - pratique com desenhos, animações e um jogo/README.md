@@ -82,3 +82,10 @@
 ### Atividade 09 - Desenhando com o mouse com infinitas cores:
 
 - '&lt;input type="color"&gt;': botão que mostra uma paleta de cores para selecioná-las
+
+
+## Aula 04 - Movendo elementos: animações simples
+
+### Atividade 01 - Desenhamos um círculo, e daí?:
+
+- 'Math.PI': função do Math que retorna o valor de PI (3.1415...)
