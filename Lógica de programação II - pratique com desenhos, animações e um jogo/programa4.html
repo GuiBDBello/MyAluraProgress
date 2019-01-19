@@ -9,6 +9,7 @@
     pincel.fillRect(0, 0, 600, 400);
 
     var x = -20;
+    var esquerdaParaDireita = true;
     setInterval(atualizaTela, 1);
 
     function desenhaCirculo(x, y, raio) {
@@ -23,14 +24,21 @@
     }
 
     function atualizaTela() {
+
     	limpaTela();
     	desenhaCirculo(x, 20, 10);
-    	x++;
-    	/*
-    	if (x > 650) {
-    		x = 0;
+
+    	if (x < 0) {
+    		esquerdaParaDireita = true;
+    	} else if (x > 600) {
+    		esquerdaParaDireita = false;
     	}
-    	 */
+
+    	if (esquerdaParaDireita) {
+    		x++;
+    	} else {
+    		x--;
+    	}
     }
 
 </script>
