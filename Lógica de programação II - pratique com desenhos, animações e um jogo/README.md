@@ -97,3 +97,7 @@
 ### Atividade 03 - Animações simples:
 
 - 'setInterval(nomeFuncao, tempoMilissegundos)': define um intervalo para executar uma função
+
+### Atividade 09 - Trocando bandeiras:
+
+- Invertendo um booleano: **Ex.:** booleano = !booleano;
