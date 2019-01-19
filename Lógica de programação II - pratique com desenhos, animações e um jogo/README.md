@@ -89,3 +89,7 @@
 ### Atividade 01 - Desenhamos um círculo, e daí?:
 
 - 'Math.PI': função do Math que retorna o valor de PI (3.1415...)
+
+### Atividade 02 - Desenhando:
+
+- 'brush.clearRect(x, y, largura, altura)': função do pincel que limpa um retângulo
