@@ -93,3 +93,7 @@
 ### Atividade 02 - Desenhando:
 
 - 'brush.clearRect(x, y, largura, altura)': função do pincel que limpa um retângulo
+
+### Atividade 03 - Animações simples:
+
+- 'setInterval(nomeFuncao, tempoMilissegundos)': define um intervalo para executar uma função
