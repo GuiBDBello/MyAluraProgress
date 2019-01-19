@@ -8,6 +8,7 @@
     pincel.fillStyle = 'lightgray';
     pincel.fillRect(0, 0, 600, 400);
 
+    limpaTela();
     desenhaCirculo(20, 20, 10);
 
     function desenhaCirculo(x, y, raio) {
@@ -15,6 +16,10 @@
     	pincel.beginPath();
     	pincel.arc(x, y, raio, 0, 2 * Math.PI);
     	pincel.fill();
+    }
+
+    function limpaTela() {
+    	pincel.clearRect(0, 0, 600, 400);
     }
 
 </script>
