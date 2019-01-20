@@ -101,3 +101,10 @@
 ### Atividade 09 - Trocando bandeiras:
 
 - Invertendo um booleano: **Ex.:** booleano = !booleano;
+
+
+## Aula 05 - Nosso primeiro jogo:
+
+### Atividade 02 - O alvo aleatório!:
+
+- 'Math.floor()': similar ao 'Math.round()', porém sempre arredonda o número para baixo
