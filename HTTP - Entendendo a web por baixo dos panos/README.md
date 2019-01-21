@@ -20,3 +20,10 @@
 * Entre o cliente e o servidor precisam haver regras de comunicação
 * As regras são definidas dentro de um protocolo
 * HTTP é o protocolo mais importante na internet
+
+### Atividade 07 - Para saber mais: Peer-To-Peer:
+
+> O modelo Cliente-Servidor tenta centralizar o trabalho no servidor, mas isso também pode gerar gargalos. Se cada Cliente pudesse ajudar no trabalho, ou seja, assumir um pouco da responsabilidade do servidor, seria muito mais rápido. Essa é a ideia do P2P! Não há mais uma clara divisão entre Cliente-Servidor, cada cliente também é servidor e vice-versa!
+
+- Isto é útil quando você precisa distribuir um trabalho ou necessita baixar algo de vários lugares diferentes. Faz sentido?
+- Usando algum aplicativo de Torrent, o protocolo utilizado não é o HTTP, e sim o protocolo P2P, como BitTorrent ou Gnutella.
