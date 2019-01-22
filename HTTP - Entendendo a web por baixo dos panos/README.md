@@ -103,3 +103,26 @@ Para essa atividade, utilizaremos como referência o endereço ' http://www.alur
 
 - Tl;dr: Uma URL é uma URI. No contexto do desenvolvimento web, ambas as siglas são válidas para falar de endereços na web. As siglas são praticamente sinônimos e são utilizadas dessa forma
 - Uma URL é uma URI, mas nem todas as URI's são URL's! Existem URI's que identificam um recurso sem definir o endereço, nem o protocolo. Em outras palavras, uma URL representa uma identificação de um recurso (URI) através do endereço, mas nem todas as identificações são URL's.
+
+
+## Aula 04 - O cliente pede e o servidor responde
+
+### Atividade 01 - Modelo Requisição e Resposta:
+
+- HTTP é '*Stateless*', ou seja, cada requisição é única, não reutiliza dados de requisições anteriores
+- O servidor, ao verificar credenciais de acesso, retorna um "código" ao cliente, para não ser necessário verificar as mesmas credenciais a cada requisição
+- Esse código é o conceito de 'Sessão'
+
+#### Sessão:
+
+- Maneira de lidar com um usuário logado
+- Uma sessão salva informações do usuário
+
+#### Cookies:
+
+- Informações guardadas no navegador durante uma sessão, como credenciais de acesso
+
+#### HTTP (REQUEST-RESPONSE):
+
+- O protocolo HTTP segue o modelo **Requisição-Resposta**
+- Uma requisição precisa ter todas as informações para o servidor gerar a resposta
