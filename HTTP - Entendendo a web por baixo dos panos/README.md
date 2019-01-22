@@ -68,3 +68,18 @@
 - A chave simétrica é enviada ao servidor utilizando a criptografia assimétrica, e então é utilizada para o restante da comunicação
 - Ou seja, o HTTPS começa com criptografia **assimétrica** para depois mudar para criptografia **simétrica**
 - A chave simétrica é gerada no início da comunicação e reaproveitada nas requisições seguintes
+
+
+## Aula 03 - Endereços sob seu domínio
+
+### Atividade 01 - Endereços:
+
+Para essa atividade, utilizaremos como referência o endereço ' http://www.alura.com.br '
+- 'Domínio': Olhando da direita para a esquerda, o domínio é o 'br'. Representa o *top level domain*, a raíz do domínio
+- 'Subdomínio': www.alura.com é um sub-domínio. 'www' é um sub-domínio opcional
+- Implicitamente, as máquinas na internet utilizam os endereços de IP para comunicarem-se. Podemos obter o endereço de IP de um site rodando o comando:
+`nslookup 'endereco'`: traz informações de um site, como nome/domínio e endereço IP
+
+#### DNS:
+
+- **Domain Name System**: serviço que resolve o nome de um domínio, retornando implicitamente um endereço IP
