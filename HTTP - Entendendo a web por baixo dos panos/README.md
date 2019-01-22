@@ -83,3 +83,7 @@ Para essa atividade, utilizaremos como referência o endereço ' http://www.alur
 #### DNS:
 
 - **Domain Name System**: serviço que resolve o nome de um domínio, retornando implicitamente um endereço IP
+
+### Atividade 04 - Portas:
+
+- 'http\://sub-dominio.dominio.top-level-domain**:80**': A porta é definida após o *top level domain*, pelos caracteres dois pontos (:) e o número da porta (padrão HTTP **:80**, padrão HTTPS **:443**)
