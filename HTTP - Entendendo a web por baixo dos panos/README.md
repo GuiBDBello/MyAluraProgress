@@ -39,3 +39,12 @@
 - Nas ferramentas do desenvolvedor (F12), a aba 'Network' mostra todas as requisições que o navegador realizou
 - O HTTP envia texto puro, enquanto o HTTPS implementa uma camada a mais de segurança
 - Essa camada se chama SSL/TLS (*Secure Sockets Layer/Transport Layer Security*)
+
+### Atividade 03 - Funcionamento do HTTPS:
+
+- Para o navegador reconhecer o protocolo HTTPS de um site, é necessário que o site possua uma identidade
+- Essa identidade, na web, é chamada de 'Certificado Digital'
+- O certificado digital possui uma chave pública, que serve para criptografar os dados que o navegador envia ao servidor
+- No servidor, uma chave privada descriptografa esses dados
+- Nas ferramentas do desenvolvedor (F12), a aba 'Security' possui os certificados da página, que mostram dados como a validade do certificado
+- O certificado digital é emitido por uma 'Autoridade Certificadora', que é um órgão/entidade confiável, que garante a identidade do site e a validade do certificado
