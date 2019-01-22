@@ -98,3 +98,8 @@ Para essa atividade, utilizaremos como referência o endereço ' http://www.alur
 #### URL:
 
 - **Uniform Resource Locator**: `protocolo://dominio:porta/caminho/recurso`
+
+### Atividade 09 - Para saber mais: URI ou URL?:
+
+- Tl;dr: Uma URL é uma URI. No contexto do desenvolvimento web, ambas as siglas são válidas para falar de endereços na web. As siglas são praticamente sinônimos e são utilizadas dessa forma
+- Uma URL é uma URI, mas nem todas as URI's são URL's! Existem URI's que identificam um recurso sem definir o endereço, nem o protocolo. Em outras palavras, uma URL representa uma identificação de um recurso (URI) através do endereço, mas nem todas as identificações são URL's.
