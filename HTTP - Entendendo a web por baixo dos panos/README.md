@@ -27,3 +27,15 @@
 
 - Isto é útil quando você precisa distribuir um trabalho ou necessita baixar algo de vários lugares diferentes. Faz sentido?
 - Usando algum aplicativo de Torrent, o protocolo utilizado não é o HTTP, e sim o protocolo P2P, como BitTorrent ou Gnutella.
+
+
+## Aula 02 - A web segura - HTTPS
+
+### Atividade 01 - HTTPS - A versão segura do HTTP:
+
+#### Requisição:
+
+- São dados enviados do navegador ao servidor
+- Nas ferramentas do desenvolvedor (F12), a aba 'Network' mostra todas as requisições que o navegador realizou
+- O HTTP envia texto puro, enquanto o HTTPS implementa uma camada a mais de segurança
+- Essa camada se chama SSL/TLS (*Secure Sockets Layer/Transport Layer Security*)
