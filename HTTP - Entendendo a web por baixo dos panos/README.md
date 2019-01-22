@@ -48,3 +48,23 @@
 - No servidor, uma chave privada descriptografa esses dados
 - Nas ferramentas do desenvolvedor (F12), a aba 'Security' possui os certificados da página, que mostram dados como a validade do certificado
 - O certificado digital é emitido por uma 'Autoridade Certificadora', que é um órgão/entidade confiável, que garante a identidade do site e a validade do certificado
+
+### Atividade 07 - Para Saber Mais: As chaves do HTTPS:
+
+#### Assimétrica:
+
+- Duas chaves envolvidas (pública e privada)
+- É segura, porém lenta
+
+#### Simétrica:
+
+- Uma chave apenas
+- É rápida, porém não tão segura
+
+#### HTTPS:
+
+- O HTTPS utiliza ambas, simétrica e assimétrica
+- É gerada uma chave simétrica em tempo de execução, apenas para o cliente e o servidor que se comunicam naquele momento
+- A chave simétrica é enviada ao servidor utilizando a criptografia assimétrica, e então é utilizada para o restante da comunicação
+- Ou seja, o HTTPS começa com criptografia **assimétrica** para depois mudar para criptografia **simétrica**
+- A chave simétrica é gerada no início da comunicação e reaproveitada nas requisições seguintes
