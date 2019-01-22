@@ -126,3 +126,10 @@ Para essa atividade, utilizaremos como referência o endereço ' http://www.alur
 
 - O protocolo HTTP segue o modelo **Requisição-Resposta**
 - Uma requisição precisa ter todas as informações para o servidor gerar a resposta
+
+### Atividade 04 - O que é um cookie?
+
+- É um pequeno arquivo de texto, normalmente criado pela aplicação web, para guardar algumas informações sobre usuário no navegador
+- Para visualizar um cookie (Google Chrome): 
+
+> Configurações -> Privacidade -> Configurações de conteúdo... -> Todos os cookies e dados de site...
