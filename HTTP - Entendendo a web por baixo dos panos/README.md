@@ -87,3 +87,14 @@ Para essa atividade, utilizaremos como referência o endereço ' http://www.alur
 ### Atividade 04 - Portas:
 
 - 'http\://sub-dominio.dominio.top-level-domain**:80**': A porta é definida após o *top level domain*, pelos caracteres dois pontos (:) e o número da porta (padrão HTTP **:80**, padrão HTTPS **:443**)
+
+### Atividade 06 - Recursos:
+
+- URL são endereços da WEB
+- Uma URL começa com o **protocolo** (http://), seguido pelo **domínio** (\w\w\w.alura.com.br)
+- Após o domínio (e a porta, caso explícita) é especificado o caminho para um **recurso** (course/http-fundamentos)
+- Recurso é algo concreto que pode ser acessado
+
+#### URL:
+
+- **Uniform Resource Locator**: `protocolo://dominio:porta/caminho/recurso`
