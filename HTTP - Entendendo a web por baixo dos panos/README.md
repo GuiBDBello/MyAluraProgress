@@ -201,3 +201,11 @@ Para essa atividade, utilizaremos como referência o endereço ' http://www.alur
 #### Parâmetros com Método POST:
 
 - Com o Método 'POST' o navegador envia os dados no corpo da requisição, e não na URL
+
+### Atividade 09 - Para saber mais: Outros métodos HTTP e Web Services:
+
+#### Web Service:
+
+Um Web Service disponibiliza uma funcionalidade na web, através do protocolo HTTP
+
+- Os dados de um Web Service não são retornados em HTML; eles são retornados num formato independente da visualização, como XML ou JSON
