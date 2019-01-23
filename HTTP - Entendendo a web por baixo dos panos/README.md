@@ -184,3 +184,20 @@ Para essa atividade, utilizaremos como referência o endereço ' http://www.alur
 - https://http.cat/
 
 - https://httpstatuses.com/
+
+
+## Aula 06 - Parâmetros da requisição
+
+### Atividade 03 - Parâmetros na requisição com métodos GET e POST:
+
+- O parâmetro na URL é indicado após o caractere '?'
+- Pode-se concatenar vários parâmetros utilizando o caractere '&'
+
+#### Parâmetros com Método GET:
+
+- Uma característica da requisição 'GET' é enviar os parâmetros pela URL. Isso é útil caso a URL queira ser guardada, ou compartilhada
+- **Ex.:** `https://www.youtube.com/results?search_query=Algum+Video`, onde o parâmetro é 'search_query'
+
+#### Parâmetros com Método POST:
+
+- Com o Método 'POST' o navegador envia os dados no corpo da requisição, e não na URL
