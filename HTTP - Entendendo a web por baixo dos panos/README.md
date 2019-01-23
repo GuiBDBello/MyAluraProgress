@@ -177,3 +177,10 @@ Para essa atividade, utilizaremos como referência o endereço ' http://www.alur
 - 3xx: Redirection messages
 - 4xx: Client error responses
 - 5xx: Server error responses
+
+### Atividade 11 - Para saber mais: Mais códigos HTTP:
+
+- https://httpstatusdogs.com/
+- https://http.cat/
+
+- https://httpstatuses.com/
