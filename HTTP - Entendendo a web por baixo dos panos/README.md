@@ -133,3 +133,33 @@ Para essa atividade, utilizaremos como referência o endereço ' http://www.alur
 - Para visualizar um cookie (Google Chrome): 
 
 > Configurações -> Privacidade -> Configurações de conteúdo... -> Todos os cookies e dados de site...
+
+
+## Aula 05 - Depurando a requisição HTTP
+
+### Atividade 01 - Depurando o método HTTP:
+
+- Abrir as 'Ferramentas do desenvolvedor' (F12 / Ctrl + Shift + I) na aba 'Network'
+- Ao carregar a página, aparecerão todas as requisições que o navegador realizou
+- Aparecem informações de cada requisição, como 'Nome', 'Status', 'Tamanho', 'Duração'...
+- Ao selecionar uma requisição, são mostradas informações como o 'Método da requisição', 'Código do Status', 'Endereço IP', 'Data'...
+- Ao clicar com o botão direito do mouse na primeira linha (onde estão os nomes das colunas) podem ser alterados os dados das requisições que serão mostrados
+- Ao realizar uma requisição HTTP, normalmente é retornado pelo servidor uma resposta em formato HTML, que seria a página da web
+- Cada novo recurso (seja Javascript, CSS, imagens) é uma nova requisição que o navegador efetua
+
+#### Método GET do HTTP:
+
+- É utilizado para **receber informações**, sem modificar algo no servidor
+
+#### Código de resposta (Status):
+
+- 200: Sucess
+- 301: Moved Permanently
+- 404: Not found
+
+#### Redirecionando entre sites:
+
+- Ao realizar uma requisição ao alura utilizando HTTP, automaticamente é chamado o site seguro HTTPS
+- Isso acontece pois o servidor retorna o 'Status' 301, com a nova localização
+- Esse comportamento é chamado de *Redirecionamento pelo navegador*, ou **Redirecionamento no lado do cliente**
+- Quando ocorre esse comportamento (Status 301), é adicionado também o cabeçalho 'Location'
