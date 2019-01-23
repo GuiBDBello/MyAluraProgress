@@ -209,3 +209,12 @@ Para essa atividade, utilizaremos como referência o endereço ' http://www.alur
 Um Web Service disponibiliza uma funcionalidade na web, através do protocolo HTTP
 
 - Os dados de um Web Service não são retornados em HTML; eles são retornados num formato independente da visualização, como XML ou JSON
+
+### Atividade 10 - O que aprendemos?
+
+- GET: Receber dados (params na URL)
+- POST: Submeter dados (params no corpo da requisição)
+- DELETE: Remover um recurso
+- PUT: Atualizar um recurso
+
+- Ao desenvolver aplicações web, na maioria dos casos utiliza-se apenas 'GET' e 'POST'. Já quando trabalha-se com serviços (Web Services), são frequentemente utilizados os métodos 'DELETE' e 'PUT'
