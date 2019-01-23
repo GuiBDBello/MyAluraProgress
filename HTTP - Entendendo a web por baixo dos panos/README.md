@@ -153,17 +153,27 @@ Para essa atividade, utilizaremos como referência o endereço ' http://www.alur
 
 #### Código de resposta (Status):
 
-- 200: Sucess
+- 200: OK
 - 301: Moved Permanently
-- 404: Not found
+- 404: Not Found
+- 500: Internal Server Error
 
 #### Redirecionando entre sites:
 
 - Ao realizar uma requisição ao alura utilizando HTTP, automaticamente é chamado o site seguro HTTPS
 - Isso acontece pois o servidor retorna o 'Status' 301, com a nova localização
 - Esse comportamento é chamado de *Redirecionamento pelo navegador*, ou **Redirecionamento no lado do cliente**
-- Quando ocorre esse comportamento (Status 301), é adicionado também o cabeçalho 'Location'
+- Quando ocorre esse comportamento (Status 301), é adicionado também o cabeçalho 'Location', que indica para onde o navegador realizará uma nova requisição
 
 ### Atividade 03 - Código de sucesso:
 
 - A tabela completa de mensagens HTTP pode ser vista em: https://www.w3schools.com/tags/ref_httpmessages.asp
+
+### Atividade 05 - Depurando os códigos de resposta HTTP:
+
+#### Status Code:
+
+- 2xx: Successful responses
+- 3xx: Redirection messages
+- 4xx: Client error responses
+- 5xx: Server error responses
