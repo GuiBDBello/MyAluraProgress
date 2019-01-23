@@ -218,3 +218,21 @@ Um Web Service disponibiliza uma funcionalidade na web, através do protocolo HT
 - PUT: Atualizar um recurso
 
 - Ao desenvolver aplicações web, na maioria dos casos utiliza-se apenas 'GET' e 'POST'. Já quando trabalha-se com serviços (Web Services), são frequentemente utilizados os métodos 'DELETE' e 'PUT'
+
+
+## Aula 07 - Serviços na web com REST
+
+### Atividade 01 - Serviços Web -REST:
+
+- As aplicações que disponibilizam serviços para outras são chamadas de webservices
+- Uma API de utilização é documentada para uma integração eficiente entre sistemas
+- Um serviço (web service) normalmente envia o retorno no formato em XML/JSON
+
+#### XML (eXtensible Markup Language):
+
+- Linguagem de marcação que trabalha com dados em um modelo hierárquico
+
+#### JSON (Javascript Object Notation):
+
+- Notação Javascript para Orientação a Objetos, baseado em 'chave-valor' e array
+- No lado do cliente (aplicação), pode-se indicar o formato de resposta que é aceita pelo servidor
