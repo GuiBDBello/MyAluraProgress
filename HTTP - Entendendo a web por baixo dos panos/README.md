@@ -264,3 +264,11 @@ Modelo arquitetural REST:
 #### Representação:
 
 - Quando fazemos uma aplicação não trafegamos um recurso pela rede, apenas uma representação dele. E essa representação pode ser feita de diferentes formas como JSON, XML ou HTML.
+
+### Atividade 08 - O que aprendemos?
+
+- REST é um padrão arquitetural para comunicações entre aplicações
+- Ele aproveita a estrutura do HTTP
+- Recursos são definidos via URI
+- Operações com métodos HTTP(GET/POST/PUT/DELETE)
+- Cabeçalhos(Accept/Content-Type) são usados para especificar as representações(JSON,XML,...)
