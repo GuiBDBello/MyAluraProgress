@@ -163,3 +163,7 @@ Para essa atividade, utilizaremos como referência o endereço ' http://www.alur
 - Isso acontece pois o servidor retorna o 'Status' 301, com a nova localização
 - Esse comportamento é chamado de *Redirecionamento pelo navegador*, ou **Redirecionamento no lado do cliente**
 - Quando ocorre esse comportamento (Status 301), é adicionado também o cabeçalho 'Location'
+
+### Atividade 03 - Código de sucesso:
+
+- A tabela completa de mensagens HTTP pode ser vista em: https://www.w3schools.com/tags/ref_httpmessages.asp
