@@ -303,5 +303,28 @@ application -> application/xml,  application/pdf`
 - O conteúdo HTML (corpo da resposta) é comprimido pelo GZIP, cujo objetivo é diminuir a quantidade de informações trafegadas (principalmente nos 'Smartphones')
 
 - O HTTP2 não envia texto puro, envia binário
-- O HTTP2 possui outro algoritmo para compressão dos dados binários, chamado HPACK
+- O HTTP2 possui outro algoritmo para compressão dos dados binários, chamado HPACK (utilizado para comprimir os Headers da comunicação HTTP/2)
 - Além disso, o HTTP2 também criptografa os dados com TLS
+- Documentação HTTP2: https://http2.github.io/
+
+### Atividade 05 - HTTP2 - Cabeçalhos Stateful:
+
+- Requisição HTTP:
+
+`GET      /
+Host: www.caelum.com.br
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:34.0)
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate`
+
+- Host: domínio que a Requisição foi enviada
+- User-Agent: fonte da Requisição (usuário/cliente)
+- Accept: formato de Resposta aceito
+- Accept-Language: linguagem de Resposta aceita
+- Accept-Encoding: tipo de compressão aceito
+
+#### HEADERS STATEFUL:
+
+- No HTTP2, não é necessário repetir os 'Headers' enviados numa Requisição passada, como era necessário na versão anterior. São enviados apenas os 'Headers' que são diferentes da Requisição anterior
+- Ao contrário do HTTP, que foi demonstrado no curso como *Stateless*, os 'Headers' do HTTP2 guardam o estado dos cabeçalhos (deixando a requisição mais leve). Por isso são chamados de *Headers Stateful*
