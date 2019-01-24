@@ -334,3 +334,14 @@ Accept-Encoding: gzip, deflate`
 #### Server Push:
 
 - Enquanto no HTTP é necessário fazer uma Requisição a cada Recurso da página (Requisições Seriais), o HTTP2 realiza apenas uma Requisição e retorna todos os Recursos necessários. Essa "prevenção" de Requisições é denominada *Server Push*
+
+### Atividade 09 - HTTP2 - Multiplexação:
+
+#### TCP:
+
+- Cada Requisição no HTTP1.1 realiza uma conexão TCP. Existe, porém, um "mecanismo" chamado *Keep-alive*, que permite que, com a mesma conexão TCP, seja possível realizar várias Requisições
+- Simultaneamente, o HTTP1.1 realiza de 4 a 8 conexões TCP
+
+#### Multiplexing:
+
+- O HTTP2 continua utilizando o *Keep-alive*, porém agora realiza Requisições de maneira **Assíncrona**, ou seja, ele não aguarda o término de uma Requisição para realizar a próxima
