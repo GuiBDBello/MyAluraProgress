@@ -345,3 +345,13 @@ Accept-Encoding: gzip, deflate`
 #### Multiplexing:
 
 - O HTTP2 continua utilizando o *Keep-alive*, porém agora realiza Requisições de maneira **Assíncrona**, ou seja, ele não aguarda o término de uma Requisição para realizar a próxima
+
+### Atividade 10 - HTTP2 - Resumo:
+
+- Atua sobre o que já se conhece de HTTP: os conceitos não mudam
+- Hoje, o que o HTTP2 especifica é mais a nível de servidor
+- Headers binários e comprimidos (HPACK)
+- GZIP padrão na resposta
+- Multiplexing (Requisição e respostas são paralelas)
+- Headers Stateful (Mandamos apenas os cabeçalhos que mudam)
+- Server-Push (envia dados sem o cliente pedir): analisa o HTML e "prevê" os recursos, enviando-os precocemente (antes do cliente pedir)
