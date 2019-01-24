@@ -278,9 +278,11 @@ Modelo arquitetural REST:
 - Em alguns cabeçalhos do HTTP devemos especificar algum formato. Os formatos são chamados na documentação de **MIME types**. E na definição do cabeçalho usamos a seguinte estrutura: tipo/subtipo.
 
 São tipos conhecidos:
+
 `text, image, application, audio e video`
 
 E alguns subtipos:
+
 `text -> text/plain, text/html, text/css, text/javascript
 image -> image/gif, image/png, image/jpeg
 audio -> audio/midi, audio/mpeg, audio/webm, audio/ogg, audio/wav
@@ -288,3 +290,18 @@ video -> video/mp4
 application -> application/xml,  application/pdf`
 
 - Outros formatos: https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types
+
+
+## Aula 08 - HTTP2 - Por uma web mais eficiente
+
+### Atividade 01 - HTTP2 - Dados binários, GZIP ativo e TLS:
+
+#### CURL:
+
+- Programa que efetua uma requisição de fora do browser
+- `curl -v www.dominio.com`: faz uma requisição "verbosa" ao site digitado. Essa chamada mostra dados HTTP como a requisição, URL, usuário que realizou a chamada, além da resposta do servidor e os headers da 'Request' e da 'Response'
+- O conteúdo HTML (corpo da resposta) é comprimido pelo GZIP, cujo objetivo é diminuir a quantidade de informações trafegadas (principalmente nos 'Smartphones')
+
+- O HTTP2 não envia texto puro, envia binário
+- O HTTP2 possui outro algoritmo para compressão dos dados binários, chamado HPACK
+- Além disso, o HTTP2 também criptografa os dados com TLS
