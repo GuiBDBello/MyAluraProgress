@@ -328,3 +328,9 @@ Accept-Encoding: gzip, deflate`
 
 - No HTTP2, não é necessário repetir os 'Headers' enviados numa Requisição passada, como era necessário na versão anterior. São enviados apenas os 'Headers' que são diferentes da Requisição anterior
 - Ao contrário do HTTP, que foi demonstrado no curso como *Stateless*, os 'Headers' do HTTP2 guardam o estado dos cabeçalhos (deixando a requisição mais leve). Por isso são chamados de *Headers Stateful*
+
+### Atividade 07 - HTTP2 - Server Push:
+
+#### Server Push:
+
+- Enquanto no HTTP é necessário fazer uma Requisição a cada Recurso da página (Requisições Seriais), o HTTP2 realiza apenas uma Requisição e retorna todos os Recursos necessários. Essa "prevenção" de Requisições é denominada *Server Push*
