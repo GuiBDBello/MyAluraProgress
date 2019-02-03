@@ -18,3 +18,11 @@
 - querySelector(""): função do 'document' que retorna uma pesquisa do elemento da página equivalente ao parâmetro da função;
 - É uma boa prática colocar os scripts no final do corpo da página, para garantir que os elementos estejam carregados quando forem chamados;
 - textContent: propriedade de um elemento com o conteúdo de texto dele;
+
+### Atividade 08 - Boas Práticas:
+
+#### Query Selector:
+
+- Além da tag, a função querySelector("") também aceita receber, como parâmetro, um id, classe ou seletor CSS;
+
+- É uma boa prática separar todo o código JavaScript do código HTML e do código CSS. Para isso, cria-se um documento de extensão .js, e chama-o no HTML da página desejada;
