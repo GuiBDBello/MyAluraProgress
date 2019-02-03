@@ -26,3 +26,10 @@
 - Além da tag, a função querySelector("") também aceita receber, como parâmetro, um id, classe ou seletor CSS;
 
 - É uma boa prática separar todo o código JavaScript do código HTML e do código CSS. Para isso, cria-se um documento de extensão .js, e chama-o no HTML da página desejada;
+
+
+## Aula 02 - Variáveis e Operadores
+
+### Atividade 01 - Buscando dados do paciente:
+
+- É possível utilizar o 'querySelector("")' em uma variável que não seja o 'document';
