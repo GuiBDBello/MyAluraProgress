@@ -6,11 +6,6 @@
 		<link rel="icon" href="favicon.ico" type="image/x-icon">
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
 		<link rel="stylesheet" type="text/css" href="css/index.css">
-
-		<script>
-			alert("Olá Mundo");
-			console.log("Olá Mundo");
-		</script>
 	</head>
 	<body>
 
@@ -77,5 +72,12 @@
 			</section>
 		</main>
 
+		<script>
+			var titulo = document.querySelector("h1");
+			console.log(titulo);
+			console.log(titulo.textContent);
+
+			titulo.textContent = "Aparecida Nutricionista";
+		</script>
 	</body>
 </html>
