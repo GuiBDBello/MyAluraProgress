@@ -33,3 +33,13 @@
 ### Atividade 01 - Buscando dados do paciente:
 
 - É possível utilizar o 'querySelector("")' em uma variável que não seja o 'document';
+
+
+## Aula 03 - Arrays, Loop e Estilos
+
+### Replicando a validação e o cálculo do IMC para todos os pacientes:
+
+- querySelector(""): retorna apenas um elemento;
+- querySelectorAll(""): retorna um vetor com todos os elementos;
+- variavel.length: propriedade de um vetor que representa o seu número de posições;
+- variavel.toFixed(numero): função retorna o valor de 'variavel' com a quantidade de casas decimais do parâmetro 'numero';
