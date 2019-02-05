@@ -37,9 +37,20 @@
 
 ## Aula 03 - Arrays, Loop e Estilos
 
-### Replicando a validação e o cálculo do IMC para todos os pacientes:
+### Atividade 01 - Replicando a validação e o cálculo do IMC para todos os pacientes:
 
 - querySelector(""): retorna apenas um elemento;
 - querySelectorAll(""): retorna um vetor com todos os elementos;
 - variavel.length: propriedade de um vetor que representa o seu número de posições;
 - variavel.toFixed(numero): função retorna o valor de 'variavel' com a quantidade de casas decimais do parâmetro 'numero';
+
+### Atividade 02 - Estilos com JavaScript:
+
+- É possível alterar o 'style' de um elemento HTML no JavaScript, utilizando 'elemento.style';
+- Deve-se escolher uma propriedade a ser alterada, como 'elemento.style.propriedade';
+- Propriedades com mais de uma palavra devem ser escritas em camelCase;
+- **Ex.:** paciente.style.backgroundColor = "red";
+
+- Porém, não é uma boa prática alterar o estilo diretamente pelo JavaScript;
+- Para melhorar isso, deve-se criar uma nova classe no arquivo .css;
+- Após, utilizar 'elemento.classList.add()' para adicionar uma nova classe ao elemento;
