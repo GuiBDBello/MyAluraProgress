@@ -54,3 +54,12 @@
 - Porém, não é uma boa prática alterar o estilo diretamente pelo JavaScript;
 - Para melhorar isso, deve-se criar uma nova classe no arquivo .css;
 - Após, utilizar 'elemento.classList.add()' para adicionar uma nova classe ao elemento;
+
+
+## Aula 04 - Eventos, Formulários e Criando Elementos
+
+### Atividade 01 - Escutando eventos:
+
+- elemento.addEventListener("click", nomeFuncao): adiciona um "ouvinte" de clique em um elemento, esperando uma ação de clique. Quando for clicado, executa a função do segundo parâmetro;
+- function() { ...código... }: essa declaração de função é chamada de "Função Anônima". Ela possui esse nome pois não tem uma assinatura;
+- Porém, ao adicionar o "ouvinte" no botão e clicá-lo, nada acontece. Isso ocorre pois o botão está dentro de um Formulário (&lt;form&gt;), e ao confirmar o envio do Formulário (clique do botão) a página é recarregada, e perde-se qualquer log ou alteração nela;
