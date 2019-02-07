@@ -68,3 +68,9 @@
 
 - event.preventDefault(): previne o comportamento padrão de um evento (no caso acima, envia o Formulário e recarrega a página);
 - Para isso, deve-se passar um 'event' no parâmetro de uma função, e executar o código acima no corpo da função;
+
+### Atividade 06 - Adicionando pacientes na tabela:
+
+- Ao utilizar um 'querySelector()'' em um Formulário (&lt;form&gt;), é possível (caso exista a propriedade 'name') obter os valores dos campos (&lt;input&gt;) desse Formulário;
+- document.createElement("tag"): cria um elemento vazio no HTML;
+- elementoPai.appendChild(elementoFilho): adiciona, no HTML, o 'elementoFilho' dentro de 'elementoPai';
