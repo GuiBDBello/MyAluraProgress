@@ -74,3 +74,10 @@
 - Ao utilizar um 'querySelector()'' em um Formulário (&lt;form&gt;), é possível (caso exista a propriedade 'name') obter os valores dos campos (&lt;input&gt;) desse Formulário;
 - document.createElement("tag"): cria um elemento vazio no HTML;
 - elementoPai.appendChild(elementoFilho): adiciona, no HTML, o 'elementoFilho' dentro de 'elementoPai';
+
+### Atividade 12 - Para saber mais: event shortcut:
+
+- É uma forma de adicionar uma função diretamente a um evento;
+- **Ex.1:** elemento.onclick = nomeFuncao;
+- **Ex.2:** elemento.onmouseover = function() { // código...; };
+- Vantagem: código mais limpo. Desvantagem: pode-se adicionar apenas uma função por evento, onde com um 'addEventListener()' é possível adicionar várias;
