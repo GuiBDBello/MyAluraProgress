@@ -81,3 +81,11 @@
 - **Ex.1:** elemento.onclick = nomeFuncao;
 - **Ex.2:** elemento.onmouseover = function() { // código...; };
 - Vantagem: código mais limpo. Desvantagem: pode-se adicionar apenas uma função por evento, onde com um 'addEventListener()' é possível adicionar várias;
+
+
+## Aula 05 - Boas Práticas com Javascript
+
+### Atividade 01 - Quebrando o código em arquivos diferentes:
+
+- É uma boa prática dividir o código por funcionalidades;
+- Essa divisão ocorre em arquivos, onde cada arquivo possui uma funcionalidade específica;
