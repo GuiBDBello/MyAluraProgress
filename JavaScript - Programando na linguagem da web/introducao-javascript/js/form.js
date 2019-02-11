@@ -32,13 +32,13 @@ botaoAdicionar.addEventListener("click", function(event) {
 	tdPeso.textContent = peso;
 	tdAltura.textContent = altura;
 	tdGordura.textContent = gordura;
-	//tdImc.textContent = imc;
+	tdImc.textContent = calculaImc(peso, altura);
 
 	trPaciente.appendChild(tdNome);
 	trPaciente.appendChild(tdPeso);
 	trPaciente.appendChild(tdAltura);
 	trPaciente.appendChild(tdGordura);
-	//trPaciente.appendChild(tdImc);
+	trPaciente.appendChild(tdImc);
 
 	var tabela = document.querySelector("#tabela-pacientes");
 	tabela.appendChild(trPaciente);

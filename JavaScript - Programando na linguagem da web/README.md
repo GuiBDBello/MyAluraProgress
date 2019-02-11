@@ -89,3 +89,9 @@
 
 - É uma boa prática dividir o código por funcionalidades;
 - Essa divisão ocorre em arquivos, onde cada arquivo possui uma funcionalidade específica;
+
+### Atividade 02 - Criando funções:
+
+- Uma Função é um bloco de código com uma *funcionalidade* específica;
+- Funções são utilizadas, principalmente, para melhorar o *reaproveitamento* do código;
+- 
