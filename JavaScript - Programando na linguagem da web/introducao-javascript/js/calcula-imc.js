@@ -4,7 +4,7 @@ titulo.textContent = "Aparecida Nutricionista";
 var pacientes = document.querySelectorAll(".paciente");
 
 for (var i = 0; i < pacientes.length; i++) {
-	console.log(pacientes[i]);
+	//console.log(pacientes[i]);
 
 	var paciente = pacientes[i];
 
