@@ -90,12 +90,16 @@
 - É uma boa prática dividir o código por funcionalidades;
 - Essa divisão ocorre em arquivos, onde cada arquivo possui uma funcionalidade específica;
 
-### Atividade 02 - Criando funções:
+### Atividade 03 - Criando funções:
 
 - Uma Função é um bloco de código com uma *funcionalidade* específica;
 - Funções são utilizadas, principalmente, para melhorar o *reaproveitamento* do código;
 
-### Atividade 03 - Criando um objeto paciente:
+### Atividade 04 - Criando um objeto paciente:
 
 - Objeto: um objeto representa alguma coisa do "mundo real" que possui características (propriedades) em comum;
 - **Ex.:** var objeto = { propriedade1: valor1, propriedade2: valor2 }
+
+### Atividade 06 - Melhorando ainda mais o código:
+
+- form.reset(): função de um Objeto de &lt;form&gt; que limpa todos os campos do Formulário;
