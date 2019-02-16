@@ -103,3 +103,11 @@
 ### Atividade 06 - Melhorando ainda mais o código:
 
 - form.reset(): função de um Objeto de &lt;form&gt; que limpa todos os campos do Formulário;
+
+
+## Aula 06 - Validação de Formulários
+
+### Atividade 01 - Validando os dados do formulário:
+
+- '!': operador lógico que representa **negação**;
+- 'return;': o retorno vazio sai da função;
