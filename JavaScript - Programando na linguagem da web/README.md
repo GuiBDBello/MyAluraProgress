@@ -42,7 +42,7 @@
 - querySelector(""): retorna apenas um elemento;
 - querySelectorAll(""): retorna um vetor com todos os elementos;
 - variavel.length: propriedade de um vetor que representa o seu número de posições;
-- variavel.toFixed(numero): função retorna o valor de 'variavel' com a quantidade de casas decimais do parâmetro 'numero';
+- variavel.toFixed(numero): função que retorna o valor de 'variavel' com a quantidade de casas decimais do parâmetro 'numero';
 
 ### Atividade 02 - Estilos com JavaScript:
 
@@ -102,7 +102,7 @@
 
 ### Atividade 06 - Melhorando ainda mais o código:
 
-- form.reset(): função de um Objeto de &lt;form&gt; que limpa todos os campos do Formulário;
+- form.reset(): função do elemento 'form' (&lt;form&gt;) que limpa todos os campos do Formulário;
 
 
 ## Aula 06 - Validação de Formulários
@@ -110,15 +110,15 @@
 ### Atividade 01 - Validando os dados do formulário:
 
 - '!': operador lógico que representa **negação**;
-- 'return;': o retorno vazio sai da função;
+- 'return;': retorno vazio, obriga a saída da função;
 
 ### Atividade 02 - Exibindo mensagens de erro:
 
-- array.push(conteudo): adiciona conteúdo em uma nova posição de um Array;
+- array.push(conteudo): adiciona 'conteudo' em uma nova posição de um 'array';
 
 ### Atividade 03 - Validando o restante dos campos:
 
-- array.forEach(function(item) { }): itera sobre um array, executando a função do parâmetro para cada item;
+- array.forEach(function(item) { }): itera sobre um 'array', executando a função do parâmetro para cada item desse array;
 - elemento.innerHTML = "": altera o HTML interno de um elemento;
 
 
@@ -129,4 +129,11 @@
 - dblclick: evento de duplo-clique do mouse;
 - **Ex.:** elemento.addEventListener("dblclick", function() { });
 - elemento.remove(): apaga o elemento do DOM;
-- this: palavra reservada do JavaScript que representa o contexto da ação atual em execução;
+- this: palavra reservada do JavaScript que representa o contexto atual da execução;
+
+### Atividade 03 - Delegando eventos:
+
+- Event Bubbling: ao adicionar um 'evento' em um 'elemento', sua ativação faz com que o 'evento' percorra todos os elementos-pai, até chegar ao &&lt;body&gt;, onde ele "estoura" (analogia com bolhas de gás de um refrigerante);
+- Ao criar um 'evento' em um 'elemento' é possível **Delegar** a atribuição do 'evento' ao mesmo 'elemento', fazendo-o atribuir a todos seus elementos-filho o 'evento' que lhe foi adicionado;
+- event.target: o 'elemento' que acionou o 'evento';
+- parentNode: propriedade de um 'elemento' que retorna seu 'elementoPai';
