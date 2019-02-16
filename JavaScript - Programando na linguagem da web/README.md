@@ -115,3 +115,8 @@
 ### Atividade 02 - Exibindo mensagens de erro:
 
 - array.push(conteudo): adiciona conteúdo em uma nova posição de um Array;
+
+### Atividade 03 - Validando o restante dos campos:
+
+- array.forEach(function(item) { }): itera sobre um array, executando a função do parâmetro para cada item;
+- elemento.innerHTML = "": altera o HTML interno de um elemento;
