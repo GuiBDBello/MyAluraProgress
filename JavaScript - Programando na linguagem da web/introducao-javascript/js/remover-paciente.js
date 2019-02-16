@@ -16,5 +16,7 @@ console.log(tabela);
 tabela.addEventListener("dblclick", function(event) {
 	//console.log(event.target);
 	//console.log(event.target.parentNode);
-	event.target.parentNode.remove();
+	event.target.parentNode.classList.add("fade-out");
+
+	setTimeout(function() { event.target.parentNode.remove(); }, 500);
 });
