@@ -120,3 +120,13 @@
 
 - array.forEach(function(item) { }): itera sobre um array, executando a função do parâmetro para cada item;
 - elemento.innerHTML = "": altera o HTML interno de um elemento;
+
+
+## Aula 07 - Remoção, Delegação e Animação
+
+### Atividade 01 - Removendo pacientes:
+
+- dblclick: evento de duplo-clique do mouse;
+- **Ex.:** elemento.addEventListener("dblclick", function() { });
+- elemento.remove(): apaga o elemento do DOM;
+- this: palavra reservada do JavaScript que representa o contexto da ação atual em execução;
