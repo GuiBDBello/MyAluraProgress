@@ -137,3 +137,7 @@
 - Ao criar um 'evento' em um 'elemento' é possível **Delegar** a atribuição do 'evento' ao mesmo 'elemento', fazendo-o atribuir a todos seus elementos-filho o 'evento' que lhe foi adicionado;
 - event.target: o 'elemento' que acionou o 'evento';
 - parentNode: propriedade de um 'elemento' que retorna seu 'elementoPai';
+
+### Atividade 06 - Animando a remoção do paciente:
+
+- setTimeout(function() { }, milissegundos): função JavaScript que "espera" um tempo (em 'milissegundos'), e após, executa uma função;
