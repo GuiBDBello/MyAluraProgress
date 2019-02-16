@@ -111,3 +111,7 @@
 
 - '!': operador lógico que representa **negação**;
 - 'return;': o retorno vazio sai da função;
+
+### Atividade 02 - Exibindo mensagens de erro:
+
+- array.push(conteudo): adiciona conteúdo em uma nova posição de um Array;
