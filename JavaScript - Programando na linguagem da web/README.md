@@ -141,3 +141,10 @@
 ### Atividade 06 - Animando a remoção do paciente:
 
 - setTimeout(function() { }, milissegundos): função JavaScript que "espera" um tempo (em 'milissegundos'), e após, executa uma função;
+
+
+## Aula 08 - Filtrando uma tabela
+
+### Atividade 01 - Filtrando os pacientes da tabela:
+
+- "input": Evento de entrada de dados, utilizado na função addEventListener("input", funcao);
