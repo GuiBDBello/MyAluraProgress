@@ -160,3 +160,10 @@
 - "i": Case Insensitive (realiza a busca sem levar em conta letras maiúsculas e minúsculas);
 - **Ex.:** expressao.test(texto);
 - Retorna um boolean, verificando se a expressão regular é verdadeira ou falsa;
+
+### Atividade 08 - Para saber mais: filtrando sem regex?:
+
+- substring(inicio, fim): extrai o valor de uma string a partir do caractere 'inicio', até o caractere anterior ao 'fim';
+- **Ex.:** nome.substr(0, this.value.length);
+- toLowerCase(): função que transforma todos os caracteres de uma string em caixa baixa (lower case);
+- **Ex.:** string.toLowerCase();
