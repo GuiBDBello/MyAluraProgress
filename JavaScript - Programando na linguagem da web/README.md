@@ -173,12 +173,12 @@
 
 ### Atividade 01 - Introdução ao AJAX:
 
-- XMLHttpRequest: objeto Javascript responsável por realizar requisições HTTP. Era utilizado para transportar arquivos XML, mas atualmente, além do XML, suporta outros tipos de dados;
+- XMLHttpRequest: Objeto Javascript responsável por realizar requisições HTTP. Era utilizado para transportar arquivos XML, mas atualmente, além do XML, suporta outros tipos de dados;
 - **Ex.:** var xhr = new XMLHttpRequest();
-- xhr.open("TIPO", "https://dominio.com/metodo"): função de um objeto 'XMLHttpRequest' que recebe como parâmetros o tipo de requisição e endereço de destino;
-- xhr.send(): função de um objeto 'XMLHttpRequest' que realiza o envio da requisição;
+- xhr.open("TIPO", "https://dominio.com/metodo"): função de um Objeto 'XMLHttpRequest' que recebe como parâmetros o tipo de requisição e endereço de destino;
+- xhr.send(): função de um Objeto 'XMLHttpRequest' que realiza o envio da requisição;
 - xhr.addEventListener("load", function() { }): evento que monitora a resposta da requisição;
-- xhr.responseText: propriedade de um objeto 'XMLHttpRequest' com a resposta da requisição;
+- xhr.responseText: propriedade de um Objeto 'XMLHttpRequest' com a resposta da requisição;
 
 ### Atividade 04 - Tratando a resposta da requisição:
 
@@ -186,3 +186,7 @@
 - JSON: JavaScript Object Notation;
 - JSON.parse(jsonText): transforma o texto de um JSON para um Objeto Javascript;
 - AJAX é uma forma de realizar uma requisição via Javascript de modo assíncrono;
+
+### Atividade 05 - Capturando erros de requisição:
+
+- xhr.status: propriedade de um Objeto 'XMLHttpRequest' com o código de retorno da requisição;
