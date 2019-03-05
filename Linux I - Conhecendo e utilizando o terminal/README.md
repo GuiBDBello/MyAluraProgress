@@ -38,3 +38,20 @@
 ### Atividade 11 - Manual do comando:
 
 - cat -n 'args': mostra o conteúdo do arquivo 'args' e o parâmetro '-n' mostra as linhas;
+
+
+## Aula 02 - Mais sobre redirecionamento e caracteres coringa no bash
+
+### Atividade 01 - Redirecionamento e diretórios:
+
+#### Comandos:
+
+- cd 'args': change directory. Muda o diretório acessado para 'args';
+- echo 'args' >> arquivo.extensao: redireciona um comando para um arquivo, concatenando o conteúdo ao arquivo;
+- cd ..: retorna ao diretório anterior (diretório pai);
+- cd .: muda o diretório atual para diretório atual (sim, isso mesmo). O diretório '.' (ponto) é o diretório atual;
+- mkdir 'args': make directory. Cria um novo diretório de nome 'args';
+- cd: muda o diretório para seu diretório base;
+
+- Diretório '/': diretório raiz do HD. Ele possui diversos diretórios úteis do Linux;
+- Diretório '/home': possui os diretórios com os usuários da máquina;
