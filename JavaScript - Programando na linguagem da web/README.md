@@ -167,3 +167,15 @@
 - **Ex.:** nome.substr(0, this.value.length);
 - toLowerCase(): função que transforma todos os caracteres de uma string em caixa baixa (lower case);
 - **Ex.:** string.toLowerCase();
+
+
+## Aula 09 - AjaxBuscando pacientes com AJAX:
+
+### Atividade 01 - Introdução ao AJAX:
+
+- XMLHttpRequest: objeto Javascript responsável por realizar requisições HTTP. Era utilizado para transportar arquivos XML, mas atualmente, além do XML, suporta outros tipos de dados;
+- **Ex.:** var xhr = new XMLHttpRequest();
+- xhr.open("TIPO", "https://dominio.com/metodo"): função de um objeto 'XMLHttpRequest' que recebe como parâmetros o tipo de requisição e endereço de destino;
+- xhr.send(): função de um objeto 'XMLHttpRequest' que realiza o envio da requisição;
+- xhr.addEventListener("load", function() { }): evento que monitora a resposta da requisição;
+- xhr.responseText: propriedade de um objeto 'XMLHttpRequest' com a resposta da requisição;
