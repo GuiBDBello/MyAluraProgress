@@ -151,4 +151,12 @@
 
 ### Atividade 03 - Implementando a lógica de filtragem:
 
-- elemento.classList.remove("classe"): Ao contrário do método "add()", o método "remove()" remove uma classe de um elemento;
+- elemento.classList.remove("classe"): ao contrário do método "add()", o método "remove()" remove uma classe de um elemento;
+
+### Atividade 04 - Filtrando com expressão regular:
+
+- Expressão regular: um tipo especial de texto que permite realizar uma busca textual;
+- **Ex.:** var expressao = new RegExp(valorDaBusca, "i");
+- "i": Case Insensitive (realiza a busca sem levar em conta letras maiúsculas e minúsculas);
+- **Ex.:** expressao.test(texto);
+- Retorna um boolean, verificando se a expressão regular é verdadeira ou falsa;
