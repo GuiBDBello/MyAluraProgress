@@ -179,3 +179,10 @@
 - xhr.send(): função de um objeto 'XMLHttpRequest' que realiza o envio da requisição;
 - xhr.addEventListener("load", function() { }): evento que monitora a resposta da requisição;
 - xhr.responseText: propriedade de um objeto 'XMLHttpRequest' com a resposta da requisição;
+
+### Atividade 04 - Tratando a resposta da requisição:
+
+- typeof varName: retorna o tipo de um valor;
+- JSON: JavaScript Object Notation;
+- JSON.parse(jsonText): transforma o texto de um JSON para um Objeto Javascript;
+- AJAX é uma forma de realizar uma requisição via Javascript de modo assíncrono;
