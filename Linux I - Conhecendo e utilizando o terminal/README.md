@@ -93,3 +93,13 @@ Em um diretório:
 
 - Ao mover um arquivo com o comando 'mv', quando se deseja preservar o nome do arquivo, é necessário passar como parâmetro apenas o diretório;
 - Para copiar um diretório, deve-se utilizar o parâmetro -r (recursive);
+
+### Atividade 02 - Criando e abrindo ZIP:
+
+#### Comandos:
+
+- zip 'args1'.zip 'args2': cria o arquivo 'args1'.zip, compactando o arquivo 'args2';
+- zip -r 'args1'.zip 'args2': cria o arquivo 'args1'.zip, compactando o diretório 'args2';
+- unzip -l 'args': mostra o conteúdo do arquivo 'args';
+- unzip 'args1': descompacta o arquivo 'args1' no diretório atual;
+- unzip -q 'args1': quiet. Descompacta o arquivo 'args1' no diretório atual, com menos verbosidade;
