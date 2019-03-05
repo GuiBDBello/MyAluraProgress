@@ -55,3 +55,23 @@
 
 - Diretório '/': diretório raiz do HD. Ele possui diversos diretórios úteis do Linux;
 - Diretório '/home': possui os diretórios com os usuários da máquina;
+
+### Atividade 02 - Caracteres coringas no bash:
+
+#### Comandos:
+
+- rmdir 'args': remove directory. Remove o diretório 'args';
+- rm 'args': remove. Remove o arquivo 'args';
+- rm -r 'args': remove recursive. Remove o arquivo/diretório 'args' e todo o conteúdo dentro dele;
+
+#### Coringas:
+
+Em um diretório:
+```
+- arquivo10.txt
+- arquivo1.txt
+- arquivo2.txt
+```
+- cat arquivo?.txt: mostra o conteúdo dos arquivos com um caracter no lugar do '?';
+- cat arquivo*.txt: mostra o conteúdo dos arquivos com qualquer conteúdo entre 'arquivo' e '.txt';
+- cat *.txt: mostra o conteúdo de todos os arquivos com extensão .txt no diretório atual;
