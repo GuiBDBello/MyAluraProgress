@@ -34,3 +34,7 @@
 #### Comandos:
 
 - whoami: retorna o nome do usuário em uso;
+
+### Atividade 11 - Manual do comando:
+
+- cat -n 'args': mostra o conteúdo do arquivo 'args' e o parâmetro '-n' mostra as linhas;
