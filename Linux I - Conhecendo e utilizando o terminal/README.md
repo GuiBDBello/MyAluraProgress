@@ -56,6 +56,7 @@
 - Diretório '/': diretório raiz do HD. Ele possui diversos diretórios úteis do Linux;
 - Diretório '/home': possui os diretórios com os usuários da máquina;
 
+
 ### Atividade 02 - Caracteres coringas no bash:
 
 #### Comandos:
@@ -75,3 +76,20 @@ Em um diretório:
 - cat arquivo?.txt: mostra o conteúdo dos arquivos com um caracter no lugar do '?';
 - cat arquivo*.txt: mostra o conteúdo dos arquivos com qualquer conteúdo entre 'arquivo' e '.txt';
 - cat *.txt: mostra o conteúdo de todos os arquivos com extensão .txt no diretório atual;
+
+
+## Aula 03 - Manipulando, compactando e descompactando arquivos.
+
+### Atividade 01 - Copiando, movendo e renomeando:
+
+#### Comandos: 
+
+- cp 'args1' 'args2': copy. Copia o arquivo 'args1' para 'args2';
+- mv 'args1' 'args2': move. Move/Renomeia o arquivo 'args1' para 'args2';
+- ls arquivo*: mostra todos os arquivos que iniciam com o nome 'arquivo';
+- ls *: mostra todos os arquivos da pasta atual, e de todas as pastas filhas;
+
+#### Dicas:
+
+- Ao mover um arquivo com o comando 'mv', quando se deseja preservar o nome do arquivo, é necessário passar como parâmetro apenas o diretório;
+- Para copiar um diretório, deve-se utilizar o parâmetro -r (recursive);
