@@ -28,3 +28,9 @@
 
 - Seta para cima: mostra o último comando executado;
 - Tab/Duplo Tab: autocompleta o comando/arquivo, ou mostra os arquivos cujo nome possui relação ao texto digitado;
+
+### Atividade 05 - O whoami:
+
+#### Comandos:
+
+- whoami: retorna o nome do usuário em uso;
