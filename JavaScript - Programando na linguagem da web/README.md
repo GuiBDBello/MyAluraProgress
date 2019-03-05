@@ -148,3 +148,7 @@
 ### Atividade 01 - Filtrando os pacientes da tabela:
 
 - "input": Evento de entrada de dados, utilizado na função addEventListener("input", funcao);
+
+### Atividade 03 - Implementando a lógica de filtragem:
+
+- elemento.classList.remove("classe"): Ao contrário do método "add()", o método "remove()" remove uma classe de um elemento;
