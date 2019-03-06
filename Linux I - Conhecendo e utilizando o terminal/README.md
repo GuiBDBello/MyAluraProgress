@@ -103,3 +103,10 @@ Em um diretório:
 - unzip -l 'args': mostra o conteúdo do arquivo 'args';
 - unzip 'args1': descompacta o arquivo 'args1' no diretório atual;
 - unzip -q 'args1': quiet. Descompacta o arquivo 'args1' no diretório atual, com menos verbosidade;
+
+### Atividade 05 - Comando ls:
+
+#### Comandos:
+
+- 'ls' ou 'ls .': lista todos os arquivos do diretório atual;
+- ls *: lista todos os diretórios dentro do diretório atual, e os arquivos dentro desses diretórios;
