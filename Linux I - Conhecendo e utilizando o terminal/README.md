@@ -188,3 +188,12 @@ Em um diretório:
 - /'args': realiza uma busca no arquivo, pela palavra 'args';
 	- n: pula à próxima ocorrência de 'args';
 	- N: pula à ocorrência anterior de 'args';
+
+### Atividade 09 - Copy e paste no vi:
+
+#### vi:
+
+- yy: copy. Copia uma linha;
+- p: paste. Cola o conteúdo copiado;
+- 'numero' yy: Copia 'numero' linhas;
+- 'numero' p: Cola 'numero' vezes o conteúdo copiado;
