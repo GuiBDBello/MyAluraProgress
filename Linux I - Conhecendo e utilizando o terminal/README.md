@@ -132,3 +132,7 @@ Em um diretório:
 #### Comandos:
 
 - tar -cjf 'args1'.tar.bz2 'args2': create bzip2 file. Cria o arquivo 'args1'.tar.bz2 compactando o arquivo 'args2';
+
+### Atividade 05 - touch, data da última modificação e data do sistema:
+
+- touch 'args': "Encosta" no arquivo 'args', alterando sua data da última modificação;
