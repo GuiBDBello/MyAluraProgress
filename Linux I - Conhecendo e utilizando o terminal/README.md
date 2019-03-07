@@ -110,3 +110,16 @@ Em um diretório:
 
 - 'ls' ou 'ls .': lista todos os arquivos do diretório atual;
 - ls *: lista todos os diretórios dentro do diretório atual, e os arquivos dentro desses diretórios;
+
+
+## Aula 04 - Mais sobre compactação e descompactação e comandos do terminal
+
+### Atividade 01 - Compactação e descompactação tar:
+
+#### Comandos:
+
+- tar -cz 'args1' > 'args2'.tar.gz: create zip. Compacta o arquivo/diretório 'args1' (Por padrão, o tar já é recursivo) com o nome 'args2'.tar.gz;
+- tar -xz < 'args1'.tar.gz: extract zip. Descompacta o arquivo compactado 'args1'.tar.gz;
+- tar -czf 'args1'.tar.gz 'args2': create zip file. Cria o arquivo 'args1'.tar.gz compactando o arquivo/diretório 'args2';
+- tar -xzf 'args1'.tar.gz: extract zip file. Descompacta o arquivo 'args1'.tar.gz;
+- tar -vxzf 'args1'.tar.gz: verbose extract zip file. Descompacta verbosamente o arquivo 'args1'.tar.gz;
