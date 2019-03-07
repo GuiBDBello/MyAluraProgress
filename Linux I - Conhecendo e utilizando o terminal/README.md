@@ -176,3 +176,15 @@ Em um diretório:
 - dd: apaga uma linha;
 - 'q!': sair sem salvar;
 - A: altera para o modo de inserção/edição, no último caracter da linha onde o cursor se encontra;
+
+### Atividade 05 - Navegação no vi:
+
+#### vi:
+
+- G: vai até à última linha;
+- 'numero' G: vai à linha 'numero';
+- $: vai ao final da linha atual;
+- 0: vai ao primeiro caracter da linha;
+- /'args': realiza uma busca no arquivo, pela palavra 'args';
+	- n: pula à próxima ocorrência de 'args';
+	- N: pula à ocorrência anterior de 'args';
