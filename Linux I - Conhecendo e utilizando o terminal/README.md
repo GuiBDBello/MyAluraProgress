@@ -144,3 +144,12 @@ Em um diretório:
 - --help: parâmetro suportado por alguns comandos que serve para obter informações sobre o comando;
 - help 'args': comando interno do 'bash' que, quando executado sem parâmetros, retorna uma lista com todos os demais comandos internos do shell 'bash'. Quando executado com parâmetro, retorna a sintaxe de utilização e uma descrição do comando interno 'args' (opcional);
 - date "+%d/%m/%Y": imprime a data no formato `dia/mes/ano`;
+
+### Atividade 08 - Less, head, tail:
+
+#### Comandos:
+
+- head 'args': retorna as primeiras 10 linhas do arquivo 'args';
+- head -n 'linhas' 'args': retorna as primeiras 'linhas' linhas do arquivo 'args';
+- tail 'args': retorna as 10 últimas linhas do arquivo 'args';
+- less 'args': abre o arquivo 'args', e pode-se utilizar as setas para navegar nesse arquivo;
