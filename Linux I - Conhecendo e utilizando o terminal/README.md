@@ -136,3 +136,11 @@ Em um diretório:
 ### Atividade 05 - touch, data da última modificação e data do sistema:
 
 - touch 'args': "Encosta" no arquivo 'args', alterando sua data da última modificação;
+
+### Atividade 06 - Para saber mais: obtendo ajuda e formatando datas:
+
+#### Comandos:
+
+- --help: parâmetro suportado por alguns comandos que serve para obter informações sobre o comando;
+- help 'args': comando interno do 'bash' que, quando executado sem parâmetros, retorna uma lista com todos os demais comandos internos do shell 'bash'. Quando executado com parâmetro, retorna a sintaxe de utilização e uma descrição do comando interno 'args' (opcional);
+- date "+%d/%m/%Y": imprime a data no formato `dia/mes/ano`;
