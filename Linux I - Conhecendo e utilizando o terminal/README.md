@@ -123,3 +123,12 @@ Em um diretório:
 - tar -czf 'args1'.tar.gz 'args2': create zip file. Cria o arquivo 'args1'.tar.gz compactando o arquivo/diretório 'args2';
 - tar -xzf 'args1'.tar.gz: extract zip file. Descompacta o arquivo 'args1'.tar.gz;
 - tar -vxzf 'args1'.tar.gz: verbose extract zip file. Descompacta verbosamente o arquivo 'args1'.tar.gz;
+
+### Atividade 04 - Para saber mais: bzip2:
+
+- 'tar' não compacta, apenas empacota os arquivos. Pode-se compactar no formato .gz pelo compactador gzip;
+- Além do gzip, pode-se utilizar o .bzip2 para compactar os arquivos. Ele é mais eficiente na compactação, e cria arquivos menores, porém leva mais tempo para compactá-lo;
+
+#### Comandos:
+
+- tar -cjf 'args1'.tar.bz2 'args2': create bzip2 file. Cria o arquivo 'args1'.tar.bz2 compactando o arquivo 'args2';
