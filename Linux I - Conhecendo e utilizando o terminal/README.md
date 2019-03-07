@@ -153,3 +153,26 @@ Em um diretório:
 - head -n 'linhas' 'args': retorna as primeiras 'linhas' linhas do arquivo 'args';
 - tail 'args': retorna as 10 últimas linhas do arquivo 'args';
 - less 'args': abre o arquivo 'args', e pode-se utilizar as setas para navegar nesse arquivo;
+
+
+## Aula 05 - Edição de arquivos com o VI: inclusão, alteração, exclusão, repetição
+
+### Atividade 01 - Edição de arquivos com o vi:
+
+#### Comandos:
+
+- vi 'args': abre o arquivo 'args' com o editor vi;
+
+#### vi:
+
+- setas: navega pelo texto do arquivo;
+- i: altera para o modo de inserção/edição, na posição onde o cursor se encontra;
+- esc: retorna ao modo de navegação;
+- ':w': salva o arquivo;
+- ':q': fecha o arquivo;
+- a: altera para o modo de inserção/edição, no caracter seguinte à posição onde o cursor se encontra;
+- x: apaga o caracter na posição atual;
+- 'numero' x: apaga o 'numero' de caracteres a partir da posição atual do cursor;
+- dd: apaga uma linha;
+- 'q!': sair sem salvar;
+- A: altera para o modo de inserção/edição, no último caracter da linha onde o cursor se encontra;
