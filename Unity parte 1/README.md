@@ -52,3 +52,21 @@
 
 - Na Cena, quando a ferramenta de Movimentação estiver selecionada (tecla W), é possível selecionar um Objeto por um de seus vértices. Para isso, deve-se segurar a tecla V (ferramenta **Snap**), selecionar um vértice com o botão Esquerdo do Mouse e arrastá-lo até outro vértice para "grudá-los";
 - `Ctrl + D`: Duplicar Objeto;
+
+### Atividade 11 - Personagem no jogo:
+
+- Com o mouse sobre a Cena, ao pressionar a tecla `F` o foco é alternado ao Objeto que está atualmente selecionado (Hierarchy);
+- Adicionar o Prefab 'Personagens' à Hierarquia da Cena;
+- O Objeto 'Personagens' está no plural pois possui vários personagens dentro dele. Para alterná-los, expanda o Objeto 'Personagens', altere a propriedade "Ativo" do personagem atual para "false", selecione um novo personagem e altere a propriedade "Ativo" deste para "true";
+- Transform: componente de um Objeto que contém sua posição, rotação e escala (cada um desses componentes possui o valor X, Y e Z);
+
+#### Script:
+
+- Método Update(): executado constantemente, uma vez a cada Frame;
+- Um Script deve ser executado em um Objeto;
+
+#### Movimentação:
+
+- Para movimentar o personagem, será utilizado o Objeto Transform, e o método Translate, na direção desejada;
+- Vector3 é um objeto que possui três valores: X, Y e Z. Ele é utilizado para obter posições na Cena 3D, nos três eixos;
+- **Ex.:** transform.Translate(Vector3.forward);
