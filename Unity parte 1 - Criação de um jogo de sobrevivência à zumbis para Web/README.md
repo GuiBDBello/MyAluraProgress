@@ -28,3 +28,27 @@
 #### Movimentação com as Setas:
 
 - "Você pode usar as Setas​ do Teclado para se movimentar pela cena da mesma forma que quando utiliza o modo de Voo. O Shift ​faz com que a movimentação seja mais rápida".
+
+### Atividade 08 - Colocando cor no cenário:
+
+- É possível alterar a disposição de janelas (Layout) da Unity em um dropdown no canto superior direito;
+- Para as próximas aulas, será utilizado o Layout "Tall";
+
+#### Materiais e Texturas:
+
+- Um Material representa a forma como um objeto se comportará com a luz;
+- Uma Textura representa a cor/desenho de um material;
+- A extensão de um arquivo de Material é '.mat';
+- A propriedade "Albedo" de um Material representa sua Textura;
+- Para adicionar um Material em um Objeto da Cena, basta arrastá-lo ao Objeto;
+
+#### Prefabs:
+
+- Um Prefab não é nada mais que um Objeto "Pré-fabricado", ou seja, um Objeto genérico que será utilizado várias vezes na Cena;
+- Para criar um Prefab, basta arrastar o Objeto desejado da aba "Hierarchy" para a aba "Project";
+- A extensão de um arquivo de Prefab é '.prefab';
+
+#### Cenário:
+
+- Na Cena, quando a ferramenta de Movimentação estiver selecionada (tecla W), é possível selecionar um Objeto por um de seus vértices. Para isso, deve-se segurar a tecla V, selecionar um vértice com o botão Esquerdo do Mouse;
+- `Ctrl + D`: Duplicar Objeto;
