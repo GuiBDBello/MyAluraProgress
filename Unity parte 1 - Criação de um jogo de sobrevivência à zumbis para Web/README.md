@@ -50,5 +50,5 @@
 
 #### Cenário:
 
-- Na Cena, quando a ferramenta de Movimentação estiver selecionada (tecla W), é possível selecionar um Objeto por um de seus vértices. Para isso, deve-se segurar a tecla V, selecionar um vértice com o botão Esquerdo do Mouse;
+- Na Cena, quando a ferramenta de Movimentação estiver selecionada (tecla W), é possível selecionar um Objeto por um de seus vértices. Para isso, deve-se segurar a tecla V (ferramenta **Snap**), selecionar um vértice com o botão Esquerdo do Mouse e arrastá-lo até outro vértice para "grudá-los";
 - `Ctrl + D`: Duplicar Objeto;
