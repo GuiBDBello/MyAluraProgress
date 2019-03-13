@@ -55,7 +55,7 @@
 
 ### Atividade 11 - Personagem no jogo:
 
-- Com o mouse sobre a Cena, ao pressionar a tecla `F` o foco é alternado ao Objeto que está atualmente selecionado (Hierarchy);
+- Com o mouse sobre a Cena, ao pressionar a tecla `F` o foco é alternado ao Objeto que está atualmente selecionado (pode-se verificar o Objeto selecionado na aba 'Hierarchy');
 - Adicionar o Prefab 'Personagens' à Hierarquia da Cena;
 - O Objeto 'Personagens' está no plural pois possui vários personagens dentro dele. Para alterná-los, expanda o Objeto 'Personagens', altere a propriedade "Ativo" do personagem atual para "false", selecione um novo personagem e altere a propriedade "Ativo" deste para "true";
 - Transform: componente de um Objeto que contém sua posição, rotação e escala (cada um desses componentes possui o valor X, Y e Z);
@@ -63,10 +63,17 @@
 #### Script:
 
 - Método Update(): executado constantemente, uma vez a cada Frame;
-- Um Script deve ser executado em um Objeto;
+- Um Script deve ser executado em um Objeto. Para atribuí-lo a um Objeto, basta arrastá-lo aos 'Components' do Objeto (ao selecionar um Objeto, os 'Components' aparecerão na aba 'Inspector');
 
 #### Movimentação:
 
-- Para movimentar o personagem, será utilizado o Objeto Transform, e o método Translate, na direção desejada;
+- Para movimentar o personagem, será utilizado o Objeto 'transform' e o método 'Translate(Vector3 direcao)', cujo parâmetro é a direção da translação;
 - Vector3 é um objeto que possui três valores: X, Y e Z. Ele é utilizado para obter posições na Cena 3D, nos três eixos;
 - **Ex.:** transform.Translate(Vector3.forward);
+- `Vector3.forward`: propriedade do Vector3 que retorna um Vector3 com valor positivo no eixo Z. Retorno: Vector3 com os valores (0, 0, 1);
+
+#### Modo Jogo:
+
+- Todas as alterações feitas na Cena em "Modo Jogo" (quando o "Play" está selecionado) são perdidas ao encerrar esse modo;
+- Para tornar o "Modo Jogo" mais visível, é possível alterar a cor do Editor enquanto nesse modo;
+- Para isso, deve-se acessar o menu 'Edit > Preferences... > Colors' e alterar 'Playmode tint' para a cor desejada;
