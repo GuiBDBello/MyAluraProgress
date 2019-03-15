@@ -77,3 +77,17 @@
 - Todas as alterações feitas na Cena em "Modo Jogo" (quando o "Play" está selecionado) são perdidas ao encerrar esse modo;
 - Para tornar o "Modo Jogo" mais visível, é possível alterar a cor do Editor enquanto nesse modo;
 - Para isso, deve-se acessar o menu 'Edit > Preferences... > Colors' e alterar 'Playmode tint' para a cor desejada;
+
+### Atividade 14 - Movimentação com as setas:
+
+#### Input:
+
+- Componente que manipula as entradas de dados;
+- `Input.GetAxis("Eixo")`: retorna um eixo, de nome "Eixo". É possível visualizar todos os Eixos em 'Edit > Project Settings > Input';
+- **Ex.:** Input.GetAxis("Horizontal");
+- Os eixos possuem valores decimais entre -1 e 1. No eixo "Horizontal", seu valor neutro (quando nenhuma tecla é pressionada) é 0. Quando é pressionada a tecla 'seta para a Esquerda' o valor é alterado para -1, e 'seta para a Direita' altera-o para 1;
+- Os valores decimais são os valores de transição entre 0 e -1 ou 1;
+
+#### Movimentação com Input:
+
+- **Ex.:** `transform.Translate(new Vector3(Input.GetAxis("Horizontal"), 0.0f, Input.GetAxis("Vertical")));`
