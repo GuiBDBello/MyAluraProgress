@@ -7,6 +7,11 @@ public class ControlaJogador : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector3.forward);
+        float eixoX = Input.GetAxis("Horizontal");
+        float eixoZ = Input.GetAxis("Vertical");
+
+        Vector3 direcao = new Vector3(eixoX, 0.0f, eixoZ);
+
+        transform.Translate(direcao);
     }
 }
