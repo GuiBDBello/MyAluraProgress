@@ -38,7 +38,7 @@
 
 - Um Material representa a forma como um objeto se comportará com a luz;
 - Uma Textura representa a cor/desenho de um material;
-- A extensão de um arquivo de Material é '.mat';
+- A extensão de um arquivo de Material é ".mat";
 - A propriedade "Albedo" de um Material representa sua Textura;
 - Para adicionar um Material em um Objeto da Cena, basta arrastá-lo ao Objeto;
 
@@ -46,7 +46,7 @@
 
 - Um Prefab não é nada mais que um Objeto "Pré-fabricado", ou seja, um Objeto genérico que será utilizado várias vezes na Cena;
 - Para criar um Prefab, basta arrastar o Objeto desejado da aba "Hierarchy" para a aba "Project";
-- A extensão de um arquivo de Prefab é '.prefab';
+- A extensão de um arquivo de Prefab é ".prefab";
 
 #### Cenário:
 
@@ -55,19 +55,19 @@
 
 ### Atividade 11 - Personagem no jogo:
 
-- Com o mouse sobre a Cena, ao pressionar a tecla `F` o foco é alternado ao Objeto que está atualmente selecionado (pode-se verificar o Objeto selecionado na aba 'Hierarchy');
-- Adicionar o Prefab 'Personagens' à Hierarquia da Cena;
-- O Objeto 'Personagens' está no plural pois possui vários personagens dentro dele. Para alterná-los, expanda o Objeto 'Personagens', altere a propriedade "Ativo" do personagem atual para "false", selecione um novo personagem e altere a propriedade "Ativo" deste para "true";
+- Com o mouse sobre a Cena, ao pressionar a tecla `F` o foco é alternado ao Objeto que está atualmente selecionado (pode-se verificar o Objeto selecionado na aba "Hierarchy");
+- Adicionar o Prefab "Personagens" à Hierarquia da Cena;
+- O Objeto "Personagens" está no plural pois possui vários personagens dentro dele. Para alterná-los, expanda o Objeto "Personagens", altere a propriedade "Ativo" do personagem atual para "false", selecione um novo personagem e altere a propriedade "Ativo" deste para "true";
 - Transform: componente de um Objeto que contém sua posição, rotação e escala (cada um desses componentes possui o valor X, Y e Z);
 
 #### Script:
 
-- Método Update(): executado constantemente, uma vez a cada Frame;
-- Um Script deve ser executado em um Objeto. Para atribuí-lo a um Objeto, basta arrastá-lo aos 'Components' do Objeto (ao selecionar um Objeto, os 'Components' aparecerão na aba 'Inspector');
+- Método `Update()`: executado constantemente, uma vez a cada Frame;
+- Um Script deve ser executado em um Objeto. Para atribuí-lo a um Objeto, basta arrastá-lo aos "Components" do Objeto (ao selecionar um Objeto, os "Components" aparecerão na aba "Inspector");
 
 #### Movimentação:
 
-- Para movimentar o personagem, será utilizado o Objeto 'transform' e o método 'Translate(Vector3 direcao)', cujo parâmetro é a direção da translação;
+- Para movimentar o personagem, será utilizado o Objeto "transform" e o método `Translate(Vector3 direcao)`, cujo parâmetro é a direção da translação;
 - Vector3 é um objeto que possui três valores: X, Y e Z. Ele é utilizado para obter posições na Cena 3D, nos três eixos;
 - **Ex.:** transform.Translate(Vector3.forward);
 - `Vector3.forward`: propriedade do Vector3 que retorna um Vector3 com valor positivo no eixo Z. Retorno: Vector3 com os valores (0, 0, 1);
@@ -76,18 +76,39 @@
 
 - Todas as alterações feitas na Cena em "Modo Jogo" (quando o "Play" está selecionado) são perdidas ao encerrar esse modo;
 - Para tornar o "Modo Jogo" mais visível, é possível alterar a cor do Editor enquanto nesse modo;
-- Para isso, deve-se acessar o menu 'Edit > Preferences... > Colors' e alterar 'Playmode tint' para a cor desejada;
+- Para isso, deve-se acessar o menu 'Edit > Preferences... > Colors' e alterar "Playmode tint" para a cor desejada;
 
 ### Atividade 14 - Movimentação com as setas:
 
 #### Input:
 
 - Componente que manipula as entradas de dados;
-- `Input.GetAxis("Eixo")`: retorna um eixo, de nome "Eixo". É possível visualizar todos os Eixos em 'Edit > Project Settings > Input';
+- `Input.GetAxis("Eixo")`: retorna um eixo, de nome "Eixo". É possível acessar todos os Eixos em 'Edit > Project Settings... > Input';
 - **Ex.:** Input.GetAxis("Horizontal");
-- Os eixos possuem valores decimais entre -1 e 1. No eixo "Horizontal", seu valor neutro (quando nenhuma tecla é pressionada) é 0. Quando é pressionada a tecla 'seta para a Esquerda' o valor é alterado para -1, e 'seta para a Direita' altera-o para 1;
+- Os eixos possuem valores decimais entre -1 e 1. No eixo "Horizontal", seu valor neutro (quando nenhuma tecla é pressionada) é 0. Quando é pressionada a tecla "seta para a Esquerda" o valor é alterado para -1, e "seta para a Direita" altera-o para 1;
 - Os valores decimais são os valores de transição entre 0 e -1 ou 1;
 
 #### Movimentação com Input:
 
 - **Ex.:** `transform.Translate(new Vector3(Input.GetAxis("Horizontal"), 0.0f, Input.GetAxis("Vertical")));`
+
+### Atividade 17 - Movimentação por segundo:
+
+#### Aba "Game":
+
+- A aba "Game" mostra a Cena que está aberta. Toda Cena possui uma câmera;
+
+#### Câmera:
+
+- É possível visualizar uma _prévia_ de uma Câmera na janela "Camera Preview", que é aberta ao selecionar uma Câmera da Cena;
+
+#### Movimentação por segundo:
+
+- Na aba "Game", ao clicar em "Stats" são mostradas informações, como FPS (_Frames Per Second_). O método `Update()` é executado "FPS" vezes por segundo, ou seja, uma vez a cada quadro do jogo;
+- `Time.deltaTime`: tempo que a Unity demora para rodar cada Frame. Essa propriedade é utilizada para executar um código apenas uma vez por segundo ao multiplicá-la por algum valor;
+- **Ex:** velocidade * Time.deltaTime;
+
+#### Variáveis public:
+
+- As variáveis com modificador de acesso "público" (_public_) são mostradas diretamente no "Inspector" do Script que contém a variável;
+- Isso é útil para testar valores diferentes em tempo de execução, ou até para realizar testes;
