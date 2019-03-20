@@ -112,3 +112,23 @@
 
 - As variáveis com modificador de acesso "público" (_public_) são mostradas diretamente no "Inspector" do Script que contém a variável;
 - Isso é útil para testar valores diferentes em tempo de execução, ou até para realizar testes;
+
+## Aula 02 - Animação, Colisão e Física
+
+### Atividade 01 - Animando o jogador:
+
+- **Obs.:** Para esse exemplo, serão utilizadas Animações que foram criadas e exportadas por um programa externo à Unity (**Ex.:** Blender);
+
+#### Importar Animações:
+
+- Deve-se selecionar no editor da Unity o arquivo com as Animações, e no "Inspector" selecionar a caixa "Import Animation" e pressionar "Apply";
+
+#### Animações:
+
+- O arquivo importado possui diversas animações. Para verificar os "Frames" de cada Animação, é necessário abrir o arquivo "Animacoes.txt", que possui o seguinte padrão: ``'Nome da Animação': 'frameInicial' - 'frameFinal'``;
+- Para separar as Animações, selecione o arquivo que as contém, e no "Inspector", na seção "Clips", selecione um Clipe e digite o quadro inicial ("Start") e o quadro final ("End") do Clipe desejado;
+- Para adicionar novos Clipes, pressione o botão com o símbolo de adição ("+") e defina suas propriedades;
+- Cada Clipe criado adiciona uma nova Animação ao arquivo das Animações. Para adicionar uma Animação a um Objeto, arraste-a para o Objeto que deve realizar a Animação (**Ex.:** arraste a Animação "Correr" ao Objeto "Jogador");
+- Animator: Componente que controla as Animações;
+- Avatar: forma como o Modelo 3D lidará com as Animações aplicadas;
+- Loop Time: propriedade de um Clipe que indica se ele rodará repetidamente;
