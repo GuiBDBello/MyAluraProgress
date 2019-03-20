@@ -125,10 +125,38 @@
 
 #### Animações:
 
-- O arquivo importado possui diversas animações. Para verificar os "Frames" de cada Animação, é necessário abrir o arquivo "Animacoes.txt", que possui o seguinte padrão: ``'Nome da Animação': 'frameInicial' - 'frameFinal'``;
+- O arquivo importado possui diversas animações. Para verificar os "Frames" de cada Animação, é necessário abrir o arquivo "Animacoes.txt", que possui o seguinte padrão: `'Nome da Animação': 'frameInicial' - 'frameFinal'`;
 - Para separar as Animações, selecione o arquivo que as contém, e no "Inspector", na seção "Clips", selecione um Clipe e digite o quadro inicial ("Start") e o quadro final ("End") do Clipe desejado;
 - Para adicionar novos Clipes, pressione o botão com o símbolo de adição ("+") e defina suas propriedades;
 - Cada Clipe criado adiciona uma nova Animação ao arquivo das Animações. Para adicionar uma Animação a um Objeto, arraste-a para o Objeto que deve realizar a Animação (**Ex.:** arraste a Animação "Correr" ao Objeto "Jogador");
-- Animator: Componente que controla as Animações;
+- Animator (Componente): Componente que controla as Animações;
 - Avatar: forma como o Modelo 3D lidará com as Animações aplicadas;
 - Loop Time: propriedade de um Clipe que indica se ele rodará repetidamente;
+
+### Atividade 04 - Sistema de animações Mecanim:
+
+- É possível adicionar várias Animações em um Animator;
+
+#### Animator:
+
+- Set as Layer Default State: define a Animação padrão de um Objeto;
+- Make Transition: faz uma Transição entre duas Animações;
+- Parameters: parâmetros que definem as trocas entre as Animações. Podem ser dos tipos ``Float``, ``Int``, ``Bool`` ou ``Trigger``;
+
+#### Transition:
+
+- Has Exit Time: define se, no término de uma Animação, ocorre uma Transição;
+- Conditions: define quando uma Transição deve ser efetuada. Utiliza Parâmetros;
+
+#### Unity:
+
+- Criar Transições entre as Animações "Idle" e "Correr";
+- Criar um Parâmetro do tipo ``Bool`` chamado "Movendo";
+- Adicionar Condições nas Transições entre "Idle" e "Correr" utilizando o Parâmetro "Movendo";
+- Remover "Has Exit Time" de ambas Transições;
+
+#### Script:
+
+- `Vector3.zero`: propriedade do Vector3 que retorna um Vector3 com valor 0 nos três eixos. Retorno: Vector3 com os valores (0, 0, 1);
+- `GetComponent<'Componente'>()`: retorna um Componente da Unity;
+- **Ex.:** `GetComponent<Animator>.SetBool("Movendo", true)`;
