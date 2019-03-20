@@ -160,3 +160,18 @@
 - `Vector3.zero`: propriedade do Vector3 que retorna um Vector3 com valor 0 nos três eixos. Retorno: Vector3 com os valores (0, 0, 1);
 - `GetComponent<'Componente'>()`: retorna um Componente da Unity;
 - **Ex.:** `GetComponent<Animator>.SetBool("Movendo", true)`;
+
+### Atividade 08 - Movimentando a câmera:
+
+#### Unity:
+
+- Criar um novo Script chamado "ControlaCamera";
+- Adicionar o Script ao Objeto "Main Camera";
+- Criar uma referência ao Objeto "Jogador";
+- Atribuir o Objeto Jogador à sua referencia no Script "ControlaCamera";
+
+#### Script:
+
+- `public GameObject Jogador;`: cria uma nova referência a Jogador
+- `Vector3 distCompensar = transform.position - Jogador.transform.position;`: distância entre o Jogador e a Câmera;
+- `transform.position = Jogador.transform.position - distCompensar`: altera a posição da Câmera para o Jogador, levando em consideração a posição atual da Câmera;
