@@ -182,7 +182,7 @@
 #### Adicionar Collider:
 
 - Selecionar o Objeto que receberá o "Collider";
-- Em "Inspector" selecionar "Add Component" > "Physics" > "'Shape' Collider";
+- Em "Inspector" selecionar '"Add Component" > "Physics" > "'Shape' Collider"';
 
 #### Alterar Collider:
 
@@ -202,10 +202,10 @@
 #### Movimentação pela Física:
 
 - Para mover um Objeto utilizando física, deve-se obter seu "Rigidbody" e utilizar um de seus métodos disponíveis para realizar a movimentação;
-- ``MovePosition('posicao');``: move o Objeto para a posição 'posicao';
-- **Ex.:** ``GetComponent<Rigidbody>().MovePosition(GetComponent<Rigidbody>().position + (direcao * Velocidade * Time.deltaTime));``: move o Objeto para uma posição relativamente à posição atual do "Rigidbody";
-- **Obs.:** Ao mover algum Objeto utilizando **física**, deve-se escrever o código dentro do método ``FixedUpdate() { }``;
-- O método ``FixedUpdate() { }`` é executado, por padrão, uma vez a cada 0,02 segundos (ou 50 vezes por segundo);
+- `MovePosition('posicao');`: move o Objeto para a posição 'posicao';
+- **Ex.:** `GetComponent<Rigidbody>().MovePosition(GetComponent<Rigidbody>().position + (direcao * Velocidade * Time.deltaTime));`: move o Objeto para uma posição relativamente à posição atual do "Rigidbody";
+- **Obs.:** Ao mover algum Objeto utilizando **física**, deve-se escrever o código dentro do método `FixedUpdate() { }`;
+- O método `FixedUpdate() { }` é executado, por padrão, uma vez a cada 0,02 segundos (ou 50 vezes por segundo);
 
 ### Atividade 16 - Para saber mais: Documentação e Comentário de Código:
 
@@ -233,14 +233,14 @@
 
 #### Comentários:
 
-- ``// Comentário de uma linha``;
+- `// Comentário de uma linha`;
 
 
 ## Aula 03 - Criando o Zumbi Inimigo
 
 ### Atividade 01 - Zumbi inimigo:
 
-- Em Assets > Modelos3D > Personagens > Animacoes, selecione Animacoes_Zumbi;
+- Em 'Assets > Modelos3D > Personagens > Animacoes', selecione Animacoes_Zumbi;
 - Após selecionado, no "Inspector" existem três abas: "Model", "Rig" e "Animations";
 
 #### Model:
@@ -262,8 +262,8 @@ Em suma, o Rig:
 
 ### Atividade 02 - Zumbi seguir o jogador:
 
-- ``Vector3 direcao = Objeto.transform.position - transform.position;``: diferença entre "onde quero estar" ('Objeto') e "onde estou" (Objeto que contém o Script);
-- ``GetComponent<Rigidbody>().MovePosition(GetComponent<Rigidbody>().position + direcao.normalized * Velocidade * Time.deltaTime);``: move o Objeto que contém o Script até 'Objeto'. A 'direcao' deve ser normalizada ("normaliza" os valores dos eixos do Vector3 entre 0 e 1). 'Velocidade' é multiplicado pelo valor normalizado;
+- `Vector3 direcao = Objeto.transform.position - transform.position;`: diferença entre "onde quero estar" ('Objeto') e "onde estou" (Objeto que contém o Script);
+- `GetComponent<Rigidbody>().MovePosition(GetComponent<Rigidbody>().position + direcao.normalized * Velocidade * Time.deltaTime);`: move o Objeto que contém o Script até 'Objeto'. A 'direcao' deve ser normalizada ("normaliza" os valores dos eixos do Vector3 entre 0 e 1). 'Velocidade' é multiplicado pelo valor normalizado;
 
 ### Atividade 04 - Zumbi perseguindo o Jogador:
 
@@ -274,10 +274,10 @@ Em suma, o Rig:
 
 ### Atividade 05 - Rotação do Zumbi:
 
-- ``Vector3.Distance(Vector3 a, Vector3 b);``: retorna um float, que é a distância entre 'a' e 'b';
+- `Vector3.Distance(Vector3 a, Vector3 b);`: retorna um float, que é a distância entre 'a' e 'b';
 - Quaternion: estrutura utilizada para rotação;
-- ``Quaternion.LookRotation(direcao);``: retorna um Quaternion com a rotação para a 'direcao';
-- ``GetComponent<Rigidbody>().MoveRotation(Quaternion rotacao);``: altera a rotação do Objeto para 'rotacao';
+- `Quaternion.LookRotation(direcao);`: retorna um Quaternion com a rotação para a 'direcao';
+- `GetComponent<Rigidbody>().MoveRotation(Quaternion rotacao);`: altera a rotação do Objeto para 'rotacao';
 
 ### Atividade 08 - Criando a bala no jogo:
 
@@ -288,7 +288,7 @@ Em suma, o Rig:
 
 #### Máscara:
 
-- Para criar uma Máscara, vá na janela "Project" > Create > Avatar Mask;
+- Para criar uma Máscara, vá na janela '"Project" > Create > Avatar Mask';
 - Ao selecionar a Máscara criada, aparecerão os Avatares que podem ser aplicados à Máscara;
 - Selecione "Humanoid" e desmarque tudo, **exceto os Braços**;
 
@@ -300,7 +300,30 @@ Em suma, o Rig:
 #### Bala:
 
 - Adicionar um Cubo (renomeá-lo para "Bala");
-- ``R``: ferramenta de Escala;
+- `R`: ferramenta de Escala;
 - Criar novo Material e adicionar uma Cor (Albedo);
 - Adicionar o novo Material à "Bala";
 - Criar um Prefab da "Bala";
+
+### Atividade 10 - Atirando:
+
+- `Input.GetButtonDown("Fire1")`: retorna um boolean que verifica o clique no botão Esquerdo do Mouse;
+- É possível ver todos os Inputs em 'Edit > Project Settings > Input';
+- `Instantiate(Object objeto, Vector3 posicao, Quaternion rotacao);`: 
+
+#### Cano da Arma:
+
+- Para "simular" o cano da Arma (posição de onde as Balas serão criadas) será criado um Objeto Vazio ("Empty") e adicioná-lo ao Objeto Jogador;
+
+#### Obter valores em Modo "Play":
+
+Os valores dos Objetos do Jogo sempre são reiniciados quando o Jogo inicia e encerra o Modo "Play". Porém, há um "truque" para obter valores de Componentes durante o Modo "Play";
+- Para obter valores de um Transform, pressione "Play" e, logo após, "Pause";
+- Posicione o Objeto no local desejado e pressione na engrenagem dentro do Componente Transform;
+- Selecione "Copy Component";
+- Encerre o Modo "Play";
+- No mesmo Objeto, vá no Transform, clique na engrenagem e selecione "Paste Component Values";
+
+#### Script (Bala):
+
+- `GetComponent<Rigidbody>().MovePosition(GetComponent<Rigidbody>().position + transform.forward * Velocidade * Time.deltaTime);`: move a Bala para frente, considerando sua rotação ('transform'), 'Velocidade' e taxa de atualização;
