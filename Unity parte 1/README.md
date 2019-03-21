@@ -259,3 +259,10 @@ Em suma, o Rig:
 - Especifica se é um humanóide;
 - Visualiza o funcionamento do esqueleto;
 - Cria um Avatar para definir o comportamento da Unity em relação às animações;
+
+### Atividade 02 - Zumbi seguir o jogador:
+
+#### Script:
+
+- ``Vector3 direcao = Objeto.transform.position - transform.position;``: diferença entre "onde quero estar" ('Objeto') e "onde estou" (Objeto que contém o Script);
+- ``GetComponent<Rigidbody>().MovePosition(GetComponent<Rigidbody>().position + direcao.normalized * Velocidade * Time.deltaTime);``: move o Objeto que contém o Script até 'Objeto'. A 'direcao' deve ser normalizada ("normaliza" os valores dos eixos do Vector3 entre 0 e 1). 'Velocidade' é multiplicado pelo valor normalizado;
