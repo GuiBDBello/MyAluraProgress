@@ -205,3 +205,30 @@
 - **Ex.:** ``GetComponent<Rigidbody>().MovePosition(GetComponent<Rigidbody>().position + (direcao * Velocidade * Time.deltaTime));``: move o Objeto para uma posição relativamente à posição atual do "Rigidbody";
 - **Obs.:** Ao mover algum Objeto utilizando **física**, deve-se escrever o código dentro do método ``FixedUpdate() { }``;
 - O método ``FixedUpdate() { }`` é executado, por padrão, uma vez a cada 0,02 segundos (ou 50 vezes por segundo);
+
+### Atividade 16 - Para saber mais: Documentação e Comentário de Código:
+
+#### Manual da Unity:
+
+- https://docs.unity3d.com/Manual/
+
+#### Manual da Unity (Componente Animator):
+
+- https://docs.unity3d.com/Manual/class-Animator.html
+
+#### Documentação de "Scripting":
+
+- https://docs.unity3d.com/ScriptReference/
+
+#### Documentação de "Scripting" (Animator):
+
+- https://docs.unity3d.com/ScriptReference/Animator.html
+
+#### Documentação de "Scripting" (MonoBehaviour):
+
+- **Obs.:** São os métodos disponibilizados pela Unity;
+- https://docs.unity3d.com/ScriptReference/MonoBehaviour.html
+
+#### Comentários:
+
+- ``// Comentário de uma linha``;
