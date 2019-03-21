@@ -113,6 +113,7 @@
 - As variáveis com modificador de acesso "público" (_public_) são mostradas diretamente no "Inspector" do Script que contém a variável;
 - Isso é útil para testar valores diferentes em tempo de execução, ou até para realizar testes;
 
+
 ## Aula 02 - Animação, Colisão e Física
 
 ### Atividade 01 - Animando o jogador:
@@ -233,3 +234,28 @@
 #### Comentários:
 
 - ``// Comentário de uma linha``;
+
+
+## Aula 03 - Criando o Zumbi Inimigo
+
+### Atividade 01 - Zumbi inimigo:
+
+- Em Assets > Modelos3D > Personagens > Animacoes, selecione Animacoes_Zumbi;
+- Após selecionado, no "Inspector" existem três abas: "Model", "Rig" e "Animations";
+
+#### Model:
+
+- "Scale Factor": escala do Objeto a ser animado. É uma boa prática seguir a mesma proporção desta propriedade para todos os Objetos;
+- "Import Materials": a Unity nem sempre importa os Materiais de outros programas corretamente. Por esse motivo, na aula essa opção estava desmarcada, e realizamos a importação separadamente;
+
+#### Rig:
+
+- São as "Juntas" do Modelo animado. Configura como a Unity lida com as animações importadas de outros programas;
+- "Animation Type": o tipo do "Corpo" do Modelo a ser animado;
+- "Configure...": abre uma Cena com as configurações do Avatar. É possível ver todas as juntas do Modelo e modificá-las;
+
+Em suma, o Rig:
+- Configura o comportamento das articulações dos personagens;
+- Especifica se é um humanóide;
+- Visualiza o funcionamento do esqueleto;
+- Cria um Avatar para definir o comportamento da Unity em relação às animações;
