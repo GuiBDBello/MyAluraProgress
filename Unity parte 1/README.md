@@ -192,3 +192,16 @@
 #### Mesh Collider:
 
 - O "Mesh Collider" é um Colisor que deve ser usado com cautela, pois depende da complexidade do Objeto a que ele é atribuído. Se ele for atribuído a um Objeto complexo, a performance do jogo poderá decair;
+
+### Atividade 13 - Sistema de física:
+
+- Rigidbody: adiciona um Componente físico de "Corpo Rígido" ao Objeto, o impedindo de atravessar Colisores;
+- Constraints: propriedade de Rigidbody que permite impedir a Posição e Rotação do Objeto nos eixos X, Y e Z;
+
+#### Movimentação pela Física:
+
+- Para mover um Objeto utilizando física, deve-se obter seu "Rigidbody" e utilizar um de seus métodos disponíveis para realizar a movimentação;
+- ``MovePosition('posicao');``: move o Objeto para a posição 'posicao';
+- **Ex.:** ``GetComponent<Rigidbody>().MovePosition(GetComponent<Rigidbody>().position + (direcao * Velocidade * Time.deltaTime));``: move o Objeto para uma posição relativamente à posição atual do "Rigidbody";
+- **Obs.:** Ao mover algum Objeto utilizando **física**, deve-se escrever o código dentro do método ``FixedUpdate() { }``;
+- O método ``FixedUpdate() { }`` é executado, por padrão, uma vez a cada 0,02 segundos (ou 50 vezes por segundo);
