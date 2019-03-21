@@ -223,11 +223,12 @@
 #### Documentação de "Scripting" (Animator):
 
 - https://docs.unity3d.com/ScriptReference/Animator.html
+- **Public Functions** são todos os métodos disponibilizados pelo Animator;
 
 #### Documentação de "Scripting" (MonoBehaviour):
 
-- **Obs.:** São os métodos disponibilizados pela Unity;
 - https://docs.unity3d.com/ScriptReference/MonoBehaviour.html
+- **Messages** são todos os métodos disponibilizados pela Unity para utilizar nos Scripts;
 
 #### Comentários:
 
