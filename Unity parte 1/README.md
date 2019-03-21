@@ -266,3 +266,10 @@ Em suma, o Rig:
 
 - ``Vector3 direcao = Objeto.transform.position - transform.position;``: diferença entre "onde quero estar" ('Objeto') e "onde estou" (Objeto que contém o Script);
 - ``GetComponent<Rigidbody>().MovePosition(GetComponent<Rigidbody>().position + direcao.normalized * Velocidade * Time.deltaTime);``: move o Objeto que contém o Script até 'Objeto'. A 'direcao' deve ser normalizada ("normaliza" os valores dos eixos do Vector3 entre 0 e 1). 'Velocidade' é multiplicado pelo valor normalizado;
+
+### Atividade 04 - Zumbi perseguindo o Jogador:
+
+#### Normalização:
+
+- Pega um Vetor de algum tamanho e transforma em outro que sempre tem tamanho até no máximo 1;
+- https://docs.unity3d.com/ScriptReference/Vector3.Normalize.html
