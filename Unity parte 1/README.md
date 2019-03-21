@@ -262,8 +262,6 @@ Em suma, o Rig:
 
 ### Atividade 02 - Zumbi seguir o jogador:
 
-#### Script:
-
 - ``Vector3 direcao = Objeto.transform.position - transform.position;``: diferença entre "onde quero estar" ('Objeto') e "onde estou" (Objeto que contém o Script);
 - ``GetComponent<Rigidbody>().MovePosition(GetComponent<Rigidbody>().position + direcao.normalized * Velocidade * Time.deltaTime);``: move o Objeto que contém o Script até 'Objeto'. A 'direcao' deve ser normalizada ("normaliza" os valores dos eixos do Vector3 entre 0 e 1). 'Velocidade' é multiplicado pelo valor normalizado;
 
@@ -273,3 +271,10 @@ Em suma, o Rig:
 
 - Pega um Vetor de algum tamanho e transforma em outro que sempre tem tamanho até no máximo 1;
 - https://docs.unity3d.com/ScriptReference/Vector3.Normalize.html
+
+### Atividade 05 - Rotação do Zumbi:
+
+- ``Vector3.Distance(Vector3 a, Vector3 b);``: retorna um float, que é a distância entre 'a' e 'b';
+- Quaternion: estrutura utilizada para rotação;
+- ``Quaternion.LookRotation(direcao);``: retorna um Quaternion com a rotação para a 'direcao';
+- ``GetComponent<Rigidbody>().MoveRotation(Quaternion rotacao);``: altera a rotação do Objeto para 'rotacao';
