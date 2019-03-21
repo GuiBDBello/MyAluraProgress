@@ -175,3 +175,20 @@
 - `public GameObject Jogador;`: cria uma nova referência a Jogador
 - `Vector3 distCompensar = transform.position - Jogador.transform.position;`: distância entre o Jogador e a Câmera;
 - `transform.position = Jogador.transform.position - distCompensar`: altera a posição da Câmera para o Jogador, levando em consideração a posição atual da Câmera;
+
+### Atividade 10 - Colisão:
+
+#### Adicionar Collider:
+
+- Selecionar o Objeto que receberá o "Collider";
+- Em "Inspector" selecionar "Add Component" > "Physics" > "'Shape' Collider";
+
+#### Alterar Collider:
+
+- No Componente "'Shape' Collider" é possível alterar o Colisor do Objeto, selecionando "Edit Collider";
+- Selecionar um dos cubos que surgiram em torno do Objeto e arrastar;
+- Alguns tipos de "Colliders", como o "Capsule Collider", possuem algumas propriedades adicionais, como "Radius" e "Direction";
+
+#### Mesh Collider:
+
+- O "Mesh Collider" é um Colisor que deve ser usado com cautela, pois depende da complexidade do Objeto a que ele é atribuído. Se ele for atribuído a um Objeto complexo, a performance do jogo poderá decair;
