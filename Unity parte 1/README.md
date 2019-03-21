@@ -278,3 +278,29 @@ Em suma, o Rig:
 - Quaternion: estrutura utilizada para rotação;
 - ``Quaternion.LookRotation(direcao);``: retorna um Quaternion com a rotação para a 'direcao';
 - ``GetComponent<Rigidbody>().MoveRotation(Quaternion rotacao);``: altera a rotação do Objeto para 'rotacao';
+
+### Atividade 08 - Criando a bala no jogo:
+
+#### Mesclar Animações:
+
+- Na janela "Animator", em "Layers", selecione "+" para criar uma nova Camada de Animação;
+- Nas propriedades da camada (clique na engrenagem), deve-se criar uma Máscara para obter apenas uma parte da Animação;
+
+#### Máscara:
+
+- Para criar uma Máscara, vá na janela "Project" > Create > Avatar Mask;
+- Ao selecionar a Máscara criada, aparecerão os Avatares que podem ser aplicados à Máscara;
+- Selecione "Humanoid" e desmarque tudo, **exceto os Braços**;
+
+#### Nova Camada ("Layer"):
+- Em suas propriedades (engrenagem), selecione a Máscara criada e altere seu Peso ("Weight") para 1;
+- No Animator, selecione a Camada criada;
+- Não altere o valor da Mescla ("Blending") que deve ser "Override";
+
+#### Bala:
+
+- Adicionar um Cubo (renomeá-lo para "Bala");
+- ``R``: ferramenta de Escala;
+- Criar novo Material e adicionar uma Cor (Albedo);
+- Adicionar o novo Material à "Bala";
+- Criar um Prefab da "Bala";
