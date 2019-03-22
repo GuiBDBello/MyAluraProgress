@@ -383,3 +383,24 @@ Os valores dos Objetos do Jogo sempre são reiniciados quando o Jogo inicia e en
 - Selecione o Objeto novamente, selecione, em "Inspector", a caixa ao lado direito de 'Tag' e selecione "Inimigo";
 - Para verificar uma 'Tag' no código, pode-se utilizar um "if";
 - **Ex.:** `if (objetoDeColisao.tag == "Inimigo") { /* Destrói inimigo */ }`;
+
+### Atividade 08 - Zumbi atacar jogador:
+
+#### Animator:
+
+- Adicionar a "Animacoes_Ataque", que se encontra em "Assets > Modelos3D > Personagens > Animacoes" no Animator de um dos Zumbis (após, a modificação será aplicada ao Prefab);
+- Criar uma Transição de "Zumbi_Andar" para "Ataque" e vice-versa;
+- Adicionar um novo Parâmetro (Bool) chamado "Atacando";
+- Desmarcar "Has Exit Time" e adicionar a Condição "Atacando" em ambas Transições;
+
+#### Script:
+
+- `GetComponent<Animator>().SetBool("Atacando", 'bool');`: altera a animação do Zumbi, onde 'bool' pode ser `true` ou `false`;
+
+### Atividade 09 - Ataque do Inimigo:
+
+#### Eventos de Animação:
+
+- Selecione o arquivo "Animacoes_Ataque", que se localiza em "Assets > Modelos3D > Personagens > Animacoes";
+- Em "Events", selecione "Add Event", nomeie-o "AtacaJogador" e clique em "Apply";
+- No Script, crie o método `AtacaJogador`, que será chamado com a Animação;
