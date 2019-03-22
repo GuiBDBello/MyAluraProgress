@@ -350,3 +350,17 @@ Os valores dos Objetos do Jogo sempre são reiniciados quando o Jogo inicia e en
 - `posicaoMiraJogador.y = transform.position.y;`: "anula" a rotação no eixo Y da mira do Jogador;
 
 - `Ctrl + Shift + P`: pause;
+
+### Atividade 02 - Rotação do jogador 2:
+
+- `Quaternion novaRotacao = Quaternion.LookRotation(posicaoMiraJogador);`: retorna uma rotação a partir de uma posição;
+- `GetComponent<Rigidbody>().MoveRotation(novaRotacao)`: altera a rotação do Objeto ("Jogador") para 'novaRotacao', fazendo o Objeto "olhar" para a posição;
+- `public LayerMask MascaraChao;`: cria uma "Máscara" do Chão, para o Raio acertar apenas o Chão;
+- `Physics.Raycast(raio, out impacto, distancia, mascara)`: adiciona a Máscara 'mascara' para o Raio impactar apenas com os Objetos que possuem a Camada ("Layer") 'mascara';
+
+#### Layer:
+
+- Para adicionar uma Camada, selecione o Objeto na janela "Hierarchy" e, em "Inspector", no canto superior direito, selecione a caixa ao lado direito de "Layer" ("Add Layer...");
+- Crie uma nova Camada;
+- Atribua essa nova Camada nos Objetos que o Jogador irá caminhar;
+- Na variável pública criada no "Jogador", selecione a Camada criada para o Chão;

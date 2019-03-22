@@ -167,6 +167,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1987699569, guid: 4b3bb44effa49480d8d18049684cc33a, type: 3}
+      propertyPath: MascaraChao.m_Bits
+      value: 256
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b3bb44effa49480d8d18049684cc33a, type: 3}
 --- !u!1001 &124231312
@@ -633,6 +637,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Hotel_Estacionamento_Destruido
+      objectReference: {fileID: 0}
+    - target: {fileID: 6175443919219102188, guid: 4accdcef9220c414882950719ce041fa,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1840533174191772059, guid: 4accdcef9220c414882950719ce041fa,
         type: 3}
