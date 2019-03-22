@@ -327,3 +327,26 @@ Os valores dos Objetos do Jogo sempre são reiniciados quando o Jogo inicia e en
 #### Script (Bala):
 
 - `GetComponent<Rigidbody>().MovePosition(GetComponent<Rigidbody>().position + transform.forward * Velocidade * Time.deltaTime);`: move a Bala para frente, considerando sua rotação ('transform'), 'Velocidade' e taxa de atualização;
+
+
+## Aula 04 - Interações entre os Personagens
+
+### Atividade 01 - Rotação do jogador:
+
+- Ray: Objeto da Unity que representa um Raio na Cena;
+- Camera: Objeto da Unity que representa o tipo Câmera;
+
+#### Script:
+
+- `Ray raio = Camera.main.ScreenPointToRay(Input.mousePosition);`: retorna um "Ray", que sai da Câmera Principal e aponta à posição do Mouse;
+- `Debug.DrawRay(raio.origin, raio.direction * 100, Color.red);`: desenha um "Ray" na tela;
+- `raio.origin`: posição inicial do Raio;
+- `raio.direction`: posição final do Raio. Por padrão, é um "Ray" bem pequeno, por isso é feita a multiplicação por 100;
+- `Color.red`: retorna a propriedade 'Vermelha' de 'Cor';
+- `RaycastHit impacto;`: cria uma variável para armazenar a posição que o Raio toca no chão;
+- `Physics.Raycast(raio, out impacto, distancia);`: retorna um boolean, que é o "lançamento" de um Raio 'raio', verificando com o 'impacto' em uma distância 'distancia';
+- `out`: palavra-chave que indica que uma variável não possui valor, mas receberá dentro do bloco atual;
+- `Vector3 posicaoMiraJogador = impacto.point - transform.position;`: posição do 'impacto.point' a partir da posição do Objeto que recebe o Script ("Jogador");
+- `posicaoMiraJogador.y = transform.position.y;`: "anula" a rotação no eixo Y da mira do Jogador;
+
+- `Ctrl + Shift + P`: pause;
