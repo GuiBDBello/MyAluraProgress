@@ -364,3 +364,22 @@ Os valores dos Objetos do Jogo sempre são reiniciados quando o Jogo inicia e en
 - Crie uma nova Camada;
 - Atribua essa nova Camada nos Objetos que o Jogador irá caminhar;
 - Na variável pública criada no "Jogador", selecione a Camada criada para o Chão;
+
+### Atividade 05 - Destruir os zumbis:
+
+- Para verificar uma colisão, no Componente 'Shape' Collider, deve-se marcar a propriedade "Is Trigger";
+- Quando essa propriedade está ativa, o método `OnTriggerEnter` é disparado sempre que houver uma colisão com outro Objeto;
+
+#### Script (OnTriggerEnter):
+
+- `void OnTriggerEnter(Collider objetoDeColisao) { }`: método chamado quando há uma colisão. Recebe como parâmetro o Objeto da colisão;
+- `Destroy(objetoDeColisao.gameObject)`: método que destrói o Objeto que a Bala colide;
+
+#### Tag:
+
+- É uma forma de "etiquetar" um Objeto, reconhecendo-o como parte de um Padrão;
+- Para adicionar uma nova 'Tag', selecione um Objeto na janela "Hierarchy" e, em "Inspector", no canto superior direito, selecione a caixa ao lado direito de 'Tag' ("Add Tag...");
+- Clique no "+" e dê um nome para a 'Tag'. Nesse caso, será "Inimigo";
+- Selecione o Objeto novamente, selecione, em "Inspector", a caixa ao lado direito de 'Tag' e selecione "Inimigo";
+- Para verificar uma 'Tag' no código, pode-se utilizar um "if";
+- **Ex.:** `if (objetoDeColisao.tag == "Inimigo") { /* Destrói inimigo */ }`;
