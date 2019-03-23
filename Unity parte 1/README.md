@@ -57,7 +57,7 @@
 
 - Com o mouse sobre a Cena, ao pressionar a tecla `F` o foco é alternado ao Objeto que está atualmente selecionado (pode-se verificar o Objeto selecionado na aba "Hierarchy");
 - Adicionar o Prefab "Personagens" à Hierarquia da Cena;
-- O Objeto "Personagens" está no plural pois possui vários personagens dentro dele. Para alterná-los, expanda o Objeto "Personagens", altere a propriedade "Ativo" do personagem atual para "false", selecione um novo personagem e altere a propriedade "Ativo" deste para "true";
+- O Objeto "Personagens" está no plural pois possui vários personagens dentro dele. Para alterná-los, expanda o Objeto "Personagens", altere a propriedade "Ativo" do personagem atual para `false`, selecione um novo personagem e altere a propriedade "Ativo" deste para `true`;
 - Transform: componente de um Objeto que contém sua posição, rotação e escala (cada um desses componentes possui o valor X, Y e Z);
 
 #### Script:
@@ -142,7 +142,7 @@
 
 - Set as Layer Default State: define a Animação padrão de um Objeto;
 - Make Transition: faz uma Transição entre duas Animações;
-- Parameters: parâmetros que definem as trocas entre as Animações. Podem ser dos tipos ``Float``, ``Int``, ``Bool`` ou ``Trigger``;
+- Parameters: parâmetros que definem as trocas entre as Animações. Podem ser dos tipos `Float`, `Int`, `Bool` ou `Trigger`;
 
 #### Transition:
 
@@ -152,7 +152,7 @@
 #### Unity:
 
 - Criar Transições entre as Animações "Idle" e "Correr";
-- Criar um Parâmetro do tipo ``Bool`` chamado "Movendo";
+- Criar um Parâmetro do tipo `Bool` chamado "Movendo";
 - Adicionar Condições nas Transições entre "Idle" e "Correr" utilizando o Parâmetro "Movendo";
 - Remover "Has Exit Time" de ambas Transições;
 
@@ -388,7 +388,7 @@ Os valores dos Objetos do Jogo sempre são reiniciados quando o Jogo inicia e en
 
 #### Animator:
 
-- Adicionar a "Animacoes_Ataque", que se encontra em "Assets > Modelos3D > Personagens > Animacoes" no Animator de um dos Zumbis (após, a modificação será aplicada ao Prefab);
+- Adicionar a "Animacoes_Ataque", que se encontra em 'Assets > Modelos3D > Personagens > Animacoes' no Animator de um dos Zumbis (após, a modificação será aplicada ao Prefab);
 - Criar uma Transição de "Zumbi_Andar" para "Ataque" e vice-versa;
 - Adicionar um novo Parâmetro (Bool) chamado "Atacando";
 - Desmarcar "Has Exit Time" e adicionar a Condição "Atacando" em ambas Transições;
@@ -397,10 +397,44 @@ Os valores dos Objetos do Jogo sempre são reiniciados quando o Jogo inicia e en
 
 - `GetComponent<Animator>().SetBool("Atacando", 'bool');`: altera a animação do Zumbi, onde 'bool' pode ser `true` ou `false`;
 
-### Atividade 09 - Ataque do Inimigo:
+### Atividade 10 - Reiniciar o jogo:
 
 #### Eventos de Animação:
 
-- Selecione o arquivo "Animacoes_Ataque", que se localiza em "Assets > Modelos3D > Personagens > Animacoes";
-- Em "Events", selecione "Add Event", nomeie-o "AtacaJogador" e clique em "Apply";
-- No Script, crie o método `AtacaJogador`, que será chamado com a Animação;
+- Selecione o arquivo "Animacoes_Ataque", que se localiza em 'Assets > Modelos3D > Personagens > Animacoes';
+- Em "Events", selecione o 'Frame' da Animação que o Ataque é efetivado, selecione "Add Event", nomeie-o "AtacaJogador" e clique em "Apply";
+- No Script, crie o método `AtacaJogador`, que será chamado no 'Frame' que o Evento foi criado na Animação;
+
+#### UI:
+
+- Canvas: Objeto que representa a tela do jogo. Comporta os elementos da Interface do Usuário (UI) da Unity;
+- Text: Objeto que contém um texto;
+- `T`: ferramenta de Retângulo. Lida com os elementos da UI;
+- Paragraph: propriedade do Objeto "Text" que permite Alinhar verticalmente, horizontalmente, definir se há "sobrecarga" da caixa de texto, etc.;
+
+#### Escala de Tempo:
+
+- `Time.timeScale`: propriedade da classe "Time" que representa a escala de tempo do jogo, na Unity;
+- `Time.timeScale = 0;`: para o tempo do jogo;
+- `Time.timeScale = 1;`: valor padrão da escala de tempo da Unity;
+
+#### Acessando variáveis de outros Scripts:
+
+- Uma variável pública pode ser acessada por Scripts externos. Para isso, basta ter uma referência ao Objeto, e utilizar `Objeto.GetComponent<Script>().Variavel>`;
+
+#### Script (ControlaJogador):
+
+- `public GameObject TextoGameOver;`: cria uma variável que referencia um Objeto "Text";
+- `public bool Vivo;`: cria uma variável que irá definir se o Jogador está vivo ou não;
+- `if (Vivo == false) { /* Clique para reiniciar */ }`: 
+- `void Start() { Time.timeScale = 1; }`: define, ao reiniciar o jogo, que a escala de tempo retorna ao normal;
+
+#### Script (ControlaInimigo):
+
+- `Jogador.GetComponent<ControlaJogador>().TextoGameOver.SetActive(true);`: obtém a referência da variável pública "TextoGameOver" no Script "ControlaJogador" do Objeto Jogador, e altera seu valor "Active";
+- `Jogador.GetComponent<ControlaJogador>().Vivo = false;`: define, ao jogador ser atacado, que sua variável 'Vivo' recebe o valor `false`;
+
+#### SceneManagement:
+
+- `using UnityEngine.SceneManagement;`: importa a biblioteca da Unity que lida com Cenas;
+- `SceneManager.LoadScene("game");`: método da classe "SceneManager" que carrega a Cena "game";
