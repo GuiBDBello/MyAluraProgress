@@ -1,11 +1,19 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ControlaJogador : MonoBehaviour
 {
     public float Velocidade = 10;
     public LayerMask MascaraChao;
+    public GameObject TextoGameOver;
+    public bool Vivo = true;
 
     Vector3 direcao;
+
+    private void Start()
+    {
+        Time.timeScale = 1;
+    }
 
     // Update is called once per frame
     void Update()
@@ -26,6 +34,14 @@ public class ControlaJogador : MonoBehaviour
         else
         {
             GetComponent<Animator>().SetBool("Movendo", false);
+        }
+
+        if (Vivo == false)
+        {
+            if (Input.GetButtonDown("Fire1"))
+            {
+                SceneManager.LoadScene("game");
+            }
         }
     }
 
