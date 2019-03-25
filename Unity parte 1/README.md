@@ -438,3 +438,29 @@ Os valores dos Objetos do Jogo sempre são reiniciados quando o Jogo inicia e en
 
 - `using UnityEngine.SceneManagement;`: importa a biblioteca da Unity que lida com Cenas;
 - `SceneManager.LoadScene("game");`: método da classe "SceneManager" que carrega a Cena "game";
+
+
+## Aula 05 - Finalizando o Jogo:
+
+### Atividade 01 - Gerador de zumbis:
+
+- Criar um Script para realizar a Geração dos Zumbis ("GeradorZumbis"), e jogá-lo em um Objeto vazio ("Empty");
+- Selecione o Objeto e, no "Inspector", selecione no canto superior esquerdo o cubo, e selecione um Ícone, para deixar o Objeto vazio visível na Cena;
+- Criar uma nova 'Tag' "Jogador";
+- Como o Objeto "Zumbi" é um Prefab, ele não recebeu o Objeto "Jogador" da "Hierarchy", definido como variável pública em seu Script. Para recebê-lo, é possível realizar uma busca, utilizando o método `FindWithTag` da classe GameObject;
+- "Aleatorizar" um tipo de Zumbi diferente, dentro dos 27 tipos disponíveis, para dar maior diversidade visual ao jogo;
+
+#### Script (GeradorZumbis):
+
+- `public GameObject Zumbi;`: cria uma variável que referencia o Prefab do Zumbi;
+- `Instantiate(Zumbi, transform.position, transform.rotation);`: método adicionado dentro de `Update()` que instancia um novo Objeto Zumbi na Cena;
+- `float contadorTempo = 0;`: variável que servirá para definir um tempo para esperar;
+- `contadorTempo += Time.deltaTime;`: incrementa na variável 'contadorTempo' o tempo que levou para carregar o Frame atual;
+- `public float TempoGerarZumbi = 1;`: cria uma variável que irá gerenciar o tempo que cada Zumbi é gerado;
+- `if (contadorTempo >= TempoGerarZumbi) { /* Gera um Zumbi e zera o contador */}`: verifica se está na hora de gerar um zumbi;
+
+#### Script (ControlaInimigo):
+
+- `GameObject.FindWithTag("Jogador");`: método da classe GameObject, que retorna um GameObject, ao realizar uma busca em todos os Objetos, que contenha a 'Tag' "Jogador";
+- `int geraTipoZumbi = Random.Range(1, 28);`: variável que recebe um número aleatório entre 1 e 28 (até 27);
+- `transform.GetChild(geraTipoZumbi).gameObject.SetActive(true);`: ativa um Objeto, utilizando um índice de número aleatório, que se encontra dentro do Objeto "Zumbi";
