@@ -476,3 +476,7 @@ Os valores dos Objetos do Jogo sempre são reiniciados quando o Jogo inicia e en
 - **Ex.:** `private Rigidbody rigidbodyJogador = GetComponent<Rigidbody>();` **Obs.:** para seguir boas práticas, a inicialização da variável deve ser feita no método `Start() { }`;
 - É uma boa prática separar os "Assets" em pastas correspondentes, como 'Animacoes' para as Animações e Máscaras, etc.;
 - Além disso, Objetos vazios ("Empty") podem ser utilizados para separar os Objetos do jogo por categoria. **Ex.:** Objeto "Cenario" será "pai" do 'Hotel', do 'Chao', etc.;
+
+### Atividade 07 - Finalização do cenário:
+
+- Serão utilizados os Objetos (Prefabs) disponibilizados pela Alura para finalizar o Cenário do jogo, fechando a área jogável, colocando Objetos onde haviam apenas colisores e "escondendo" o final do mapa;
