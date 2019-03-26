@@ -4,10 +4,17 @@ public class Bala : MonoBehaviour
 {
 
     public float Velocidade = 100;
+
+    private Rigidbody rigidbodyBala;
+
+    void Start()
+    {
+        rigidbodyBala = GetComponent<Rigidbody>();
+    }
+
     void FixedUpdate()
     {
-        GetComponent<Rigidbody>().MovePosition(GetComponent<Rigidbody>().position 
-            + transform.forward * Velocidade * Time.deltaTime);
+        rigidbodyBala.MovePosition(rigidbodyBala.position + transform.forward * Velocidade * Time.deltaTime);
     }
 
     void OnTriggerEnter(Collider objetoDeColisao)

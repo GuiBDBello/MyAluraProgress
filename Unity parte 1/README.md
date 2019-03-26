@@ -464,3 +464,15 @@ Os valores dos Objetos do Jogo sempre são reiniciados quando o Jogo inicia e en
 - `GameObject.FindWithTag("Jogador");`: método da classe GameObject, que retorna um GameObject, ao realizar uma busca em todos os Objetos, que contenha a 'Tag' "Jogador";
 - `int geraTipoZumbi = Random.Range(1, 28);`: variável que recebe um número aleatório entre 1 e 28 (até 27);
 - `transform.GetChild(geraTipoZumbi).gameObject.SetActive(true);`: ativa um Objeto, utilizando um índice de número aleatório, que se encontra dentro do Objeto "Zumbi";
+
+### Atividade 04 - Organização e otimização:
+
+#### Boas práticas:
+
+- Variáveis públicas iniciam com letra **Maiúscula** (*PascalCase* ou *UpperCamelCase*);
+- Variáveis não-públicas iniciam com letra **minúscula** (*camelCase* ou *lowerCamelCase*);
+- Se uma variável não possui um modificador de acesso, por padrão, ela recebe o modificador `private`;
+- Para evitar repetição de código, é possível armazenar componentes da Unity em variáveis;
+- **Ex.:** `private Rigidbody rigidbodyJogador = GetComponent<Rigidbody>();` **Obs.:** para seguir boas práticas, a inicialização da variável deve ser feita no método `Start() { }`;
+- É uma boa prática separar os "Assets" em pastas correspondentes, como 'Animacoes' para as Animações e Máscaras, etc.;
+- Além disso, Objetos vazios ("Empty") podem ser utilizados para separar os Objetos do jogo por categoria. **Ex.:** Objeto "Cenario" será "pai" do 'Hotel', do 'Chao', etc.;
