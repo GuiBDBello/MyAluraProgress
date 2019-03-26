@@ -480,3 +480,39 @@ Os valores dos Objetos do Jogo sempre são reiniciados quando o Jogo inicia e en
 ### Atividade 07 - Finalização do cenário:
 
 - Serão utilizados os Objetos (Prefabs) disponibilizados pela Alura para finalizar o Cenário do jogo, fechando a área jogável, colocando Objetos onde haviam apenas colisores e "escondendo" o final do mapa;
+
+### Atividade 10 - Publicação do jogo:
+
+- 'File > Build Settings...': abre a janela para gerar a Build do jogo;
+
+#### Build Settings...:
+
+- "Scenes In Build: Cenas que o jogo contém;
+- "Platform": a Plataforma que a Build será gerada para rodar o jogo. **Selecionar WebGL**;
+
+#### Player Settings...:
+
+- Propriedades do jogo no Cliente (onde o jogo irá rodar);
+- "Default Screen Width": largura padrão da tela;
+- "Default Screen Height": altura padrão da tela (**alterar para 540**, para rodar no maior número de dispositivos possível);
+- "Run In Background": define se o jogo irá (ou não) pausar quando estiver desfocado, ou com a janela minimizada (**marcar essa opção**);
+
+#### Build:
+
+- Selecione o diretório para gerar a Build;
+- Zipe o diretório;
+
+#### Publicação:
+
+- Registre-se ou realize o login em https://itch.io/
+- Vá em 'Feed';
+- 'Create new project';
+- 'Title': nomeie o jogo;
+- 'Kind of project': selecione "HTML"
+- 'Pricing': selecione "No payments"
+- 'Upload files': envie o arquivo .zip gerado na Build e marque "This file will be player in the browser"
+- 'Embed options': digite as mesmas dimensões definidas na Unity, em 'Player Settings...';
+- 'Visibility & access': selecione "Restricted";
+- 'Restricted access settings': marque "Also allow a password to view page" e escolha uma senha;
+- Clique em Save & view page, e tudo pronto, jogo publicado!
+- Agora é possível compartilhar seu jogo com qualquer pessoa, apenas enviando o link de sua página. Lembre-se de enviar a senha também;
