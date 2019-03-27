@@ -516,3 +516,21 @@ Os valores dos Objetos do Jogo sempre são reiniciados quando o Jogo inicia e en
 - 'Restricted access settings': marque "Also allow a password to view page" e escolha uma senha;
 - Clique em Save & view page, e tudo pronto, jogo publicado!
 - Agora é possível compartilhar seu jogo com qualquer pessoa, apenas enviando o link de sua página. Lembre-se de enviar a senha também;
+
+### Atividade 12 - Conclusão do curso:
+
+#### Resumão:
+
+- Navegação dinâmica (na Cena);
+- Criação de cenário;
+- Utilização de materiais e texturas;
+- Desenvolvimento de movimentos dos personagens por meio de código (Script);
+- Utilização das animações por meio do sistema *Mecanim* da Unity, que é bem complexo;
+- Utilização do sistema de animação no código do jogo (Animator);
+- Adição de colisão em objetos, mantendo a coerência;
+- Utilização da física para mover objetos (Rigidbody);
+- Configuramos inputs para atirar com o clique do mouse e mover a personagem com as setas;
+- Criação de interfaces para imprimir *Game Over* quando os inimigos atingirem a heroína;
+- Criação dinâmica de zumbis, por meio de "GeradorZumbis";
+- Fizemos o balanço final;
+- E por fim, publicamos o jogo na web, para que o link possa ser enviado a qualquer pessoa (itch.io).
