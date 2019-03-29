@@ -27,3 +27,25 @@
 - No Objeto filho de "Fill Area", "Fill", realizar o mesmo processo;
 - Interactable: define se a Slider é interativa pelo input do usuário;
 - Âncora: posição "fixa", relativa à tela, que um Objeto tem como referência para "acompanhar";
+
+### Atividade 12 - Fazer a Slider Funcionar:
+
+- Criar novo Script "ControlaInterface" e adicioná-lo ao "Canvas";
+- "Min Value": o valor numérico mínimo do Slider;
+- "Max Value": o valor numérico máximo do Slider;
+- "Whole Numbers": define que a "Slider" conterá apenas números inteiros;
+
+#### Script (ControlaInterface):
+
+- `private ControlaJogador scriptControlaJogador;`: cria uma variável do tipo "ControlaJogador", que é o nome de um Script;
+- `scriptControlaJogador = GameObject.FindWithTag("Jogador").GetComponent<ControlaJogador>();`: acessa os "Game Objects", busca o Jogador pela 'Tag' e retorna a referência do Script "ControlaJogador";
+- `using UnityEngine.UI;`: importa a biblioteca que processa a Interface (UI) da Unity;
+- `public Slider SliderVidaJogador;`: cria uma variável do tipo "Slider", que será a Vida do Jogador;
+- `SliderVidaJogador.value = scriptControlaJogador.Vida;`: atualiza a "Slider de Vida" do Jogador. Deve ser inserido no método `AtualizarSliderVidaJogador()`;
+- `SliderVidaJogador.maxValue = scriptControlaJogador.Vida;`: define a "Vida" inicial do Jogador. Deve ser inserido no método `Start()`;
+- `public void AtualizarSliderVidaJogador() { }`: método que atualiza a "Vida" do Jogador. Deve ser chamado no método `TomarDano(dano)`;
+
+#### Script (ControlaJogador):
+
+- `public ControlaInterface scriptControlaInterface;`: cria uma variável do tipo "ControlaInterface", que referencia o Script "ControlaInterface";
+- `scriptControlaInterface.AtualizarSliderVidaJogador()`: executa o método "AtualizarSliderVidaJogador". Deve ser chamado no método `TomarDano(dano)`;
