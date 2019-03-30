@@ -14,6 +14,7 @@ public class ControlaInterface : MonoBehaviour
     void Start()
     {
         scriptControlaJogador = GameObject.FindWithTag("Jogador").GetComponent<ControlaJogador>();
+        AtualizarSliderVidaJogador();
     }
 
     // Update is called once per frame
