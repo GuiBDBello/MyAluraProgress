@@ -89,3 +89,15 @@
 #### Script:
 
 - `AtualizarSliderVidaJogador();`: método deve ser chamado no `Start()`, após atualizar o valor máximo ("maxValue") da Barra de Vida;
+
+### Atividade 16 - Para saber mais - Pixels e Canvas:
+
+#### Canvas:
+
+- Controla como os elementos de interface serão renderizados;
+- Todos os elementos de interface devem ser filhos do Canvas;
+- *Screen Space Overlay*: modo de renderização que faz com que o Canvas seja renderizado por cima da tela do jogo. Preenche toda a tela e muda de tamanho de acordo com a tela;
+- *Canvas Scaler*: muda o tamanho e densidade de pixels dos Objetos filhos do Canvas;
+- Por padrão, os elementos de interface na Unity vem com a escala de 100 pixels para cada 1 unidade;
+- https://docs.unity3d.com/Manual/UICanvas.html: documentação do Canvas;
+- https://docs.unity3d.com/Manual/script-CanvasScaler.html: documentação do Canvas Scaler;
