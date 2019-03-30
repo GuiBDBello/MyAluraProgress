@@ -101,3 +101,37 @@
 - Por padrão, os elementos de interface na Unity vem com a escala de 100 pixels para cada 1 unidade;
 - https://docs.unity3d.com/Manual/UICanvas.html: documentação do Canvas;
 - https://docs.unity3d.com/Manual/script-CanvasScaler.html: documentação do Canvas Scaler;
+
+
+## Aula 02 - Audio, Cenário e Iluminação
+
+### Atividade 01 - Música no Jogo:
+
+- Criar uma pasta "Audio" e jogar os "Assets" baixados nela;
+- http://teknoaxe.com/Home.php: site que contém músicas gratuitas para utilizar no seu jogo;
+- Criar um Objeto vazio (*Empty*) e nomeá-lo "ControlaAudio";
+- Criar um Script de nome "ControlaAudio";
+
+#### Audio Source:
+
+- Em "ControlaAudio", adicione o componente "Audio Source";
+- AudioClip: propriedade que contém o clipe de áudio a ser tocado pela fonte ("Audio Source");
+- Adicione uma música ('You_Cant_Dodge_a_Laser_01') na propriedade "AudioClip" do componente "Audio Source" do Objeto "ControlaAudio";
+- Loop: define se o "AudioClip" rodará repetidamente;
+- O "Audio Source" apenas funciona pois o Objeto "Main Camera" já vem, por padrão, com um componente chamado "Audio Listener";
+
+#### Script (ControlaAudio):
+
+- `private AudioSource meuAudioSource;`: cria uma variável do tipo "AudioSource";
+- `meuAudioSource = GetComponent<AudioSource>();`: dentro do método `Start()`, obtém a referência ao componente "Audio Source" do Objeto que contém o Script;
+- `public static AudioSource instancia;`: cria uma variável estática, ou seja, que compartilha seu valor em todos os lugares que é utilizada;
+
+#### Debug:
+
+- No canto superior esquerdo da Unity, clique no ícone de Lista e selecione "Debug". Todas as variáveis privadas aparecerão, facilitando a vida do desenvolvedor;
+
+#### Start e Awake:
+
+- O método `Start()` é executado quando o Script é habilitado, antes do primeiro `Update()`;
+- O método `Awake()` é executado antes do `Start()`, e mesmo se o Script não estiver habilitado. Cria referências entre os Scripts, inicialização;
+- Tanto o `Start()` e o `Awake()` são chamados apenas uma vez durante o ciclo de vida de um Script em um Objeto. Ou seja, mesmo que o Script seja desabilitado e reabilitado, nenhum desses métodos será executado novamente;
