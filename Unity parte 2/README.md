@@ -49,3 +49,43 @@
 
 - `public ControlaInterface scriptControlaInterface;`: cria uma variável do tipo "ControlaInterface", que referencia o Script "ControlaInterface";
 - `scriptControlaInterface.AtualizarSliderVidaJogador()`: executa o método "AtualizarSliderVidaJogador". Deve ser chamado no método `TomarDano(dano)`;
+
+### Atividade 14 - Embelezar a barra de vida:
+
+- https://kenney.nl: site que contém pacotes de "Assets" pagos e gratuitos para utilizar no seu jogo;
+- https://fonts.google.com: site que contém fontes gratuitas para utilizar no seu jogo;
+- https://www.1001fonts.com: site que contém fontes gratuitas (possui filtro para uso comercial) para utilizar no seu jogo;
+- Criar uma pasta "Interface" e jogar os "Assets" baixados nela;
+- Para utilizar as imagens como *UI*, deve-se alterar a propriedade "Texture Type" delas, de 'Default' para 'Sprite';
+
+#### Barra de Vida:
+
+- Selecione o "Botao_Verde01" e altere o seu "Texture Type" para 'Sprite';
+- Selecione "Fill" dentro do Objeto "Slider" e, no componente "Image", adicione a Sprite 'Botao_Verde01' à propriedade "Source Image";
+- Para editar a imagem, será utilizado o "Sprite Editor", que serve para alterar as configurações dos Sprites;
+
+#### Sprite Editor:
+
+- Selecione uma Sprite e clique em "Sprite Editor";
+- Border: define os "cortes" de um Sprite;
+- Altere todos os campos de "Border" para 10 e clique em "Apply";
+- No componente "Image" do Objeto "Fill", altere a propriedade "Image Type" para 'Sliced';
+- Faça o mesmo processo no Objeto "Background", utilizando 'Botao_Cinza05', mas altere a propriedade "Color" para 'Vermelho' (utilize o *Color Picker*);
+
+#### *9-slice scaling*:
+
+- Técnica de redimensionamento de imagens que consiste em redimensionar proporcionalmente uma imagem, dividindo-a em um *grid* de nove partes;
+- Cada parte do *grid* será redimensionada em apenas um eixo, minimizando a distorção ao redimensionar um Sprite;
+- Topo-esquerda: inalterável;
+- Topo-centro: redimensiona horizontalmente;
+- Topo-direita: inalterável;
+- Centro-esquerda: redimensiona verticalmente;
+- Centro: redimensiona horizontalmente e verticalmente (proporcionalmente);
+- Centro-direita: redimensiona verticalmente;
+- Baixo-esquerda: inalterável;
+- Baixo-centro: redimensiona horizontalmente;
+- Baixo-direita: inalterável;
+
+#### Script:
+
+- `AtualizarSliderVidaJogador();`: método deve ser chamado no `Start()`, após atualizar o valor máximo ("maxValue") da Barra de Vida;
