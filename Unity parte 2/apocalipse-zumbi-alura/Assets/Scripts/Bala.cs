@@ -5,6 +5,7 @@ using UnityEngine;
 public class Bala : MonoBehaviour {
 
     public float Velocidade = 20;
+    public AudioClip SomDeMorte;
 
     private Rigidbody rigidbodyBala;
 
@@ -25,6 +26,7 @@ public class Bala : MonoBehaviour {
         if(objetoDeColisao.tag == "Inimigo")
         {
             Destroy(objetoDeColisao.gameObject);
+            ControlaAudio.instancia.PlayOneShot(SomDeMorte);
         }
 
         Destroy(gameObject);
