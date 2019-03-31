@@ -155,3 +155,14 @@
 
 - - `public AudioClip SomDeMorte;`: cria uma variável que armazenará um clipe de som;
 - `ControlaAudio.instancia.PlayOneShot(SomDoTiro);`: executa o método "PlayOneShot", tocando o "AudioClip" 'SomDoTiro';
+
+### Atividade 08 - Aumentando o Cenário do Jogo:
+
+#### Rotacionando Colisor:
+
+- Crie um Objeto vazio (*Empty*) dentro do Objeto que receberá o Colisor;
+- Crie um "Collider" (**Ex.:** "Box Collider") no Objeto;
+- No componente "Box Collider", selecione a engrenagem e clique em "Copy Component";
+- Remova o Colisor;
+- No Objeto vazio, no componente "Transform", selecione a engrenagem e clique em "Paste Component As New";
+- Rotacione o "Transform" do Objeto vazio;
