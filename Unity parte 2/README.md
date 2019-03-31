@@ -135,3 +135,23 @@
 - O método `Start()` é executado quando o Script é habilitado, antes do primeiro `Update()`;
 - O método `Awake()` é executado antes do `Start()`, e mesmo se o Script não estiver habilitado. Cria referências entre os Scripts, inicialização;
 - Tanto o `Start()` e o `Awake()` são chamados apenas uma vez durante o ciclo de vida de um Script em um Objeto. Ou seja, mesmo que o Script seja desabilitado e reabilitado, nenhum desses métodos será executado novamente;
+
+### Atividade 04 - Sons do Jogo:
+
+- Uma forma de tocar sons no jogo é armazená-los em variáveis do tipo "AudioClip" e chamá-los a partir de um "AudioSource";
+- O método "PlayOneShot(AudioClip)" recebe como parâmetro um clipe de som, que é tocado apenas uma vez e é encerrado;
+
+#### Script (ControlaJogador):
+
+- `public AudioClip SomDeDano;`: cria uma variável que armazenará um clipe de som;
+- `ControlaAudio.instancia.PlayOneShot(SomDeDano);`: acessa a variável estática "instancia" no Script "ControlaAudio" e executa o método "PlayOneShot(AudioClip)" da classe "AudioSource" que faz um "AudioClip" tocar uma vez só;
+
+#### Script (ControlaArma):
+
+- `public AudioClip SomDoTiro;`: cria uma variável que armazenará um clipe de som;
+- `ControlaAudio.instancia.PlayOneShot(SomDoTiro);`: executa o método "PlayOneShot", tocando o "AudioClip" 'SomDoTiro';
+
+#### Script (Bala):
+
+- - `public AudioClip SomDeMorte;`: cria uma variável que armazenará um clipe de som;
+- `ControlaAudio.instancia.PlayOneShot(SomDoTiro);`: executa o método "PlayOneShot", tocando o "AudioClip" 'SomDoTiro';

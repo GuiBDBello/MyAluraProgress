@@ -3168,6 +3168,11 @@ PrefabInstance:
       propertyPath: CanoDaArma
       value: 
       objectReference: {fileID: 2037813728}
+    - target: {fileID: 114240463659201816, guid: 4b3bb44effa49480d8d18049684cc33a,
+        type: 3}
+      propertyPath: SomDoTiro
+      value: 
+      objectReference: {fileID: 8300000, guid: 8fd014d96915fcd459e0e66f218dd285, type: 3}
     - target: {fileID: 114135333458066176, guid: 4b3bb44effa49480d8d18049684cc33a,
         type: 3}
       propertyPath: MascaraChao.m_Bits
@@ -3183,6 +3188,11 @@ PrefabInstance:
       propertyPath: scriptControlaInterface
       value: 
       objectReference: {fileID: 1320272345}
+    - target: {fileID: 114135333458066176, guid: 4b3bb44effa49480d8d18049684cc33a,
+        type: 3}
+      propertyPath: SomDeDano
+      value: 
+      objectReference: {fileID: 8300000, guid: ab9fb76b1c1500e4997bf89b88c29151, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b3bb44effa49480d8d18049684cc33a, type: 3}
 --- !u!4 &1179121621 stripped
