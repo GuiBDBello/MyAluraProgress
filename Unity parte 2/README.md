@@ -166,3 +166,26 @@
 - Remova o Colisor;
 - No Objeto vazio, no componente "Transform", selecione a engrenagem e clique em "Paste Component As New";
 - Rotacione o "Transform" do Objeto vazio;
+
+### Atividade 11 - Iluminação:
+
+- Toda Cena é criada, por padrão, com uma Câmera e uma Luz (direcional);
+
+#### Luz Direcional (*Directional Light*):
+
+- "Simula" o Sol. A posição da Luz não a influencia, ou seja, incide igualmente sob todos os Objetos da Cena;
+
+#### Luz Holofote (*Spot Light*):
+
+- "Simula" uma Lanterna. Ela é lançada para frente, no formato de cone, começando da ponta e aumentando o ângulo de sua abertura;
+
+#### Luz de Ponto (*Point Light*):
+
+- É lançada a partir de um ponto para todas as direções, igualmente;
+
+#### Configurações de Iluminação:
+
+- Podem ocorrer erros na Iluminação de uma Cena quando ela é carregada durante a execução do jogo;
+- '*Window* > *Rendering* > *Lighting Settings*': acessa as propriedades de Iluminação da Unity;
+- Em *Lightmapping Settings*, a propriedade "Auto Generate" pode ocasionar esse problema. Para corrigir isso, desmarque a opção "Auto Generate" e selecione "Generate Lighting". Agora, a Cena será carregada com as Luzes já computadas;
+- **Obs.:** enquanto a propriedade "Auto Generate" está desmarcada, ao adicionar mais Luzes à Cena a Iluminação deve ser gerada novamente;
