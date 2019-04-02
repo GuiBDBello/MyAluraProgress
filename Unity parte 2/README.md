@@ -189,3 +189,24 @@
 - '*Window* > *Rendering* > *Lighting Settings*': acessa as propriedades de Iluminação da Unity;
 - Em *Lightmapping Settings*, a propriedade "Auto Generate" pode ocasionar esse problema. Para corrigir isso, desmarque a opção "Auto Generate" e selecione "Generate Lighting". Agora, a Cena será carregada com as Luzes já computadas;
 - **Obs.:** enquanto a propriedade "Auto Generate" está desmarcada, ao adicionar mais Luzes à Cena a Iluminação deve ser gerada novamente;
+
+## Aula 03 - Boas práticas de código
+
+### Atividade 01 - Refatorando a Movimentação:
+
+- Criar Script "MovimentoPersonagem";
+
+#### Script (MovimentoPersonagem):
+
+- `void Rigidbody meuRigidbody`: variável que conterá o Rigidbody do Objeto (Personagem);
+- `public void Movimentar(Vector3 direcao, float velocidade) { }`: método que irá movimentar um Objeto (Personagem) utilizando seu Rigidbody;
+- `meuRigidbody.MovePosition(meuRigidbody.position + direcao.normalized * velocidade * Time.deltaTime)`: conteúdo do método `Movimentar(direcao, velocidade)`;
+- `public void Rotacionar(Vector3 direcao)`: método que irá rotacionar um Objeto (Personagem) utilizando seu Rigidbody;
+- `meuRigidbody.MoveRotation(Quaternion.LookRotation(direcao));`: conteúdo do método `Rotacionar(direcao)`;
+
+#### Script (ControlaInimigo):
+
+- `private MovimentoPersonagem movimentoInimigo;`: cria uma variável do tipo "MovimentoPersonagem";
+- `movimentoInimigo = GetComponent<MovimentoPersonagem>();`: obtém a referência do componente Script "MovimentoPersonagem";
+- `movimentoInimigo.Movimentar(direcao, velocidade);`: executa o método criado no Script "MovimentoPersonagem";
+- `movimentoInimigo.Rotacionar(direcao);`: executa o método criado no Script "MovimentoPersonagem";
