@@ -248,3 +248,8 @@
 
 - `Animator.SetFloat("Parametro", valor);`: define o valor do parâmetro "Parametro" de uma Animação;
 - `Vector3.magnitude;`: tamanho de um vetor Vector3;
+
+### Atividade 09 - Criando Status:
+
+- `[HideInInspector]`: atributo de uma variável, deve ser inserido acima de sua declaração;
+- 

@@ -5,17 +5,18 @@ using UnityEngine;
 public class ControlaInimigo : MonoBehaviour {
 
     public GameObject Jogador;
-    public float Velocidade = 5;
     
     private Animator animatorInimigo;
     private MovimentoPersonagem movimentaInimigo;
     private AnimacaoPersonagem animacaoInimigo;
+    private Status statusInimigo;
 
 	// Use this for initialization
 	void Start () {
         Jogador = GameObject.FindWithTag("Jogador");
         movimentaInimigo = GetComponent<MovimentoPersonagem>();
         animacaoInimigo = GetComponent<AnimacaoPersonagem>();
+        statusInimigo = GetComponent<Status>();
         AleatorizarZumbi();
     }
 
@@ -29,7 +30,7 @@ public class ControlaInimigo : MonoBehaviour {
 
         if (distancia > 2.5)
         {
-            movimentaInimigo.Movimentar(direcao, Velocidade);
+            movimentaInimigo.Movimentar(direcao, statusInimigo.Velocidade);
             animacaoInimigo.Atacar(false);
 
         }
