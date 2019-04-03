@@ -198,10 +198,11 @@
 
 #### Script (MovimentoPersonagem):
 
-- `void Rigidbody meuRigidbody`: variável que conterá o Rigidbody do Objeto (Personagem);
-- `public void Movimentar(Vector3 direcao, float velocidade) { }`: método que irá movimentar um Objeto (Personagem) utilizando seu Rigidbody;
+- `private Rigidbody meuRigidbody`: variável que conterá o Rigidbody do Objeto (Personagem/Inimigo);
+- `meuRigidbody = GetComponent<Rigidbody>();`: obtém a referência do componente Rigidbody. Inserido no `Awake()`;
+- `public void Movimentar(Vector3 direcao, float velocidade) { }`: método que irá movimentar um Objeto (Personagem/Inimigo) utilizando seu Rigidbody;
 - `meuRigidbody.MovePosition(meuRigidbody.position + direcao.normalized * velocidade * Time.deltaTime)`: conteúdo do método `Movimentar(direcao, velocidade)`;
-- `public void Rotacionar(Vector3 direcao)`: método que irá rotacionar um Objeto (Personagem) utilizando seu Rigidbody;
+- `public void Rotacionar(Vector3 direcao)`: método que irá rotacionar um Objeto (Personagem/Inimigo) utilizando seu Rigidbody;
 - `meuRigidbody.MoveRotation(Quaternion.LookRotation(direcao));`: conteúdo do método `Rotacionar(direcao)`;
 
 #### Script (ControlaInimigo):
@@ -210,3 +211,21 @@
 - `movimentoInimigo = GetComponent<MovimentoPersonagem>();`: obtém a referência do componente Script "MovimentoPersonagem";
 - `movimentoInimigo.Movimentar(direcao, velocidade);`: executa o método criado no Script "MovimentoPersonagem";
 - `movimentoInimigo.Rotacionar(direcao);`: executa o método criado no Script "MovimentoPersonagem";
+
+### Atividade 03 - Refatorando a Animação:
+
+- Criar Script "AnimacaoPersonagem";
+
+#### Script (AnimacaoPersonagem):
+
+- `private Animator meuAnimator`: variável que conterá o Animator do Objeto (Personagem/Inimigo);
+- `meuAnimator = GetComponent<Animator>();`: obtém a referência do componente Animator. Inserido no `Awake()`;
+- `public void Atacar(bool estado) { }`: método que irá animar um Objeto (Personagem/Inimigo) utilizando seu Animator;
+- `meuAnimator.SetBool("Atacando", estado);`: conteúdo do método `Atacar(estado)` que altera a animação "Atacando" para o 'estado' recebido;
+- 
+
+#### Script (ControlaInimigo):
+
+- `private AnimacaoPersonagem animacaoInimigo;`: cria uma variável do tipo "AnimacaoPersonagem";
+- `animacaoInimigo = GetComponent<AnimacaoPersonagem>();`: obtém a referência do componente Script "AnimacaoPersonagem";
+- `animacaoInimigo.Atacar(true);` ou `animacaoInimigo.Atacar(false);`: executa o método criado no Script "AnimacaoPersonagem";
