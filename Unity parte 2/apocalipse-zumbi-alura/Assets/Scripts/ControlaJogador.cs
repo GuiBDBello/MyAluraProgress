@@ -14,14 +14,14 @@ public class ControlaJogador : MonoBehaviour
     public AudioClip SomDeDano;
 
     private Vector3 direcao;
-    private Rigidbody rigidbodyJogador;
-    private Animator animatorJogador;
+    private MovimentoJogador meuMovimentoJogador;
+    private AnimacaoPersonagem animacaoJogador;
 
     private void Start()
     {
         Time.timeScale = 1;
-        rigidbodyJogador = GetComponent<Rigidbody>();
-        animatorJogador = GetComponent<Animator>();
+        meuMovimentoJogador = GetComponent<MovimentoJogador>();
+        animacaoJogador = GetComponent<AnimacaoPersonagem>();
     }
 
     // Update is called once per frame
@@ -33,14 +33,7 @@ public class ControlaJogador : MonoBehaviour
 
         direcao = new Vector3(eixoX, 0, eixoZ);
 
-        if (direcao != Vector3.zero)
-        {
-            animatorJogador.SetBool("Movendo", true);
-        }
-        else
-        {
-            animatorJogador.SetBool("Movendo", false);
-        }
+        animacaoJogador.Movimentar(direcao.magnitude);
 
         if(Vida <= 0)
         {
@@ -53,25 +46,8 @@ public class ControlaJogador : MonoBehaviour
 
     void FixedUpdate()
     {
-        rigidbodyJogador.MovePosition
-            (rigidbodyJogador.position +
-            (direcao * Velocidade * Time.deltaTime));
-
-        Ray raio = Camera.main.ScreenPointToRay(Input.mousePosition);
-        Debug.DrawRay(raio.origin, raio.direction * 100, Color.red);
-
-        RaycastHit impacto;
-
-        if(Physics.Raycast(raio, out impacto, 100, MascaraChao))
-        {
-            Vector3 posicaoMiraJogador = impacto.point - transform.position;
-
-            posicaoMiraJogador.y = transform.position.y;
-
-            Quaternion novaRotacao = Quaternion.LookRotation(posicaoMiraJogador);
-
-            rigidbodyJogador.MoveRotation(novaRotacao);
-        }
+        meuMovimentoJogador.Movimentar(direcao, Velocidade);
+        meuMovimentoJogador.RotacaoJogador(MascaraChao);
     }
 
     public void TomarDano(int dano)
