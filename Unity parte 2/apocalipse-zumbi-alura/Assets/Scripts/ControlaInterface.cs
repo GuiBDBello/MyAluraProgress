@@ -25,6 +25,6 @@ public class ControlaInterface : MonoBehaviour
 
     public void AtualizarSliderVidaJogador()
     {
-        SliderVidaJogador.value = scriptControlaJogador.Vida;
+        SliderVidaJogador.value = scriptControlaJogador.statusJogador.Vida;
     }
 }
