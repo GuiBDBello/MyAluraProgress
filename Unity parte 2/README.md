@@ -229,3 +229,22 @@
 - `private AnimacaoPersonagem animacaoInimigo;`: cria uma variável do tipo "AnimacaoPersonagem";
 - `animacaoInimigo = GetComponent<AnimacaoPersonagem>();`: obtém a referência do componente Script "AnimacaoPersonagem";
 - `animacaoInimigo.Atacar(true);` ou `animacaoInimigo.Atacar(false);`: executa o método criado no Script "AnimacaoPersonagem";
+
+### Atividade 06 - Refatorando a Jogador:
+
+- Criar Script "MovimentoJogador";
+
+#### Herança:
+
+- Para evitar a duplicação de código e o Script "MovimentoJogador" possuir os métodos de "MovimentaPersonagem", é possível aplicar a Herança;
+- `public class MovimentoJogador : MovimentoPersonagem { }`: "MovimentoJogador" herda "MovimentoPersonagem" (inclusive as Heranças de "MovimentoPersonagem");
+
+#### Animator:
+
+- Parâmetro de transição `Float`: realiza a transição da Animação utilizando Condições como *Greater* e *Less* do que um valor de ponto flutuante;
+- **Dica:** utilizar o valor de ponto flutuante '0.1', pois como o valor mínimo é '0.0', a condição "Less" nunca iria se concretizar;
+
+#### Script:
+
+- `Animator.SetFloat("Parametro", valor);`: define o valor do parâmetro "Parametro" de uma Animação;
+- `Vector3.magnitude;`: tamanho de um vetor Vector3;
