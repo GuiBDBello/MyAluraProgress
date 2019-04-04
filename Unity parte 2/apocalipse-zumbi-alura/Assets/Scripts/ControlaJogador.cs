@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class ControlaJogador : MonoBehaviour
 {
     public LayerMask MascaraChao;
-    public GameObject TextoGameOver;
     public ControlaInterface scriptControlaInterface;
     public AudioClip SomDeDano;
     public Status statusJogador;
@@ -64,7 +63,6 @@ public class ControlaJogador : MonoBehaviour
 
     public void Morrer()
     {
-        Time.timeScale = 0;
-        TextoGameOver.SetActive(true);
+        scriptControlaInterface.GameOver();
     }
 }
