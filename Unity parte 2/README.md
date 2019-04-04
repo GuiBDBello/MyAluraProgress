@@ -252,4 +252,17 @@
 ### Atividade 09 - Criando Status:
 
 - `[HideInInspector]`: atributo de uma variável, deve ser inserido acima de sua declaração;
-- 
+
+### Atividade 11 - Interfaces no C#:
+
+#### Interface:
+
+- A nomenclatura de uma Interface em C# segue o seguinte padrão: "I" concatenado com "NomeInterface" ("INomeInterface");
+- É declarada com `public interface INomeInterface`, e não herda de `MonoBehaviour`;
+- Métodos: os métodos de uma Interface são apenas declarados e não possuem código. Seu código será feito na Classe que os métodos são implementados;
+- Para utilizar a Interface, utiliza-se a vírgula (','), após o nome da Classe e a Herança (se houver). **Ex.:** `public class NomeClasse : NomeClasseHerdada, INomeInterface { }`;
+- **Todos os métodos de uma Interface devem ser implementados na Classe que a implementa**;
+
+#### Visual Studio:
+
+- `Ctrl + .`: *quick fix*. Mostra correções/implementações rápidas de código;
