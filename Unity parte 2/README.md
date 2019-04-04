@@ -266,3 +266,14 @@
 #### Visual Studio:
 
 - `Ctrl + .`: *quick fix*. Mostra correções/implementações rápidas de código;
+
+### Atividade 14 - Para saber mais - Magic Number e Literal Strings:
+
+- *Magic Number*: números soltos, que não são atrelados a nenhuma variável;
+- *Literal String*: mesma lógica do *Magic Number*, porém com Strings;
+
+#### Tags:
+
+- É uma boa prática criar uma Classe para armazenar as Tags do projeto;
+- `public class Tags : MonoBehaviour { }`: classe que armazenará as Tags do jogo;
+- `public const string Jogador = "Jogador";`: constante que armazenará o valor de uma Tag;
