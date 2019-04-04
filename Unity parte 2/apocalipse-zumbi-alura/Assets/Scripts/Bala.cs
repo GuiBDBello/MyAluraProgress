@@ -25,8 +25,7 @@ public class Bala : MonoBehaviour {
     {
         if(objetoDeColisao.tag == "Inimigo")
         {
-            Destroy(objetoDeColisao.gameObject);
-            ControlaAudio.instancia.PlayOneShot(SomDeMorte);
+            objetoDeColisao.GetComponent<ControlaInimigo>().TomarDano(50);
         }
 
         Destroy(gameObject);

@@ -632,7 +632,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Jogador: {fileID: 0}
-  Velocidade: 5
+  SomDeMorte: {fileID: 8300000, guid: 7306c1d3e5934a540a960c5ee9f8be14, type: 3}
 --- !u!114 &3466121708892847746
 MonoBehaviour:
   m_ObjectHideFlags: 0
