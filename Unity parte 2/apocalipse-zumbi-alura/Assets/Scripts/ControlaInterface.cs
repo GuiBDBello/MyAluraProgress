@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class ControlaInterface : MonoBehaviour
 {
-
     public Slider SliderVidaJogador;
+    public GameObject TextoGameOver;
 
     private ControlaJogador scriptControlaJogador;
 
@@ -26,5 +26,11 @@ public class ControlaInterface : MonoBehaviour
     public void AtualizarSliderVidaJogador()
     {
         SliderVidaJogador.value = scriptControlaJogador.statusJogador.Vida;
+    }
+
+    public void GameOver()
+    {
+        Time.timeScale = 0;
+        TextoGameOver.SetActive(true);
     }
 }
