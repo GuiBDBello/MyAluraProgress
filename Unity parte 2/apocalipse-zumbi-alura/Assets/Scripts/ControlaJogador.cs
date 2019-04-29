@@ -14,7 +14,7 @@ public class ControlaJogador : MonoBehaviour
     private MovimentoJogador meuMovimentoJogador;
     private AnimacaoPersonagem animacaoJogador;
 
-    private void Start()
+    private void Awake()
     {
         Time.timeScale = 1;
         meuMovimentoJogador = GetComponent<MovimentoJogador>();

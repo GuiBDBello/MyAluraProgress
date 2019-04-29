@@ -17,12 +17,6 @@ public class ControlaInterface : MonoBehaviour
         AtualizarSliderVidaJogador();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     public void AtualizarSliderVidaJogador()
     {
         SliderVidaJogador.value = scriptControlaJogador.statusJogador.Vida;
