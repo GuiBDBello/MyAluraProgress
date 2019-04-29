@@ -277,3 +277,9 @@
 - É uma boa prática criar uma Classe para armazenar as Tags do projeto;
 - `public class Tags : MonoBehaviour { }`: classe que armazenará as Tags do jogo;
 - `public const string Jogador = "Jogador";`: constante que armazenará o valor de uma Tag;
+
+## Aula 04 - Melhorando o Zumbi e Gerador
+
+### Atividade 01 - Gerar uma posição Aleatória:
+
+- `Random.insideUnitSphere + transform.position`: retorna um Vector3 que representa uma posição aleatória dentro de um raio de 1 unidade, relacionada à posição do Objeto. Para aumentar o raio, basta multiplicar `Random.insideUnitSphere` pelo raio desejado;
