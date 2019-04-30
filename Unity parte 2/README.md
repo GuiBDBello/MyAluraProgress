@@ -329,5 +329,5 @@
 #### PlayerPrefs:
 
 - Guarda as "preferências" do jogador no disco rígido da máquina;
-- `PlayerPrefs.SetFloat("NomePreferencia", valorPreferencia)`: ;
-- `PlayerPrefs.GetFloat("")`: ;
+- `PlayerPrefs.SetFloat("NomePreferencia", valorPreferencia)`: define uma PlayerPref do tipo float de nome 'NomePreferencia' com o valor 'valorPreferencia';
+- `PlayerPrefs.GetFloat("NomePreferencia")`: retorna uma PlayerPref do tipo float de nome 'NomePreferencia';
