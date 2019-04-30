@@ -283,3 +283,12 @@
 ### Atividade 01 - Gerar uma posição Aleatória:
 
 - `Random.insideUnitSphere + transform.position`: retorna um Vector3 que representa uma posição aleatória dentro de um raio de 1 unidade, relacionada à posição do Objeto. Para aumentar o raio, basta multiplicar `Random.insideUnitSphere` pelo raio desejado;
+
+### Atividade 04 - Fazer o Zumbi Vagar:
+
+#### Criando cronômetro:
+
+- `tempoEvento -= Time.deltaTime;`: realiza uma contagem, simulando um cronômetro decrescente;
+- `if (tempoCronometro <= 0) { tempoCronometro += tempoInicial }`: verifica se o cronômetro encerrou, e reinicia-o;
+- `Vector3.Distance(Vector3 a, Vector3 b);`: retorna a distância entre 'a' e 'b';
+- Na Unity, ao verificar se um Objeto está em determinada posição, deve-se testar uma distância aproximada, pois é possível que ocora uma imprecisão ao obter as posições dos Objetos. Ex.: `if (Vector3.Distance(Vector3 a, Vector3 b) <= 0.05) { // Está "na mesma posição" }`;
