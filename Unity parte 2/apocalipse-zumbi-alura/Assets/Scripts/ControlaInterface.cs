@@ -9,6 +9,7 @@ public class ControlaInterface : MonoBehaviour
     public Slider SliderVidaJogador;
     public GameObject TextoGameOver;
     public GameObject PainelDeGameOver;
+    public Text TextoTempoDeSobrevivencia;
 
     private ControlaJogador scriptControlaJogador;
 
@@ -29,6 +30,10 @@ public class ControlaInterface : MonoBehaviour
     {
         PainelDeGameOver.SetActive(true);
         Time.timeScale = 0;
+
+        int minutos = (int) (Time.timeSinceLevelLoad / 60);
+        int segundos = (int) (Time.timeSinceLevelLoad % 60);
+        TextoTempoDeSobrevivencia.text = "Você sobreviveu por " + minutos + " minutos e " + segundos + " segundos.";
     }
 
     public void Reiniciar()
