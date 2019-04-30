@@ -321,3 +321,13 @@
 - `Time.timeSinceLevelLoad;`: retorna o tempo desde que o nível foi carregado;
 - `(int) 123.45f;`: converte um float para int;
 - `%`: operador 'módulo'. Em uma operação entre dois números, retorna o resto da divisão;
+
+### Atividade 08 - Salvando valores na Unity:
+
+- `string.Format("O primeiro parâmetro é: {0} e o segundo parâmetro é: {1}", minutos, segundos);`: retorna uma string formatada, os conteúdos das chaves são parâmetros que o método recebe;
+
+#### PlayerPrefs:
+
+- Guarda as "preferências" do jogador no disco rígido da máquina;
+- `PlayerPrefs.SetFloat("NomePreferencia", valorPreferencia)`: ;
+- `PlayerPrefs.GetFloat("")`: ;
