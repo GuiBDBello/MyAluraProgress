@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class ControlaJogador : MonoBehaviour
 {
@@ -16,7 +15,6 @@ public class ControlaJogador : MonoBehaviour
 
     private void Awake()
     {
-        Time.timeScale = 1;
         meuMovimentoJogador = GetComponent<MovimentoJogador>();
         animacaoJogador = GetComponent<AnimacaoPersonagem>();
         statusJogador = GetComponent<Status>();
@@ -32,14 +30,6 @@ public class ControlaJogador : MonoBehaviour
         direcao = new Vector3(eixoX, 0, eixoZ);
 
         animacaoJogador.Movimentar(direcao.magnitude);
-
-        if(statusJogador.Vida <= 0)
-        {
-            if(Input.GetButtonDown("Fire1"))
-            {
-                SceneManager.LoadScene("game");
-            }
-        }
     }
 
     void FixedUpdate()

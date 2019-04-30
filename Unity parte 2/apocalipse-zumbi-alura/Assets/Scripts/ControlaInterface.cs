@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ControlaInterface : MonoBehaviour
 {
     public Slider SliderVidaJogador;
     public GameObject TextoGameOver;
+    public GameObject PainelDeGameOver;
 
     private ControlaJogador scriptControlaJogador;
 
@@ -15,6 +17,7 @@ public class ControlaInterface : MonoBehaviour
     {
         scriptControlaJogador = GameObject.FindWithTag(Tags.Jogador).GetComponent<ControlaJogador>();
         AtualizarSliderVidaJogador();
+        Time.timeScale = 1;
     }
 
     public void AtualizarSliderVidaJogador()
@@ -24,7 +27,12 @@ public class ControlaInterface : MonoBehaviour
 
     public void GameOver()
     {
+        PainelDeGameOver.SetActive(true);
         Time.timeScale = 0;
-        TextoGameOver.SetActive(true);
+    }
+
+    public void Reiniciar()
+    {
+        SceneManager.LoadScene("game");
     }
 }
