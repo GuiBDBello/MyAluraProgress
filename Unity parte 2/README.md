@@ -298,3 +298,15 @@
 #### Verificar sobreposição na instanciação:
 
 - `Physics.OverlapSphere(Vector3 posicao, float raio, LayerMask camada);`: retorna um vetor de Colisor com todos os Colisores que tocam a esfera criada na posicao 'posicao' de raio 'raio' cujos Objetos pertencem à camada 'camada';
+
+### Atividade 09 - Gerar Zumbi numa posição não ocupada:
+
+- `IEnumerator metodo() { }`: método que espera como retorno um `yield`;
+- `yield return null;`: retorno de um método IEnumerator que faz a Unity esperar o próximo frame, impedindo a engine de travar (como pode acontecer em um `while(true) { }`);
+- `StartCoroutine(metodo());`: método que realiza a chamada de um método IEnumerator;
+
+#### Mostrar GameObjects:
+
+- `void OnDrawGizmos() { }`: método da Unity que desenha os ícones dos Objetos;
+- `Gizmos.color = Color.yellow;`: atribui uma cor a um Gizmo;
+- `Gizmos.DrawWireSphere(transform.position, raio);`: desenha as linhas do Gizmo em formato de esfera, na posição do Objeto que contém o Script, de raio 'raio';

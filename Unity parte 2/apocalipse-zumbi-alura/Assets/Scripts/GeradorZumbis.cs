@@ -9,40 +9,54 @@ public class GeradorZumbis : MonoBehaviour {
     public LayerMask LayerZumbi;
 
     private float contadorTempo = 0;
+    private float distanciaDeGeracao = 3;
+    private float distanciaDoJogadorParaGeracao = 20;
+    private GameObject jogador;
 
     // Use this for initialization
     void Start () {
-		
+        jogador = GameObject.FindWithTag("Jogador");
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
-        contadorTempo += Time.deltaTime;
-
-        if(contadorTempo >= TempoGerarZumbi)
+        if (Vector3.Distance(transform.position, jogador.transform.position) > distanciaDoJogadorParaGeracao)
         {
-            GerarNovoZumbi();
-            contadorTempo = 0;
+            contadorTempo += Time.deltaTime;
+
+            if (contadorTempo >= TempoGerarZumbi)
+            {
+                StartCoroutine(GerarNovoZumbi());
+                contadorTempo = 0;
+            }
         }
     }
 
-    void GerarNovoZumbi()
+    void OnDrawGizmos()
+    {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, distanciaDeGeracao);
+    }
+
+    IEnumerator GerarNovoZumbi()
     {
         Vector3 posicaoDeCriacao = AleatorizarPosicao();
         Collider[] colisores = Physics.OverlapSphere(posicaoDeCriacao, 1, LayerZumbi);
 
-        if (colisores.Length > 0)
+        while (colisores.Length > 0)
         {
             posicaoDeCriacao = AleatorizarPosicao();
             colisores = Physics.OverlapSphere(posicaoDeCriacao, 1, LayerZumbi);
+            yield return null;
         }
         Instantiate(Zumbi, posicaoDeCriacao, transform.rotation);
+
     }
 
     Vector3 AleatorizarPosicao()
     {
-        Vector3 posicao = Random.insideUnitSphere * 3;
+        Vector3 posicao = Random.insideUnitSphere * distanciaDeGeracao;
         posicao += transform.position;
         posicao.y = 0;
 
