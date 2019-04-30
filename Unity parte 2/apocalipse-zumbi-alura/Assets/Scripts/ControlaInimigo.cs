@@ -6,6 +6,7 @@ public class ControlaInimigo : MonoBehaviour, IMatavel
 {
     public GameObject Jogador;
     public AudioClip SomDeMorte;
+    public float RaioVagar;
     
     private Animator animatorInimigo;
     private MovimentoPersonagem movimentaInimigo;
@@ -13,9 +14,11 @@ public class ControlaInimigo : MonoBehaviour, IMatavel
     private Status statusInimigo;
     private Vector3 posicaoAleatoria;
     private Vector3 direcao;
+    private float contadorVagar;
+    private float tempoEntrePosicoesAleatorias = 4;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
         Jogador = GameObject.FindWithTag(Tags.Jogador);
         movimentaInimigo = GetComponent<MovimentoPersonagem>();
         animacaoInimigo = GetComponent<AnimacaoPersonagem>();
@@ -28,6 +31,7 @@ public class ControlaInimigo : MonoBehaviour, IMatavel
         float distancia = Vector3.Distance(transform.position, Jogador.transform.position);
 
         movimentaInimigo.Rotacionar(direcao);
+        animacaoInimigo.Movimentar(direcao.magnitude);
 
         if (distancia > 15)
         {
@@ -35,9 +39,7 @@ public class ControlaInimigo : MonoBehaviour, IMatavel
         }
         else if (distancia > 2.5)
         {
-            direcao = Jogador.transform.position - transform.position;
-            movimentaInimigo.Movimentar(direcao, statusInimigo.Velocidade);
-            animacaoInimigo.Atacar(false);
+            Perseguir();
         }
         else
         {
@@ -60,13 +62,32 @@ public class ControlaInimigo : MonoBehaviour, IMatavel
 
     void Vagar()
     {
-        posicaoAleatoria = AleatorizarPosicao();
-        direcao = posicaoAleatoria - transform.position;
+        contadorVagar -= Time.deltaTime;
+
+        if (contadorVagar <= 0)
+        {
+            posicaoAleatoria = AleatorizarPosicao();
+            contadorVagar += tempoEntrePosicoesAleatorias;
+        }
+
+        bool ficouPertoOSuficiente = Vector3.Distance(transform.position, posicaoAleatoria) <= 0.05;
+        if (ficouPertoOSuficiente == false)
+        {
+            direcao = posicaoAleatoria - transform.position;
+            movimentaInimigo.Movimentar(direcao, statusInimigo.Velocidade);
+        }
+    }
+
+    void Perseguir()
+    {
+        direcao = Jogador.transform.position - transform.position;
+        movimentaInimigo.Movimentar(direcao, statusInimigo.Velocidade);
+        animacaoInimigo.Atacar(false);
     }
 
     Vector3 AleatorizarPosicao()
     {
-        Vector3 posicao = Random.insideUnitSphere * 10;
+        Vector3 posicao = Random.insideUnitSphere * RaioVagar;
         posicao += transform.position;
         posicao.y = transform.position.y;
 
