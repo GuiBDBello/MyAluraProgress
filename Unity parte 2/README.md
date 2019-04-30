@@ -190,6 +190,7 @@
 - Em *Lightmapping Settings*, a propriedade "Auto Generate" pode ocasionar esse problema. Para corrigir isso, desmarque a opção "Auto Generate" e selecione "Generate Lighting". Agora, a Cena será carregada com as Luzes já computadas;
 - **Obs.:** enquanto a propriedade "Auto Generate" está desmarcada, ao adicionar mais Luzes à Cena a Iluminação deve ser gerada novamente;
 
+
 ## Aula 03 - Boas práticas de código
 
 ### Atividade 01 - Refatorando a Movimentação:
@@ -278,6 +279,7 @@
 - `public class Tags : MonoBehaviour { }`: classe que armazenará as Tags do jogo;
 - `public const string Jogador = "Jogador";`: constante que armazenará o valor de uma Tag;
 
+
 ## Aula 04 - Melhorando o Zumbi e Gerador
 
 ### Atividade 01 - Gerar uma posição Aleatória:
@@ -310,3 +312,12 @@
 - `void OnDrawGizmos() { }`: método da Unity que desenha os ícones dos Objetos;
 - `Gizmos.color = Color.yellow;`: atribui uma cor a um Gizmo;
 - `Gizmos.DrawWireSphere(transform.position, raio);`: desenha as linhas do Gizmo em formato de esfera, na posição do Objeto que contém o Script, de raio 'raio';
+
+
+## Aula 05 - Salvando Melhor Resultado e Finalização
+
+### Atividade 05 - Tempo de Sobrevivência:
+
+- `Time.timeSinceLevelLoad;`: retorna o tempo desde que o nível foi carregado;
+- `(int) 123.45f;`: converte um float para int;
+- `%`: operador 'módulo'. Em uma operação entre dois números, retorna o resto da divisão;
