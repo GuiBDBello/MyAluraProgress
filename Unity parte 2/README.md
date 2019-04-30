@@ -292,3 +292,9 @@
 - `if (tempoCronometro <= 0) { tempoCronometro += tempoInicial }`: verifica se o cronômetro encerrou, e reinicia-o;
 - `Vector3.Distance(Vector3 a, Vector3 b);`: retorna a distância entre 'a' e 'b';
 - Na Unity, ao verificar se um Objeto está em determinada posição, deve-se testar uma distância aproximada, pois é possível que ocora uma imprecisão ao obter as posições dos Objetos. Ex.: `if (Vector3.Distance(Vector3 a, Vector3 b) <= 0.05) { // Está "na mesma posição" }`;
+
+### Atividade 06 - Zumbi em Local Aleatório:
+
+#### Verificar sobreposição na instanciação:
+
+- `Physics.OverlapSphere(Vector3 posicao, float raio, LayerMask camada);`: retorna um vetor de Colisor com todos os Colisores que tocam a esfera criada na posicao 'posicao' de raio 'raio' cujos Objetos pertencem à camada 'camada';
