@@ -2,9 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface IMatavel
+public interface ICuravel
 {
-    void TomarDano(int dano);
-
-    void Morrer();
+    void CurarVida(int quantidadeDeCura);
 }
