@@ -59,5 +59,6 @@ public class ControlaJogador : MonoBehaviour, IMatavel, ICuravel
     public void CurarVida(int quantidadeDeCura)
     {
         statusJogador.Vida += quantidadeDeCura;
+        scriptControlaInterface.AtualizarSliderVidaJogador();
     }
 }
