@@ -18,3 +18,8 @@
 ### Atividade 01 - Quantidade de Zumbis Mortos:
 
 - `GameObject.FindObjectOfType(typeof(Script)) as Script;`: retorna um 'Script' do tipo 'GameObject', e converte esse Objeto em 'Script';
+
+### Atividade 04 - Texto e Cursos do Mouse:
+
+- 'File > Build Settings... > Player Settings... > Default Cursor': define uma textura/sprite para substituir o cursor do mouse;
+- 'File > Build Settings... > Player Settings... > Cursor hotspot': define um 'offset' que altera a posição do "clique" do cursor;
