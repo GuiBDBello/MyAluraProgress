@@ -6,11 +6,13 @@ using UnityEngine.SceneManagement;
 
 public class ControlaInterface : MonoBehaviour {
 
-    private ControlaJogador scriptControlaJogador;
     public Slider SliderVidaJogador;
     public GameObject PainelDeGameOver;
     public Text TextoTempoDeSobrevivencia;
     public Text TextoPontuacaoMaxima;
+    public Text TextoQuantidadeDeZumbisMortos;
+
+    private ControlaJogador scriptControlaJogador;
     private float tempoPontuacaoSalvo;
     private int quantidadeDeZumbisMortos;
 
@@ -33,6 +35,7 @@ public class ControlaInterface : MonoBehaviour {
     public void AtualizarQuantidadeDeZumbisMortos()
     {
         quantidadeDeZumbisMortos++;
+        TextoQuantidadeDeZumbisMortos.text = string.Format("x {0}", quantidadeDeZumbisMortos);
     }
 
     public void GameOver ()
