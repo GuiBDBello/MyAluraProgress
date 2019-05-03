@@ -11,3 +11,10 @@
 #### Unity IDE:
 
 - Na Unity, é possível 'travar' uma janela, para que ela não seja alterada ao selecionar outros Objetos, clicando no ícone de "Cadeado" no topo dessa janela;
+
+
+## Aula 02 - Interface
+
+### Atividade 01 - Quantidade de Zumbis Mortos:
+
+- `GameObject.FindObjectOfType(typeof(Script)) as Script;`: retorna um 'Script' do tipo 'GameObject', e converte esse Objeto em 'Script';

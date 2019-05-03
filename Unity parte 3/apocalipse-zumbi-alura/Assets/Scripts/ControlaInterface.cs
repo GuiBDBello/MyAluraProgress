@@ -12,6 +12,7 @@ public class ControlaInterface : MonoBehaviour {
     public Text TextoTempoDeSobrevivencia;
     public Text TextoPontuacaoMaxima;
     private float tempoPontuacaoSalvo;
+    private int quantidadeDeZumbisMortos;
 
 	// Use this for initialization
 	void Start () {
@@ -27,6 +28,11 @@ public class ControlaInterface : MonoBehaviour {
     public void AtualizarSliderVidaJogador ()
     {
         SliderVidaJogador.value = scriptControlaJogador.statusJogador.Vida;
+    }
+
+    public void AtualizarQuantidadeDeZumbisMortos()
+    {
+        quantidadeDeZumbisMortos++;
     }
 
     public void GameOver ()
