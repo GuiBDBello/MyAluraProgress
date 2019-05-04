@@ -15,10 +15,13 @@ public class GeradorZumbis : MonoBehaviour {
     private int quantidadeMaximaDeZumbisVivos = 2;
     private int quantidadeDeZumbisVivos;
     private bool possoGerarZumbisPelaDistancia;
+    private float tempoProximoAumentoDeDificuldade = 5;
+    private float contadorAumentarDificuldade;
 
     private void Start()
     {
         jogador = GameObject.FindWithTag("Jogador");
+        contadorAumentarDificuldade = tempoProximoAumentoDeDificuldade;
         for (int i = 0; i < quantidadeMaximaDeZumbisVivos; i++)
         {
             StartCoroutine(GerarNovoZumbi());
@@ -40,7 +43,13 @@ public class GeradorZumbis : MonoBehaviour {
                 StartCoroutine(GerarNovoZumbi());
                 contadorTempo = 0;
             }
-        }        
+        }
+
+        if (Time.timeSinceLevelLoad > contadorAumentarDificuldade)
+        {
+            quantidadeMaximaDeZumbisVivos++;
+            contadorAumentarDificuldade = Time.timeSinceLevelLoad + tempoProximoAumentoDeDificuldade;
+        }
     }
 
     void OnDrawGizmos()
@@ -61,7 +70,8 @@ public class GeradorZumbis : MonoBehaviour {
             yield return null;
         }
 
-        Instantiate(Zumbi, posicaoDeCriacao, transform.rotation);
+        ControlaInimigo zumbi = Instantiate(Zumbi, posicaoDeCriacao, transform.rotation).GetComponent<ControlaInimigo>();
+        zumbi.meuGerador = this;
         quantidadeDeZumbisVivos++;
     }
 
@@ -72,5 +82,10 @@ public class GeradorZumbis : MonoBehaviour {
         posicao.y = 0;
 
         return posicao;
+    }
+
+    public void DiminuirQuantidadeDeZumbisVivos()
+    {
+        quantidadeDeZumbisVivos--;
     }
 }
