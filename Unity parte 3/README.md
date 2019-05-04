@@ -34,3 +34,42 @@
 - `Script script = Instantiate(objeto, posicao, rotacao).GetComponent<Script>();`: obtém a referência do Script de nome 'Script' utilizado no Objeto instanciado;
 - `script.objetoScript = this;`: atribui à propriedade 'objetoScript' o Script em que esse código é executado. Nesse caso, o `this` retorna um Objeto do tipo Script;
 - `if(Time.timeSinceLevelLoad > tempoProximoEvento) { tempoProximoEvento = Time.timeSinceLevelLoad + tempoDeCadaEvento; }`: realiza uma verificação para rodar um evento a cada 'tempoProximoEvento' segundos, onde 'tempoDeCadaEvento' é o tempo de espera entre os eventos;
+
+
+## Aula 04 - Polimento no Zumbi
+
+### Atividade 03 - Animação de Morrer:
+
+#### Animator:
+
+- Recorte a animação de morte;
+- Adicione-a ao Animator;
+- Crie uma transição de 'Any State' à animação de morte;
+- Crie um parâmetro do tipo 'Trigger' nessa transição;
+- Selecione a animação recortada e altere 'Root Transform Position (Y)' para 'Center of Mass';
+
+#### Remover inimigo morto:
+
+Para remover o inimigo do cenário, deve-se seguir os seguintes passos:
+- Desabilitar colisão do inimigo, para removê-lo atravessando o chão;
+- Remover seu "Freeze Position" no eixo Y;
+- Zerar a velocidade de seu Rigidbody;
+- (Opcional) Destruir o Objeto após alguns segundos, para liberar memória;
+
+#### Script (AnimacaoPersonagem):
+
+- `public void Morrer() { Animator.SetTrigger("Parametro"); }`: dispara a animação de morte;
+
+#### Script (MovimentoPersonagem):
+
+Dentro do método `Morrer()`:
+- `Rigidbody.constraints = RigidbodyConstraints.None;`: remove todos 'Freeze Positions';
+- `Rigidbody.velocity = Vector3.zero;`: remove a velocidade do Objeto, para apenas a gravidade puxar ele para baixo;
+- `GetComponent<Collider>().enabled = false;`: desabilita a Colisão do Objeto, para ele atravessar o chão;
+
+#### Script (ControlaInimigo):
+
+- `Destroy(gameObject, 2)`: destrói o Objeto após 2 segundos;
+- `AnimacaoPersonagem.Morrer();`: executa a animação;
+- `MovimentoPersonagem.Morrer();`: executa a remoção do inimigo do cenário;
+- `this.enabled = false;`: desabilita o Script 'ControlaInimigo' após a morte;
