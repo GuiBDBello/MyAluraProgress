@@ -103,3 +103,12 @@ Dentro do método `Morrer()`:
 - `private Transform objeto;`: posição 'objeto' que o Objeto que contém esse Script irá seguir;
 - `private NavMeshAgent navMeshAgent;`: componente 'Nav Mesh Agent' que contém a 'Nav Mesh' criada. Obs.: deve importar `using UnityEngine.AI;`;
 - `navMeshAgent.SetDestination(objeto.position);`: define um destino ('objeto.position') para o Objeto seguir;
+
+## Aula 06 - Ataque do Chefe
+
+### Atividade 01 - Animações no Chefe:
+
+- `NavMeshAgent.remainingDistance <= NavMeshAgent.stoppingDistance;`: retorna um bool que verifica se o Objeto está perto do "ObjetoPerseguido";
+- É preciso definir a 'stoppingDistance' no Componente 'Nav Mesh Agent' do Objeto;
+- `NavMeshAgent.hasPath;`: retorna um bool que informa se o Objeto possui um destino;
+- Marcar 'Is Kinematic' no Rigidbody do Objeto, para retirar o controle de movimentação e rotação do Rigidbody, permitindo que o 'Nav Mesh Agent' faça esse controle;

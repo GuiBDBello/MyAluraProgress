@@ -750,6 +750,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 54163392757231022, guid: dfbad4170d086a246a690b9aaaf1beb7,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114907622645617620, guid: dfbad4170d086a246a690b9aaaf1beb7,
+        type: 3}
+      propertyPath: VidaInicial
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114907622645617620, guid: dfbad4170d086a246a690b9aaaf1beb7,
+        type: 3}
+      propertyPath: Velocidade
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 50319060, guid: dfbad4170d086a246a690b9aaaf1beb7, type: 3}
+      propertyPath: m_StoppingDistance
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dfbad4170d086a246a690b9aaaf1beb7, type: 3}
 --- !u!1001 &121266178
