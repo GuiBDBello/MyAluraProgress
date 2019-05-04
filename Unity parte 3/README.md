@@ -73,3 +73,33 @@ Dentro do método `Morrer()`:
 - `AnimacaoPersonagem.Morrer();`: executa a animação;
 - `MovimentoPersonagem.Morrer();`: executa a remoção do inimigo do cenário;
 - `this.enabled = false;`: desabilita o Script 'ControlaInimigo' após a morte;
+
+## Aula 05 - Chefe de Fase
+
+### Atividade 03 - Nav Mesh Agent:
+
+- Selecione os Objetos do cenário e, no 'Inspector', clique em 'Static' e selecione 'Navigation Static';
+
+#### Navigation:
+
+- 'Window > AI > Navigation': abre a janela 'Navigation' da Unity;
+
+##### Bake:
+
+- Selecione 'Bake' para criar a 'Nav Mesh';
+- Altere as propriedades 'Agent Radius' e 'Agent Height' para as mesmas do Colisor do Objeto que utilizará a 'Nav Mesh';
+
+##### Agents:
+
+- Altere as propriedades 'Name', 'Radius' e 'Height' para as mesmas do Colisor do Objeto que utilizará a 'Nav Mesh';
+
+#### No Objeto (GameObject):
+
+- Adicionar novo Componente 'Nav Mesh Agent';
+- Em 'Obstacle Avoidance', alterar as propriedades 'Radius' e 'Height' para as mesmas do Colisor do Objeto;
+
+#### Script:
+
+- `private Transform objeto;`: posição 'objeto' que o Objeto que contém esse Script irá seguir;
+- `private NavMeshAgent navMeshAgent;`: componente 'Nav Mesh Agent' que contém a 'Nav Mesh' criada. Obs.: deve importar `using UnityEngine.AI;`;
+- `navMeshAgent.SetDestination(objeto.position);`: define um destino ('objeto.position') para o Objeto seguir;
