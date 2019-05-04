@@ -23,3 +23,14 @@
 
 - 'File > Build Settings... > Player Settings... > Default Cursor': define uma textura/sprite para substituir o cursor do mouse;
 - 'File > Build Settings... > Player Settings... > Cursor hotspot': define um 'offset' que altera a posição do "clique" do cursor;
+
+
+## Aula 03 - Polimento no Gerador
+
+### Atividade 04 - Balanceando Quantidade de Zumbis:
+
+#### Vincular novo Objeto:
+
+- `Script script = Instantiate(objeto, posicao, rotacao).GetComponent<Script>();`: obtém a referência do Script de nome 'Script' utilizado no Objeto instanciado;
+- `script.objetoScript = this;`: atribui à propriedade 'objetoScript' o Script em que esse código é executado. Nesse caso, o `this` retorna um Objeto do tipo Script;
+- `if(Time.timeSinceLevelLoad > tempoProximoEvento) { tempoProximoEvento = Time.timeSinceLevelLoad + tempoDeCadaEvento; }`: realiza uma verificação para rodar um evento a cada 'tempoProximoEvento' segundos, onde 'tempoDeCadaEvento' é o tempo de espera entre os eventos;
