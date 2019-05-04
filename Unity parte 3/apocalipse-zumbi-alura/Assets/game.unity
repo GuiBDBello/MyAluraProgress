@@ -98,21 +98,21 @@ NavMeshSettings:
   m_BuildSettings:
     serializedVersion: 2
     agentTypeID: 0
-    agentRadius: 0.5
-    agentHeight: 2
+    agentRadius: 1.2
+    agentHeight: 5
     agentSlope: 45
     agentClimb: 0.4
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
     minRegionArea: 2
     manualCellSize: 0
-    cellSize: 0.16666667
+    cellSize: 0.4
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 152b6e04a3aed6149b07801e10c38651, type: 2}
 --- !u!1001 &759897
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -123,6 +123,10 @@ PrefabInstance:
     - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_Name
       value: Rua_Reta (50)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4656246329960846, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_LocalPosition.x
@@ -309,6 +313,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 684955274}
     m_Modifications:
+    - target: {fileID: 1494760527799138, guid: a90b9b20a3258468fad8d4250ee31a7a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4680295844158782, guid: a90b9b20a3258468fad8d4250ee31a7a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -38.19
@@ -366,6 +374,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 684955274}
     m_Modifications:
+    - target: {fileID: 1987257507902394, guid: e4e0f3cfde2314194a64de87d1b562ac, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4514499278929870, guid: e4e0f3cfde2314194a64de87d1b562ac, type: 3}
       propertyPath: m_LocalPosition.x
       value: -21.14
@@ -398,6 +410,10 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 1943589421512466, guid: e4e0f3cfde2314194a64de87d1b562ac, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4e0f3cfde2314194a64de87d1b562ac, type: 3}
 --- !u!4 &48113969 stripped
@@ -416,6 +432,10 @@ PrefabInstance:
     - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_Name
       value: Rua_Reta (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4656246329960846, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_LocalPosition.x
@@ -474,6 +494,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barreira_01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1798001021730044, guid: 6ffe1bdcc4b5440768c45450fcade542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4303706599337248, guid: 6ffe1bdcc4b5440768c45450fcade542, type: 3}
       propertyPath: m_LocalPosition.x
       value: 24.403002
@@ -515,6 +539,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 684955274}
     m_Modifications:
+    - target: {fileID: 1749929352849394, guid: 37857ccc62dcd40a088e0d9273841e91, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4998480935363928, guid: 37857ccc62dcd40a088e0d9273841e91, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.43
@@ -574,6 +602,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barreira_01 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1798001021730044, guid: 6ffe1bdcc4b5440768c45450fcade542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4303706599337248, guid: 6ffe1bdcc4b5440768c45450fcade542, type: 3}
       propertyPath: m_LocalPosition.x
       value: 24.403002
@@ -618,6 +650,10 @@ PrefabInstance:
     - target: {fileID: 1798001021730044, guid: 6ffe1bdcc4b5440768c45450fcade542, type: 3}
       propertyPath: m_Name
       value: Barreira_01 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1798001021730044, guid: 6ffe1bdcc4b5440768c45450fcade542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4303706599337248, guid: 6ffe1bdcc4b5440768c45450fcade542, type: 3}
       propertyPath: m_LocalPosition.x
@@ -714,26 +750,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4207819667558592, guid: dfbad4170d086a246a690b9aaaf1beb7, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4207819667558592, guid: dfbad4170d086a246a690b9aaaf1beb7, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 51.12
-      objectReference: {fileID: 0}
-    - target: {fileID: 1504810720375712, guid: dfbad4170d086a246a690b9aaaf1beb7, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dfbad4170d086a246a690b9aaaf1beb7, type: 3}
---- !u!4 &117986782 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4810169528331540, guid: dfbad4170d086a246a690b9aaaf1beb7,
-    type: 3}
-  m_PrefabInstance: {fileID: 117986781}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &121266178
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -744,6 +762,10 @@ PrefabInstance:
     - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_Name
       value: Rua_Reta (44)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4656246329960846, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_LocalPosition.x
@@ -838,6 +860,10 @@ PrefabInstance:
     - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_Name
       value: Rua_Reta (63)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4656246329960846, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1060,6 +1086,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rua_Reta (45)
       objectReference: {fileID: 0}
+    - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4656246329960846, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_LocalPosition.x
       value: 25
@@ -1105,6 +1135,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 684955274}
     m_Modifications:
+    - target: {fileID: 1996280192660208, guid: 32356e952c0244709bdf91f6f35489fd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4536019131431894, guid: 32356e952c0244709bdf91f6f35489fd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -39.01
@@ -1137,6 +1171,14 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 73
       objectReference: {fileID: 0}
+    - target: {fileID: 1541672382017768, guid: 32356e952c0244709bdf91f6f35489fd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1623694881000270, guid: 32356e952c0244709bdf91f6f35489fd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 32356e952c0244709bdf91f6f35489fd, type: 3}
 --- !u!4 &168048202 stripped
@@ -1154,6 +1196,10 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1501412634130112, guid: 889c8eace9e10e94c90e5099bb0aabe2, type: 3}
       propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1501412634130112, guid: 889c8eace9e10e94c90e5099bb0aabe2, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4477483826258420, guid: 889c8eace9e10e94c90e5099bb0aabe2, type: 3}
@@ -1317,6 +1363,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 684955274}
     m_Modifications:
+    - target: {fileID: 1798001021730044, guid: 6ffe1bdcc4b5440768c45450fcade542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4303706599337248, guid: 6ffe1bdcc4b5440768c45450fcade542, type: 3}
       propertyPath: m_LocalPosition.x
       value: 24.403002
@@ -1361,6 +1411,10 @@ PrefabInstance:
     - target: {fileID: 1572470896598266, guid: 3f715056abeb9446fb0b5d697e133844, type: 3}
       propertyPath: m_Name
       value: Cerca_Continua_01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1572470896598266, guid: 3f715056abeb9446fb0b5d697e133844, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4544171000348092, guid: 3f715056abeb9446fb0b5d697e133844, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1511,6 +1565,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rua_Reta (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4656246329960846, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_LocalPosition.x
       value: -20
@@ -1562,6 +1620,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 684955274}
     m_Modifications:
+    - target: {fileID: 1037098259321732, guid: eac7d4127990742bd968697c3943f981, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4678118047085270, guid: eac7d4127990742bd968697c3943f981, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.000015259
@@ -1594,6 +1656,14 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 65
       objectReference: {fileID: 0}
+    - target: {fileID: 1221143517622370, guid: eac7d4127990742bd968697c3943f981, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1083858436696338, guid: eac7d4127990742bd968697c3943f981, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eac7d4127990742bd968697c3943f981, type: 3}
 --- !u!4 &279428479 stripped
@@ -1624,6 +1694,10 @@ PrefabInstance:
     - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_Name
       value: Rua_Reta (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4656246329960846, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1679,6 +1753,10 @@ PrefabInstance:
     - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_Name
       value: Rua_Reta (56)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4656246329960846, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1743,6 +1821,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rua_Reta (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4656246329960846, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.000036239002
@@ -1799,6 +1881,10 @@ PrefabInstance:
     - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_Name
       value: Rua_Reta (62)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4656246329960846, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1863,6 +1949,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cerca_Continua_01 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1572470896598266, guid: 3f715056abeb9446fb0b5d697e133844, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4544171000348092, guid: 3f715056abeb9446fb0b5d697e133844, type: 3}
       propertyPath: m_LocalPosition.x
       value: 18.41
@@ -1912,6 +2002,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rua_Reta (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4656246329960846, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_LocalPosition.x
       value: -60
@@ -1960,6 +2054,10 @@ PrefabInstance:
     - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_Name
       value: Rua_Reta (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4656246329960846, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2017,6 +2115,10 @@ PrefabInstance:
     - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_Name
       value: Rua_Reta (54)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4656246329960846, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2077,6 +2179,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 684955274}
     m_Modifications:
+    - target: {fileID: 1146885078229164, guid: ae496fdd48ee74085a352093ba11440e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4803974539803166, guid: ae496fdd48ee74085a352093ba11440e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -26.85
@@ -2108,6 +2214,10 @@ PrefabInstance:
     - target: {fileID: 4803974539803166, guid: ae496fdd48ee74085a352093ba11440e, type: 3}
       propertyPath: m_RootOrder
       value: 52
+      objectReference: {fileID: 0}
+    - target: {fileID: 1924583669974360, guid: ae496fdd48ee74085a352093ba11440e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ae496fdd48ee74085a352093ba11440e, type: 3}
@@ -2178,6 +2288,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rua_Reta (46)
       objectReference: {fileID: 0}
+    - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4656246329960846, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_LocalPosition.x
       value: 30
@@ -2223,6 +2337,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 684955274}
     m_Modifications:
+    - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4656246329960846, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_LocalPosition.x
       value: -15
@@ -2329,6 +2447,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ParedeTijolos_02 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1427284876691460, guid: 0b76d7f1a737248a59eb5b1fef8f7ba4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4791428832001672, guid: 0b76d7f1a737248a59eb5b1fef8f7ba4, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.02
@@ -2390,6 +2512,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barreira_01 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1798001021730044, guid: 6ffe1bdcc4b5440768c45450fcade542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4303706599337248, guid: 6ffe1bdcc4b5440768c45450fcade542, type: 3}
       propertyPath: m_LocalPosition.x
       value: -43.29
@@ -2434,6 +2560,10 @@ PrefabInstance:
     - target: {fileID: 1572470896598266, guid: 3f715056abeb9446fb0b5d697e133844, type: 3}
       propertyPath: m_Name
       value: Cerca_Continua_01 (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1572470896598266, guid: 3f715056abeb9446fb0b5d697e133844, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4544171000348092, guid: 3f715056abeb9446fb0b5d697e133844, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2486,6 +2616,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 684955274}
     m_Modifications:
+    - target: {fileID: 1437694135535552, guid: 68d2e588be11c45b5bcef522aa3f7cca, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4585601856761568, guid: 68d2e588be11c45b5bcef522aa3f7cca, type: 3}
       propertyPath: m_LocalPosition.x
       value: -20
@@ -2530,6 +2664,10 @@ PrefabInstance:
     - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_Name
       value: Rua_Reta (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4656246329960846, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2597,6 +2735,10 @@ PrefabInstance:
     - target: {fileID: 1437694135535552, guid: 68d2e588be11c45b5bcef522aa3f7cca, type: 3}
       propertyPath: m_Name
       value: Rua_Canto (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437694135535552, guid: 68d2e588be11c45b5bcef522aa3f7cca, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4585601856761568, guid: 68d2e588be11c45b5bcef522aa3f7cca, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2673,6 +2815,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barreira_01 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 1798001021730044, guid: 6ffe1bdcc4b5440768c45450fcade542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4303706599337248, guid: 6ffe1bdcc4b5440768c45450fcade542, type: 3}
       propertyPath: m_LocalPosition.x
       value: -43.29
@@ -2730,6 +2876,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cerca_Continua_01 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 1572470896598266, guid: 3f715056abeb9446fb0b5d697e133844, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4544171000348092, guid: 3f715056abeb9446fb0b5d697e133844, type: 3}
       propertyPath: m_LocalPosition.x
       value: 18.41
@@ -2778,6 +2928,10 @@ PrefabInstance:
     - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_Name
       value: Rua_Reta (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4656246329960846, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2836,6 +2990,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rua_Reta (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4656246329960846, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.000032425
@@ -2881,6 +3039,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 684955274}
     m_Modifications:
+    - target: {fileID: 1904325887250188, guid: e8e5a55bd37bb41e798bf87dcdad19b4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4536050685927626, guid: e8e5a55bd37bb41e798bf87dcdad19b4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 13.3
@@ -2925,6 +3087,22 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1324945045275150, guid: e8e5a55bd37bb41e798bf87dcdad19b4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1590477828320918, guid: e8e5a55bd37bb41e798bf87dcdad19b4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1677936910556612, guid: e8e5a55bd37bb41e798bf87dcdad19b4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1516219822153610, guid: e8e5a55bd37bb41e798bf87dcdad19b4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8e5a55bd37bb41e798bf87dcdad19b4, type: 3}
 --- !u!4 &562144076 stripped
@@ -2943,6 +3121,10 @@ PrefabInstance:
     - target: {fileID: 1798001021730044, guid: 6ffe1bdcc4b5440768c45450fcade542, type: 3}
       propertyPath: m_Name
       value: Barreira_01 (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1798001021730044, guid: 6ffe1bdcc4b5440768c45450fcade542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4303706599337248, guid: 6ffe1bdcc4b5440768c45450fcade542, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2988,6 +3170,10 @@ PrefabInstance:
     - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_Name
       value: Rua_Reta (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4656246329960846, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3038,6 +3224,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barreira_01 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1798001021730044, guid: 6ffe1bdcc4b5440768c45450fcade542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4303706599337248, guid: 6ffe1bdcc4b5440768c45450fcade542, type: 3}
       propertyPath: m_LocalPosition.x
       value: 24.403002
@@ -3082,6 +3272,10 @@ PrefabInstance:
     - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_Name
       value: Rua_Reta (66)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4656246329960846, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3145,6 +3339,10 @@ PrefabInstance:
     - target: {fileID: 1572470896598266, guid: 3f715056abeb9446fb0b5d697e133844, type: 3}
       propertyPath: m_Name
       value: Cerca_Continua_01 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1572470896598266, guid: 3f715056abeb9446fb0b5d697e133844, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4544171000348092, guid: 3f715056abeb9446fb0b5d697e133844, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3211,6 +3409,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 684955274}
     m_Modifications:
+    - target: {fileID: 1095017299335798, guid: 65230f962a0a9462d99fcc669858b9a8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4517415649865884, guid: 65230f962a0a9462d99fcc669858b9a8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 20
@@ -3274,6 +3476,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rua_Reta (69)
       objectReference: {fileID: 0}
+    - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4656246329960846, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.000040054
@@ -3333,6 +3539,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 684955274}
     m_Modifications:
+    - target: {fileID: 1307186427508940, guid: 0723e5e48596d415e80197eb1f984803, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4412750602843788, guid: 0723e5e48596d415e80197eb1f984803, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10.9
@@ -3373,6 +3583,10 @@ PrefabInstance:
       propertyPath: m_LocalRotation.w
       value: 0.99207604
       objectReference: {fileID: 0}
+    - target: {fileID: 1565408882287854, guid: 0723e5e48596d415e80197eb1f984803, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0723e5e48596d415e80197eb1f984803, type: 3}
 --- !u!1001 &683303851
@@ -3385,6 +3599,10 @@ PrefabInstance:
     - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_Name
       value: Rua_Reta (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4656246329960846, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3445,7 +3663,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &684655561
 Transform:
@@ -3513,7 +3731,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &684955274
 Transform:
@@ -3687,6 +3905,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rua_Reta (68)
       objectReference: {fileID: 0}
+    - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4656246329960846, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_LocalPosition.x
       value: -65
@@ -3749,6 +3971,10 @@ PrefabInstance:
     - target: {fileID: 1427284876691460, guid: 0b76d7f1a737248a59eb5b1fef8f7ba4, type: 3}
       propertyPath: m_Name
       value: ParedeTijolos_02 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1427284876691460, guid: 0b76d7f1a737248a59eb5b1fef8f7ba4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4791428832001672, guid: 0b76d7f1a737248a59eb5b1fef8f7ba4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3928,6 +4154,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rua_Reta (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4656246329960846, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_LocalPosition.x
       value: -30
@@ -3976,6 +4206,10 @@ PrefabInstance:
     - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_Name
       value: Rua_Reta (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4656246329960846, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4050,6 +4284,10 @@ PrefabInstance:
     - target: {fileID: 1572470896598266, guid: 3f715056abeb9446fb0b5d697e133844, type: 3}
       propertyPath: m_Name
       value: Cerca_Continua_01 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1572470896598266, guid: 3f715056abeb9446fb0b5d697e133844, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4544171000348092, guid: 3f715056abeb9446fb0b5d697e133844, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4145,6 +4383,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rua_Reta (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4656246329960846, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_LocalPosition.x
       value: -35
@@ -4193,6 +4435,10 @@ PrefabInstance:
     - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_Name
       value: Rua_Reta (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4656246329960846, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4250,6 +4496,10 @@ PrefabInstance:
     - target: {fileID: 1427284876691460, guid: 0b76d7f1a737248a59eb5b1fef8f7ba4, type: 3}
       propertyPath: m_Name
       value: ParedeTijolos_02 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1427284876691460, guid: 0b76d7f1a737248a59eb5b1fef8f7ba4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4791428832001672, guid: 0b76d7f1a737248a59eb5b1fef8f7ba4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4441,6 +4691,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rua_Reta (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4656246329960846, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_LocalPosition.x
       value: 25
@@ -4495,6 +4749,10 @@ PrefabInstance:
     - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_Name
       value: Rua_Reta (52)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4656246329960846, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4558,6 +4816,10 @@ PrefabInstance:
     - target: {fileID: 1798001021730044, guid: 6ffe1bdcc4b5440768c45450fcade542, type: 3}
       propertyPath: m_Name
       value: Barreira_01 (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1798001021730044, guid: 6ffe1bdcc4b5440768c45450fcade542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4303706599337248, guid: 6ffe1bdcc4b5440768c45450fcade542, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4624,6 +4886,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 684955274}
     m_Modifications:
+    - target: {fileID: 1039307774462020, guid: e10328dd1904cda4c9a683d8b043b8ed, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4354308869289608, guid: e10328dd1904cda4c9a683d8b043b8ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: -23.2
@@ -4656,6 +4922,14 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1856015345946194, guid: e10328dd1904cda4c9a683d8b043b8ed, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1872320600679702, guid: e10328dd1904cda4c9a683d8b043b8ed, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e10328dd1904cda4c9a683d8b043b8ed, type: 3}
 --- !u!1001 &874889811
@@ -4668,6 +4942,10 @@ PrefabInstance:
     - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_Name
       value: Rua_Reta (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4656246329960846, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4737,6 +5015,10 @@ PrefabInstance:
     - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_Name
       value: Rua_Reta (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4656246329960846, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4846,6 +5128,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rua_Reta (42)
       objectReference: {fileID: 0}
+    - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4656246329960846, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_LocalPosition.x
       value: 20
@@ -4902,6 +5188,10 @@ PrefabInstance:
     - target: {fileID: 1427284876691460, guid: 0b76d7f1a737248a59eb5b1fef8f7ba4, type: 3}
       propertyPath: m_Name
       value: ParedeTijolos_02 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1427284876691460, guid: 0b76d7f1a737248a59eb5b1fef8f7ba4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4791428832001672, guid: 0b76d7f1a737248a59eb5b1fef8f7ba4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4982,6 +5272,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rua_Reta (58)
       objectReference: {fileID: 0}
+    - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4656246329960846, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_LocalPosition.x
       value: -45
@@ -5044,6 +5338,10 @@ PrefabInstance:
     - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_Name
       value: Rua_Reta (60)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4656246329960846, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5148,6 +5446,10 @@ PrefabInstance:
     - target: {fileID: 1572470896598266, guid: 3f715056abeb9446fb0b5d697e133844, type: 3}
       propertyPath: m_Name
       value: Cerca_Continua_01 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1572470896598266, guid: 3f715056abeb9446fb0b5d697e133844, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4544171000348092, guid: 3f715056abeb9446fb0b5d697e133844, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5254,6 +5556,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cerca_Continua_01 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 1572470896598266, guid: 3f715056abeb9446fb0b5d697e133844, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4544171000348092, guid: 3f715056abeb9446fb0b5d697e133844, type: 3}
       propertyPath: m_LocalPosition.x
       value: 18.41
@@ -5302,6 +5608,10 @@ PrefabInstance:
     - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_Name
       value: Rua_Reta (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4656246329960846, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5357,6 +5667,10 @@ PrefabInstance:
     - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_Name
       value: Rua_Reta (43)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4656246329960846, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5415,6 +5729,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rua_Reta (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4656246329960846, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_LocalPosition.x
       value: -45
@@ -5469,6 +5787,10 @@ PrefabInstance:
     - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_Name
       value: Rua_Reta (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4656246329960846, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5525,6 +5847,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barreira_01 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1798001021730044, guid: 6ffe1bdcc4b5440768c45450fcade542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4303706599337248, guid: 6ffe1bdcc4b5440768c45450fcade542, type: 3}
       propertyPath: m_LocalPosition.x
       value: 24.403002
@@ -5575,6 +5901,10 @@ PrefabInstance:
     - target: {fileID: 1572470896598266, guid: 3f715056abeb9446fb0b5d697e133844, type: 3}
       propertyPath: m_Name
       value: Cerca_Continua_01 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1572470896598266, guid: 3f715056abeb9446fb0b5d697e133844, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4544171000348092, guid: 3f715056abeb9446fb0b5d697e133844, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5780,6 +6110,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rua_Reta (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4656246329960846, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.000040054
@@ -5842,6 +6176,10 @@ PrefabInstance:
     - target: {fileID: 1437694135535552, guid: 68d2e588be11c45b5bcef522aa3f7cca, type: 3}
       propertyPath: m_Name
       value: Rua_Canto (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437694135535552, guid: 68d2e588be11c45b5bcef522aa3f7cca, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4585601856761568, guid: 68d2e588be11c45b5bcef522aa3f7cca, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5908,6 +6246,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rua_Reta (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4656246329960846, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_LocalPosition.x
       value: -40
@@ -5962,6 +6304,10 @@ PrefabInstance:
     - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_Name
       value: Rua_Reta (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4656246329960846, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6019,6 +6365,10 @@ PrefabInstance:
     - target: {fileID: 1427284876691460, guid: 0b76d7f1a737248a59eb5b1fef8f7ba4, type: 3}
       propertyPath: m_Name
       value: ParedeTijolos_02 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1427284876691460, guid: 0b76d7f1a737248a59eb5b1fef8f7ba4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4791428832001672, guid: 0b76d7f1a737248a59eb5b1fef8f7ba4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6142,6 +6492,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rua_Reta (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4656246329960846, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_LocalPosition.x
       value: 20
@@ -6197,6 +6551,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barreira_01 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1798001021730044, guid: 6ffe1bdcc4b5440768c45450fcade542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4303706599337248, guid: 6ffe1bdcc4b5440768c45450fcade542, type: 3}
       propertyPath: m_LocalPosition.x
       value: 24.403002
@@ -6248,6 +6606,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rua_Reta (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4656246329960846, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_LocalPosition.x
       value: -25
@@ -6292,6 +6654,10 @@ PrefabInstance:
     - target: {fileID: 1437694135535552, guid: 68d2e588be11c45b5bcef522aa3f7cca, type: 3}
       propertyPath: m_Name
       value: Rua_Canto (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437694135535552, guid: 68d2e588be11c45b5bcef522aa3f7cca, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4585601856761568, guid: 68d2e588be11c45b5bcef522aa3f7cca, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6356,6 +6722,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rua_Reta (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4656246329960846, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.000034332
@@ -6413,6 +6783,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rua_Canto (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1437694135535552, guid: 68d2e588be11c45b5bcef522aa3f7cca, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4585601856761568, guid: 68d2e588be11c45b5bcef522aa3f7cca, type: 3}
       propertyPath: m_LocalPosition.x
       value: -45
@@ -6466,6 +6840,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 684955274}
     m_Modifications:
+    - target: {fileID: 1185348815892914, guid: 417f148e4549341348fb7d602123630e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4748218072112664, guid: 417f148e4549341348fb7d602123630e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.000015259
@@ -6507,6 +6885,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 684955274}
     m_Modifications:
+    - target: {fileID: 1572470896598266, guid: 3f715056abeb9446fb0b5d697e133844, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4544171000348092, guid: 3f715056abeb9446fb0b5d697e133844, type: 3}
       propertyPath: m_LocalPosition.x
       value: 18.39
@@ -6575,6 +6957,10 @@ PrefabInstance:
     - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_Name
       value: Rua_Reta (67)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4656246329960846, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6645,6 +7031,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ParedeTijolos_02 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 1427284876691460, guid: 0b76d7f1a737248a59eb5b1fef8f7ba4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4791428832001672, guid: 0b76d7f1a737248a59eb5b1fef8f7ba4, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.02
@@ -6712,6 +7102,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barreira_01 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 1798001021730044, guid: 6ffe1bdcc4b5440768c45450fcade542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4303706599337248, guid: 6ffe1bdcc4b5440768c45450fcade542, type: 3}
       propertyPath: m_LocalPosition.x
       value: -43.29
@@ -6756,6 +7150,10 @@ PrefabInstance:
     - target: {fileID: 1427284876691460, guid: 0b76d7f1a737248a59eb5b1fef8f7ba4, type: 3}
       propertyPath: m_Name
       value: ParedeTijolos_02 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1427284876691460, guid: 0b76d7f1a737248a59eb5b1fef8f7ba4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4791428832001672, guid: 0b76d7f1a737248a59eb5b1fef8f7ba4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6813,6 +7211,10 @@ PrefabInstance:
     - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_Name
       value: Rua_Reta (70)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4656246329960846, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6883,6 +7285,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rua_Reta (57)
       objectReference: {fileID: 0}
+    - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4656246329960846, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_LocalPosition.x
       value: -45
@@ -6946,6 +7352,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barreira_01 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 1798001021730044, guid: 6ffe1bdcc4b5440768c45450fcade542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4303706599337248, guid: 6ffe1bdcc4b5440768c45450fcade542, type: 3}
       propertyPath: m_LocalPosition.x
       value: -43.29
@@ -6986,75 +7396,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1958677409}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1320162974
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 117986782}
-    m_Modifications:
-    - target: {fileID: 1920202569080954, guid: b0d04d81f8e9649d0850e971b5042d1d, type: 3}
-      propertyPath: m_Name
-      value: Machado
-      objectReference: {fileID: 0}
-    - target: {fileID: 4335103029320864, guid: b0d04d81f8e9649d0850e971b5042d1d, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4335103029320864, guid: b0d04d81f8e9649d0850e971b5042d1d, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4335103029320864, guid: b0d04d81f8e9649d0850e971b5042d1d, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4335103029320864, guid: b0d04d81f8e9649d0850e971b5042d1d, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4335103029320864, guid: b0d04d81f8e9649d0850e971b5042d1d, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4335103029320864, guid: b0d04d81f8e9649d0850e971b5042d1d, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4335103029320864, guid: b0d04d81f8e9649d0850e971b5042d1d, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4335103029320864, guid: b0d04d81f8e9649d0850e971b5042d1d, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4335103029320864, guid: b0d04d81f8e9649d0850e971b5042d1d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4335103029320864, guid: b0d04d81f8e9649d0850e971b5042d1d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4335103029320864, guid: b0d04d81f8e9649d0850e971b5042d1d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 4335103029320864, guid: b0d04d81f8e9649d0850e971b5042d1d, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.666667
-      objectReference: {fileID: 0}
-    - target: {fileID: 4335103029320864, guid: b0d04d81f8e9649d0850e971b5042d1d, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.66666675
-      objectReference: {fileID: 0}
-    - target: {fileID: 4335103029320864, guid: b0d04d81f8e9649d0850e971b5042d1d, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.66666704
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b0d04d81f8e9649d0850e971b5042d1d, type: 3}
 --- !u!1 &1320272340
 GameObject:
   m_ObjectHideFlags: 0
@@ -7186,6 +7527,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rua_Reta (64)
       objectReference: {fileID: 0}
+    - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4656246329960846, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_LocalPosition.x
       value: -65
@@ -7249,6 +7594,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rua_Reta (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4656246329960846, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.0000076294
@@ -7309,6 +7658,10 @@ PrefabInstance:
     - target: {fileID: 1798001021730044, guid: 6ffe1bdcc4b5440768c45450fcade542, type: 3}
       propertyPath: m_Name
       value: Barreira_01 (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1798001021730044, guid: 6ffe1bdcc4b5440768c45450fcade542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4303706599337248, guid: 6ffe1bdcc4b5440768c45450fcade542, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7435,6 +7788,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rua_Reta (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4656246329960846, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_LocalPosition.x
       value: 20
@@ -7543,6 +7900,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rua_Reta (61)
       objectReference: {fileID: 0}
+    - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4656246329960846, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_LocalPosition.x
       value: -65
@@ -7606,6 +7967,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rua_Reta (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4656246329960846, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_LocalPosition.x
       value: 40
@@ -7655,6 +8020,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rua_Reta (48)
       objectReference: {fileID: 0}
+    - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4656246329960846, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_LocalPosition.x
       value: 40
@@ -7700,6 +8069,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 684955274}
     m_Modifications:
+    - target: {fileID: 1991792017311036, guid: a9398d190b8e94f2f9e38d8b1fe42278, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4065573984312822, guid: a9398d190b8e94f2f9e38d8b1fe42278, type: 3}
       propertyPath: m_LocalPosition.x
       value: -10.7
@@ -7782,6 +8155,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rua_Reta (59)
       objectReference: {fileID: 0}
+    - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4656246329960846, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_LocalPosition.x
       value: -25
@@ -7836,6 +8213,10 @@ PrefabInstance:
     - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_Name
       value: Rua_Reta (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4656246329960846, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7893,6 +8274,10 @@ PrefabInstance:
     - target: {fileID: 1572470896598266, guid: 3f715056abeb9446fb0b5d697e133844, type: 3}
       propertyPath: m_Name
       value: Cerca_Continua_01 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1572470896598266, guid: 3f715056abeb9446fb0b5d697e133844, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4544171000348092, guid: 3f715056abeb9446fb0b5d697e133844, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8022,6 +8407,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 684955274}
     m_Modifications:
+    - target: {fileID: 1083892481776378, guid: 88d638b8454444c37becd7aa2c833452, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4326803534230402, guid: 88d638b8454444c37becd7aa2c833452, type: 3}
       propertyPath: m_LocalPosition.x
       value: -18.504805
@@ -8092,6 +8481,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rua_Canto (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1437694135535552, guid: 68d2e588be11c45b5bcef522aa3f7cca, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4585601856761568, guid: 68d2e588be11c45b5bcef522aa3f7cca, type: 3}
       propertyPath: m_LocalPosition.x
       value: -65
@@ -8160,6 +8553,10 @@ PrefabInstance:
     - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_Name
       value: Rua_Reta (51)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4656246329960846, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8309,6 +8706,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cerca_Continua_01 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1572470896598266, guid: 3f715056abeb9446fb0b5d697e133844, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4544171000348092, guid: 3f715056abeb9446fb0b5d697e133844, type: 3}
       propertyPath: m_LocalPosition.x
       value: 43.16
@@ -8413,6 +8814,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barreira_01 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 1798001021730044, guid: 6ffe1bdcc4b5440768c45450fcade542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4303706599337248, guid: 6ffe1bdcc4b5440768c45450fcade542, type: 3}
       propertyPath: m_LocalPosition.x
       value: -43.29
@@ -8454,6 +8859,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 684955274}
     m_Modifications:
+    - target: {fileID: 1498908137830774, guid: c43228607ad9e40e4b51b49570ad1466, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4326117727925968, guid: c43228607ad9e40e4b51b49570ad1466, type: 3}
       propertyPath: m_LocalPosition.x
       value: -12.27
@@ -8524,6 +8933,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barreira_01 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 1798001021730044, guid: 6ffe1bdcc4b5440768c45450fcade542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4303706599337248, guid: 6ffe1bdcc4b5440768c45450fcade542, type: 3}
       propertyPath: m_LocalPosition.x
       value: -43.29
@@ -8574,6 +8987,10 @@ PrefabInstance:
     - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_Name
       value: Rua_Reta (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4656246329960846, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8632,6 +9049,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rua_Reta (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4656246329960846, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_LocalPosition.x
       value: 30
@@ -8680,6 +9101,10 @@ PrefabInstance:
     - target: {fileID: 1798001021730044, guid: 6ffe1bdcc4b5440768c45450fcade542, type: 3}
       propertyPath: m_Name
       value: Barreira_01 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1798001021730044, guid: 6ffe1bdcc4b5440768c45450fcade542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4303706599337248, guid: 6ffe1bdcc4b5440768c45450fcade542, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8773,6 +9198,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 684955274}
     m_Modifications:
+    - target: {fileID: 1218412560417200, guid: ee7f91516af52453f98f491cf554a1f1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4432038258141054, guid: ee7f91516af52453f98f491cf554a1f1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.18
@@ -8855,6 +9284,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rua_Reta (65)
       objectReference: {fileID: 0}
+    - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4656246329960846, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_LocalPosition.x
       value: -65
@@ -8918,6 +9351,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rua_Reta (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4656246329960846, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.000011444
@@ -8967,6 +9404,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rua_Reta (47)
       objectReference: {fileID: 0}
+    - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4656246329960846, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_LocalPosition.x
       value: 35
@@ -9012,6 +9453,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 684955274}
     m_Modifications:
+    - target: {fileID: 1427284876691460, guid: 0b76d7f1a737248a59eb5b1fef8f7ba4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4791428832001672, guid: 0b76d7f1a737248a59eb5b1fef8f7ba4, type: 3}
       propertyPath: m_LocalPosition.x
       value: -49.01
@@ -9143,6 +9588,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barreira_01 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 1798001021730044, guid: 6ffe1bdcc4b5440768c45450fcade542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4303706599337248, guid: 6ffe1bdcc4b5440768c45450fcade542, type: 3}
       propertyPath: m_LocalPosition.x
       value: -43.29
@@ -9187,6 +9636,10 @@ PrefabInstance:
     - target: {fileID: 1572470896598266, guid: 3f715056abeb9446fb0b5d697e133844, type: 3}
       propertyPath: m_Name
       value: Cerca_Continua_01 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1572470896598266, guid: 3f715056abeb9446fb0b5d697e133844, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4544171000348092, guid: 3f715056abeb9446fb0b5d697e133844, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9236,6 +9689,10 @@ PrefabInstance:
     - target: {fileID: 1572470896598266, guid: 3f715056abeb9446fb0b5d697e133844, type: 3}
       propertyPath: m_Name
       value: Cerca_Continua_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1572470896598266, guid: 3f715056abeb9446fb0b5d697e133844, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4544171000348092, guid: 3f715056abeb9446fb0b5d697e133844, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9296,6 +9753,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 684955274}
     m_Modifications:
+    - target: {fileID: 1595752276020044, guid: 35fce5f7d10754eceb462ecbab35c05c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4609267606960976, guid: 35fce5f7d10754eceb462ecbab35c05c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 26.1
@@ -9341,6 +9802,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rua_Canto (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1437694135535552, guid: 68d2e588be11c45b5bcef522aa3f7cca, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4585601856761568, guid: 68d2e588be11c45b5bcef522aa3f7cca, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.000014067
@@ -9382,6 +9847,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 684955274}
     m_Modifications:
+    - target: {fileID: 1783086797097002, guid: 33cc63edf05ca094d92aeb2599a2541e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4013817829473546, guid: 33cc63edf05ca094d92aeb2599a2541e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -53.816
@@ -9422,6 +9891,14 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1450591561624810, guid: 33cc63edf05ca094d92aeb2599a2541e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1486933312793090, guid: 33cc63edf05ca094d92aeb2599a2541e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33cc63edf05ca094d92aeb2599a2541e, type: 3}
 --- !u!4 &1864223404 stripped
@@ -9443,6 +9920,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 684955274}
     m_Modifications:
+    - target: {fileID: 1552275320654262, guid: f5d4c7095c7274ebf926e8ccc88e2f07, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4958319712614426, guid: f5d4c7095c7274ebf926e8ccc88e2f07, type: 3}
       propertyPath: m_LocalPosition.x
       value: -39.1
@@ -9487,6 +9968,10 @@ PrefabInstance:
     - target: {fileID: 1427284876691460, guid: 0b76d7f1a737248a59eb5b1fef8f7ba4, type: 3}
       propertyPath: m_Name
       value: ParedeTijolos_02 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1427284876691460, guid: 0b76d7f1a737248a59eb5b1fef8f7ba4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4791428832001672, guid: 0b76d7f1a737248a59eb5b1fef8f7ba4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9619,6 +10104,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cerca_Continua_01 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 1572470896598266, guid: 3f715056abeb9446fb0b5d697e133844, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4544171000348092, guid: 3f715056abeb9446fb0b5d697e133844, type: 3}
       propertyPath: m_LocalPosition.x
       value: 18.41
@@ -9680,6 +10169,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rua_Reta (49)
       objectReference: {fileID: 0}
+    - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4656246329960846, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_LocalPosition.x
       value: 45
@@ -9729,6 +10222,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cerca_Continua_01 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1572470896598266, guid: 3f715056abeb9446fb0b5d697e133844, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4544171000348092, guid: 3f715056abeb9446fb0b5d697e133844, type: 3}
       propertyPath: m_LocalPosition.x
       value: 18.41
@@ -9777,6 +10274,10 @@ PrefabInstance:
     - target: {fileID: 1798001021730044, guid: 6ffe1bdcc4b5440768c45450fcade542, type: 3}
       propertyPath: m_Name
       value: Barreira_01 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1798001021730044, guid: 6ffe1bdcc4b5440768c45450fcade542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4303706599337248, guid: 6ffe1bdcc4b5440768c45450fcade542, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9840,6 +10341,10 @@ PrefabInstance:
     - target: {fileID: 1427284876691460, guid: 0b76d7f1a737248a59eb5b1fef8f7ba4, type: 3}
       propertyPath: m_Name
       value: ParedeTijolos_02 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1427284876691460, guid: 0b76d7f1a737248a59eb5b1fef8f7ba4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4791428832001672, guid: 0b76d7f1a737248a59eb5b1fef8f7ba4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9908,6 +10413,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brinquedo_Balanco (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1595752276020044, guid: 35fce5f7d10754eceb462ecbab35c05c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4609267606960976, guid: 35fce5f7d10754eceb462ecbab35c05c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 36.6
@@ -9971,6 +10480,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barreira_01 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1798001021730044, guid: 6ffe1bdcc4b5440768c45450fcade542, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4303706599337248, guid: 6ffe1bdcc4b5440768c45450fcade542, type: 3}
       propertyPath: m_LocalPosition.x
       value: 24.403002
@@ -10015,6 +10528,10 @@ PrefabInstance:
     - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_Name
       value: Rua_Reta (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4656246329960846, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10073,6 +10590,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rua_Reta (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4656246329960846, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_LocalPosition.x
       value: 35
@@ -10121,6 +10642,10 @@ PrefabInstance:
     - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_Name
       value: Rua_Reta (53)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4656246329960846, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10185,6 +10710,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rua_Reta (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4656246329960846, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_LocalPosition.x
       value: 20
@@ -10241,6 +10770,10 @@ PrefabInstance:
     - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_Name
       value: Rua_Reta (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4656246329960846, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10299,6 +10832,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rua_Reta (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4656246329960846, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_LocalPosition.x
       value: -50
@@ -10353,6 +10890,10 @@ PrefabInstance:
     - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_Name
       value: Rua_Reta (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4656246329960846, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10500,6 +11041,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rua_Canto (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1437694135535552, guid: 68d2e588be11c45b5bcef522aa3f7cca, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4585601856761568, guid: 68d2e588be11c45b5bcef522aa3f7cca, type: 3}
       propertyPath: m_LocalPosition.x
       value: -40
@@ -10636,6 +11181,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 684955274}
     m_Modifications:
+    - target: {fileID: 1163550317593264, guid: c9f0de4d804d840c383edaaac31b4816, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4947205026216590, guid: c9f0de4d804d840c383edaaac31b4816, type: 3}
       propertyPath: m_LocalPosition.x
       value: -20
@@ -10709,6 +11258,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rua_Reta (41)
       objectReference: {fileID: 0}
+    - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4656246329960846, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_LocalPosition.x
       value: 20
@@ -10777,6 +11330,10 @@ PrefabInstance:
     - target: {fileID: 1437694135535552, guid: 68d2e588be11c45b5bcef522aa3f7cca, type: 3}
       propertyPath: m_Name
       value: Rua_Canto (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437694135535552, guid: 68d2e588be11c45b5bcef522aa3f7cca, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4585601856761568, guid: 68d2e588be11c45b5bcef522aa3f7cca, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10865,6 +11422,10 @@ PrefabInstance:
     - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_Name
       value: Rua_Reta (55)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1105362988413674, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4656246329960846, guid: bf4e53320739441f58d231c2ee884b66, type: 3}
       propertyPath: m_LocalPosition.x
