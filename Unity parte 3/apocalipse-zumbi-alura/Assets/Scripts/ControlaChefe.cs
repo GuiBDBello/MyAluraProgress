@@ -5,6 +5,8 @@ using UnityEngine.AI;
 
 public class ControlaChefe : MonoBehaviour, IMatavel
 {
+    public GameObject KitMedicoPrefab;
+
     private Transform jogador;
     private NavMeshAgent agente;
     private Status statusChefe;
@@ -64,6 +66,7 @@ public class ControlaChefe : MonoBehaviour, IMatavel
         movimentoChefe.Morrer();
         this.enabled = false;
         agente.enabled = false;
+        Instantiate(KitMedicoPrefab, transform.position, Quaternion.identity);
         Destroy(gameObject, 2);
     }
 }

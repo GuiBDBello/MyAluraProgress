@@ -50,7 +50,7 @@ GameObject:
   - component: {fileID: 50319060}
   m_Layer: 9
   m_Name: ChefeDeFase
-  m_TagString: Inimigo
+  m_TagString: ChefeDeFase
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -116,7 +116,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 0
@@ -156,9 +156,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26899c8c198bfcd46a8357330ef1e3d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  VidaInicial: 1
+  VidaInicial: 10
   Vida: 0
-  Velocidade: 5
+  Velocidade: 4
 --- !u!114 &8851872706510971640
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -171,6 +171,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd77625c98ad81f40853e74ec5136dfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  KitMedicoPrefab: {fileID: 1060151288946202, guid: 6150c6f66b7034ec5b3672478195682a,
+    type: 3}
 --- !u!195 &50319060
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -185,7 +187,7 @@ NavMeshAgent:
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 0
+  m_StoppingDistance: 5
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
