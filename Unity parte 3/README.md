@@ -117,3 +117,9 @@ Dentro do método `Morrer()`:
 
 - `NavMeshAgent.enabled = false;`: desabilita o 'Nav Mesh Agent' ao matar o Chefe;
 - `Rigidbody.isKinematic = false;`: desabilita o 'Is Kinematic' do Rigidbody para o Chefe sofrer o efeito da gravidade e desaparecer pelo chão do cenário;
+
+## Aula 07 - Retoques Finais
+
+### Atividade 01 - Chefe cria Kit Médico:
+
+- `transform.childCount;`: retorna a quantidade de Objetos que são filhos do Objeto que contém o Script;
