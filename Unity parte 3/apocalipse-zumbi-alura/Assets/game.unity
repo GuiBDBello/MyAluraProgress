@@ -706,6 +706,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ChefeDeFase
       objectReference: {fileID: 0}
+    - target: {fileID: 1063500868937916, guid: dfbad4170d086a246a690b9aaaf1beb7, type: 3}
+      propertyPath: m_TagString
+      value: ChefeDeFase
+      objectReference: {fileID: 0}
     - target: {fileID: 4941635705825534, guid: dfbad4170d086a246a690b9aaaf1beb7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -23.27

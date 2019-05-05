@@ -15,16 +15,19 @@ public class Bala : MonoBehaviour {
 
     // Update is called once per frame
     void FixedUpdate () {
-        rigidbodyBala.MovePosition
-            (rigidbodyBala.position + 
-            transform.forward * Velocidade * Time.deltaTime);
+        rigidbodyBala.MovePosition(rigidbodyBala.position + transform.forward * Velocidade * Time.deltaTime);
 	}
 
     void OnTriggerEnter(Collider objetoDeColisao)
     {
-        if(objetoDeColisao.tag == "Inimigo")
+        switch (objetoDeColisao.tag)
         {
-            objetoDeColisao.GetComponent<ControlaInimigo>().TomarDano(1);
+            case "Inimigo":
+                objetoDeColisao.GetComponent<ControlaInimigo>().TomarDano(1);
+            break;
+            case "ChefeDeFase":
+                objetoDeColisao.GetComponent<ControlaChefe>().TomarDano(1);
+            break;
         }
 
         Destroy(gameObject);

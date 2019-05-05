@@ -112,3 +112,8 @@ Dentro do método `Morrer()`:
 - É preciso definir a 'stoppingDistance' no Componente 'Nav Mesh Agent' do Objeto;
 - `NavMeshAgent.hasPath;`: retorna um bool que informa se o Objeto possui um destino;
 - Marcar 'Is Kinematic' no Rigidbody do Objeto, para retirar o controle de movimentação e rotação do Rigidbody, permitindo que o 'Nav Mesh Agent' faça esse controle;
+
+### Atividade 04 - Ataques no Chefe:
+
+- `NavMeshAgent.enabled = false;`: desabilita o 'Nav Mesh Agent' ao matar o Chefe;
+- `Rigidbody.isKinematic = false;`: desabilita o 'Is Kinematic' do Rigidbody para o Chefe sofrer o efeito da gravidade e desaparecer pelo chão do cenário;
