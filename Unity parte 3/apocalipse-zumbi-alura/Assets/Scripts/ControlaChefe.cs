@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class ControlaChefe : MonoBehaviour
+public class ControlaChefe : MonoBehaviour, IMatavel
 {
     private Transform jogador;
     private NavMeshAgent agente;
@@ -41,5 +41,29 @@ public class ControlaChefe : MonoBehaviour
                 animacaoChefe.Atacar(false);
             }
         }
+    }
+
+    void AtacaJogador()
+    {
+        int dano = Random.Range(30, 40);
+        jogador.GetComponent<ControlaJogador>().TomarDano(dano);
+    }
+
+    public void TomarDano(int dano)
+    {
+        statusChefe.Vida -= dano;
+        if (statusChefe.Vida <= 0)
+        {
+            Morrer();
+        }
+    }
+
+    public void Morrer()
+    {
+        animacaoChefe.Morrer();
+        movimentoChefe.Morrer();
+        this.enabled = false;
+        agente.enabled = false;
+        Destroy(gameObject, 2);
     }
 }
