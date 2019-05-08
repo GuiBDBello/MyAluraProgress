@@ -6,13 +6,16 @@ using UnityEngine.UI;
 
 public class ControlaChefe : MonoBehaviour, IMatavel
 {
+    public GameObject KitMedicoPrefab;
+    public Slider sliderVidaChefe;
+    public Image ImageSlider;
+    public Color CorDaVidaMaxima, CorDaVidaMinima;
+
     private Transform jogador;
     private NavMeshAgent agente;
     private Status statusChefe;
     private AnimacaoPersonagem animacaoChefe;
     private MovimentoPersonagem movimentoChefe;
-    public GameObject KitMedicoPrefab;
-    public Slider sliderVidaChefe;
 
     private void Start()
     {
@@ -77,5 +80,8 @@ public class ControlaChefe : MonoBehaviour, IMatavel
     void AtualizarInterface()
     {
         sliderVidaChefe.value = statusChefe.Vida;
+        float porcentagemDaVida = (float) statusChefe.Vida / statusChefe.VidaInicial;
+        Color corDaVida = Color.Lerp(CorDaVidaMinima, CorDaVidaMaxima, porcentagemDaVida);
+        ImageSlider.color = corDaVida;
     }
 }
