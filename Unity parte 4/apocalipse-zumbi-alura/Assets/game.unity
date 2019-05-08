@@ -1234,6 +1234,60 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114214466922332542, guid: cce5123bcfa01754bb7909f5bb14ef9f,
+        type: 3}
+      propertyPath: ImageSlicer
+      value: 
+      objectReference: {fileID: 1584699907}
+    - target: {fileID: 114214466922332542, guid: cce5123bcfa01754bb7909f5bb14ef9f,
+        type: 3}
+      propertyPath: CorDaVidaMaxima.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114214466922332542, guid: cce5123bcfa01754bb7909f5bb14ef9f,
+        type: 3}
+      propertyPath: CorDaVidaMaxima.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114214466922332542, guid: cce5123bcfa01754bb7909f5bb14ef9f,
+        type: 3}
+      propertyPath: CorDaVidaMaxima.r
+      value: 0.09803922
+      objectReference: {fileID: 0}
+    - target: {fileID: 114214466922332542, guid: cce5123bcfa01754bb7909f5bb14ef9f,
+        type: 3}
+      propertyPath: CorDaVidaMaxima.b
+      value: 0.09803922
+      objectReference: {fileID: 0}
+    - target: {fileID: 114214466922332542, guid: cce5123bcfa01754bb7909f5bb14ef9f,
+        type: 3}
+      propertyPath: CorDaVidaMinima.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114214466922332542, guid: cce5123bcfa01754bb7909f5bb14ef9f,
+        type: 3}
+      propertyPath: CorDaVidaMinima.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114214466922332542, guid: cce5123bcfa01754bb7909f5bb14ef9f,
+        type: 3}
+      propertyPath: CorDaVidaMinima.g
+      value: 0.09803922
+      objectReference: {fileID: 0}
+    - target: {fileID: 114214466922332542, guid: cce5123bcfa01754bb7909f5bb14ef9f,
+        type: 3}
+      propertyPath: CorDaVidaMinima.b
+      value: 0.09803922
+      objectReference: {fileID: 0}
+    - target: {fileID: 114214466922332542, guid: cce5123bcfa01754bb7909f5bb14ef9f,
+        type: 3}
+      propertyPath: ImageSlider
+      value: 
+      objectReference: {fileID: 1584699907}
+    - target: {fileID: 97137304, guid: cce5123bcfa01754bb7909f5bb14ef9f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1584699906, guid: cce5123bcfa01754bb7909f5bb14ef9f, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -7938,24 +7992,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 33627289}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1412687848 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1412687848, guid: cce5123bcfa01754bb7909f5bb14ef9f,
-    type: 3}
-  m_PrefabInstance: {fileID: 198508137}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1412687849
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1412687848}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43f56bab138886c41ae3521d92089e6b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1414313623
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8732,6 +8768,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2017222019}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1584699907 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1584699907, guid: cce5123bcfa01754bb7909f5bb14ef9f,
+    type: 3}
+  m_PrefabInstance: {fileID: 198508137}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1586845853
 GameObject:
   m_ObjectHideFlags: 0
