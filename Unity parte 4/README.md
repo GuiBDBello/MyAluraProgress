@@ -98,3 +98,18 @@
 - `maiorDistancia = distanciaEntreOJogador;`: se entrou no if, atribui a distância atual à maior distância encontrada até agora;
 - `posicaoDeMaiorDistancia = posicao.position;`: se entrou no if, atribui a posição atual à posição de maior distância encontrada até agora;
 - `return posicaoDeMaiorDistancia;`: retorno do método;
+
+
+## Aula 03 - Menu
+
+### Atividade 01 - Menu do Jogo:
+
+- Duplicar a cena, renomeá-la e abrí-la;
+- Remover os geradores de inimigos;
+- Remover Script da câmera e posicioná-la para visualizar o jogador e o hotel;
+- Remover elementos de interface, que se encontram no Canvas;
+- Adicionar botões 'Jogar' e 'Sair';
+- Alterar a música do menu;
+- Adicionar texto para representar o título do jogo;
+- Remover Scripts do 'Jogador';
+- Duplicar Animator 'Jogador', renomeá-lo para 'JogadorMenu' e alterá-lo;
