@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &97137305
 RectTransform:
   m_ObjectHideFlags: 0
@@ -503,6 +503,9 @@ MonoBehaviour:
   KitMedicoPrefab: {fileID: 1060151288946202, guid: 6150c6f66b7034ec5b3672478195682a,
     type: 3}
   sliderVidaChefe: {fileID: 370132337}
+  ImageSlider: {fileID: 1584699907}
+  CorDaVidaMaxima: {r: 0.09803922, g: 1, b: 0.09803922, a: 1}
+  CorDaVidaMinima: {r: 1, g: 0.09803922, b: 0.09803922, a: 1}
 --- !u!54 &54163392757231022
 Rigidbody:
   m_ObjectHideFlags: 0
