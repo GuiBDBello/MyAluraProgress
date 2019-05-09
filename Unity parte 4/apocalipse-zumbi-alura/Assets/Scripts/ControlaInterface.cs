@@ -6,14 +6,16 @@ using UnityEngine.SceneManagement;
 
 public class ControlaInterface : MonoBehaviour {
 
-    private ControlaJogador scriptControlaJogador;
     public Slider SliderVidaJogador;
     public GameObject PainelDeGameOver;
     public Text TextoTempoDeSobrevivencia;
     public Text TextoPontuacaoMaxima;
+    public Text TextoQuantidadeDeZumbisMortos;
+    public Text TextoChefeAparece;
+
+    private ControlaJogador scriptControlaJogador;
     private float tempoPontuacaoSalvo;
     private int quantidadeDeZumbisMortos;
-    public Text TextoQuantidadeDeZumbisMortos;
 
 	// Use this for initialization
 	void Start () {
@@ -71,5 +73,33 @@ public class ControlaInterface : MonoBehaviour {
     public void Reiniciar ()
     {
         SceneManager.LoadScene("game");
+    }
+
+    public void AparecerTextoChefeCriado()
+    {
+        StartCoroutine(DesaparecerTexto(1, TextoChefeAparece));
+    }
+
+    IEnumerator DesaparecerTexto(float tempoDeSumico, Text textoParaSumir)
+    {
+        TextoChefeAparece.gameObject.SetActive(true);
+        Color corTexto = textoParaSumir.color;
+        corTexto.a = 1;
+        textoParaSumir.color = corTexto;
+
+        yield return new WaitForSeconds(tempoDeSumico);
+
+        float contador = 0;
+        while (textoParaSumir.color.a > 0)
+        {
+            contador += Time.deltaTime / tempoDeSumico;
+            corTexto.a = Mathf.Lerp(1, 0, contador);
+            textoParaSumir.color = corTexto;
+            if (textoParaSumir.color.a <= 0)
+            {
+                textoParaSumir.gameObject.SetActive(false);
+            }
+            yield return null;
+        }
     }
 }
