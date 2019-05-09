@@ -77,3 +77,24 @@
 - `private ScriptInterface scriptInterface;`: cria uma variável que receberá o Script que controla a Interface (comumente adicionado ao Canvas);
 - `scriptInterface = GameObject.FindObjectOfType(typeof(ScriptInterface)) as ScriptInterface;`: retorna a referência ao Script da Interface;
 - `scriptInterface.MostrarTexto();`: ativa a variável 'Texto' criada no Script que controla a Interface;
+
+### Atividade 04 - Modificando o Gerador:
+
+- Criar Objetos vazios para representar as posições que o Chefe poderá ser criado;
+- Calcular qual desses Objetos está mais distante do Jogador;
+- Atribui a posição mais distante entre o Jogador e o Gerador como a posição em que o Chefe será instanciado;
+
+#### Script (GeradorChefe):
+
+- `public Transform[] PosicoesDeGeracao;`: vetor de posições que o Chefe poderá ser criado;
+- `private Transform jogador`: referência do Jogador utilizada para calcular a distância entre as posições de geração do Chefe;
+- `jogador = GameObject.FindWithTag("Jogador").transform;`: retorna o transform do Jogador;
+- `Vector3 CalcularPosicaoMaisDistanteDoJogador() { }`: método que irá retornar a posição de geração mais distante do jogador;
+- `Vector3 posicaoDeMaiorDistancia = Vector3.zero;`: inicia o valor da posição;
+- `float maiorDistancia = 0;`: define uma variável para realizar a validação da maior distância entre o jogador e o gerador do Chefe;
+- `foreach(Transform posicao in PosicoesPossiveisDeGeracao) { // Código }`: para cada posição da coleção (vetor), execute o código;
+- `float distanciaEntreOJogador = Vector3.Distance(posicao.position, jogador.position);`: dentro do foreach, obtém a distância entre o jogador e a posição atual;
+- `if (distanciaEntreOJogador > maiorDistancia) { }`: verifica se a posição atual é maior que a maior posição encontrada até agora;
+- `maiorDistancia = distanciaEntreOJogador;`: se entrou no if, atribui a distância atual à maior distância encontrada até agora;
+- `posicaoDeMaiorDistancia = posicao.position;`: se entrou no if, atribui a posição atual à posição de maior distância encontrada até agora;
+- `return posicaoDeMaiorDistancia;`: retorno do método;
