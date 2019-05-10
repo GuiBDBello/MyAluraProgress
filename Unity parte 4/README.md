@@ -133,3 +133,26 @@
 - `SceneManager.LoadScene("game");`: carrega a cena 'game';
 - `Application.Quit();`: fecha o jogo;
 - `UnityEditor.EditorApplication.isPlaying = false;`: encerra a execução da aplicação pelo Editor;
+
+### Atividade 06 - Sons do Menu:
+
+- Baixar o pacote "Retro UI Sounds" da Asset Store;
+
+#### Som no Clique:
+
+- Adicionar um componente 'Audio Source' ao botão;
+- Adicionar um evento 'On Click';
+- Atribuir o 'Audio Source' ao evento recém criado, e selecionar a função 'PlayOneShot()';
+- Selecionar o áudio a ser executado no clique do botão;
+
+#### Som no 'Hover':
+
+- Adicionar um componente 'Event Trigger' ao botão;
+- Selecionar 'Add New Event Type' > 'PointerEnter';
+- Adicionar um evento 'Pointer Enter (BaseEventData)';
+- Atribuir o 'Audio Source' ao evento recém criado, e selecionar a função 'PlayOneShot()';
+- Selecionar o áudio a ser executado no clique do botão;
+
+#### Script:
+
+- `yield return new WaitForSecondsRealtime(segundos);`: em um IEnumerator, aguarda a quantidade de segundos 'segundos' mesmo que o 'Time.timeScale' seja 0;
