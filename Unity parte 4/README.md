@@ -113,3 +113,23 @@
 - Adicionar texto para representar o título do jogo;
 - Remover Scripts do 'Jogador';
 - Duplicar Animator 'Jogador', renomeá-lo para 'JogadorMenu' e alterá-lo;
+
+### Atividade 03 - Programação dos Botões:
+
+- Selecione o botão;
+- No Inspector, vá até a seção 'On Click()';
+- Selecione o Objeto que contém o Script;
+- Selecione o método a ser executado no clique do botão;
+
+#### Platform dependent compilation:
+
+- `#if UNITY_STANDALONE`: inicia a 'Platform dependent compilation' para a plataforma 'STANDALONE';
+- `#if UNITY_EDITOR`: inicia a 'Platform dependent compilation' para a plataforma 'EDITOR';
+- `#endif`: encerra a execução do 'Platform dependent compilation';
+
+#### Script (ControlaMenu):
+
+- `using UnityEngine.SceneManagement;`: importa a biblioteca que gerencia as cenas da Unity;
+- `SceneManager.LoadScene("game");`: carrega a cena 'game';
+- `Application.Quit();`: fecha o jogo;
+- `UnityEditor.EditorApplication.isPlaying = false;`: encerra a execução da aplicação pelo Editor;
