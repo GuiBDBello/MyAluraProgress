@@ -6,19 +6,21 @@ public class ControlaInimigo : MonoBehaviour, IMatavel
 {
 
     public GameObject Jogador;
+    public AudioClip SomDeMorte;
+    public GameObject KitMedicoPrefab;
+    [HideInInspector]
+    public GeradorZumbis meuGerador;
+    public GameObject ParticulaSangueZumbi;
+
     private MovimentoPersonagem movimentaInimigo;
     private AnimacaoPersonagem animacaoInimigo;
     private Status statusInimigo;
-    public AudioClip SomDeMorte;
     private Vector3 posicaoAleatoria;
     private Vector3 direcao;
     private float contadorVagar;
     private float tempoEntrePosicoesAleatorias = 4;
     private float porcentagemGerarKitMedico = 0.1f;
-    public GameObject KitMedicoPrefab;
     private ControlaInterface scriptControlaInterface;
-    [HideInInspector]
-    public GeradorZumbis meuGerador;
 
 	// Use this for initialization
 	void Start () {
@@ -102,6 +104,11 @@ public class ControlaInimigo : MonoBehaviour, IMatavel
         {
             Morrer();
         }
+    }
+
+    public void ParticulaSangue(Vector3 posicao, Quaternion rotacao)
+    {
+        Instantiate(ParticulaSangueZumbi, posicao, rotacao);
     }
 
     public void Morrer()
