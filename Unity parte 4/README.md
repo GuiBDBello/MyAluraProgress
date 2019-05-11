@@ -156,3 +156,26 @@
 #### Script:
 
 - `yield return new WaitForSecondsRealtime(segundos);`: em um IEnumerator, aguarda a quantidade de segundos 'segundos' mesmo que o 'Time.timeScale' seja 0;
+
+
+## Aula 04 - Partículas
+
+### Atividade 01 - Partícula de Fogo:
+
+- 'Create > Effects > Particle System': cria um sistema de partículas;
+
+#### Criação do efeito de fogo:
+
+- 'Renderer > Render Mode > Mesh': altera o modo de renderização das partículas;
+- Selecionar o Material e alterar seu "Shader" para 'Particles > Alpha Blended';
+- Em 'Renderer': alterar "Material" pelo Material recém criado;
+- Em 'Particle System': alterar "Start Speed" para '0.1', "Start Size" para '0.4';
+- Em 'Shape': alterar "Shape" para 'Sphere', "Radius" para '0.2', "Randomize Direction" para '1';
+- Em 'Emission': alterar "Rate over Time" para '10';
+- Em 'Color over Lifetime': alterar o marcador inferior esquerdo para a cor 'Amarelo', marcador inferior direito para 'Vermelho';
+- Em 'Velocity over Lifetime': alterar "Y" para '0.5', "Space" para 'World';
+- Em 'Particle System': alterar "Start Lifetime" para '4', "Duration" para '4';
+- Em 'Size over Lifetime': alterar "Size" para o gráfico descrescente em curva na direção cima-baixo;
+- Em 'Rotation by Speed': alterar "Angular Velocity" para '80';
+- Em 'Particle System': alterar "Prewarm" para 'Selecionado/Checked/True';
+- Adicionar o 'Particle System' dentro do Barril_Fogueira;
