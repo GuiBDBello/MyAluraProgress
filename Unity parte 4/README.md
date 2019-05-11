@@ -198,3 +198,13 @@
 - Ainda no gráfico, arraste ambos pontos que estão no final da curva (lado direito) até o canto inferior. Clique com o botão direito nesses pontos e selecione 'Left Tangent > Linear';
 - Em 'Velocity over Lifetime': alterar seu tipo para 'Random Between Two Constants', "Z" para '2, 5';
 - Em 'Particle System': alterar "Start Speed" para '2.25', "Looping" para 'Deselecionado/Unchecked/False', "Stop Action" para 'Destroy';
+
+### Atividade 06 - Criar partícula no script:
+
+#### Script (ControlaInimigo):
+
+- `Instantiate(gameObjectParticula, posicao, rotacao);`: instancia a partícula;
+
+#### Script (Bala):
+
+- `Quaternion.LookRotation(-transform.forward);`: transforma uma direção em uma rotação. Retorna a rotação oposta à face do Objeto;

@@ -506,6 +506,8 @@ MonoBehaviour:
   ImageSlider: {fileID: 1584699907}
   CorDaVidaMaxima: {r: 0.09803922, g: 1, b: 0.09803922, a: 1}
   CorDaVidaMinima: {r: 1, g: 0.09803922, b: 0.09803922, a: 1}
+  ParticulaSangueZumbi: {fileID: 7288444051655485876, guid: b96d78b49d00c424cb4c3f9250cb3c28,
+    type: 3}
 --- !u!54 &54163392757231022
 Rigidbody:
   m_ObjectHideFlags: 0
