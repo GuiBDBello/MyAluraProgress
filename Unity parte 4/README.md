@@ -166,7 +166,7 @@
 
 #### Criação do efeito de fogo:
 
-- 'Renderer > Render Mode > Mesh': altera o modo de renderização das partículas;
+- Em 'Renderer': alterar "Render Mode" para 'Mesh';
 - Selecionar o Material e alterar seu "Shader" para 'Particles > Alpha Blended';
 - Em 'Renderer': alterar "Material" pelo Material recém criado;
 - Em 'Particle System': alterar "Start Speed" para '0.1', "Start Size" para '0.4';
@@ -179,3 +179,22 @@
 - Em 'Rotation by Speed': alterar "Angular Velocity" para '80';
 - Em 'Particle System': alterar "Prewarm" para 'Selecionado/Checked/True';
 - Adicionar o 'Particle System' dentro do Barril_Fogueira;
+
+### Atividade 04 - Partícula de Sangue:
+
+- 'Create > Effects > Particle System';
+
+#### Criação do efeito de sangue:
+
+- Em 'Renderer': alterar "Render Mode" para 'Mesh';
+- Em 'Renderer': alterar "Material" pelo Material criado na atividade anterior;
+- Em 'Transform': alterar "Rotation X" para '0';
+- Em 'Color over Lifetime': alterar o marcador inferior esquerdo para a cor 'Verde Escuro', marcador inferior direito para 'Verde Escuro';
+- Em 'Shape': alterar "Radius" para '0.01';
+- Em 'Emission': alterar "Rate over Time" para '0';
+- Em 'Emission': adicionar "Bursts" e alterar "Count" para 'Random Between Two Constants' (30, 45);
+- Em 'Particle System': alterar "Gravity Modifier" para 1, "Duration" para '1', "Start Lifetime" para '1', "Start Size" para '0.1';
+- Em 'Size over Lifetime': alterar seu tipo para 'Random Between Two Curves';
+- Ainda no gráfico, arraste ambos pontos que estão no final da curva (lado direito) até o canto inferior. Clique com o botão direito nesses pontos e selecione 'Left Tangent > Linear';
+- Em 'Velocity over Lifetime': alterar seu tipo para 'Random Between Two Constants', "Z" para '2, 5';
+- Em 'Particle System': alterar "Start Speed" para '2.25', "Looping" para 'Deselecionado/Unchecked/False', "Stop Action" para 'Destroy';
