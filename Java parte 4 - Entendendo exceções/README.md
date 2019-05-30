@@ -39,5 +39,13 @@
 
 ### Atividade 03 - Try Catch:
 
-- `try { } catch('Excecao' e) { }`: tentativa e captura de erro. 'Excecao' é a exceção que deve ser obtida após a tentativa da execução deste bloco de código;
+- `try { } catch('Excecao' ex) { }`: tentativa e captura de erro. 'Excecao' é a exceção que deve ser obtida após a tentativa da execução deste bloco de código;
 - O local de um try-catch em uma pilha de execução pode afetar o fluxo de uma aplicação;
+
+### Atividade 05 - Variação do Catch:
+
+- `ex.getMessage();`: retorna a mensagem da exceção;
+- `ex.printStackTrace();`: retorna o rastro da pilha de execução;
+- É possível concatenar 'catches', um após o outro, após o fim do bloco do catch anterior;
+- A partir do Java 1.7, é possível utilizar 'ou' dentro dos parâmetros de um catch;
+- **Ex.:** `... catch (ArithmeticException | NullPointerException ex) { ... }`;
