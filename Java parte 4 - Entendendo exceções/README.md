@@ -28,3 +28,11 @@
 
 - No canto superior direito, existem ícones que representam as perspectivas da IDE, ao lado do "Quick Access";
 - **Ex.:** Java EE, Java e Debug;
+
+
+## Aula 02 - Tratamento de exceções
+
+### Atividade 01 - Introdução a exceções:
+
+- Exceções são problemas que ocorrem na execução do código, e alteram o fluxo da aplicação;
+- Quando ocorre uma exceção, ela busca em toda a pilha de execução um tratamento para ela. Caso não encontre, a execução do fluxo da aplicação é encerrada;
