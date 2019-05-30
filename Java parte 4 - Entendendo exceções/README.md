@@ -17,7 +17,7 @@
 
 #### Debug:
 
-- ``Debug As > Java Application``: executa a aplicação em modo de depuração, que é um modo onde você controla a pilha de execução da aplicação;
+- `Debug As > Java Application`: executa a aplicação em modo de depuração, que é um modo onde você controla a pilha de execução da aplicação;
 - Ao ativar o modo de depuração, existem vários comandos que podem ser utilizados:
 1. Step Over: pula para a próxima linha, executando o comando da linha atual, e todos comandos que estão dentro dele;
 2. Step Into: entra no comando da linha atual, indo até os comandos que estão contidos neste comando;
@@ -36,3 +36,8 @@
 
 - Exceções são problemas que ocorrem na execução do código, e alteram o fluxo da aplicação;
 - Quando ocorre uma exceção, ela busca em toda a pilha de execução um tratamento para ela. Caso não encontre, a execução do fluxo da aplicação é encerrada;
+
+### Atividade 03 - Try Catch:
+
+- `try { } catch('Excecao' e) { }`: tentativa e captura de erro. 'Excecao' é a exceção que deve ser obtida após a tentativa da execução deste bloco de código;
+- O local de um try-catch em uma pilha de execução pode afetar o fluxo de uma aplicação;
