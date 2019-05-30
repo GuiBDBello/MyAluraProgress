@@ -56,3 +56,13 @@
 ### Atividade 01 - Revisão:
 
 - Bugs são imprevistos e causam exceções. Por isso é importante que o desenvolvedor entenda a pilha de execução da aplicação, seu rastro e as exceções;
+
+### Atividade 03 - Lançando exceções:
+
+- `ArithmeticException ex = new ArithmeticException();`: cria um objeto com uma referência a ArithmeticException;
+- Obs.: a memória onde os objetos Java são armazenados chama-se HEAP;
+- `throw ex;`: dispara uma exceção 'ex';
+- É possível passar uma mensagem por parâmetro à exceção;
+- **Ex.:** `ArithmeticException ex = new ArithmeticException("Ocorreu um erro!");`;
+- Porém, é mais comum que uma exceção não seja guardada em um objeto;
+- **Ex.:** `throw new ArithmeticException("Ocorreu um erro!");`;
