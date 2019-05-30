@@ -47,5 +47,12 @@
 - `ex.getMessage();`: retorna a mensagem da exceção;
 - `ex.printStackTrace();`: retorna o rastro da pilha de execução;
 - É possível concatenar 'catches', um após o outro, após o fim do bloco do catch anterior;
-- A partir do Java 1.7, é possível utilizar 'ou' dentro dos parâmetros de um catch;
+- Multi-Catch: a partir do Java 1.7, é possível utilizar 'ou' dentro dos parâmetros de um catch;
 - **Ex.:** `... catch (ArithmeticException | NullPointerException ex) { ... }`;
+
+
+## Aula 03 - Lançando exceções
+
+### Atividade 01 - Revisão:
+
+- Bugs são imprevistos e causam exceções. Por isso é importante que o desenvolvedor entenda a pilha de execução da aplicação, seu rastro e as exceções;
