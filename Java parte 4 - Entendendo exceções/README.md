@@ -95,3 +95,15 @@
 - Ao herdar de `Exception`, é necessário deixar explícito na assinatura do método que a exceção será disparada, utilizando `public void 'nomeMetodo' throws 'excecao' { }`  ou `try-catch`. Essas exceções são categorizadas como "checked", pois são, **obrigatoriamente**, verificadas pelo compilador;
 - A diferença entre exceções "checked" e "unchecked" é o processo de compilação. Sua execução ocorre da mesma forma, como uma "bomba" na pilha;
 - O conceito de exceções existe em várias linguagens, mas o que acabamos de estudar — checked e o unchecked — é algo específico do mundo Java.
+
+### Atividade 09 - O que aprendemos?:
+
+- Existe uma hierarquia grande de classes que representam exceções. Por exemplo, `ArithmeticException` é filha de `RuntimeException`, que herda de `Exception`, que por sua vez é filha da classe mais ancestral das exceções, `Throwable`. Conhecer bem essa hierarquia significa saber utilizar exceções em sua aplicação.
+- `Throwable` é a classe que precisa ser extendida para que seja possível jogar um objeto na pilha (através da palavra reservada `throw`)
+- É na classe `Throwable` que temos praticamente todo o código relacionada às exceções, inclusive `getMessage()` e `printStackTrace()`. Todo o resto da hierarquia apenas possui algumas sobrecargas de construtores para comunicar mensagens específicas
+- A hierarquia iniciada com a classe `Throwable` é dividida em **exceções** e **erros**. Exceções são usadas em códigos de aplicação. Erros são usados exclusivamente pela máquina virtual.
+- Classes que herdam de `Error` são usadas para comunicar erros na máquina virtual. Desenvolvedores de aplicação não devem criar erros que herdam de `Error`.
+- `StackOverflowError` é um erro da máquina virtual para informar que a pilha de execução não tem mais memória.
+- Exceções são separadas em duas grandes categorias: aquelas que são obrigatoriamente verificadas pelo compilador e as que não são verificadas.
+- As primeiras são denominadas *checked* e são criadas através do pertencimento a uma hieraquia que não passe por `RuntimeException`.
+- As segundas são as *unchecked*, e são criadas como descendentes de `RuntimeException`.
