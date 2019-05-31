@@ -107,3 +107,12 @@
 - Exceções são separadas em duas grandes categorias: aquelas que são obrigatoriamente verificadas pelo compilador e as que não são verificadas.
 - As primeiras são denominadas *checked* e são criadas através do pertencimento a uma hieraquia que não passe por `RuntimeException`.
 - As segundas são as *unchecked*, e são criadas como descendentes de `RuntimeException`.
+
+
+## Aula 05 - Aplicando exceções
+
+### Capturando qualquer exceção:
+
+- Para "obrigar" o desenvolvedor a tratar uma exceção, cria-se uma exceção *checked*;
+- Caso não seja obrigatório tratar uma exceção, cria-se uma exceção *unchecked*;
+- Para capturar qualquer exceção, utiliza-se `Exception` dentro do `catch(Exception ex)`;
