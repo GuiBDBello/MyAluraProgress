@@ -66,3 +66,19 @@
 - **Ex.:** `ArithmeticException ex = new ArithmeticException("Ocorreu um erro!");`;
 - Porém, é mais comum que uma exceção não seja guardada em um objeto;
 - **Ex.:** `throw new ArithmeticException("Ocorreu um erro!");`;
+
+
+## Aula 04 - Checked e Unchecked
+
+### Atividade 01 - Hierarquia de exceções:
+
+- `ArithmeticException` é filha de `RuntimeException` que é filha de `Exception` que é filha de `Throwable`;
+- Para jogar um Objeto na pilha de execução/erros, é necessário que a Classe desse Objeto herde de `Throwable`;
+- `Ctrl + O`: atalho do Eclipse que mostra todos os membros de uma Classe;
+
+#### Criando uma exceção:
+
+- Criar uma nova Classe `MinhaExcecao`;
+- Herdar de `RuntimeException`;
+- Criar construtores que chamam os construtores das Classes herdadas, utilizando `super()`;
+- Capturar a exceção em algum local da pilha de execução, utilizando `catch(MinhaExcecao ex) { }`;
