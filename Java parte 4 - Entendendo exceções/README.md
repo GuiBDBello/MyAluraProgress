@@ -111,8 +111,12 @@
 
 ## Aula 05 - Aplicando exceções
 
-### Capturando qualquer exceção:
+### Atividade 01 - Capturando qualquer exceção:
 
 - Para "obrigar" o desenvolvedor a tratar uma exceção, cria-se uma exceção *checked*;
 - Caso não seja obrigatório tratar uma exceção, cria-se uma exceção *unchecked*;
 - Para capturar qualquer exceção, utiliza-se `Exception` dentro do `catch(Exception ex)`;
+
+### Atividade 04 - Sacando com Unchecked Exception:
+
+- É uma prática comum no desenvolvimento Java, utilizar *if's* para validar um fluxo. Por exemplo, primeiro é verificado se há um problema e, caso não exista, o fluxo prossegue. Essas verificações podem ser feitas utilizando exceções;
