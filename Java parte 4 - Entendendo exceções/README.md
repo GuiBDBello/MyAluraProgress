@@ -82,3 +82,9 @@
 - Herdar de `RuntimeException`;
 - Criar construtores que chamam os construtores das Classes herdadas, utilizando `super()`;
 - Capturar a exceção em algum local da pilha de execução, utilizando `catch(MinhaExcecao ex) { }`;
+
+### Atividade 03 - Entendendo erros:
+
+- Outra Classe que herda de `Throwable`, além da Classe `Exception`, é a Classe `Error`;
+- A Classe `Error` não existe para desenvolvedores Java, mas sim da JVM;
+- Um erro muito conhecido dessa Classe `Error` é o `StackOverflowError`, que representa a "sobrecarga" do tamanho máximo da pilha de execução (que ocorre, por exemplo, ao chamar um método recursivo infinitamente);
