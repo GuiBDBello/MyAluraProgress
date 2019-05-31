@@ -88,3 +88,10 @@
 - Outra Classe que herda de `Throwable`, além da Classe `Exception`, é a Classe `Error`;
 - A Classe `Error` não existe para desenvolvedores Java, mas sim da JVM;
 - Um erro muito conhecido dessa Classe `Error` é o `StackOverflowError`, que representa a "sobrecarga" do tamanho máximo da pilha de execução (que ocorre, por exemplo, ao chamar um método recursivo infinitamente);
+
+### Atividade 04 - Checked e unchecked:
+
+- Ao herdar de `RuntimeException`, é possível disparar uma exceção quando quiser, utilizando `throw new 'excecao';`. Essas exceções são categorizadas como "unchecked", pois **não são** verificadas pelo compilador;
+- Ao herdar de `Exception`, é necessário deixar explícito na assinatura do método que a exceção será disparada, utilizando `public void 'nomeMetodo' throws 'excecao' { }`  ou `try-catch`. Essas exceções são categorizadas como "checked", pois são, **obrigatoriamente**, verificadas pelo compilador;
+- A diferença entre exceções "checked" e "unchecked" é o processo de compilação. Sua execução ocorre da mesma forma, como uma "bomba" na pilha;
+- O conceito de exceções existe em várias linguagens, mas o que acabamos de estudar — checked e o unchecked — é algo específico do mundo Java.
