@@ -124,3 +124,10 @@
 ### Atividade 06 - Sacando com Checked Exception:
 
 - `throw 'exception'` deve ser utilizado na declaração de um método, `try-catch` deve ser utilizado na execução deste método;
+
+
+## Aula 06 - Finally e try with resources
+
+### Atividade 01 - Finally:
+
+- `finally` é um bloco opcional, utilizando após um `try-catch`, que **sempre** será executado, independente do sucesso ou erro no `try-catch`;
