@@ -131,3 +131,9 @@
 ### Atividade 01 - Finally:
 
 - `finally` é um bloco opcional, utilizando após um `try-catch`, que **sempre** será executado, independente do sucesso ou erro no `try-catch`;
+
+### Atividade 03 - Try with resources:
+
+- Um `try` sozinho **nunca** é válido. É possível realizar um bloco `try-finally`, sem utilizar o `catch`. Isso é realizado quando a exceção não precisa ser obtida;
+- `try-with-resources`: implementa a interface `AutoCloseable`, que possui o método `close()`. Não é obrigatório um `catch` após `try-with-resources`, porém a exceção irá aparecer em seu Console;
+- **Ex.:** `try(Conexao con = new Conexao) { }`: na chamada do `try`, uma variável deve ser inicializada;
