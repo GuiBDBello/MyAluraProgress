@@ -137,3 +137,7 @@
 - Um `try` sozinho **nunca** é válido. É possível realizar um bloco `try-finally`, sem utilizar o `catch`. Isso é realizado quando a exceção não precisa ser obtida;
 - `try-with-resources`: implementa a interface `AutoCloseable`, que possui o método `close()`. Não é obrigatório um `catch` após `try-with-resources`, porém a exceção irá aparecer em seu Console;
 - **Ex.:** `try(Conexao con = new Conexao) { }`: na chamada do `try`, uma variável deve ser inicializada;
+
+### Atividade 11 - Para saber mais: Exceções padrões:
+
+- `IllegalArgumentException` e `IllegalStateException`: exceções importantes, que todo desenvolvedor Java deveria usar. Quando faz sentido, use uma exceção padrão em vez de criar uma própria;
