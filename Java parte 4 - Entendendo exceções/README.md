@@ -120,3 +120,7 @@
 ### Atividade 04 - Sacando com Unchecked Exception:
 
 - É uma prática comum no desenvolvimento Java, utilizar *if's* para validar um fluxo. Por exemplo, primeiro é verificado se há um problema e, caso não exista, o fluxo prossegue. Essas verificações podem ser feitas utilizando exceções;
+
+### Atividade 06 - Sacando com Checked Exception:
+
+- `throw 'exception'` deve ser utilizado na declaração de um método, `try-catch` deve ser utilizado na execução deste método;
