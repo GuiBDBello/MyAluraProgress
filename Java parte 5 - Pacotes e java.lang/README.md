@@ -21,3 +21,13 @@
 
 - `Ctrl + Shift + O`: organiza as importações (importa as Classes necessárias);
 - `Ctrl + 1`: abre o pop-up de Sugestões (*Quick-fix*);
+
+
+## Aula 02 - Todos os modificadores de acesso
+
+### Atividade 01 - Revisitando modificadores de acesso:
+
+- `public`: visível em todos os espaços;
+- `protected`: visível dentro do pacote e público para os filhos;
+- <<package private>>: visível apenas dentro do pacote. **Obs.:** Não existe uma palavra-chave para esse modificador de visibilidade. Ele é utilizado em Classes que não declaram explicitamente seu modificador de acesso;
+- `private`: visível apenas dentro da classe;
