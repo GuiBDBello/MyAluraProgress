@@ -14,3 +14,10 @@
 - `br.com.empresa.projeto.diretorio`: o padrão Java para nomear pacotes segue esse exemplo, em ordem: código do país > subdomínio > nome da empresa > nome do projeto > diretório específico;
 - Para facilitar a legibilidade e utilizar o nome simples da Classe no código-fonte, é possível **importar** pacotes, logo abaixo da declaração do `package`;
 - **Ex.:** `import br.com.empresa.projeto.diretorio.*;`;
+
+### Atividade 08 - Gerenciando pacotes com Eclipse:
+
+#### Eclipse:
+
+- `Ctrl + Shift + O`: organiza as importações (importa as Classes necessárias);
+- `Ctrl + 1`: abre o pop-up de Sugestões (*Quick-fix*);
