@@ -61,3 +61,20 @@
 - `@since`: data de lançamento;
 - `@serial`: campo serializável padrão;
 - `@deprecated`: comentário indicando que essa API não deve mais ser utilizada;
+
+### Atividade 05 - Criando uma biblioteca com JAR:
+
+- JAR: Java Archive. Extensão de um pacote de Classes Java (.jar);
+
+#### Gerar um JAR:
+
+- Em Package Explorer, clique com o botão direito do mouse em um projeto e selecione Export... > Java > JAR file;
+- Selecione ou remova os arquivos que você deseja;
+- Escolha o caminho de saída e o nome do JAR;
+
+#### Importar um JAR:
+
+- É uma prática comum no mundo Java que seu projeto possua uma pasta chamada 'libs' para manter as bibliotecas externas;
+- Copie o JAR gerado para essa pasta;
+- Adicione o JAR ao *Build Path* de seu projeto clicando nele com o botão direito do mouse e selecionando Build Path > Add to Build Path;
+- Importe os pacotes em seu projeto, e pronto! Pode utilizá-los!
