@@ -84,3 +84,11 @@
 - Para criar um JAR executável é necessário especificar qual será a Classe inicial, ou seja, o *entry point* da aplicação. Essa Classe deve possuir o método `public static void main(String[] args) { }`;
 - Ao declarar o *entry point*, será gerado um arquivo *MANIFEST.MF*, cujo conteúdo indica qual é a Classe inicial;
 - Para executar o JAR gerado, utiliza-se o comando `java -jar aplicacao.jar`;
+
+
+## Aula 04 - O pacote java.lang
+
+### Atividade 01 - Conhecendo java.lang:
+
+- O java.lang é o único pacote Java que não é necessário importar explicitamente, pois ele é fundamental à linguagem e já é importado automaticamente, implicitamente;
+- `String` e `System` são duas Classes muito importantes desse pacote;
