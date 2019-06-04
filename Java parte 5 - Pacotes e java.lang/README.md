@@ -29,5 +29,23 @@
 
 - `public`: visível em todos os espaços;
 - `protected`: visível dentro do pacote e público para os filhos;
-- <<package private>>: visível apenas dentro do pacote. **Obs.:** Não existe uma palavra-chave para esse modificador de visibilidade. Ele é utilizado em Classes que não declaram explicitamente seu modificador de acesso;
+- package private: visível apenas dentro do pacote. **Obs.:** Não existe uma palavra-chave para esse modificador de visibilidade. Ele é utilizado em Classes que não declaram explicitamente seu modificador de acesso;
 - `private`: visível apenas dentro da classe;
+
+
+## Aula 03 - Distribuição do seu código
+
+### Atividade 01 - Conhecendo o Javadoc:
+
+- `/** ... conteúdo ... */`: bloco de documentação Java (Javadoc);
+- É possível utilizar *annotations* para representar itens específicos em um Javadoc;
+- **Ex.:** `/** @author GuiDB @version 0.1 */`;
+- Os blocos normalmente são criados em membros públicos, que serão disponibilizados a outros desenvolvedores;
+- O Eclipse possui uma *view* que mostra o Javadoc do código onde o cursor se encontra;
+- O Javadoc não é feito para o usuário final. É feita de **desenvolvedor para desenvolvedor**;
+
+#### Gerar um Javadoc:
+
+- Project > Generate Javadoc...;
+- Em *Javadoc command*, defina o caminho da ferramenta "javadoc.exe";
+- Clique em *Finish*;
