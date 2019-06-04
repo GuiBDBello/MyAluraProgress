@@ -78,3 +78,9 @@
 - Copie o JAR gerado para essa pasta;
 - Adicione o JAR ao *Build Path* de seu projeto clicando nele com o botão direito do mouse e selecionando Build Path > Add to Build Path;
 - Importe os pacotes em seu projeto, e pronto! Pode utilizá-los!
+
+### Atividade 07 - JAR executável (Opcional):
+
+- Para criar um JAR executável é necessário especificar qual será a Classe inicial, ou seja, o *entry point* da aplicação. Essa Classe deve possuir o método `public static void main(String[] args) { }`;
+- Ao declarar o *entry point*, será gerado um arquivo *MANIFEST.MF*, cujo conteúdo indica qual é a Classe inicial;
+- Para executar o JAR gerado, utiliza-se o comando `java -jar aplicacao.jar`;
