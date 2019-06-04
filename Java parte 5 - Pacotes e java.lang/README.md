@@ -92,3 +92,14 @@
 
 - O java.lang é o único pacote Java que não é necessário importar explicitamente, pois ele é fundamental à linguagem e já é importado automaticamente, implicitamente;
 - `String` e `System` são duas Classes muito importantes desse pacote;
+
+### Atividade 04 - String e a imutabilidade:
+
+- String é uma Classe, porém não é necessário utilizar `new` para criar um Objeto. Essa inicialização, na sintaxe, é chamada de *object literal*;
+- Uma busca rápida no Google (**Ex.:** java String javadoc) permite visualizar a documentação de Classes Java;
+- Imutabilidade: uma String é imutável, ou seja, seu valor após inicializada não pode ser alterada. É necessário criar um novo Objeto e substituir a referência do anterior para "alterar seu valor";
+
+#### Métodos:
+
+- `String.replace(String oldChar, String newChar);`: retorna a String 'String' substituindo os caracteres 'oldChar' por 'newChar';
+- `String.toLowerCase();`: retorna a String 'String' substituindo todas letras maiúsculas por minúsculas;
