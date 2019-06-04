@@ -49,3 +49,15 @@
 - Project > Generate Javadoc...;
 - Em *Javadoc command*, defina o caminho da ferramenta "javadoc.exe";
 - Clique em *Finish*;
+
+### Atividade 04 - Para saber mais: Todas as tags:
+
+- `@author`: (usado na classe ou interface) autor da Classe;
+- `@version`: (usado na classe ou interface) versão da API que será mostrada ao utilizar o parâmetro `-version`;
+- `@param`: (usado no método e construtor) nome e descrição do parâmetro;
+- `@return`: (usado apenas no método) descrição do retorno do método;
+- `@exception` ou `@throws`: (no método ou construtor) nome da Classe e descrição da exceção;
+- `@see`: link com mais informações;
+- `@since`: data de lançamento;
+- `@serial`: campo serializável padrão;
+- `@deprecated`: comentário indicando que essa API não deve mais ser utilizada;
