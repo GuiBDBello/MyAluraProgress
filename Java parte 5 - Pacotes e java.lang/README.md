@@ -117,3 +117,25 @@
 - `nome.isEmpty();`: retorna um boolean que responde se a String está vazia (`String s = "";`);
 - `nome.trim();`: retorna uma String com o conteúdo da String 'nome', porém sem os espaços;
 - `nome.contains(String s);`: retorna um boolean que responde se a String 'nome' contém o conteúdo da String 's';
+
+### Atividade 09 - A interface CharSequence:
+
+- CharSequence: interface que a Classe String implementa;
+- É possível declarar uma variável com CharSequence, mas isso é raro de se ver;
+- **Ex.:** `CharSequence seq = "Sequência de caracteres.";`
+
+#### StringBuilder:
+
+- A Classe StringBuilder ajuda na concatenação de Strings de forma mais eficiente;
+- **Ex.:** `StringBuilder builder = new StringBuilder("Socorram");
+builder.append("-");
+builder.append("me");
+builder.append(", ");
+builder.append("subi ");
+builder.append("no ");
+builder.append("ônibus ");
+builder.append("em ");
+builder.append("Marrocos");`
+- O Objeto StringBuilder, ao contrário do String, é mutável. Ao concatenar mais Strings, é utilizada a mesma referência;
+- O StringBuilder também implementa CharSequence;
+- **Ex.:** `CharSequence cs = new StringBuilder("Também é uma sequência de caracteres.");`
