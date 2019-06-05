@@ -148,3 +148,8 @@ builder.append("Marrocos");`
 - System: Classe, java.lang, acesso público (`public`);
 - out: atributo, público, referência, `static`;
 - println: método, público, não é `static`, sobrecarga, não joga exceções checked;
+
+### Atividade 04 - Usando a classe Object:
+
+- Todas as Classes herdam, implicitamente, de Object;
+- O método `toString()` vem da Classe `Object`;
