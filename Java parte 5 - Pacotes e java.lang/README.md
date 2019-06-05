@@ -139,3 +139,12 @@ builder.append("Marrocos");`
 - O Objeto StringBuilder, ao contrário do String, é mutável. Ao concatenar mais Strings, é utilizada a mesma referência;
 - O StringBuilder também implementa CharSequence;
 - **Ex.:** `CharSequence cs = new StringBuilder("Também é uma sequência de caracteres.");`
+
+
+## Aula 05 - A classe Object
+
+### Atividade 01 - Analisando o sysout:
+
+- System: Classe, java.lang, acesso público (`public`);
+- out: atributo, público, referência, `static`;
+- println: método, público, não é `static`, sobrecarga, não joga exceções checked;
