@@ -103,3 +103,17 @@
 
 - `String.replace(String oldChar, String newChar);`: retorna a String 'String' substituindo os caracteres 'oldChar' por 'newChar';
 - `String.toLowerCase();`: retorna a String 'String' substituindo todas letras maiúsculas por minúsculas;
+
+### Atividade 06 - Metodos da classe String:
+
+- Sobrecarga: quando um método possui mais de uma assinatura;
+
+#### Métodos:
+
+- `nome.charAt(int indice);`: retorna um char na posição 'indice' da String 'nome';
+- `nome.indexOf(String s);`: retorna um inteiro que representa a posição da String 's' na String 'nome';
+- `nome.substring(int posicao);`: retorna uma String com o conteúdo da String 'nome' a partir da posição 'posicao';
+- `nome.length();`: retorna um inteiro que representa o tamanho da String (quantidade de caracteres);
+- `nome.isEmpty();`: retorna um boolean que responde se a String está vazia (`String s = "";`);
+- `nome.trim();`: retorna uma String com o conteúdo da String 'nome', porém sem os espaços;
+- `nome.contains(String s);`: retorna um boolean que responde se a String 'nome' contém o conteúdo da String 's';
