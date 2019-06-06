@@ -153,3 +153,7 @@ builder.append("Marrocos");`
 
 - Todas as Classes herdam, implicitamente, de Object;
 - O método `toString()` vem da Classe `Object`;
+
+### Atividade 06 - O método toString():
+
+- Iremos sobrescrever o método `toString()` utilizando a *annotation* `@Override`;
