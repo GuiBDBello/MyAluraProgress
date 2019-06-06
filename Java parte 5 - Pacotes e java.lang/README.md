@@ -157,3 +157,7 @@ builder.append("Marrocos");`
 ### Atividade 06 - O método toString():
 
 - Iremos sobrescrever o método `toString()` utilizando a *annotation* `@Override`;
+
+### Atividade 09 - Revisão e Conclusão:
+
+- A ideia do método `toString()` da Classe Object é ser sobrescrito, assim como a maioria dos outros métodos "querem" ser sobrescritos pelos filhos, com isso eles ganham mais significado;
