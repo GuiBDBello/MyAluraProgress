@@ -1,13 +1,12 @@
 package br.com.bytebank.banco.modelo;
 
-
 /**
  * Classe que representa um cliente no Bytebank.
- *
- * @author Nico Steppat
+ * 
+ * @author GuiDB
  * @version 0.1
  */
-public class Cliente  {
+public class Cliente {
 
     private String nome;
     private String cpf;

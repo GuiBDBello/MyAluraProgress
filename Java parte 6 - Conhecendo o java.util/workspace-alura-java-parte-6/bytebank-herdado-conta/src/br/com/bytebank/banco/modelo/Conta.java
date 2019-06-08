@@ -1,22 +1,20 @@
 package br.com.bytebank.banco.modelo;
 
-
 /**
- * Classe representa a moldura de uma conta
+ * Classe representa a moldura de uma conta.
  * 
- * @author Nico Steppat
- *
+ * @author GuiDB
  */
-public abstract class Conta extends Object {
+public abstract class Conta {
 
-    protected double saldo;
+    double saldo;
     private int agencia;
     private int numero;
     private Cliente titular;
     private static int total = 0;
     
     /**
-     * Construtor para inicializar o objeto Conta a partir da agencia e numero.
+     * Construtor para inicializar o objeto Conta a partir da agência e número.
      * 
      * @param agencia
      * @param numero
@@ -94,7 +92,7 @@ public abstract class Conta extends Object {
     
     @Override
 	public String toString() {
-		return "Numero: " + this.numero + ", Agencia: " + this.agencia;
+		return "Número: " + this.numero + ", Agência: " + this.agencia;
 	}
 
 }
