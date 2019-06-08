@@ -68,3 +68,9 @@
 
 - **Ex.:** `ContaCorrente cc1 = new ContaCorrente(22, 33); Conta conta = cc1; //cast implicito`
 - **Ex.:** `ContaCorrente cc1 = new ContaCorrente(22, 33); Conta conta = (Conta) cc1; //cast explícito mas desnecessário`
+
+### Atividade 08 - Entendendo o array String args:
+
+- `String[] args`: parâmetros de inicialização da aplicação;
+- Pelo Terminal, utiliza-se o comando `java nomeClasseCompilada.class arg1 arg2`;
+- Pelo Eclipse, vá em 'Run > Run Configurations... > Arguments > Program arguments' e insira seus valores;
