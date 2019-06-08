@@ -52,3 +52,19 @@
 - **Ex.:** `(String) cpf; (Object) ContaCorrente`
 - `ClassCastException`: exceção que ocorre quando é utilizado *type cast* em uma Classe específica, para convertê-la para uma Classe mais genérica;
 - Um Array de um tipo genérico pode receber seus tipos específicos (polimorfismo). Por exemplo, um Array de `Conta[]` pode receber `ContaCorrente` e `ContaPoupanca`;
+
+### Atividade 03 - Cast explicito e implícito:
+
+#### Cast explícito e implícito:
+
+- Type Cast: conversão de um tipo para outro;
+
+#### Cast implícito e explícito de primitivos:
+
+- **Ex.:** `int numero = 3; double valor = numero; //cast implícito`
+- **Ex.:** `int numero = 3; double valor = (double) numero; //cast explícito`
+
+#### Cast implícito e explícito de referências:
+
+- **Ex.:** `ContaCorrente cc1 = new ContaCorrente(22, 33); Conta conta = cc1; //cast implicito`
+- **Ex.:** `ContaCorrente cc1 = new ContaCorrente(22, 33); Conta conta = (Conta) cc1; //cast explícito mas desnecessário`
