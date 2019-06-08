@@ -43,3 +43,12 @@
 - Um array é sempre inicializado com os valores padrões.
 - Ao acessar uma posição inválida recebemos a exceção `ArrayIndexOutOfBoundException`
 - Arrays possuem um atributo `length` para saber o tamanho
+
+## Aula 02 - Guardando qualquer referência
+
+### Atividade 01 - Array do tipo Object:
+
+- Type cast: utilizando parênteses, é possível realizar uma conversão do tipo de um dado `(Tipo) dado`;
+- **Ex.:** `(String) cpf; (Object) ContaCorrente`
+- `ClassCastException`: exceção que ocorre quando é utilizado *type cast* em uma Classe específica, para convertê-la para uma Classe mais genérica;
+- Um Array de um tipo genérico pode receber seus tipos específicos (polimorfismo). Por exemplo, um Array de `Conta[]` pode receber `ContaCorrente` e `ContaPoupanca`;
