@@ -13,3 +13,17 @@
 - `idades.length;`: atributo de um Objeto do tipo Array que retorna o tamanho daquele Array;
 - É possível fazer um laço com base num Array, utilizando-o como critério de parada;
 - **Ex.:** `for(int i = 0; i < idades.length; i++) { }`
+
+### Atividade 05 - Array de referências:
+
+#### Revisão:
+
+- Arrays são Objetos;
+- É necessário delimitar explicitamente o tamanho e o tipo de um Array em sua inicialização;
+- Um Array é inicializado com os valores padrões de seu tipo;
+- A primeira posição de um Array é a posição [0];
+
+#### Array de referências:
+
+- Ao atribuir uma referência a um Array, é criado um "clone" da referência, que aponta ao mesmo Objeto em memória da referência original;
+- Objetos =/= Referências;
