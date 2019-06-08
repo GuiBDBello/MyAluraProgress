@@ -27,3 +27,8 @@
 
 - Ao atribuir uma referência a um Array, é criado um "clone" da referência, que aponta ao mesmo Objeto em memória da referência original;
 - Objetos =/= Referências;
+
+### Atividade 09 - Forma literal:
+
+- *Literal*, nesse contexto, significa usar valores diretamente, menos burocrático, mais direto;
+- **Ex.:** `int[] refs = {1, 2, 3, 4, 5};`
