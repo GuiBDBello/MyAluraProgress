@@ -112,3 +112,28 @@
 
 - `lista.contains(objeto);`: retorna um boolean que representa se a referência 'objeto' está contida no ArrayList 'lista'. Esse método não compara o **conteúdo** dos objetos, ele compara se é o **mesmo objeto**. Esse método, internamente, chama outro método, o `lista.equals(objeto)`;
 - Agora, no código, iremos sobrescrever o método `equals(Object)` para verificar se o conteúdo do objeto é igual ao conteúdo de outro objeto (ao contrário do código padrão, que verifica se é o **mesmo** objeto);
+
+### Atividade 04 - List e LinkedList:
+
+- Um ArrayList e um LinkedList compartilham vários métodos (`contains()`, `size()`, `remove()`, etc). Isso ocorre pois ambas Classes implementam a interface `List`;
+
+#### ArrayList:
+
+- Pros:
+1. Fácil acesso em qualquer elemento, diretamente pelo índice;
+2. Fácil adição de um elemento em qualquer posição;
+3. Fácil iteração;
+- Cons:
+1. Capacidade limitada;
+2. Ao remover um elemento, é necessário reorganizar toda a lista a partir do elemento removido;
+
+#### LinkedList:
+
+- Ao contrário do ArrayList, o LinkedList não utiliza um Array por baixo dos panos;
+- Assim como todas listas, possui uma sequência de inserção/obtenção dos dados e índices para determinar as posições;
+- Cada elemento de uma LinkedList possui uma referência para identificar qual é o elemento anterior e outra referência para o posterior;
+- O primeiro elemento da lista é o elemento que não possui referência a um elemento anterior, e o último elemento não possui referência a um elemento posterior;
+- Pros:
+1. Fácil reorganização da lista, pois são alteradas apenas as referências do elemento anterior e próximo;
+- Cons:
+1. Toda busca na lista começa no primeiro elemento, vai ao próximo elemento da lista, e segue assim até encontrar o que busca;
