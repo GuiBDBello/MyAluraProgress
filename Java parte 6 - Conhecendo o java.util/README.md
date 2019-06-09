@@ -74,3 +74,19 @@
 - `String[] args`: parâmetros de inicialização da aplicação;
 - Pelo Terminal, utiliza-se o comando `java nomeClasseCompilada.class arg1 arg2`;
 - Pelo Eclipse, vá em 'Run > Run Configurations... > Arguments > Program arguments' e insira seus valores;
+
+
+## Aula 03 - ArrayList e Generics
+
+### Conhecendo ArrayList:
+
+- `ArrayList`: pertence ao pacote java.util. Estrutura de dados que contém uma lista;
+- **Ex.:** `ArrayList lista = new ArrayList();`
+- `lista.add(Object objeto);`: permite adicionar a referência 'objeto' à próxima posição disponível do ArrayList 'lista';
+- `lista.size();`: retorna a quantidade de referências adicionadas no ArrayList 'lista';
+- `lista.get(int indice);`: retorna a referência na posição 'indice' do ArrayList 'lista';
+- `lista.remove(int indice);`: remove a referência na posição 'indice';
+
+#### Foreach:
+
+- `for(Object o : lista) { }`: sintaxe do *foreach* em Java. "Para cada Objeto 'o' dentro de 'lista', faça...";
