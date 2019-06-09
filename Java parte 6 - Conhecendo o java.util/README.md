@@ -152,3 +152,10 @@
 - Ao utilizar *Threads*, é necessário utilizar a Classe Vector. Nem ArrayList nem LinkedList são *thread safe*, apenas o Vector;
 - É possível manipular uma lista de Vector através de várias pilhas de execução;
 - Porém um Vector possui um custo maior de desempenho;
+
+### Atividade 04 - A interface Collection:
+
+- `java.util.List` aceita objetos duplicados, `java.util.Set` não aceita;
+- Para entender melhor o Set, é necessário entender o método `hashCode()` da Classe Object;
+- Um Set não é sequencial, como uma List;
+- List e Set implementam a interface `Collection`;
