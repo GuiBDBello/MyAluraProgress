@@ -94,3 +94,13 @@
 ### Atividade 09 - Introdução ao Generics:
 
 - `ArrayList<Conta> lista = new ArrayList<Conta>;`: cria uma lista que contém, especificamente, referências do tipo 'Conta'. Esses caracteres (`<>`), no Java, simbolizam *Generics*;
+
+### Atividade 13 - Outras formas de inicialização:
+
+#### Lista com capacidade predefinida:
+
+- `ArrayList lista = new ArrayList(26); //capacidade inicial`: define, no construtor, um tamanho limitado à ArrayList 'lista';
+
+#### Lista a partir de outra:
+
+- `ArrayList nova = new ArrayList(lista); //criando baseado na primeira lista`: cria um novo ArrayList 'nova' inicializado com os valores do ArrayList 'lista';
