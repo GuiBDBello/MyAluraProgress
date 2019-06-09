@@ -78,7 +78,7 @@
 
 ## Aula 03 - ArrayList e Generics
 
-### Conhecendo ArrayList:
+### Atividade 04 - Conhecendo ArrayList:
 
 - `ArrayList`: pertence ao pacote java.util. Estrutura de dados que contém uma lista;
 - **Ex.:** `ArrayList lista = new ArrayList();`
@@ -90,3 +90,7 @@
 #### Foreach:
 
 - `for(Object o : lista) { }`: sintaxe do *foreach* em Java. "Para cada Objeto 'o' dentro de 'lista', faça...";
+
+### Atividade 09 - Introdução ao Generics:
+
+- `ArrayList<Conta> lista = new ArrayList<Conta>;`: cria uma lista que contém, especificamente, referências do tipo 'Conta'. Esses caracteres (`<>`), no Java, simbolizam *Generics*;
