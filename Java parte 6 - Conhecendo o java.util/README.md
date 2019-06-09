@@ -137,3 +137,8 @@
 1. Fácil reorganização da lista, pois são alteradas apenas as referências do elemento anterior e próximo;
 - Cons:
 1. Toda busca na lista começa no primeiro elemento, vai ao próximo elemento da lista, e segue assim até encontrar o que busca;
+
+### Atividade 08 - De Array para List:
+
+- A Classe `java.util.Arrays` possui vários métodos estáticos auxiliares para trabalhar com arrays;
+- **Ex.:** `List<String> argumentos = Arrays.asList(args);`
