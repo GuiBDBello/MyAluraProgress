@@ -142,3 +142,13 @@
 
 - A Classe `java.util.Arrays` possui vários métodos estáticos auxiliares para trabalhar com arrays;
 - **Ex.:** `List<String> argumentos = Arrays.asList(args);`
+
+
+## Aula 05 - Vector e a interface Collection
+
+### Atividade 01 - A alternativa threadsafe:
+
+- `java.util.Vector`: Assim como a ArrayList, o Vector também utiliza um Array;
+- Ao utilizar *Threads*, é necessário utilizar a Classe Vector. Nem ArrayList nem LinkedList são *thread safe*, apenas o Vector;
+- É possível manipular uma lista de Vector através de várias pilhas de execução;
+- Porém um Vector possui um custo maior de desempenho;
