@@ -104,3 +104,11 @@
 #### Lista a partir de outra:
 
 - `ArrayList nova = new ArrayList(lista); //criando baseado na primeira lista`: cria um novo ArrayList 'nova' inicializado com os valores do ArrayList 'lista';
+
+
+## Aula 04 - Equals e mais listas
+
+### Atividade 01 - O método equals:
+
+- `lista.contains(objeto);`: retorna um boolean que representa se a referência 'objeto' está contida no ArrayList 'lista'. Esse método não compara o **conteúdo** dos objetos, ele compara se é o **mesmo objeto**. Esse método, internamente, chama outro método, o `lista.equals(objeto)`;
+- Agora, no código, iremos sobrescrever o método `equals(Object)` para verificar se o conteúdo do objeto é igual ao conteúdo de outro objeto (ao contrário do código padrão, que verifica se é o **mesmo** objeto);
