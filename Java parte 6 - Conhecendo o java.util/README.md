@@ -159,3 +159,11 @@
 - Para entender melhor o Set, é necessário entender o método `hashCode()` da Classe Object;
 - Um Set não é sequencial, como uma List;
 - List e Set implementam a interface `Collection`;
+
+
+## Aula 06 - As classes Wrappers
+
+### Atividade 01 - Autoboxing e Unboxing:
+
+- Arrays aceitam tipos primitivos e referências, enquanto Listas aceitam apenas referências;
+- Ao adicionar um valor de tipo primitivo em uma Lista, o Java automaticamente cria um Objeto para armazenar esse valor. Essa transformação automática chama-se *Autoboxing*;
