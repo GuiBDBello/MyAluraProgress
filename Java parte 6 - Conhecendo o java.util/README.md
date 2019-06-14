@@ -203,3 +203,21 @@
 #### Number:
 
 - `java.lang.Number`: Classe-mãe de todas Classes que utilizam números para representar seus valores. Através do Polimorfismo, é possível acessar um `Integer`, `Float`, `Double`... utilizando uma referência do tipo `Number`;
+
+
+## Aula 07 - Ordenação de listas
+
+### Atividade 01 - Ordenando listas:
+
+#### Comparator:
+
+- `Interface` Java, proveniente do pacote `java.util`;
+- Para utilizá-la, deve-se criar uma nova Classe que implemente a `interface` Comparator, juntamente ao método `compare(T o1, T o2)`;
+- `compare(T o1, T o2)`: verifica se um Objeto 'o1' do tipo 'T' é maior que 'o2', do mesmo tipo. É retornado um inteiro negativo, zero ou um inteiro positivo se o primeiro argumento é menor, igual ou maior que o segundo;
+- `lista.sort(comparator);`: ordena uma `List` 'lista' baseada no critério definido na Classe do Objeto `Comparator` 'comparator';
+
+#### Eclipse:
+
+- Em `Source > Organize Imports` (ou utilize o atalho, `Ctrl + Shift + O`), todas as dependências necessárias são importadas e as dependências que não estão sendo utilizadas são removidas;
+- `Ctrl + Shift + T`: atalho que abre uma janela e permite buscar uma Classe específica dentro das dependências do seu projeto;
+- Ao digitar `foreach`, pressionar `Ctrl + Espaço` e pressionar `Enter`, o Eclipse cria um laço *foreach* utilizando uma `List` que se encontra próxima da linha atual;
