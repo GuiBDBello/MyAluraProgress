@@ -221,3 +221,8 @@
 - Em `Source > Organize Imports` (ou utilize o atalho, `Ctrl + Shift + O`), todas as dependências necessárias são importadas e as dependências que não estão sendo utilizadas são removidas;
 - `Ctrl + Shift + T`: atalho que abre uma janela e permite buscar uma Classe específica dentro das dependências do seu projeto;
 - Ao digitar `foreach`, pressionar `Ctrl + Espaço` e pressionar `Enter`, o Eclipse cria um laço *foreach* utilizando uma `List` que se encontra próxima da linha atual;
+
+### Atividade 02 - Comparando Strings:
+
+- Comparar um número é simples, mas como compara-se uma String? Por ordem alfabética!;
+- `nomeC1.compareTo(nomeC2);`: retorna um `int`. Se esse inteiro for negativo, significa que a primeira String é "menor" que a segunda. Se for zero, são iguais. Se for positivo, a segunda String é maior que a primeira;
