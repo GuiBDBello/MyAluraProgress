@@ -181,6 +181,25 @@
 - `Integer.valueOf(String);`: uma das sobrecargas do método `valueOf()`. Converte uma `String` para um `Integer`. Também conhecido por *Parsing*;
 - `Integer.parseInt(String);`: realiza uma conversão de uma `String` para um tipo primitivo `int`;
 - `Integer.doubleValue();`: converte o `Integer` em um `double`, retornando-o;
-- `Integer.MAX_VALUE;`: retorna o maior valor possível que um `Integer` suporta (inverso do `Integer.MIN_VALUE`);
+- `Integer.MAX_VALUE;`: retorna o maior valor possível que um `Integer` suporta (inverso de `Integer.MIN_VALUE`);
 - `Integer.SIZE;`: retorna a quantidade de BITS de um `Integer`;
 - `Integer.BYTES;`: retorna a quantidade de BYTES de um `Integer`;
+
+### Atividade 06 - A classe Number:
+
+- (8 bytes) `double`	-> `java.lang.Double`
+- (4 bytes) `float`		-> `java.lang.Float`
+- (8 bytes) `long`		-> `java.lang.Long`
+- (4 bytes) `int`		-> `java.lang.Integer`
+- (2 bytes) `short`		-> `java.lang.Short`
+- (1 bytes) `byte`		-> `java.lang.Byte`
+- (2 bytes) `char`		-> `java.lang.Character`
+- 			`boolean`	-> `java.lang.Boolean`
+
+#### Boolean:
+
+- `Boolean.TRUE;`: atributo estático da Classe `Boolean` que retorna o valor `true` (inverso de `Boolean.FALSE`);
+
+#### Number:
+
+- `java.lang.Number`: Classe-mãe de todas Classes que utilizam números para representar seus valores. Através do Polimorfismo, é possível acessar um `Integer`, `Float`, `Double`... utilizando uma referência do tipo `Number`;
