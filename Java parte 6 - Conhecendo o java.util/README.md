@@ -167,3 +167,20 @@
 
 - Arrays aceitam tipos primitivos e referências, enquanto Listas aceitam apenas referências;
 - Ao adicionar um valor de tipo primitivo em uma Lista, o Java automaticamente cria um Objeto para armazenar esse valor. Essa transformação automática chama-se *Autoboxing*;
+
+### Atividade 02 - Métodos da classe Integer:
+
+- No Java, existe uma Classe para cada tipo primitivo;
+- Essas Classes são chamadas de *Wrappers*, pois "embrulham" o tipo primitivo;
+- Esses *Wrappers* pertencem ao pacote `java.lang`;
+
+#### Integer:
+
+- O construtor padrão, que recebe um int, está *deprecated*. A forma correta de se instanciar um Objeto Integer é utilizar o método estático `Integer.valueOf(int);`. Internamente, esse método instancia um Objeto do tipo `Integer`;
+- `Integer.intValue();`: retorna o valor primitivo do Objeto. Essa conversão chama-se *Unboxing*;
+- `Integer.valueOf(String);`: uma das sobrecargas do método `valueOf()`. Converte uma `String` para um `Integer`. Também conhecido por *Parsing*;
+- `Integer.parseInt(String);`: realiza uma conversão de uma `String` para um tipo primitivo `int`;
+- `Integer.doubleValue();`: converte o `Integer` em um `double`, retornando-o;
+- `Integer.MAX_VALUE;`: retorna o maior valor possível que um `Integer` suporta (inverso do `Integer.MIN_VALUE`);
+- `Integer.SIZE;`: retorna a quantidade de BITS de um `Integer`;
+- `Integer.BYTES;`: retorna a quantidade de BYTES de um `Integer`;
