@@ -226,3 +226,20 @@
 
 - Comparar um número é simples, mas como compara-se uma String? Por ordem alfabética!;
 - `nomeC1.compareTo(nomeC2);`: retorna um `int`. Se esse inteiro for negativo, significa que a primeira String é "menor" que a segunda. Se for zero, são iguais. Se for positivo, a segunda String é maior que a primeira;
+
+### Atividade 03 - A ordem natural:
+
+- `return c1.getNumero() - c2.getNumero();`: retorno utilizado no método `compare(c1, c2)`, quando os parâmetros são números. O resultado será o mesmo que o código anterior, porém mais enxuto;
+- `return Integer.compare(c1.getNumero(), c2.getNumero());`: outra forma de realizar a mesma coisa;
+
+#### Collections:
+
+- É denominada uma Classe "Fachada", segundo padrões de projeto (Classe com vários métodos estáticos criados para auxiliar o desenvolvedor);
+- `Collections.sort(List l, Comparator c);`: maneira antiga (pré-Java 1.8) de utilizar a estrutura de dados *sort*;
+- `Collections.reverse(l);`: retorna a List de forma decrescente;
+- `Collections.sort(List l);`: retorna a List ordenando pela "ordem natural". Deve implementar a Classe `Comparable` para compilar;
+
+#### Ordem natural:
+
+- Qualquer Objeto adicionado em uma `List` pode definir uma ordem natural;
+- `Comparable`: interface que define a ordem natural. Quando implementada, torna o Objeto "comparável". Deve-se implementar, então, o método `compareTo(Object o)`;
