@@ -243,3 +243,7 @@
 
 - Qualquer Objeto adicionado em uma `List` pode definir uma ordem natural;
 - `Comparable`: interface que define a ordem natural. Quando implementada, torna o Objeto "comparável". Deve-se implementar, então, o método `compareTo(Object o)`;
+
+### Atividade 08 - Ordenar Arrays:
+
+- `Arrays.sort(array);`: reordena um Array 'array'. Semelhante ao métoto `sort()` da Classe `List`;
