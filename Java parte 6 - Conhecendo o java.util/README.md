@@ -247,3 +247,12 @@
 ### Atividade 08 - Ordenar Arrays:
 
 - `Arrays.sort(array);`: reordena um Array 'array'. Semelhante ao métoto `sort()` da Classe `List`;
+
+
+## Aula 08 - Classes anônimas e Lambdas
+
+### Aula 01 - Classes anônimas:
+
+- `Function Object`: Classe criada unicamente com o propósito de encapsular uma função;
+- Classes anônimas: são Classes geradas pelo Java que não precisam ser declaradas explicitamente. Essas Classes são compiladas e é até gerado um arquivo `.class` para representá-las!;
+- Para criar uma Classe anônima, é necessário utilizar `new`, `()` (construtor) e `{ }`;
