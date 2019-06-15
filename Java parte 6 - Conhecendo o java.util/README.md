@@ -256,3 +256,11 @@
 - `Function Object`: Classe criada unicamente com o propósito de encapsular uma função;
 - Classes anônimas: são Classes geradas pelo Java que não precisam ser declaradas explicitamente. Essas Classes são compiladas e é até gerado um arquivo `.class` para representá-las!;
 - Para criar uma Classe anônima, é necessário utilizar `new`, `()` (construtor) e `{ }`;
+
+### Aula 04 - Finalmente Lambdas:
+
+- `lista.sort((Conta c1, Conta c2) -> { return Integer.compare(c1.getNumero(), c2.getNumero())});`: exemplo de utilização de Lambdas. É preciso definir uma entrada (argumentos) e o símbolo `->` para definir o código associado à entrada;
+- Internamente, o Java realiza um procedimento similar ao de Classes anônimas;
+- `lista.sort((c1, c2) -> Integer.compare(c1.getNumero(), c2.getNumero()));`: mesmo exemplo que o anterior, porém mais enxuto. Quando um método possui apenas uma linha não se faz necessário o uso de chaves `{ }` nem retorno, pois ocorre um *autoreturn*. Como a `List` 'lista' definiu, em seu *generics*, o tipo Conta (`List<Conta>`), também não é necessário declarar o tipo dos argumentos;
+- `lista.forEach((conta) -> System.out.println(conta + ", " + conta.getTitular.getNome()));`: lê-se "para cada elemento 'conta' da List 'lista', faça 'System.out.println()'";
+- O método `forEach()` utiliza um parâmetro do tipo `Consumer<T>`, que é uma interface e possui o método `accept(T t)`;
