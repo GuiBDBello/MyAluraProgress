@@ -31,3 +31,14 @@
 - Leitura de fluxos de caracteres (caracteres);
 - Mais utilizado em arquivos de texto (txt);
 - `Reader`: Classe abstrata que é 'mãe' de todas Classes com *Reader*;
+
+
+## Aula 02 - Escrita com java.io
+
+### Atividade 01 - OutpputStream e Writer:
+
+- Inversamente proporcional aos conceitos de entrada;
+- As Classes substituem "Input" por "Output" e "Reader" por "Writer";
+- `OutputStream`, `FileOutputStream`, `Writer`, `OutputStreamWriter` e `BufferedWriter`;
+- `bw.write("");`: método de `BufferedWriter` que insere o conteúdo da String parametrizada no arquivo de texto definido no Objeto `OutputStream`;
+- `bw.newLine();`: método de `BufferedWriter` que insere uma nova linha no arquivo de texto definido no Objeto `OutputStream`;
