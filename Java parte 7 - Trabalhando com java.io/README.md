@@ -71,3 +71,8 @@
 ## Aula 03 - FileWriter e PrintStream
 
 ### Atividade 01 - Saída com FileWriter:
+
+- `FileWriter fw = new FileWriter(arquivo);`: instancia um `FileWriter`, utilizado para escrever em um arquivo 'arquivo';
+- `fw.write("texto");`: escreve a String 'texto' em um arquivo;
+- `fw.write("\n");`: pula uma linha;
+- `System.lineSeparator();`: retorna os caracteres utilizados para quebrar uma linha, independente do sistema operacional;
