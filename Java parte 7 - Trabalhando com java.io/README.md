@@ -42,3 +42,27 @@
 - `OutputStream`, `FileOutputStream`, `Writer`, `OutputStreamWriter` e `BufferedWriter`;
 - `bw.write("");`: método de `BufferedWriter` que insere o conteúdo da String parametrizada no arquivo de texto definido no Objeto `OutputStream`;
 - `bw.newLine();`: método de `BufferedWriter` que insere uma nova linha no arquivo de texto definido no Objeto `OutputStream`;
+
+### Atividade 04 - Outras entradas e saídas:
+
+#### Entrada pelo teclado:
+
+- `InputStream is = System.in;`: entrada do teclado;
+- A condição do `while` não pode mais ser `!= null`, pois é impossível que `System.in` retorne um `null`. Portanto, deve-se alterar a condição para `!linha.isEmpty()`;
+
+#### Saída pelo console:
+
+- `System.out;`: escreve a saída no console, porém apenas quando o `BufferedWriter` é fechado (`bw.close()`);
+- `bw.flush();`: dá uma "descarga" no `BufferedWriter`, jogando a saída no console;
+
+#### Entrada/Saída pela rede:
+
+- `Socket s = new Socket()`: um Socket realiza uma comunicação entre duas máquinas;
+- `s.getInputStream();`: envia uma mensagem para outra máquina;
+- `s.getOutputStream();`: recebe uma mensagem de outra máquina;
+
+#### Servlet:
+
+- "Mini-servidor";
+- Recebe e devolve dados (java.io);
+- Também utiliza *Input*, *Output*, *Reader*, *Writer*;
