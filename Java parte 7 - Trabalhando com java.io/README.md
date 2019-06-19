@@ -66,3 +66,8 @@
 - "Mini-servidor";
 - Recebe e devolve dados (java.io);
 - Também utiliza *Input*, *Output*, *Reader*, *Writer*;
+
+
+## Aula 03 - FileWriter e PrintStream
+
+### Atividade 01 - Saída com FileWriter:
