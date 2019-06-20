@@ -10,6 +10,7 @@ import java.io.OutputStreamWriter;
 import java.io.PrintStream;
 import java.io.PrintWriter;
 import java.io.Writer;
+import java.nio.charset.StandardCharsets;
 
 public class TesteEscritaPrintStreamPrintWriter {
 
@@ -30,7 +31,7 @@ public class TesteEscritaPrintStreamPrintWriter {
 //		
 //		ps.close();
 		
-		PrintWriter pw = new PrintWriter("lorem2.txt");
+		PrintWriter pw = new PrintWriter("lorem2.txt", StandardCharsets.UTF_8.displayName());
 		
 		pw.println("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod");
 		pw.println();
