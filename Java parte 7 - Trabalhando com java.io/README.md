@@ -149,3 +149,20 @@
 - `Properties props = new Properties();`: instancia um novo Objeto de propriedades;
 - `props.load(new FileReader("conf.properties"));`: lê o arquivo 'conf.properties', guardando os dados dele no Objeto 'props';
 - `props.getProperty("endereco");`: após lido o arquivo com o método `load()`, retorna uma String com o valor da chave 'endereco';
+
+
+## Aula 05 - Encoding e Charsets
+
+### Atividade 01 - Character Sets:
+
+- *American Standard Code for Information Interchange*, mais conhecida por tabela ASCII, possui 127 caracteres: https://pt.wikipedia.org/wiki/ASCII
+- *Codepages*: extensões da tabela ASCII, como a *Extended ASCII*: https://www.ascii.ca/ascii_standard.htm
+- Problemas de *Encoding* ocorrem pois são utilizadas tabelas ASCII (ou extensões desta) diferentes para trocar informações;
+- Unicode: criada por uma associação cujo objetivo é possuir todos os caracteres possíveis de todos idiomas, ou seja, uma tabela "universal" (é a tabela utilizada pelo Java);
+- O número de uma tabela dessas, que identifica um caractere, é denominado *Codepoint*;
+
+#### Encoding:
+
+- Cada caractere de um texto possui um *Codepoint* para relacioná-lo ao Unicode;
+- Uma outra tabela utiliza esse *Codepoint* para traduzí-lo em uma sequência binária (ASCII, UTF-8, UTF-16, ...);
+- *Unicode Transformation Format* (UTF-8, UTF-16): traduz os *Codepoints* (faz um *Encode*) para o formato binário, gravando o caractere no HD;
