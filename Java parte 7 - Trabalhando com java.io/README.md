@@ -232,3 +232,8 @@
   3. Copiar o `serialVersionUID` da pilha de erro;
   4. Criar o atributo `private static final long serialVersionUID` e atribuir o valor copiado à ele;
 - Porém, ao realizar mudanças incompatíveis com a Classe (por exemplo, alterar um atributo), será necessário alterar o `serialVersionUID`;
+
+### Atividade 05 - Serializando com herança:
+
+- Quando há herança, é necessário implementar a interface `Serializable` na primeira Classe, a maior da hierarquia;
+- Quando há associação, é necessário que a Classe associada também implemente a interface `Serializable`, a menos que o atributo da Classe associada possua o modificador `transient`, assim ele não será serializado;
