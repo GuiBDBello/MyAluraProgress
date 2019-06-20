@@ -133,3 +133,19 @@
 - É possível passar na chamada do método a região de formatação da String, utilizando `new Locale("pt", "BR")`;
 - Também é possível utilizar o método `System.out.format()` que já escreve a saída da formatação no console;
 - **Ex.:** `String.format(new Locale("pt", "BR"), "%s - %04d-%08d, %20s: %08.2f %n", tipoConta, agencia, numero, titular, saldo);`
+
+### Atividade 08 - Para saber mais: java.util.Properties:
+
+- A Classe `java.util.Properties` trabalha com mapas que contém **chave** e **valor**;
+
+#### Escrita de properties:
+
+- `Properties props = new Properties();`: instancia um novo Objeto de propriedades;
+- `props.setProperty("endereco", "www.alura.com.br");`: define a chave e o valor de uma propriedade;
+- `props.store(new FileWriter("conf.properties"), "algum comentário");`: cria o arquivo 'conf.properties' com as propriedades já definidas;
+
+#### Leitura de properties:
+
+- `Properties props = new Properties();`: instancia um novo Objeto de propriedades;
+- `props.load(new FileReader("conf.properties"));`: lê o arquivo 'conf.properties', guardando os dados dele no Objeto 'props';
+- `props.getProperty("endereco");`: após lido o arquivo com o método `load()`, retorna uma String com o valor da chave 'endereco';
