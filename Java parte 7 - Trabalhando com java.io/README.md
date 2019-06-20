@@ -100,3 +100,18 @@
 - `scanner.nextLine();`: retorna uma String com o conteúdo da próxima linha do arquivo, iniciando na primeira linha;
 - `scanner.hasNextLine();`: retorna um boolean que representa se o arquivo possui conteúdo em sua próxima linha;
 - `scanner.close();`: como Scanner é um recurso, ele também deve ser fechado, para encerrar seu consumo de memória;
+
+### Atividade 03 - Parseando arquivo:
+
+#### String:
+
+- `linha.split(",");`: retorna um Array de Strings, dividida pelo argumento `","`, onde cada posição recebe o conteúdo da String até a próxima ',';
+- `Arrays.toString(valores);`: retorna todos os valores de um Array 'valores';
+
+#### Scanner:
+
+- `Scanner linhaScanner = new Scanner(linha);`: instancia um novo Objeto `Scanner` utilizando uma String como parâmetro;
+- `linhaScanner.useDelimiter(",");`: divide o conteúdo do `Scanner` ao encontrar a String `","`. Porém, ao contrário do `split()`, retorna um `Scanner`;
+- `linhaScanner.next();`: após utilizar o método `useDelimiter(",")`, esse método retorna a próxima ocorrência do delimitador no conteúdo da String;
+- Existem variações do método `next()`, sendo algumas: `nextInt()` e `nextDouble()`;
+- `linhaScanner.useLocale(Locale.US);`: determina que o `Scanner` deve utilizar as regras regionais dos Estados Unidos para separação de números decimais, entre outras regras;
