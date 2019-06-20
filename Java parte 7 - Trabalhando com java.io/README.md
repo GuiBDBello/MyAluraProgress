@@ -172,3 +172,19 @@
 - Unicode Consortium: https://www.unicode.org/
 - FAQ: https://www.unicode.org/faq/basic_q.html
 - Tabela completa: https://unicode-table.com/pt/
+
+### Atividade 04 - Encoding no Windows:
+
+- `String s = "C"; s.codePointAt(0);`: obtém o *Codepoint* do caracter na posição '0';
+- `Charset charser = Charset.defaultCharset();`: retorna o `Charset` padrão, baseado no sistema operacional em uso;
+- `charset.displayName();`: retorna uma String com o nome do `Charset`;
+- `s.getBytes();`: retorna um Array de bytes, utilizando o Charset `defaultCharset()`;
+- `bytes.length`: retorna o tamanho, em bytes, do conteúdo de 'bytes';
+- `s.getBytes("UTF-16");`: retorna um Array de bytes, utilizando o charset "UTF-16";
+- `StandardCharsets.UTF_8`: retorna um Charset 'UTF_8';
+- `String sNovo = new String(bytes, "windows-1252");`: retorna uma String que representa o Array de bytes baseado no Charset 'windows-1252';
+- É necessário tomar cuidado ao utilizar Charsets, pois se o Charset utilizado for diferente do original, podem ocorrer erros de *Encoding*;
+
+#### Importar projeto no Eclipse:
+
+- `Import... > General > Existing Projects into Workspace > 'Selecionar projeto'`
