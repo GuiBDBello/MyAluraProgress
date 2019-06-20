@@ -76,3 +76,11 @@
 - `fw.write("texto");`: escreve a String 'texto' em um arquivo;
 - `fw.write("\n");`: pula uma linha;
 - `System.lineSeparator();`: retorna os caracteres utilizados para quebrar uma linha, independente do sistema operacional;
+
+### Atividade 03 - PrintWriter e PrintStream:
+
+- Se uma Classe for `public`, seu nome deve ser o mesmo do que o nome do arquivo;
+- `PrintStream ps = new PrintStream("arquivo.txt");`: serve para imprimir caracteres;
+- `ps.println("texto");`: imprime a String `"texto"` num arquivo, e após, pula uma linha;
+- A referência `out` de `System.out.println()` referencia um Objeto da Classe `PrintStream`, porém, ao invés de escrever em um arquivo, ele escreve no Console;
+- `PrintWriter pw = new PrintWriter;`: semelhante à `PrintStream`, porém herda de `Writer`, enquanto `PrintStream` herda de `OutputStream`;
