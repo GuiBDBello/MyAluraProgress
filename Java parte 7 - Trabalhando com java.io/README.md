@@ -89,3 +89,14 @@
 
 - `long millis = System.currentTimeMillis();`: retorna os milissegundos que passaram desde 1 de janeiro de 1970, data considerada o início da *Era Unix*. Ou seja, essa data é o marco zero no sistema de calendário usado nos sistemas operacionais UNIX;
 - É comum utilizar esses métodos para medir o tempo de um trecho dé código, obtendo `long ini = System.currentTimeMillis();` antes do trecho e `long fim = System.currentTimeMillis();` depois, para então subtrair `fim - ini`, obtendo o tempo que passou;
+
+
+## Aula 04 - Usando java.util.Scanner
+
+### Atividade 01 - Leitura com Scanner:
+
+- CSV: *comma separated values*;
+- `Scanner scanner = new Scanner(new File("contas.csv"));`: pertence ao pacote java.util, muito utilizado para leitura de dados. Possui vários métodos de alto nível;
+- `scanner.nextLine();`: retorna uma String com o conteúdo da próxima linha do arquivo, iniciando na primeira linha;
+- `scanner.hasNextLine();`: retorna um boolean que representa se o arquivo possui conteúdo em sua próxima linha;
+- `scanner.close();`: como Scanner é um recurso, ele também deve ser fechado, para encerrar seu consumo de memória;
