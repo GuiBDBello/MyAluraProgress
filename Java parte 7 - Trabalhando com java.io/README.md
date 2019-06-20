@@ -200,7 +200,8 @@
 
 ### Atividade 01 - Serialização Java:
 
-- Pega o Objeto em memória e o transforma em um fluxo de bits e bytes (e vice-versa);
+- Serialização: pega o Objeto e o transforma em um fluxo binário (arquivo);
+- Desserialização: pega o fluxo binário (arquivo) e o transforma em um Objeto;
 - `java.io.ObjectOutputStream` e `java.io.ObjectInputStream` realizam essa transformação;
 - A serialização foi criada, inicialmente, para enviar/receber Objetos entre máquinas virtuais, pela rede;
 
@@ -214,3 +215,20 @@
 
 - `ObjectInputStream ois = new ObjectInputStream(new FileInputStream("objeto.bin"));`: instancia um Objeto que irá ler o arquivo 'objeto.bin' e retornar o conteúdo de um Objeto Java;
 - `String nome = (String) ois.readObject();`: retorna o conteúdo do Objeto e grava-o em uma variável;
+
+### Atividade 03 - Serializando qualquer objeto:
+
+- Para serializar um Objeto, sua Classe deve assinar um contrato, ou seja, implementar uma interface;
+- Essa interface é denominada `Serializable`, e como ela não possui nenhum método, é chamada de "Classe de marcação";
+
+#### Implementando Serializable:
+
+- É necessário adicionar em sua Classe `implements Serializable` e importar `java.io.Serializable` na Classe que você deseja "serializar";
+- Com a ferramenta do Eclipse *Quick-fix*, clique no *Warning* existente na sua Classe e selecione "Add default serial version ID";
+- `java.io.InvalidClassException`: relacionada à serialização padrão Java. Ao serializar um Objeto, é gravado, além dos dados do Objeto, um número que identifica a "versão" da Classe. Se você não definir esse número, o Java faz isso automaticamente. Ao recuperar o Objeto, é comparado o serial atual da Classe com o serial de quando o Objeto foi gerado. Se esse `serialVersionUID` for diferente, esse erro ocorre;
+- Uma "técnica" utilizada para gerar um `serialVersionUID` é:
+  1. Gerar o binário, sem nenhum `serialVersionUID` (assim, o Java irá gerá-lo automaticamente);
+  2. Tentar obter o Objeto através do arquivo binário, forçando o erro acontecer;
+  3. Copiar o `serialVersionUID` da pilha de erro;
+  4. Criar o atributo `private static final long serialVersionUID` e atribuir o valor copiado à ele;
+- Porém, ao realizar mudanças incompatíveis com a Classe (por exemplo, alterar um atributo), será necessário alterar o `serialVersionUID`;
