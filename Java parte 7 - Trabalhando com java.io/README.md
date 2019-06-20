@@ -188,3 +188,9 @@
 #### Importar projeto no Eclipse:
 
 - `Import... > General > Existing Projects into Workspace > 'Selecionar projeto'`
+
+### Aula 06 - Encoding com java.io:
+
+- É possível alterar o *Encoding* de um arquivo pelo Eclipse: `Clique no arquivo com o botão direito do mouse > Properties > Resource > Text file encoding`;
+- `Scanner`, `InputStreamReader`, `PrintWriter` podem receber um `Charset` como argumento em seus construtores;
+- Se o mesmo projeto for utilizado em diferentes sistemas operacionais, é possível que ocorra problemas de *Encoding*. Para evitar isso, deve-se seguir o mesmo padrão de `Charset` em todos os computadores envolvidos;
