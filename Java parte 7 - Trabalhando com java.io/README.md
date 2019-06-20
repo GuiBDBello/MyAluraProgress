@@ -84,3 +84,8 @@
 - `ps.println("texto");`: imprime a String `"texto"` num arquivo, e após, pula uma linha;
 - A referência `out` de `System.out.println()` referencia um Objeto da Classe `PrintStream`, porém, ao invés de escrever em um arquivo, ele escreve no Console;
 - `PrintWriter pw = new PrintWriter;`: semelhante à `PrintStream`, porém herda de `Writer`, enquanto `PrintStream` herda de `OutputStream`;
+
+### Atividade 07 - Para saber mais: currentTimeMilis:
+
+- `long millis = System.currentTimeMillis();`: retorna os milissegundos que passaram desde 1 de janeiro de 1970, data considerada o início da *Era Unix*. Ou seja, essa data é o marco zero no sistema de calendário usado nos sistemas operacionais UNIX;
+- É comum utilizar esses métodos para medir o tempo de um trecho dé código, obtendo `long ini = System.currentTimeMillis();` antes do trecho e `long fim = System.currentTimeMillis();` depois, para então subtrair `fim - ini`, obtendo o tempo que passou;
