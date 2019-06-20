@@ -166,3 +166,9 @@
 - Cada caractere de um texto possui um *Codepoint* para relacioná-lo ao Unicode;
 - Uma outra tabela utiliza esse *Codepoint* para traduzí-lo em uma sequência binária (ASCII, UTF-8, UTF-16, ...);
 - *Unicode Transformation Format* (UTF-8, UTF-16): traduz os *Codepoints* (faz um *Encode*) para o formato binário, gravando o caractere no HD;
+
+### Atividade 03 - Para saber mais: FAQ do UNICODE:
+
+- Unicode Consortium: https://www.unicode.org/
+- FAQ: https://www.unicode.org/faq/basic_q.html
+- Tabela completa: https://unicode-table.com/pt/
