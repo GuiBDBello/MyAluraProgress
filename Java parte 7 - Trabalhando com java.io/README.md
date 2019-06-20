@@ -115,3 +115,21 @@
 - `linhaScanner.next();`: após utilizar o método `useDelimiter(",")`, esse método retorna a próxima ocorrência do delimitador no conteúdo da String;
 - Existem variações do método `next()`, sendo algumas: `nextInt()` e `nextDouble()`;
 - `linhaScanner.useLocale(Locale.US);`: determina que o `Scanner` deve utilizar as regras regionais dos Estados Unidos para separação de números decimais, entre outras regras;
+
+### Atividade 05 - Formatação de valores:
+
+- `String.format("%s %s %s", args1, args2, args3);`: retorna o valor formatado (`%s` representa `String` e 'args' representam os valores que devem ser "jogados" em cada tipo);
+
+#### Formatações com '%':
+
+- `%s`: String;
+- `%d`: int;
+- `%f`: float;
+- É possível, também, utilizar a quantidade de caracteres do valor formatado;
+- O número `0` na frente de um valor formatado (`%010d`) indica que o conteúdo anterior ao valor deve ser preenchido com 0 (por exemplo, um número 10, formatado com `%04d`, será escrito no formato `0010`);
+- `%n`: quebra de linha;
+- **Ex.:** `String.format("%04d-%08d, %20s: %08.2f %n", numero, numero, nome, valor);`
+- https://docs.oracle.com/javase/tutorial/java/data/numberformat.html
+- É possível passar na chamada do método a região de formatação da String, utilizando `new Locale("pt", "BR")`;
+- Também é possível utilizar o método `System.out.format()` que já escreve a saída da formatação no console;
+- **Ex.:** `String.format(new Locale("pt", "BR"), "%s - %04d-%08d, %20s: %08.2f %n", tipoConta, agencia, numero, titular, saldo);`
