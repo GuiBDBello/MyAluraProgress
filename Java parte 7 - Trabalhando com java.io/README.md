@@ -194,3 +194,23 @@
 - É possível alterar o *Encoding* de um arquivo pelo Eclipse: `Clique no arquivo com o botão direito do mouse > Properties > Resource > Text file encoding`;
 - `Scanner`, `InputStreamReader`, `PrintWriter` podem receber um `Charset` como argumento em seus construtores;
 - Se o mesmo projeto for utilizado em diferentes sistemas operacionais, é possível que ocorra problemas de *Encoding*. Para evitar isso, deve-se seguir o mesmo padrão de `Charset` em todos os computadores envolvidos;
+
+
+## Aula 06 - Serialização de objetos
+
+### Atividade 01 - Serialização Java:
+
+- Pega o Objeto em memória e o transforma em um fluxo de bits e bytes (e vice-versa);
+- `java.io.ObjectOutputStream` e `java.io.ObjectInputStream` realizam essa transformação;
+- A serialização foi criada, inicialmente, para enviar/receber Objetos entre máquinas virtuais, pela rede;
+
+#### Escrevendo um Objeto:
+
+- `String nome = "Eu Mesmo";`: cria o Objeto que será escrito em um arquivo;
+- `ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("objeto.bin"));`: instancia um Objeto que irá criar o arquivo 'objeto.bin' com o conteúdo de um Objeto Java;
+- `oos.writeObject(nome);`: cria um arquivo com o conteúdo de um Objeto Java 'nome';
+
+#### Lendo um Objeto:
+
+- `ObjectInputStream ois = new ObjectInputStream(new FileInputStream("objeto.bin"));`: instancia um Objeto que irá ler o arquivo 'objeto.bin' e retornar o conteúdo de um Objeto Java;
+- `String nome = (String) ois.readObject();`: retorna o conteúdo do Objeto e grava-o em uma variável;
