@@ -40,3 +40,20 @@
 
 - A pasta WebContent guarda os arquivos HTML, então criaremos o arquivo `bem-vindo.html` nela;
 - Na URL, para acessar esse arquivo, digite `http://localhost:8080/gerenciador/bem-vindo.html`;
+
+### Atividade 08 - Finalmente, o primeiro servlet:
+
+#### Servlet:
+
+- Um Servlet é um "Objeto" em um projeto que roda no Server (Tomcat);
+- Uma Classe Java que representa um Servlet deve herdar de `HttpServlet`;
+- Sobrescreveremos o método `service(HttpServletRequest, HttpServletResponse)`, que recebe um Objeto Java que representa a requisição e outroque representa a resposta;
+- `@WebServlet(urlPatterns="/oi")`: define que uma Classe é um WebServlet, e define o nome do Servlet;
+- Removeremos o conteúdo do método, e adicionaremos:
+`PrintWriter out = resp.getWriter(); //escrevendo a resposta da requisição no navegador
+out.println("<html>");
+out.println("<body>");
+out.println("Oi mundo! Parabéns, você escreveu seu primeiro Servlet!");
+out.println("</body>");
+out.println("</html>");
+System.out.println("O Servlet 'OiMundoServlet' foi chamado");`
