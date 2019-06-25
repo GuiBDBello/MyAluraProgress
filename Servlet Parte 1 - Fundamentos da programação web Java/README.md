@@ -67,3 +67,20 @@ System.out.println("O Servlet 'OiMundoServlet' foi chamado");`
 - Uma servlet é um objeto Java que podemos chamar a partir de uma requisição HTTP
 - Para mapear a URL para uma servlet usamos a anotação `@WebServlet`
 - Uma servlet deve estender a classe `HttpServlet` e sobrescrever um determinado método (por exemplo `service`)
+
+
+## Aula 02 - Trabalhando com POST e GET
+
+### Atividade 02 - Enviando parâmetros:
+
+- É possível criar um Servlet diretamente pelo Eclipse. Para isso, siga os passos:
+  1. `File > New > Servlet`;
+  2. Em Class name, nomeie o Servlet e pressione `Next >`;
+  3. Selecione o URL mapping, pressione `Edit...`, altere o mapeamento da URL e pressione `Next >`;
+  4. Deselecione 'Constructors from superclass', 'doGet' e 'doPost' e marque 'service';
+
+#### Parâmetros na URL:
+
+- Para passar parâmetros na URL, deve-se utilizar o símbolo `?`. Para concatenar mais parâmetros, utiliza-se `&`;
+- **Ex.:** `localhost:8080/gerenciador/novaEmpresa?nome=Alura&cnpj=xx.xxx.xxx/0001-??`
+- É possível obter os parâmetros da requisição utilizando `request.getParameter("nome");`;
