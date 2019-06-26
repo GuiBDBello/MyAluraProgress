@@ -84,3 +84,18 @@ System.out.println("O Servlet 'OiMundoServlet' foi chamado");`
 - Para passar parâmetros na URL, deve-se utilizar o símbolo `?`. Para concatenar mais parâmetros, utiliza-se `&`;
 - **Ex.:** `localhost:8080/gerenciador/novaEmpresa?nome=Alura&cnpj=xx.xxx.xxx/0001-??`
 - É possível obter os parâmetros da requisição utilizando `request.getParameter("nome");`;
+
+### Atividade 04 - Metodos GET e POST:
+
+- As Ferramentas do Desenvolvedor (*Developer Tools*) estão presentes em qualquer navegador moderno;
+- É possível obter informações sobre as requisições feitas no navegador acessando a aba *Network*;
+- Ao selecionar a requisição, são mostradas várias informações sobre o protocolo HTTP, sobre o navegador, etc.;
+
+#### Criando uma requisição POST:
+
+- Na pasta *WebContent*, crie um arquivo HTML chamado `formNovaEmpresa.html`;
+- Crie um formulário, utilizando a tag `<form>` com o atributo `action` que possui como valor o caminho ao qual será feita a requisição (ao submeter o formulário);
+- Dentro do form, defina os atributos `type` e `name`;
+- **Ex.:** `<form action="/gerenciador/novaEmpresa"> Nome: <input type="text" name="nome" /> </form>`
+- Agora, dentro do formulário, crie um botão para submetê-lo: `<input type="submit" />`
+- Por padrão, um `<form>` realiza uma requisição do tipo `GET`. Para alterá-la para `POST`, basta adicionar o atributo `method="post"` na tag `<form>`;
