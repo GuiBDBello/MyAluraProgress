@@ -103,3 +103,11 @@ System.out.println("O Servlet 'OiMundoServlet' foi chamado");`
 ### Atividade 07 - Apenas POST:
 
 - `doPost(HttpServletRequest, HttpServletResponse) { }`: método semelhante ao `service(HttpServletRequest, HttpServletResponse)` da aula anterior, porém, este aceita apenas requisições `POST`. Antagônico ao `doGet(HttpServletRequest, HttpServletResponse)`. Ao tentar realizar um método `GET` nessa `URL`, ocorrerá o código 405 - *Method Not Allowed*;
+
+
+## Aula 03 - Definindo o nosso modelo
+
+### Atividade 02 - Definindo modelo:
+
+- Crie uma Classe `Empresa` para armazenar os atributos de uma empresa;
+- Crie uma Classe `Banco` com atributos estáticos para "simular" um banco de dados;
