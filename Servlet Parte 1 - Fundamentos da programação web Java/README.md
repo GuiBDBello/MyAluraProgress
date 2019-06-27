@@ -111,3 +111,9 @@ System.out.println("O Servlet 'OiMundoServlet' foi chamado");`
 
 - Crie uma Classe `Empresa` para armazenar os atributos de uma empresa;
 - Crie uma Classe `Banco` com atributos estáticos para "simular" um banco de dados;
+
+### Atividade 05 - Listando empresas com servlets:
+
+- Crie um novo Servlet e, com o `PrintWriter`, escreva uma lista (`<ul>`) com itens (`<li>`) dentro dela, mostrando as Empresas cadastradas;
+- `static { }`: um bloco estático é executado quando a máquina virtual carrega a Classe;
+- Esse bloco será utilizado apenas para testes. Ele serve para cadastrar dados no banco por padrão, para ele não ser inicializado vazio;
