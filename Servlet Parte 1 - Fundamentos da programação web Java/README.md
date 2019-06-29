@@ -117,3 +117,14 @@ System.out.println("O Servlet 'OiMundoServlet' foi chamado");`
 - Crie um novo Servlet e, com o `PrintWriter`, escreva uma lista (`<ul>`) com itens (`<li>`) dentro dela, mostrando as Empresas cadastradas;
 - `static { }`: um bloco estático é executado quando a máquina virtual carrega a Classe;
 - Esse bloco será utilizado apenas para testes. Ele serve para cadastrar dados no banco por padrão, para ele não ser inicializado vazio;
+
+
+## Aula 04 - Páginas dinâmicas com JSP
+
+### Atividade 02 - Primeiro JSP:
+
+- Misturar Java e HTML não parece correto... para não fazer isso, existe uma tecnologia chamada *Java Server Pages* (JSP);
+- Scriplet (`<% %>`): bloco de código Java;
+- **Ex.:** `<% String nomeEmpresa = "Alura"; %>`
+- Um JSP é interpretado no lado do servidor (*back-end*), não no cliente (*front-end*);
+- `<% out.println(nomeEmpresa); %>` ou `<%= nomeEmpresa %>`: escreve a variável 'nomeEmpresa' no navegador;
