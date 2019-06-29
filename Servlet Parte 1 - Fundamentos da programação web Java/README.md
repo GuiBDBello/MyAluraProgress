@@ -124,7 +124,15 @@ System.out.println("O Servlet 'OiMundoServlet' foi chamado");`
 ### Atividade 02 - Primeiro JSP:
 
 - Misturar Java e HTML não parece correto... para não fazer isso, existe uma tecnologia chamada *Java Server Pages* (JSP);
-- Scriplet (`<% %>`): bloco de código Java;
+- Scriptlet (`<% %>`): bloco de código Java;
 - **Ex.:** `<% String nomeEmpresa = "Alura"; %>`
 - Um JSP é interpretado no lado do servidor (*back-end*), não no cliente (*front-end*);
 - `<% out.println(nomeEmpresa); %>` ou `<%= nomeEmpresa %>`: escreve a variável 'nomeEmpresa' no navegador;
+
+### Atividade 06 - Despachando a requisição:
+
+- É possível separar as responsabilidades da aplicação: o Servlet realiza as operações e controla o banco de dados enquanto o JSP se responsabiliza pela parte visual;
+- `RequestDispatcher rd = request.getRequestDispatcher("/novaEmpresaCriada.jsp");`: retorna um `RequestDispatcher`, a requisição "despacha-a", chamando o JSP após executar o Servlet;
+- `rd.forward(request, response);`: "despacha" a requisição e a resposta para chamar o JSP definido acima;
+- `request.setAttribute("empresa", empresa.getNome());`: "pendura" um atributo com um valor, para ser utilizado no JSP;
+- `<% String nomeEmpresa = (String) request.getAttribute("empresa"); %>`: retorna a requisição, dentro do Scriptlet, para 
