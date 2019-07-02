@@ -136,3 +136,7 @@ System.out.println("O Servlet 'OiMundoServlet' foi chamado");`
 - `rd.forward(request, response);`: "despacha" a requisição e a resposta para chamar o JSP definido acima;
 - `request.setAttribute("empresa", empresa.getNome());`: "pendura" um atributo com um valor, para ser utilizado no JSP;
 - `<% String nomeEmpresa = (String) request.getAttribute("empresa"); %>`: retorna um Objeto (`Object`, por isso é necessário o *Casting*) definido no Servlet (o atributo "pendurado") para dentro do Scriptlet;
+
+### Atividade 08 - JSP para listar empresas:
+
+- `<%@ page import="java.util.List, br.com.alura.gerenciador.servlet.Empresa" %>`: faz uma "declaração da página" para importar Classes do Servlet;
