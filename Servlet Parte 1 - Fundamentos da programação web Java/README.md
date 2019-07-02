@@ -140,3 +140,14 @@ System.out.println("O Servlet 'OiMundoServlet' foi chamado");`
 ### Atividade 08 - JSP para listar empresas:
 
 - `<%@ page import="java.util.List, br.com.alura.gerenciador.servlet.Empresa" %>`: faz uma "declaração da página" para importar Classes do Servlet;
+
+### Atividade 10 - O que aprendemos?:
+
+- JSP significa Java Server Pages
+- JSP é uma página automaticamente processada pelo Tomcat
+- Para gerar HTML dinamicamente no JSP usamos Scriplets
+- Um scriptlet `<% %>` é um código Java dentro do HTML
+- Um scriptlet só funciona em uma página JSP
+- Usamos o `RequestDispatcher` para chamar um JSP a partir da servlet
+- Obtemos o RequestDispatcher a partir do `HttpServletRequest`
+- Usamos a requisição para colocar ou pegar um atributo `(setAttribute(.., ..)` ou `getAttribute(..)`)
