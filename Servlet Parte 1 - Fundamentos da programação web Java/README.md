@@ -151,3 +151,10 @@ System.out.println("O Servlet 'OiMundoServlet' foi chamado");`
 - Usamos o `RequestDispatcher` para chamar um JSP a partir da servlet
 - Obtemos o RequestDispatcher a partir do `HttpServletRequest`
 - Usamos a requisição para colocar ou pegar um atributo `(setAttribute(.., ..)` ou `getAttribute(..)`)
+
+
+## Aula 05 - JSTL e Expression Language
+
+### Atividade 02 - Conhecendo Expression Language:
+
+- `${ 3 + 3 }`: sintaxe utilizada para interpretar e imprimir uma "expressão";
