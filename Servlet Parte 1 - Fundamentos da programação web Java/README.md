@@ -165,3 +165,24 @@ System.out.println("O Servlet 'OiMundoServlet' foi chamado");`
 - `<foreach></foreach>`: tag HTML utilizada para fazer um laço;
 - `<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>`: procura, dentro dos arquivos *.jar* na pasta `WebContent/WEB-INF/lib/`, uma biblioteca com essa *uri* e define um *prefix* para acessar suas tags;
 - **Ex.:** `<c:forEach items="${empresas}" var="empresa"><li>${empresa.nome}</li></c:forEach>`
+
+### Atividade 08 - Usando a taglib core:
+
+- *core*: controle de fluxo;
+- **Ex.:** `<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>`
+- *fmt*: formatação/i18n (internacionalização);
+- **Ex.:** `<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>`;
+- *sql*: executar SQL;
+- *xml*: gerar XML;
+
+#### Context root:
+
+- Nas *Properties* do projeto, em *Web Project Settings*, o valor de *Context root* é o valor "inicial" da URL. Isso pode ser obtido pela tag `url`;
+- **Ex.:** `<c:url value="/gerenciador/novaEmpresa" var="linkNovaEmpresaServlet" />`
+- É possível utilizar a variável em outras tags, por exemplo: `<form action="${linkNovaEmpresaServlet}" method="post">`;
+
+#### Condições:
+
+- A tag `if` existe para definir uma condição no JSP, através do atributo `test`. **Lembre-se que necessário importar a *taglib* `core` para utilizar essa e outras tags**;
+- **Ex.:** `<c:if test="${not empty empresa}">Empresa ${empresa} cadastrada!</c:if>`
+- **Ex.:** `<c:if test="${empty empresa}">Nenhuma empresa cadastrada!</c:if>`
