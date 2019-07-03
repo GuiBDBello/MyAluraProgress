@@ -158,3 +158,10 @@ System.out.println("O Servlet 'OiMundoServlet' foi chamado");`
 ### Atividade 02 - Conhecendo Expression Language:
 
 - `${ 3 + 3 }`: sintaxe utilizada para interpretar e imprimir uma "expressão";
+
+### Atividade 05 - Conhecendo JSTL:
+
+- JSTL (*Java Standard Taglib*): biblioteca que contém tags HTML, como, por exemplo, `<foreach>`;
+- `<foreach></foreach>`: tag HTML utilizada para fazer um laço;
+- `<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>`: procura, dentro dos arquivos *.jar* na pasta `WebContent/WEB-INF/lib/`, uma biblioteca com essa *uri* e define um *prefix* para acessar suas tags;
+- **Ex.:** `<c:forEach items="${empresas}" var="empresa"><li>${empresa.nome}</li></c:forEach>`
