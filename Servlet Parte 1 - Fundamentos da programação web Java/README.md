@@ -186,3 +186,24 @@ System.out.println("O Servlet 'OiMundoServlet' foi chamado");`
 - A tag `if` existe para definir uma condição no JSP, através do atributo `test`. **Lembre-se que necessário importar a *taglib* `core` para utilizar essa e outras tags**;
 - **Ex.:** `<c:if test="${not empty empresa}">Empresa ${empresa} cadastrada!</c:if>`
 - **Ex.:** `<c:if test="${empty empresa}">Nenhuma empresa cadastrada!</c:if>`
+
+### Atividade 10 - Usando a taglib fmt:
+
+#### java.util.Date:
+
+- `private Date dataAbertura = new Date();`: Classe Java que lida com datas. Seu formato padrão é: *Weekday Month Day hour:minute:second timezonecode year*;
+
+#### FMT:
+
+- `<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>`: importa a taglib de formatação;
+- `<fmt:formatDate value="" />`: tag utilizada para formatar datas. Seu formato padrão é: *Dia* de *mês* de *ano*;
+- `pattern="dd/MM/yyyy"`: atributo da tag `<fmt:formatDate>`;
+
+#### SimpleDateFormat:
+
+- `SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy")`: cria um formato de formatação de data;
+- `Date dataAbertura = sdf.parse(paramDataEmpresa);`: retorna um Objeto do tipo `Date` com a formatação de `SimpleDateFormat`;
+
+#### "Catch and rethrow":
+
+- Dispara uma exceção dentro do bloco `catch` de outra exceção;
