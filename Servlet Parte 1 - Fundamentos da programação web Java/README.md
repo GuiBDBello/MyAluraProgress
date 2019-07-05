@@ -214,3 +214,11 @@ System.out.println("O Servlet 'OiMundoServlet' foi chamado");`
 ### Atividade 02 - Quando o dispatcher não atende:
 
 - Anteriormente despachamos uma requisição do Servlet ao JSP. É possível, também, despachar uma requisição de um Servlet para outro Servlet;
+
+### Atividade 05 - Redirecionamento pelo navegador:
+
+- Um redirecionamento ocorre quando a resposta de uma requisição representa uma ordem para o navegador realizar outra requisição;
+- Esse ato (o navegador realizar a requisição a partir de uma resposta) é chamado de "Redirecionamento *client-side";
+- "Redirecionamento *server-side*" é quando um dispatcher de um Servlet chama outro Servlet;
+- `response.sendRedirect("listEmpresas");`: envia uma nova requisição para `listEmpresas`;
+- Ao redirecionar uma requisição, é criada uma nova requisição. Portanto, todos os atributos "pendurados" na requisição anterior serão perdidos;
