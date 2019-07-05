@@ -207,3 +207,10 @@ System.out.println("O Servlet 'OiMundoServlet' foi chamado");`
 #### "Catch and rethrow":
 
 - Dispara uma exceção dentro do bloco `catch` de outra exceção;
+
+
+## Aula 06 - Redirecionando o fluxo
+
+### Atividade 02 - Quando o dispatcher não atende:
+
+- Anteriormente despachamos uma requisição do Servlet ao JSP. É possível, também, despachar uma requisição de um Servlet para outro Servlet;
