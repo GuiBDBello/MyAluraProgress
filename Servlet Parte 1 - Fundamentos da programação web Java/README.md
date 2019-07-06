@@ -254,3 +254,11 @@ System.out.println("O Servlet 'OiMundoServlet' foi chamado");`
 - **Ex.:** `if(emp.getId() == id) { it.remove() };`
 - Para finalizar, redirecione a resposta para atualizar a lista de empresas;
 - **Ex.:** `response.sendRedirect("listaEmpresas");`
+
+### Atividade 06 - Formulário de alteração:
+
+- Para alterar os dados de uma empresa, criaremos um Servlet que mostrará as informações da empresa, e outro Servlet que altera seus dados;
+- O Servlet `MostraEmpresaServlet` deve despachar a requisição para `formaAlteraEmpresa.jsp`;
+- **Ex.:** `request.setAttribute("empresa", empresa); RequestDispatcher rd = request.getRequestDispatcher("/formAlteraEmpresa.jsp"); rd.formard(request, response);`
+- É possível utilizar uma taglib para definir um valor a um atributo HTML;
+- **Ex.:** `Data Abertura: <input type="text" name="data" value="<fmt:formatDate value="${empresa.dataAbertura}" pattern="dd/MM/yyyy" />" />`
