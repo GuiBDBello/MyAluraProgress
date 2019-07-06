@@ -262,3 +262,7 @@ System.out.println("O Servlet 'OiMundoServlet' foi chamado");`
 - **Ex.:** `request.setAttribute("empresa", empresa); RequestDispatcher rd = request.getRequestDispatcher("/formAlteraEmpresa.jsp"); rd.formard(request, response);`
 - É possível utilizar uma taglib para definir um valor a um atributo HTML;
 - **Ex.:** `Data Abertura: <input type="text" name="data" value="<fmt:formatDate value="${empresa.dataAbertura}" pattern="dd/MM/yyyy" />" />`
+
+### Atividade 07 - Alterando empresa:
+
+- Busca uma Empresa pelo ID e altera seus dados;
