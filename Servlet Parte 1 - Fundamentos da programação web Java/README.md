@@ -232,3 +232,25 @@ System.out.println("O Servlet 'OiMundoServlet' foi chamado");`
 - *Read*: leitura de registro(s), objeto(s);
 - *Update*: atualizar registro/objeto;
 - *Delete*: remover registro/objeto;
+
+### Atividade 04 - Removendo uma empresa:
+
+#### JSP:
+
+- `<a href="/gerenciador/removeEmpresa?id=${empresa.id}">remover</a>`: adiciona um link, que realizará uma requisição para um Servlet que remove a empresa da lista;
+- Utilizaremos o ID da Empresa para identificá-la;
+
+#### Servlet:
+
+- `String paramId = request.getParameter("id");`: retorna uma String que representa um parâmetro 'id' "pendurado" na requisição;
+- `Integer id = Integer.valueOf(paramId);`: converte a String 'paramId' para Integer;
+- `lista.remove(id);`: Remove a empresa da lista;
+- **Cuidado!** Ao iterar por uma lista, não altere a quantidade de elementos dessa lista. Isso causará uma `ConcurrentModificationException`;
+- Para evitar que a exceção acima ocorra, utiliz- um `Iterator`;
+- **Ex.:** `Iterator<Empresa> it = lista.iterato-();`
+- E, para obter seus elementos, utilize `it.hasN-xt()` e `it.next()` (semelhante ao `Scanner`);
+- **Ex.:** `while(it.hasNext()) { Empresa emp = -t.next(); }`
+- Utilize o `Iterator` também para remover um elemento (dentro de um laço);
+- **Ex.:** `if(emp.getId() == id) { it.remove() };`
+- Para finalizar, redirecione a resposta para atualizar a lista de empresas;
+- **Ex.:** `response.sendRedirect("listaEmpresas");`
