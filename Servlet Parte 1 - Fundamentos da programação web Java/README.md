@@ -266,3 +266,19 @@ System.out.println("O Servlet 'OiMundoServlet' foi chamado");`
 ### Atividade 07 - Alterando empresa:
 
 - Busca uma Empresa pelo ID e altera seus dados;
+
+
+## Aula 08 - Deploy da aplicação
+
+### Atividade 02 - Conhecendo o web.xml:
+
+- O arquivo `web.xml`, antigamente, era obrigatório em projetos Java Web. Atualmente ele é opcional;
+- É um arquivo de configuração relacionado aos Servlets;
+- `<welcome-file>index.html</welcome-file>`: arquivo mostrado quando é carregado apenas o *ContextRoot* da aplicação. É possível utilizar várias dessas tags em sequência, onde o próximo arquivo é mostrado caso o anterior não seja encontrado;
+
+#### Definindo um Servlet no web.xml:
+
+- `<servlet><servlet-name>OiMundoServlet</servlet-name><servlet-class>br.com.alura.gerenciador.servlet.OiMundoServlet</servlet-class></servlet>`: define uma Classe como um Servlet;
+- `<servlet-mapping><servlet-name>OiMundoServlet</servlet-name><url-pattern>/ola</url-pattern></servlet-mapping>`: define o mapeamento de um Servlet;
+- A tag `<servlet-name>` serve para vincular o Servlet com um mapeamento;
+- Um dos motivos do `web.xml` ter se tornado opcional foi o surgimento das anotações, que simplificam toda essa configuração em apenas uma linha: `@WebServlet(urlPatterns="/ola")`;
