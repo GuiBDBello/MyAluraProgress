@@ -222,3 +222,13 @@ System.out.println("O Servlet 'OiMundoServlet' foi chamado");`
 - "Redirecionamento *server-side*" é quando um dispatcher de um Servlet chama outro Servlet;
 - `response.sendRedirect("listEmpresas");`: envia uma nova requisição para `listEmpresas`;
 - Ao redirecionar uma requisição, é criada uma nova requisição. Portanto, todos os atributos "pendurados" na requisição anterior serão perdidos;
+
+
+## Aula 07 - Completando o CRUD
+
+### Atividade 02 - Apresentando as funcionalidades:
+
+- *Create*: criação do registro/objeto;
+- *Read*: leitura de registro(s), objeto(s);
+- *Update*: atualizar registro/objeto;
+- *Delete*: remover registro/objeto;
