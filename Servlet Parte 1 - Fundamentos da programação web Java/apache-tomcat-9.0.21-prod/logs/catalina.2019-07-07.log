@@ -1,0 +1,571 @@
+07-Jul-2019 11:12:18.752 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.21
+07-Jul-2019 11:12:18.870 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jun 4 2019 20:19:36 UTC
+07-Jul-2019 11:12:18.924 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.21.0
+07-Jul-2019 11:12:18.924 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+07-Jul-2019 11:12:18.925 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+07-Jul-2019 11:12:18.925 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+07-Jul-2019 11:12:18.925 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk1.8.0_171\jre
+07-Jul-2019 11:12:18.925 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_171-b11
+07-Jul-2019 11:12:18.925 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+07-Jul-2019 11:12:18.926 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod
+07-Jul-2019 11:12:18.926 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod
+07-Jul-2019 11:12:18.936 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\conf\logging.properties
+07-Jul-2019 11:12:18.936 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+07-Jul-2019 11:12:18.936 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+07-Jul-2019 11:12:18.937 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+07-Jul-2019 11:12:18.937 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+07-Jul-2019 11:12:18.939 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod
+07-Jul-2019 11:12:18.940 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod
+07-Jul-2019 11:12:18.941 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\temp
+07-Jul-2019 11:12:18.941 INFORMAÇÕES [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_171\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_171\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Apache\Maven 3.5.3\bin;C:\Program Files\Apache\Maven 3.5.3\bin;C:\Users\guilh\AppData\Local\Programs\Python\Python36;C:\Users\guilh\AppData\Local\Programs\Python\Python36\Lib;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Tesseract-OCR;C:\Users\guilh\AppData\Local\Microsoft\WindowsApps;C:\Users\guilh\AppData\Local\Programs\MiKTeX 2.9\miktex\bin\x64\;C:\Users\guilh\AppData\Roaming\npm;;.]
+07-Jul-2019 11:12:21.320 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+07-Jul-2019 11:12:21.696 GRAVE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector[HTTP/1.1-8080]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:983)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:533)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1059)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:584)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:607)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.lang.reflect.Method.invoke(Method.java:498)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:304)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:474)
+	Caused by: java.net.BindException: Address already in use: bind
+		at sun.nio.ch.Net.bind0(Native Method)
+		at sun.nio.ch.Net.bind(Net.java:433)
+		at sun.nio.ch.Net.bind(Net.java:425)
+		at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+		at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:230)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:213)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1124)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1137)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:574)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:74)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:980)
+		... 13 more
+07-Jul-2019 11:12:30.705 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+07-Jul-2019 11:12:30.724 GRAVE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector[AJP/1.3-8009]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:983)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:533)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1059)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:584)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:607)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.lang.reflect.Method.invoke(Method.java:498)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:304)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:474)
+	Caused by: java.net.BindException: Address already in use: bind
+		at sun.nio.ch.Net.bind0(Native Method)
+		at sun.nio.ch.Net.bind(Net.java:433)
+		at sun.nio.ch.Net.bind(Net.java:425)
+		at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+		at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:230)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:213)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1124)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1137)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:574)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:980)
+		... 13 more
+07-Jul-2019 11:12:30.761 INFORMAÇÕES [main] org.apache.catalina.startup.Catalina.load Server initialization in [12.619] milliseconds
+07-Jul-2019 11:12:31.053 INFORMAÇÕES [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+07-Jul-2019 11:12:31.053 INFORMAÇÕES [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.21]
+07-Jul-2019 11:12:31.132 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\webapps\gerenciador.war]
+07-Jul-2019 11:12:32.272 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\webapps\gerenciador.war] has finished in [1.140] ms
+07-Jul-2019 11:12:32.274 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\webapps\docs]
+07-Jul-2019 11:12:32.336 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\webapps\docs] has finished in [63] ms
+07-Jul-2019 11:12:32.337 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\webapps\examples]
+07-Jul-2019 11:12:34.748 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\webapps\examples] has finished in [2.411] ms
+07-Jul-2019 11:12:34.749 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\webapps\host-manager]
+07-Jul-2019 11:12:34.856 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\webapps\host-manager] has finished in [108] ms
+07-Jul-2019 11:12:34.857 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\webapps\manager]
+07-Jul-2019 11:12:34.925 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\webapps\manager] has finished in [69] ms
+07-Jul-2019 11:12:34.925 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\webapps\ROOT]
+07-Jul-2019 11:12:34.965 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\webapps\ROOT] has finished in [40] ms
+07-Jul-2019 11:12:34.992 INFORMAÇÕES [main] org.apache.catalina.startup.Catalina.start Server startup in [4.230] milliseconds
+07-Jul-2019 11:12:34.999 GRAVE [main] org.apache.catalina.core.StandardServer.await Failed to create server shutdown socket on address [localhost] and port [8005] (base port [8005] and offset [0])
+	java.net.BindException: Address already in use: JVM_Bind
+		at java.net.DualStackPlainSocketImpl.bind0(Native Method)
+		at java.net.DualStackPlainSocketImpl.socketBind(DualStackPlainSocketImpl.java:106)
+		at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:387)
+		at java.net.PlainSocketImpl.bind(PlainSocketImpl.java:190)
+		at java.net.ServerSocket.bind(ServerSocket.java:375)
+		at java.net.ServerSocket.<init>(ServerSocket.java:237)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:584)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:721)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:667)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.lang.reflect.Method.invoke(Method.java:498)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:344)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:475)
+07-Jul-2019 11:12:35.000 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+07-Jul-2019 11:12:35.000 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+07-Jul-2019 11:12:35.000 INFORMAÇÕES [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+07-Jul-2019 11:12:35.127 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+07-Jul-2019 11:12:35.128 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+07-Jul-2019 11:12:35.130 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+07-Jul-2019 11:12:35.130 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+07-Jul-2019 11:12:46.560 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.21
+07-Jul-2019 11:12:46.562 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jun 4 2019 20:19:36 UTC
+07-Jul-2019 11:12:46.563 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.21.0
+07-Jul-2019 11:12:46.563 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+07-Jul-2019 11:12:46.563 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+07-Jul-2019 11:12:46.563 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+07-Jul-2019 11:12:46.563 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk1.8.0_171\jre
+07-Jul-2019 11:12:46.564 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_171-b11
+07-Jul-2019 11:12:46.564 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+07-Jul-2019 11:12:46.564 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod
+07-Jul-2019 11:12:46.565 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod
+07-Jul-2019 11:12:46.566 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\conf\logging.properties
+07-Jul-2019 11:12:46.567 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+07-Jul-2019 11:12:46.567 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+07-Jul-2019 11:12:46.567 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+07-Jul-2019 11:12:46.568 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+07-Jul-2019 11:12:46.568 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod
+07-Jul-2019 11:12:46.571 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod
+07-Jul-2019 11:12:46.573 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\temp
+07-Jul-2019 11:12:46.574 INFORMAÇÕES [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_171\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_171\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Apache\Maven 3.5.3\bin;C:\Program Files\Apache\Maven 3.5.3\bin;C:\Users\guilh\AppData\Local\Programs\Python\Python36;C:\Users\guilh\AppData\Local\Programs\Python\Python36\Lib;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Tesseract-OCR;C:\Users\guilh\AppData\Local\Microsoft\WindowsApps;C:\Users\guilh\AppData\Local\Programs\MiKTeX 2.9\miktex\bin\x64\;C:\Users\guilh\AppData\Roaming\npm;;.]
+07-Jul-2019 11:12:46.869 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+07-Jul-2019 11:12:47.053 GRAVE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector[HTTP/1.1-8080]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:983)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:533)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1059)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:584)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:607)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.lang.reflect.Method.invoke(Method.java:498)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:304)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:474)
+	Caused by: java.net.BindException: Address already in use: bind
+		at sun.nio.ch.Net.bind0(Native Method)
+		at sun.nio.ch.Net.bind(Net.java:433)
+		at sun.nio.ch.Net.bind(Net.java:425)
+		at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+		at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:230)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:213)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1124)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1137)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:574)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:74)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:980)
+		... 13 more
+07-Jul-2019 11:12:47.055 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+07-Jul-2019 11:12:47.060 GRAVE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector[AJP/1.3-8009]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:983)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:533)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1059)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:584)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:607)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.lang.reflect.Method.invoke(Method.java:498)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:304)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:474)
+	Caused by: java.net.BindException: Address already in use: bind
+		at sun.nio.ch.Net.bind0(Native Method)
+		at sun.nio.ch.Net.bind(Net.java:433)
+		at sun.nio.ch.Net.bind(Net.java:425)
+		at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+		at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:230)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:213)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1124)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1137)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:574)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:980)
+		... 13 more
+07-Jul-2019 11:12:47.063 INFORMAÇÕES [main] org.apache.catalina.startup.Catalina.load Server initialization in [724] milliseconds
+07-Jul-2019 11:12:47.094 INFORMAÇÕES [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+07-Jul-2019 11:12:47.094 INFORMAÇÕES [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.21]
+07-Jul-2019 11:12:47.113 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\webapps\gerenciador.war]
+07-Jul-2019 11:12:47.605 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\webapps\gerenciador.war] has finished in [492] ms
+07-Jul-2019 11:12:47.606 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\webapps\docs]
+07-Jul-2019 11:12:47.634 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\webapps\docs] has finished in [28] ms
+07-Jul-2019 11:12:47.634 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\webapps\examples]
+07-Jul-2019 11:12:47.972 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\webapps\examples] has finished in [338] ms
+07-Jul-2019 11:12:47.972 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\webapps\host-manager]
+07-Jul-2019 11:12:48.012 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\webapps\host-manager] has finished in [40] ms
+07-Jul-2019 11:12:48.013 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\webapps\manager]
+07-Jul-2019 11:12:48.052 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\webapps\manager] has finished in [39] ms
+07-Jul-2019 11:12:48.052 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\webapps\ROOT]
+07-Jul-2019 11:12:48.085 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\webapps\ROOT] has finished in [33] ms
+07-Jul-2019 11:12:48.101 INFORMAÇÕES [main] org.apache.catalina.startup.Catalina.start Server startup in [1.037] milliseconds
+07-Jul-2019 11:12:48.107 GRAVE [main] org.apache.catalina.core.StandardServer.await Failed to create server shutdown socket on address [localhost] and port [8005] (base port [8005] and offset [0])
+	java.net.BindException: Address already in use: JVM_Bind
+		at java.net.DualStackPlainSocketImpl.bind0(Native Method)
+		at java.net.DualStackPlainSocketImpl.socketBind(DualStackPlainSocketImpl.java:106)
+		at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:387)
+		at java.net.PlainSocketImpl.bind(PlainSocketImpl.java:190)
+		at java.net.ServerSocket.bind(ServerSocket.java:375)
+		at java.net.ServerSocket.<init>(ServerSocket.java:237)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:584)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:721)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:667)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.lang.reflect.Method.invoke(Method.java:498)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:344)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:475)
+07-Jul-2019 11:12:48.108 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+07-Jul-2019 11:12:48.108 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+07-Jul-2019 11:12:48.108 INFORMAÇÕES [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+07-Jul-2019 11:12:48.130 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+07-Jul-2019 11:12:48.130 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+07-Jul-2019 11:12:48.132 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+07-Jul-2019 11:12:48.132 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+07-Jul-2019 11:13:03.967 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.21
+07-Jul-2019 11:13:03.969 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jun 4 2019 20:19:36 UTC
+07-Jul-2019 11:13:03.970 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.21.0
+07-Jul-2019 11:13:03.970 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+07-Jul-2019 11:13:03.970 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+07-Jul-2019 11:13:03.970 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+07-Jul-2019 11:13:03.971 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk1.8.0_171\jre
+07-Jul-2019 11:13:03.971 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_171-b11
+07-Jul-2019 11:13:03.971 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+07-Jul-2019 11:13:03.972 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod
+07-Jul-2019 11:13:03.973 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod
+07-Jul-2019 11:13:03.973 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\conf\logging.properties
+07-Jul-2019 11:13:03.974 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+07-Jul-2019 11:13:03.974 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+07-Jul-2019 11:13:03.974 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+07-Jul-2019 11:13:03.974 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+07-Jul-2019 11:13:03.975 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod
+07-Jul-2019 11:13:03.977 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod
+07-Jul-2019 11:13:03.978 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\temp
+07-Jul-2019 11:13:03.978 INFORMAÇÕES [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_171\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_171\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Apache\Maven 3.5.3\bin;C:\Program Files\Apache\Maven 3.5.3\bin;C:\Users\guilh\AppData\Local\Programs\Python\Python36;C:\Users\guilh\AppData\Local\Programs\Python\Python36\Lib;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Tesseract-OCR;C:\Users\guilh\AppData\Local\Microsoft\WindowsApps;C:\Users\guilh\AppData\Local\Programs\MiKTeX 2.9\miktex\bin\x64\;C:\Users\guilh\AppData\Roaming\npm;;.]
+07-Jul-2019 11:13:04.282 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+07-Jul-2019 11:13:04.467 GRAVE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector[HTTP/1.1-8080]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:983)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:533)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1059)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:584)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:607)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.lang.reflect.Method.invoke(Method.java:498)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:304)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:474)
+	Caused by: java.net.BindException: Address already in use: bind
+		at sun.nio.ch.Net.bind0(Native Method)
+		at sun.nio.ch.Net.bind(Net.java:433)
+		at sun.nio.ch.Net.bind(Net.java:425)
+		at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+		at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:230)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:213)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1124)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1137)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:574)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:74)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:980)
+		... 13 more
+07-Jul-2019 11:13:04.470 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+07-Jul-2019 11:13:04.477 GRAVE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector[AJP/1.3-8009]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:983)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:533)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1059)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:584)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:607)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.lang.reflect.Method.invoke(Method.java:498)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:304)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:474)
+	Caused by: java.net.BindException: Address already in use: bind
+		at sun.nio.ch.Net.bind0(Native Method)
+		at sun.nio.ch.Net.bind(Net.java:433)
+		at sun.nio.ch.Net.bind(Net.java:425)
+		at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+		at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:230)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:213)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1124)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1137)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:574)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:980)
+		... 13 more
+07-Jul-2019 11:13:04.483 INFORMAÇÕES [main] org.apache.catalina.startup.Catalina.load Server initialization in [729] milliseconds
+07-Jul-2019 11:13:04.533 INFORMAÇÕES [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+07-Jul-2019 11:13:04.534 INFORMAÇÕES [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.21]
+07-Jul-2019 11:13:04.558 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\webapps\gerenciador.war]
+07-Jul-2019 11:13:05.157 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\webapps\gerenciador.war] has finished in [599] ms
+07-Jul-2019 11:13:05.158 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\webapps\docs]
+07-Jul-2019 11:13:05.190 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\webapps\docs] has finished in [32] ms
+07-Jul-2019 11:13:05.191 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\webapps\examples]
+07-Jul-2019 11:13:05.515 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\webapps\examples] has finished in [325] ms
+07-Jul-2019 11:13:05.517 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\webapps\host-manager]
+07-Jul-2019 11:13:05.560 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\webapps\host-manager] has finished in [43] ms
+07-Jul-2019 11:13:05.560 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\webapps\manager]
+07-Jul-2019 11:13:05.592 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\webapps\manager] has finished in [32] ms
+07-Jul-2019 11:13:05.593 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\webapps\ROOT]
+07-Jul-2019 11:13:05.621 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\webapps\ROOT] has finished in [28] ms
+07-Jul-2019 11:13:05.636 INFORMAÇÕES [main] org.apache.catalina.startup.Catalina.start Server startup in [1.149] milliseconds
+07-Jul-2019 11:13:05.641 GRAVE [main] org.apache.catalina.core.StandardServer.await Failed to create server shutdown socket on address [localhost] and port [8005] (base port [8005] and offset [0])
+	java.net.BindException: Address already in use: JVM_Bind
+		at java.net.DualStackPlainSocketImpl.bind0(Native Method)
+		at java.net.DualStackPlainSocketImpl.socketBind(DualStackPlainSocketImpl.java:106)
+		at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:387)
+		at java.net.PlainSocketImpl.bind(PlainSocketImpl.java:190)
+		at java.net.ServerSocket.bind(ServerSocket.java:375)
+		at java.net.ServerSocket.<init>(ServerSocket.java:237)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:584)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:721)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:667)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.lang.reflect.Method.invoke(Method.java:498)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:344)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:475)
+07-Jul-2019 11:13:05.644 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+07-Jul-2019 11:13:05.644 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+07-Jul-2019 11:13:05.644 INFORMAÇÕES [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+07-Jul-2019 11:13:05.664 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+07-Jul-2019 11:13:05.665 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+07-Jul-2019 11:13:05.666 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+07-Jul-2019 11:13:05.666 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+07-Jul-2019 11:13:08.456 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.21
+07-Jul-2019 11:13:08.459 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jun 4 2019 20:19:36 UTC
+07-Jul-2019 11:13:08.459 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.21.0
+07-Jul-2019 11:13:08.459 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+07-Jul-2019 11:13:08.459 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+07-Jul-2019 11:13:08.460 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+07-Jul-2019 11:13:08.460 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk1.8.0_171\jre
+07-Jul-2019 11:13:08.460 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_171-b11
+07-Jul-2019 11:13:08.460 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+07-Jul-2019 11:13:08.460 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod
+07-Jul-2019 11:13:08.460 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod
+07-Jul-2019 11:13:08.461 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\conf\logging.properties
+07-Jul-2019 11:13:08.461 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+07-Jul-2019 11:13:08.461 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+07-Jul-2019 11:13:08.461 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+07-Jul-2019 11:13:08.462 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+07-Jul-2019 11:13:08.462 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod
+07-Jul-2019 11:13:08.465 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod
+07-Jul-2019 11:13:08.465 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\temp
+07-Jul-2019 11:13:08.466 INFORMAÇÕES [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_171\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_171\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Apache\Maven 3.5.3\bin;C:\Program Files\Apache\Maven 3.5.3\bin;C:\Users\guilh\AppData\Local\Programs\Python\Python36;C:\Users\guilh\AppData\Local\Programs\Python\Python36\Lib;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Tesseract-OCR;C:\Users\guilh\AppData\Local\Microsoft\WindowsApps;C:\Users\guilh\AppData\Local\Programs\MiKTeX 2.9\miktex\bin\x64\;C:\Users\guilh\AppData\Roaming\npm;;.]
+07-Jul-2019 11:13:08.759 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+07-Jul-2019 11:13:15.363 GRAVE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector[HTTP/1.1-8080]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:983)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:533)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1059)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:584)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:607)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.lang.reflect.Method.invoke(Method.java:498)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:304)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:474)
+	Caused by: java.net.BindException: Address already in use: bind
+		at sun.nio.ch.Net.bind0(Native Method)
+		at sun.nio.ch.Net.bind(Net.java:433)
+		at sun.nio.ch.Net.bind(Net.java:425)
+		at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+		at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:230)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:213)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1124)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1137)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:574)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:74)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:980)
+		... 13 more
+07-Jul-2019 11:13:15.366 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+07-Jul-2019 11:13:15.370 GRAVE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector[AJP/1.3-8009]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:983)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:533)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1059)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:584)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:607)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.lang.reflect.Method.invoke(Method.java:498)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:304)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:474)
+	Caused by: java.net.BindException: Address already in use: bind
+		at sun.nio.ch.Net.bind0(Native Method)
+		at sun.nio.ch.Net.bind(Net.java:433)
+		at sun.nio.ch.Net.bind(Net.java:425)
+		at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+		at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:230)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:213)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1124)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1137)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:574)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:980)
+		... 13 more
+07-Jul-2019 11:13:15.373 INFORMAÇÕES [main] org.apache.catalina.startup.Catalina.load Server initialization in [7.169] milliseconds
+07-Jul-2019 11:13:15.404 INFORMAÇÕES [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+07-Jul-2019 11:13:15.405 INFORMAÇÕES [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.21]
+07-Jul-2019 11:13:15.423 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\webapps\gerenciador.war]
+07-Jul-2019 11:13:15.956 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\webapps\gerenciador.war] has finished in [533] ms
+07-Jul-2019 11:13:25.613 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\webapps\docs]
+07-Jul-2019 11:13:25.641 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\webapps\docs] has finished in [28] ms
+07-Jul-2019 11:13:25.642 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\webapps\examples]
+07-Jul-2019 11:13:25.977 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\webapps\examples] has finished in [335] ms
+07-Jul-2019 11:13:25.980 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\webapps\host-manager]
+07-Jul-2019 11:13:26.016 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\webapps\host-manager] has finished in [37] ms
+07-Jul-2019 11:13:26.016 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\webapps\manager]
+07-Jul-2019 11:13:26.046 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\webapps\manager] has finished in [30] ms
+07-Jul-2019 11:13:26.047 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\webapps\ROOT]
+07-Jul-2019 11:13:26.088 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\webapps\ROOT] has finished in [40] ms
+07-Jul-2019 11:13:26.092 INFORMAÇÕES [main] org.apache.catalina.startup.Catalina.start Server startup in [10.719] milliseconds
+07-Jul-2019 11:13:26.097 GRAVE [main] org.apache.catalina.core.StandardServer.await Failed to create server shutdown socket on address [localhost] and port [8005] (base port [8005] and offset [0])
+	java.net.BindException: Address already in use: JVM_Bind
+		at java.net.DualStackPlainSocketImpl.bind0(Native Method)
+		at java.net.DualStackPlainSocketImpl.socketBind(DualStackPlainSocketImpl.java:106)
+		at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:387)
+		at java.net.PlainSocketImpl.bind(PlainSocketImpl.java:190)
+		at java.net.ServerSocket.bind(ServerSocket.java:375)
+		at java.net.ServerSocket.<init>(ServerSocket.java:237)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:584)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:721)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:667)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.lang.reflect.Method.invoke(Method.java:498)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:344)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:475)
+07-Jul-2019 11:13:26.099 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+07-Jul-2019 11:13:26.099 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+07-Jul-2019 11:13:26.100 INFORMAÇÕES [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+07-Jul-2019 11:13:26.121 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+07-Jul-2019 11:13:26.121 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+07-Jul-2019 11:13:26.122 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+07-Jul-2019 11:13:26.123 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+07-Jul-2019 11:13:35.657 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.21
+07-Jul-2019 11:13:35.659 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jun 4 2019 20:19:36 UTC
+07-Jul-2019 11:13:35.660 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.21.0
+07-Jul-2019 11:13:35.660 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+07-Jul-2019 11:13:35.660 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+07-Jul-2019 11:13:35.660 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+07-Jul-2019 11:13:35.660 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk1.8.0_171\jre
+07-Jul-2019 11:13:35.660 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_171-b11
+07-Jul-2019 11:13:35.661 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+07-Jul-2019 11:13:35.661 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod
+07-Jul-2019 11:13:35.661 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod
+07-Jul-2019 11:13:35.662 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\conf\logging.properties
+07-Jul-2019 11:13:35.662 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+07-Jul-2019 11:13:35.662 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+07-Jul-2019 11:13:35.662 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+07-Jul-2019 11:13:35.663 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+07-Jul-2019 11:13:35.663 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod
+07-Jul-2019 11:13:35.667 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod
+07-Jul-2019 11:13:35.668 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\temp
+07-Jul-2019 11:13:35.668 INFORMAÇÕES [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_171\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_171\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Apache\Maven 3.5.3\bin;C:\Program Files\Apache\Maven 3.5.3\bin;C:\Users\guilh\AppData\Local\Programs\Python\Python36;C:\Users\guilh\AppData\Local\Programs\Python\Python36\Lib;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Tesseract-OCR;C:\Users\guilh\AppData\Local\Microsoft\WindowsApps;C:\Users\guilh\AppData\Local\Programs\MiKTeX 2.9\miktex\bin\x64\;C:\Users\guilh\AppData\Roaming\npm;;.]
+07-Jul-2019 11:13:35.985 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+07-Jul-2019 11:13:36.243 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+07-Jul-2019 11:13:36.254 INFORMAÇÕES [main] org.apache.catalina.startup.Catalina.load Server initialization in [826] milliseconds
+07-Jul-2019 11:13:36.294 INFORMAÇÕES [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+07-Jul-2019 11:13:36.295 INFORMAÇÕES [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.21]
+07-Jul-2019 11:13:36.322 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\webapps\gerenciador.war]
+07-Jul-2019 11:13:36.910 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\webapps\gerenciador.war] has finished in [588] ms
+07-Jul-2019 11:13:36.911 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\webapps\docs]
+07-Jul-2019 11:13:36.943 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\webapps\docs] has finished in [32] ms
+07-Jul-2019 11:13:36.944 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\webapps\examples]
+07-Jul-2019 11:13:37.358 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\webapps\examples] has finished in [414] ms
+07-Jul-2019 11:13:37.359 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\webapps\host-manager]
+07-Jul-2019 11:13:37.412 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\webapps\host-manager] has finished in [53] ms
+07-Jul-2019 11:13:37.413 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\webapps\manager]
+07-Jul-2019 11:13:37.446 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\webapps\manager] has finished in [34] ms
+07-Jul-2019 11:13:37.446 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\webapps\ROOT]
+07-Jul-2019 11:13:37.493 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\webapps\ROOT] has finished in [47] ms
+07-Jul-2019 11:13:37.498 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+07-Jul-2019 11:13:37.514 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+07-Jul-2019 11:13:37.518 INFORMAÇÕES [main] org.apache.catalina.startup.Catalina.start Server startup in [1.261] milliseconds
+07-Jul-2019 12:45:07.917 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.21
+07-Jul-2019 12:45:07.977 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jun 4 2019 20:19:36 UTC
+07-Jul-2019 12:45:07.977 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.21.0
+07-Jul-2019 12:45:07.977 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+07-Jul-2019 12:45:07.977 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+07-Jul-2019 12:45:07.978 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+07-Jul-2019 12:45:07.978 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk1.8.0_171\jre
+07-Jul-2019 12:45:07.978 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_171-b11
+07-Jul-2019 12:45:07.978 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+07-Jul-2019 12:45:07.978 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod
+07-Jul-2019 12:45:07.978 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod
+07-Jul-2019 12:45:07.980 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\conf\logging.properties
+07-Jul-2019 12:45:07.980 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+07-Jul-2019 12:45:07.980 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+07-Jul-2019 12:45:07.980 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+07-Jul-2019 12:45:07.981 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+07-Jul-2019 12:45:07.982 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod
+07-Jul-2019 12:45:07.982 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod
+07-Jul-2019 12:45:07.983 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\temp
+07-Jul-2019 12:45:07.984 INFORMAÇÕES [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_171\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_171\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Apache\Maven 3.5.3\bin;C:\Program Files\Apache\Maven 3.5.3\bin;C:\Users\guilh\AppData\Local\Programs\Python\Python36;C:\Users\guilh\AppData\Local\Programs\Python\Python36\Lib;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Tesseract-OCR;C:\Users\guilh\AppData\Local\Microsoft\WindowsApps;C:\Users\guilh\AppData\Local\Programs\MiKTeX 2.9\miktex\bin\x64\;C:\Users\guilh\AppData\Roaming\npm;;.]
+07-Jul-2019 12:45:09.603 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-80"]
+07-Jul-2019 12:45:09.888 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+07-Jul-2019 12:45:09.898 INFORMAÇÕES [main] org.apache.catalina.startup.Catalina.load Server initialization in [2.230] milliseconds
+07-Jul-2019 12:45:09.924 INFORMAÇÕES [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+07-Jul-2019 12:45:09.925 INFORMAÇÕES [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.21]
+07-Jul-2019 12:45:09.978 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\webapps\gerenciador.war]
+07-Jul-2019 12:45:10.698 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\webapps\gerenciador.war] has finished in [720] ms
+07-Jul-2019 12:45:10.700 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\webapps\docs]
+07-Jul-2019 12:45:10.747 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\webapps\docs] has finished in [47] ms
+07-Jul-2019 12:45:10.748 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\webapps\examples]
+07-Jul-2019 12:45:12.253 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\webapps\examples] has finished in [1.505] ms
+07-Jul-2019 12:45:12.254 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\webapps\host-manager]
+07-Jul-2019 12:45:12.481 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\webapps\host-manager] has finished in [227] ms
+07-Jul-2019 12:45:12.482 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\webapps\manager]
+07-Jul-2019 12:45:12.575 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\webapps\manager] has finished in [92] ms
+07-Jul-2019 12:45:12.580 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\webapps\ROOT]
+07-Jul-2019 12:45:12.646 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\GIT\GitHub\MyAluraProgress\Servlet Parte 1 - Fundamentos da programação web Java\apache-tomcat-9.0.21-prod\webapps\ROOT] has finished in [67] ms
+07-Jul-2019 12:45:12.663 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-80"]
+07-Jul-2019 12:45:12.689 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+07-Jul-2019 12:45:12.700 INFORMAÇÕES [main] org.apache.catalina.startup.Catalina.start Server startup in [2.801] milliseconds
+07-Jul-2019 12:45:32.550 INFORMAÇÕES [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-80"]
+07-Jul-2019 12:45:32.820 INFORMAÇÕES [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+07-Jul-2019 12:45:32.986 INFORMAÇÕES [Thread-5] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+07-Jul-2019 12:45:33.153 INFORMAÇÕES [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-80"]
+07-Jul-2019 12:45:33.156 INFORMAÇÕES [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+07-Jul-2019 12:45:33.159 INFORMAÇÕES [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-80"]
+07-Jul-2019 12:45:33.161 INFORMAÇÕES [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
