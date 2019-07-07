@@ -282,3 +282,22 @@ System.out.println("O Servlet 'OiMundoServlet' foi chamado");`
 - `<servlet-mapping><servlet-name>OiMundoServlet</servlet-name><url-pattern>/ola</url-pattern></servlet-mapping>`: define o mapeamento de um Servlet;
 - A tag `<servlet-name>` serve para vincular o Servlet com um mapeamento;
 - Um dos motivos do `web.xml` ter se tornado opcional foi o surgimento das anotações, que simplificam toda essa configuração em apenas uma linha: `@WebServlet(urlPatterns="/ola")`;
+
+### Atividade 05 - Inversão de controle:
+
+#### Relembrando:
+
+- Uma das vantagens de utilizar o `web.xml` é que todas suas configurações ficam em apenas um lugar, enquanto com anotações elas ficam espalhadas pelas Classes;
+- "Servlet é um Objeto que você consegue chamar através do protocolo HTTP", e quem realiza a chamada é o Tomcat. Ou seja, é possível utilizar um navegador para fazer uma requisição ao Tomcat para ele executar um Objeto específico;
+
+#### Tomcat:
+
+- Os projetos desenvolvidos nas aulas não possuem o método `main`. Quem possui esse método é o Tomcat, nosso `ServletContainer`. Tomcat é o *middleware* entre o navegador e o Servlet;
+- O Tomcat instancia o Objeto quando o mapeamento associado ao Servlet é chamado. O Objeto é instanciado apenas uma vez, independente de quantas requisições são feitas;
+- Os Servlets, por padrão, possuem escopo **Singleton**, ou seja, possuem uma instância única até o encerramento da aplicação;
+
+#### Inversão de controle (*IOC*):
+
+- Inversão de controle: o método principal da aplicação (`main`) não instancia os Objetos, apenas cria as Classes, quem instancia é o Tomcat;
+- O Tomcat não possibilita configurações, como: alteração de escopo do Servlet, gerencia transação com banco de dados, regras de segurança, etc.;
+- Para realizar configurações mais sofisticadas, existe o **Spring MVC**, que realiza todas as configurações acima e muitas outras;
