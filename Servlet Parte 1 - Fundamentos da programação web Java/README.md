@@ -306,3 +306,26 @@ System.out.println("O Servlet 'OiMundoServlet' foi chamado");`
 
 - `loadOnStartup`: possibilita que o Tomcat instancie o Servlet em sua inicialização;
 - **Ex.:** `@WebServlet(urlPatterns="/oi", loadOnStartup=1)`
+
+### Atividade 09 - Deploy da aplicação:
+
+#### Deploy WAR - Web ARchive:
+
+- Clicar com o botão direito do mouse sob o projeto > Export > WAR file;
+- Selecionar o caminho do arquivo a ser exportado em *Destination*;
+- Para fazer o deploy, mova o arquivo `.war` gerado para a pasta `webapps` dentro da pasta do Tomcat;
+
+#### Inicializar Tomcat por CLI:
+
+- Abrir Prompt ou Terminal;
+- Ir até 'diretório de instalação do Tomcat'/bin/;
+- Executar `startup.bat` ou `startup.sh`;
+
+#### UnsupportedClassVersionError:
+
+- Versão do Tomcat e da aplicação são diferentes. Para corrigir, deve-se alterar a versão do Java utilizada para compilar a aplicação ou alterar a versão do Java que o Tomcat utiliza, nas variáveis do ambiente;
+
+#### Alterar porta:
+
+- Abra o arquivo 'diretório de instalação do Tomcat'/conf/server.xml;
+- Utilize a busca (`Ctrl + F`) com parâmetro "8080" e altere a porta para "80";
