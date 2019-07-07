@@ -301,3 +301,8 @@ System.out.println("O Servlet 'OiMundoServlet' foi chamado");`
 - Inversão de controle: o método principal da aplicação (`main`) não instancia os Objetos, apenas cria as Classes, quem instancia é o Tomcat;
 - O Tomcat não possibilita configurações, como: alteração de escopo do Servlet, gerencia transação com banco de dados, regras de segurança, etc.;
 - Para realizar configurações mais sofisticadas, existe o **Spring MVC**, que realiza todas as configurações acima e muitas outras;
+
+### Atividade 08 - Para saber mais: Tomcat sem preguiça:
+
+- `loadOnStartup`: possibilita que o Tomcat instancie o Servlet em sua inicialização;
+- **Ex.:** `@WebServlet(urlPatterns="/oi", loadOnStartup=1)`
