@@ -91,3 +91,18 @@
 #### Importando conteúdo no JSP:
 
 - `<c:import url="logout-parcial.jsp" />`: tag da taglib **core** da biblioteca *JSTL* que permite importar o conteúdo de um arquivo (normalmente *.html* ou *.jsp*) em seu *.jsp*;
+
+### Atividade 09 - Para saber mais: Timeout da sessão:
+
+- O Objeto `HttpSession` tem um *timeout* associado. Se você não usa a aplicação por um determinado tempo, o Tomcat automaticamente remove o objeto `HttpSession` da memória. O padrão do Tomcat 9 é de 30 minutos, ou seja, se você não usar a aplicação por 30 min, você será deslogado!!
+- Isso é configurável através do nosso **web.xml**:
+`
+<session-config>
+    <!-- 10 min -->
+    <session-timeout>10</session-timeout>
+</session-config>
+`
+
+#### Cookie transiente:
+
+- Também chamado de ***session cookie***. Ao contrário do *Cookie* persistente, só vive enquanto o navegador está aberto;
