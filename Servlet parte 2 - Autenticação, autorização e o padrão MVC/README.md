@@ -66,3 +66,7 @@
 - `HttpSession sessao = request.getSession();`: retorna o Objeto `HttpSession` relacionado ao *Cookie* da requisição;
 - Enquanto o Usuário está utilizando a aplicação, esse Objeto permanece "vivo"/válido, em memória no servidor;
 - Assim como o Sistema Operacional busca as informações em memória primeiro em *Cache* e depois em *RAM*, o JSP busca os atributos primeiro na *request* e depois na *session*;
+
+### Atividade 05 - Testando o login:
+
+- `if (sessao.getAttribute("usuarioLogado") == null) { return "redirect:entrada?acao=LoginForm"; }`: utiliza o atributo "pendurado" na *session* para verificar se o login foi efetivado. Se não foi, redireciona para a página de login;
