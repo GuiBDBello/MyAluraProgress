@@ -70,3 +70,9 @@
 ### Atividade 05 - Testando o login:
 
 - `if (sessao.getAttribute("usuarioLogado") == null) { return "redirect:entrada?acao=LoginForm"; }`: utiliza o atributo "pendurado" na *session* para verificar se o login foi efetivado. Se não foi, redireciona para a página de login;
+
+### Atividade 06 - Autorizando o acesso:
+
+- `boolean usuarioNaoEstaLogado = sessao.getAttribute("usuarioLogado") == null;`: verifica se o usuário não está logado, utilizando o atributo "pendurado" na *session*;
+- `boolean ehUmaAcaoProtegida = !(paramAcao.equals("Login") || paramAcao.equals("LoginForm"));`: verifica se a ação executada é uma ação protegida por login (apenas o próprio login não é protegido);
+- `if (ehUmaAcaoProtegida && usuarioNaoEstaLogado) { response.sendRedirect("entrada?acao=LoginForm"); return; }`: redireciona para a página de login e encerra o método;
