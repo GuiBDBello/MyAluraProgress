@@ -22,3 +22,14 @@
 
 - Um JSP nunca deve ser chamado diretamente. É uma boa prática que o *Controller* o chame;
 - Crie um diretório chamado `jsp/` ou `view/` dentro do diretório `WEB-INF`. Isso impossibilita o navegador de acessar seus arquivos *.jsp* diretamente, pois o diretório `WEB-INF` não é acessível a partir do navegador;
+
+### Atividade 07 - Melhorando o controlador:
+
+#### Class:
+
+- Existe uma Classe chamada `Class`, que pertence ao pacote `java.lang`;
+- `Class classe = Class.forName("nomeDaClasse")`: retorna e carrega em memória a Classe com o nome 'nomeDaClasse', que deve ser seu *Full Qualified Name* (pacote + nome da Classe);
+- Essa API que permite instanciar/utilizar uma Classe como um Objeto, é chamada de *Reflection*;
+- `Object obj = classe.newInstance();`: cria uma nova instância/Objeto;
+- Após, criaremos uma Interface 'Acao', e realizaremos um *casting* de Object para a nossa Interface, que será implementada em todas as ações;
+- As Classes que implementam as ações (Classe que encapsula um único método) fazem parte de um padrão de projeto chamado de *Command*;
