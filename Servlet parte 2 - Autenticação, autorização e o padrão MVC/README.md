@@ -43,3 +43,26 @@
 - A ideia é que aplicação web defina que deve ter um login, quais são as permissões e os recursos (URLs) protegidos. Tudo isso fica no **web.xml**.
 - No outro lado, o Tomcat fica com a responsabilidade de carregar os usuários e as permissões. Uma forma simples de fazer isso é usar o arquivo **tomcat-users.xml** dentro do projeto Servers, na pasta Tomcat.
 - Tudo isso foi definido dentro de um outro padrão, chamado Java Autenthication and Authorization Service (JAAS - API padrão do Java para segurança), no entanto, ele não é tão utilizado em aplicações web Java.
+
+
+## Aula 04 - HttpSession
+
+### Atividade 02 - Trabalhando com sessão:
+
+- HTTP trata cada requisição isoladamente;
+- *SessionID*: identificação do Usuário para o navegador. É criada automaticamente;
+- Quando chegar uma requisição que o Tomcat não "reconhece", ele cria o *SessionID* dela e envia essa identificação para o navegador, para que essa identificação seja utilizada nas próximas requisições;
+- A partir do *SessionID* o Tomcat sabe que está comunicando com o mesmo navegador e, assim, com o mesmo usuário;
+
+#### Developer tools:
+
+- Ao abrir as ferramentas do desenvolvedor em seu navegador, selecione a aba *Network* e realize uma nova requisição. Selecione a requisição e selecione a aba *Cookies*. Nessa aba estará listado um *JSESSIONID*, que o Tomcat criou e devolveu na resposta;
+- O navegador, após receber o *Cookie* pela primeira vez, sempre responderá a requisição com o este *Cookie* que foi gerado;
+- Juntamente à criação do *Cookie*, é criado um Objeto `HttpSession` e associado ao *Cookie*;
+
+#### HttpSession:
+
+- `HttpSession`: Objeto para o Usuário guardar informações dele;
+- `HttpSession sessao = request.getSession();`: retorna o Objeto `HttpSession` relacionado ao *Cookie* da requisição;
+- Enquanto o Usuário está utilizando a aplicação, esse Objeto permanece "vivo"/válido, em memória no servidor;
+- Assim como o Sistema Operacional busca as informações em memória primeiro em *Cache* e depois em *RAM*, o JSP busca os atributos primeiro na *request* e depois na *session*;

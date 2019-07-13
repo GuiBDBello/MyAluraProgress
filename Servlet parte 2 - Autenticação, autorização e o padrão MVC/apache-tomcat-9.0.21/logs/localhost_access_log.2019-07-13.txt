@@ -1,0 +1,4 @@
+127.0.0.1 - - [13/Jul/2019:11:21:06 -0300] "GET / HTTP/1.1" 200 11403
+0:0:0:0:0:0:0:1 - - [13/Jul/2019:11:21:32 -0300] "GET /gerenciador/listaEmpresas HTTP/1.1" 404 1115
+127.0.0.1 - - [13/Jul/2019:11:21:32 -0300] "GET / HTTP/1.1" 200 11403
+0:0:0:0:0:0:0:1 - - [13/Jul/2019:11:21:33 -0300] "GET /gerenciador/entrada?acao=ListaEmpresas HTTP/1.1" 200 645
