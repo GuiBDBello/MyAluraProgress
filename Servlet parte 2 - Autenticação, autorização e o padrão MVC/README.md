@@ -76,3 +76,18 @@
 - `boolean usuarioNaoEstaLogado = sessao.getAttribute("usuarioLogado") == null;`: verifica se o usuário não está logado, utilizando o atributo "pendurado" na *session*;
 - `boolean ehUmaAcaoProtegida = !(paramAcao.equals("Login") || paramAcao.equals("LoginForm"));`: verifica se a ação executada é uma ação protegida por login (apenas o próprio login não é protegido);
 - `if (ehUmaAcaoProtegida && usuarioNaoEstaLogado) { response.sendRedirect("entrada?acao=LoginForm"); return; }`: redireciona para a página de login e encerra o método;
+
+### Atividade 07 - Implementando o logout:
+
+#### Servlet:
+
+- `sessao.removeAttribute("usuarioLogado");`: remove o atributo "pendurado" que representava o *Cookie* da sessão do usuário;
+- `sessao.invalidade();`: remove o Objeto `HttpSession` e todos os Objetos associados, e destrói o *Cookie*;
+
+#### JSP:
+
+- `<a href="entrada?acao=Logout">Sair</a>`: cria um link clicável que realiza o *logout*;
+
+#### Importando conteúdo no JSP:
+
+- `<c:import url="logout-parcial.jsp" />`: tag da taglib **core** da biblioteca *JSTL* que permite importar o conteúdo de um arquivo (normalmente *.html* ou *.jsp*) em seu *.jsp*;
