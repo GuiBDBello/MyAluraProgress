@@ -201,3 +201,16 @@
 #### API Key:
 
 - A chave de acesso normalmente é criada pela aplicação para cada usuário. No entanto, antes de usar o serviço, devemos criar uma conta no provedor do serviço para informar os nossos dados e a forma de pagamento. A partir daí, recebemos a chave que devemos utilizar em cada requisição para o serviço.
+
+### Atividade 09 - Cliente do serviço:
+
+- Biblioteca da Apache que faz parte dos *HTTP Components*: http://hc.apache.org/httpclient-3.x/tutorial.html
+
+#### Cliente:
+
+- Copie e cole os arquivos `commons-logging-1.2.jar`, `fluent-hc-4.5.6.jar`, `httpclient-4.5.6.jar` e `httpcore-4.4.10.jar` no diretório `WEB-INF > lib` de seu projeto;
+- `String conteudo = Request.Post("http://localhost:8080/gerenciador/empresas").addHeader("accept", "application/json").execute().returnContent().asString();`: define uma requisição do tipo *POST*, adiciona um cabeçalho que define o tipo aceito da requisição, executa-a, retorna seu conteúdo e converte a resposta para String;
+
+#### Serviço:
+
+- `String valor = request.getHeader("accept");`: retorna o conteúdo do cabeçalho 'accept';
