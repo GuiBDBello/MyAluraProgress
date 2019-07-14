@@ -191,3 +191,13 @@
 - `response.setContentType("application/xml");`: define o tipo do conteúdo da resposta em seu cabeçalho;
 - `response.getWriter().print(xml);`: retorna o *XML* na resposta da requisição;
 - `xstream.alias("empresa", Empresa.class);`: define um *alias* para um elemento *XML*;
+
+### Atividade 07 - Para saber mais: Autenticação:
+
+#### Autenticação no Web Service:
+
+- Quando é feita a requisição do serviço, junto com os seus dados, deveria ser enviada uma identificação do usuário. Essa identificação normalmente é chamada de *API Key*. Baseado nessa chave, o servidor pode verificar a identidade e permissões. A chave então é única para cada usuário e deve ser reenviada em cada requisição (repare que isso é parecido com a `JSessionID`, só que não existe cookie nem `HttpSession`).
+
+#### API Key:
+
+- A chave de acesso normalmente é criada pela aplicação para cada usuário. No entanto, antes de usar o serviço, devemos criar uma conta no provedor do serviço para informar os nossos dados e a forma de pagamento. A partir daí, recebemos a chave que devemos utilizar em cada requisição para o serviço.
