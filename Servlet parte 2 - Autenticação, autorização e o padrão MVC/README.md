@@ -220,3 +220,15 @@
 - Os grandes provedores de serviços web possuem vários serviços para oferecer diversas funcionalidades. Como desenvolvedor/desenvolvedora, precisamos saber como chamar esses serviços. Ou seja, precisamos saber o endereço, qual é o método HTTP, quais são os parâmetros ou quais dados enviar, qual formato e estrutura (XML ou JSON), etc. Tudo isso faz parte da definição da API do serviço.
 - Normalmente, o provedor oferece uma documentação extensa sobre a API e até serviços de teste para "brincar" e testar as requisições.
 - Para finalizar, saiba que o termo API é muito utilizado em vários contextos. No contexto de Web Service, a API define a interface das funcionalidades que o serviço oferece, mas já falamos nesse curso também sobre a API de Reflection, que é uma biblioteca Java (outro contexto). A API de Reflection define a interface Java (nome de classes e métodos).
+
+### Atividade 13 - O que aprendemos?:
+
+- Que um *web service* usa HTML, JSON ou XML como retorno
+- Que um *web service* oferece alguma funcionalidade para seu cliente
+- Que um *web service* é útil quando precisa oferecer uma funcionalidade para cliente diferentes
+- Que para o *web service* não importa se o cliente foi escrito em Java, C# ou outra linguagem, pois usamos um protocolo e formatos independentes da plataforma
+- Como gerar JSON no código Java através de GSON
+- Como gerar XML no código Java através de XStream
+- Como escrever um web service através de um `HttpServlet`
+- Como criar um cliente HTTP a partir do código Java, usando a biblioteca `Apache HttpClient`
+- Como gerar JSON ou XML a partir do cabeçalho `Accept` da requisição
