@@ -137,3 +137,9 @@
 ### Atividade 04 - Filtro de autorização:
 
 - Ao implementar filtros utilizando notações, a ordem de execução desses filtros não é controlada por você. Para alterar essa ordem, deve-se definí-la no arquivo **web.xml**;
+
+### Atividade 05 - Ordem de execução:
+
+- A ordem dos filtros no arquivo **web.xml** é a ordem que o Tomcat irá executá-los;
+- A nomenclatura "filtro" é utilizada quando nos referimos à Servlets. Quando nos referimos à *Frameworks* (*Spring*, *EJB*, *VRaptor*), esses "filtros" são chamados de "interceptadores";
+- Apesar do conceito ser o mesmo, **filtros** são mais relacionados ao mundo Web, enquanto **interceptadores** estão mais relacionados com os *frameworks*;
