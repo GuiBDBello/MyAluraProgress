@@ -147,3 +147,15 @@
 ### Atividade 08 - Para saber mais: Interceptor ou Filter:
 
 - O filtro fica antes do controlador e o interceptador depois. O filtro é um componente do mundo de Servlets e se preocupa em filtrar requisições (é ligado ao mundo web), enquanto um interceptador "filtra" chamadas de ações ou outros métodos. Os interceptadores são específicos do framework (por exemplo, Spring) e até funciona sem Servlets.
+
+### Atividade 10 - O que aprendemos?:
+
+- Um Filter e Servlet são bem parecidos
+- Comparado com Servlet, o Filter tem o poder de parar o fluxo
+- Para escrever um filtro, devemos implementar a interface `javax.servlet.Filter`
+- Para mapear o filtro, usamos a anotação `@WebFilter` ou o **web.xml**
+- Vários filtros podem funcionar numa cadeia (um chama o próximo, mas todos são independentes)
+- Para definir a ordem de execução, devemos mapear os filtros no web.xml
+- Um filtro recebe como parâmetro, do método `doFilter`, um `ServletRequest` e um `ServletResponse`
+- Ambos, `ServletRequest` e `ServletResponse`, são interfaces mais genéricas do que `HttpServletRequeest` e `HttpServletResponse`
+- Para chamar o próximo filtro na cadeia, usamos o objeto `FilterChain`
