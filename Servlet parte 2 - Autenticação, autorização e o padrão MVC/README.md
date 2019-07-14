@@ -143,3 +143,7 @@
 - A ordem dos filtros no arquivo **web.xml** é a ordem que o Tomcat irá executá-los;
 - A nomenclatura "filtro" é utilizada quando nos referimos à Servlets. Quando nos referimos à *Frameworks* (*Spring*, *EJB*, *VRaptor*), esses "filtros" são chamados de "interceptadores";
 - Apesar do conceito ser o mesmo, **filtros** são mais relacionados ao mundo Web, enquanto **interceptadores** estão mais relacionados com os *frameworks*;
+
+### Atividade 08 - Para saber mais: Interceptor ou Filter:
+
+- O filtro fica antes do controlador e o interceptador depois. O filtro é um componente do mundo de Servlets e se preocupa em filtrar requisições (é ligado ao mundo web), enquanto um interceptador "filtra" chamadas de ações ou outros métodos. Os interceptadores são específicos do framework (por exemplo, Spring) e até funciona sem Servlets.
