@@ -133,3 +133,7 @@
 - Assim como o Servlet, o Filter também é uma Interface que implementa apenas um método, o `doFilter(ServletRequest request, ServletResponse response, FilterChain chain)`;
 - `chain.doFilter(request, response);`: se esse método não for chamado dentro de uma implementação de `Filter`, a requisição fica parada;
 - Em um `Filter` também deve ser mapeada uma *url*, da mesma forma como é mapeada em um Servlet (`WebServlet("/entrada")`). Essa é a *url* da requisição a qual o Filtro será aplicado;
+
+### Atividade 04 - Filtro de autorização:
+
+- Ao implementar filtros utilizando notações, a ordem de execução desses filtros não é controlada por você. Para alterar essa ordem, deve-se definí-la no arquivo **web.xml**;
