@@ -214,3 +214,9 @@
 #### Serviço:
 
 - `String valor = request.getHeader("accept");`: retorna o conteúdo do cabeçalho 'accept';
+
+### Atividade 11 - Para saber mais: O que é API?:
+
+- Os grandes provedores de serviços web possuem vários serviços para oferecer diversas funcionalidades. Como desenvolvedor/desenvolvedora, precisamos saber como chamar esses serviços. Ou seja, precisamos saber o endereço, qual é o método HTTP, quais são os parâmetros ou quais dados enviar, qual formato e estrutura (XML ou JSON), etc. Tudo isso faz parte da definição da API do serviço.
+- Normalmente, o provedor oferece uma documentação extensa sobre a API e até serviços de teste para "brincar" e testar as requisições.
+- Para finalizar, saiba que o termo API é muito utilizado em vários contextos. No contexto de Web Service, a API define a interface das funcionalidades que o serviço oferece, mas já falamos nesse curso também sobre a API de Reflection, que é uma biblioteca Java (outro contexto). A API de Reflection define a interface Java (nome de classes e métodos).
