@@ -120,3 +120,16 @@
 - Para ter acesso à `HttpSession`, basta chamar `request.getSession()`
 - Usamos a `HttpSession` para guardar dados sobre o usuário (login, permissões, carrinho de compra)
 - A `HttpSession` tem um ciclo de vida e será automaticamente invalidada
+
+
+## Aula 05 - Aplicando filtros
+
+### Atividade 02 - Primeiro filtro:
+
+- É possível aplicar um filtro nas requisições antes delas chegarem ao *Controller*;
+- Um filtro é muito semelhante à um *Servlet*. Porém, ele possui uma responsabilidade a mais: ele pode barrar uma requisição;
+- Para implementar um filtro, deve-se implementar a Interface `Filter`;
+- **Cuidado!** No mundo Java, existem diversas implementações de `Filter`. Para nossos fins, devemos utilizar a Classe `Filter` que provém do pacote `javax.servlet.Filter`;
+- Assim como o Servlet, o Filter também é uma Interface que implementa apenas um método, o `doFilter(ServletRequest request, ServletResponse response, FilterChain chain)`;
+- `chain.doFilter(request, response);`: se esse método não for chamado dentro de uma implementação de `Filter`, a requisição fica parada;
+- Em um `Filter` também deve ser mapeada uma *url*, da mesma forma como é mapeada em um Servlet (`WebServlet("/entrada")`). Essa é a *url* da requisição a qual o Filtro será aplicado;
