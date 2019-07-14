@@ -159,3 +159,12 @@
 - Um filtro recebe como parâmetro, do método `doFilter`, um `ServletRequest` e um `ServletResponse`
 - Ambos, `ServletRequest` e `ServletResponse`, são interfaces mais genéricas do que `HttpServletRequeest` e `HttpServletResponse`
 - Para chamar o próximo filtro na cadeia, usamos o objeto `FilterChain`
+
+
+## Aula 06 - Introdução ao Web Services
+
+### Atividade 02 - O que é um Web Service?:
+
+- Quando o cliente que utiliza a aplicação não entende HTML, deve-se retornar outro formato de dados;
+- Para isso, existe o *JSON* e o *XML*, que retornam apenas os dados requisitados, sem estrutura de layout;
+- Web Service: é um serviço chamado através do protocolo **HTTP** que retorna os dados em um formato genérico (*JSON*/*XML*);
