@@ -180,3 +180,14 @@
 - `String json = gson.toJson(empresas);`: converte uma Lista Java para um *JSON*;
 - `response.setContentType("application/json");`: define o tipo do conteúdo da resposta em seu cabeçalho;
 - `response.getWriter().print(json);`: retorna o *JSON* na resposta da requisição;
+
+### Atividade 06 - Serviço com XML:
+
+#### XML:
+
+- Copie e cole os arquivos `xstream-1.4.10.jar` e `xmlpull-1.1.3.1.jar` no diretório `WEB-INF > lib` de seu projeto;
+- `XStream xstream = new XStream();`: cria um novo Objeto XStream;
+- `String xml = xstream.toXML(empresas);`: converte uma Lista Java para um *XML*;
+- `response.setContentType("application/xml");`: define o tipo do conteúdo da resposta em seu cabeçalho;
+- `response.getWriter().print(xml);`: retorna o *XML* na resposta da requisição;
+- `xstream.alias("empresa", Empresa.class);`: define um *alias* para um elemento *XML*;
