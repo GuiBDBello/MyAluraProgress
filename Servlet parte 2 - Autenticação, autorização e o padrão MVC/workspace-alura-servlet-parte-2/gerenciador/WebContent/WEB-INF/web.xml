@@ -12,7 +12,6 @@
     <servlet-name>OiMundoServlet</servlet-name>
     <url-pattern>/ola</url-pattern>
   </servlet-mapping>
-  
   <filter>
     <filter-name>MF</filter-name>
     <filter-class>br.com.alura.gerenciador.servlet.MonitoramentoFilter</filter-class>
@@ -21,7 +20,6 @@
     <filter-name>MF</filter-name>
     <url-pattern>/entrada</url-pattern>
   </filter-mapping>
-  
   <filter>
     <filter-name>AF</filter-name>
     <filter-class>br.com.alura.gerenciador.servlet.AutorizacaoFilter</filter-class>
@@ -30,7 +28,6 @@
     <filter-name>AF</filter-name>
     <url-pattern>/entrada</url-pattern>
   </filter-mapping>
-  
   <filter>
     <filter-name>CF</filter-name>
     <filter-class>br.com.alura.gerenciador.servlet.ControladorFilter</filter-class>

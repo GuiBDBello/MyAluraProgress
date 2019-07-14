@@ -19,3 +19,7 @@
 0:0:0:0:0:0:0:1 - - [14/Jul/2019:17:02:39 -0300] "GET /favicon.ico HTTP/1.1" 200 21630
 0:0:0:0:0:0:0:1 - - [14/Jul/2019:17:02:41 -0300] "GET /gerenciador/entrada?acao=LoginForm HTTP/1.1" 200 387
 0:0:0:0:0:0:0:1 - - [14/Jul/2019:17:02:41 -0300] "GET /favicon.ico HTTP/1.1" 200 21630
+127.0.0.1 - - [14/Jul/2019:19:11:28 -0300] "GET / HTTP/1.1" 200 11403
+0:0:0:0:0:0:0:1 - - [14/Jul/2019:19:11:46 -0300] "GET /gerenciador/entrada?acao=ListaEmpresas HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [14/Jul/2019:19:11:46 -0300] "GET /gerenciador/entrada?acao=LoginForm HTTP/1.1" 200 387
+0:0:0:0:0:0:0:1 - - [14/Jul/2019:19:11:47 -0300] "GET /gerenciador/empresas HTTP/1.1" 200 132

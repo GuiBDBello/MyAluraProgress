@@ -168,3 +168,15 @@
 - Quando o cliente que utiliza a aplicação não entende HTML, deve-se retornar outro formato de dados;
 - Para isso, existe o *JSON* e o *XML*, que retornam apenas os dados requisitados, sem estrutura de layout;
 - Web Service: é um serviço chamado através do protocolo **HTTP** que retorna os dados em um formato genérico (*JSON*/*XML*);
+
+### Atividade 04 - Serviço com JSON:
+
+- *JSON*: notação que define dados no formato de um Objeto JavaScript;
+
+#### Gson:
+
+- Copie e cole o arquivo `gson-2.8.5.jar` no diretório `WEB-INF > lib` de seu projeto;
+- `Gson gson = new Gson();`: cria um novo Objeto Gson;
+- `String json = gson.toJson(empresas);`: converte uma Lista Java para um *JSON*;
+- `response.setContentType("application/json");`: define o tipo do conteúdo da resposta em seu cabeçalho;
+- `response.getWriter().print(json);`: retorna o *JSON* na resposta da requisição;
