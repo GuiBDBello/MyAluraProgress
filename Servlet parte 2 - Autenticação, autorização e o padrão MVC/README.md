@@ -256,3 +256,8 @@
 - Abra o Prompt/Terminal;
 - Navegue até o diretório do Jetty;
 - Execute o comando `java -jar start.jar`;
+
+### Atividade 05 - Especificação das Servlets:
+
+- Um *Servlet Container* implementa diversas Interfaces (`ServletRequest`, `HttpServletRequest`, `ServletResponse`, `HttpServletResponse`, `Servlet`, `Filter`) e Classes (`HttpServlet`) e "dá vida" à elas, implementando-as com os Servlets que criamos;
+- A "Especificação Servlet" engloba todas as Interfaces e Classe citadas acima. Todas elas estão agrupadas na biblioteca `servlet-api.jar`;
