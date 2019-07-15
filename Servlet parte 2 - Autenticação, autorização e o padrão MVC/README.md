@@ -232,3 +232,27 @@
 - Como escrever um web service através de um `HttpServlet`
 - Como criar um cliente HTTP a partir do código Java, usando a biblioteca `Apache HttpClient`
 - Como gerar JSON ou XML a partir do cabeçalho `Accept` da requisição
+
+
+## Aula 07 - Deploy no Jetty
+
+### Atividade 03 - Servlet Container Jetty:
+
+- *Servlet Container* ou *Servlet Engine*: Tomcat e Jetty;
+- *Application Server*: Wildfly (RedHat), Weblogic (Oracle), Websphere (IBM);
+
+#### Jetty vs Tomcat:
+
+- Para gerar o *WAR* e realizar o deploy de nossa aplicação para o Jetty, devemos fazer uma pequena mudança: implementar os outros métodos da Interface `Filter` (`init` e `destroy`);
+
+#### Deploy:
+
+- Clique com o botão direito sobre a aplicação > *Export...* > *Web* > *WAR file*;
+- Defina a *Destination* do arquivo *WAR*;
+- Mova o arquivo *WAR* gerado para a pasta `webapps` do Jetty;
+
+#### Rodando:
+
+- Abra o Prompt/Terminal;
+- Navegue até o diretório do Jetty;
+- Execute o comando `java -jar start.jar`;
