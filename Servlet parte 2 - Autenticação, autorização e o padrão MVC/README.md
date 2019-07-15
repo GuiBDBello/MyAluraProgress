@@ -261,3 +261,11 @@
 
 - Um *Servlet Container* implementa diversas Interfaces (`ServletRequest`, `HttpServletRequest`, `ServletResponse`, `HttpServletResponse`, `Servlet`, `Filter`) e Classes (`HttpServlet`) e "dá vida" à elas, implementando-as com os Servlets que criamos;
 - A "Especificação Servlet" engloba todas as Interfaces e Classe citadas acima. Todas elas estão agrupadas na biblioteca `servlet-api.jar`;
+
+### Atividade 10 - O que aprendemos?:
+
+- A disponibilizar a nossa aplicação no *servlet container* **Jetty**
+- Que Servlet é uma especificação
+- Que a especificação Servlet faz parte do Java EE/Jakarta EE
+- Que, ao usar Servlet, programamos independentemente do servidor/container
+- A diferença entre *servlet container* e *application server*
