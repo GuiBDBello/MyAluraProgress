@@ -19,3 +19,14 @@
 - Se a saída for a versão do Node, tudo certo. Se não for, tente o seguinte:
 	- Windows: não mude o diretório padrão da instalação do Node.js. Há relatos que em algumas versões do Windows a pasta do Node não é colocada no PATH do Windows, sendo necessário adicioná-la manualmente. Não sabe como? Temos um treinamento de prompt no Windows que pode ajudá-lo nesta tarefa.
 	- Linux: algumas distribuições Linux já possui um binário chamado node, que não tem nenhuma relação com o Node.js. Nestas distribuições, o binário passa a se chamar nodejs. Sendo assim, em todo lugar que eu referenciar o comando node ele deve ser trocado para nodejs.
+
+
+## Aula 02 - Especificando uma Negociação
+
+### Atividade 02 - A classe Negociação:
+
+- Uma classe JavaScript segue a convenção *UpperCamelCase*, ou seja, o arquivo de nossa classe de negociação se chamará `Negociacao.js`;
+- `class Negociacao { }`: sintaxe JavaScript que declara uma classe;
+- `constructor() { }`: sintaxe JavaScript que declara o construtor de uma classe. O construtor define os atributos da classe, utilizando a palavra-chave `this`;
+- `this.date = new Date();`: declara um atributo e instancia-o com o valor da data atual do sistema;
+- `var n1 = new Negociacao();`: instancia um novo objeto da classe `Negociacao`;
