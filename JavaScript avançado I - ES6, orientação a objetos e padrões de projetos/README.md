@@ -30,3 +30,15 @@
 - `constructor() { }`: sintaxe JavaScript que declara o construtor de uma classe. O construtor define os atributos da classe, utilizando a palavra-chave `this`;
 - `this.date = new Date();`: declara um atributo e instancia-o com o valor da data atual do sistema;
 - `var n1 = new Negociacao();`: instancia um novo objeto da classe `Negociacao`;
+
+### Atividade 03 - Construtor da classe e métodos:
+
+- É possível instanciar uma negociação já com valores pré-definidos. Para isso, utiliza-se o construtor:
+- **Ex.:** `var n1 = new Negociacao(new Date(), 5, 700);`
+- É necessário definir o construtor na classe?
+- **Ex.:** `constructor(data, quantidade, valor) { ... }`
+
+#### Métodos x Funções:
+
+- Um método é um comportamento de uma classe:
+- **Ex.:** `obtemVolume() { return this.quantidade * this.valor; }`
