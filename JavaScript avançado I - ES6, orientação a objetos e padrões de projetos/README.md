@@ -48,3 +48,12 @@
 - O JavaScript não possui modificadores de acesso. É adotada uma convenção para avisar o programador a não acessar -fora da classe- os atributos que possuem *underline* (**_**) no início;
 - Para acessar um atributo de uma classe, deve-se utilizar os "métodos acessadores" *get* e *set*;
 - **Ex.:** `getData() { return this._data; }`
+
+### Atividade 05 - A sintaxe get:
+
+- A palavra-chave `get` no JavaScript é outra forma de criar um *getter*;
+- **Ex.:** `get data() { return this._data; }`
+- Isso possibilita acessar um atributo como se fosse uma propriedade, mas por baixo dos panos o JavaScript "encapsula" o atributo;
+- **Ex.:** `n1.data; n1.quantidade; n1.valor;`
+- Isso também impossibilita alterar o valor do atributo quando obtido pelo método `get`;
+- **Ex.:** `n1.quantidade = 1000; // Não funciona, pois é um getter, ou seja, apenas leitura`
