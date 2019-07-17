@@ -42,3 +42,9 @@
 
 - Um método é um comportamento de uma classe:
 - **Ex.:** `obtemVolume() { return this.quantidade * this.valor; }`
+
+### Atividade 04 - Encapsulamento:
+
+- O JavaScript não possui modificadores de acesso. É adotada uma convenção para avisar o programador a não acessar -fora da classe- os atributos que possuem *underline* (**_**) no início;
+- Para acessar um atributo de uma classe, deve-se utilizar os "métodos acessadores" *get* e *set*;
+- **Ex.:** `getData() { return this._data; }`
