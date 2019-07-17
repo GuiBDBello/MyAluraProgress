@@ -63,12 +63,11 @@
 
         var n1 = new Negociacao(new Date(), 5, 700);
         
-        n1._quantidade = 10000;
-
         console.log(n1.data);
-        console.log(n1.quantidade);
-        console.log(n1.valor);
-        console.log(n1.volume);
+
+        n1.data.setDate(18);
+        
+        console.log(n1.data);
 
     </script>
 </body>

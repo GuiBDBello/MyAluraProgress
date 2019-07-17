@@ -62,3 +62,7 @@
 
 - `Object.freeze(n1);`: "congela" um objeto, impossibilitando que seus atributos sejam alterados;
 - É possível colocar esse método diretamente no construtor, para sempre instanciar um objeto imutável;
+
+### Atividade 07 - A instância é imutável mesmo?:
+
+- `n1.data.setDate(18);`: altera a data, mesmo se o objeto `n1` está congelado;
