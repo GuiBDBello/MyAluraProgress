@@ -57,3 +57,8 @@
 - **Ex.:** `n1.data; n1.quantidade; n1.valor;`
 - Isso também impossibilita alterar o valor do atributo quando obtido pelo método `get`;
 - **Ex.:** `n1.quantidade = 1000; // Não funciona, pois é um getter, ou seja, apenas leitura`
+
+### Atividade 06 - Objetos imutáveis:
+
+- `Object.freeze(n1);`: "congela" um objeto, impossibilitando que seus atributos sejam alterados;
+- É possível colocar esse método diretamente no construtor, para sempre instanciar um objeto imutável;
