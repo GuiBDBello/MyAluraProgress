@@ -100,3 +100,11 @@
 - **Ex.:** `<script>let negociacaoController = new NegociacaoController();</script>`
 - Adicionaremos uma ação dentro de um evento na *tag* do formulário:
 - **Ex.:** `<form class="form" onsubmit="negociacaoController.adiciona(event)">`
+
+### Atividade 02 - Associando métodos do controller às ações do usuário:
+
+- É possível atribuir métodos à uma variável JavaScript, mantendo o contexto de execução do método:
+- **Ex.:** `let $ = document.querySelector.bind(document);`
+- É necessário vincular o método (`bind()`) ao objeto para executá-lo como se estivesse dentro do objeto `document`, pois fora desse contexto o método não existe (ele seria uma função);
+- A variável pode ser utilizada como se fosse o nome do método:
+- **Ex.:** `let inputData = $('#data');`
