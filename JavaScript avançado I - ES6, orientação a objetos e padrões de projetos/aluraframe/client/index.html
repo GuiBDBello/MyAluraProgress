@@ -61,15 +61,21 @@
     <script src="js/app/models/Negociacao.js"></script>
     <script>
 
-        var hoje = new Date();
+        for(var i1 = 1; i1 <= 100; i1++) {
+            var nome1 = 'Guilherme';
+            console.log(i1);
+        }
 
-        var n1 = new Negociacao(hoje, 5, 700);
-        
-        console.log(n1.data);
+        alert(i1);
+        alert(nome1);
 
-        hoje.setDate(18);
-        
-        console.log(n1.data);
+        for(let i2 = 1; i2 <= 100; i2++) {
+            let nome2 = 'Guilherme';
+            console.log(i2);
+        }
+
+        alert(i2);
+        alert(nome2);
 
     </script>
 </body>

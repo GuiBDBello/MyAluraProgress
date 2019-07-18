@@ -76,3 +76,8 @@
 - **Ex.:** `var hoje = new Date(); var n1 = new Negociacao(hoje, 5, 700); hoje.setDate(18);`
 - Para se proteger, ao receber um objeto, crie um novo objeto internamente na classe, para que a referência externa não possa alterar o atributo da classe:
 - **Ex.:** `this_data = new Date(data.getTime());`
+
+### Atividade 09 - Substituindo var por let:
+
+- `var`: variável com escopo global;
+- `let`: variável com escopo de bloco;
