@@ -81,3 +81,10 @@
 
 - `var`: variável com escopo global;
 - `let`: variável com escopo de bloco;
+
+### Atividade 23 - Declarando duas vezes a mesma variável:
+
+- **Ex.:** `let nome = 'Guilherme'; let nome = 'Dall Bello';`
+- Ao fazer isso, nosso navegador retorna: `Uncaught TypeError: Identifier 'nome' has already been declared(…)`;
+- Não podemos declarar mais de uma variável quando usamos `let`. Antes desse novo recurso de linguagem, podíamos fazer algo como:
+- **Ex.:** `var nome = 'Flávio'; var nome = 'Almeida';`
