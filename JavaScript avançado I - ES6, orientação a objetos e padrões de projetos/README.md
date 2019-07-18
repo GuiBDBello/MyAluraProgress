@@ -88,3 +88,15 @@
 - Ao fazer isso, nosso navegador retorna: `Uncaught TypeError: Identifier 'nome' has already been declared(…)`;
 - Não podemos declarar mais de uma variável quando usamos `let`. Antes desse novo recurso de linguagem, podíamos fazer algo como:
 - **Ex.:** `var nome = 'Flávio'; var nome = 'Almeida';`
+
+
+## Aula 03 - A ligação entre as ações do usuário e o modelo
+
+### Atividade 01 - A classe NegociacaoController:
+
+- Criaremos um script para representar o *controller*:
+- **Ex.:** `adiciona(event) { event.preventDefault(); }`
+- Instanciaremos um objeto do *controller*:
+- **Ex.:** `<script>let negociacaoController = new NegociacaoController();</script>`
+- Adicionaremos uma ação dentro de um evento na *tag* do formulário:
+- **Ex.:** `<form class="form" onsubmit="negociacaoController.adiciona(event)">`
