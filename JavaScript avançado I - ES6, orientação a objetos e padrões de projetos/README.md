@@ -46,16 +46,16 @@
 ### Atividade 04 - Encapsulamento:
 
 - O JavaScript não possui modificadores de acesso. É adotada uma convenção para avisar o programador a não acessar -fora da classe- os atributos que possuem *underline* (**_**) no início;
-- Para acessar um atributo de uma classe, deve-se utilizar os "métodos acessadores" *get* e *set*;
+- Para acessar um atributo de uma classe, deve-se utilizar o "método acessador" *get*:
 - **Ex.:** `getData() { return this._data; }`
 
 ### Atividade 05 - A sintaxe get:
 
-- A palavra-chave `get` no JavaScript é outra forma de criar um *getter*;
+- A palavra-chave `get` no JavaScript é outra forma de criar um *getter*:
 - **Ex.:** `get data() { return this._data; }`
-- Isso possibilita acessar um atributo como se fosse uma propriedade, mas por baixo dos panos o JavaScript "encapsula" o atributo;
+- Isso possibilita acessar um atributo como se fosse uma propriedade, mas por baixo dos panos o JavaScript "encapsula" o atributo:
 - **Ex.:** `n1.data; n1.quantidade; n1.valor;`
-- Isso também impossibilita alterar o valor do atributo quando obtido pelo método `get`;
+- Isso também impossibilita alterar o valor do atributo quando obtido pelo método `get`:
 - **Ex.:** `n1.quantidade = 1000; // Não funciona, pois é um getter, ou seja, apenas leitura`
 
 ### Atividade 06 - Objetos imutáveis:
@@ -66,3 +66,13 @@
 ### Atividade 07 - A instância é imutável mesmo?:
 
 - `n1.data.setDate(18);`: altera a data, mesmo se o objeto `n1` está congelado;
+
+### Atividade 08 - Programação defensiva:
+
+- Uma forma de impossibilitar a alteração do valor da data é devolver um novo objeto de `data`;
+- **Ex.:** `get data() { return new Date(this._data.getTime()); }`
+- Assim, cada vez que a data for alterada a partir de `n1.data`, o que será alterado é o novo objeto `Date` retornado, preservando o valor do atributo data do objeto `n1`;
+- A mesma coisa pode ocorrer no construtor:
+- **Ex.:** `var hoje = new Date(); var n1 = new Negociacao(hoje, 5, 700); hoje.setDate(18);`
+- Para se proteger, ao receber um objeto, crie um novo objeto internamente na classe, para que a referência externa não possa alterar o atributo da classe:
+- **Ex.:** `this_data = new Date(data.getTime());`
