@@ -108,3 +108,7 @@
 - É necessário vincular o método (`bind()`) ao objeto para executá-lo como se estivesse dentro do objeto `document`, pois fora desse contexto o método não existe (ele seria uma função);
 - A variável pode ser utilizada como se fosse o nome do método:
 - **Ex.:** `let inputData = $('#data');`
+
+### Atividade 03 - Evitando percorrer o DOM muitas vezes:
+
+- Ao invés de criar variáveis a cada clique no botão, utilizaremos atributos, que são instanciados apenas uma vez (no construtor) e não é preciso percorrer o *DOM* a cada novo clique no botão (num projeto grande, isso pode custar performance);
