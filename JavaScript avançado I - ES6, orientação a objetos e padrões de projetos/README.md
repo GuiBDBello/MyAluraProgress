@@ -146,3 +146,7 @@
 
 - Imagine que você possui uma data no formato 'DD-MM-YYYY' e quer convertê-la para 'YYYY/MM/DD', uma forma de fazer isso é a seguinte:
 - **Ex.:** `let data = '17-05-2016'; data = new Date(data.split('-').reverse().join('/'));`
+
+### Atividade 17 - O "mapa" da mina!:
+
+- A instrução `if(item % 2) { ... }` resulta no mesmo que `if(item % 2 != 0) { ... }`. Por padrão, o JavaScript considera o número 0 como uma condição `false`, e qualquer outro número é considerado como `true`;
