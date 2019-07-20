@@ -120,3 +120,7 @@
 - `let data = new Date(this._inputData.value.split('-'));`: cria uma data utilizando um *array* (pode ser de *string* ou de *number*). Internamente, esse construtor utiliza o método `join` para concatenar os valores em uma string;
 - **Ex.:** `['2016', '11', '12'].join(',');`;
 - `let data = new Date(this._inputData.value.replace(/-/g, ','));`: cria uma data utilizando uma *string*. Utiliza a expressão regular `/-/g`, que significa que irá trocar todo o conteúdo entre as barras (`-`), globalmente (`g`), pela string seguinte (`','`);
+
+### Atividade 07 - O problema com datas:
+
+- Ao definir uma data por `new Date(2016, 11, 12)`, a data será definida como **12 de dezembro de 2016**. Isso acontece pois, se `Date` for instanciado com esse formato, o mês é obtido entre os valores 0 e 11 (0 sendo janeiro e 11 sendo dezembro);
