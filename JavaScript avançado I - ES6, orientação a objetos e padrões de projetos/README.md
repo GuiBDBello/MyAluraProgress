@@ -112,3 +112,11 @@
 ### Atividade 03 - Evitando percorrer o DOM muitas vezes:
 
 - Ao invés de criar variáveis a cada clique no botão, utilizaremos atributos, que são instanciados apenas uma vez (no construtor) e não é preciso percorrer o *DOM* a cada novo clique no botão (num projeto grande, isso pode custar performance);
+
+### Atividade 04 - Criando um objeto Date:
+
+- O JavaScript define uma data com o padrão *YYYY-MM-DD*;
+- O construtor do `Date` aceita como parâmetros uma string (no formato `'YYYY,MM,DD'`) ou um array (no formato `['YYYY', 'MM', 'DD']`);
+- `let data = new Date(this._inputData.value.split('-'));`: cria uma data utilizando um *array* (pode ser de *string* ou de *number*). Internamente, esse construtor utiliza o método `join` para concatenar os valores em uma string;
+- **Ex.:** `['2016', '11', '12'].join(',');`;
+- `let data = new Date(this._inputData.value.replace(/-/g, ','));`: cria uma data utilizando uma *string*. Utiliza a expressão regular `/-/g`, que significa que irá trocar todo o conteúdo entre as barras (`-`), globalmente (`g`), pela string seguinte (`','`);
