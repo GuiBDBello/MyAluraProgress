@@ -150,3 +150,13 @@
 ### Atividade 17 - O "mapa" da mina!:
 
 - A instrução `if(item % 2) { ... }` resulta no mesmo que `if(item % 2 != 0) { ... }`. Por padrão, o JavaScript considera o número 0 como uma condição `false`, e qualquer outro número é considerado como `true`;
+
+
+## Aula 04 - Ligar com data é trabalhoso? Chame um ajudante!:
+
+### Atividade 01 - Exibindo o objeto Date no formato dia/mês/ano:
+
+- `negociacao.data.getDate()`: método de um objeto do tipo `Date` que retorna o dia;
+- `negociacao.data.getMonth()`: método de um objeto do tipo `Date` que retorna o mês;
+- `negociacao.data.getFullYear()`: método de um objeto do tipo `Date` que retorna o ano;
+- `let diaMesAno = negociacao.data.getDate() + '/' + (negociacao.data.getMonth() + 1) + '/' + negociacao.data.getFullYear();`: para obter o mês correto, deve-se somar 1 em seu valor, pois a classe `Date` armazena os meses com valores entre 0 e 11;
