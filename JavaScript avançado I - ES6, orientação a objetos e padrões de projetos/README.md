@@ -133,3 +133,11 @@
 - Para resolver o problema com a data, utilizaremos ambos recursos acima mencionados;
 - **Ex.:** `let data = new Date(...this._inputData.value.split('-').map(function(item, indice) { return item - indice % 2; }));`
 - A linha acima instancia uma nova data, que recebe um *array*, tratado pela função `map` e separado em parâmetros individuais, pelo *spread operator*. **Obs.:** o módulo utilizado para tratar o parâmetro funciona nesse caso, pois são passados três parâmetros na função, e apenas o valor do **mês** é subtraído por 1, resolvendo, assim, o problema que tínhamos com a data;
+
+### Atividade 09 - Arrow Functions: deixando o código ainda menos verboso:
+
+- Vamos deixar o código menos verboso:
+- **Ex.:** `.map(function(item, indice) { return item - indice % 2; })`
+- Utilizando *arrow function*:
+- **Ex.:** `.map((item, indice) => item - indice % 2)`
+- Quando uma *arrow function* possui apenas uma instrução, o valor dessa instrução é retornado automaticamente;
