@@ -124,3 +124,12 @@
 ### Atividade 07 - O problema com datas:
 
 - Ao definir uma data por `new Date(2016, 11, 12)`, a data será definida como **12 de dezembro de 2016**. Isso acontece pois, se `Date` for instanciado com esse formato, o mês é obtido entre os valores 0 e 11 (0 sendo janeiro e 11 sendo dezembro);
+
+### Atividade 08 - Resolvendo um problema com o paradigma funcional:
+
+- *Spread operator* (`...`): separa um *array* em vários elementos e atribui cada um a um parâmetro diferente de uma função;
+- `map(item, indice)`: função que todo *array* possui. Percorre os itens do *array*, podendo alterá-los;
+- **Ex.:** `array.map(function(item) { return item + 10; });`
+- Para resolver o problema com a data, utilizaremos ambos recursos acima mencionados;
+- **Ex.:** `let data = new Date(...this._inputData.value.split('-').map(function(item, indice) { return item - indice % 2; }));`
+- A linha acima instancia uma nova data, que recebe um *array*, tratado pela função `map` e separado em parâmetros individuais, pelo *spread operator*. **Obs.:** o módulo utilizado para tratar o parâmetro funciona nesse caso, pois são passados três parâmetros na função, e apenas o valor do **mês** é subtraído por 1, resolvendo, assim, o problema que tínhamos com a data;
