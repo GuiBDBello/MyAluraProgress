@@ -141,3 +141,8 @@
 - Utilizando *arrow function*:
 - **Ex.:** `.map((item, indice) => item - indice % 2)`
 - Quando uma *arrow function* possui apenas uma instrução, o valor dessa instrução é retornado automaticamente;
+
+### Atividade 15 - "Isso" não encaixa em um "Date"? Se vira!:
+
+- Imagine que você possui uma data no formato 'DD-MM-YYYY' e quer convertê-la para 'YYYY/MM/DD', uma forma de fazer isso é a seguinte:
+- **Ex.:** `let data = '17-05-2016'; data = new Date(data.split('-').reverse().join('/'));`
