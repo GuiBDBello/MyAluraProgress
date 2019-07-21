@@ -171,3 +171,20 @@
 - `static`: palavra-chave utilizada para definir que um método é **da classe**, ou seja, não é necessária uma instância da classe (objeto) para utilizar tal método;
 - Uma classe *Helper* que possui apenas métodos estáticos não deve ser instanciada. Para isso, seu construtor deve ser escrito da seguinte forma:
 - **Ex.:** `constructor() { throw new Error('Esta classe não pode ser instanciada!'); }`
+
+### Atividade 04 - Template Strings:
+
+- *Template string*: parecida com uma string normal, porém seu conteúdo fica entre crases (\`\`);
+- `${nome}`: interpolação da variável `nome` dentro de uma *template string*;
+- **Ex.:** ``console.log(`A idade de ${nome} é ${idade}.`);``
+
+#### Expressão regular:
+
+- Declara-se uma expressão regular entre duas barras (`/conteudo/`). Para retornar a data no formato `YYYY-MM-DD`, deve-se criar a expressão regular:
+- **Ex.:** `/\d{4}-\d{2}-\d{2}/`
+- `\d`: deve ser um número;
+- `\d{4}`: deve ser quatro números em sequência;
+- `\D`: deve ser diferente de um número;
+- É possível testar uma expressão regular:
+- **Ex.:** `if (!/\d{4}-\d{2}-\d{2}/.test(texto)) throw new Error('Deve estar no formato aaaa-mm-dd');`
+- Qualquer outro caractere dentro da expressão regular será mostrado sem alterações;
