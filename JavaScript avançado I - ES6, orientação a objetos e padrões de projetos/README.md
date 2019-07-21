@@ -194,3 +194,9 @@
 #### Lista:
 
 - `this._negociacoes.push(negociacao);`: insere uma nova negociação no *array* `negociacoes`;
+
+### Atividade 06 - Blindando as negociações dentro na lista:
+
+- Deve-se blindar as negociações para que elas não possam ser alteradas de maneiras externas:
+- **Ex.:** `get negociacoes() { return [].concat(this._negociacoes); }`
+- Isso faz com que seja retornada uma "cópia" da lista que existe em um objeto, impossibilitando que a lista original seja acessada ou alterada;
