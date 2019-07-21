@@ -160,3 +160,8 @@
 - `negociacao.data.getMonth()`: método de um objeto do tipo `Date` que retorna o mês;
 - `negociacao.data.getFullYear()`: método de um objeto do tipo `Date` que retorna o ano;
 - `let diaMesAno = negociacao.data.getDate() + '/' + (negociacao.data.getMonth() + 1) + '/' + negociacao.data.getFullYear();`: para obter o mês correto, deve-se somar 1 em seu valor, pois a classe `Date` armazena os meses com valores entre 0 e 11;
+
+### Atividade 02 - Isolando a responsabilidade de conversão de datas:
+
+- Uma classe *Helper* é uma classe "ajudante"/auxiliar. Por exemplo, a classe `DateHelper.js` possui métodos para converter `textoParaData(texto)` e `dataParaTexto(data)`;
+- **Ex.:** `let data = new DateHelper().textoParaData(this._inputData.value);`
