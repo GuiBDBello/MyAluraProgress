@@ -165,3 +165,9 @@
 
 - Uma classe *Helper* é uma classe "ajudante"/auxiliar. Por exemplo, a classe `DateHelper.js` possui métodos para converter `textoParaData(texto)` e `dataParaTexto(data)`;
 - **Ex.:** `let data = new DateHelper().textoParaData(this._inputData.value);`
+
+### Atividade 03 - Métodos estáticos:
+
+- `static`: palavra-chave utilizada para definir que um método é **da classe**, ou seja, não é necessária uma instância da classe (objeto) para utilizar tal método;
+- Uma classe *Helper* que possui apenas métodos estáticos não deve ser instanciada. Para isso, seu construtor deve ser escrito da seguinte forma:
+- **Ex.:** `constructor() { throw new Error('Esta classe não pode ser instanciada!'); }`
