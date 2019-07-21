@@ -188,3 +188,9 @@
 - É possível testar uma expressão regular:
 - **Ex.:** `if (!/\d{4}-\d{2}-\d{2}/.test(texto)) throw new Error('Deve estar no formato aaaa-mm-dd');`
 - Qualquer outro caractere dentro da expressão regular será mostrado sem alterações;
+
+### Atividade 05 - Criando nosso ListModel:
+
+#### Lista:
+
+- `this._negociacoes.push(negociacao);`: insere uma nova negociação no *array* `negociacoes`;
