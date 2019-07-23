@@ -244,3 +244,8 @@
 </tbody>
 ```
 - O bloco de código acima é escrito dentro do método `_template()` da classe `NegociacoesView`. Ele cria uma nova negociação de uma linha e quatro colunas, e a adiciona ao corpo da tabela (`tbody`). O método `join('')` concatena todos os itens da lista gerada pelo `map()`, convertendo o *array* para *string*;
+
+### Atividade 04 - Totalizando o volume em nosso Template:
+
+- *Immediately Invoked Function Expression* (IIFE): é uma função auto-invocada;
+- **Ex.:** `(function() { return total; })()`
