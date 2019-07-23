@@ -255,3 +255,13 @@
 - `reduce(function(total, n) { ... }, valorInicial)`: processa um *array* e retorna um único resultado. `total` representa o elemento cumulativo e `n` representa o item do *array*, enquanto `valorInicial` representa o valor inicial do `total`;
 - Utilizando *arrow function*, a função fica da seguinte forma:
 - **Ex.:** `model.negociacoes.reduce((total, n) => total + n.volume, 0.0)`
+
+
+## Aula 06 - Generalizando a solução da nossa View
+
+### Atividade 01 - Classe Mensagem:
+
+- Assim como o método `get`, que existe para buscar um atributo, também há o método `set`, cujo objetivo é definir o valor de um atributo:
+**Ex.:** `set texto(texto) { this._texto = texto; }`
+- O ES6 permite que um construtor possua valores padrões para seus parâmetros:
+**Ex.:** `constructor(texto='') { this._texto = texto; }`
