@@ -223,3 +223,24 @@
 - `_template()`: retorna o conteúdo *HTML* da *view* em uma *template string*;
 - `update()`: atribui o conteúdo do *HTML* ao elemento relacionado À *view* (normalmente uma `<div>` vazia):
 - **Ex.:** `update() { this._elemento.innerHTML = this._template(); }`
+
+### Atividade 02 - Construindo um template dinâmico com a função map:
+
+- A tabela deverá se atualizar ao abrir a página e a cada adição de uma nova negociação;
+- Alteraremos o conteúdo de `<tbody>` contido na *template string* da *view* utilizando uma interpolação:
+- **Ex.:**
+```
+<tbody>
+	${model.negociacoes.map(n => {
+		return `
+			<tr>
+				<td>${DateHelper.dataParaTexto(n.data)}</td>
+				<td>${n.quantidade}</td>
+				<td>${n.valor}</td>
+				<td>${n.volume}</td>
+			</tr>
+		`;
+	}).join('')}
+</tbody>
+```
+- O bloco de código acima é escrito dentro do método `_template()` da classe `NegociacoesView`. Ele cria uma nova negociação de uma linha e quatro colunas, e a adiciona ao corpo da tabela (`tbody`). O método `join('')` concatena todos os itens da lista gerada pelo `map()`, convertendo o *array* para *string*;
