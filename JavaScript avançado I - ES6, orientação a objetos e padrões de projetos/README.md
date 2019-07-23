@@ -204,3 +204,22 @@
 ### Atividade 14 - Expressão regular ainda melhor:
 
 - `/^\d{4}-\d{2}-\d{2}$/`: O `ˆ` indica "começando com " e o `$` "terminando com".
+
+
+## Aula 05 - Temos o modelo, mas e a view?
+
+### Atividade 01 - Classes que representam nossas Views:
+
+- Uma *view* é um "pedaço" do nosso HTML. No nosso sistema, a tabela de negociações será uma *view*;
+- Esse "pedaço" do HTML deve ser referenciado em algum lugar de sua página. Uma prática comum é criar uma `<div></div>` vazia, que possui apenas um `id`, para receber o conteúdo da *view*:
+- **Ex.:** `<div id="negociacoesView"></div>`
+
+#### View no código:
+
+- `_elemento`: atributo da classe que recebe, no construtor, o elemento *HTML* ao qual a *view* é relacionada;
+- **Ex.:** `constructor(elemento) { this._elemento = elemento; }`
+- Sua instanciação se dá por:
+- **Ex.:** `this._negociacoesView = new NegociacoesView($('negociacoesView'));`
+- `_template()`: retorna o conteúdo *HTML* da *view* em uma *template string*;
+- `update()`: atribui o conteúdo do *HTML* ao elemento relacionado À *view* (normalmente uma `<div>` vazia):
+- **Ex.:** `update() { this._elemento.innerHTML = this._template(); }`
