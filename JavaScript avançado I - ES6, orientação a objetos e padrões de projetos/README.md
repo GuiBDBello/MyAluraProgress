@@ -249,3 +249,9 @@
 
 - *Immediately Invoked Function Expression* (IIFE): é uma função auto-invocada;
 - **Ex.:** `(function() { return total; })()`
+
+### Atividade 05 - Totalizando o volume em nosso Template com a função reduce:
+
+- `reduce(function(total, n) { ... }, valorInicial)`: processa um *array* e retorna um único resultado. `total` representa o elemento cumulativo e `n` representa o item do *array*, enquanto `valorInicial` representa o valor inicial do `total`;
+- Utilizando *arrow function*, a função fica da seguinte forma:
+- **Ex.:** `model.negociacoes.reduce((total, n) => total + n.volume, 0.0)`
