@@ -277,3 +277,11 @@
 - **Ex.:** `class Cachorro extends Animal { }`
 - Ao carregar as classes utilizando a tag `<script>` ou outra, a classe-pai deve ser carregada antes das classes-filhas;
 - `super(elemento);`: método que chama o construtor da classe-pai;
+
+### Atividade 04 - Construtor vs super:
+
+- Para validar que todas as classes-filhas sobrescrevem um método, deve-se criar um método que dispare uma exceção:
+- **Ex.:** `_template(model) { throw new Error('O método template deve ser implementado.') }`
+- Assim, quando o método é implementado, não ocorre erro algum, e quando não for implementado, o método utilizado será o da classe-pai, que irá disparar a exceção;
+- Não existem, em JavaScript, as classes/métodos abstratos, que obrigam a classe-filha a implementar um método;
+- E, para finalizar, como um método sobrescrito não deve ser privado para ser acessado pelas classes-filhas, retiramos o *underline* (`_`) da assinatura do método `_template`;
