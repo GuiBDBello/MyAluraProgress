@@ -265,3 +265,7 @@
 **Ex.:** `set texto(texto) { this._texto = texto; }`
 - O ES6 permite que um construtor possua valores padrões para seus parâmetros:
 **Ex.:** `constructor(texto='') { this._texto = texto; }`
+
+### Atividade 02 - Criando a classe MensagemView:
+
+- **Ex.:** ``return model.texto ? `<p class="alert alert-info">${model.texto}</p>` : '<p></p>';``: cria um *if* ternário que exibe o parágrafo apenas se 'texto' possui algum conteúdo. **Obs.:** uma *string* vazia, em *JavaScript*, é avaliada como `false`;
