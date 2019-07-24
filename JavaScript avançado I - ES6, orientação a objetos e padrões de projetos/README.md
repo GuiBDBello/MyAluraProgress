@@ -269,3 +269,11 @@
 ### Atividade 02 - Criando a classe MensagemView:
 
 - **Ex.:** ``return model.texto ? `<p class="alert alert-info">${model.texto}</p>` : '<p></p>';``: cria um *if* ternário que exibe o parágrafo apenas se 'texto' possui algum conteúdo. **Obs.:** uma *string* vazia, em *JavaScript*, é avaliada como `false`;
+
+### Atividade 03 - Herança e reutilização de código:
+
+- Herança: uma classe extrai código comum entre outras classes e depois disponibiliza para elas, através de herança;
+- `extends`: palavra-chave utilizada para herdar uma classe;
+- **Ex.:** `class Cachorro extends Animal { }`
+- Ao carregar as classes utilizando a tag `<script>` ou outra, a classe-pai deve ser carregada antes das classes-filhas;
+- `super(elemento);`: método que chama o construtor da classe-pai;
