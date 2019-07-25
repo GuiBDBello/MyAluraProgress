@@ -285,3 +285,9 @@
 - Assim, quando o método é implementado, não ocorre erro algum, e quando não for implementado, o método utilizado será o da classe-pai, que irá disparar a exceção;
 - Não existem, em JavaScript, as classes/métodos abstratos, que obrigam a classe-filha a implementar um método;
 - E, para finalizar, como um método sobrescrito não deve ser privado para ser acessado pelas classes-filhas, retiramos o *underline* (`_`) da assinatura do método `_template`;
+
+### Atividade 10 - Classes abstratas, tem como?:
+
+- No JavaScript (*ECMAScript*) não há uma forma de evitar alguém dar `new` na classe `View`, no entanto isso existe no *TypeScript*. A linguagem *TypeScript* que se baseia no JavaScript, já possui vários recursos que ainda não existem no JavaScript, incluindo classes abstratas.
+- Resumindo, com *TypeScript* poderíamos usar a palavra chave `abstract` que proíbe instanciar objetos dessa classe, por exemplo:
+- **Ex.:** `abstract class View { }`
