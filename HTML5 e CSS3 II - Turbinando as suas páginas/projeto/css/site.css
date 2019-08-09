@@ -3,6 +3,7 @@ html {
 }
 
 body {
+    font-size: 200%;
     font-family: "Crimson Text", "Times New Roman", serif;
     background-color: #F2FFFC;
     line-height: 1.5;
@@ -20,11 +21,11 @@ h1 {
 }
 
 .titulo-principal {
-    font-size: 3em;
+    font-size: 300%;
     text-align: center;
     background-color: #851944;
     color: #FFF;
-    padding: 25px;
+    padding: 1.25rem;
     border-bottom: .5rem solid #000;
 }
 
@@ -56,7 +57,7 @@ main p {
 }
 
 .navegacao-site h1 {
-    font-size: 30px;
+    font-size: 2em;
     margin-bottom: 25px;
 }
 
