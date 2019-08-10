@@ -15,3 +15,11 @@
 - `em`: tem como padrão a fonte do elemento pai;
 - `rem`: tem como padrão a fonte do navegador. É possível, também, controlá-lo pelo `font-size` do elemento/tag `html`;
 - `ch`: tem como base a largura do caractere zero da fonte usada;
+
+### Aula 02 - Absolute mais a fundo:
+
+### Atividade 01 - Usando o position absolute:
+
+- Para tirar algum elemento do "fluxo" da página, pode-se utilizar a propriedade `position: absolute`;
+- O `position: absolute` é relativo ao primeiro elemento-pai que possui um `position` definido. Se não possuir nenhum, é relativo ao navegador;
+- Para isso, na classe do elemento-pai, adicione `position: relative`;
