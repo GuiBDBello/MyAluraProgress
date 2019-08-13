@@ -43,6 +43,8 @@
 .saudacao em {
     color: #851944;
     font-size: 4em;
+    display: inline-block;
+    transform: rotate(-5deg) skew(-10deg);
 }
 .botao-index {
     font-size: 1.25em;
