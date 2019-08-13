@@ -42,3 +42,27 @@
   - `-o-`: *Opera* (versões antigas);
 - É importante ressaltar que quando os navegadores utilizam prefixo em uma propriedade, significa que ela está em *BETA*, ou seja, em fase de testes;
 - <a>caniuse.com</a>: site que cataloga funcionalidades para mostrar as versões em que elas estão disponíveis;
+
+
+## Aula 04 - Transformações
+
+### Atividade 01 - Transformações geométricas usando CSS3:
+
+- `transform`: propriedade que rotaciona elementos CSS;
+- **Ex.:** `div { transform: rotate(30deg); }`
+- É possível transformar o tamanho de um elemento:
+- **Ex.:** `div { transform: scale(1.5); }`
+- Também pode-se entortar um elemento:
+- **Ex.:** `div { transform: skew(20deg); }`
+- Ou até deslocar o elemento:
+- **Ex.:** `div { transform: translate(10px, 50px); }`
+- `translateX`, `translateY` e `translateZ`: desloca um elemento em um eixo específico;
+- A projeção de uma cena 3D é chamada de "perspectiva". É possível regular essa projeção com a propriedade `perspective`;
+- `perspective-origin`: o ponto de origem do "cone" de projeção de uma perspectiva;
+
+#### Exemplos:
+
+- `bolas { perspective: 4px; }`: define que a pespectiva do usuário está `4px` afastado da tela. Deve ser definida no elemento-pai dos elementos afetados por ela;
+- `bola1 { transform: translateZ(2px); }`: move a bola1 `2px` mais perto do usuário (perspectiva);
+- `bola2 { transform: translateZ(-1px); }`: afasta a bola2 `2px` do usuário;
+- `transform-style: preserve-3d`: define que as transformações no elemento sejam feitas em 3D;
