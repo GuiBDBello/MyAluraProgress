@@ -20,7 +20,7 @@
 }
 .foto-home {
     height: 200px;
-    border-radius: 0 50%;
+    border-radius: 10% 50% / 50% 10%;
 }
 .saudacao p {
     font-size: 1.5em;
