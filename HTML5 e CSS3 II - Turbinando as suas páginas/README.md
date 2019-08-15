@@ -85,3 +85,14 @@
 - A propriedade `opacity` é utilizada para deixar as palavras transparentes. Seu valor pode variar entre 0 e 1, sendo 0 invisível e 1 totalmente visível;
 - A transparência (ou opacidade) pode ser definida também no `background-color`, utilizando a sintaxe rgb, que aceita um quarto parâmetro, o *alpha*:
 - **Ex.:** `background-color: rgb(0, 0, 0, .3);`
+
+### Atividade 04 - Simulando bordas com sombras:
+
+- É possível, também, adicionar mais de uma sombra no mesmo elemento:
+- **Ex.:** `box-shadow: 10px 10px black, -10px -10px orange;`
+- Ou simular múltiplas bordas com a propriedade `box-shadow`:
+- **Ex.:** ```box-shadow: 0 0 0 4px black,
+            0 0 0 8px blue,
+            0 0 0 12px black,
+            0 0 0 16px blue,
+            0 0 0 20px black;```
