@@ -67,6 +67,21 @@
 - `bola2 { transform: translateZ(-1px); }`: afasta a bola2 `2px` do usuário;
 - `transform-style: preserve-3d`: define que as transformações no elemento sejam feitas em 3D;
 
-### Aula 09 - Cubo:
+### Atividade 09 - Cubo:
 
 - É possível testar código HTML e CSS em http://dabblet.com/ e http://cssdeck.com/
+
+
+## Aula 05 - Sombras e opacidade
+
+### Atividade 01 - Sombras e opacidade:
+
+- É possível colocar sombras em um texto apenas com CSS3, utilizando a propriedade `text-shadow`;
+- `text-shadow: 2px 2px #000;`: adiciona uma sombra preta 2 pixels para a direita e 2 pixels para baixo;
+- Elementos HTML também podem receber sombras, com a propriedade `box-shadow`;
+- `box-shadow: 0 0 1em #000;`: o terceiro parâmetro "difunde" a sombra;
+- Também é possível colocar mais de uma sombra no mesmo elemento;
+- **Ex.:** `box-shadow: 0 0 1em #000, inset 0 0 .5em #FFF;`
+- A propriedade `opacity` é utilizada para deixar as palavras transparentes. Seu valor pode variar entre 0 e 1, sendo 0 invisível e 1 totalmente visível;
+- A transparência (ou opacidade) pode ser definida também no `background-color`, utilizando a sintaxe rgb, que aceita um quarto parâmetro, o *alpha*:
+- **Ex.:** `background-color: rgb(0, 0, 0, .3);`

@@ -53,6 +53,7 @@ body {
 .foto-home {
     height: 200px;
     border-radius: 10% 50% / 50% 10%;
+    box-shadow: 0 0 1em #000;
 }
 .saudacao p {
     font-size: 1.5em;
@@ -88,6 +89,7 @@ body {
     margin: 2em auto;
     display: block;
     text-align: center;
+    box-shadow: 0 0 1em #000, inset 0 0 .5em #FFF;
 }
 .secao-inicio {
     padding: 2em;
@@ -97,6 +99,7 @@ body {
     text-shadow: 2px 2px #000;
     text-transform: uppercase;
     margin-bottom: .5em;
+    text-shadow: 5px 5px #000;
 }
 .trabalhos {
     background-color: #3C1D3D;
@@ -205,12 +208,14 @@ main {
     top: 15%;
     left: 60%;
     transform: translate(-50%, -50%) rotate(-5deg) translateZ(1px) scale(0.25);
+    opacity: 0.3;
 }
 
 .acessibilidade {
     top: 30%;
     left: 35%;
     transform: translate(-50%, -50%) rotate(-5deg) translateZ(3px) scale(0.25);
+    opacity: 0.8;
 }
 
 .responsivo {
