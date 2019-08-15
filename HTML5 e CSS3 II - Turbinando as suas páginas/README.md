@@ -83,7 +83,7 @@
 - Também é possível colocar mais de uma sombra no mesmo elemento;
 - **Ex.:** `box-shadow: 0 0 1em #000, inset 0 0 .5em #FFF;`
 - A propriedade `opacity` é utilizada para deixar as palavras transparentes. Seu valor pode variar entre 0 e 1, sendo 0 invisível e 1 totalmente visível;
-- A transparência (ou opacidade) pode ser definida também no `background-color`, utilizando a sintaxe rgb, que aceita um quarto parâmetro, o *alpha*:
+- A transparência (ou opacidade) pode ser definida também no `background-color`, utilizando a sintaxe `rgba`, que aceita um quarto parâmetro, o *alpha*:
 - **Ex.:** `background-color: rgb(0, 0, 0, .3);`
 
 ### Atividade 04 - Simulando bordas com sombras:
@@ -96,3 +96,23 @@
             0 0 0 12px black,
             0 0 0 16px blue,
             0 0 0 20px black;```
+
+### Atividade 09 - box-shadow para simular um modal:
+
+- ```
+<div style="width: 40%;
+            height: 30%;
+            background-color: #FFF;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 9999;
+            box-shadow: 0 0 0 9999px rgba(0, 0, 0, .75);
+            padding: 3% 3%;
+            text-align: center;
+            font-size: 2em;
+            color: #000;">
+    Parabéns, você foi premiado com uma formação Java! Clique <a href="">aqui</a> para continuar
+</div>
+```

@@ -65,7 +65,7 @@ main p {
 }
 
 .rodape-pagina {
-    background-color: rgb(0, 0, 0, .3);
+    background-color: rgba(0, 0, 0, .3);
     color: #000;
     padding: 20px;
     clear: both;
