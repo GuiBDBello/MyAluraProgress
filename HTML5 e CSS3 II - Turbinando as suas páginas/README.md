@@ -116,3 +116,19 @@
     Parabéns, você foi premiado com uma formação Java! Clique <a href="">aqui</a> para continuar
 </div>
 ```
+
+
+## Aula 06 - Gradientes
+
+### Atividade 01 - Gradientes:
+
+- É possível gerar um **gradiente** utilizando apenas CSS3. Para isso, utiliza-se a propriedade `background-image` com `linear-gradient('direcao', 'corinicial', 'corfinal')`:
+- **Ex.:** `background-image: linear-gradient(to bottom, #F00, #000);`
+- Também é possível utilizar mais cores e definir a posição que a cor deve aparecer:
+- **Ex.:** `background-image: linear-gradient(to bottom, #F00, #888 80%, #000);`
+- Pode-se alterar o tamanho do *background* que o gradiente irá utilizar (largura e altura):
+- **Ex.:** `background-size: 100% 200px;`
+- Por padrão, o gradiente se repetirá, até completar o *background* inteiro. Para alterar esse comportamento, existe a propriedade `background-repeat`:
+- **Ex.:** `background-repeat: no-repeat;`
+- A propriedade `background-attachment` com valor `fixed` permite que o fundo permaneça fixo na página:
+- **Ex.:** `background-attachment: fixed;`

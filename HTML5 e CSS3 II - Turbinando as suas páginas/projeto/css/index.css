@@ -50,6 +50,11 @@ body {
 .blog li {
     width: 30%;
 }
+.titulo-principal {
+    background-image: linear-gradient(to bottom, #F00, #888 80%, #000);
+    background-size: 100% 200px;
+    background-repeat: no-repeat;
+}
 .foto-home {
     height: 200px;
     border-radius: 10% 50% / 50% 10%;
@@ -105,6 +110,9 @@ body {
     background-color: #3C1D3D;
     border-top: .5em solid #000;
     border-bottom: .5em solid #000;
+    background-image: linear-gradient(135deg, transparent, transparent 14px, rgba(0,0,0,.1) 14px, rgba(0,0,0,.1) 15px, transparent 15px, transparent);
+    background-size: 20px 20px;
+    background-attachment: fixed;
 }
 .trabalhos h2 {
     color: #FFF;
