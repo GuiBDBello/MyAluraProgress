@@ -132,3 +132,8 @@
 - **Ex.:** `background-repeat: no-repeat;`
 - A propriedade `background-attachment` com valor `fixed` permite que o fundo permaneça fixo na página:
 - **Ex.:** `background-attachment: fixed;`
+
+### Atividade 05 - As propriedades background-*:
+
+- A propriedade `background-position` permite dizer onde a imagem começa a ser desenhada;
+- **Ex.:** `background-position: center;` ou `background-position: 50% 50%;`
