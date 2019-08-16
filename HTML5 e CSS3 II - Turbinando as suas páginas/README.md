@@ -91,30 +91,32 @@
 - É possível, também, adicionar mais de uma sombra no mesmo elemento:
 - **Ex.:** `box-shadow: 10px 10px black, -10px -10px orange;`
 - Ou simular múltiplas bordas com a propriedade `box-shadow`:
-- **Ex.:** ```box-shadow: 0 0 0 4px black,
-            0 0 0 8px blue,
-            0 0 0 12px black,
-            0 0 0 16px blue,
-            0 0 0 20px black;```
+- **Ex.:** ```
+    box-shadow: 0 0 0 4px black,
+                0 0 0 8px blue,
+                0 0 0 12px black,
+                0 0 0 16px blue,
+                0 0 0 20px black;
+```
 
 ### Atividade 09 - box-shadow para simular um modal:
 
 - ```
-<div style="width: 40%;
-            height: 30%;
-            background-color: #FFF;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 9999;
-            box-shadow: 0 0 0 9999px rgba(0, 0, 0, .75);
-            padding: 3% 3%;
-            text-align: center;
-            font-size: 2em;
-            color: #000;">
-    Parabéns, você foi premiado com uma formação Java! Clique <a href="">aqui</a> para continuar
-</div>
+    <div style="width: 40%;
+                height: 30%;
+                background-color: #FFF;
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 9999;
+                box-shadow: 0 0 0 9999px rgba(0, 0, 0, .75);
+                padding: 3% 3%;
+                text-align: center;
+                font-size: 2em;
+                color: #000;">
+        Parabéns, você foi premiado com uma formação Java! Clique <a href="">aqui</a> para continuar
+    </div>
 ```
 
 
@@ -148,15 +150,15 @@
 
 - Exemplo de elipse:
 - ```
-background-image: radial-gradient(
-    ellipse at left bottom,
-    rgba(60, 29, 61, 0.8),
-    rgba(60, 29, 61, 0.8) 65%,
-    black 65%,
-    black 70%,
-    transparent 70%,
-    transparent);
-width: 100%;
-background-size: 25% 100%;
-background-repeat: no-repeat;
+    background-image: radial-gradient(
+                        ellipse at left bottom,
+                        rgba(60, 29, 61, 0.8),
+                        rgba(60, 29, 61, 0.8) 65%,
+                        black 65%,
+                        black 70%,
+                        transparent 70%,
+                        transparent);
+    width: 100%;
+    background-size: 25% 100%;
+    background-repeat: no-repeat;
 ```
