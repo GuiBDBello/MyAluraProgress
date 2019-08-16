@@ -137,3 +137,9 @@
 
 - A propriedade `background-position` permite dizer onde a imagem começa a ser desenhada;
 - **Ex.:** `background-position: center;` ou `background-position: 50% 50%;`
+
+### Atividade 07 - Gradientes radiais:
+
+- **Ex.:** `background-image: radial-gradient(yellow, red);`
+- Assim como no gradiente linear, é possível especificar várias paradas de cor, e a posição:
+- **Ex.:** `background-image: radial-gradient(circle at bottom left, yellow, red);`
