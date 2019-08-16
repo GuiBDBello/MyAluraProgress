@@ -143,3 +143,20 @@
 - **Ex.:** `background-image: radial-gradient(yellow, red);`
 - Assim como no gradiente linear, é possível especificar várias paradas de cor, e a posição:
 - **Ex.:** `background-image: radial-gradient(circle at bottom left, yellow, red);`
+
+### Atividade 08 - Gradiente no footer:
+
+- Exemplo de elipse:
+- ```
+background-image: radial-gradient(
+    ellipse at left bottom,
+    rgba(60, 29, 61, 0.8),
+    rgba(60, 29, 61, 0.8) 65%,
+    black 65%,
+    black 70%,
+    transparent 70%,
+    transparent);
+width: 100%;
+background-size: 25% 100%;
+background-repeat: no-repeat;
+```
