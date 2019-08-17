@@ -185,3 +185,21 @@ background-repeat: no-repeat;
 - Para selecionar todos os links que começam com `http://`, pode-se utilizar o seletor: `[href^="http://"]`;
 - O circunflexo representa que queremos que o atributo **comece com** um valor;
 - Para selecionar todos os atributos que tenham qualquer classe, pode-se utilizar o seletor: `[class]`;
+
+
+## Aula 08 - Pseudoclasses
+
+### Atividade 01 - Pseudoclasses:
+
+- As classes CSS são declaradas utilizando o caracter **.**, já as pseudoclasses utilizam o caracter **:**;
+- `:nth-child(odd)`/`:nth-child(even)`, `:nth-child(3)`, `:first-child`/`:last-child`: pseudoclasse que permite selecionar elementos HTML específicos;
+- É possível, também, passar "fórmulas" para selecionar os elementos. Por exemplo: `:nth-child(3n+2)` inicia no segundo elemento e pula três elementos a cada iteração;
+- Ao identificar apenas a pseudoclasse, todos os elementos da página serão afetados. Para especificar melhor os elementos, normalmente combina-se uma tag à pseudoclasse: `table :nth-child(odd)`;
+- **Cuidado!** Há diferenças entre o seletor `tr:first-child` e `tr :first-child`. O primeiro representa o elemento que é o primeiro filho de outro elemento, e o segundo representa uma relação pai-filho, ou seja, o primeiro filho do elemento especificado;
+- `blockquote:nth-of-tyoe(even)`: em um contexto com diversos tags no mesmo "escopo", conta os números pares apenas do elemento do tipo `blockquote`;
+
+#### Interatividade:
+
+- É possível melhorar a interatividade do usuário utilizando as pseudoclasses;
+- `:hover`: pseudoclasse que é ativada pelo navegador quando ocorre um evento do mouse estar em cima do elemento;
+- Além da `:hover`, existem também outras, como: `:focus` (teclado com foco em um elemento), `:active` (botão pressionado sobre o elemento), `:checked` (formulários);
