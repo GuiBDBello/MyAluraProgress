@@ -91,32 +91,32 @@
 - É possível, também, adicionar mais de uma sombra no mesmo elemento:
 - **Ex.:** `box-shadow: 10px 10px black, -10px -10px orange;`
 - Ou simular múltiplas bordas com a propriedade `box-shadow`:
-- **Ex.:** ```
-    box-shadow: 0 0 0 4px black,
-                0 0 0 8px blue,
-                0 0 0 12px black,
-                0 0 0 16px blue,
-                0 0 0 20px black;
+```
+box-shadow: 0 0 0 4px black,
+            0 0 0 8px blue,
+            0 0 0 12px black,
+            0 0 0 16px blue,
+            0 0 0 20px black;
 ```
 
 ### Atividade 09 - box-shadow para simular um modal:
 
-- ```
-    <div style="width: 40%;
-                height: 30%;
-                background-color: #FFF;
-                position: fixed;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                z-index: 9999;
-                box-shadow: 0 0 0 9999px rgba(0, 0, 0, .75);
-                padding: 3% 3%;
-                text-align: center;
-                font-size: 2em;
-                color: #000;">
-        Parabéns, você foi premiado com uma formação Java! Clique <a href="">aqui</a> para continuar
-    </div>
+```
+<div style="width: 40%;
+            height: 30%;
+            background-color: #FFF;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 9999;
+            box-shadow: 0 0 0 9999px rgba(0, 0, 0, .75);
+            padding: 3% 3%;
+            text-align: center;
+            font-size: 2em;
+            color: #000;">
+    Parabéns, você foi premiado com uma formação Java! Clique <a href="">aqui</a> para continuar
+</div>
 ```
 
 
@@ -149,18 +149,18 @@
 ### Atividade 08 - Gradiente no footer:
 
 - Exemplo de elipse:
-- ```
-    background-image: radial-gradient(
-                        ellipse at left bottom,
-                        rgba(60, 29, 61, 0.8),
-                        rgba(60, 29, 61, 0.8) 65%,
-                        black 65%,
-                        black 70%,
-                        transparent 70%,
-                        transparent);
-    width: 100%;
-    background-size: 25% 100%;
-    background-repeat: no-repeat;
+```
+background-image: radial-gradient(
+                    ellipse at left bottom,
+                    rgba(60, 29, 61, 0.8),
+                    rgba(60, 29, 61, 0.8) 65%,
+                    black 65%,
+                    black 70%,
+                    transparent 70%,
+                    transparent);
+width: 100%;
+background-size: 25% 100%;
+background-repeat: no-repeat;
 ```
 
 
@@ -175,3 +175,13 @@
 - `>`: pai e filho. Para selecionar apenas os elementos **imediatamente dentro** da div, utiliza-se o caractere `>`;
 - **Ex.:** `div > p { text-indent: 4ch; }`
 - Seletores: tag, **#**id, **.**classe, ancestral** **descendente (espaço), irmão **~** irmão, irmão **+** irmãoSeguinte, pai **>** filho;
+
+### Atividade 10 - Seletor de atributo:
+
+- Além dos seletores já vistos, existe mais um tipo, o de atributo. Dado o elemento `<a href="http://www.alura.com.br">`, podemos selecioná-lo com o seletor `[href="http://www.alura.com.br"]`;
+- Além de selecionar pelo valor inteiro do atributo, é possível selecionar apenas por uma parte dele;
+- Para selecionar todas as imagens com a extensão `.jpg` de uma página, pode-se utilizar o seletor: `[src$=".jpg"]`;
+- O cifrão representa que queremos que o atributo **termine com** um valor;
+- Para selecionar todos os links que começam com `http://`, pode-se utilizar o seletor: `[href^="http://"]`;
+- O circunflexo representa que queremos que o atributo **comece com** um valor;
+- Para selecionar todos os atributos que tenham qualquer classe, pode-se utilizar o seletor: `[class]`;
