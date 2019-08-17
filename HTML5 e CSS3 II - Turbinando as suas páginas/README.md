@@ -162,3 +162,16 @@
     background-size: 25% 100%;
     background-repeat: no-repeat;
 ```
+
+
+## Aula 07 - Seletores avançados do CSS
+
+### Atividade 01 - Conhecendo outros seletores do CSS:
+
+- `~`: depois. Para selecionar elementos **depois de** outro elemento, utiliza-se o caractere `~`;
+- **Ex.:** `li ~ li { margin-top: 1em; }`
+- `+`: logo depois. Para selecionar apenas o elemento **imediatamente após** outro elemento, utiliza-se o caractere `+`;
+- **Ex.:** `img + p { text-indent: 0; }`
+- `>`: pai e filho. Para selecionar apenas os elementos **imediatamente dentro** da div, utiliza-se o caractere `>`;
+- **Ex.:** `div > p { text-indent: 4ch; }`
+- Seletores: tag, **#**id, **.**classe, ancestral** **descendente (espaço), irmão **~** irmão, irmão **+** irmãoSeguinte, pai **>** filho;
