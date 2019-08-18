@@ -203,3 +203,9 @@ background-repeat: no-repeat;
 - É possível melhorar a interatividade do usuário utilizando as pseudoclasses;
 - `:hover`: pseudoclasse que é ativada pelo navegador quando ocorre um evento do mouse estar em cima do elemento;
 - Além da `:hover`, existem também outras, como: `:focus` (teclado com foco em um elemento), `:active` (botão pressionado sobre o elemento), `:checked` (formulários);
+
+### Atividade 04 - Selecionar filho único:
+
+- É possível utilizar mais de uma pseudoclasse ao mesmo tempo;
+- `p:nth-child(3):nth-last-child(1)`: seleciona os parágrafos que são o **terceiro e último** filhos de seus pais;
+- `:nth-child(1):nth-last-child(1)` ou `:only-child`: seleciona os elementos que são **filhos únicos** de seus pais;
