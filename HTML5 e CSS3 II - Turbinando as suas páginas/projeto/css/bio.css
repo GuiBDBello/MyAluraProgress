@@ -16,3 +16,15 @@
     float: left;
     margin-left: 0;
 }
+
+.citacao-bio:hover {
+    box-shadow: 0 0 0 999999px rgba(0, 0, 0, .8);
+}
+
+.citacao-bio:nth-of-type(odd):hover {
+    transform: rotate(5deg) scale(1.2);
+}
+
+.citacao-bio:nth-of-type(even):hover {
+    transform: rotate(-5deg) scale(1.2);
+}
