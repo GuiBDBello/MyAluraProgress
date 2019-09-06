@@ -209,3 +209,7 @@ background-repeat: no-repeat;
 - É possível utilizar mais de uma pseudoclasse ao mesmo tempo;
 - `p:nth-child(3):nth-last-child(1)`: seleciona os parágrafos que são o **terceiro e último** filhos de seus pais;
 - `:nth-child(1):nth-last-child(1)` ou `:only-child`: seleciona os elementos que são **filhos únicos** de seus pais;
+
+### Atividade 08 - O atributo tabindex:
+
+- `tabindex="1"`: atributo HTML que torna um elemento acessível por teclado e toque. O número permite mudar a ordem de navegação pelo teclado. Para que o efeito fique visível, é necessário adicionar a pseudoclasse `:focus` ao seletor CSS;
