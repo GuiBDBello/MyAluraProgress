@@ -196,7 +196,7 @@ background-repeat: no-repeat;
 - É possível, também, passar "fórmulas" para selecionar os elementos. Por exemplo: `:nth-child(3n+2)` inicia no segundo elemento e pula três elementos a cada iteração;
 - Ao identificar apenas a pseudoclasse, todos os elementos da página serão afetados. Para especificar melhor os elementos, normalmente combina-se uma tag à pseudoclasse: `table :nth-child(odd)`;
 - **Cuidado!** Há diferenças entre o seletor `tr:first-child` e `tr :first-child`. O primeiro representa o elemento que é o primeiro filho de outro elemento, e o segundo representa uma relação pai-filho, ou seja, o primeiro filho do elemento especificado;
-- `blockquote:nth-of-tyoe(even)`: em um contexto com diversos tags no mesmo "escopo", conta os números pares apenas do elemento do tipo `blockquote`;
+- `blockquote:nth-of-type(even)`: em um contexto com diversos tags no mesmo "escopo", conta os números pares apenas do elemento do tipo `blockquote`;
 
 #### Interatividade:
 
