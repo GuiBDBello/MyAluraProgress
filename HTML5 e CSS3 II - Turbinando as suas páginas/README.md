@@ -226,3 +226,10 @@ background-repeat: no-repeat;
 - Antes de adicionar conteúdo ao HTML da página, questione-se: "*é conteúdo?*" ou "*é decorativo?*". Se for conteúdo, adicione/altere no HTML. Se for decorativo, apenas no CSS.
 - `blockquote:before` e `blockquote:after`: pega o primeiro e o último elemento de um blockquote;
 - `content: '"'`: propriedade exclusiva dos pseudoelementos `:before` e `:after`. Sem essa propriedade, o elemento não é mostrado;
+
+### Atividade 08 - Legenda nos links das redes sociais:
+
+- A propriedade `content` pode assumir valores baseados em atributos do elemento da página. Por exemplo, se tivermos uma `<div>` na página com a seguinte declaração: `<div title="Teste">` conseguimos usar o texto do atributo `title` nos pseudoelementos:
+- **Ex.:** `div::before { content: attr(title); }`
+- Atributos customizados: a partir do HTML 5, podemos criar nossos próprios atributos em qualquer elemento do HTML sem deixá-lo inválido. Basta que o atributo comece com `data-`:
+- **Ex.:** `<a href="#" data-legenda="Clique em mim">Link</a>`
