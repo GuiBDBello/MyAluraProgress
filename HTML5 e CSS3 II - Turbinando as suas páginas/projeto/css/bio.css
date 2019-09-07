@@ -31,3 +31,10 @@
 .citacao-bio:nth-of-type(even):focus {
     transform: rotate(-5deg) scale(1.2);
 }
+
+blockquote:before {
+    content: '"';
+    font-size: 10em;
+    position: absolute;
+    color: rgba(0, 0, 0, 0.2);
+}
