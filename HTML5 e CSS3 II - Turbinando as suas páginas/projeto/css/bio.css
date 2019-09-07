@@ -32,14 +32,18 @@
     transform: rotate(-5deg) scale(1.2);
 }
 
-blockquote:before {
-    content: '"';
-    font-size: 10em;
+.citacao-bio::before {
+    content: '“';
     position: absolute;
-    color: rgba(0, 0, 0, 0.2);
+    font-size: 10em;
+    color: #bbb;
+    line-height: .8;
+}
+.citacao-bio > p {
+    position: relative;
 }
 
-.container > p:first-letter {
+.container > p::first-letter {
     font-size: 200%;
     font-weight: bold;
     color: #3C1D3D;
