@@ -213,3 +213,16 @@ background-repeat: no-repeat;
 ### Atividade 08 - O atributo tabindex:
 
 - `tabindex="1"`: atributo HTML que torna um elemento acessível por teclado e toque. O número permite mudar a ordem de navegação pelo teclado. Para que o efeito fique visível, é necessário adicionar a pseudoclasse `:focus` ao seletor CSS;
+
+
+## Aula 09 - Pseudoelementos
+
+### Atividade 01 - Pseudoelementos:
+
+- Letra capitular: primeira letra possui um estilo diferente, maior que o resto. Normalmente ela ocupa um "bloco" apenas para ela;
+- `<p><span>L</span>orem ipsum...`: forma de adicionar letra capitular no HTML;
+- `p:first-letter`: pseudoelemento que aplica o estilo apenas à primeira letra. Forma de adicionar letra capitular no CSS;
+- `p::first-letter`: a partir do CSS3, foi alterada a sintaxe dos pseudoelementos para utilizar duas vezes o catactere `::`;
+- Antes de adicionar conteúdo ao HTML da página, questione-se: "*é conteúdo?*" ou "*é decorativo?*". Se for conteúdo, adicione/altere no HTML. Se for decorativo, apenas no CSS.
+- `blockquote:before` e `blockquote:after`: pega o primeiro e o último elemento de um blockquote;
+- `content: '"'`: propriedade exclusiva dos pseudoelementos `:before` e `:after`. Sem essa propriedade, o elemento não é mostrado;
