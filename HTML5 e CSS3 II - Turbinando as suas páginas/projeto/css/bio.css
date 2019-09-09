@@ -52,11 +52,6 @@
     line-height: 1;
 }
 
-.icones-redes-sociais a:hover::after,
-.icones-redes-sociais a:focus::after {
-    content: attr(data-tooltip);
-}
-
 .icones-redes-sociais a {
     position: relative;
 }
@@ -71,4 +66,16 @@
     width: 300%;
     background: black;
     font-size: .75em;
+}
+
+.icones-redes-sociais a:hover::before,
+.icones-redes-sociais a:focus::before {
+    content: '';
+    width: 1em;
+    height: 1em;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(.5em) rotate(45deg);
 }
