@@ -233,3 +233,23 @@ background-repeat: no-repeat;
 - **Ex.:** `div::before { content: attr(title); }`
 - Atributos customizados: a partir do HTML 5, podemos criar nossos próprios atributos em qualquer elemento do HTML sem deixá-lo inválido. Basta que o atributo comece com `data-`:
 - **Ex.:** `<a href="#" data-legenda="Clique em mim">Link</a>`
+
+
+## Aula 10 - Formulários
+
+### Atividade 01 - Trabalhando com formulários:
+
+- `<form></form>`: cria um formulário HTML;
+- `<label for="nome">`: cria um rótulo que indica o valor do elemento de *id* "nome";
+- `<input id="nome">`: cria uma entrada para que o usuário interaja;
+- Ao associar um label com o *id* de um `input`, ao clicar no texto da `label`, o `input` ganha foco;
+- `<label><input type="radio">Outro</label>`: outra forma de associar um `label` e um `input`;
+- `<input type="radio" name="outro" value="">`: o atributo `name=""` utiliza seu conteúdo para distinguir a informação enviada ao servidor. Ao atribuir o mesmo `name` a vários `input` de `type="radio"`, é possível selecionar apenas um desses *radio buttons* por vez. O atributo value especifica o valor desse campo;
+- `<textarea id="msg" name="mensagem" cols="30" rows="6"></textarea>`: o atributo `cols="30"` define que o texto possui 30 colunas (largura) e o atributo `rows="6"` define que o texto possui 6 linhas (altura);
+- `<input type="submit" value="Enviar">`: botão que envia a requisição;
+- `<button type="submit">Enviar</button>`: botão que envia a requisição. Possibilita mais customização que o `input`;
+- `type="email"`: atributo do `input` que valida se um email possui ao menos um caractere `@`;
+- `required`: atributo do `input` que define que o campo é obrigatório;
+- `autofocus`: atributo do `input` que foca no campo quando a página é carregada;
+- `<fieldset><legend>Dados pessoais</legend></fieldset>`: agrupa os campos relacionados (Dados pessoais, Assunto, etc.);
+- Apesar das validações vistas, lembre-se: **Sempre valide no servidor!**;
