@@ -253,3 +253,15 @@ background-repeat: no-repeat;
 - `autofocus`: atributo do `input` que foca no campo quando a página é carregada;
 - `<fieldset><legend>Dados pessoais</legend></fieldset>`: agrupa os campos relacionados (Dados pessoais, Assunto, etc.);
 - Apesar das validações vistas, lembre-se: **Sempre valide no servidor!**;
+
+### Atividade 02 - Criando um formulário de contato:
+
+- Um `<label>` não pode ter dois `<input>` dentro dele. Para esse caso, é possível utilizar um `<fieldset>`;
+- **Ex.:**
+```
+<fieldset>
+    <input type="radio" value="Outro">
+    <label>Outro</label>
+    <input type="text">
+</fieldset>
+```
