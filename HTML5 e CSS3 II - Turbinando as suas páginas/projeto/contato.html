@@ -33,16 +33,15 @@
                         <input type="radio" name="assunto" value="blog">
                         Blog
                     </label>
-                    <label>
-                        <input type="radio" name="assunto" value="outro">
-                        Outro
-                    </label>
+                    <fieldset>
+                        <input type="radio" name="assunto" value="outro" id="outro">
+                        <label for="outro">Outro</label>
+                        <input type="text" name="outro-assunto">
+                    </fieldset>
                 </fieldset>
 
                 <label for="msg">Mensagem</label>
                 <textarea id="msg" name="mensagem" cols="30" rows="6"></textarea>
-
-                <input type="submit" value="Enviar">
                 <button type="submit">Enviar <strong>para mim</strong></button>
             </form>
         </div>
