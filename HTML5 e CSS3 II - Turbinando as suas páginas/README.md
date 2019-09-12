@@ -276,3 +276,10 @@ background-repeat: no-repeat;
 - `month`, usado para que o usuário forneça um mês e um ano, útil para que ele forneça a validade de um cartão de crédito, por exemplo.
 - `number`, para que o usuário forneça um número como sua idade ou a quantidade de um produto num carrinho de compras.
 - `range`, usado para que se possa escolher um valor numérico numa faixa de valores possíveis, normalmente sem muita preocupação com a precisão, como por exemplo quando se deseja que o usuário dê uma nota para um serviço.
+
+### Atividade 07 - O atributo pattern:
+
+- No atributo `pattern`, podemos especificar qual padrão deve seguir um determinado campo, para que o usuário preencha-o corretamente. Especificamos esse padrão usando uma linguagem chamada expressão regular. Para garantir que um campo só tenha letras e números, por exemplo, podemos fazer:
+- **Ex.:** `<input pattern="[A-Za-z0-9]*">`
+- Se quisermos garantir uma quantidade mínima de letras e números, podemos fazer:
+- **Ex.:** `<input pattern="[A-Za-z0-9]{8,}">`
