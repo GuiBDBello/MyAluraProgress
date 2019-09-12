@@ -283,3 +283,8 @@ background-repeat: no-repeat;
 - **Ex.:** `<input pattern="[A-Za-z0-9]*">`
 - Se quisermos garantir uma quantidade mínima de letras e números, podemos fazer:
 - **Ex.:** `<input pattern="[A-Za-z0-9]{8,}">`
+
+### Atividade 08 - Descrevendo o pattern:
+
+- É possível mudar a mensagem padrão de um `pattern`, da seguinte forma:
+- **Ex.:** `<input pattern="[0-9]*" title="Preencha somente com números">`
