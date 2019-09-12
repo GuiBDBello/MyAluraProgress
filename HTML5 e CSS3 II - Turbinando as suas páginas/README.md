@@ -265,3 +265,14 @@ background-repeat: no-repeat;
     <input type="text">
 </fieldset>
 ```
+
+### Atividade 04 - Tipos de input:
+
+- `date`, usado para que o usuário possa fornecer uma data como seu aniversário ou data de nascimento.
+- `datetime`, para que o usuário possa fornecer, além da data, um horário, útil para que ele forneça um momento para ser lembrado de algo.
+- `datetime-local`, para quando a data e o horário que o usuário fornecer sejam independentes de local ou quando o sistema é feito para trabalhar sempre no mesmo fuso horário, como por exemplo quando o usuário precisa fornecer a data e o horário de nascimento dele no horário de Brasília.
+- `hidden`, usado para enviar informações extra para o servidor além daquelas fornecidas pelo usuário, como um identificador do usuário gerado pelo sistema.
+- `image`, usado para enviar os dados do formulário com um botão gráfico, pode ser usado para não apenas ter um botão mais bonito, como também para fazer uma interação mais dinâmica com o usuário, em que o resultado da ação depende do local onde ele clica na imagem, uma vez que esse tipo de botão envia as coordenadas do clique para o servidor.
+- `month`, usado para que o usuário forneça um mês e um ano, útil para que ele forneça a validade de um cartão de crédito, por exemplo.
+- `number`, para que o usuário forneça um número como sua idade ou a quantidade de um produto num carrinho de compras.
+- `range`, usado para que se possa escolher um valor numérico numa faixa de valores possíveis, normalmente sem muita preocupação com a precisão, como por exemplo quando se deseja que o usuário dê uma nota para um serviço.
