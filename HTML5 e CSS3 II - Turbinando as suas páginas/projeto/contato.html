@@ -25,19 +25,11 @@
 
                 <fieldset>
                     <legend>Assunto</legend>
-                    <label>
-                        <input type="radio" name="assunto" value="consult">
-                        Consultoria
-                    </label>
-                    <label>
-                        <input type="radio" name="assunto" value="blog">
-                        Blog
-                    </label>
-                    <fieldset>
-                        <input type="radio" name="assunto" value="outro" id="outro">
-                        <label for="outro">Outro</label>
-                        <input type="text" name="outro-assunto">
-                    </fieldset>
+                    <select name="assunto">
+                        <option value="blog">Blog</option>
+                        <option value="servico">Serviço</option>
+                        <option value="outro">Outro</option>
+                    </select>
                 </fieldset>
 
                 <label for="msg">Mensagem</label>
