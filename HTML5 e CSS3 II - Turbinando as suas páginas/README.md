@@ -288,3 +288,7 @@ background-repeat: no-repeat;
 
 - É possível mudar a mensagem padrão de um `pattern`, da seguinte forma:
 - **Ex.:** `<input pattern="[0-9]*" title="Preencha somente com números">`
+
+### Atividade 09 - Estilizando formulários:
+
+- `label[for="mensagem"] { }`: seletor de atributo;
