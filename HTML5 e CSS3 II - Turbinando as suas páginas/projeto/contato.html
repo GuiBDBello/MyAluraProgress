@@ -6,7 +6,7 @@
     <link rel="icon" href="imagens/favicon.png">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/site.css">
-    <link rel="stylesheet" href="css/bio.css">
+    <link rel="stylesheet" href="css/contato.css">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700">
 </head>
@@ -17,19 +17,27 @@
             <form>
                 <fieldset>
                     <legend>Dados pessoais</legend>
-                    <label for="nome">Nome:</label>
+                    <label for="nome">Nome</label>
                     <input id="nome" type="text" name="nome" required autofocus placeholder="Seu nome aqui" pattern="[A-Za-z ']{4,}" title="O nome precisa ter pelo menos 4 caracteres">
-                    <label for="email">Email:</label>
-                    <input id="email" name="e-mail" required placeholder="seu@email.com">
+                    <label for="email">Email</label>
+                    <input id="email" type="email" name="e-mail" required placeholder="seu@email.com">
                 </fieldset>
-
+                
                 <fieldset>
                     <legend>Assunto</legend>
-                    <select name="assunto">
-                        <option value="blog">Blog</option>
-                        <option value="servico">Serviço</option>
-                        <option value="outro">Outro</option>
-                    </select>
+                     <label>
+                        <input type="radio" name="assunto" value="consult">
+                        Consultoria
+                    </label>
+                    <label>
+                        <input type="radio" name="assunto" value="blog">
+                        Blog
+                    </label>
+                    <fieldset>
+                        <input type="radio" name="assunto" value="outro" id="outro">
+                        <label for="outro">Outro</label>
+                        <input type="text" name="outro-assunto">
+                    </fieldset>
                 </fieldset>
 
                 <label for="msg">Mensagem</label>
