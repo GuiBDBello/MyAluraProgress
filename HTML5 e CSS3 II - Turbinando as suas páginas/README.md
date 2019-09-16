@@ -292,3 +292,18 @@ background-repeat: no-repeat;
 ### Atividade 09 - Estilizando formulários:
 
 - `label[for="mensagem"] { }`: seletor de atributo;
+
+### Atividade 10 - Melhorando a usabilidade com truques CSS:
+
+- Para esconder um campo por padrão e mostrá-lo apenas quando certa opção for selecionada, podemos utilizar a pseudoclasse `:checked`:
+- **Ex.:**
+```
+/* Não selecionado: esconde o elemento */
+input[value="Outro"] ~ input {
+    display: none;
+}
+/* Selecionado: mostra o elemento */
+input[value="Outro"]:checked ~ input {
+    display: inline;
+}
+```
