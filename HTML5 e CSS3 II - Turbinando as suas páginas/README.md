@@ -307,3 +307,19 @@ input[value="Outro"]:checked ~ input {
     display: inline;
 }
 ```
+
+
+## Aula 11 - Cálculos com CSS
+
+### Atividade 01 - Cálculos com CSS:
+
+- É possível realizar cálculos no CSS, utilizando a função `calc()`;
+- Por exemplo, para afastar um elemento da borda, podemos utilizar:
+- **Ex.:**
+```
+#nome {
+    width: calc(100% - 2em);
+    position: relative;
+    left: 2em;
+}
+```
