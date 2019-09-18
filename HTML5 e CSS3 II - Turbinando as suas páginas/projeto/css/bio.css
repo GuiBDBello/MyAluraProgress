@@ -79,3 +79,16 @@
     left: 0;
     transform: translateY(.5em) rotate(45deg);
 }
+
+table {
+    border-collapse: separate;
+    border-spacing: 5px;
+}
+th {
+    background-color: red;
+    border: 5px solid black;
+}
+td {
+    background-color: blue;
+    border: 5px solid black;
+}
