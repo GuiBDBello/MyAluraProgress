@@ -80,15 +80,24 @@
     transform: translateY(.5em) rotate(45deg);
 }
 
-table {
+.habilidades {
     border-collapse: separate;
-    border-spacing: 5px;
+    border-spacing: 0.25em;
+    margin: 1em 0px;
 }
-th {
-    background-color: red;
-    border: 5px solid black;
+.habilidades th {
+    background-color: #851944;
+    color: white;
+    font-weight: bold;
 }
-td {
-    background-color: blue;
-    border: 5px solid black;
+.habilidades thead th {
+    background-color: #3C1D3D;
+}
+.habilidades td {
+    background-color: #EEE;
+}
+
+.habilidades th,
+.habilidades td {
+    padding: 1em;
 }
