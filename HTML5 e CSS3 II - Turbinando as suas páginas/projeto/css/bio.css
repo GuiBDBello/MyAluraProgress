@@ -101,3 +101,11 @@
 .habilidades td {
     padding: 1em;
 }
+
+.habilidades [colspan] {
+    text-align: center;
+    font-style: italic;
+}
+.habilidades [rowspan] {
+    vertical-align: middle;
+}

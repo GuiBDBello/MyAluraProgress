@@ -338,3 +338,22 @@ input[value="Outro"]:checked ~ input {
 
 - Por padrão HTML, quando duas bordas estão uma ao lado da outra, elas se unem. Para alterar esse comportamento, altere o valor do atributo `border-collapse: separate`;
 - `border-spacing: 5px`: define um espaçamento de `5px` para as bordas do elemento. Semelhante ao `margin`;
+
+### Atividade 03 - rowspan e colspan:
+
+- `colspan`: permite dizer que uma célula de uma tabela deve ocupar mais de uma coluna;
+- `rowspan`: permite dizer que uma célula de uma tabela deve ocupar mais de uma linha;
+- Quando uma célula ocupa várias colunas, podemos centralizar o texto horizontalmente:
+- **Ex.:**
+```
+.habilidades [colspan] {
+    text-align: center;
+}
+```
+- E, quando temos uma célula ocupando várias linhas, podemos centralizar o texto verticalmente:
+- **Ex.:**
+```
+.habilidades [rowspan] {
+    vertical-align: middle;
+}
+```
