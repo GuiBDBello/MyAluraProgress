@@ -330,3 +330,11 @@ input[value="Outro"]:checked ~ input {
 - A primeira é a **legibilidade**: podemos deixar algumas contas explícitas, facilitando o entendimento e a manutenção do código.
 - A segunda é o **poder**: conseguimos criar layouts que não eram possíveis sem JavaScript antes, como elementos que ocupam um espaço que outros deixaram sobrando.
 - A terceira é a **flexibilidade**: como podemos misturar unidades nas contas, conseguimos deixar nosso layout ainda mais flexível, com um comportamento adequado em tamanhos de tela diferentes e com fontes diferentes.
+
+
+## Aula 12 - Tabelas semânticas
+
+### Atividade 01 - Tabelas Semânticas:
+
+- Por padrão HTML, quando duas bordas estão uma ao lado da outra, elas se unem. Para alterar esse comportamento, altere o valor do atributo `border-collapse: separate`;
+- `border-spacing: 5px`: define um espaçamento de `5px` para as bordas do elemento. Semelhante ao `margin`;
