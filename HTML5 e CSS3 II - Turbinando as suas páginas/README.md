@@ -323,3 +323,10 @@ input[value="Outro"]:checked ~ input {
     left: 2em;
 }
 ```
+
+### Atividade 06 - Vantagens de usar o calc:
+
+- A função `calc()` traz três grandes vantagens para nosso código.
+- A primeira é a **legibilidade**: podemos deixar algumas contas explícitas, facilitando o entendimento e a manutenção do código.
+- A segunda é o **poder**: conseguimos criar layouts que não eram possíveis sem JavaScript antes, como elementos que ocupam um espaço que outros deixaram sobrando.
+- A terceira é a **flexibilidade**: como podemos misturar unidades nas contas, conseguimos deixar nosso layout ainda mais flexível, com um comportamento adequado em tamanhos de tela diferentes e com fontes diferentes.
