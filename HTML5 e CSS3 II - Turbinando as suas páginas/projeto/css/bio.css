@@ -26,15 +26,9 @@ h1 {
     margin: 1em 2em;
     width: 30ch;
     box-sizing: border-box;
-    transition: transform 1s linear, box-shadow 1s ease-in;
+    transition: box-shadow 1s, transform 1s;
     transition-delay: 0s, 1s;
     position: relative;
-    -webkit-animation: quica 1s infinite;
-    animation: quica 1s infinite;
-    -webkit-animation-direction: alternate;
-    animation-direction: alternate;
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
 }
 
 @keyframes quica {
