@@ -357,3 +357,59 @@ input[value="Outro"]:checked ~ input {
     vertical-align: middle;
 }
 ```
+
+
+## Aula 13 - Transições e animações
+
+### Atividade 01 - Transições e animações:
+
+#### Transição:
+
+- `transition`: propriedade que altera um elemento HTML de forma gradual;
+- **Ex.:** `transition: 1s;`: transiciona o estilo das pseudoclasses no decorrer de 1 segundo;
+- É possível controlar separadamente as transições:
+- **Ex.:** `transition: transform 1s, box-shadow 5s;`
+- `transition-delay`: define o tempo que a transição demora para iniciar. Assim como a `transition`, é possível adicionar mais de um valor, separando-os por vírgula;
+- `linear`, `ease-in`, `ease-out` e `ease-in-out`: tipos de transições. São adicionados após o tempo da transição:
+- **Ex.:** `transition: transform 1s linear, box-shadow 1s ease-in;`
+
+#### Animação:
+
+- `animation` ou `-webkit-animation`: permite criar animações independente da interação do usuário com a página;
+- **Ex.:** `animation: aparece 2s ease-out;`
+- É necessário especificar a animação `aparece`. Para isso, utiliza-se `@keyframes` ou `@-webkit-keyframes`:
+- **Ex.:**
+```
+@keyframes aparece {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+```
+- **Obs.:** é possível utilizar `from {}` no lugar de `0%{}` e `to{}` no lugar de `100%`;
+- `animation: quica 1s infinite`: o valor `infinite` repete a animação infinitamente;
+- `animation-direction: alternate;`: após seu término, realiza a animação de trás para frente;
+- `animation-timing-function: ease-in;`: define o tipo da animação;
+- `animation-play-state: paused;`: pausa a animação;
+**Obs.:** lembre-se que essas animações podem precisar do prefixo `-webkit-`;
+- Também é possível definir diversos controles do fluxo da animação:
+- **Ex.:**
+```
+@keyframes quica {
+    from {
+        top: 0;
+    }
+    90% {
+        transform: rotate(-2deg);
+    }
+    95% {
+        transform: rotate(2deg);
+    }
+    to {
+        top: 1em;
+    }
+}
+```
