@@ -29,6 +29,9 @@ body {
     transform-origin: 0 0;
     transform: translate(calc(.707 * (3.5em - 100%) + 100%), calc(-.707 * 3.5em)) rotate(45deg);
     line-height: 1;
+    -webkit-animation: aparece 0.5s;
+    animation: aparece 0.5s;
+    transition-delay: 2s;
 }
 .blog .inicio-post {
     position: absolute;
