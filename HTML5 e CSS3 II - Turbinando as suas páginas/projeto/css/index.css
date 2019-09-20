@@ -90,6 +90,18 @@ body {
     font-size: 4em;
     display: inline-block;
     transform: rotate(-5deg) skew(-10deg);
+    animation: flutua 1s infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    position: relative;
+}
+@keyframes flutua {
+    from {
+        top: -5px;
+    }
+    to {
+        top: 5px;
+    }
 }
 .botao-index {
     font-size: 1.25em;
