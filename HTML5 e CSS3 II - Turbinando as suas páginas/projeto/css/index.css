@@ -32,6 +32,7 @@ body {
     -webkit-animation: aparece 0.5s;
     animation: aparece 0.5s;
     transition-delay: 2s;
+    animation-fill-mode: backwards;
 }
 .blog .inicio-post {
     position: absolute;

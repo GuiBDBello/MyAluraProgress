@@ -413,3 +413,7 @@ input[value="Outro"]:checked ~ input {
     }
 }
 ```
+
+### Atividade 11 - Banner aparecendo na home - 2:
+
+- `animation-fill-mode: backwards;`: aplica o estilo inicial da animação antes dela começar;
