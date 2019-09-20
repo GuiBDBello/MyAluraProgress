@@ -95,6 +95,9 @@ body {
     animation-timing-function: ease-in-out;
     position: relative;
 }
+.saudacao:hover em {
+    animation-play-state: paused;
+}
 @keyframes flutua {
     from {
         top: -5px;
