@@ -213,6 +213,18 @@ main {
     font-weight: bold;
     color: #D5447E;
     font-size: .2em;
+    /* versão prefixada se quisermos dar suporte
+    a usuários Chrome, Safari e Opera */
+    -webkit-animation: aparece 2s;
+    animation: aparece 2s;
+}
+
+@keyframes aparece {
+    /* podemos usar a palavra-chave "from" também no lugar de 0% */
+    0% {
+        opacity: 0;
+        transform: scale(0.001);
+    }
 }
 
 .eficiencia {
