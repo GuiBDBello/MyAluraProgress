@@ -12,3 +12,7 @@
 .portfolio img {
     width: 100%;
 }
+
+.portfolio li:first-child {
+    width: 100%;
+}
