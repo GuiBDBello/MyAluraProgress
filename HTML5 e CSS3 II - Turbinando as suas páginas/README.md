@@ -421,3 +421,29 @@ input[value="Outro"]:checked ~ input {
 ### Atividade 13 - Pausando animações:
 
 - `animation-play-state: paused;`: para a animação do elemento HTML;
+
+
+## Aula 14 - Flexbox
+
+### Atividade 01 - Flexbox:
+
+- A `flexbox` permite controlar os elementos-filhos a partir do elemento-pai:
+- **Ex.:**
+```
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+```
+- `display: flex`: faz com que o container se comporte como um `flexbox`, controlando os elementos-filhos;
+- `align-items: center`: centraliza os elementos verticalmente;
+- `justify-content: space-between`: distribui o espaço que sobrou entre os elementos;
+- `flex-direction: column`: posiciona os elementos da `flexbox` um abaixo do outro;
+- `order: 1` altera a ordem dos elementos, sem alterar o HTML;
+- É possível utilizar pseudoelementos para alterar as `flexbox`:
+- **Ex.:** `.box:nth-child(2) { flex: 2; }`
+- `flex: 1`: define que todos os elementos-filhos tenham o mesmo tamanho;
+- `flex-grow`: determina quanto o elemento deve crescer;
+- `flex-shrink`: determina quanto o elemento deve diminuir;
+- `flex-basis`: tamanho mínimo para ser renderizado na página;
