@@ -1,101 +1,73 @@
-/* Podemos usar um seletor de atributo para selecionar
-   apenas a legenda desse campo e não dos outros */
 legend,
-label[for="msg"] {
+label[for="mensagem"] {
     font-weight: bold;
     margin-top: 1em;
 }
-
-/* As tags <label> que têm o atributo "for" são
-   os rótulos dos campos sem ser os assuntos */
-label[for] {
+label[for],
+button {
     display: block;
 }
-
-/* Selecionamos apenas os campos de texto */
 input[type="text"],
 input[type="email"],
 textarea {
-    /* Força o navegador a usar a mesma fonte da página */
     font-family: inherit;
-    /* Inclusive o tamanho dela */
     font-size: 100%;
     padding: .25em .5em;
     width: 100%;
     box-sizing: border-box;
     border: 1px solid #ccc;
 }
-
-/* alguns ajustes para o campo "Outro": deixar ele na mesma linha dos outros assuntos */
-fieldset > fieldset {
-    display: inline;
-}
-
-/* deixar o rótulo dele inline de novo */
-label[for="outro"] {
-    display: inline;
-}
-
-/* deixar só esse campo sem ocupar a tela toda */
-input[name="outro-assunto"] {
-    width: auto;
-}
-
-input:focus,
-textarea:focus {
-    background-color: #FFD;
-}
-
-input:invalid {
-    box-shadow: 0 0 3px red;
-}
-
 button {
-    /* Precisamos tirar a borda que o navegador coloca por padrão */
     border: 0;
     padding: .5em 1em;
     font-family: "Open Sans Condensed", sans-serif;
     background-color: #3C1D3D;
     color: white;
     font-size: 1.2em;
-    /* Faz com que o botão apareça na direita */
     margin-left: auto;
     margin-top: 1em;
-    display: block;
 }
-
-button:hover,
+input:invalid {
+    box-shadow: 0 0 3px red;
+}
+input:focus,
+textarea:focus {
+    background-color: #FFD;
+}
 button:focus {
     background-color: #8C1D3D;
 }
-
-input[value="Outro"] ~ input {
+input[value="Outro"] + input {
     display: none;
 }
-
-input[value="Outro"]:checked ~ input {
-    display: inline;
+input[value="Outro"]:checked + input {
+    display: block;
 }
-
-label[for="nome"] {
+.com-icone {
     position: relative;
+    margin-bottom: 0;
 }
-
-label[for="nome"]:after {
-    content: "";
-    background-color: #666;
-    background-repeat: no-repeat;
-    background-image: url(../imagens/usuario.png);
-    background-size: 50% 50%;
-    background-position: center;
+.com-icone::after {
+    content: '';
+    position: absolute;
     width: 2em;
     height: 2em;
-    position: absolute;
-    top: 100%;
+    background-color: #8C1D3D;
+    background-size: 50% 50%;
+    background-position: center center;
+    background-repeat: no-repeat;
     left: 0;
+    top: 100%;
 }
-#nome {
+.com-icone + input {
     width: calc(100% - 2em);
     position: relative;
     left: 2em;
+    margin-top: 0;
+}
+.com-icone[for="nome"]::after {
+    background-image: url(../imagens/usuario.png);
+}
+.com-icone[for="email"]::after {
+    background-image: url(../imagens/email.png);
 }

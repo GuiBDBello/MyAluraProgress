@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>João da Silva - Biografia</title>
+    <title>João da Silva - Contato</title>
     <link rel="icon" href="imagens/favicon.png">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/site.css">
@@ -16,33 +16,31 @@
         <div class="container">
             <form>
                 <fieldset>
-                    <legend>Dados pessoais</legend>
-                    <label for="nome">Nome</label>
-                    <input id="nome" type="text" name="nome" required autofocus placeholder="Seu nome aqui" pattern="[A-Za-z ']{4,}" title="O nome precisa ter pelo menos 4 caracteres">
-                    <label for="email">Email</label>
-                    <input id="email" type="email" name="e-mail" required placeholder="seu@email.com">
+                    <legend>Seus dados</legend>
+                    <label class="com-icone" for="nome">Nome completo</label>
+                    <input id="nome" type="text" name="nome" required autofocus pattern="[A-Za-z ']{4,}" title="O nome precisa ter pelo menos 4 caracteres">
+                    <label class="com-icone" for="email">E-mail</label>
+                    <input id="email" type="email" name="email" required placeholder="seu@email.com">
                 </fieldset>
-                
                 <fieldset>
                     <legend>Assunto</legend>
-                     <label>
-                        <input type="radio" name="assunto" value="consult">
-                        Consultoria
-                    </label>
                     <label>
-                        <input type="radio" name="assunto" value="blog">
+                        <input type="radio" name="assunto" value="Blog">
                         Blog
                     </label>
-                    <fieldset>
-                        <input type="radio" name="assunto" value="outro" id="outro">
-                        <label for="outro">Outro</label>
+                    <label>
+                        <input type="radio" name="assunto" value="Serviço">
+                        Serviço
+                    </label>
+                    <label>
+                        <input type="radio" name="assunto" value="Outro">
+                        Outro
                         <input type="text" name="outro-assunto">
-                    </fieldset>
+                    </label>
                 </fieldset>
-
-                <label for="msg">Mensagem</label>
-                <textarea id="msg" name="mensagem" cols="30" rows="6"></textarea>
-                <button type="submit">Enviar <strong>para mim</strong></button>
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" cols="60" rows="10" placeholder="Digite aqui sua mensagem"></textarea>
+                <button type="submit">Enviar mensagem</button>
             </form>
         </div>
     </main>

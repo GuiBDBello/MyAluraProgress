@@ -2,20 +2,19 @@
     display: flex;
     flex-wrap: wrap;
 }
-
 .portfolio li {
-    flex: 1 1 45%;
-    border: 8px solid black;
+    border: .5em solid black;
     background-color: #FAFFFC;
-    width: 45%;
+    flex: 1 1 45%;
     box-sizing: border-box;
-    padding: 16px;
-    margin-right: 16px;
-    margin-bottom: 16px;
+    padding: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
 }
 
 .portfolio img {
     width: 100%;
+    box-shadow: 0 0 4px #000;
 }
 
 .portfolio li:first-child {
