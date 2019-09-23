@@ -1,11 +1,7 @@
-html {
-    font-size: 120%;
-}
-
 body {
-    font-size: 200%;
     font-family: "Crimson Text", "Times New Roman", serif;
     background-color: #F2FFFC;
+    font-size: 120%;
     line-height: 1.5;
     display: flex;
     flex-wrap: wrap;
@@ -15,50 +11,48 @@ h1,
 h2,
 .subtitulo-principal {
     font-family: "Open Sans Condensed", "Arial", sans-serif;
-    font-size: .3em;
 }
 
 h1 {
     text-transform: uppercase;
-    font-size: 60px;
-    text-shadow: 5px 5px #000;
+    font-size: 3em;
+    text-shadow: 3px 3px #000;
 }
 
 .titulo-principal {
-    position: relative;
-    font-size: 300%;
     text-align: center;
     background-color: #851944;
     color: #FFF;
-    padding: 1.25rem;
+    padding: 2rem;
     border-bottom: .5rem solid #000;
 }
 
 .subtitulo-texto {
-    font-size: 30px;
+    font-size: 1.5em;
     clear: both;
 }
 
 main a {
     color: #851944;
 }
+
 main a:hover,
 main a:focus,
-footer a:hover,
-footer a:focus {
-    color: #F00;
+footer a:focus,
+footer a:hover {
+    color: red;
 }
 
 main p {
     text-align: justify;
-    margin: 20px 0;
+    margin: 1em 0;
 }
 
 .navegacao-site {
     text-align: center;
     background-color: #3C1D3D;
     color: #F2FFFC;
-    padding: 20px;
+    padding: 1em;
 }
 
 .navegacao-site a {
@@ -73,37 +67,35 @@ main p {
 }
 
 .navegacao-site h1 {
-    font-size: 2em;
-    margin-bottom: 25px;
+    font-size: 1.5em;
+    margin-bottom: 1em;
 }
 
 .rodape-pagina {
-    background-image: radial-gradient(
-        ellipse at left bottom,
-        rgba(60, 29, 61, 0.8),
-        rgba(60, 29, 61, 0.8) 65%,
-        black 65%,
-        black 70%,
-        transparent 70%,
-        transparent);
-    width: 100%;
-    background-size: 25% 100%;
-    background-repeat: no-repeat;
-    color: #000;
-    padding: 20px;
+    color: #F2FFFC;
+    padding: 1em;
     clear: both;
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
     box-sizing: border-box;
+    background-repeat: no-repeat;
+    text-shadow: 1px 1px black;
+    background-image: radial-gradient(ellipse at left bottom,
+        rgba(60, 29, 61, 0.8),
+        rgba(60, 29, 61, 0.8) 65%,
+        black 65%,
+        black 70%,
+        transparent 70%);
+    background-size: 25% 100%;
 }
 
 .container {
-    width: 720px;
+    width: 80ch;
     margin-left: auto;
     margin-right: auto;
-    padding: 30px 0;
+    padding: 1.5em 0;
 }
 
 strong {
@@ -138,29 +130,54 @@ em {
 }
 
 main {
-    width: calc(100% - 0.9 * 300px);
-    padding-bottom: 80px;
+    padding-bottom: 4em;
     flex-grow: 1;
 }
 
 .minha-foto,
 .navegacao-site {
-    border-left: 10px solid black;
-    border-bottom: 10px solid black;
+    border-left: .5em solid black;
     box-sizing: border-box;
-    /* removemos a borda aqui */
 }
 
 .navegacao-site {
     width: calc(0.9 * 300px);
-    /* removemos position e top, além do float, já removido acima */
     padding-top: calc(300px + 1em);
 }
 
 .minha-foto {
+    border-bottom: .5em solid black;
     position: absolute;
     top: 0;
     right: 0;
     height: 300px;
-    border-bottom: .5em solid black;
+}
+
+.icones-redes-sociais a {
+    position: relative;
+}
+
+.icones-redes-sociais a:hover::after,
+.icones-redes-sociais a:focus::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    background: black;
+    color: white;
+    top: 100%;
+    width: 300%;
+    right: 0;
+    text-indent: 0;
+    font-size: .75em;
+}
+
+.icones-redes-sociais a:hover::before,
+.icones-redes-sociais a:focus::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 1em;
+    height: 1em;
+    background-color: black;
+    transform: translateY(.5em) rotate(45deg);
 }
