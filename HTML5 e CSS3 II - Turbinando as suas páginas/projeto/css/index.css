@@ -6,6 +6,8 @@ html, body {
 body {
     perspective: 6px;
     perspective-origin: 50% 160px;
+    /* sobrescreve o site.css */
+    display: block;
 }
 
 .banner-twitter {
