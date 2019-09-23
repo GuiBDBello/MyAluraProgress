@@ -447,3 +447,8 @@ input[value="Outro"]:checked ~ input {
 - `flex-grow`: determina quanto o elemento deve crescer;
 - `flex-shrink`: determina quanto o elemento deve diminuir;
 - `flex-basis`: tamanho mínimo para ser renderizado na página;
+
+### Atividade 09 - Migrando a página de portfolio para usar flexbox:
+
+- `flex-wrap: wrap;`: propriedade que altera o comportamento padrão do *flexbox* que todos os itens ficam na mesma linha;
+- `flex: 1 1 45%;`: define que o elemento deve crescer e diminuir na mesma proporção que os outros, mas com um mínimo de 45% de largura;
