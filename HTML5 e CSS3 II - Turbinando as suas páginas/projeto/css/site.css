@@ -7,6 +7,8 @@ body {
     font-family: "Crimson Text", "Times New Roman", serif;
     background-color: #F2FFFC;
     line-height: 1.5;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 h1,
@@ -137,8 +139,8 @@ em {
 
 main {
     width: calc(100% - 0.9 * 300px);
-    float: left;
     padding-bottom: 80px;
+    flex-grow: 1;
 }
 
 .minha-foto,
@@ -146,13 +148,13 @@ main {
     border-left: 10px solid black;
     border-bottom: 10px solid black;
     box-sizing: border-box;
+    /* removemos a borda aqui */
 }
 
 .navegacao-site {
     width: calc(0.9 * 300px);
-    float: right;
-    position: relative;
-    top: 300px;
+    /* removemos position e top, além do float, já removido acima */
+    padding-top: calc(300px + 1em);
 }
 
 .minha-foto {
@@ -160,4 +162,5 @@ main {
     top: 0;
     right: 0;
     height: 300px;
+    border-bottom: .5em solid black;
 }
