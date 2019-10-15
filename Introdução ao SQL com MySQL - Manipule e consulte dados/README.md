@@ -11,3 +11,16 @@
 ### Atividade 04 - Instalando o MySQL Server:
 
 - MySQL e WorkBench: https://dev.mysql.com/downloads/installer/
+
+
+## Aula 02 - Manipulando o banco de dados
+
+### Atividade 01 - Definições:
+
+- Chave primária: campos que suas combinações não podem se repetir dentro das linhas/registros da tabela.
+- Chave estrangeira: ligação entre duas tabelas.
+- Índice: instrumento que facilita encontrar elementos da tabela de maneira mais rápida.
+- Esquema: grupo de tabelas.
+- View: agrupamento de tabelas.
+- Procedures e Funções: lógica estruturada utilizando comandos SQL.
+- Trigger: aviso/alerta programado para ser disparado quando algum comando específico for executado.
