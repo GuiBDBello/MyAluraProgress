@@ -24,3 +24,12 @@
 - View: agrupamento de tabelas.
 - Procedures e Funções: lógica estruturada utilizando comandos SQL.
 - Trigger: aviso/alerta programado para ser disparado quando algum comando específico for executado.
+
+### Atividade 05 - Conhecendo o Workbench:
+
+- `SELECT`: comando SQL para realizar buscas em tabelas.
+- **Ex.:** `SELECT * FROM CITY;` seleciona todos os campos da tabela 'CITY'.
+
+#### Workbench:
+
+- É necessário dar um duplo clique em um *SCHEMA* antes de executar qualquer comando, para que o comando seja executado no *SCHEMA* selecionado.
