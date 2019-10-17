@@ -41,3 +41,7 @@
 - **Obs.:** no MySQL, *DATABASE* e *SCHEMA* são sinônimos.
 - No Windows, o arquivo `my.ini` (arquivo de inicialização do MySQL) é criado no diretório `C:\ProgramData\MySQL\MySQL Server 8.0`. Esse arquivo contém diversas variáveis de ambiente:
 - `datadir`: caminho onde os bancos são criados.
+
+### Atividade 08 - Criando um banco de dados usando assistente:
+
+- Clique com o botão direito na janela *SCHEMAS* e selecione *Create Schema...*. Digite o nome do banco e selecione o *Charset* e *Collation*. Ao clicar em *Apply*, o Workbench irá abrir uma tela e mostrar o comando utilizado para criar esse banco/esquema.
