@@ -28,8 +28,16 @@
 ### Atividade 05 - Conhecendo o Workbench:
 
 - `SELECT`: comando SQL para realizar buscas em tabelas.
-- **Ex.:** `SELECT * FROM CITY;` seleciona todos os campos da tabela 'CITY'.
+- **Ex.:** `SELECT * FROM CITY;` seleciona todos os campos da tabela `CITY`.
 
 #### Workbench:
 
 - É necessário dar um duplo clique em um *SCHEMA* antes de executar qualquer comando, para que o comando seja executado no *SCHEMA* selecionado.
+
+### Atividade 06 - Criando um banco de dados:
+
+- `CREATE {DATABASE | SCHEMA} [IF NOT EXISTS] db_name`: cria um novo banco de dados/esquema se já não existir algum com o nome *db_name*.
+- **Ex.:** `CREATE DATABASE SUCOS;` cria um banco de dados com o nome `SUCOS`.
+- **Obs.:** no MySQL, *DATABASE* e *SCHEMA* são sinônimos.
+- No Windows, o arquivo `my.ini` (arquivo de inicialização do MySQL) é criado no diretório `C:\ProgramData\MySQL\MySQL Server 8.0`. Esse arquivo contém diversas variáveis de ambiente:
+- `datadir`: caminho onde os bancos são criados.
