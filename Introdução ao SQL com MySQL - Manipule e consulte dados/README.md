@@ -49,3 +49,10 @@
 ### Atividade 10 - Apagando banco de dados:
 
 - `DROP {DATABASE | SCHEMA} [IF EXISTS] db_name`: exclui o banco de dados/esquema `db_name`, se ele existir.
+
+### Atividade 12 - MYSQL por linha de comando:
+
+- No Terminal, defina a variável de ambiente do MySQL ou acesse seu diretório de instalação e execute os comandos:
+- `mysql -h localhost -u root -p`: Acessa o MySQL no servidor `localhost`, usuário `root` e com uma senha (digitada a seguir).
+- `USE world`: comando equivalente ao duplo clique em um esquema para selecioná-lo antes de rodar um comando.
+- `EXIT`: sai do MySQL.
