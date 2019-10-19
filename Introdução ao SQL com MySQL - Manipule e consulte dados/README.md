@@ -53,6 +53,59 @@
 ### Atividade 12 - MYSQL por linha de comando:
 
 - No Terminal, defina a variável de ambiente do MySQL ou acesse seu diretório de instalação e execute os comandos:
-- `mysql -h localhost -u root -p`: Acessa o MySQL no servidor `localhost`, usuário `root` e com uma senha (digitada a seguir).
+- `mysql -h localhost -u root -p`: acessa o MySQL no servidor `localhost`, usuário `root` e com uma senha (digitada a seguir).
 - `USE world`: comando equivalente ao duplo clique em um esquema para selecioná-lo antes de rodar um comando.
 - `EXIT`: sai do MySQL.
+
+
+## Aula 03 - Gerenciando as tabelas do banco de dados
+
+### Atividade 01 - Tipos de dados:
+
+- Propriedade *UNSIGNED*: não permite sinal no número. Por isso o conjunto de valores válidos aumentam.
+- Erros de *OUT OF RANGE*: vão ocorrer quando os valores estourarem os limites.
+
+#### Tipos numéricos:
+
+- Inteiros: `TINYINT`, `SMALLINT`, `MEDIUMINT`, `INT`, `BIGINT`
+- Decimais (ponto flutuante): `FLOAT`, `DOUBLE` (arredonda quando o valor for maior que o máximo)
+- Decimais (fixos): `DECIMAL` ou `NUMERIC` **Ex.:** `DECIMAL(5,2)` armazena entre -999,99 e 999,99
+- `BIT`: **Ex.:** `BIT(1)` 1 ou 0, `BIT(2)` 01, 10, 00 ou 11
+
+#### Atributos dos campos numéricos:
+
+- `SIGNED` ou `UNSIGNED`: vai possuir ou não sinal no número.
+- `ZEROFILL`: preenche com Zeros os espaços **Ex.:** `INT(4)` se armazenarmos o valor 5, será gravado 0005.
+- `AUTO_INCREMENT`: sequência auto incrementada.
+
+#### Data e Hora:
+
+- `DATE`: 1000-01-01 até 9999-12-31
+- `DATETIME`: 1000-01-01 00:00:00 até 9999-12-31 23:59:59
+- `TIMESTAMP`: 1970-01-01 00:00:01 UTC até 2038-01-19 UTC
+- `TIME`: -838:59:59 e 839:59:59
+- `YEAR`: 1901 até 2155 (pode ser expresso no formato 2 ou 4 dígitos)
+
+#### Strings:
+
+- `CHAR`: cadeia de caracteres com valor fixo (de 0 a 255).
+- **Ex.:** Em um campo `CHAR(4)`, ao armazenar a String `"aa"`, o banco irá armazenar a String `"  aa"`.
+- `VARCHAR`: cadeia de caracteres com valor variado (de 0 a 255).
+- **Ex.:** Em um campo `VARCHAR(4)`, ao armazenar a String `"aa"`, o banco irá armazenar a String `"aa"`.
+- `BINARY`: cadeia de caracteres com valor fixo (de 0 a 255), expressos em binário.
+- `VARBINARY`: cadeia de caracteres com valor variado (de 0 a 255), expressos em binário.
+- `BLOB`: binário longo. Podemos ter: `TINYBLOB`, `BLOB`, `MEDIUMBLOB`, `LONGBLOB`.
+- `TEXT`: texto longo. Podemos ter: `TINYTEXT`, `TEXT`, `MEDIUMTEXT`, `LONGTEXT`.
+- `ENUM`: permite armazenar uma lista pré-definida de valores.
+- **Ex.:** `Size ENUM('x-small', 'small', 'medium', 'large', 'x-large')` campo `Size` só pode ter os valores pré-determinados.
+
+#### Atributos dos campos String:
+
+- `SET` e `COLLATE`: que tipo de conjunto de caracteres serão suportados.
+
+#### SPACIAL:
+
+- `GEOMETRY`: área de um mapa.
+- `POINT`: latitude e longitude.
+- `LINESTRING`: área de um mapa.
+- `POLYGON`: área de um mapa.
