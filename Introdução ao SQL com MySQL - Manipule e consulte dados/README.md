@@ -138,3 +138,9 @@ PRIMEIRA_COMPRA BIT(1)
 - No Workbench, clique com o botão direito em `Tables` dentro de seu esquema, e selecione `Create Table...`.
 - Em *Table Name*, digite `tbProduto`.
 - Clique abaixo de *Column Name*, digite o nome da coluna e em *Datatype* selecione seu tipo.
+- Após definir as colunas, clique em *Apply*.
+
+### Atividade 06 - Apagando tabelas:
+
+- Utilizando o assistente do Workbench: clique com o botão direito em cima de uma tabela e selecione `Drop Table...` e depois em `Drop Now`.
+- Utilizando SQL: `DROP TABLE tbCliente2`
