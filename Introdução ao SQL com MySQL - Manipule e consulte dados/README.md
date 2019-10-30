@@ -173,3 +173,12 @@ UPDATE tbProduto SET EMBALAGEM = 'Lata', PRECO_LISTA = 2.46
 ```
 DELETE FROM tbProduto WHERE PRODUTO = '1078680';
 ```
+
+### Atividade 09 - Incluindo a chave primária:
+
+- `ALTER TABLE`: comando utilizado para alterar a estrutura de uma tabela.
+- **Ex.:**
+```
+ALTER TABLE tbProduto ADD PRIMARY KEY (PRODUTO);
+```
+- A chave primária impede que existam dois registros com o mesmo valor do campo que possui essa chave.
