@@ -154,7 +154,7 @@ PRIMEIRA_COMPRA BIT(1)
 - **Ex.:**
 ```
 INSERT INTO tbProduto (PRODUTO, NOME, EMBALAGEM, TAMANHO, SABOR, PRECO_LISTA)
-	VALUES ('1040107', 'Light - 350 ml - Melância', 'Lata', '350 ml', 'Melância', 4.56)
+	VALUES ('1040107', 'Light - 350 ml - Melância', 'Lata', '350 ml', 'Melância', 4.56);
 ```
 
 ### Atividade 05 - Alterando registros:
@@ -164,4 +164,12 @@ INSERT INTO tbProduto (PRODUTO, NOME, EMBALAGEM, TAMANHO, SABOR, PRECO_LISTA)
 ```
 UPDATE tbProduto SET EMBALAGEM = 'Lata', PRECO_LISTA = 2.46
     WHERE PRODUTO = '544931';
+```
+
+### Atividade 07 - Excluindo registros:
+
+- `DELETE`: comando utilizado para excluir dados de uma tabela.
+- **Ex.:**
+```
+DELETE FROM tbProduto WHERE PRODUTO = '1078680';
 ```
