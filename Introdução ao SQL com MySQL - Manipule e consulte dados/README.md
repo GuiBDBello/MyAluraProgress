@@ -144,3 +144,15 @@ PRIMEIRA_COMPRA BIT(1)
 
 - Utilizando o assistente do Workbench: clique com o botão direito em cima de uma tabela e selecione `Drop Table...` e depois em `Drop Now`.
 - Utilizando SQL: `DROP TABLE tbCliente2`
+
+
+## Aula 04 - Manutenção dos dados nas tabelas
+
+### Atividade 01 - Inserindo registros na tabela:
+
+- `INSERT INTO`: comando utilizado para inserir dados em uma tabela.
+- **Ex.:**
+```
+INSERT INTO tbProduto (PRODUTO, NOME, EMBALAGEM, TAMANHO, SABOR, PRECO_LISTA)
+	VALUES ('1040107', 'Light - 350 ml - Melância', 'Lata', '350 ml', 'Melância', 4.56)
+```
