@@ -156,3 +156,12 @@ PRIMEIRA_COMPRA BIT(1)
 INSERT INTO tbProduto (PRODUTO, NOME, EMBALAGEM, TAMANHO, SABOR, PRECO_LISTA)
 	VALUES ('1040107', 'Light - 350 ml - Melância', 'Lata', '350 ml', 'Melância', 4.56)
 ```
+
+### Atividade 05 - Alterando registros:
+
+- `UPDATE`: comando utilizado para alterar dados de uma tabela.
+- **Ex.:**
+```
+UPDATE tbProduto SET EMBALAGEM = 'Lata', PRECO_LISTA = 2.46
+    WHERE PRODUTO = '544931';
+```
