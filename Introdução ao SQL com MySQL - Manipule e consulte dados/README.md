@@ -132,3 +132,9 @@ VOLUME_COMPRA FLOAT,
 PRIMEIRA_COMPRA BIT(1)
 )
 ```
+
+### Ativdade 05 - Criando a tabela pelo assistente:
+
+- No Workbench, clique com o botão direito em `Tables` dentro de seu esquema, e selecione `Create Table...`.
+- Em *Table Name*, digite `tbProduto`.
+- Clique abaixo de *Column Name*, digite o nome da coluna e em *Datatype* selecione seu tipo.
