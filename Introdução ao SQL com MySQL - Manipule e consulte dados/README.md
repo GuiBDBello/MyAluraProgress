@@ -184,3 +184,17 @@ UPDATE tbProduto SET EMBALAGEM = 'Lata', PRECO_LISTA = 2.46
 - Em SQL não existe o tipo *boolean*. Para representar um dado com valor lógico, utiliza-se o `BIT(1)` (o valor `0` representa `false` e `1` representa `true`).
 - Um campo do tipo `DATE` possui o seguinte padrão: `'yyyy-mm-dd'`.
 - **Ex** `INSERT INTO tbCliente (DATA_NASCIMENTO) VALUES ('1989-10-05');`
+
+
+## Aula 05 - Consultando os dados
+
+### Atividade 01 - Incluindo dados na tabela:
+
+- `SELECT`: comando utilizado para consultar dados de uma tabela.
+- **Ex.:** `SELECT * FROM tbCliente;`
+- Em uma consulta, é possível selecionar apenas alguns campos:
+- **Ex.:** `SELECT CPF, NOME FROM tbCliente;`
+- `LIMIT`: limita os registros retornados de uma consulta:
+- **Ex.:** `SELECT CPF, NOME FROM tbCliente LIMIT 5;`
+- `ALIAS`: "pseudônimo"/nome fantasia/apelido de um campo.
+- **Ex.:** `SELECT CPF AS CPF_CLIENTE, NOME AS NOME_CLIENTE FROM tbCliente;`
