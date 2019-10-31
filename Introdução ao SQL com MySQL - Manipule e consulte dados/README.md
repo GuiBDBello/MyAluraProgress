@@ -198,3 +198,11 @@ UPDATE tbProduto SET EMBALAGEM = 'Lata', PRECO_LISTA = 2.46
 - **Ex.:** `SELECT CPF, NOME FROM tbCliente LIMIT 5;`
 - `ALIAS`: "pseudônimo"/nome fantasia/apelido de um campo.
 - **Ex.:** `SELECT CPF AS CPF_CLIENTE, NOME AS NOME_CLIENTE FROM tbCliente;`
+
+### Atividade 03 - Filtrando registros:
+
+- Assim como no `UPDATE`, é possível filtrar uma consulta com a palavra-chave `WHERE`:
+- **Ex.:** `SELECT * FROM tbCliente WHERE Cidade = 'Rio de Janeiro';`
+- Note que não é necessário filtrar pela chave primária.
+- É possível também filtrar um `UPDATE` por outro campo que não seja a chave primária, assim afetando todos os campos com o valor informado:
+- **Ex.:** `UPDATE tbProduto SET SABOR = 'Cítricos' WHERE SABOR = 'Limão';`
