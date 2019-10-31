@@ -169,16 +169,18 @@ UPDATE tbProduto SET EMBALAGEM = 'Lata', PRECO_LISTA = 2.46
 ### Atividade 07 - Excluindo registros:
 
 - `DELETE`: comando utilizado para excluir dados de uma tabela.
-- **Ex.:**
-```
-DELETE FROM tbProduto WHERE PRODUTO = '1078680';
-```
+- **Ex.:** `DELETE FROM tbProduto WHERE PRODUTO = '1078680';`
 
 ### Atividade 09 - Incluindo a chave primária:
 
 - `ALTER TABLE`: comando utilizado para alterar a estrutura de uma tabela.
-- **Ex.:**
-```
-ALTER TABLE tbProduto ADD PRIMARY KEY (PRODUTO);
-```
+- **Ex.:** `ALTER TABLE tbProduto ADD PRIMARY KEY (PRODUTO);`
 - A chave primária impede que existam dois registros com o mesmo valor do campo que possui essa chave.
+
+### Atividade 11 - Manipulando datas e campos lógicos:
+
+- `ADD COLUMN`: comando utilizado, em conjunto com o comando `ALTER TABLE`, para adicionar uma nova coluna à uma tabela.
+- **Ex.:** `ALTER TABLE tbCliente ADD COLUMN (DATA_NASCIMENTO DATE);`
+- Em SQL não existe o tipo *boolean*. Para representar um dado com valor lógico, utiliza-se o `BIT(1)` (o valor `0` representa `false` e `1` representa `true`).
+- Um campo do tipo `DATE` possui o seguinte padrão: `'yyyy-mm-dd'`.
+- **Ex** `INSERT INTO tbCliente (DATA_NASCIMENTO) VALUES ('1989-10-05');`
