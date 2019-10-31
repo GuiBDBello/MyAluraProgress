@@ -206,3 +206,12 @@ UPDATE tbProduto SET EMBALAGEM = 'Lata', PRECO_LISTA = 2.46
 - Note que não é necessário filtrar pela chave primária.
 - É possível também filtrar um `UPDATE` por outro campo que não seja a chave primária, assim afetando todos os campos com o valor informado:
 - **Ex.:** `UPDATE tbProduto SET SABOR = 'Cítricos' WHERE SABOR = 'Limão';`
+
+### Atividade 05 - Filtrando usando maior, menor e diferente:
+
+- Campos numéricos podem ser filtrados por "maior" (`>`), "menor" (`<`) e "diferente" (`<>`):
+- **Ex.:** `SELECT * FROM tbCliente WHERE IDATE >= 22;`
+- Campos de texto também podem ser filtrados por esses símbolos, que os ordena por ordem alfabética.
+- Números com ponto flutuante (do tipo `FLOAT`) não são encontrados ao buscar seu valor com a condição "igual" (`=`), pois seu valor não é exato. Para buscar valores decimais com precisão, utilize o tipo `DECIMAL`.
+- Ainda assim, há uma forma de buscar esses valores. Por exemplo, para encontrar o valor `16.008` de ponto flutuante, faça:
+- **Ex.:** `SELECT * FROM tbProduto WHERE PRECO_LISTA BETWEEN 16.007 AND 16.009;`
