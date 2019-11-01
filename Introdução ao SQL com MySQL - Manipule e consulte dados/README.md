@@ -215,3 +215,10 @@ UPDATE tbProduto SET EMBALAGEM = 'Lata', PRECO_LISTA = 2.46
 - Números com ponto flutuante (do tipo `FLOAT`) não são encontrados ao buscar seu valor com a condição "igual" (`=`), pois seu valor não é exato. Para buscar valores decimais com precisão, utilize o tipo `DECIMAL`.
 - Ainda assim, há uma forma de buscar esses valores. Por exemplo, para encontrar o valor `16.008` de ponto flutuante, faça:
 - **Ex.:** `SELECT * FROM tbProduto WHERE PRECO_LISTA BETWEEN 16.007 AND 16.009;`
+
+### Atividade 07 - Filtrando datas:
+
+- Quando o campo for do tipo `DATE`, também é possível filtrar datas por `>` e `<`:
+- **Ex.:** `SELECT * FROM tbCliente WHERE DATA_NASCIMENTO >= '1995-01-13';`
+- Também é possível buscar apenas parte de uma data, utilizando as funções `YEAR()`, `MONTH()` entre outras:
+- **Ex.:** `SELECT * FROM tbCliente WHERE YEAR(DATA_NASCIMENTO) = 1995;`
