@@ -222,3 +222,12 @@ UPDATE tbProduto SET EMBALAGEM = 'Lata', PRECO_LISTA = 2.46
 - **Ex.:** `SELECT * FROM tbCliente WHERE DATA_NASCIMENTO >= '1995-01-13';`
 - Também é possível buscar apenas parte de uma data, utilizando as funções `YEAR()`, `MONTH()` entre outras:
 - **Ex.:** `SELECT * FROM tbCliente WHERE YEAR(DATA_NASCIMENTO) = 1995;`
+
+### Atividade 09 - Filtros compostos:
+
+- É possível utilizar a palavra-chave `AND` para criar filtros compostos:
+- **Ex.:** `SELECT * FROM tbCliente WHERE IDADE >= 18 AND IDADE <= 22 AND SEXO = 'M';`
+- Além do `AND`, existe a palavra-chave `OR`:
+- **Ex.:** `SELECT * FROM tbCliente WHERE CIDADE = 'Rio de Janeiro' OR BAIRRO = 'Jardins';`
+- É possível também juntar os comandos:
+- **Ex.:** `SELECT * FROM tbCliente WHERE (IDADE >= 18 AND IDADE <= 22 AND SEXO = 'M') OR (CIDADE = 'Rio de Janeiro' OR BAIRRO = 'Jardins');`
