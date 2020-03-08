@@ -28,3 +28,13 @@
 ### Atividade 15 - O padrão de projeto Observer:
 
 - Usamos o padrão de projeto **Observer** sempre que queremos notificar partes do sistema interessadas quando um evento importante for disparado em nosso sistema;
+
+
+## Aula 02 - Existe modelo mentiroso? O padrão de projeto Proxy!
+
+### Atividade 02 - O padrão de projeto Proxy:
+
+- Existe um famoso padrão de projeto chamado Proxy, que de forma resumida, é "um cara mentiroso";
+- O Proxy delegará a chamada do método para o objeto encapsulado por ele;
+- A vantagem está que colocaremos as armadilhas entre a chamada do Proxy e o objeto real. Toda vez que acessamos o Proxy, executaremos um código antes de chamarmos um método ou propriedade correspondente ao objeto real;
+- A partir da versão 2015 do ECMAScript, a própria linguagem já possui um recurso de Proxy;
