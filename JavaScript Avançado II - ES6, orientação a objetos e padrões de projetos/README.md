@@ -16,5 +16,11 @@
 
 ### Atividade 09 - Contexto das arrows functions:
 
-- É possível guardar um contexto em uma variável, por exemplo, `self`, e acessá-lo quando necessário.
+- É possível guardar um contexto em uma variável, por exemplo, `self`, e acessá-lo quando necessário;
 - **Ex.:** `let self = this;`
+
+### Atividade 13 - Reutilização de código com Composição e Mixin:
+
+- `Reflect.apply(Aviao.prototype.voa, this, []);`: executa o método `voa` da classe `Aviao`, mas usando como contexto o `this` da instância atual;
+- Métodos criados usando ES6 são adicionados no prototype. Qualquer método adicionado em prototype estará disponível para todas as instâncias;
+- `Aviao.prototype.voa.apply(this, []);`: Essa solução é menos verbosa, mas a ideia do ES2015 foi centralizar operações como essa em `Reflect` e com o tempo esse deve se tornar o método mais indicado para realizar operações como essa.
