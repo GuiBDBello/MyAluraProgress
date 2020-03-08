@@ -13,3 +13,8 @@
 ### Atividade 04 - Arrow function e seu escopo léxico:
 
 - O escopo do `this` de uma arrow function é *léxico*, não é dinâmico como numa função. Ele não muda de acordo com o contexto;
+
+### Atividade 09 - Contexto das arrows functions:
+
+- É possível guardar um contexto em uma variável, por exemplo, `self`, e acessá-lo quando necessário.
+- **Ex.:** `let self = this;`
