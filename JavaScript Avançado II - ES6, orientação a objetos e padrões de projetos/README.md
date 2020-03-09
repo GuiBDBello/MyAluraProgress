@@ -38,3 +38,7 @@
 - O Proxy delegará a chamada do método para o objeto encapsulado por ele;
 - A vantagem está que colocaremos as armadilhas entre a chamada do Proxy e o objeto real. Toda vez que acessamos o Proxy, executaremos um código antes de chamarmos um método ou propriedade correspondente ao objeto real;
 - A partir da versão 2015 do ECMAScript, a própria linguagem já possui um recurso de Proxy;
+
+### Atividade 03 - Aprendendo a trabalhar com o Proxy:
+
+- `new Proxy(negociacao, {});`: cria um novo **Proxy** que encapsula o objeto `negociacao` utilizando o *handler* `{}` (nesse caso, não há *handler*);
