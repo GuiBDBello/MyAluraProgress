@@ -42,3 +42,11 @@
 ### Atividade 03 - Aprendendo a trabalhar com o Proxy:
 
 - `new Proxy(negociacao, {});`: cria um novo **Proxy** que encapsula o objeto `negociacao` utilizando o *handler* `{}` (nesse caso, não há *handler*);
+
+### Atividade 04 - Construindo armadilhas de leitura:
+
+- `get: function(target, prop, receiver) { return ... }`: o `get` é chamado a cada vez que uma propriedade do objeto encapsulado pelo `Proxy` é obtida;
+- `target` é a referência ao objeto original encapsulado pelo `Proxy`;
+- `prop`: é a propriedade que está sendo acessada;
+- `receiver`: é a referência do próprio `Proxy`;
+- `return Reflect.get(target, prop, receiver);`: utiliza a API `Reflect` para realizar uma leitura do objeto original (`target`), na propriedade `prop` utilizando o objeto `receiver`, que é uma referência ao `Proxy`;
