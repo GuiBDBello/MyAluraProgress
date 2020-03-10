@@ -56,3 +56,8 @@
 - `set: function(target, prop, value, receiver) { return ... }`: o `set` é chamado a cada vez que o valor de uma propriedade do objeto encapsulado pelo `Proxy` é alterada. Semelhante ao `get`, porém adiciona o parâmetro `value`;
 - `return Reflect.set(target, prop, value, receiver);`: utiliza a API `Reflect` para realizar uma alteração do valor (`value`) da propriedade `prop` do objeto original (`target`), utilizando o objeto `receiver`, que é uma referência ao `Proxy`;
 - `target[prop]`: obtém a propriedade `prop` do objeto `target`;
+
+### Atividade 07 - Uma solução para método que não altera propriedade:
+
+- Não há uma maneira de interceptar um método com `Proxy`;
+- Quando é chamado um método em JavaScript, primeiramente é feito um *get* na função e depois um `Reflect.apply` para passar o valor à função;
