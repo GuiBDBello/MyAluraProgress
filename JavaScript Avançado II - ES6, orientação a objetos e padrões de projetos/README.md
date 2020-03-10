@@ -50,3 +50,9 @@
 - `prop`: é a propriedade que está sendo acessada;
 - `receiver`: é a referência do próprio `Proxy`;
 - `return Reflect.get(target, prop, receiver);`: utiliza a API `Reflect` para realizar uma leitura do objeto original (`target`), na propriedade `prop` utilizando o objeto `receiver`, que é uma referência ao `Proxy`;
+
+### Atividade 05 - Construindo armadilhas de escrita:
+
+- `set: function(target, prop, value, receiver) { return ... }`: o `set` é chamado a cada vez que o valor de uma propriedade do objeto encapsulado pelo `Proxy` é alterada. Semelhante ao `get`, porém adiciona o parâmetro `value`;
+- `return Reflect.set(target, prop, value, receiver);`: utiliza a API `Reflect` para realizar uma alteração do valor (`value`) da propriedade `prop` do objeto original (`target`), utilizando o objeto `receiver`, que é uma referência ao `Proxy`;
+- `target[prop]`: obtém a propriedade `prop` do objeto `target`;
