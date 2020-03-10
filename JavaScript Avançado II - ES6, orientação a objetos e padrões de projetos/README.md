@@ -60,4 +60,9 @@
 ### Atividade 07 - Uma solução para método que não altera propriedade:
 
 - Não há uma maneira de interceptar um método com `Proxy`;
-- Quando é chamado um método em JavaScript, primeiramente é feito um *get* na função e depois um `Reflect.apply` para passar o valor à função;
+- Quando é chamado um método/função, o `Proxy` realiza um *get* e depois um `Reflect.apply` para passar o valor à função;
+
+### Atividade 08 - Construindo armadilhas para métodos:
+
+- `if (['adiciona', 'esvazia'].includes(prop) && typeof(target[prop]) == typeof(Function)) { }`: verifica se a propriedade `prop` interceptada tem o nome `'adiciona'` ou `'esvazia'` **e** é uma função;
+- Existe um objeto implícito em JavaScript chamado `arguments`, que possui todos os parâmetros passados para a função;
