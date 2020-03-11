@@ -87,3 +87,14 @@ var objeto = {
     }
 }
 ```
+
+### Atividade 19 - Arguments:
+
+- Por mais que uma função não receba parâmetros, podemos ter acesso aos parâmetros passados com `arguments`;
+- **Ex.:**
+```
+function exibeNomeCompleto() {
+  alert(`${arguments[0]} ${arguments[1]}`);
+}
+exibeNomeCompleto('Flávio', 'Almeida');
+```
