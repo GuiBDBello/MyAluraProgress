@@ -66,3 +66,24 @@
 
 - `if (['adiciona', 'esvazia'].includes(prop) && typeof(target[prop]) == typeof(Function)) { }`: verifica se a propriedade `prop` interceptada tem o nome `'adiciona'` ou `'esvazia'` **e** é uma função;
 - Existe um objeto implícito em JavaScript chamado `arguments`, que possui todos os parâmetros passados para a função;
+
+### Atividade 09 - Truque com ES2015:
+
+- Sabemos que podemos declarar um objeto JavaScript com propriedades que podem armazenar funções;
+- **Ex.:**
+```
+var objeto = {
+    exibeMensagem : function(){
+        console.log("Olá");
+    }
+};
+```
+- Com o ES2015, podemos reescrever aquele código da seguinte maneira:
+- **Ex.:**
+```
+var objeto = {
+    exibeMensagem() {
+        console.log("Olá");
+    }
+}
+```
