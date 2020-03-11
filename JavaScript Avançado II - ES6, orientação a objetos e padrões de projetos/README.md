@@ -98,3 +98,10 @@ function exibeNomeCompleto() {
 }
 exibeNomeCompleto('Flávio', 'Almeida');
 ```
+
+
+## Aula 03 - E se alguém criasse nossos proxies? O Padrão de Projeto Factory
+
+### Atividade 01 - Padrão de Projeto Factory:
+
+- *Factory*: classe especializada em criar determinado tipo de objeto;
