@@ -110,3 +110,7 @@ exibeNomeCompleto('Flávio', 'Almeida');
 
 - *Data binding* unidirecional: associação entre o modelo e a view. Toda vez que o modelo mudar, atualiza a view;
 - Em JavaScript, um `constructor` pode ter `return`;
+
+### Atividade 04 - Parâmetros REST:
+
+- `constructor(model, view, ...props) { }`: `...props` é um *REST operator*, ou seja, todos os parâmetros à partir da posição que está o `props` serão convertidos para um array;
