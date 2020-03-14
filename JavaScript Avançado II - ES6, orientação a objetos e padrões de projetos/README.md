@@ -151,3 +151,11 @@ Outro exemplo é a classe Array, que pode receber uma string ou um iterável, co
 - `if (err) { this._mensagem.texto = err; return; }`: primeira linha do *error first*. Verifica se ocorreu um erro na chamada da função e encerra ela;
 - `cb(null, JSON.parse(xhr.responseText))`: chamada da função de *callback* caso a requisição respondeu com sucesso;
 - `cb('Não foi possível obter as negociações.', null);`: chamada da função de *callback* caso a requisição respondeu com erro. **Obs.:** o `null` é opcional;
+
+
+## Aula 05 - Combatendo Callback Hell com Promises
+
+### Atividade 01 - O problema da vida assíncrona:
+
+- *Pyramid of Doom*: função aninhada dentro de outra. A pirâmide é um forte indício de que temos problemas de legibilidade do código, na verdade, é o sintoma de um problema maior, o *Callback Hell*;
+- *Callback Hell*: ocorre quando temos requisições assíncronas executadas em determinada ordem, que chama vários callbacks seguidos;
