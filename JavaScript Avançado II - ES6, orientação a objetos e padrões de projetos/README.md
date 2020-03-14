@@ -143,3 +143,11 @@ Outro exemplo é a classe Array, que pode receber uma string ou um iterável, co
 
 - `xhr.responseText`: conteúdo da resposta da requisição;
 - `JSON.parse()`: converte um texto para *JSON*;
+
+### Atividade 04 - Separando as responsabilidades:
+
+- *Callback*: função que vai ser chamada após o processamento dados/outra função;
+- `(err, negociacoes) => { }`: função anônima de *callback* que realiza uma convenção chamada *error first*;
+- `if (err) { this._mensagem.texto = err; return; }`: primeira linha do *error first*. Verifica se ocorreu um erro na chamada da função e encerra ela;
+- `cb(null, JSON.parse(xhr.responseText))`: chamada da função de *callback* caso a requisição respondeu com sucesso;
+- `cb('Não foi possível obter as negociações.', null);`: chamada da função de *callback* caso a requisição respondeu com erro. **Obs.:** o `null` é opcional;
