@@ -122,3 +122,8 @@ exibeNomeCompleto('Flávio', 'Almeida');
 - `let abc = String.fromCharCode(65, 66, 67);  // "ABC"`
 Outro exemplo é a classe Array, que pode receber uma string ou um iterável, como lista ou mapas, para criar um array:
 - `let d = Array.from("abc"); // ["a", "b", "c"]`
+
+### Atividade 09 - DateHelper é um Factory?:
+
+- O padrão de projeto Factory ocorre quando temos uma classe que nos ajuda a criar um objeto complexo, ou seja, ela esconde de nós os detalhes de criação desse objeto. É por isso que uma classe Factory possui apenas um método;
+- 
