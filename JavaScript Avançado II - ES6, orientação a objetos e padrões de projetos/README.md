@@ -175,3 +175,7 @@ createPromise() {
 }
 ```
 - `promise.then(negociacoes => {}).catch(error => {})`: executa a *promise*. O retorno de *resolve* é obtido no `then()` e o retorno de *reject* é obtido no `catch()`;
+
+### Atividade 03 - Pyramid of Doom novamente? Claro que não, Promise.all nela!:
+
+- `Promise.all([promise1, promise2, promise3]).then(negociacoes => {}).catch(error => {});`: resolve todas as promessas na ordem passada no vetor;
