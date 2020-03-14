@@ -138,3 +138,8 @@ Outro exemplo é a classe Array, que pode receber uma string ou um iterável, co
 - `xhr.onreadystatechange = () => { }`: função executada a cada vez que o estado do `xhr` mudar;
 - `xhr.readyState == 4`: verifica se a requisição foi concluída e uma resposta foi fornecida;
 - `xhr.status == 200`: verifica se a resposta possui *status* de sucesso;
+
+### Atividade 03 - Realizando o parse da resposta:
+
+- `xhr.responseText`: conteúdo da resposta da requisição;
+- `JSON.parse()`: converte um texto para *JSON*;
