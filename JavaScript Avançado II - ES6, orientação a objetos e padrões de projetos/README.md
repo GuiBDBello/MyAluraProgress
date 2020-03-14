@@ -159,3 +159,19 @@ Outro exemplo é a classe Array, que pode receber uma string ou um iterável, co
 
 - *Pyramid of Doom*: função aninhada dentro de outra. A pirâmide é um forte indício de que temos problemas de legibilidade do código, na verdade, é o sintoma de um problema maior, o *Callback Hell*;
 - *Callback Hell*: ocorre quando temos requisições assíncronas executadas em determinada ordem, que chama vários callbacks seguidos;
+
+### Atividade 02 - O padrão de projeto Promise:
+
+- `let promise = createPromise();`: *resolve* é uma função de *callback* que recebe o retorno de sucesso, e *reject* recebe o erro;
+- **Ex.:**
+```
+createPromise() {
+    return new Promise((resolve, reject) => {
+        if (...) 
+            resolve(...);
+        else
+            reject(...);
+    });
+}
+```
+- `promise.then(negociacoes => {}).catch(error => {})`: executa a *promise*. O retorno de *resolve* é obtido no `then()` e o retorno de *reject* é obtido no `catch()`;
