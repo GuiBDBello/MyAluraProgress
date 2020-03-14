@@ -126,4 +126,15 @@ Outro exemplo é a classe Array, que pode receber uma string ou um iterável, co
 ### Atividade 09 - DateHelper é um Factory?:
 
 - O padrão de projeto Factory ocorre quando temos uma classe que nos ajuda a criar um objeto complexo, ou seja, ela esconde de nós os detalhes de criação desse objeto. É por isso que uma classe Factory possui apenas um método;
-- 
+
+
+## Aula 04 - Importando negociações
+
+### Atividade 02 - Requisições Ajax com o objeto XMLHttpRequest:
+
+- `let xhr = new XMLHttpRequest();`: cria um objeto que realiza requisições Ajax;
+- `xhr.open('GET', 'negociacoes/semana');`: "abre" um endereço para realizar uma requisição do tipo `'GET'` na *URL* `'negociacoes/semana'`;
+- `xhr.send()`: o método `open()` não realiza a requisição, apenas a prepara. O método `send()` envia a requisição;
+- `xhr.onreadystatechange = () => { }`: função executada a cada vez que o estado do `xhr` mudar;
+- `xhr.readyState == 4`: verifica se a requisição foi concluída e uma resposta foi fornecida;
+- `xhr.status == 200`: verifica se a resposta possui *status* de sucesso;
