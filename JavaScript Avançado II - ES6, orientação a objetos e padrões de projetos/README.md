@@ -114,3 +114,11 @@ exibeNomeCompleto('Flávio', 'Almeida');
 ### Atividade 04 - Parâmetros REST:
 
 - `constructor(model, view, ...props) { }`: `...props` é um *REST operator*, ou seja, todos os parâmetros à partir da posição que está o `props` serão convertidos para um array;
+
+### Atividade 08 - Fábricas na API JavaScript:
+
+- As fábricas não só fazem parte do nosso código, como também da API do JavaScript. Já existem várias classes que aproveitam esse padrão;
+- Por exemplo, a classe String possui um método (ou factory method) para transformar vários CharCode em uma string:
+- `let abc = String.fromCharCode(65, 66, 67);  // "ABC"`
+Outro exemplo é a classe Array, que pode receber uma string ou um iterável, como lista ou mapas, para criar um array:
+- `let d = Array.from("abc"); // ["a", "b", "c"]`
