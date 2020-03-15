@@ -204,3 +204,8 @@ ordena(coluna) {
 ### Atividade 06 - Ah se meu código funcionasse no Edge!:
 
 - Um *polyfill* é um script que emula o comportamento de um recurso quando esse não é suportado para garantir que nosso código funcione sem termos que abdicar do que é mais novo;
+
+### Atividade 08 - Ah se ... peraí, o que é um transpiler mesmo?:
+
+- Um transpiler é um compilador de código fonte para código fonte. Ou seja, em linguagens como C, compilamos o código fonte para um código binário para que esse rode em nosso sistema operacional. Já um transpiler poderia converter o código escrito em C para JavaScript, ou seja, é um compilador que traduz o código fonte de uma linguagem para outra;
+- No caso do JavaScript, o truque é compilar o código fonte (nossos arquivos JS) para JavaScript, convertendo um código em ES6 para ES5;
