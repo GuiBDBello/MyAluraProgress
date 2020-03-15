@@ -35,41 +35,27 @@
             event.preventDefault();
             console.log("Enviando post");
 
-            //aqui você deve ler os dados do formulário
-            //construir o json
-            //enviar o XMLHttpRequest
-
             const $ = document.querySelector.bind(document);
             const inputData = $('#data');
             const inputQuantidade = $('#quantidade');
             const inputValor = $('#valor');
 
-            const negociacao = {
+            let negociacao = {
                 data: inputData.value,
                 quantidade: inputQuantidade.value,
                 valor: inputValor.value
             };
 
-            const xhr = new XMLHttpRequest();
-            xhr.open("POST", "/negociacoes", true);
-            xhr.setRequestHeader("Content-type", "application/json");
-
-            xhr.onreadystatechange = () => {
-
-                if (xhr.readyState == 4) {
-
-                    if (xhr.status == 200) {
-                        inputData.value = '';
-                        inputQuantidade.value = 1;
-                        inputValor.value = 0.0;
-                        inputData.focus();
-                        alert('Negociação enviada com sucesso');
-                    } else {
-                        alert(`Não foi possível enviar a negociação: ${xhr.responseText}`);
-                    }
-                }
-            }
-            xhr.send(JSON.stringify(negociacao));
+            new HttpService()
+                .post('/negociacoes', negociacao)
+                .then(() => {
+                    inputData.value = '';
+                    inputQuantidade.value = 1;
+                    inputValor.value = 0.0;
+                    inputData.focus();
+                    alert('Negociação enviada com sucesso');
+                })
+                .catch((erro) => alert(`Não foi possível enviar a negociação: ${erro}`));
         }
     </script>
 </body>
