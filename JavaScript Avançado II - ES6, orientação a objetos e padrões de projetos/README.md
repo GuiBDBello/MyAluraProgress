@@ -183,3 +183,20 @@ createPromise() {
 ### Atividade 06 - Dissecando uma promise!:
 
 - `setTimeout(() => { }, 5000);`: o método `setTimeout` recebe uma função para ser executada e o tempo de *timeout*. Após esse tempo será retornado algum dado passado na função;
+
+
+## Aula 06 - Considerações finais e exercícios bônus
+
+### Atividade 02 - Ah se eu pudesse ordenar minha tabela clicando na coluna...:
+
+- `array.sort()`: ordena um array em ordem crescente;
+- `array.reverse()`: inverte a ordem dos elementos de um array;
+- `array.sort((a, b) => a.quantidade - b.quantidade)`: ordena um array baseado em um critério de ordenação (a > b);
+- A regra é a seguinte: com o critério selecionado, se o valor retornado for 0 não há alteração a ser feita, se o valor retornado for positivo, b deve vir antes de a, se o valor for negativo, a deve vir antes de b;
+- **Ex.:**
+```
+ordena(coluna) {
+    this._listaNegociacoes.ordena((a, b) => a[coluna] - b[coluna]);
+}
+```
+- Onde `coluna` é a propriedade do objeto a ser ordenada;
