@@ -200,3 +200,7 @@ ordena(coluna) {
 }
 ```
 - Onde `coluna` é a propriedade do objeto a ser ordenada;
+
+### Atividade 06 - Ah se meu código funcionasse no Edge!:
+
+- Um *polyfill* é um script que emula o comportamento de um recurso quando esse não é suportado para garantir que nosso código funcione sem termos que abdicar do que é mais novo;
