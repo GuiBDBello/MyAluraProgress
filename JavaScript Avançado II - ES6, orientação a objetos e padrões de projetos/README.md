@@ -179,3 +179,7 @@ createPromise() {
 ### Atividade 03 - Pyramid of Doom novamente? Claro que não, Promise.all nela!:
 
 - `Promise.all([promise1, promise2, promise3]).then(negociacoes => {}).catch(error => {});`: resolve todas as promessas na ordem passada no vetor;
+
+### Atividade 06 - Dissecando uma promise!:
+
+- `setTimeout(() => { }, 5000);`: o método `setTimeout` recebe uma função para ser executada e o tempo de *timeout*. Após esse tempo será retornado algum dado passado na função;
