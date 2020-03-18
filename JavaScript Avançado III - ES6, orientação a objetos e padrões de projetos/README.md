@@ -29,3 +29,14 @@
 - `minhaConnection.objectStoreNames`: retorna todos os nomes das *Object Stores* criadas;
 - `minhaConnection.deleteObjectStore('negociacoes');`: deleta a *Object Store* `'negociacoes'`;
 - `minhaConnection.createObjectStore('negociacoes', { autoIncrement: true });`: adicionado um novo parâmetro na criação da *Object Store*;
+
+### Atividade 05 - Só acredito vendo: listando objetos de uma store:
+
+- `let cursor = store.openCursor();`: cria um cursor que é utilizado para "navegar" pela *Object Store* e obter seus dados;
+- Um cursor também utiliza os métodos `onsuccess` e `onerror`;
+- `e.target.result`: retorna um valor diferente de acordo com o evento;
+- `let atual = e.target.result;`: dentro de `cursor.onsuccess`, retorna o ponteiro atual de uma `'negociacao'` armazenada no banco;
+- `var dado = atual.value;`: obtém o objeto negociação;
+- `negociacoes.push(new Negociacao(dado._data, dado._quantidade, dado._valor));`: adiciona a negociação atual no vetor de negociações;
+- `atual.continue();`: muda a posição do ponteiro e chama novamente o `onsuccess` até que uma condição seja satisfeita;
+- `e.target.error.name`: dentro de `cursor.onerror`, retorna o nome do erro que ocorreu;
