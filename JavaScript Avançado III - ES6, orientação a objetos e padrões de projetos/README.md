@@ -40,3 +40,14 @@
 - `negociacoes.push(new Negociacao(dado._data, dado._quantidade, dado._valor));`: adiciona a negociação atual no vetor de negociações;
 - `atual.continue();`: muda a posição do ponteiro e chama novamente o `onsuccess` até que uma condição seja satisfeita;
 - `e.target.error.name`: dentro de `cursor.onerror`, retorna o nome do erro que ocorreu;
+
+
+## Aula 02 - Gerenciando nossa conexão com o pattern Factory
+
+### Atividade 01 - Uma conexão ou várias?:
+
+- Regras de conexão:
+a) getConnection vai ser um método estático
+b) getConnection vai retornar uma promise
+c) não importa o número de vezes que eu chamar o método estático, a conexão tem que ser a mesma
+d) o programador não pode chamar close diretamente. Ela só pode ser fechada através da própria ConnectionFactory
