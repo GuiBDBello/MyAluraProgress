@@ -69,3 +69,15 @@ var ConnectionFactory = (function () {
     }
 })();
 ```
+
+### Atividade 05 - Monkey Patch: grandes poderes trazem grandes responsabilidades:
+
+- *Monkey Patching*: modificar uma API "na marra";
+- **Ex.:** ("sobrescrevendo" o método close)
+```
+connection.close = function() {
+    throw new Error('Você não pode fechar diretamente a conexão.');
+}
+```
+- `var close = connection.close.bind(connection);`: como o método `close` pertence à `connection`, é necessário associar o método à conexão. Outra opção é fazer `Reflect.apply(close, connection, [])`;
+- `const`: palavra-chave do ES6 que serve para definir uma constante (uma propriedade com valor imutável);
