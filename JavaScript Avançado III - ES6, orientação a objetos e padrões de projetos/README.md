@@ -51,3 +51,8 @@ a) getConnection vai ser um método estático
 b) getConnection vai retornar uma promise
 c) não importa o número de vezes que eu chamar o método estático, a conexão tem que ser a mesma
 d) o programador não pode chamar close diretamente. Ela só pode ser fechada através da própria ConnectionFactory
+
+### Atividade 03 - Criando stores:
+
+- `e.target.result.objectStoreNames.contains(store)`: Verifica se a *Object Store* de nome `store` existe;
+- `e.target.result.deleteObjectStore()`: apaga a *Object Store* `store`;
