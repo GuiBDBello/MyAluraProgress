@@ -56,3 +56,16 @@ d) o programador não pode chamar close diretamente. Ela só pode ser fechada at
 
 - `e.target.result.objectStoreNames.contains(store)`: Verifica se a *Object Store* de nome `store` existe;
 - `e.target.result.deleteObjectStore()`: apaga a *Object Store* `store`;
+
+### Atividade 04 - O padrão de projeto Module Pattern:
+
+- Em uma condição, `0`, `''`, `null`, `undefined` são avaliados como `false`;
+- *Module Pattern*: unidade de código confinada. O que está dentro de um módulo, ninguém tem acesso;
+- **Ex.:**
+```
+var ConnectionFactory = (function () {
+    return class ConnectionFactory {
+        // ...
+    }
+})();
+```
