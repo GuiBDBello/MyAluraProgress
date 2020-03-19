@@ -12,7 +12,7 @@ class NegociacaoDao {
 
             let request = this._connection
                 .transaction([ this._store ], 'readwrite')
-                .objectStore(this,this._store)
+                .objectStore(this._store)
                 .add(negociacao);
 
             request.onsuccess = e => {
