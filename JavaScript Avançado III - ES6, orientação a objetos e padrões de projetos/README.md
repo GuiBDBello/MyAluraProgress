@@ -81,3 +81,10 @@ connection.close = function() {
 ```
 - `var close = connection.close.bind(connection);`: como o método `close` pertence à `connection`, é necessário associar o método à conexão. Outra opção é fazer `Reflect.apply(close, connection, [])`;
 - `const`: palavra-chave do ES6 que serve para definir uma constante (uma propriedade com valor imutável);
+
+
+## Aula 03 - Padronizando acesso aos dados com o pattern DAO
+
+### Atividade 01 - O padrão de projeto DAO:
+
+- *DAO*: *Data Access Object* (ou Objeto de Acesso a Dados);
