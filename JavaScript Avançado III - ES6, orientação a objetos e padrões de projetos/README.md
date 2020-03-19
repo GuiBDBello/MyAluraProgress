@@ -93,3 +93,13 @@ connection.close = function() {
 
 - `parseInt(this._inputQuantidade.value);`: converte `this._inputQuantidade.value` para inteiro;
 - `parseFloat(this._inputValor.value);`: converte `this._inputValor.value` para decimal;
+
+### Atividade 04 - Removendo todas as negociações:
+
+- **Ex.:** (limpa uma object store)
+```
+let request = this._connection
+    .transaction([this._store], 'readwrite')
+    .objectStore(this._store)
+    .clear();
+```
