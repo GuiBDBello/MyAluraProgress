@@ -88,3 +88,8 @@ connection.close = function() {
 ### Atividade 01 - O padrão de projeto DAO:
 
 - *DAO*: *Data Access Object* (ou Objeto de Acesso a Dados);
+
+### Atividade 02 - Combinando padrões de projeto:
+
+- `parseInt(this._inputQuantidade.value);`: converte `this._inputQuantidade.value` para inteiro;
+- `parseFloat(this._inputValor.value);`: converte `this._inputValor.value` para decimal;
