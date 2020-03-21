@@ -122,3 +122,9 @@ transaction.onabort = e => {
     console.log('Transação abortada');
 };
 ```
+
+### Atividade 10 - Para saber mais: bibliotecas que encapsulam o IndexedDB:
+
+- Para lidar também com o o IndexedDB outros desenvolvedores tornaram públicas suas bibliotecas. Por exemplo, há o Dexie e o Db.js, este último utiliza promises assim como fizemos;
+- Dexie: https://dexie.org/
+- db.js: http://aaronpowell.github.io/db.js/
