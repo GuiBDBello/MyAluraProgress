@@ -103,3 +103,22 @@ let request = this._connection
     .objectStore(this._store)
     .clear();
 ```
+
+### Atividade 09 - Para saber mais: IndexedDB e transações:
+
+- Transações do IndexedDB são *auto commited*;
+- Podemos cancelar uma transação através do método `abort`;
+- **Ex.:**
+```
+// #### VAI CANCELAR A TRANSAÇÃO. O evento onerror será chamado.
+transaction.abort(); 
+```
+- Ao executar o código a seguinte mensagem de erro será exibida no console: `DOMException: The transaction was aborted, so the request cannot be fulfilled.`;
+- Trate o cancelamento de uma transação no evento `onabort` de transaction;
+- **Ex.:**
+```
+transaction.onabort = e => {
+    console.log(e);
+    console.log('Transação abortada');
+};
+```
