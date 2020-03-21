@@ -128,3 +128,18 @@ transaction.onabort = e => {
 - Para lidar também com o o IndexedDB outros desenvolvedores tornaram públicas suas bibliotecas. Por exemplo, há o Dexie e o Db.js, este último utiliza promises assim como fizemos;
 - Dexie: https://dexie.org/
 - db.js: http://aaronpowell.github.io/db.js/
+
+
+## Aula 04 - Lapidando um pouco mais nossa aplicação
+
+### Atividade 01 - Ops! Não podemos importar negociações duplicadas:
+
+- `negociacoes.filter(/* critério */)`: método de um *array* que itera sobre todos os itens desse *array* e filtra-os com base em um critério;
+- `negociacoes.indexOf(negociacao)`: método de um *array* que verifica se o item `negociacao` está contido nesse *array*;
+- **Ex.:** (definindo um critério)
+```
+negociacoes.filter(negociacao =>
+    this._listaNegociacoes.negociacoes.indexOf(negociacao) == -1
+)
+```
+- Se o item não é encontrado no *array*, retorna `-1`;
