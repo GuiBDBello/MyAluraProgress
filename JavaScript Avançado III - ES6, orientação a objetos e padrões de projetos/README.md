@@ -143,3 +143,17 @@ negociacoes.filter(negociacao =>
 )
 ```
 - Se o item não é encontrado no *array*, retorna `-1`;
+
+### Atividade 03 - Usando o método some:
+
+- Não é possível comparar dois objetos utilizando apenas `==`. Deve-se primeiramente convertê-los para `string` com `JSON.stringify()` e só então compará-los;
+- **Ex.:** `JSON.stringify(n1) == JSON.stringify(n2)`
+- `Array.some(item => /* critério */)`: varre cada item do array `Array`, compara com o critério e retorna `true` ou `false`. A iteração termina caso o critério seja verdadeiro;
+- **Ex.:**
+```
+negociacoes.filter(negociacao =>
+    !this._listaNegociacoes.negociacoes.some(negociacaoExistente =>
+        JSON.stringify(negociacao) == JSON.stringify(negociacaoExistente)
+    )
+)
+```
