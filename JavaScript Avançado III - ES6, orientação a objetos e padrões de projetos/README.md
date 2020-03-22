@@ -157,3 +157,13 @@ negociacoes.filter(negociacao =>
     )
 )
 ```
+
+### Atividade 13 - Para saber mais: Igualdade de objetos:
+
+- A classe `Negociacao` sabe quando uma negociação é igual a outra, essa **regra fica encapsulada** dentro da classe;
+- **Ex.:**
+```
+isEquals(outraNegociacao) {
+    return JSON.stringify(this) == JSON.stringify(outraNegociacao)
+}
+```
