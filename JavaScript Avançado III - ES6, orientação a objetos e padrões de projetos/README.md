@@ -201,10 +201,18 @@ fetch(url, {
 - `npm init`: cria o arquivo `package.json`;
 - `npm install babel-cli@6.10.1 --save-dev`: adiciona a dependência do *babel-cli* na versão 6.10.1 no arquivo `package.json`;
 `npm install babel-preset-es2015@6.9.0 --save-dev`: adiciona a dependência do *babel-preset-es2015* na versão 6.9.0 no arquivo `package.json`;
-- Criar, na raíz do projeto, o arquivo `.babelrc` e adicionar nele a seguinte configuração:
+- Criar, na raíz do projeto, o arquivo `.babelrc` e adicionar nele a configuração do *Babel*:
 - **Ex.:**
 ```
 {
     "presets": [ "es2015" ]
 }
 ```
+
+### Atividade 03 - Executando o Babel:
+
+- Adicionar dentro da propriedade `"scripts"` do arquivo `package.json`, a configuração do *build*:
+- **Ex.:** `"build": "babel js/app-es6 -d js/app"`
+- Execute o comando `npm run build` para transcompilar a aplicação para *ES5*;
+- `--source-maps`: parâmetro do `babel-cli` que adiciona um arquivo `.map` com a referência do arquivo antes da *transcompilação*;
+- **Obs.:** Foi necessário adicionar o parâmetro `--ignore polyfill` pois o *Babel* estava realizando a *transcompilação* no arquivo `/polyfill/fetch.js` (que já está em *ES6*), o que estava ocasionando erros na aplicação;
