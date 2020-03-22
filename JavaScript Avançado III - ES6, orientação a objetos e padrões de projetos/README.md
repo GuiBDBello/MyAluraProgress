@@ -188,3 +188,10 @@ fetch(url, {
     body: JSON.stringify(dado)
 });
 ```
+
+
+## Aula 06 - Tornando nosso código ainda mais compatível usando Babel
+
+### Atividade 01 - O fantasma da incompatibilidade:
+
+- Nós programaremos com o ES6 e depois, vamos compilar o código para o ES5. Este processo de *downgrade* recebe o nome de **transcompilação** e é feito com o uso de um *transpiler* (transcompilador);
