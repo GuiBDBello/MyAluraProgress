@@ -176,3 +176,15 @@ isEquals(outraNegociacao) {
 - No ES 2016, foi incluída uma API com o objetivo de simplificar a criação de requisições Ajax: **Fetch API**, uma API de busca do JS;
 - `fetch(url).then(res => res.json());`: exemplo de requisição utilizando a **Fetch API**;
 - Não é possível abortar uma requisição utilizando a **Fetch API**;
+
+### Atividade 02 - Método Post:
+
+- Uma requisição *POST* utilizando a **Fetch API** necessita de algumas configurações, como o cabeçalho, método e corpo;
+- **Ex.:**
+```
+fetch(url, {
+    headers: { 'Content-type': 'application/json' },
+    method: 'post',
+    body: JSON.stringify(dado)
+});
+```
