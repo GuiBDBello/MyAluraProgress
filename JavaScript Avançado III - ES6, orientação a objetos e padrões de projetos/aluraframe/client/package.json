@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel js/app-es6 -d js/app --source-maps --ignore polyfill"
+    "build": "babel js/app-es6 -d js/app --source-maps --ignore polyfill",
+    "watch": "babel js/app-es6 -d js/app --source-maps --ignore polyfill --watch"
   },
   "author": "",
   "license": "ISC",

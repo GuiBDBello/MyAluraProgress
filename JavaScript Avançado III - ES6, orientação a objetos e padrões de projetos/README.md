@@ -216,3 +216,7 @@ fetch(url, {
 - Execute o comando `npm run build` para transcompilar a aplicação para *ES5*;
 - `--source-maps`: parâmetro do `babel-cli` que adiciona um arquivo `.map` com a referência do arquivo antes da *transcompilação*;
 - **Obs.:** Foi necessário adicionar o parâmetro `--ignore polyfill` pois o *Babel* estava realizando a *transcompilação* no arquivo `/polyfill/fetch.js` (que já está em *ES6*), o que estava ocasionando erros na aplicação;
+
+### Atividade 04 - Compilando arquivos em tempo real:
+
+- `--watch`: parâmetro do `babel-cli` que monitora as alterações nos seus arquivos e realiza a *transcompilação* em tempo real;
