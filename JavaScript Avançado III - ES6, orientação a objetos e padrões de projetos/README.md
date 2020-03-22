@@ -195,3 +195,16 @@ fetch(url, {
 ### Atividade 01 - O fantasma da incompatibilidade:
 
 - Nós programaremos com o ES6 e depois, vamos compilar o código para o ES5. Este processo de *downgrade* recebe o nome de **transcompilação** e é feito com o uso de um *transpiler* (transcompilador);
+
+### Atividade 02 - Babel, instalação e build-step:
+
+- `npm init`: cria o arquivo `package.json`;
+- `npm install babel-cli@6.10.1 --save-dev`: adiciona a dependência do *babel-cli* na versão 6.10.1 no arquivo `package.json`;
+`npm install babel-preset-es2015@6.9.0 --save-dev`: adiciona a dependência do *babel-preset-es2015* na versão 6.9.0 no arquivo `package.json`;
+- Criar, na raíz do projeto, o arquivo `.babelrc` e adicionar nele a seguinte configuração:
+- **Ex.:**
+```
+{
+    "presets": [ "es2015" ]
+}
+```
