@@ -167,3 +167,12 @@ isEquals(outraNegociacao) {
     return JSON.stringify(this) == JSON.stringify(outraNegociacao)
 }
 ```
+
+
+## Aula 05 - Simplificando requisições Ajax com a Fetch API
+
+### Atividade 01 - xmlHttpRequest: será que existe algo de mais alto nível?:
+
+- No ES 2016, foi incluída uma API com o objetivo de simplificar a criação de requisições Ajax: **Fetch API**, uma API de busca do JS;
+- `fetch(url).then(res => res.json());`: exemplo de requisição utilizando a **Fetch API**;
+- Não é possível abortar uma requisição utilizando a **Fetch API**;
