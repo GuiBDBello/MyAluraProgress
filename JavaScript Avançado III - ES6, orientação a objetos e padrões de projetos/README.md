@@ -248,3 +248,15 @@ System.import('js/app/boot').catch(function(err){ // define o primeiro módulo a
 - `npm install babel-plugin-transform-es2015-modules-systemjs@6.9.0 --save-dev`: adiciona a dependência de transformação do ES2015 de módulos para utilizar o *systemjs* na versão 6.9.0 no arquivo `package.json`;
 - Adiciona, no arquivo `.babelrc`, a configuração da dependência instalada acima;
 - **Ex.:** `"plugins" : ["transform-es2015-modules-systemjs"]`;
+- **Obs.:** Removido o parâmetro `--ignore polyfill` que foi adicionado na **Aula 06 - Atividade 03** pois ocorreram problemas após a adição do *SystemJs*;
+
+### Atividade 07 - Delegação de eventos:
+
+- A classe NegociacaoController será alterada para um padrão *Singleton* (existirá apenas uma instância dessa classe que será importada nos lugares necessários);
+- **Ex.:** (após declarar a classe, no final do arquivo)
+```
+let negociacaoController = new NegociacaoController();
+export function currentInstance() {
+    return negociacaoController;
+}
+```
