@@ -220,3 +220,13 @@ fetch(url, {
 ### Atividade 04 - Compilando arquivos em tempo real:
 
 - `--watch`: parâmetro do `babel-cli` que monitora as alterações nos seus arquivos e realiza a *transcompilação* em tempo real;
+
+
+## Aula 07 - Trabalhando com módulos do ES2015!:
+
+### Atividade 02 - ES2015 e módulos:
+
+- `export`: palavra-chave do *ES6*/*ES2015* que **exporta** um módulo;
+- **Ex.:** `export class View { }`
+- `import`: palavra-chave do *ES6*/*ES2015* que **importa** um módulo;
+- **Ex.:** `import { View } from './View'`
