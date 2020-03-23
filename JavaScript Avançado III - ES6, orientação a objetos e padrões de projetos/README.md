@@ -242,3 +242,9 @@ System.import('js/app/boot').catch(function(err){ // define o primeiro módulo a
     console.error(err);
 });
 ```
+
+### Atividade 06 - Babel e transcompilação de módulos:
+
+- `npm install babel-plugin-transform-es2015-modules-systemjs@6.9.0 --save-dev`: adiciona a dependência de transformação do ES2015 de módulos para utilizar o *systemjs* na versão 6.9.0 no arquivo `package.json`;
+- Adiciona, no arquivo `.babelrc`, a configuração da dependência instalada acima;
+- **Ex.:** `"plugins" : ["transform-es2015-modules-systemjs"]`;
