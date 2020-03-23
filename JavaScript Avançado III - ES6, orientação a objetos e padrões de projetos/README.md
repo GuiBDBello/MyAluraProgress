@@ -230,3 +230,15 @@ fetch(url, {
 - **Ex.:** `export class View { }`
 - `import`: palavra-chave do *ES6*/*ES2015* que **importa** um módulo;
 - **Ex.:** `import { View } from './View'`
+
+### Atividade 04 - SystemJs:
+
+- `npm install systemjs@0.19.31 --save`: adiciona para produção a dependência do *systemjs* na versão 0.19.31 no arquivo `package.json`;
+- `<script src="node_modules/systemjs/dist/system.js"></script>`: importa o *script* da biblioteca *SystemJS*, que servirá como *loader* da aplicação;
+- **Ex.:** (utilização do *SystemJS* em seu `index.html`)
+```
+System.defaultJSExtensions = true; // permite omitir a extensão .js dos imports
+System.import('js/app/boot').catch(function(err){ // define o primeiro módulo a ser carregado
+    console.error(err);
+});
+```
