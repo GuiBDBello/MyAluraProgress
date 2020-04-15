@@ -16,3 +16,15 @@
 - **Ex.:** `aulas.forEach(aula -> { System.out.println("percorrendo :" + aula); });`
 - A classe `Collections` possui diversos métodos estáticos e pode ser utilizada para ordenar coleções;
 - **Ex.:** `Collections.sort(aulas)`: ordena a lista `aulas` por ordem alfabética;
+
+## Aula 02 - Listas de objetos
+
+### Atividade 01 - Listas de objetos:
+
+- `Collections.sort()` sabe ordenar Strings, mas não `Aula`. Isso ocorre pois a classe `String` possui um método chamado `compareTo()`;
+- `string1.compareTo(string2);`: retorna um número negativo se `string1` for "menor" que `string2`, retorna um número positivo se `string2` for menor que `string1` ou retorna zero se ambas forem iguais;
+- Para comparar uma Aula, é necessário adicionar a seguinte linha à classe `Aula`: `implements Comparable<Aula>` e sobrescrever o método `int compareTo(Aula outraAula)`;
+- Para comparar por mais de um critério, o método `sort()` possui uma implementação que aceita mais de um parâmetro, sendo o segundo um `Comparator`:
+- **Ex.:** `Collections.sort(aulas, java.util.Comparator.comparing(Aula::getTempo));`
+- Outra forma de realizar a mesma coisa é a seguinte:
+- **Ex.:** `aulas.sort(Comparator.comparing(Aula::getTempo));`
