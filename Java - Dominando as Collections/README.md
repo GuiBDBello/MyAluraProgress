@@ -28,3 +28,16 @@
 - **Ex.:** `Collections.sort(aulas, java.util.Comparator.comparing(Aula::getTempo));`
 - Outra forma de realizar a mesma coisa é a seguinte:
 - **Ex.:** `aulas.sort(Comparator.comparing(Aula::getTempo));`
+
+#### Quick Access:
+
+- No Eclipse, selecione a caixa de busca *Quick Access* e digite *gcuf* para encontrar o atalho de *Generate Constructor Using Fields*;
+
+## Aula 03 - Relacionamentos com coleções
+
+### Atividade 01 - Relacionamentos com coleções:
+
+- **Dica.:** É possível criar uma variável local ao utilizar `Ctrl + 1` em um *statement*;
+- Quando for retornar referências de objetos, o ideal é retornar uma cópia, ou um objeto imutável;
+- `Collections.unmodifiableList(aulas);`: retorna uma coleção de aulas *read-only*;
+- Ao tentar modificar uma coleção *unmodifiable*, ocorre uma exceção em runtime `java.lang.UnsupportedOperationException`;
