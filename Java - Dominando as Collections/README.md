@@ -48,3 +48,10 @@
 ### Atividade 01 - Mais práticas com relacionamentos:
 
 - `List<Aula> aulas = new ArrayList<>(aulasImutaveis);`: cria uma nova lista `aulas` utilizando como base a lista `aulasImutaveis`;
+
+### Atividade 06 - Outros métodos de Collections.:
+
+- `Collections.reverse()`: inverte a ordem de uma lista;
+- `Collections.shuffle()`: embaralha aleatoriamente a ordem de uma lista;
+- `Collections.singletonList()`: devolve uma lista imutável que contêm um único elemento especificado;
+- `Collections.nCopies()`: retorna uma lista imutável com a quantidade escolhida de um determinado elemento;
