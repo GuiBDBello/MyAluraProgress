@@ -41,3 +41,10 @@
 - Quando for retornar referências de objetos, o ideal é retornar uma cópia, ou um objeto imutável;
 - `Collections.unmodifiableList(aulas);`: retorna uma coleção de aulas *read-only*;
 - Ao tentar modificar uma coleção *unmodifiable*, ocorre uma exceção em runtime `java.lang.UnsupportedOperationException`;
+
+
+## Aula 04 - Mais práticas com relacionamentos
+
+### Atividade 01 - Mais práticas com relacionamentos:
+
+- `List<Aula> aulas = new ArrayList<>(aulasImutaveis);`: cria uma nova lista `aulas` utilizando como base a lista `aulasImutaveis`;
