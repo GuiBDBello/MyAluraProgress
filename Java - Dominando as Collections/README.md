@@ -55,3 +55,15 @@
 - `Collections.shuffle()`: embaralha aleatoriamente a ordem de uma lista;
 - `Collections.singletonList()`: devolve uma lista imutável que contêm um único elemento especificado;
 - `Collections.nCopies()`: retorna uma lista imutável com a quantidade escolhida de um determinado elemento;
+
+
+## Aula 05 - O poder dos sets
+
+### Atividade 01 - O poder dos sets:
+
+- `Set` (conjunto): estrutura de dados semelhante à lista (também herda de `Collection`) que armazena seus elementos sem uma ordem determinada;
+- **Ex.:** `Set<String> alunos = new HashSet<>();`
+- Em um `Set` não há garantia na ordem dos elementos que o compõe. Por não possuir essa ordenação, um `Set` não possui métodos de acesso, como por exemplo o `get()`;
+- Um `Set` não aceita elementos repetidos;
+- A maior vantagem do `Set` é a velocidade em casos específicos, como na utilização dos métodos `contains()` e `remove()`;
+- `Collections.sort()` só é aplicável para `List`;
