@@ -2,6 +2,7 @@ package br.com.alura;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -32,6 +33,11 @@ public class TestaAlunos {
 		
 		System.out.println(alunos);
 
+		// Ordenar Set não funciona
+//		Collections.sort(alunos);
+		
 		List<String> alunosEmLista = new ArrayList<>(alunos);
+		// Ordenar List funciona
+		Collections.sort(alunosEmLista);
 	}
 }
