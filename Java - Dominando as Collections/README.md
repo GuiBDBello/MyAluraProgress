@@ -81,3 +81,7 @@
 
 - `Set<String> nomes = Collections.emptySet();`: cria um conjunto vazio;
 - `nomes.add("Paulo");`: retorna a exceção `UnsupportedOperationException`, pois um conjunto destinado a ser vazio não pode ter um elemento;
+
+### Atividade 06 - Para saber mais: Coleções threadsafe:
+
+- `Set<Aluno> alunosSincronizados = Collections.synchronizedSet(alunos);`: retorna uma nova coleção que pode ser compartilhada entre threads sem perigos;
