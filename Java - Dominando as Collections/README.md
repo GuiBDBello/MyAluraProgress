@@ -76,3 +76,8 @@
 #### Quick access:
 
 - No Eclipse, selecione a caixa de busca *Quick Access* (ou pressione `Ctrl + 3`) e digite *ggas* para encontrar o atalho de *Generate Getters and Setters*;
+
+### Atividade 05 - Collections.emptySet():
+
+- `Set<String> nomes = Collections.emptySet();`: cria um conjunto vazio;
+- `nomes.add("Paulo");`: retorna a exceção `UnsupportedOperationException`, pois um conjunto destinado a ser vazio não pode ter um elemento;
