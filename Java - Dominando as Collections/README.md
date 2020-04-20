@@ -31,7 +31,7 @@
 
 #### Quick Access:
 
-- No Eclipse, selecione a caixa de busca *Quick Access* e digite *gcuf* para encontrar o atalho de *Generate Constructor Using Fields*;
+- No Eclipse, selecione a caixa de busca *Quick Access* (ou pressione `Ctrl + 3`) e digite *gcuf* para encontrar o atalho de *Generate Constructor Using Fields*;
 
 ## Aula 03 - Relacionamentos com coleções
 
@@ -67,3 +67,12 @@
 - Um `Set` não aceita elementos repetidos;
 - A maior vantagem do `Set` é a velocidade em casos específicos, como na utilização dos métodos `contains()` e `remove()`;
 - `Collections.sort()` só é aplicável para `List`;
+
+
+## Aula 06 - Aplicando o Set no modelo
+
+### Atividade 01 - Aplicando o Set no modelo:
+
+#### Quick access:
+
+- No Eclipse, selecione a caixa de busca *Quick Access* (ou pressione `Ctrl + 3`) e digite *ggas* para encontrar o atalho de *Generate Getters and Setters*;

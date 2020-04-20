@@ -18,10 +18,12 @@ public class TestaPerformance {
 
         long inicio = System.currentTimeMillis();
 
+        // Inserção muito rápida
         for (int i = 1; i <= 50000; i++) {
             numeros.add(i);
         }
 
+        // Busca muito lenta
         for (Integer numero : numeros) {
             numeros.contains(numero);
         }
@@ -39,10 +41,12 @@ public class TestaPerformance {
         
         long inicio = System.currentTimeMillis();
 
+        // Inserção rápida (porém mais lenta que List)
         for (int i = 1; i <= 50000; i++) {
             numeros.add(i);
         }
 
+        // Busca muito rápida
         for (Integer numero : numeros) {
             numeros.contains(numero);
         }
@@ -53,5 +57,4 @@ public class TestaPerformance {
 
         System.out.println("Tempo gasto (HashSet): " + tempoDeExecucao);
     }
-
 }
