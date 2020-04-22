@@ -85,3 +85,31 @@
 ### Atividade 06 - Para saber mais: Coleções threadsafe:
 
 - `Set<Aluno> alunosSincronizados = Collections.synchronizedSet(alunos);`: retorna uma nova coleção que pode ser compartilhada entre threads sem perigos;
+
+
+## Aula 07 - Equals e hashcode
+
+### Atividade 01 - Equals e hashcode:
+
+- Ao comparar dois objetos, deve-se utilizar o método `equals()` da classe `Object`. Esse método deve ser sobrescrito em sua classe para realizar a comparação desejada;
+- Como o `equals()` recebe um `Object` como parâmetro, deve-se realizar um *cast* para o tipo desejado;
+- **Ex.:**
+```
+@Override
+public boolean equals(Object obj) {
+	Aluno outro = (Aluno) obj;
+	return this.nome.equals(outro.nome);
+}
+```
+- Para evitar comparações com um `nome` nulo, deve-se adicionar programação defensiva no construtor do objeto:
+- **Ex.:** `if (nome == null) throw new NullPointerException("nome não pode ser null");`
+- Ao reescrever o método `equals()`, também é necessário reescrever o `hashCode()`;
+- O método `hashCode()` é como se fosse um "identificador único" do objeto;
+- A classe `String` já realiza uma implementação própria do `hashCode()`, como mostrado abaixo:
+- **Ex.:**
+```
+@Override
+public int hashCode() {
+	return this.nome.hashCode();
+}
+```
