@@ -118,3 +118,24 @@ public int hashCode() {
 
 - Existe um contrato mais avançado que devemos seguir para implementar um método `equals` eficiente: https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html#equals-java.lang.Object-
 - No Eclipse você pode pressionar `Ctrl + 3` e digitar *equals*;
+
+
+## Aula 08 - Outros sets e iterators
+
+### Atividade 01 - Outros sets e iterators:
+
+- `LinkedHashSet`: ao contrário de `HashSet`, o `LinkedHashSet` armazena os elementos na mesma ordem que forem inseridos;
+- `TreeSet`: funciona apenas para classes que são `Comparable`. Armazena na ordem "natural" (léxica, para *Strings*) dos objetos. Possui até um construtor que recebe um `Comparator`;
+
+#### Iterator:
+
+- Antigamente, antes do Java 5, quando não havia uma forma de realizar um *enhanced for* (ou *for each*), era utilizado o `Iterator`;
+- `Iterator`: objeto que todas coleções dão acesso que serve para **iterar** entre os objetos dentro da coleção;
+- **Ex.:** `Iterator<Aluno> iterador = alunos.iterator();`
+- `iterador.hasNext()`: pede ao `iterador` se há um próximo elemento na coleção;
+- `iterador.next()`: devolve o próximo elemento da coleção;
+
+#### Vector:
+
+- Antigamente, no Java 1.2, existiam as *collections* "antigas", como a `Vector`;
+- `Vector`: é muito parecida com `ArrayList`, mas ela é *thread-safe*;
