@@ -159,3 +159,10 @@ public int hashCode() {
 
 - É muito importante lembrar de pesquisar no Javadoc do java.util, pois existe muita coisa já implementada e vários códigos reutilizáveis: não reinvente a roda!
 - https://docs.oracle.com/javase/8/docs/api/java/util/package-summary.html
+
+### Atividade 07 - Para saber mais: Chaves e Valores:
+
+- *The Map interface provides three collection views, which allow a map's contents to be viewed as a set of keys, collection of values, or set of key-value mappings.*
+- Ou seja, temos uma coleção de chaves, uma coleção de valores, e uma coleção das associações. O interessante é que podemos acessar cada uma das coleções. Para acessar apenas as chaves use o método `keySet()` do `Map`. Para acessar os valores existe o método `values()`.
+- `Set<Entry<String, Integer>> associacoes = nomesParaIdade.entrySet();`: retorna um `Set` de `Entry` com os elementos do mapa;
+- **Ex.:** `associacoes.forEach(associacao -> System.out.println(associacao.getKey() + " - " + associacao.getValue()));`
