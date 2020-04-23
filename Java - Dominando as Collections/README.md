@@ -139,3 +139,23 @@ public int hashCode() {
 
 - Antigamente, no Java 1.2, existiam as *collections* "antigas", como a `Vector`;
 - `Vector`: é muito parecida com `ArrayList`, mas ela é *thread-safe*;
+
+
+## Aula 10 - Mapas
+
+### Atividade 01 - Mapas:
+
+- `Map<K,V>`: um mapa é uma estrutura de dados que associa uma chave (*key*) com um valor (*value*). A implementação mais comumente utilizada é o `HashMap`;
+- **Ex.:** `Map<Integer, Aluno> matriculaParaAluno = new HashMap<>();`
+- `this.matriculaParaAluno.put(aluno.getNumeroMatricula(), aluno)`: insere no mapa `matriculaParaAluno` o aluno `aluno` utilizando como chave o `numeroMatricula` do aluno;
+- `matriculaParaAluno.containsKey(numero)`: retorna um `boolean` que representa se o mapa `matriculaParaAluno` possui um elemento com a chave `numero`;
+
+#### Outras Implementações:
+
+- O `HashMap`, como foi dito anteriormente, é uma das implementações mais usadas de `Map`. Mas temos outras como o `LinkedHashMap`, bastante parecido com o `LinkedHashSet`, que guarda a ordem de inserção. Ou seja, se fôssemos imprimir o `LinkedHashMap`, a impressão apareceria na ordem em que foi inserida.
+- Outro exemplo de `Map`, porém muito antigo, é o `HashTable`, uma implementação bem antiga de `Map`, pouco usada mas que é uma *thread safe*. Ou seja, é seguro usá-lo em um programa que tenha programação concorrente. Porém, comumente, a pessoa que necessita de um `Map` *thread safe* estudará mais sobre `threads` e utilizará `HashMap`.
+
+#### java.util:
+
+- É muito importante lembrar de pesquisar no Javadoc do java.util, pois existe muita coisa já implementada e vários códigos reutilizáveis: não reinvente a roda!
+- https://docs.oracle.com/javase/8/docs/api/java/util/package-summary.html
