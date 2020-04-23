@@ -147,7 +147,7 @@ public int hashCode() {
 
 - `Map<K,V>`: um mapa é uma estrutura de dados que associa uma chave (*key*) com um valor (*value*). A implementação mais comumente utilizada é o `HashMap`;
 - **Ex.:** `Map<Integer, Aluno> matriculaParaAluno = new HashMap<>();`
-- `this.matriculaParaAluno.put(aluno.getNumeroMatricula(), aluno)`: insere no mapa `matriculaParaAluno` o aluno `aluno` utilizando como chave o `numeroMatricula` do aluno;
+- `this.matriculaParaAluno.put(aluno.getNumeroMatricula(), aluno)`: insere no mapa `matriculaParaAluno` o aluno `aluno` utilizando como chave o `numeroMatricula` do aluno. Se a chave já existir nesse mapa, o valor será substituído, perdendo o valor anterior;
 - `matriculaParaAluno.containsKey(numero)`: retorna um `boolean` que representa se o mapa `matriculaParaAluno` possui um elemento com a chave `numero`;
 
 #### Outras Implementações:
