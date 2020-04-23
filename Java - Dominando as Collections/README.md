@@ -113,3 +113,8 @@ public int hashCode() {
 	return this.nome.hashCode();
 }
 ```
+
+### Atividade 05 - Para saber mais: O contrato do método equals:
+
+- Existe um contrato mais avançado que devemos seguir para implementar um método `equals` eficiente: https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html#equals-java.lang.Object-
+- No Eclipse você pode pressionar `Ctrl + 3` e digitar *equals*;
