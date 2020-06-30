@@ -71,3 +71,7 @@ if (process.env.NODE_ENV == 'production') {
 }
 ```
 - Então adicione, dentro do `module.exports`, seus plugins;
+
+### Atividade 03 - Mudando o ambiente com cross-env:
+
+- `npm install cross-env@5.0.1 --save-dev`: adiciona a dependência `cross-env` para definir variáveis de ambiente *cross-platform*;
