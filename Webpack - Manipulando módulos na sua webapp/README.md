@@ -98,3 +98,47 @@ if (process.env.NODE_ENV == 'production') {
 
 - `webpack-dev-server` é um servidor que, por padrão, roda a aplicação na porta 8080;
 - `npm start`: inicia a aplicação com o `webpack-dev-server`;
+
+## Aula 04 - Tratando arquivos CSS como módulos
+
+### Atividade 01 - Utilizando o npm para gerenciar dependências front-end:
+
+- `npm install bootstrap@3.3.7 --save`: adiciona a dependência `bootstrap` para que o Webpack o gerencie também;
+
+### Atividade 03 - Importando Bootstrap como um módulo:
+
+- `import 'bootstrap/dist/css/bootstrap.css';`: importa o *stylesheet* do bootstrap;
+- `import 'bootstrap/dist/css/bootstrap-theme.css';`: importa o *stylesheet* do bootstrap-theme;
+- `npm install css-loader@0.28.4 style-loader@0.18.2 --save-dev`: adiciona as dependências `css-loader` e `style-loader` para carregar módulos *CSS* em formato *JSON*;
+- `npm install url-loader@0.5.9 file-loader@0.11.2 --save-dev`: adiciona as dependências `url-loader` e `file-loader` para carregar ícones e arquivos;
+
+#### `webpack.config.js`:
+
+- Adicione uma nova regra, dentro de `rules`:
+-
+```
+{
+    test: /\.css$/,
+    loader: 'style-loader!css-loader' // aplica os loaders da direita para a esquerda
+}
+```
+- Copiar, também, as regras das fontes:
+-
+```
+{
+    test: /\.(woff|woff2)(\?v=\d+\.\d+\.\d+)?$/,
+    loader: 'url-loader?limit=10000&mimetype=application/font-woff'
+},
+{
+    test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/,
+    loader: 'url-loader?limit=10000&mimetype=application/octet-stream'
+},
+{
+    test: /\.eot(\?v=\d+\.\d+\.\d+)?$/,
+    loader: 'file-loader'
+},
+{
+    test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
+    loader: 'url-loader?limit=10000&mimetype=image/svg+xml'
+}
+```
