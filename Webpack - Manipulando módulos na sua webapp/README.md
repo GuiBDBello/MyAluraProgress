@@ -59,10 +59,14 @@ module: {
 ### Atividade 01 - Preparando o build de produção:
 
 #### `package.json`:
-- Dentro de `"scripts"`, adicione a linha `"build-prod": "NODE_ENV=production webpack --config webpack.config.js"`: 
+
+- Dentro de `"scripts"`, adicione a linha `"build-prod": "NODE_ENV=production webpack --config webpack.config.js"`;
 - `npm install babili-webpack-plugin@0.1.1 --save-dev`: adiciona a dependência `babili` para minificar o bundle criado pelo Webpack;
-- Dentro do `webpack.config.js`, importe o `babili` com `const babiliPlugin = require('babili-webpack-plugin');`;
-- Logo após, verifique se 
+
+#### `webpack.config.js`:
+
+- Importe o `babili` com `const babiliPlugin = require('babili-webpack-plugin');`;
+- Logo após, verifique se a variável de ambiente está definida;
 -
 ```
 let plugins = [];
@@ -70,8 +74,27 @@ if (process.env.NODE_ENV == 'production') {
     plugins.push(new babiliPlugin());
 }
 ```
-- Então adicione, dentro do `module.exports`, seus plugins;
+- Então adicione, dentro do `module.exports`, a variável `plugins`;
 
 ### Atividade 03 - Mudando o ambiente com cross-env:
 
 - `npm install cross-env@5.0.1 --save-dev`: adiciona a dependência `cross-env` para definir variáveis de ambiente *cross-platform*;
+
+## Aula 03 - Webpack Dev Server e configuração
+
+### Atividade 01 - Instalação e configuração:
+
+- `npm install webpack-dev-server@2.5.1 --save-dev`: adiciona a dependência `webpack-dev-server` para utilizar um servidor que integre com o Webpack;
+
+#### `package.json`:
+
+- Dentro de `"scripts"`, adicione a linha `"start": "webpack-dev-server"`;
+
+#### `webpack.config.js`:
+
+- Adicione, dentro do `output`, a linha `publicPath: 'dist'` para criar o `bundle.js` dentro do diretório `dist`;
+
+#### webpack-dev-server:
+
+- `webpack-dev-server` é um servidor que, por padrão, roda a aplicação na porta 8080;
+- `npm start`: inicia a aplicação com o `webpack-dev-server`;
