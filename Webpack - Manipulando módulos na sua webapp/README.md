@@ -263,6 +263,6 @@ plugins.push(new htmlWebpackPlugin({
 
 ### Atividade 10 - Alterando o endereço da API no build de produção:
 
-- `let SERVICE_URL = JSON.stringify('http://localhost:3000');`: cria uma variável para o endereço do ambiente de desenvolvimento;
-- `SERVICE_URL = JSON.stringify('');`: altera o endereço quando é feito o *build* de produção;
+- `let SERVICE_URL = JSON.stringify('http://localhost:3000');`: cria uma variável para armazenar o endereço do ambiente de desenvolvimento;
+- `SERVICE_URL = JSON.stringify('http://endereco-da-sua-api');`: altera o endereço quando é feito o *build* de produção;
 - `plugins.push(new webpack.DefinePlugin({ SERVICE_URL }));`: define algumas propriedades para "trocar" entre os módulos;
