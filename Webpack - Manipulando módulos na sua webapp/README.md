@@ -107,8 +107,8 @@ if (process.env.NODE_ENV == 'production') {
 
 ### Atividade 03 - Importando Bootstrap como um módulo:
 
-- `import 'bootstrap/dist/css/bootstrap.css';`: importa o *stylesheet* do bootstrap;
-- `import 'bootstrap/dist/css/bootstrap-theme.css';`: importa o *stylesheet* do bootstrap-theme;
+- `import 'bootstrap/dist/css/bootstrap.css';`: importa, como se fosse um módulo, o *stylesheet* do bootstrap;
+- `import 'bootstrap/dist/css/bootstrap-theme.css';`: importa, como se fosse um módulo, o *stylesheet* do bootstrap-theme;
 - `npm install css-loader@0.28.4 style-loader@0.18.2 --save-dev`: adiciona as dependências `css-loader` e `style-loader` para carregar módulos *CSS* em formato *JSON*;
 - `npm install url-loader@0.5.9 file-loader@0.11.2 --save-dev`: adiciona as dependências `url-loader` e `file-loader` para carregar ícones e arquivos;
 
@@ -141,4 +141,25 @@ if (process.env.NODE_ENV == 'production') {
     test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
     loader: 'url-loader?limit=10000&mimetype=image/svg+xml'
 }
+```
+
+### Atividade 05 - Importando um CSS qualquer:
+
+- `import '../css/meucss.css';`: importa um CSS de um diretório local;
+
+### Atividade 07 - Resolvendo o FOUC (Flash of Unstyled Content):
+
+- `<link rel="stylesheet" href="dist/styles.css" />`: carrega o estilo da página de um arquivo, que será gerado pelo Webpack;
+- `npm install extract-text-webpack-plugin@3.0.0 --save-dev`: adiciona a dependência `extract-text-webpack-plugin` para exportar o arquivo com os estilos da aplicação;
+
+#### `webpack.config.js`:
+
+- Importe o `extract-text-webpack-plugin` com `const extractTextPlugin = require('extract-text-webpack-plugin');`;
+- `plugins.push(new extractTextPlugin('styles.css'));`: adiciona o `extractTextPlugin` na lista de plugins;
+- Logo após, altere a linha `loader: 'style-loader!css-loader'` por:
+```
+use: extractTextPlugin.extract({
+    fallback: 'style-loader',
+    use: 'css-loader'
+})
 ```
