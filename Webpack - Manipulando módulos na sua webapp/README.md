@@ -201,3 +201,11 @@ plugins.push(new webpack.ProvidePlugin({
     'jQuery': 'jquery/dist/jquery.js'
 }));
 ```
+
+## Aula 06 - Boas práticas
+
+### Atividade 01 - Otimizando o build com Scope Hoisting:
+
+#### `webpack.config.js`:
+
+- `plugins.push(webpack.optimize.ModuleConcatenationPlugin());`: diminui a quantidade de "*closures*" durante o processo de criação de módulo para processá-los mais rapidamente. Deve ser feito apenas em produção;
