@@ -191,3 +191,13 @@ plugins.push(new optimizeCSSAssetsPlugin({
 - `import 'bootstrap/js/modal.js';`: importa, como se fosse um módulo, um *script* do bootstrap;
 - `npm install jquery@3.2.1 --save`: adiciona a dependência do `jquery` para carregar os scripts do bootstrap;
 - `import 'jquery/dist/jquery.js';`: importa, como se fosse um módulo, o *script* do jquery;
+
+### Atividade 03 - Lidando com dependências globais:
+
+- Utiliza o Webpack para configurar o plugin do jquery nas variáveis `$` e `jQuery`;
+```
+plugins.push(new webpack.ProvidePlugin({
+    '$': 'jquery/dist/jquery.js',
+    'jQuery': 'jquery/dist/jquery.js'
+}));
+```
