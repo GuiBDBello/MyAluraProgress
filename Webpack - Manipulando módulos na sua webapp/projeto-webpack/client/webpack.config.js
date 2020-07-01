@@ -1,7 +1,10 @@
 const path = require('path');
 const babiliPlugin = require('babili-webpack-plugin');
+const extractTextPlugin = require('extract-text-webpack-plugin');
 
 let plugins = [];
+
+plugins.push(new extractTextPlugin('styles.css'));
 
 if (process.env.NODE_ENV == 'production') {
     plugins.push(new babiliPlugin());
@@ -25,7 +28,11 @@ module.exports = {
             },
             {
                 test: /\.css$/,
-                loader: 'style-loader!css-loader' // aplica os loaders da direita para a esquerda
+                //loader: 'style-loader!css-loader' // aplica os loaders da direita para a esquerda
+                use: extractTextPlugin.extract({
+                    fallback: 'style-loader',
+                    use: 'css-loader'
+                })
             },
             {
                 test: /\.(woff|woff2)(\?v=\d+\.\d+\.\d+)?$/,
