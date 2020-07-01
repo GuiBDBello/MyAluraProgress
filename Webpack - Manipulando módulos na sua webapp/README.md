@@ -251,3 +251,7 @@ plugins.push(new htmlWebpackPlugin({
     template: __dirname + 'main.html'
 }));
 ```
+
+### Atividade 06 - Code splitting e Lazy loading:
+
+- `const { NegociacaoService } = await System.import('../domain/negociacao/NegociacaoService');`: carrega um módulo de forma assíncrona;
