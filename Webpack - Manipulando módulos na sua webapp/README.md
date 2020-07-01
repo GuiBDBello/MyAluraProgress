@@ -229,3 +229,25 @@ entry: {
     vendor: ['jquery', 'bootstrap', 'reflect-metadata']
 }
 ```
+
+### Atividade 05 - Gerando a página principal automaticamente:
+
+- `npm install html-webpack-plugin@2.29.0 --save-dev`: adiciona a dependência do `html-webpack-plugin` para carregar módulos de estilo e scripts de terceiros dinamicamente;
+- Renomeie seu `index.html` para `main.html` (esse arquivo servirá de "*template*" para criar seu `index.html`);
+
+#### `webpack.config.js`:
+
+- Importe o `htmlWebpackPlugin` com `const htmlWebpackPlugin = require('html-webpack-plugin');`;
+- Defina a nova forma de gerar o `index.html`:
+```
+plugins.push(new htmlWebpackPlugin({
+    hash: true,
+    minify: {
+        html5: true,
+        collapseWhitespace: true,
+        removeComments: true
+    },
+    filename: 'index.html',
+    template: __dirname + 'main.html'
+}));
+```
