@@ -208,4 +208,24 @@ plugins.push(new webpack.ProvidePlugin({
 
 #### `webpack.config.js`:
 
-- `plugins.push(webpack.optimize.ModuleConcatenationPlugin());`: diminui a quantidade de "*closures*" durante o processo de criação de módulo para processá-los mais rapidamente. Deve ser feito apenas em produção;
+- Cada módulo do nosso bundle é envolvido por um wrapper, que resumidamente se trata de uma função. Contudo, a existência desses wrappers tornam a execução do script um pouco mais lenta no navegador. Entretanto, a partir do Webpack 3, podemos ativar o Scope Hoisting. Ele consiste em concatenar o escopo de todos os módulos em um único wrapper, permitindo assim que nosso código seja executado mais rapidamente no navegador.
+- `plugins.push(new webpack.optimize.ModuleConcatenationPlugin());`: diminui a quantidade de "*closures*" durante o processo de criação de módulo para processá-los mais rapidamente. Deve ser feito apenas em produção;
+
+### Atividade 03 - Separando o nosso código das bibliotecas:
+
+#### `webpack.config.js`:
+
+- Separa as bibliotecas de terceiros em um *bundle* separado:
+```
+plugins.push(new webpack.optimize.CommonsChunkPlugin({
+    name: 'vendor',
+    filename: 'vendor.bundle.js'
+}));
+```
+- Dentro de `module.exports`, altere `entry: './app-src/app.js'` por:
+```
+entry: {
+    app: './app-src/app.js',
+    vendor: ['jquery', 'bootstrap', 'reflect-metadata']
+}
+```
