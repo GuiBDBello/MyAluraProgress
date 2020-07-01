@@ -183,3 +183,11 @@ plugins.push(new optimizeCSSAssetsPlugin({
     canPrint: true
 }));
 ```
+
+## Aula 05 - Importando scripts
+
+### Atividade 01 - Importando scripts:
+
+- `import 'bootstrap/js/modal.js';`: importa, como se fosse um módulo, um *script* do bootstrap;
+- `npm install jquery@3.2.1 --save`: adiciona a dependência do `jquery` para carregar os scripts do bootstrap;
+- `import 'jquery/dist/jquery.js';`: importa, como se fosse um módulo, o *script* do jquery;
