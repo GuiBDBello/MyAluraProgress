@@ -260,3 +260,9 @@ plugins.push(new htmlWebpackPlugin({
 
 - `npm install babel-plugin-syntax-dynamic-import@6 --save-dev`: adiciona a dependência `babel-plugin-syntax-dynamic-import`;
 - Adiciona no `.babelrc`, na propriedade `plugins`, o valor `"babel-plugin-syntax-dynamic-import"`;
+
+### Atividade 10 - Alterando o endereço da API no build de produção:
+
+- `let SERVICE_URL = JSON.stringify('http://localhost:3000');`: cria uma variável para o endereço do ambiente de desenvolvimento;
+- `SERVICE_URL = JSON.stringify('');`: altera o endereço quando é feito o *build* de produção;
+- `plugins.push(new webpack.DefinePlugin({ SERVICE_URL }));`: define algumas propriedades para "trocar" entre os módulos;
