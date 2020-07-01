@@ -255,3 +255,8 @@ plugins.push(new htmlWebpackPlugin({
 ### Atividade 06 - Code splitting e Lazy loading:
 
 - `const { NegociacaoService } = await System.import('../domain/negociacao/NegociacaoService');`: carrega um módulo de forma assíncrona;
+
+### Atividade 07 - System.import vs import:
+
+- `npm install babel-plugin-syntax-dynamic-import@6 --save-dev`: adiciona a dependência `babel-plugin-syntax-dynamic-import`;
+- Adiciona no `.babelrc`, na propriedade `plugins`, o valor `"babel-plugin-syntax-dynamic-import"`;
