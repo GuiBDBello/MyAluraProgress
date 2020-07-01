@@ -163,3 +163,23 @@ use: extractTextPlugin.extract({
     use: 'css-loader'
 })
 ```
+
+### Atividade 09 - Resolvemos um problema e criamos outro, mas tem solução!:
+
+- `npm install optimize-css-assets-webpack-plugin@2.0.0 cssnano@3.10.0 --save-dev`: adiciona as dependências `optimize-css-assets-webpack-plugin` e `cssnano` para minificar os estilos da aplicação;
+
+#### `webpack.config.js`:
+
+- Importe o `optimize-css-assets-webpack-plugin` com `const optimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');`;
+- Dentro do *if* que verifica o ambiente de produção, adicione o seguinte código:
+```
+plugins.push(new optimizeCSSAssetsPlugin({
+    cssProcessor: require('cssnano'),
+    cssProcessorOptions: {
+        discardComments: {
+            removeAll: true
+        }
+    },
+    canPrint: true
+}));
+```
