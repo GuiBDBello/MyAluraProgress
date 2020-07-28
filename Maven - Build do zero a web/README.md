@@ -33,9 +33,25 @@
 - A primeira execução do Maven irá demorar pois ele baixa todos os plugins e dependências necessários para executar a aplicação;
 - `mvn compile`: compila a aplicação, facilitando o processo feito na aula anterior com o `javac`. **Obs.:** a primeira vez que o Maven compila um projeto ele irá baixar o *plugin* de compilação, o que pode demorar um tempo;
 - `mvn test`: executa os testes da aplicação. Cria um diretório com relatórios informando o resultado do teste de cada classe;
-- `mvn clean`: limpa o projeto;
+- `mvn clean`: limpa o projeto. Remove o diretório `target`, deixando apenas a fonte;
 
 ### pom.xml:
 
 - É o "modelo" do projeto;
 - Possui as informações da versão do Maven, grupo, nome, forma de empacotamento, versão da aplicação, site, dependências externas e outras;
+
+## Gerando relatórios:
+
+- `compile`, `clean` e `test` são plugins padrões do Maven;
+
+### Plugin surefire-report:
+
+- `mvn surefire-report:report`: executa o objetivo `report` do plugin `surefire-report`;
+
+### Packaging:
+
+- `mvn package`: empacota o projeto em um `jar` ou `war`. Apenas cria o arquivo empacotado se compilar e se os testes finalizarem com sucesso;
+
+### Executar:
+
+- `java -cp produtos-1.0-SNAPSHOT.jar br.com.alura.maven.App`: roda a aplicação utilizando o pacote gerado;
