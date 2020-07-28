@@ -16,3 +16,26 @@
 - `javac`: comando para compilar arquivos `.java`;
 - `javac -sourcepath src -d target src/Calculadora.java`: comando utilizado para compilar o arquivo `Calculadora.java` e enviá-lo ao diretório `target`;
 - `javac -sourcepath src/main -d target/classes -cp lib/xstream-1.4.12.jar src/main/Calculadora.java`: comando utilizado para compilar o arquivo `Calculadora.java`, enviá-lo ao diretório `target/classes` enquanto usa a biblioteca `xstream`;
+
+## Um gostinho do Maven:
+
+### Download:
+
+- https://maven.apache.org/download.cgi
+
+### Terminal:
+
+- O Maven baixado e descompactado é utilizado no *Terminal*, por meio de linha de comando (*cli*);
+- Dentro do diretório `bin` do Maven, utilize `./mvn` para executá-lo;
+- `./mvn --help`: mostra os comandos disponíveis pelo Maven;
+- Para poder executar esse comando de qualquer lugar, adicione o caminho do Maven às variáveis de ambiente do seu sistema operacional;
+- `mvn archetype:generate -DartifactId=produtos -DgroupId=br.com.alura.maven -DinteractiveMode=false -DarchetypeArtifactId=maven-archetype-quickstart`: gera um projeto novo com o nome (`artifactId`) `produtos`, com o pacote base (`groupId`) `br.com.alura.maven`, deixando o resto das informações como padrão (`interactiveMode`) e utilizando como **arquétipo** (estrutura do projeto) `maven-archetype-quickstart`;
+- A primeira execução do Maven irá demorar pois ele baixa todos os plugins e dependências necessários para executar a aplicação;
+- `mvn compile`: compila a aplicação, facilitando o processo feito na aula anterior com o `javac`. **Obs.:** a primeira vez que o Maven compila um projeto ele irá baixar o *plugin* de compilação, o que pode demorar um tempo;
+- `mvn test`: executa os testes da aplicação. Cria um diretório com relatórios informando o resultado do teste de cada classe;
+- `mvn clean`: limpa o projeto;
+
+### pom.xml:
+
+- É o "modelo" do projeto;
+- Possui as informações da versão do Maven, grupo, nome, forma de empacotamento, versão da aplicação, site, dependências externas e outras;
