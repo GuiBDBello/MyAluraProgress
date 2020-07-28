@@ -89,5 +89,34 @@
 - Existe um lugar que mantém, de forma centralizada, os projetos do Maven;
 - https://repo.maven.apache.org/maven2
 - É nesse repositório remoto que o Maven busca, por padrão, para baixar suas dependências;
-- As dependências já utilizadas são armazenados em um repositório local (`.m2/repository/`) após o primeiro *download*;
+- As dependências já utilizadas são armazenados em um repositório local (no diretório de seu usuário, em `.m2/repository/`) após o primeiro *download*;
 - É possível adicionar novos repositórios remotos utilizando a tag `<repositories></repositories>` no arquivo `pom.xml`;
+
+#### Documentação do POM:
+
+- https://maven.apache.org/pom.html
+
+## Aula 04 - Relatórios de qualidade e cobertura
+
+### Atividade 01 - As fases do Maven:
+
+- https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html
+```
+1. Validação: verificamos se projeto possui todas as informações necessárias
+
+2. Compilação: compilar os conteúdos
+
+3. Teste: realizar testes diferentes no projeto
+
+4. Pacote: geração de um pacote do projeto
+
+5. Teste de integração: realizar testes de integração
+
+6. Verificação: checagem do pacote gerado
+
+7. Instalação: realizar a instalação do pacote no repositório local
+
+8. Implantação: realizar a implantação no ambiente adequado
+```
+- Quando uma fase é executada, ela também roda todas as fases anteriores à ela, em ordem;
+- `mvn -DskipTests=true package`: gera o pacote da aplicação sem executar a fase de testes;
