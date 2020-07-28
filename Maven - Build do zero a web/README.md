@@ -80,3 +80,14 @@
 ```
 - O mvnrepository também informa quais as dependências necessárias para compilar, testar e os pacotes que o projeto contém;
 - Ao salvar o arquivo `pom.xml`, o Maven já baixa todas as dependências e compila o projeto sozinho;
+
+## Aula 03 - Repositório remoto e local
+
+### Atividade 01 - Repositório remoto e local:
+
+- `mvn -o test`: executa o plugin `test` do Maven de modo *offline* (`-o`), sem verificar por atualizações (se faltar algum `.jar` ocorrerão problemas na aplicação);
+- Existe um lugar que mantém, de forma centralizada, os projetos do Maven;
+- https://repo.maven.apache.org/maven2
+- É nesse repositório remoto que o Maven busca, por padrão, para baixar suas dependências;
+- As dependências já utilizadas são armazenados em um repositório local (`.m2/repository/`) após o primeiro *download*;
+- É possível adicionar novos repositórios remotos utilizando a tag `<repositories></repositories>` no arquivo `pom.xml`;
