@@ -120,3 +120,40 @@
 ```
 - Quando uma fase é executada, ela também roda todas as fases anteriores à ela, em ordem;
 - `mvn -DskipTests=true package`: gera o pacote da aplicação sem executar a fase de testes;
+
+### Atividade 03 - Incluindo plugins:
+
+#### Maven PMD Plugin:
+
+- https://maven.apache.org/plugins/maven-pmd-plugin/
+- Analisa o código-fonte e detecta possíveis margens de *bugs*;
+- `mvn pmd:pmd`: executa o relatório do PMD;
+- `mvn verify`: verifica a qualidade do projeto;
+- `mvn pmd:check`: falha o build se o código-fonte possui violações do PMD. É executado durante a fase `verify`;
+
+#### Configurando o build:
+
+- Para rodar **sempre** um *goal* de um *plugin*, é necessário configurar isso no `pom.xml`;
+- Dentro da *tag* `<project></project>`, adicione a *tag* `<build></build>` para adicionar uma configuração de *build*;
+- **Ex.:**
+```
+<build>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-pmd-plugin</artifactId>
+            <version>3.6</version>
+            <executions>
+                <execution>
+                    <phase>verify</phase>
+                    <goals>
+                        <goal>check</goal>
+                    </goals>
+                </execution>
+            </executions>
+        </plugin>
+    </plugins>
+</build>
+```
+- Dentro de `<build></build>` define o *plugin* (`<plugin></plugin>`) do PMD para ser utilizado durante a *build* e foi definida uma execução (`<execution></execution>`) na fase *verify* (`<phase>verify</phase>`) com o objetivo de checar a qualidade do código (`<goal>check</goal>`);
+- Na próxima execução do `mvn verify`, serão executados os `<goals></goals>` definidos na *tag* `<build></build>` dessa fase;
