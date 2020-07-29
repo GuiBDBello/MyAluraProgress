@@ -184,7 +184,14 @@
 </plugin>
 ```
 - Note que não é obrigatório definir uma `<phase></phase>`, o próprio *plugin* já define uma fase padrão para cada `<goal></goal>`;
+- Os arquivos são gerados em `target/site/jacoco/`;
 
 #### Eclipse:
 
 - Clique com o botão direito no projeto > *Run As* > *Maven build...* > Em *Name*, digite `produtos maven verify` e em *Goals*, digite `verify` > Clique em *Run*;
+
+### Atividade 09 - Atualizando as dependências do projeto:
+
+- Em projetos com muitas dependências, com o passar do tempo elas podem ficar desatualizadas, caso você queira atualizar as dependências para suas versões mais atuais, poderá utilizar o seguinte comando: `mvn versions:use-latest-versions`;
+- Existe um outro *goal* que verifica por atualizações sem de fato alterar o `pom.xml`: `mvn versions:display-dependency-updates`;
+- Os dois *goals* fazem parte do *plugin* `Versions`, cuja documentação pode ser encontrada aqui: http://www.mojohaus.org/versions-maven-plugin/
