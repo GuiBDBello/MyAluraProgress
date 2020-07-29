@@ -130,6 +130,7 @@
 - `mvn pmd:pmd`: executa o relatório do PMD;
 - `mvn verify`: verifica a qualidade do projeto;
 - `mvn pmd:check`: falha o build se o código-fonte possui violações do PMD. É executado durante a fase `verify`;
+- Veja exemplos de como utilizar o PMD aqui: https://maven.apache.org/plugins/maven-pmd-plugin/usage.html
 
 #### Configurando o build:
 
@@ -157,3 +158,33 @@
 ```
 - Dentro de `<build></build>` define o *plugin* (`<plugin></plugin>`) do PMD para ser utilizado durante a *build* e foi definida uma execução (`<execution></execution>`) na fase *verify* (`<phase>verify</phase>`) com o objetivo de checar a qualidade do código (`<goal>check</goal>`);
 - Na próxima execução do `mvn verify`, serão executados os `<goals></goals>` definidos na *tag* `<build></build>` dessa fase;
+
+### Atividade 07 - Um pouco das várias opções do Maven:
+
+#### Plugin de cobertura de teste:
+
+- https://www.eclemma.org/jacoco/trunk/doc/maven.html
+
+#### JaCoCo:
+
+- Dentro dos `<plugins></plugins>` da *build*, adicione a execução do JaCoCo:
+```
+<plugin>
+    <groupId>org.jacoco</groupId>
+    <artifactId>jacoco-maven-plugin</artifactId>
+    <version>0.8.5</version>
+    <executions>
+        <execution>
+            <goals>
+                <goal>prepare-agent</goal>
+                <goal>report</goal>
+            </goals>
+        </execution>
+    </executions>
+</plugin>
+```
+- Note que não é obrigatório definir uma `<phase></phase>`, o próprio *plugin* já define uma fase padrão para cada `<goal></goal>`;
+
+#### Eclipse:
+
+- Clique com o botão direito no projeto > *Run As* > *Maven build...* > Em *Name*, digite `produtos maven verify` e em *Goals*, digite `verify` > Clique em *Run*;
