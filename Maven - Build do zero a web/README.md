@@ -195,3 +195,27 @@
 - Em projetos com muitas dependências, com o passar do tempo elas podem ficar desatualizadas, caso você queira atualizar as dependências para suas versões mais atuais, poderá utilizar o seguinte comando: `mvn versions:use-latest-versions`;
 - Existe um outro *goal* que verifica por atualizações sem de fato alterar o `pom.xml`: `mvn versions:display-dependency-updates`;
 - Os dois *goals* fazem parte do *plugin* `Versions`, cuja documentação pode ser encontrada aqui: http://www.mojohaus.org/versions-maven-plugin/
+
+## Aula 05 - Criando um projeto web
+
+### Atividade 01 - Começando nossa loja web:
+
+#### Criando projeto web com o Maven no Eclipse:
+
+- Clique com o botão direito no *Package Explorer* > *New* > *Project...* > Maven > *Maven Project* > Defina a localização do *Workspace* > Selecione o *archetype webapp* > Defina *Group Id* e *Artifact Id*;
+
+#### Criando projeto web com o Maven no Terminal:
+
+- `mvn archetype:generate -DartifactId=lojaweb -DgroupId=br.com.alura.maven -DinteractiveMode=false -DarchetypeArtifactId=maven-archetype-webapp`
+
+#### Executando projeto web com o servidor web Jetty:
+
+- Para esse projeto, será utilizado o servidor web *Jetty*;
+```
+<plugin>
+    <groupId>org.eclipse.jetty</groupId>
+    <artifactId>jetty-maven-plugin</artifactId>
+    <version>9.4.30.v20200611</version>
+</plugin>
+```
+- `jetty:run`: baixa o Jetty (na primeira execução) e roda a aplicação utilizando o servidor Jetty;
