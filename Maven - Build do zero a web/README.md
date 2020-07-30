@@ -300,3 +300,26 @@ por (versão 3.1)
 - Uma forma de resolver o problema do vídeo anterior é deletar o projeto `produtos` do seu *workspace* no Eclipse. Assim, ele adicionará o `.jar` e não mais o projeto completo às suas dependências;
 - Os projetos instalados pelo Maven ficam no diretório do usuário + `.m2/`;
 - Para adicionar um projeto seu ao repositório local do Maven, execute `mvn install`;
+
+### Atividade 07 - Entendendo o escopo das dependências:
+
+- O escopo de compilação (`<scope>compile</scope>`) é o escopo padrão das dependências. Dependências com esse escopo são repassadas entre projetos;
+- Com o Eclipse, é possível visualizar melhor essa hierarquia de dependências no arquivo `pom.xml`, em *Dependency Hierarchy*;
+- Com o Terminal, é possível visualizar melhor essa hierarquia de dependências com o comando `mvn dependency:tree`;
+- Ainda no Eclipse, no arquivo `pom.xml`, o *Effective POM* mostra todas as configurações padrão das dependências (as que não precisam ser definidas explicitamente);
+- O escopo `provided` é utilizado para compilação, mas quando for gerado o *build* de produção, a dependência não precisa estar contida no `.war`, pois será **provido** pelo *servlet container*;
+- O escopo `runtime` não é utilizado para compilação, apenas para execução;
+- É possível também ignorar algumas dependências herdadas de outras, da seguinte forma:
+```
+<dependency>
+    <groupId>com.thoughtworks.xstream</groupId>
+    <artifactId>xstream</artifactId>
+    <version>1.4.12</version>
+    <exclusions>
+        <exclusion>
+            <groupId>xmlpull</groupId>
+            <artifactId>xmlpull</artifactId>
+        </exclusion>
+    </exclusions>
+</dependency>
+```
