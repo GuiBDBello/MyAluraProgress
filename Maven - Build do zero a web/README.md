@@ -293,3 +293,10 @@ por (versão 3.1)
 - Dessa forma, o projeto será adicionado em suas dependências do Maven. Porém, isso tem vantagens e desvantagens:
 - Vantagens: é possível alterar o código-fonte da dependência e o projeto será atualizado instantaneamente;
 - Desvantagens: é possível utilizar as classes de testes, o que resultará em erros de compilação;
+- Para importar o projeto `produtos` como dependência em outros projetos, é necessário primeiramente executar o comando `mvn install` nele;
+
+### Atividade 06 - Cuidando dos detalhes:
+
+- Uma forma de resolver o problema do vídeo anterior é deletar o projeto `produtos` do seu *workspace* no Eclipse. Assim, ele adicionará o `.jar` e não mais o projeto completo às suas dependências;
+- Os projetos instalados pelo Maven ficam no diretório do usuário + `.m2/`;
+- Para adicionar um projeto seu ao repositório local do Maven, execute `mvn install`;
