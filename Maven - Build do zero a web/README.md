@@ -219,3 +219,38 @@
 </plugin>
 ```
 - `jetty:run`: baixa o Jetty (na primeira execução) e roda a aplicação utilizando o servidor Jetty;
+
+### Atividade 03 - Modificando nosso web.xml:
+
+#### Servlet API:
+
+- Adicione a Servlet API no projeto:
+```
+<!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
+<dependency>
+    <groupId>javax.servlet</groupId>
+    <artifactId>javax.servlet-api</artifactId>
+    <version>3.1.0</version>
+    <scope>provided</scope>
+</dependency>
+```
+- Por padrão, na criação de um projeto com arquétipo *webapp*, o Maven já cria o arquivo `web.xml`. Porém, esse arquivo vêm numa versão antiga, desatualizada. Portanto:
+Troque (versão 2.3)
+```
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+</web-app>
+```
+por (versão 3.1)
+```
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+		 http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+</web-app>
+```
