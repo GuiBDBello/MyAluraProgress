@@ -271,3 +271,10 @@ por (versão 3.1)
 - Por padrão, ao alterar os arquivos `.jsp` não é necessário reiniciar a aplicação. Porém, ao alterar os arquivos `.java` é necessário reiniciar a aplicação para aplicar as alterações;
 - O `<scanIntervalSeconds>` realiza um "*live-reload*" ao salvar os arquivos `.java`, reiniciando a aplicação quando detecta alguma alteração;
 - O `<contextPath>` cria um "diretório virtual" para separar o contexto de uma aplicação;
+
+## Aula 06 - Projeto web
+
+### Atividade 01 - Utilizando o package no projeto:
+
+- `mvn package`: gera o arquivo `.war` (ou `.jar`) dentro do diretório `target/`;
+- Um `.jar` contém as classes do projeto. Um `.war` contém, além das classes, a biblioteca, o `WEB-INF`, os `.jsp`, `javascript`, `css`, enfim, tudo que há no projeto;
