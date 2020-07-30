@@ -254,3 +254,20 @@ por (versão 3.1)
          version="3.1">
 </web-app>
 ```
+
+### Atividade 05 - Incrementando nossa loja web:
+
+#### Configurando o Jetty:
+
+- Por padrão, o Jetty não possui *live-reload*, porém é possível definir um tempo para que o Jetty procure por alterações;
+```
+<configuration>
+    <scanIntervalSeconds>10</scanIntervalSeconds>
+    <webApp>
+        <contextPath>/loja</contextPath>
+    </webApp>
+</configuration>
+```
+- Por padrão, ao alterar os arquivos `.jsp` não é necessário reiniciar a aplicação. Porém, ao alterar os arquivos `.java` é necessário reiniciar a aplicação para aplicar as alterações;
+- O `<scanIntervalSeconds>` realiza um "*live-reload*" ao salvar os arquivos `.java`, reiniciando a aplicação quando detecta alguma alteração;
+- O `<contextPath>` cria um "diretório virtual" para separar o contexto de uma aplicação;
