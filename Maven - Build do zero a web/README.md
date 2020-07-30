@@ -323,3 +323,12 @@ por (versão 3.1)
     </exclusions>
 </dependency>
 ```
+
+### Atividade 12 - Resumo final:
+
+- Conhecemos comandos do Maven, como mvn verify e mvn clean, que executam funções muito úteis no projeto;
+- Aprendemos a controlar o ciclo de vida do projeto em seu build por meio de plugins, definições de fase e goals a serem executados;
+- Controlamos dependências e fizemos com que elas dialoguem com dependências de outros projetos na máquina;
+- Mapeamos dificuldades que podem surgir durante a construção de um programa ao utilizarmos uma IDE como Eclipse, ao fazermos referência entre projetos;
+- Entendemos que quando inserimos alguns JARs no classpath por meio do tipo runtime, precisamos tomar alguns cuidados na fase de compilação;
+- Conhecemos vários meios de utilizarmos o Maven em um projeto de biblioteca ou .jar comum, como em um projeto web.
