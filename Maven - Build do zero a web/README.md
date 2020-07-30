@@ -278,3 +278,18 @@ por (versão 3.1)
 
 - `mvn package`: gera o arquivo `.war` (ou `.jar`) dentro do diretório `target/`;
 - Um `.jar` contém as classes do projeto. Um `.war` contém, além das classes, a biblioteca, o `WEB-INF`, os `.jsp`, `javascript`, `css`, enfim, tudo que há no projeto;
+
+### Atividade 03 - Inserindo Produto como dependência:
+
+- Escopo de teste (`<scope>test</scope>`) não é adicionado ao `.war`;
+- Também é possível adicionar dependências locais:
+```
+<dependency>
+    <groupId>br.com.alura.maven</groupId>
+    <artifactId>produtos</artifactId>
+    <version>1.0-SNAPSHOT</version>
+</dependency>
+```
+- Dessa forma, o projeto será adicionado em suas dependências do Maven. Porém, isso tem vantagens e desvantagens:
+- Vantagens: é possível alterar o código-fonte da dependência e o projeto será atualizado instantaneamente;
+- Desvantagens: é possível utilizar as classes de testes, o que resultará em erros de compilação;
