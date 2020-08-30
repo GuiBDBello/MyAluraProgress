@@ -28,11 +28,6 @@ public class Leilao {
 	}
 	
 	private Lance ultimoLanceDo(Usuario usuario) {
-        Lance ultimo = null;
-        for(Lance lance : lances) {
-            if(lance.getUsuario().equals(usuario)) ultimo = lance;
-        }
-
         return lances.get(qtdDeLancesDo(usuario)-1);
     }
 
