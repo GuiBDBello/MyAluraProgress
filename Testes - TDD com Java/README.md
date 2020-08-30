@@ -28,3 +28,9 @@ public class Teste {
 ```
 - A classe não é mais executada como uma aplicação Java. Agora ela deve ser executada como um teste JUnit;
 - `Clique com o botão direito na classe > Run As > JUnit Test`;
+
+### Atividade 04 - Pasta que guardamos o teste:
+
+- É comum separarmos as classes de teste das classes de produção. Nesse momento, todas nossas classes estão na pasta `src/`.
+- Crie uma nova source folder chamada `test`. Para isso, clique com o botão direito no projeto, New -> Other -> Source Folder. Arraste então a classe de teste para essa pasta.
+- Também colocamos a classe de teste no mesmo pacote da classe de produção. Ou seja, se a classe `Avaliador` está em `br.com.caelum.leilao.servico`, a classe de teste `AvaliadorTest` estará também em `br.com.caelum.leilao.servico`. Coloque-a nesse pacote.
