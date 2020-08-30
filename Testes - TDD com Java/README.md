@@ -83,3 +83,12 @@ public class Teste {
 
 - TDD é uma prática de desenvolvimento de software na qual o programador escreve um teste antes do código. TDD nos traz segurança e feedback constante sobre a qualidade do nosso código.
 - É uma boa prática para todo desenvolvedor de software!
+
+## Aula 04 - Cuidando dos seus testes
+
+### Atividade 01 - Cuidando dos seus testes:
+
+- Código de instanciamento de objetos tende a se repetir nos testes;
+- `@Before`: anotação do JUnit que faz um método ser executado antes da classe realizar os testes. É necessário que o método anotado seja `public`;
+- `Test Data Builders`: é um padrão de projeto para código de testes. São classes que criam "cenários" para os testes e diminuem o acoplamento;
+- Códigos de teste devem ser simples e fáceis de evoluir!
