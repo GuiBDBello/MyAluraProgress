@@ -78,3 +78,8 @@ public class Teste {
 3. Refatora o código
 - Isso garante que o código já "nasce testado" e dá segurança na refatoração, pois sempre há uma bateria de testes que garante que o comportamento existente não será quebrado;
 - A classe de teste é o primeiro cliente da sua aplicação, o que, por consequência, faz você escrever um código fácil de ser usado e, por consequência, fácil de ser mantido;
+
+### Atividade 10 - O que é TDD?
+
+- TDD é uma prática de desenvolvimento de software na qual o programador escreve um teste antes do código. TDD nos traz segurança e feedback constante sobre a qualidade do nosso código.
+- É uma boa prática para todo desenvolvedor de software!
