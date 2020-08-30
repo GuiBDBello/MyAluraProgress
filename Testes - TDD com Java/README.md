@@ -61,3 +61,8 @@ public class Teste {
 3. Um cenário com salário igual a 2000
 - Afinal, quem nunca confundiu um > por um >= ?
 - O grande desafio da área dos testadores é encontrar todos as **classes de equivalência**; tarefa essa que não é fácil!
+
+### Atividade 08 - Perceber erros sem testes de unidade:
+
+- A bateria de testes automatizados nos ajuda a encontrar problemas na nossa implementação de forma muito rápida: basta clicarmos em um botão, e alguns segundos depois sabemos se nossa implementação realmente funciona ou não.
+- Sem uma bateria de testes, dificilmente pegaríamos esse bug em tempo de desenvolvimento. Testes manuais são caros e, por esse motivo, o desenvolvedor comumente testa apenas a funcionalidade atual, deixando de lado os testes de regressão (ou seja, testes para garantir que o resto do sistema ainda continua funcionando mesmo após a implementação da nova funcionalidade).
