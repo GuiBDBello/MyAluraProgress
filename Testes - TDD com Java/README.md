@@ -43,3 +43,9 @@ public class Teste {
 - Classes de equivalência: testes que são similares;
 - A regra geralmente é: escreva um teste por classe de equivalência;
 - **Ex.:** Ordem Crescente, Ordem Decrescente, Ordem Randômica, Apenas um item;
+
+### Atividade 05 - Testando listas:
+
+**Pergunta:** Ao testar uma lista, quantas verificações (quantidade de asserts) geralmente fazemos?
+**Resposta:** 1 + N, onde o primeiro é para garantir o tamanho da lista, e depois N asserts para garantir o conteúdo interno completo dessa lista;
+- Precisamos sempre garantir todo o conteúdo da lista retornada. Veja que só garantir o tamanho da lista não nos ajuda muito, afinal a lista pode ter o tamanho certo, mas ter o conteúdo inválido.
