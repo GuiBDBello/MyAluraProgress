@@ -49,3 +49,15 @@ public class Teste {
 **Pergunta:** Ao testar uma lista, quantas verificações (quantidade de asserts) geralmente fazemos?
 **Resposta:** 1 + N, onde o primeiro é para garantir o tamanho da lista, e depois N asserts para garantir o conteúdo interno completo dessa lista;
 - Precisamos sempre garantir todo o conteúdo da lista retornada. Veja que só garantir o tamanho da lista não nos ajuda muito, afinal a lista pode ter o tamanho certo, mas ter o conteúdo inválido.
+
+### Atividade 06 - Casos que precisam de atenção no teste:
+
+- Tratar o caso da lista com um elemento separado do caso da lista com vários elementos faz todo sentido. É muito comum, durante a implementação, pensarmos direto no caso complicado, e esquecermos de casos simples, mas que acontecem. Por esse motivo é importante testarmos esses casos.
+- Quando lidamos com listas, por exemplo, é sempre interessante tratarmos o caso da **lista cheia**, da **lista com apenas um elemento**, e da **lista vazia**.
+- Se estamos lidando com algoritmos cuja ordem é importante, precisamos testar **ordem crescente**, **decrescente**, e **randômica**.
+- Um código que apresente um `if(salario>=2000)`, por exemplo, precisa de três diferentes testes:
+1. Um cenário com salário menor do que 2000
+2. Um cenário com salário maior do que 2000
+3. Um cenário com salário igual a 2000
+- Afinal, quem nunca confundiu um > por um >= ?
+- O grande desafio da área dos testadores é encontrar todos as **classes de equivalência**; tarefa essa que não é fácil!
