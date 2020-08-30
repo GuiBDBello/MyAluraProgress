@@ -66,3 +66,15 @@ public class Teste {
 
 - A bateria de testes automatizados nos ajuda a encontrar problemas na nossa implementação de forma muito rápida: basta clicarmos em um botão, e alguns segundos depois sabemos se nossa implementação realmente funciona ou não.
 - Sem uma bateria de testes, dificilmente pegaríamos esse bug em tempo de desenvolvimento. Testes manuais são caros e, por esse motivo, o desenvolvedor comumente testa apenas a funcionalidade atual, deixando de lado os testes de regressão (ou seja, testes para garantir que o resto do sistema ainda continua funcionando mesmo após a implementação da nova funcionalidade).
+
+## Aula 03 - Praticando Test-Driven Development (TDD)
+
+### Atividade 01 - Praticando Test-Driven Development (TDD):
+
+- Classes importantes devem ser testadas!
+- TDD (*Test-Driven Development*): escrever primeiro o teste e depois a implementação/código de produção;
+1. Escrever um teste (que falha)
+2. Faz o teste passar da maneira mais simples
+3. Refatora o código
+- Isso garante que o código já "nasce testado" e dá segurança na refatoração, pois sempre há uma bateria de testes que garante que o comportamento existente não será quebrado;
+- A classe de teste é o primeiro cliente da sua aplicação, o que, por consequência, faz você escrever um código fácil de ser usado e, por consequência, fácil de ser mantido;
