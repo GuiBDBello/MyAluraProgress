@@ -34,3 +34,12 @@ public class Teste {
 - É comum separarmos as classes de teste das classes de produção. Nesse momento, todas nossas classes estão na pasta `src/`.
 - Crie uma nova source folder chamada `test`. Para isso, clique com o botão direito no projeto, New -> Other -> Source Folder. Arraste então a classe de teste para essa pasta.
 - Também colocamos a classe de teste no mesmo pacote da classe de produção. Ou seja, se a classe `Avaliador` está em `br.com.caelum.leilao.servico`, a classe de teste `AvaliadorTest` estará também em `br.com.caelum.leilao.servico`. Coloque-a nesse pacote.
+
+## Aula 02 - Testando o que realmente é necessário
+
+### Atividade 01 - Testando o que realmente é necessário:
+
+- Quais testes devemos escrever? Quais testes não fazem sentido serem escritos?
+- Classes de equivalência: testes que são similares;
+- A regra geralmente é: escreva um teste por classe de equivalência;
+- **Ex.:** Ordem Crescente, Ordem Decrescente, Ordem Randômica, Apenas um item;
