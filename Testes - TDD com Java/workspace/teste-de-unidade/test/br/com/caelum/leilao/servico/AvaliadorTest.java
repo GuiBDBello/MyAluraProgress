@@ -30,6 +30,16 @@ public class AvaliadorTest {
 		this.maria = new Usuario("Maria");
 	}
 
+	@BeforeClass
+	public static void testandoBeforeClass() {
+		System.out.println("before class");
+	}
+
+	@AfterClass
+	public static void testandoAfterClass() {
+		System.out.println("after class");
+	}
+
 	@Test
 	public void deveEntenderLancesEmOrdemCrescente() {
 

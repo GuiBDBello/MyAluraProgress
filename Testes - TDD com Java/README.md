@@ -98,3 +98,8 @@ public class Teste {
 - Ao contrário do @Before, métodos anotados com @After são executados após a execução do método de teste.
 - Utilizamos métodos @After quando nossos testes consomem recursos que precisam ser finalizados. Exemplos podem ser testes que acessam banco de dados, abrem arquivos, abrem sockets, e etc.
 - (Apesar desses testes não serem mais considerados testes de unidade, afinal eles falam com outros sistemas, desenvolvedores utilizam JUnit para escrever testes de integração).
+
+### Atividade 06 - @BeforeClass e @AfterClass:
+
+- Métodos anotados com `@BeforeClass` são executados apenas uma vez, antes de todos os métodos de teste.
+- O método anotado com `@AfterClass`, por sua vez, é executado uma vez, após a execução do último método de teste da classe.
