@@ -103,3 +103,59 @@ public class Teste {
 
 - Métodos anotados com `@BeforeClass` são executados apenas uma vez, antes de todos os métodos de teste.
 - O método anotado com `@AfterClass`, por sua vez, é executado uma vez, após a execução do último método de teste da classe.
+
+## Aula 05 - Testando exceções
+
+### Atividade 01 - Testando exceções:
+
+- Para testar um código com exceção:
+1. Utilize `try catch` com `Assert.fail();`. Se a exceção for lançada, o teste funcionou;
+```
+@Test
+public void naoDeveAvaliarLeiloesSemNenhumLanceDado() {
+    try {
+        Leilao leilao = new CriadorDeLeilao().para("Playstation 3 Novo").constroi();
+        leiloeiro.avalia(leilao);
+        Assert.fail();
+    } catch(RuntimeException e) {
+        // deu certo!
+    }
+}
+```
+2. Utilize `@Test(expected=RuntimeException.class)`
+- **Ex.:**
+```
+@Test(expected=RuntimeException.class)
+public void naoDeveAvaliarLeiloesSemNenhumLanceDado() {
+    Leilao leilao = new CriadorDeLeilao().para("Playstation 3 Novo").constroi();
+    leiloeiro.avalia(leilao);
+}
+```
+
+#### Testes devem ser legíveis:
+
+- `assertEquals(esperado, calculado)` não parece ter uma ordem "correta". O mais natural seria algo como: `assertThat(calculado, equalTo(esperado))`;
+
+#### Hamcrest
+
+- Para escrever expressões como a acima, podemos fazer uso de um *framework* chamado *Hamcrest*;
+- Baixe o *Hamcrest* em http://bit.ly/caelum-hamcrest e adicione-o ao *Build Path* do projeto;
+- O *Hamcrest* deve ser importado antes do *JUnit*. Para isso, clique com o botão direito do mouse em seu projeto, vá em `Configure Build Path... > Order and Export`, selecione *Hamcrest* e clique em *Up* até que esteja acima do *JUnit*;
+- Agora seu código funciona com a sintaxe `assertThat(calculado, equalTo(esperado))`;
+- O *Hamcrest* também possui outros *Matchers* para facilitar diferentes tipos de testes e exceções;
+- **Antes:**
+```
+assertEquals(400.0, maiores.get(0).getValor(), 0.00001);
+assertEquals(300.0, maiores.get(1).getValor(), 0.00001);
+assertEquals(200.0, maiores.get(2).getValor(), 0.00001);
+```
+- **Depois:**
+```
+assertThat(maiores, hasItems(
+        new Lance(maria, 400),
+        new Lance(joao, 300),
+        new Lance(maria, 200)
+));
+```
+- **Obs.:** O *Hamcrest* faz uso do método `equals`, que não existe na classe `Lance`, então é necessário gerá-lo;
+- Documentação do *Hamcrest*: https://code.google.com/archive/p/hamcrest/wikis/Tutorial.wiki
