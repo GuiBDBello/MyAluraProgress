@@ -4,6 +4,7 @@ import static org.junit.Assert.assertEquals;
 
 import java.util.List;
 
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -26,6 +27,11 @@ public class AvaliadorTest {
 		this.joao = new Usuario("João");
 		this.jose = new Usuario("José");
 		this.maria = new Usuario("Maria");
+	}
+	
+	@After
+	public void finaliza() {
+		System.out.println("fim");
 	}
 	
 	@Test
