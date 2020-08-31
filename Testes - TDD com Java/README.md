@@ -159,3 +159,29 @@ assertThat(maiores, hasItems(
 ```
 - **Obs.:** O *Hamcrest* faz uso do método `equals`, que não existe na classe `Lance`, então é necessário gerá-lo;
 - Documentação do *Hamcrest*: https://code.google.com/archive/p/hamcrest/wikis/Tutorial.wiki
+
+### Atividade 06 - Desafio: Criando um novo matcher:
+
+- Veja um exemplo de matcher customizado aqui: http://jmock.org/custom-matchers.html
+- Para criar um matcher, basta criar uma classe que seja filha de `TypeSafeMatcher`;
+- Por exemplo, se quisermos que nosso matcher verifique a classe Leilao, precisamos fazer: `public class LeilaoMatcher extends TypeSafeMatcher<Leilao> { }`;
+- Precisamos sobrescrever dois métodos: `boolean matchesSafely(Leilao item)` e `void describeTo(Description description)`.
+- `matchesSafely`: retorna verdadeiro caso o lance exista ou falso caso não exista.
+- `describeTo`: descrição do matcher;
+- Por fim, vamos criar o método que instanciará nosso matcher nos testes:
+```
+public static Matcher<Leilao> temUmLance(Lance lance) {
+    return new LeilaoMatcher(lance);
+}
+```
+- Utilizando o matcher nos testes:
+- **Antes:**
+```
+assertEquals(1, leilao.getLances().size());
+assertEquals(2000.0, leilao.getLances().get(0).getValor(), 0.00001);
+```
+- **Depois:**
+```
+assertThat(leilao.getLances().size(), equalTo(1));
+assertThat(leilao, temUmLance(lance));
+```
