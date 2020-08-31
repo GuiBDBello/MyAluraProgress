@@ -92,3 +92,9 @@ public class Teste {
 - `@Before`: anotação do JUnit que faz um método ser executado antes da classe realizar os testes. É necessário que o método anotado seja `public`;
 - `Test Data Builders`: é um padrão de projeto para código de testes. São classes que criam "cenários" para os testes e diminuem o acoplamento;
 - Códigos de teste devem ser simples e fáceis de evoluir!
+
+### Atividade 04 - Conhecendo o @After:
+
+- Ao contrário do @Before, métodos anotados com @After são executados após a execução do método de teste.
+- Utilizamos métodos @After quando nossos testes consomem recursos que precisam ser finalizados. Exemplos podem ser testes que acessam banco de dados, abrem arquivos, abrem sockets, e etc.
+- (Apesar desses testes não serem mais considerados testes de unidade, afinal eles falam com outros sistemas, desenvolvedores utilizam JUnit para escrever testes de integração).
