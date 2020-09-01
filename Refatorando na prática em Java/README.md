@@ -19,3 +19,9 @@
 - Então, os métodos que falharam devem ser reimplementados para passarem;
 - Por fim, a classe utilitária pode ser removida;
 - Rode novamente os testes para ver se sua refatoração foi bem sucedida e o código continua funcionando;
+
+## Aula 03 - Conhecendo sua API e padrões de notações
+
+### Atividade 01 - Vídeo 1:
+
+- A convenção do Java para nomear os testes é `lowerCamelCase`, porém, a legibilidade utilizando *underline* (_) fica muito mais fácil para ler. Utilize a convenção que for melhor para sua equipe;
