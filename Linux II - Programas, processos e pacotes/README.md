@@ -23,3 +23,17 @@
 - `top -u 'user_name'`: mostra os processos em execução pelo usuário `user_name`.
 - `top -p 'ps_id'`: mostra as informações de um processo específico de ID `ps_id`.
 - Por padrão, o `top` atualiza a tela com novas informações sobre os processos a cada 3 segundos. Para alterar esse tempo basta pressionar `d` enquanto estiver rodando o `top`, inserir o valor desejado e pressionar a tecla `Enter`.
+
+## Aula 03 - Jobs, bg, fg, pstree, &
+
+### Atividade 01 - Jobs, bg, fg, pstree, &:
+
+- `gedit`: abre o programa `gedit` em seu `bash`, no `foreground`.
+- Ao executar um processo no `bash` (terminal), o processo será executado "dentro" do terminal, como um processo filho.
+- `pstree`: mostra os processos em execução em formato de árvore.
+- No terminal que está rodando um processo, o atalho `Ctrl + z` pausa a execução do processo.
+- `jobs`: mostra os `jobs`.
+- `bg 1`: joga o `job 1` para `background`. Se executar `bg` sem parâmetros, joga o primeiro `job` da pilha (o último inserido).
+- `fg 1`: retorna o `job 1` para `foreground`, ou seja, no `bash`. Se executar `fg` sem parâmetros, pega o primeiro `job` da pilha (o último inserido).
+- Na tela dos `jobs`, se há um `&` após o nome do `job` quer dizer que ele está sendo executado em `background`.
+- `gedit &`: abre o programa `gedit` em seu `bash` no `background`.
