@@ -147,3 +147,11 @@ $ wc -w *.txt
 
 - A opção `show` do comando `apt-cache`, mostra informações sobre um determinado pacote.
 - **Ex.:** `apt-cache show mysql-server-5.6`
+
+## Aula 10 - Instalando novos programas: dpkg
+
+### Atividade 01 - Novos programas com dpkg:
+
+- `dpkg`: instala pacotes que não estão disponibilizados na central de programas. Instala programas de formato `.deb`.
+- `sudo dpkg -i vsftpd_3.0.2-3_i386.deb`: instala o programa `vstfpd` pelo pacote `.deb`.
+- `sudo dpkg -r vsftpd`: desinstala o programa `vsftpd` pelo nome do pacote.
