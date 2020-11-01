@@ -163,3 +163,7 @@ $ wc -w *.txt
 - `sudo service vsftpd stop`: para o serviço `vsftpd`.
 - `sudo service vsftpd start`: inicia o serviço `vsftpd`.
 - `/etc/init.d/`: diretório onde estão localizados os scripts dos serviços do Linux. Os scripts dentro desse diretório são executados na inicialização da máquina.
+
+### Atividade 04 - Verificando status dos serviços:
+
+- `sudo service vsftpd status`: verifica o estado do serviço `vsftpd`.
