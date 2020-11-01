@@ -98,3 +98,13 @@ $ ls -l dorme
 - `chmod u-rx 'ps_name'`: remove a permissão de usuário para leitura e execução do programa `ps_name`.
 - `chmod g-rx 'ps_name'`: remove a permissão de grupo para leitura e execução do programa `ps_name`.
 - `chmod o-rx 'ps_name'`: remove a permissão de outros para leitura e execução do programa `ps_name`.
+
+## Aula 08 - Variáveis de Ambiente e o Path
+
+### Atividade 01 - Variáveis de ambiente e PATH:
+
+- `PATH`: local onde o `bash` procura os programas para executá-los.
+- `env`: mostra todas as variáveis de ambiente. `PATH` é uma variável de ambiente.
+- `PATH=$PATH:/home/guilherme/workspace`: adiciona o diretório `/home/guilherme/workspace` ao `PATH`. Agora, o `bash` procura os programas dentro desse diretório para executá-los.
+- Porém, ao abrir outro `bash`, o `PATH` não persiste, ou seja, volta ao valor anterior.
+- `.bashrc`: arquivo carregado quando um `bash` é aberto. Adicione a linha `PATH=$PATH:/home/guilherme/workspace` nesse arquivo para que o seu `PATH` modificado seja carregado toda vez que abrir um `bash`.
