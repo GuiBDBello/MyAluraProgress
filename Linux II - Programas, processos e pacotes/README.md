@@ -71,3 +71,11 @@ $ ls -l dorme
 - **Ex.:** `./dorme`
 - Também é possível remover uma permissão, com o operador `-`.
 - **Ex.:** `chmod -x dorme`
+
+## Aula 05 - Procurando arquivos: locate e updatedb
+
+### Atividade 01 - locate e updatedb:
+
+- `locate firefox`: procura, em todo o HD, o programa `firefox`. O `locate` é rápido pois ele busca no banco de dados interno no Linux.
+- `updatedb`: atualiza o banco de dados interno do Linux. Essa atualização ocorre periodicamente, de forma automática.
+- `sudo`: significa "execute como superusuário". Utiliza o usuário `root` para executar o programa.
