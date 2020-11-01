@@ -126,3 +126,8 @@ $ wc -w *.txt
 - `wc -c`: conta o número de caracteres.
 - `wc -l`: conta o número de linhas.
 - `ps -e | wc -l`: conta a quantidade de processos existentes no sistema.
+
+### Atividade 05 - Alterando a configuração do prompt:
+
+- A variável de ambiente `$PS1` determina as informações mostradas no terminal (normalmente essa variável mostra `'usuario'@'grupo':'pwd'$`).
+- `PS1="alura:"`: altera o valor da informação mostrada no terminal para `alura:`.
