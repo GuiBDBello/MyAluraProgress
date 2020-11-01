@@ -120,3 +120,9 @@ $ wc -w *.txt
 16 total
 ```
 - **Ex.2:** `wc -w *.txt | grep total`
+
+### Atividade 04 - Obtendo o número de processos:
+
+- `wc -c`: conta o número de caracteres.
+- `wc -l`: conta o número de linhas.
+- `ps -e | wc -l`: conta a quantidade de processos existentes no sistema.
