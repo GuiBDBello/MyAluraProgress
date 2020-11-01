@@ -142,3 +142,8 @@ $ wc -w *.txt
 - `sudo apt-get install vsftpd`: instala o servidor de *ftp* `vsftpd`.
 - `ftp localhost`: conecta por meio do protocolo `ftp` na sua própria máquina.
 - `sudo apt-get remove vsftpd`: desinstala o programa `vsftpd`.
+
+### Atividade 03 - Buscando pacotes:
+
+- A opção `show` do comando `apt-cache`, mostra informações sobre um determinado pacote.
+- **Ex.:** `apt-cache show mysql-server-5.6`
