@@ -108,3 +108,15 @@ $ ls -l dorme
 - `PATH=$PATH:/home/guilherme/workspace`: adiciona o diretório `/home/guilherme/workspace` ao `PATH`. Agora, o `bash` procura os programas dentro desse diretório para executá-los.
 - Porém, ao abrir outro `bash`, o `PATH` não persiste, ou seja, volta ao valor anterior.
 - `.bashrc`: arquivo carregado quando um `bash` é aberto. Adicione a linha `PATH=$PATH:/home/guilherme/workspace` nesse arquivo para que o seu `PATH` modificado seja carregado toda vez que abrir um `bash`.
+
+### Atividade 03 - Adicionando um diretório nas variáveis de ambiente:
+
+- `wc`: conta o número de palavras. O parâmetro `-w` indica que desejamos contar apenas o número de palavras que existem no arquivo.
+- **Ex.:**
+```
+$ wc -w *.txt
+6 projetos_java.txt
+10 projetos_php.txt
+16 total
+```
+- **Ex.2:** `wc -w *.txt | grep total`
