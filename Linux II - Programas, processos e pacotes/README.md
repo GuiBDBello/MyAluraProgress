@@ -131,3 +131,14 @@ $ wc -w *.txt
 
 - A variável de ambiente `$PS1` determina as informações mostradas no terminal (normalmente essa variável mostra `'usuario'@'grupo':'pwd'$`).
 - `PS1="alura:"`: altera o valor da informação mostrada no terminal para `alura:`.
+
+## Aula 09 - Instalação de programas apt
+
+### Atividade 01 - Instalação de programas: apt:
+
+- `apt`: sistema de gerenciamento de pacotes.
+- `sudo apt-get update`: atualiza a lista de pacotes disponíveis para instalação e os programas instalados.
+- `apt-cache search vsftp`: o `apt` busca programas disponíveis para serem baixados com `vsftp` em seu nome.
+- `sudo apt-get install vsftpd`: instala o servidor de *ftp* `vsftpd`.
+- `ftp localhost`: conecta por meio do protocolo `ftp` na sua própria máquina.
+- `sudo apt-get remove vsftpd`: desinstala o programa `vsftpd`.
