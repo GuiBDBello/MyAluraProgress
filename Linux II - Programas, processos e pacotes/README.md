@@ -89,3 +89,12 @@ $ ls -l dorme
 - `sudo passwd`: altera a senha do usuário `root`.
 - `su root` (ou somente `su`): loga com o usuário `root`.
 - `exit`: desloga com o usuário atual.
+
+## Aula 07 - Novos usuários e controle de acesso: adduser e chmod
+
+### Atividade 01 - Controle de usuários:
+
+- `sudo adduser jose`: adiciona o usuário `jose` ao sistema. Após rodar o comando, é requisitado uma senha e alguns dados. É necessário o superusuário (`sudo`) para adicionar um novo usuário.
+- `chmod u-rx 'ps_name'`: remove a permissão de usuário para leitura e execução do programa `ps_name`.
+- `chmod g-rx 'ps_name'`: remove a permissão de grupo para leitura e execução do programa `ps_name`.
+- `chmod o-rx 'ps_name'`: remove a permissão de outros para leitura e execução do programa `ps_name`.
