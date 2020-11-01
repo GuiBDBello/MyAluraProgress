@@ -155,3 +155,11 @@ $ wc -w *.txt
 - `dpkg`: instala pacotes que não estão disponibilizados na central de programas. Instala programas de formato `.deb`.
 - `sudo dpkg -i vsftpd_3.0.2-3_i386.deb`: instala o programa `vstfpd` pelo pacote `.deb`.
 - `sudo dpkg -r vsftpd`: desinstala o programa `vsftpd` pelo nome do pacote.
+
+## Aula 11 - Scripts de inicialização e serviços do sistema
+
+### Atividade 01 - Scripts de init e services:
+
+- `sudo service vsftpd stop`: para o serviço `vsftpd`.
+- `sudo service vsftpd start`: inicia o serviço `vsftpd`.
+- `/etc/init.d/`: diretório onde estão localizados os scripts dos serviços do Linux. Os scripts dentro desse diretório são executados na inicialização da máquina.
