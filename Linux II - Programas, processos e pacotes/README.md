@@ -179,3 +179,12 @@ $ wc -w *.txt
 - `./configure`: verifica se falta algum pacote na máquina.
 - `make`: padrão para rodar o *build* de um projeto na compilado na linguagem C. Talvez seja necessário instalar algumas dependências antes de finalizar esse passo.
 - `sudo make install`: instala o programa na máquina.
+
+## Aula 13 - Acesso remoto com ssh e scp
+
+### Atividade 01 - Acesso remoto:
+
+- `sudo apt-get install ssh`: instala o *client* (`ssh-client`) e *server* (`ssh-server`) *ssh*.
+- `ssh user@localhost`: conecta por meio do protocolo `ssh` com o usuário `user` na máquina local.
+- `ssh -X user@localhost`: conecta por `ssh` em modo **gráfico**. Tudo que é executado na máquina é processado nela, mas é mostrado graficamente na máquina local.
+- `scp file user@localhost:~/`: envia, por meio do protocolo `ssh`, o arquivo `file` para a máquina remota, no diretório `~/`. O comando `scp` também precisa do parâmetro `-r` para copiar de maneira recursiva (copiar diretórios).
