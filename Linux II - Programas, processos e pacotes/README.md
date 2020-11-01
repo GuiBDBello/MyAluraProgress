@@ -79,3 +79,13 @@ $ ls -l dorme
 - `locate firefox`: procura, em todo o HD, o programa `firefox`. O `locate` é rápido pois ele busca no banco de dados interno no Linux.
 - `updatedb`: atualiza o banco de dados interno do Linux. Essa atualização ocorre periodicamente, de forma automática.
 - `sudo`: significa "execute como superusuário". Utiliza o usuário `root` para executar o programa.
+
+## Aula 06 - Trocando de usuários: sudo e su
+
+### Atividade 01 - Trocando de usuários:
+
+- `which firefox`: retorna o local onde o programa `firefox` está instalado, à partir do diretório onde o comando foi executado.
+- `passwd`: altera a senha do usuário atual.
+- `sudo passwd`: altera a senha do usuário `root`.
+- `su root` (ou somente `su`): loga com o usuário `root`.
+- `exit`: desloga com o usuário atual.
