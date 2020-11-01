@@ -167,3 +167,15 @@ $ wc -w *.txt
 ### Atividade 04 - Verificando status dos serviços:
 
 - `sudo service vsftpd status`: verifica o estado do serviço `vsftpd`.
+
+## Aula 12 - Compilando a partir do código fonte: Make e Git
+
+### Atividade 01 - Instalação a partir do código fonte:
+
+- Um arquivo `.tar.gz` mantém as permissões de execução quando descompactado, enquanto o `.zip` não mantém.
+
+#### Instalação através da fonte:
+
+- `./configure`: verifica se falta algum pacote na máquina.
+- `make`: padrão para rodar o *build* de um projeto na compilado na linguagem C. Talvez seja necessário instalar algumas dependências antes de finalizar esse passo.
+- `sudo make install`: instala o programa na máquina.
