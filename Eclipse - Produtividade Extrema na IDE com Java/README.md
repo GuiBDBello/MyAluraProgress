@@ -13,3 +13,7 @@
 - `Ctrl + F11`: executa o método `main`.
 - `F3`: abre a classe em que o cursor está sobreposto.
 - `Ctrl + Page Down` e `Ctrl + Page Up`: troca de aba.
+
+### Atividade 03 - (Obrigatório)Instalação do Eclipse e do projeto:
+
+- Importar um projeto: `Ctrl + 3` e comece a digitar `existing projects into workspace` até que a opção de Import apareça, então pressione `Enter`.
