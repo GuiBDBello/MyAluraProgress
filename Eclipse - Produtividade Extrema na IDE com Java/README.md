@@ -21,3 +21,10 @@
 ### Atividade 06 - Instanciando a data de nascimento:
 
 - `Ctrl + .`: move o cursor para o erro mais próximo.
+
+### Atividade 07 - Impressão do funcionário:
+
+- Digite `syserr` e pressione `Ctrl + Space` para abreviar a criação do método `System.err.println()`.
+- Digite `systrace` e pressione `Ctrl + Space` para abreviar a criação do método `System.out.println("Classe.metodoAtual()")`.
+- `Alt + Shift + X`: executar a classe.
+- `Alt + Shift + X` + `J`: executar a classe como *Java application*.
