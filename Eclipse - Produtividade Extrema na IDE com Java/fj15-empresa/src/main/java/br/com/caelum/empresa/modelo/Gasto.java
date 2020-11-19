@@ -7,6 +7,7 @@ public class Gasto {
 	private String tipo;
 	private Funcionario funcionario;
 	private Calendar data;
+	private boolean pagoEmDinheiro;
 	
 	@Override
 	public String toString() {
@@ -43,5 +44,11 @@ public class Gasto {
 	}
 	public void setData(Calendar data) {
 		this.data = data;
+	}
+	public boolean isPagoEmDinheiro() {
+		return pagoEmDinheiro;
+	}
+	public void setPagoEmDinheiro(boolean pagoEmDinheiro) {
+		this.pagoEmDinheiro = pagoEmDinheiro;
 	}
 }

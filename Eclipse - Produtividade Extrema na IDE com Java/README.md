@@ -42,3 +42,13 @@
 - `Alt + Shift + A`: ativa o modo de seleção em bloco. Com esse modo, é possível editar várias linhas ao mesmo tempo. Para isso, segure a tecla `Shift` e mova o cursor com as setas.
 - `Ctrl + 3`: como se fosse uma "busca" no Eclipse. Permite chamar qualquer menu por uma parte de seu nome ou por suas iniciais. **Ex.:** Digite "`Ctrl + 3` e `ggas`" para aparecer a opção *Generate Getters and Setters*.
 - `Ctrl + Alt + Seta para baixo`: copia a linha atual para a linha abaixo. Se utilizar a tecla `Seta para cima`, copia a linha atual para a linha acima.
+
+### Atividade 05 - Gerando getters e setters:
+
+Existem várias maneiras de fazer o que desejamos no Eclipse, para escolhermos aquela que nos torna mais produtivos.
+
+No caso dos getters e setters, além do menu podemos, por exemplo:
+
+- Com o cursor em cima do nome do atributo, Ctrl+1 e "Create getter e setter for 'nomeDoAtributo'"
+- Com o cursor em cima do nome do atributo, Alt+Shift+T e selecione Encapsulate Field, ou Ctrl + 3 encapsulate (ou ef). Nesse caso além dos getters e setters criados, os usos atuais do atributo podem ser mudados pra usar os getters/setters
+- Dentro da classe, numa linha em branco fora de método, digite get ou set e escolha o getter/setter desejado
