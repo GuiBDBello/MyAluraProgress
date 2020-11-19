@@ -32,3 +32,13 @@
 ### Atividade 08 - Navegando nas abas do editor:
 
 - `Ctrl + F6`: seleciona uma das classes abertas no editor e vai até ela.
+
+## Aula 02 - Gerando conteúdo eficientemente
+
+### Atividade 01 - Gerando conteúdo eficientemente:
+
+- `Ctrl + N`, digite `class` e pressione `Enter`: abre o wizard para criar uma nova classe.
+- `Shift + Tab`: navega ao campo anterior.
+- `Alt + Shift + A`: ativa o modo de seleção em bloco. Com esse modo, é possível editar várias linhas ao mesmo tempo. Para isso, segure a tecla `Shift` e mova o cursor com as setas.
+- `Ctrl + 3`: como se fosse uma "busca" no Eclipse. Permite chamar qualquer menu por uma parte de seu nome ou por suas iniciais. **Ex.:** Digite "`Ctrl + 3` e `ggas`" para aparecer a opção *Generate Getters and Setters*.
+- `Ctrl + Alt + Seta para baixo`: copia a linha atual para a linha abaixo. Se utilizar a tecla `Seta para cima`, copia a linha atual para a linha acima.
