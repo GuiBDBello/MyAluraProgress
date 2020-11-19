@@ -28,3 +28,7 @@
 - Digite `systrace` e pressione `Ctrl + Space` para abreviar a criação do método `System.out.println("Classe.metodoAtual()")`.
 - `Alt + Shift + X`: executar a classe.
 - `Alt + Shift + X` + `J`: executar a classe como *Java application*.
+
+### Atividade 08 - Navegando nas abas do editor:
+
+- `Ctrl + F6`: seleciona uma das classes abertas no editor e vai até ela.
