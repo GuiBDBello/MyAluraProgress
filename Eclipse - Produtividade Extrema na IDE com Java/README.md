@@ -17,3 +17,7 @@
 ### Atividade 03 - (Obrigatório)Instalação do Eclipse e do projeto:
 
 - Importar um projeto: `Ctrl + 3` e comece a digitar `existing projects into workspace` até que a opção de Import apareça, então pressione `Enter`.
+
+### Atividade 06 - Instanciando a data de nascimento:
+
+- `Ctrl + .`: move o cursor para o erro mais próximo.
