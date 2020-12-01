@@ -52,3 +52,12 @@ No caso dos getters e setters, além do menu podemos, por exemplo:
 - Com o cursor em cima do nome do atributo, Ctrl+1 e "Create getter e setter for 'nomeDoAtributo'"
 - Com o cursor em cima do nome do atributo, Alt+Shift+T e selecione Encapsulate Field, ou Ctrl + 3 encapsulate (ou ef). Nesse caso além dos getters e setters criados, os usos atuais do atributo podem ser mudados pra usar os getters/setters
 - Dentro da classe, numa linha em branco fora de método, digite get ou set e escolha o getter/setter desejado
+
+## Aula 03 - Melhorando a organização
+
+### Atividade 01 - Melhorando a organização:
+
+- `Ctrl + Shift + F`: identa e formata seu código;
+- `Alt + Shift + R`: refatorar a palavra/classe/variável em que o cursor se encontra;
+- `Alt + Seta para cima` e `Alt + Seta para baixo`: move o conteúdo da linha em que o cursor se encontra;
+- `Alt + Shift + M`: extrai o código selecionado para um método;
