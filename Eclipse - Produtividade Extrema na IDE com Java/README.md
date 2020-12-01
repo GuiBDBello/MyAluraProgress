@@ -91,3 +91,7 @@ Dentre as várias refatorações possíveis, podemos destacar:
 - `Ctrl + F`: busca dentro do arquivo aberto na janela atual.
 - `Ctrl + J`: busca incremental. `Ctrl + K` vai até a próxima palavra e `Ctrl + Shift + K` volta à palavra anterior.
 - `Ctrl + H`: busca em vários arquivos, em uma pasta ou em todo *workspace*. `Ctrl + .` vai ao próximo resultado e `Ctrl + ,` volta ao resultado anterior.
+
+### Atividade 04 - Encontrando métodos da classe mãe:
+
+- `Ctrl + O` + `Ctrl + O` (duas vezes): mostra os métodos e atributos herdados pela classe.
