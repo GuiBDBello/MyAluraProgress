@@ -74,3 +74,20 @@ Dentre as várias refatorações possíveis, podemos destacar:
 - *Move* (`alt + shift + V`) - para mover algum elemento para um lugar onde ele faça mais sentido
 - *Change Method Signature* (`alt + shift + C`) - para mudar a assinatura de um método, adicionando, removendo ou reordenando parâmetros, trocando o tipo de retorno, mudando o nome, etc.
 - *Inline* (`alt + shift + I`) - É o contrário do Extract Method/Variable. Para substituir uma chamada de método pelo seu corpo
+
+## Aula 04 - Localizando de forma eficiente
+
+### Atividade 01 - Localizando de forma eficiente:
+
+- `Ctrl + Shift + R`: localiza e abre um recurso de um projeto aberto.
+- `Ctrl + Shift + T`: localiza e abre uma classe de um projeto aberto. É possível abreviar as palavras, utilizando apenas as letras maiúsculas (caso a classe tenha o nome escrito em *camel-case*).
+- `F3`: abre a classe sob o cursor em uma nova janela, ou vai até a declaração de uma variável ou método.
+- `Ctrl + O`: abre uma caixa de diálogo com todos os membros da classe.
+- `Ctrl + T`: mostra as implementações disponíveis de uma classe, ou todas as classes que sobrescrevem um método.
+- `Alt + Seta para a esquerda`: volta para a referência anterior.
+- `Alt + Seta para a direita`: avança para a próxima referência.
+- `Ctrl + Shift + G`: (*Find Usages*) mostra os lugares onde um método é utilizado.
+- `Ctrl + Alt + H`: (*Call Hierarchy*) mostra os usos de um método, e também outros métodos que o invocam.
+- `Ctrl + F`: busca dentro do arquivo aberto na janela atual.
+- `Ctrl + J`: busca incremental. `Ctrl + K` vai até a próxima palavra e `Ctrl + Shift + K` volta à palavra anterior.
+- `Ctrl + H`: busca em vários arquivos, em uma pasta ou em todo *workspace*. `Ctrl + .` vai ao próximo resultado e `Ctrl + ,` volta ao resultado anterior.
