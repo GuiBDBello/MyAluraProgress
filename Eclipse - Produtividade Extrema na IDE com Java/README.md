@@ -57,7 +57,20 @@ No caso dos getters e setters, além do menu podemos, por exemplo:
 
 ### Atividade 01 - Melhorando a organização:
 
-- `Ctrl + Shift + F`: identa e formata seu código;
-- `Alt + Shift + R`: refatorar a palavra/classe/variável em que o cursor se encontra;
-- `Alt + Seta para cima` e `Alt + Seta para baixo`: move o conteúdo da linha em que o cursor se encontra;
-- `Alt + Shift + M`: extrai o código selecionado para um método;
+- `Ctrl + Shift + F`: identa e formata seu código.
+- `Alt + Shift + R`: refatorar a palavra/classe/variável em que o cursor se encontra.
+- `Alt + Seta para cima` e `Alt + Seta para baixo`: move o conteúdo da linha em que o cursor se encontra.
+- `Alt + Shift + M`: extrai o código selecionado para um método.
+
+### Atividade 09 - Refatorando no eclipse:
+
+- `Alt + T`: abre o menu de refatoração.
+
+Dentre as várias refatorações possíveis, podemos destacar:
+
+- *Rename* (`alt + shift + R` ou `ctrl + 2 R`) - para melhorar o nome de algum elemento
+- *Extract Method* (`alt + shift + M`) - para extrair um método de um código já existente
+- *Extract Variable* (`alt + shift + L`) - para extrair uma variável a partir de alguma expressão
+- *Move* (`alt + shift + V`) - para mover algum elemento para um lugar onde ele faça mais sentido
+- *Change Method Signature* (`alt + shift + C`) - para mudar a assinatura de um método, adicionando, removendo ou reordenando parâmetros, trocando o tipo de retorno, mudando o nome, etc.
+- *Inline* (`alt + shift + I`) - É o contrário do Extract Method/Variable. Para substituir uma chamada de método pelo seu corpo
