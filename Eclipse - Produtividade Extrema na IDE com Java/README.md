@@ -95,3 +95,15 @@ Dentre as várias refatorações possíveis, podemos destacar:
 ### Atividade 04 - Encontrando métodos da classe mãe:
 
 - `Ctrl + O` + `Ctrl + O` (duas vezes): mostra os métodos e atributos herdados pela classe.
+
+### Atividade 05 - Diferenciando atributos de métodos:
+
+- Ao pressionarmos `ctrl + O`, como o Eclipse faz para diferenciar os diversos tipos de membros de nossa classe, como atributos, métodos e construtores?
+
+O Eclipse usa diversos símbolos para cada tipo de membro:
+- **Quadrados vermelhos** para membros que são private;
+- **Círculos verdes** para membros que são public;
+- **Losangos amarelos** para membros que são protected;
+- **Triângulos azuis** para membros que são default;
+
+A diferenciação entre atributos e métodos é feita através do tamanho do símbolo, pequeno para atributos, grande para métodos. Além disso também são utilizadas letras para elementos especiais, como construtores, onde além do desenho também aparece a letra C.
