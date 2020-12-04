@@ -112,3 +112,10 @@ A diferenciação entre atributos e métodos é feita através do tamanho do sí
 
 - Enquanto o `ctrl + T` mostra uma tela com a hierarquia, o `F4` e o `ctrl + alt + H` abrem uma *view* com a hierarquia e os membros do tipo consultado.
 - O `ctrl + alt + H` tem a vantagem de buscar qualquer tipo para sabermos sua hierarquia.
+
+### Atividade 10 - Buscando referências:
+
+- Os atalhos terminados em G são um pouco relacionados, todos tem a ver com busca de um termo qualquer no workspace.
+- `ctrl + G`: Busca a declaração de um termo (classe, atributo, método) no workspace
+- `ctrl + shift + G`: Busca os usos de um termo no workspace, em arquivos Java
+- `ctrl + alt + G`: Busca o termo textualmente, em todos os arquivos da workspace
