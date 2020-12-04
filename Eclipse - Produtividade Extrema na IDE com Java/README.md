@@ -107,3 +107,8 @@ O Eclipse usa diversos símbolos para cada tipo de membro:
 - **Triângulos azuis** para membros que são default;
 
 A diferenciação entre atributos e métodos é feita através do tamanho do símbolo, pequeno para atributos, grande para métodos. Além disso também são utilizadas letras para elementos especiais, como construtores, onde além do desenho também aparece a letra C.
+
+### Atividade 09 - Outras formas de ver hierarquias:
+
+- Enquanto o `ctrl + T` mostra uma tela com a hierarquia, o `F4` e o `ctrl + alt + H` abrem uma *view* com a hierarquia e os membros do tipo consultado.
+- O `ctrl + alt + H` tem a vantagem de buscar qualquer tipo para sabermos sua hierarquia.
