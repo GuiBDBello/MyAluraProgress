@@ -116,6 +116,15 @@ A diferenciação entre atributos e métodos é feita através do tamanho do sí
 ### Atividade 10 - Buscando referências:
 
 - Os atalhos terminados em G são um pouco relacionados, todos tem a ver com busca de um termo qualquer no workspace.
-- `ctrl + G`: Busca a declaração de um termo (classe, atributo, método) no workspace
-- `ctrl + shift + G`: Busca os usos de um termo no workspace, em arquivos Java
-- `ctrl + alt + G`: Busca o termo textualmente, em todos os arquivos da workspace
+- `ctrl + G`: Busca a declaração de um termo (classe, atributo, método) no workspace.
+- `ctrl + shift + G`: Busca os usos de um termo no workspace, em arquivos Java.
+- `ctrl + alt + G`: Busca o termo textualmente, em todos os arquivos da workspace.
+
+
+## Aula 05 - Mais flexibilidade ao gerar conteúdo
+
+### Atividade 01 - Mais flexibilidade ao gerar conteúdo:
+
+- `Ctrl + 3` e digite `equals` ou `Alt + Shift + S`: *Generate hashCode() and equals()...*.
+- `Ctrl + Shift + W`: fecha todas as janelas de editores abertas.
+- `Alt + Shift + T`: Abre o menu **Refactor**. Vá em *Extract superclass...* para extrair a superclasse.
