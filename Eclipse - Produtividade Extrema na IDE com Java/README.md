@@ -120,7 +120,6 @@ A diferenciação entre atributos e métodos é feita através do tamanho do sí
 - `ctrl + shift + G`: Busca os usos de um termo no workspace, em arquivos Java.
 - `ctrl + alt + G`: Busca o termo textualmente, em todos os arquivos da workspace.
 
-
 ## Aula 05 - Mais flexibilidade ao gerar conteúdo
 
 ### Atividade 01 - Mais flexibilidade ao gerar conteúdo:
@@ -128,3 +127,18 @@ A diferenciação entre atributos e métodos é feita através do tamanho do sí
 - `Ctrl + 3` e digite `equals` ou `Alt + Shift + S`: *Generate hashCode() and equals()...*.
 - `Ctrl + Shift + W`: fecha todas as janelas de editores abertas.
 - `Alt + Shift + T`: Abre o menu **Refactor**. Vá em *Extract superclass...* para extrair a superclasse.
+
+## Aula 06 - Escrevendo Menos Código com Templates
+
+### Atividade 01 - Escrevendo Menos Código com Templates:
+
+- `Ctrl + 3` e digite `delegate`: *Generate Delegate Methods*.
+- O *Eclipse* gera estruturas de código, como:
+1. O método `main`;
+2. Várias estruturas de `for` diferentes, e `foreach`;
+3. Várias formas de imprimir o conteúdo, `syserr`, `sysout`, `systrace`;
+4. `while`, `if`, e vários outros;
+- Todas essas "estruturas de código" pré-configuradas são **templates**. São pequenas estruturas de código configuráveis utilizadas para criar trechos pré-definidos.
+- Para consultar os **templates** existentes, acesse `Window > Preferences > Java > Editor > Templates`.
+- É possível criar um **template** na janela do item acima, clicando no botão `New...`. Então, dê um nome, selecione o contexto (escopo) em que o **template** pode ser utilizado, dê uma descrição a ele e em `Pattern` coloque o bloco de código deste. É possível, também, utilizar variáveis do *Eclipse* dentro do campo `Pattern`, para deixar o **template** dinâmico.
+- **Ex.:** `private static final ${type:newType(org.apache.log4j.Logger)} logger = Logger.getLogger(${enclosing_type});`
