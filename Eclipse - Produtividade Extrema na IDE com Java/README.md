@@ -142,3 +142,12 @@ A diferenciação entre atributos e métodos é feita através do tamanho do sí
 - Para consultar os **templates** existentes, acesse `Window > Preferences > Java > Editor > Templates`.
 - É possível criar um **template** na janela do item acima, clicando no botão `New...`. Então, dê um nome, selecione o contexto (escopo) em que o **template** pode ser utilizado, dê uma descrição a ele e em `Pattern` coloque o bloco de código deste. É possível, também, utilizar variáveis do *Eclipse* dentro do campo `Pattern`, para deixar o **template** dinâmico.
 - **Ex.:** `private static final ${type:newType(org.apache.log4j.Logger)} logger = Logger.getLogger(${enclosing_type});`
+- É possível também colocar um `javadoc` no **template**.
+
+### Atividade 06 - Criando seu próprio template:
+
+```
+for (${iterable_type} ${iterable_element} : ${iterable}) {
+    System.out.println(${iterable_element});${cursor}
+}
+```
