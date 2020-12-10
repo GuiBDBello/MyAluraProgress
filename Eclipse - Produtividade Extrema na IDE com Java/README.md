@@ -151,3 +151,32 @@ for (${iterable_type} ${iterable_element} : ${iterable}) {
     System.out.println(${iterable_element});${cursor}
 }
 ```
+
+## Aula 07 - Explorando Views e perspectivas
+
+### Atividade 01 - Explorando Views e perspectivas:
+
+- Na *View* *Package Explorer*, selecione o ícone com duas setas (*Link with Editor*) para facilitar encontrar classes abertas na *View* *Editor*.
+- Na *View* *Problems* aparecem os *warnings* e *errors* do projeto. O atalho `Ctrl + 1` permite corrigir os *warnings* que possuem o ícone da lâmpada (*quick fix*/correção automática).
+- A *View* *Javadoc* mostra o `javadoc` do item onde o cursor se encontra.
+- A *View* *Declaration* mostra a declaração do item onde o cursor está posicionado, o que possibilita ver o código de uma classe sem precisar abrí-la.
+- A *View* *Task List* pertence a um plugin chamado **Mylin**, que é um gerenciador de tarefas capaz de se comunicar com ferramentas como o *Jira*, *Bugzilla* e o *Track*. 
+- A *View* *Outline* mostra o perfil de uma classe, ou seja, seus membros. É visível também pelo atalho `Ctrl + O`.
+
+#### Comentários especiais:
+
+- `//TODO`: algo que precisa ser feito.
+- `//FIXME`: algum bug que precisa ser corrigido.
+- `//XXX`: algo que precisa ser refatorado.
+- Essas são *task tags*, e você pode definir suas próprias com `Ctrl + 3` e digite `task tags`.
+- A *View* *Tasks* lista todas as tarefas criadas a partir dos comentários especiais do código.
+
+#### Local history:
+
+- O *Eclipse* guarda as alterações que você fez em um arquivo no *local history*.
+- Para acessá-lo, clique com o botão direito do mouse sobre uma classe e selecione `Compare With > Local History...`. Selecione uma versão para ver as diferenças.
+
+#### Perspectiva:
+
+- Agrupamento de *Views* para uma determinada fase ou tipo de desenvolvimento de software.
+- `Ctrl + F8`: altera a perspectiva ativa.
