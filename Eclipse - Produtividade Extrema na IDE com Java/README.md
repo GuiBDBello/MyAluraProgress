@@ -190,3 +190,25 @@ for (${iterable_type} ${iterable_element} : ${iterable}) {
 - *Web*: Criação de arquivos JSP, CSS, HTML, Javascript
 - *Debug*: fazer o debug de aplicações
 - *Team Synchronising*: interagir com o sistema de controle de versão
+
+## Aula 08 - Testando e Debugando sua aplicação
+
+### Atividade 01 - Testando e Debugando sua aplicação:
+
+- `Ctrl + N`, digite `junit` e selecione `JUnit Test Case` em uma classe para criar o teste dessa classe (altere apenas o *source folder*).
+- `Ctrl + F11` ou `Alt + Shift + X` e depois `T`: executa uma classe de teste.
+- `Ctrl + Alt + Seta para baixo`: duplica um bloco de código para baixo.
+
+#### Debug:
+
+- *Breakpoints*: dê dois cliques na barra azul do lado esquerdo do editor para adicionar um *breakpoint*, ou utilize o atalho `Ctrl + Shift + B`.
+- `Alt + Shift + D` e `T`: executar em modo de debug.
+- `F6`: executa a linha atual e vai para a próxima linha.
+- É possível ver o valor das variáveis na *View* *Variables* ou colocando o mouse sobre a mesma.
+- `F5`: vai até a primeira linha do próximo método que o *Java* executaria.
+- `Ctrl + R`: (*run to line*) pula até a linha onde o cursor está.
+- `Ctrl + Shift + D`: abre um pop-up com o valor retornado por uma expressão antes de executá-la. Se pressionado novamente, é aberta a *View* *Display*, onde é possível executar qualquer código.
+- `Ctrl + Shift + I`: abre um pop-up com o valor da inspeção selecionada. Se pressionado novamente, é aberta a *View* *Expressions*, onde podemos acompanhar o valor de expressões de código.
+- `F7`: retorna ao método externo.
+- `F8`: resume até o final ou até o próximo *breakpoint*.
+- `Ctrl + F2`: para a execução atual.
