@@ -180,3 +180,13 @@ for (${iterable_type} ${iterable_element} : ${iterable}) {
 
 - Agrupamento de *Views* para uma determinada fase ou tipo de desenvolvimento de software.
 - `Ctrl + F8`: altera a perspectiva ativa.
+
+### Atividade 08 - Melhor uso das perspectivas:
+
+- *Java*: Criação de novas classes, interfaces, enums
+- *Java EE*: Criação e configuração de EJBs, WebServices, Servlets
+- *Java EE*: Criação de projetos robustos, compostos de vários módulos
+- *JPA*: Criação e configuração de entidades
+- *Web*: Criação de arquivos JSP, CSS, HTML, Javascript
+- *Debug*: fazer o debug de aplicações
+- *Team Synchronising*: interagir com o sistema de controle de versão
