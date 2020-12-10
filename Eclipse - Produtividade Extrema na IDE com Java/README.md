@@ -212,3 +212,11 @@ for (${iterable_type} ${iterable_element} : ${iterable}) {
 - `F7`: retorna ao método externo.
 - `F8`: resume até o final ou até o próximo *breakpoint*.
 - `Ctrl + F2`: para a execução atual.
+
+### Atividade 05 - Botões da view do JUnit:
+
+- Setinhas: navegação nos testes;
+- *Show failures only*: só mostra relatório dos testes que não passaram;
+- *Scroll lock*: não é exatamente útil;
+- *Rerun tests*: roda novamente a mesma bateria de testes pedidos na última vez;
+- *Rerun tests - failure first*: roda os testes da mesma bateria, mas começa a execução pelos que quebraram da última vez.
