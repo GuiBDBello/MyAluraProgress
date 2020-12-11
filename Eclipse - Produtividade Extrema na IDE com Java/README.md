@@ -253,3 +253,13 @@ for (${iterable_type} ${iterable_element} : ${iterable}) {
 
 - `Ctrl + Shift + L`: mostra todos os atalhos disponíveis no *Eclipse*.
 - `Ctrl + 3` e digite `keys`: Localizado em `General > Keys`, permite adicionar ou alterar atalhos para ações do *Eclipse*.
+
+### Atividade 05 - Criando o Clean Up do seu time:
+
+As opções mais comuns para evitar que mudanças tolas em códigos causem conflitos ao sincronizar com o sistema de controle de versão são:
+- *Remove trailing whitespace, All lines*: para evitar commits corrigindo só espaços em branco;
+- *Organize imports*: para não esquecermos imports desnecessários no nosso código;
+- *Add missing annotations*, ambas: para deixar clara a intenção de sobrescrita e o problema do uso de API depreciada;
+- *Remove unused private members*: para não mantermos, acidentalmente, métodos e atributos não utilizados;
+- *Remove unused local variables*: mesma idéia, só que para variáveis locais;
+- *Remove unnecessary casts*: para evitar confusão sobre a tipagem utilizada e inibir imports errados.
