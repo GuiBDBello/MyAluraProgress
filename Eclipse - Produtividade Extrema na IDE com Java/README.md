@@ -202,7 +202,7 @@ for (${iterable_type} ${iterable_element} : ${iterable}) {
 #### Debug:
 
 - *Breakpoints*: dê dois cliques na barra azul do lado esquerdo do editor para adicionar um *breakpoint*, ou utilize o atalho `Ctrl + Shift + B`.
-- `Alt + Shift + D` e `T`: executar em modo de debug.
+- `Alt + Shift + D` e `T` ou `J`: executar em modo de debug.
 - `F6`: executa a linha atual e vai para a próxima linha.
 - É possível ver o valor das variáveis na *View* *Variables* ou colocando o mouse sobre a mesma.
 - `F5`: vai até a primeira linha do próximo método que o *Java* executaria.
@@ -220,3 +220,36 @@ for (${iterable_type} ${iterable_element} : ${iterable}) {
 - *Scroll lock*: não é exatamente útil;
 - *Rerun tests*: roda novamente a mesma bateria de testes pedidos na última vez;
 - *Rerun tests - failure first*: roda os testes da mesma bateria, mas começa a execução pelos que quebraram da última vez.
+
+## Aula 09 - Configurando o ambiente
+
+### Atividade 01 - Configurando o ambiente:
+
+- Clique com o botão direito do *mouse* na barra azul que fica no lado esquerdo do editor e selecione *Show Line Numbers* para mostrar o número da linha do código.
+- `Ctrl + Shift + F`: formata o código.
+
+#### Formatters:
+
+- `Window > Preferences > Java > Code Style > Formatter`: local onde se encontram as configurações de formatação de projetos Java. É possível criar perfis de formatação personalizado.
+
+#### Controle de versão:
+
+- `Ctrl + 3` e digite `clean up`: ferramenta do *Eclipse* que resolve problemas e melhora o estilo do código antes de *commitar*. É possível personalizar a limpeza do código em `Window > Preferences > Java > Code Style > Clean Up`.
+
+#### Save Actions:
+
+- `Ctrl + 3` e digite `save actions`: Localizado em `Java > Editor > Save Actions`, permite adicionar ou alterar ações que são executadas quando um arquivo é salvo.
+- `Ctrl + 3` e digite `errors`: Localizado em `Java > Compiler > Errors/Warnings`, permite alterar configurações de erros e avisos do seu código.
+- `Ctrl + 3` e digite `typing`: Localizado em `Java > Editor > Typing`, permite habilitar a inserção de chaves (`{`) e ponto e vírgula (`;`) no lugar correto da linha (no final).
+- `Ctrl + 3` e digite `content assist` (*Completion Overrides*): Localizado em `Java > Editor > Content Assist`, permite habilitar a sobrescrita do código "completado" pelo *intellisense*.
+- `Ctrl + 3` e digite `content assist` (*Insert best guessed arguments*): Pede para o *Eclipse* "tentar adivinhar" as variáveis utilizadas no construtor.
+- Ainda em *content assist*, é possível filtrar classes que não sejam elegíveis para serem importadas em *type filters*, para reduzir as chances de importações incorretas.
+
+#### Import:
+
+- `Ctrl + Shift + M`: *import* estático.
+
+#### Atalhos:
+
+- `Ctrl + Shift + L`: mostra todos os atalhos disponíveis no *Eclipse*.
+- `Ctrl + 3` e digite `keys`: Localizado em `General > Keys`, permite adicionar ou alterar atalhos para ações do *Eclipse*.
