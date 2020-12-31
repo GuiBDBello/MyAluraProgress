@@ -164,3 +164,17 @@ leitor.parse(inputSource);
 - `XMLInputFactory`: instancia uma nova *factory* (`XMLInputFactory.newInstance()`) e cria um `XMLEventReader` (`factory.createXMLEventReader(inputStream)`).
 - `XMLEventReader`: responsável por manipular todos os eventos em um XML. É uma *Collection*, então deve-se utilizar o `nextEvent()` para iterar sobre os eventos e obter o `XMLEvent`.
 - `XMLEvent`: a partir dele, é possível utilizar métodos como: `isStartElement()`, `asStartElement.getName().getLocalPart()`, `asCharacters().getData()`, entre outros.
+
+## Aula 05 - Consultas eficientes com XPath
+
+### Fazendo consultas com XPath:
+
+- *XPath*: linguagem para realizar consultas em uma árvore de elementos (*DOM*). Parecido com *SQL*.
+- **Ex.:**
+```
+String exp = "/venda/produtos/produto"; // a estrutura do XPath é parecida com a estrutura de diretórios de um sistema operacional
+XPath path = XPathFactory.newInstance().newXPath();
+XPathExpression compile = path.compile(exp);    // compila a String para uma expressão XPath, para realizar uma consulta no XML
+```
+- E substitua `document.getElementsByTagName("produto");` por `(NodeList) expression.evaluate(document, XPathConstants.NODESET);`
+- É possível realizar buscas mais específicas, como: `"/venda/produtos/produto[2]"` (retorna apenas o segundo produto), `"/venda/produtos/produto[nome='Livro de xml']"` (retorna os produtos com nome `Livro de xml`), `"/venda/produtos/produto[contains(nome, 'Livro de xml')]"` (pega os produtos com `Livro` no atributo `nome`).
