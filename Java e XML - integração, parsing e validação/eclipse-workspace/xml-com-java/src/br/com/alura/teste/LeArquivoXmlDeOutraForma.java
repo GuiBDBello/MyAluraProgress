@@ -16,6 +16,8 @@ public class LeArquivoXmlDeOutraForma {
 		InputStream inputStream = new FileInputStream("src/vendas.xml");
 		InputSource inputSource = new InputSource(inputStream);
 		leitor.parse(inputSource);
+		
+		System.out.println(logica.produtos);
 	}
 	
 }

@@ -151,3 +151,8 @@ InputStream inputStream = new FileInputStream("src/vendas.xml");
 InputSource inputSource = new InputSource(inputStream);
 leitor.parse(inputSource);
 ```
+
+### Atividade 03 - Tratando eventos:
+
+- Quando o XML está sendo lido, eventos são disparados durante o processo.
+- A classe `XMLReader` informa vários eventos para o `handler`, como: abertura da *tag* (método `startElement`), leitura do conteúdo da *tag* (método `characters`), fechamento da *tag* (método `endElement`).
