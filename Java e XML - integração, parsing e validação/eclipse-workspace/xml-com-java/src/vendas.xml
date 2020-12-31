@@ -3,6 +3,6 @@
 	<formaDePagamento>Cartão</formaDePagamento>
 	<produto>
 		<nome>Livro de xml</nome>
-		<preco>29,90</preco>
+		<preco>29.90</preco>
 	</produto>
 </venda>
