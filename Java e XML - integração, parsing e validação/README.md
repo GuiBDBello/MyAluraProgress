@@ -132,3 +132,10 @@ String moeda = venda.getAttribute("moeda");
 </xsd:schema>
 ```
 - Toda vez que um *namespace* externo for utilizado, é uma boa prática dar um apelido para ele.
+
+## Aula 03 - Trabalhando com eventos e SAX
+
+### Atividade 01 - Desempenho do sistema:
+
+- `documentBuilder.parse("src/vendas.xml");`: carrega todo o arquivo `vendas.xml` na memória, possibilitando buscar qualquer *tag* dele.
+- Em algumas situações, carregar todo o arquivo em memória pode causar problemas.
