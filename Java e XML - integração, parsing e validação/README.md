@@ -156,3 +156,11 @@ leitor.parse(inputSource);
 
 - Quando o XML está sendo lido, eventos são disparados durante o processo.
 - A classe `XMLReader` informa vários eventos para o `handler`, como: abertura da *tag* (método `startElement`), leitura do conteúdo da *tag* (método `characters`), fechamento da *tag* (método `endElement`).
+
+## Aula 04 - Manipulando eventos de forma produtiva com STAX
+
+### Atividade 01 - Percorrendo os eventos:
+
+- `XMLInputFactory`: instancia uma nova *factory* (`XMLInputFactory.newInstance()`) e cria um `XMLEventReader` (`factory.createXMLEventReader(inputStream)`).
+- `XMLEventReader`: responsável por manipular todos os eventos em um XML. É uma *Collection*, então deve-se utilizar o `nextEvent()` para iterar sobre os eventos e obter o `XMLEvent`.
+- `XMLEvent`: a partir dele, é possível utilizar métodos como: `isStartElement()`, `asStartElement.getName().getLocalPart()`, `asCharacters().getData()`, entre outros.
