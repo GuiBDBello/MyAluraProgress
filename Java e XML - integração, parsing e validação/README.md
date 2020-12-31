@@ -139,3 +139,15 @@ String moeda = venda.getAttribute("moeda");
 
 - `documentBuilder.parse("src/vendas.xml");`: carrega todo o arquivo `vendas.xml` na memória, possibilitando buscar qualquer *tag* dele.
 - Em algumas situações, carregar todo o arquivo em memória pode causar problemas.
+
+### Atividade 02 - Outra forma de ler um XML:
+
+- **Ex.:**
+```
+XMLReader leitor = XMLReaderFactory.createXMLReader();  // cria um leitor de XML;
+LeitorXml logica = new LeitorXml(); // cria uma classe que extende de DefaultHandler;
+leitor.setContentHandler(logica);   // define qual é o bloco de código (handler) que será executado;
+InputStream inputStream = new FileInputStream("src/vendas.xml");
+InputSource inputSource = new InputSource(inputStream);
+leitor.parse(inputSource);
+```
