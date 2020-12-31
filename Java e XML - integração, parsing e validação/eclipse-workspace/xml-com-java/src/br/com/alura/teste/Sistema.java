@@ -13,6 +13,11 @@ public class Sistema {
 	
 	public static void main(String[] args) throws Exception {
 		DocumentBuilderFactory fabrica = DocumentBuilderFactory.newInstance();
+		
+		fabrica.setValidating(true);
+		fabrica.setNamespaceAware(true);
+		fabrica.setAttribute("http://java.sun.com/xml/jaxp/properties/schemaLanguage", "http://www.w3.org/2001/XMLSchema");
+		
 		DocumentBuilder builder = fabrica.newDocumentBuilder();
 		Document document = builder.parse("src/vendas.xml");
 		

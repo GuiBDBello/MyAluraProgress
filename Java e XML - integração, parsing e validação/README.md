@@ -41,3 +41,30 @@ String formaDePagamento = fdp.getTextContent();
 Element venda = document.getDocumentElement();
 String moeda = venda.getAttribute("moeda");
 ```
+
+## Aula 02 - Garantindo o formato de arquivos XML usando XSD
+
+### Atividade 01 - Validando tags de um XML:
+
+- XSD (*XML Schema Definition*): formato de arquivo que define a sintaxe de um arquivo XML. Descreve a hierarquia do XML.
+- No Eclipse, esses arquivos são chamados de *XML Schema File*.
+- No arquivo `formatoVenda.xsd`, utilize a *tag* `<element name="tag"/>` para informar quais *tags* devem fazer parte da definição do XML.
+- No arquivo `vendas.xml`, adicione o atributo `xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"` (*XML Schema Instance*) com seu valor padrão e o atributo `xsi:noNamespaceSchemaLocation="formatoVenda.xsd"` para vincular o seu XML com o seu XSD.
+- No Java, é preciso definir para o `DocumentBuilderFactory` que será utilizado um arquivo XSD. Isso é feito com `factory.setValidating(true);`, `factory.setNamespaceAware(true);` e `factory.setAttribute("http://java.sun.com/xml/jaxp/properties/schemaLanguage", "http://www.w3.org/2001/XMLSchema");`
+- **Ex.:**
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema">
+	<element name="venda">
+		<complexType>
+			<sequence>
+				<element name="formaDePagamento" type="string" />
+			</sequence>
+			<attribute name="moeda" type="string"></attribute>
+		</complexType>
+	</element>
+</schema>
+```
+- `<complexType>`: define que a venda é um tipo complexo, que pode ter elementos-filhos;
+- `<sequence>`: define os elementos-filhos da *tag* venda;
+- `<attribute>`: define os atributos da *tag* venda;
