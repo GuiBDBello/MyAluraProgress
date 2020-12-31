@@ -167,7 +167,7 @@ leitor.parse(inputSource);
 
 ## Aula 05 - Consultas eficientes com XPath
 
-### Fazendo consultas com XPath:
+### Atividade 01 - Fazendo consultas com XPath:
 
 - *XPath*: linguagem para realizar consultas em uma árvore de elementos (*DOM*). Parecido com *SQL*.
 - **Ex.:**
@@ -178,3 +178,22 @@ XPathExpression compile = path.compile(exp);    // compila a String para uma exp
 ```
 - E substitua `document.getElementsByTagName("produto");` por `(NodeList) expression.evaluate(document, XPathConstants.NODESET);`
 - É possível realizar buscas mais específicas, como: `"/venda/produtos/produto[2]"` (retorna apenas o segundo produto), `"/venda/produtos/produto[nome='Livro de xml']"` (retorna os produtos com nome `Livro de xml`), `"/venda/produtos/produto[contains(nome, 'Livro de xml')]"` (pega os produtos com `Livro` no atributo `nome`).
+
+## Aula 06 - Convertendo arquivos XML de forma rápida com XSLT
+
+### Atividade 01 - Convertendo XML para HTML:
+
+- *XSL* (*eXtensible Stylesheet Language*): linguagem para converter XML para outros formatos.
+- O Eclipse, por padrão, pode criar arquivos com a extensão `.xsl`.
+- **Ex.:**
+```
+InputStream xsl = new FileInputStream("src/xmlParaHtml.xsl");   // carrega o xsl
+StreamSource xslSource = new StreamSource(xsl);
+
+InputStream dados = new FileInputStream("src/vendas.xml");  // carrega o xml
+StreamSource xmlSource = new StreamSource(dados);
+
+Transformer transformer = TransformerFactory.newInstance().newTransformer(xslSource);   // instancia o Transformer para converter XML para HTML
+StreamResult saida = new StreamResult("src/vendas.html");   // define o arquivo que será criado com a conversão
+transformer.transform(xmlSource, saida);    // converte o XML para HTML
+```
