@@ -68,3 +68,67 @@ String moeda = venda.getAttribute("moeda");
 - `<complexType>`: define que a venda é um tipo complexo, que pode ter elementos-filhos;
 - `<sequence>`: define os elementos-filhos da *tag* venda;
 - `<attribute>`: define os atributos da *tag* venda;
+
+### Atividade 02 - Expando nossas validações:
+
+- É possível criar uma hierarquia com vários elementos-filhos.
+- **Ex.:**
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema">
+	<element name="venda">
+		<complexType>
+			<sequence>
+				<element name="formaDePagamento" type="string" />
+				<element name="produtos">
+					<complexType>
+						<sequence>
+							<element name="produto" maxOccurs="unbounded">
+								<complexType>
+									<sequence>
+										<element name="nome" type="string" />
+										<element name="preco" type="double" />
+									</sequence>
+								</complexType>
+							</element>
+						</sequence>
+					</complexType>
+				</element>
+			</sequence>
+			<attribute name="moeda" type="string"></attribute>
+		</complexType>
+	</element>
+</schema>
+```
+- É possível desacoplar alguns elementos, como o `produto`, mas para isso é necessário criar um apelido para o *namespace* importado.
+- **Ex.:**
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="produto">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="nome" type="xsd:string" />
+				<xsd:element name="preco" type="xsd:double" />
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	
+	<xsd:element name="venda">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="formaDePagamento" type="xsd:string" />
+				<xsd:element name="produtos">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element ref="produto" maxOccurs="unbounded" />
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+			<xsd:attribute name="moeda" type="xsd:string"></xsd:attribute>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>
+```
+- Toda vez que um *namespace* externo for utilizado, é uma boa prática dar um apelido para ele.
