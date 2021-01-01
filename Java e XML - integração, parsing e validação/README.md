@@ -223,3 +223,18 @@ transformer.transform(xmlSource, saida);    // converte o XML para HTML
 	</xsl:template>
 </xsl:stylesheet>
 ```
+
+## Aula 07 - Mapeamento de arquivos XML de forma produtiva com JAXB
+
+### Atividade 01 - Mapeando XML para um objeto:
+
+- **Ex.:**
+```
+JAXBContext jaxbContext = JAXBContext.newInstance(Venda.class);
+Unmarshaller unmarshaller = jaxbContext.createUnmarshaller();
+Venda venda = (Venda) unmarshaller.unmarshal(new File("src/vendas.xml"));   // "unmarshaller" converte XML para objeto Venda
+```
+- `@XmlRootElement`: notação de classe. Representa um arquivo XML (a "raíz" do arquivo).
+- `@XmlElementWrapper(name="produtos)"`: vincula a `List<Produto>` com a *tag* `"produtos"`.
+- `@XmlAccessorType(XmlAccessTyoe.FIELD)`: define que a forma de acessar os atributos é por campo.
+- `@XmlElement(name="produto")`: vincula cada item `Produto` com a *tag* `"produto"`.
