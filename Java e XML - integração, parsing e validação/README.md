@@ -231,10 +231,29 @@ transformer.transform(xmlSource, saida);    // converte o XML para HTML
 - **Ex.:**
 ```
 JAXBContext jaxbContext = JAXBContext.newInstance(Venda.class);
-Unmarshaller unmarshaller = jaxbContext.createUnmarshaller();
-Venda venda = (Venda) unmarshaller.unmarshal(new File("src/vendas.xml"));   // "unmarshaller" converte XML para objeto Venda
+Unmarshaller unmarshaller = jaxbContext.createUnmarshaller();   // "unmarshaller" converte XML para objeto Venda
+Venda venda = (Venda) unmarshaller.unmarshal(new File("src/vendas.xml"));   // realiza a conversão para objeto Venda
 ```
-- `@XmlRootElement`: notação de classe. Representa um arquivo XML (a "raíz" do arquivo).
-- `@XmlElementWrapper(name="produtos)"`: vincula a `List<Produto>` com a *tag* `"produtos"`.
+- `@XmlRootElement`: notação de classe. Define que a classe representa um arquivo XML (a "raíz" do arquivo).
+- `@XmlElementWrapper(name="produtos")`: vincula a `List<Produto>` com a *tag* `"produtos"`.
 - `@XmlAccessorType(XmlAccessTyoe.FIELD)`: define que a forma de acessar os atributos é por campo.
-- `@XmlElement(name="produto")`: vincula cada item `Produto` com a *tag* `"produto"`.
+- `@XmlElement(name="produto")`: vincula cada item `Produto` com a *tag* `"produto"`. No caso de ser uma lista, define o nome da *tag* de cada elemento da lista.
+
+### Atividade 02 - Mapeando objeto para um XML:
+
+- **Ex.:**
+```
+Marshaller marshaller = jaxbContext.createMarshaller();
+
+Venda venda = new Venda();
+venda.setFormaDePagamento("Crediario");
+
+List<Produto> produtos = new ArrayList<Produto>();
+produtos.add(new Produto("Livro de java", 59.90));
+produtos.add(new Produto("Livro de xml", 59.90));
+produtos.add(new Produto("Livro de O.O", 59.90));
+venda.setProdutos(produtos);
+
+StringWriter writer = new StringWriter();
+marshaller.marshal(venda, writer);  // converte o objeto venda para o console (writer)
+```
