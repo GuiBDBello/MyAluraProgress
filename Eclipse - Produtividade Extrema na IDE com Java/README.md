@@ -256,6 +256,7 @@ for (${iterable_type} ${iterable_element} : ${iterable}) {
 
 ### Atividade 05 - Criando o Clean Up do seu time:
 
+- `Ctrl + 3` e digite `Clean Up`.
 As opções mais comuns para evitar que mudanças tolas em códigos causem conflitos ao sincronizar com o sistema de controle de versão são:
 - *Remove trailing whitespace, All lines*: para evitar commits corrigindo só espaços em branco;
 - *Organize imports*: para não esquecermos imports desnecessários no nosso código;
