@@ -1,0 +1,199 @@
+STATUS | wrapper  | 2021/01/25 22:46:39 | --> Wrapper Started as Console
+STATUS | wrapper  | 2021/01/25 22:46:40 | Launching a JVM...
+INFO   | jvm 1    | 2021/01/25 22:46:42 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2021/01/25 22:46:42 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2021/01/25 22:46:42 | 
+INFO   | jvm 1    | 2021/01/25 22:46:42 | Java Runtime: Oracle Corporation 1.8.0_191 C:\Program Files\Java\jre1.8.0_191
+INFO   | jvm 1    | 2021/01/25 22:46:42 |   Heap sizes: current=249344k  free=235006k  max=932352k
+INFO   | jvm 1    | 2021/01/25 22:46:42 |     JVM args: -Dactivemq.home=../.. -Dactivemq.base=../.. -Djavax.net.ssl.keyStorePassword=password -Djavax.net.ssl.trustStorePassword=password -Djavax.net.ssl.keyStore=../../conf/broker.ks -Djavax.net.ssl.trustStore=../../conf/broker.ts -Dcom.sun.management.jmxremote -Dorg.apache.activemq.UseDedicatedTaskRunner=true -Djava.util.logging.config.file=logging.properties -Dactivemq.conf=../../conf -Dactivemq.data=../../data -Djava.security.auth.login.config=../../conf/login.config -Xmx1024m -Djava.library.path=../../bin/win64 -Dwrapper.key=n6FrrW3QwrbO5ivQ -Dwrapper.port=32000 -Dwrapper.jvm.port.min=31000 -Dwrapper.jvm.port.max=31999 -Dwrapper.pid=13812 -Dwrapper.version=3.2.3 -Dwrapper.native_library=wrapper -Dwrapper.cpu.timeout=10 -Dwrapper.jvmid=1
+INFO   | jvm 1    | 2021/01/25 22:46:42 | Extensions classpath:
+INFO   | jvm 1    | 2021/01/25 22:46:42 |   [..\..\lib,..\..\lib\camel,..\..\lib\optional,..\..\lib\web,..\..\lib\extra]
+INFO   | jvm 1    | 2021/01/25 22:46:42 | ACTIVEMQ_HOME: ..\..
+INFO   | jvm 1    | 2021/01/25 22:46:42 | ACTIVEMQ_BASE: ..\..
+INFO   | jvm 1    | 2021/01/25 22:46:42 | ACTIVEMQ_CONF: ..\..\conf
+INFO   | jvm 1    | 2021/01/25 22:46:42 | ACTIVEMQ_DATA: ..\..\data
+INFO   | jvm 1    | 2021/01/25 22:46:47 | Loading message broker from: xbean:activemq.xml
+INFO   | jvm 1    | 2021/01/25 22:46:47 |  INFO | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@7618ecec: startup date [Mon Jan 25 23:46:47 BRST 2021]; root of context hierarchy
+INFO   | jvm 1    | 2021/01/25 22:46:48 |  INFO | PListStore:[C:\GIT\GitHub\MyAluraProgress\JMS e ActiveMQ - Mensageria com Java\apache-activemq-5.12.0\bin\win64\..\..\data\localhost\tmp_storage] started
+INFO   | jvm 1    | 2021/01/25 22:46:48 |  INFO | Using Persistence Adapter: KahaDBPersistenceAdapter[C:\GIT\GitHub\MyAluraProgress\JMS e ActiveMQ - Mensageria com Java\apache-activemq-5.12.0\bin\win64\..\..\data\kahadb]
+INFO   | jvm 1    | 2021/01/25 22:46:48 |  INFO | Apache ActiveMQ 5.12.0 (localhost, ID:GuiDB-58096-1611625608729-0:1) is starting
+INFO   | jvm 1    | 2021/01/25 22:46:48 |  INFO | Listening for connections at: tcp://GuiDB:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2021/01/25 22:46:48 |  INFO | Connector openwire started
+INFO   | jvm 1    | 2021/01/25 22:46:48 |  INFO | Listening for connections at: amqp://GuiDB:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2021/01/25 22:46:48 |  INFO | Connector amqp started
+INFO   | jvm 1    | 2021/01/25 22:46:48 |  INFO | Listening for connections at: stomp://GuiDB:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2021/01/25 22:46:48 |  INFO | Connector stomp started
+INFO   | jvm 1    | 2021/01/25 22:46:48 |  INFO | Listening for connections at: mqtt://GuiDB:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2021/01/25 22:46:48 |  INFO | Connector mqtt started
+INFO   | jvm 1    | 2021/01/25 22:46:48 | {}
+INFO   | jvm 1    | 2021/01/25 22:46:49 |  INFO | Listening for connections at ws://GuiDB:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2021/01/25 22:46:49 |  INFO | Connector ws started
+INFO   | jvm 1    | 2021/01/25 22:46:49 |  INFO | Apache ActiveMQ 5.12.0 (localhost, ID:GuiDB-58096-1611625608729-0:1) started
+INFO   | jvm 1    | 2021/01/25 22:46:49 |  INFO | For help or more information please see: http://activemq.apache.org
+INFO   | jvm 1    | 2021/01/25 22:46:49 |  INFO | ActiveMQ WebConsole available at http://0.0.0.0:8161/
+INFO   | jvm 1    | 2021/01/25 22:46:49 |  INFO | ActiveMQ Jolokia REST API available at http://0.0.0.0:8161/api/jolokia/
+INFO   | jvm 1    | 2021/01/25 22:46:49 |  INFO | Initializing Spring FrameworkServlet 'dispatcher'
+INFO   | jvm 1    | 2021/01/25 22:46:50 |  INFO | jolokia-agent: No access restrictor found at classpath:/jolokia-access.xml, access to all MBeans is allowed
+STATUS | wrapper  | 2021/01/25 22:47:19 | CTRL-C trapped.  Shutting down.
+INFO   | jvm 1    | 2021/01/25 22:47:20 |  INFO | Apache ActiveMQ 5.12.0 (localhost, ID:GuiDB-58096-1611625608729-0:1) is shutting down
+INFO   | jvm 1    | 2021/01/25 22:47:20 |  INFO | Connector openwire stopped
+INFO   | jvm 1    | 2021/01/25 22:47:20 |  INFO | Connector amqp stopped
+INFO   | jvm 1    | 2021/01/25 22:47:20 |  INFO | Connector stomp stopped
+INFO   | jvm 1    | 2021/01/25 22:47:20 |  INFO | Connector mqtt stopped
+INFO   | jvm 1    | 2021/01/25 22:47:21 |  INFO | Connector ws stopped
+INFO   | jvm 1    | 2021/01/25 22:47:21 |  INFO | PListStore:[C:\GIT\GitHub\MyAluraProgress\JMS e ActiveMQ - Mensageria com Java\apache-activemq-5.12.0\bin\win64\..\..\data\localhost\tmp_storage] stopped
+INFO   | jvm 1    | 2021/01/25 22:47:21 |  INFO | Stopping async queue tasks
+INFO   | jvm 1    | 2021/01/25 22:47:21 |  INFO | Stopping async topic tasks
+INFO   | jvm 1    | 2021/01/25 22:47:21 |  INFO | Stopped KahaDB
+INFO   | jvm 1    | 2021/01/25 22:47:21 |  INFO | Apache ActiveMQ 5.12.0 (localhost, ID:GuiDB-58096-1611625608729-0:1) uptime 32.786 seconds
+INFO   | jvm 1    | 2021/01/25 22:47:21 |  INFO | Apache ActiveMQ 5.12.0 (localhost, ID:GuiDB-58096-1611625608729-0:1) is shutdown
+INFO   | jvm 1    | 2021/01/25 22:47:21 |  INFO | Closing org.apache.activemq.xbean.XBeanBrokerFactory$1@7618ecec: startup date [Mon Jan 25 23:46:47 BRST 2021]; root of context hierarchy
+INFO   | jvm 1    | 2021/01/25 22:47:21 |  INFO | Destroying Spring FrameworkServlet 'dispatcher'
+STATUS | wrapper  | 2021/01/25 22:47:22 | <-- Wrapper Stopped
+STATUS | wrapper  | 2021/01/25 22:47:48 | --> Wrapper Started as Console
+STATUS | wrapper  | 2021/01/25 22:47:48 | Launching a JVM...
+INFO   | jvm 1    | 2021/01/25 22:47:49 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2021/01/25 22:47:49 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2021/01/25 22:47:49 | 
+INFO   | jvm 1    | 2021/01/25 22:47:49 | Java Runtime: Oracle Corporation 1.8.0_191 C:\Program Files\Java\jre1.8.0_191
+INFO   | jvm 1    | 2021/01/25 22:47:49 |   Heap sizes: current=249344k  free=235006k  max=932352k
+INFO   | jvm 1    | 2021/01/25 22:47:49 |     JVM args: -Dactivemq.home=../.. -Dactivemq.base=../.. -Djavax.net.ssl.keyStorePassword=password -Djavax.net.ssl.trustStorePassword=password -Djavax.net.ssl.keyStore=../../conf/broker.ks -Djavax.net.ssl.trustStore=../../conf/broker.ts -Dcom.sun.management.jmxremote -Dorg.apache.activemq.UseDedicatedTaskRunner=true -Djava.util.logging.config.file=logging.properties -Dactivemq.conf=../../conf -Dactivemq.data=../../data -Djava.security.auth.login.config=../../conf/login.config -Xmx1024m -Djava.library.path=../../bin/win64 -Dwrapper.key=2ltf73doQoo_PBJH -Dwrapper.port=32000 -Dwrapper.jvm.port.min=31000 -Dwrapper.jvm.port.max=31999 -Dwrapper.pid=5056 -Dwrapper.version=3.2.3 -Dwrapper.native_library=wrapper -Dwrapper.cpu.timeout=10 -Dwrapper.jvmid=1
+INFO   | jvm 1    | 2021/01/25 22:47:49 | Extensions classpath:
+INFO   | jvm 1    | 2021/01/25 22:47:49 |   [..\..\lib,..\..\lib\camel,..\..\lib\optional,..\..\lib\web,..\..\lib\extra]
+INFO   | jvm 1    | 2021/01/25 22:47:49 | ACTIVEMQ_HOME: ..\..
+INFO   | jvm 1    | 2021/01/25 22:47:49 | ACTIVEMQ_BASE: ..\..
+INFO   | jvm 1    | 2021/01/25 22:47:49 | ACTIVEMQ_CONF: ..\..\conf
+INFO   | jvm 1    | 2021/01/25 22:47:49 | ACTIVEMQ_DATA: ..\..\data
+INFO   | jvm 1    | 2021/01/25 22:47:49 | Loading message broker from: xbean:activemq.xml
+INFO   | jvm 1    | 2021/01/25 22:47:49 |  INFO | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@46085dda: startup date [Mon Jan 25 23:47:49 BRST 2021]; root of context hierarchy
+INFO   | jvm 1    | 2021/01/25 22:47:50 |  INFO | PListStore:[C:\GIT\GitHub\MyAluraProgress\JMS e ActiveMQ - Mensageria com Java\apache-activemq-5.12.0\bin\win64\..\..\data\localhost\tmp_storage] started
+INFO   | jvm 1    | 2021/01/25 22:47:50 |  INFO | Using Persistence Adapter: KahaDBPersistenceAdapter[C:\GIT\GitHub\MyAluraProgress\JMS e ActiveMQ - Mensageria com Java\apache-activemq-5.12.0\bin\win64\..\..\data\kahadb]
+INFO   | jvm 1    | 2021/01/25 22:47:50 |  INFO | KahaDB is version 6
+INFO   | jvm 1    | 2021/01/25 22:47:50 |  INFO | Recovering from the journal @1:504
+INFO   | jvm 1    | 2021/01/25 22:47:50 |  INFO | Recovery replayed 7 operations from the journal in 0.045 seconds.
+INFO   | jvm 1    | 2021/01/25 22:47:51 |  INFO | Apache ActiveMQ 5.12.0 (localhost, ID:GuiDB-58130-1611625670893-0:1) is starting
+INFO   | jvm 1    | 2021/01/25 22:47:51 |  INFO | Listening for connections at: tcp://GuiDB:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2021/01/25 22:47:51 |  INFO | Connector openwire started
+INFO   | jvm 1    | 2021/01/25 22:47:51 |  INFO | Listening for connections at: amqp://GuiDB:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2021/01/25 22:47:51 |  INFO | Connector amqp started
+INFO   | jvm 1    | 2021/01/25 22:47:51 |  INFO | Listening for connections at: stomp://GuiDB:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2021/01/25 22:47:51 |  INFO | Connector stomp started
+INFO   | jvm 1    | 2021/01/25 22:47:51 |  INFO | Listening for connections at: mqtt://GuiDB:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2021/01/25 22:47:51 |  INFO | Connector mqtt started
+INFO   | jvm 1    | 2021/01/25 22:47:51 | {}
+INFO   | jvm 1    | 2021/01/25 22:47:51 |  INFO | Listening for connections at ws://GuiDB:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2021/01/25 22:47:51 |  INFO | Connector ws started
+INFO   | jvm 1    | 2021/01/25 22:47:51 |  INFO | Apache ActiveMQ 5.12.0 (localhost, ID:GuiDB-58130-1611625670893-0:1) started
+INFO   | jvm 1    | 2021/01/25 22:47:51 |  INFO | For help or more information please see: http://activemq.apache.org
+INFO   | jvm 1    | 2021/01/25 22:47:51 |  INFO | ActiveMQ WebConsole available at http://0.0.0.0:8161/
+INFO   | jvm 1    | 2021/01/25 22:47:51 |  INFO | ActiveMQ Jolokia REST API available at http://0.0.0.0:8161/api/jolokia/
+INFO   | jvm 1    | 2021/01/25 22:47:51 |  INFO | Initializing Spring FrameworkServlet 'dispatcher'
+INFO   | jvm 1    | 2021/01/25 22:47:52 |  INFO | jolokia-agent: No access restrictor found at classpath:/jolokia-access.xml, access to all MBeans is allowed
+STATUS | wrapper  | 2021/01/25 22:50:57 | CTRL-C trapped.  Shutting down.
+INFO   | jvm 1    | 2021/01/25 22:50:58 |  INFO | Apache ActiveMQ 5.12.0 (localhost, ID:GuiDB-58130-1611625670893-0:1) is shutting down
+INFO   | jvm 1    | 2021/01/25 22:50:58 |  INFO | Connector openwire stopped
+INFO   | jvm 1    | 2021/01/25 22:50:58 |  INFO | Connector amqp stopped
+INFO   | jvm 1    | 2021/01/25 22:50:58 |  INFO | Connector stomp stopped
+INFO   | jvm 1    | 2021/01/25 22:50:58 |  INFO | Connector mqtt stopped
+INFO   | jvm 1    | 2021/01/25 22:50:58 |  INFO | Connector ws stopped
+INFO   | jvm 1    | 2021/01/25 22:50:58 |  INFO | PListStore:[C:\GIT\GitHub\MyAluraProgress\JMS e ActiveMQ - Mensageria com Java\apache-activemq-5.12.0\bin\win64\..\..\data\localhost\tmp_storage] stopped
+INFO   | jvm 1    | 2021/01/25 22:50:58 |  INFO | Stopping async queue tasks
+INFO   | jvm 1    | 2021/01/25 22:50:58 |  INFO | Stopping async topic tasks
+INFO   | jvm 1    | 2021/01/25 22:50:58 |  INFO | Stopped KahaDB
+INFO   | jvm 1    | 2021/01/25 22:50:58 |  INFO | Apache ActiveMQ 5.12.0 (localhost, ID:GuiDB-58130-1611625670893-0:1) uptime 3 minutes
+INFO   | jvm 1    | 2021/01/25 22:50:58 |  INFO | Apache ActiveMQ 5.12.0 (localhost, ID:GuiDB-58130-1611625670893-0:1) is shutdown
+INFO   | jvm 1    | 2021/01/25 22:50:58 |  INFO | Closing org.apache.activemq.xbean.XBeanBrokerFactory$1@46085dda: startup date [Mon Jan 25 23:47:49 BRST 2021]; root of context hierarchy
+INFO   | jvm 1    | 2021/01/25 22:50:58 |  INFO | Destroying Spring FrameworkServlet 'dispatcher'
+STATUS | wrapper  | 2021/01/25 22:50:59 | <-- Wrapper Stopped
+STATUS | wrapper  | 2021/01/25 22:51:03 | --> Wrapper Started as Console
+STATUS | wrapper  | 2021/01/25 22:51:03 | Launching a JVM...
+INFO   | jvm 1    | 2021/01/25 22:51:04 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2021/01/25 22:51:04 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2021/01/25 22:51:04 | 
+INFO   | jvm 1    | 2021/01/25 22:51:04 | Java Runtime: Oracle Corporation 1.8.0_191 C:\Program Files\Java\jre1.8.0_191
+INFO   | jvm 1    | 2021/01/25 22:51:04 |   Heap sizes: current=249344k  free=235006k  max=932352k
+INFO   | jvm 1    | 2021/01/25 22:51:04 |     JVM args: -Dactivemq.home=../.. -Dactivemq.base=../.. -Djavax.net.ssl.keyStorePassword=password -Djavax.net.ssl.trustStorePassword=password -Djavax.net.ssl.keyStore=../../conf/broker.ks -Djavax.net.ssl.trustStore=../../conf/broker.ts -Dcom.sun.management.jmxremote -Dorg.apache.activemq.UseDedicatedTaskRunner=true -Djava.util.logging.config.file=logging.properties -Dactivemq.conf=../../conf -Dactivemq.data=../../data -Djava.security.auth.login.config=../../conf/login.config -Xmx1024m -Djava.library.path=../../bin/win64 -Dwrapper.key=DZmf3bz8Jcc1iUAu -Dwrapper.port=32000 -Dwrapper.jvm.port.min=31000 -Dwrapper.jvm.port.max=31999 -Dwrapper.pid=23828 -Dwrapper.version=3.2.3 -Dwrapper.native_library=wrapper -Dwrapper.cpu.timeout=10 -Dwrapper.jvmid=1
+INFO   | jvm 1    | 2021/01/25 22:51:04 | Extensions classpath:
+INFO   | jvm 1    | 2021/01/25 22:51:04 |   [..\..\lib,..\..\lib\camel,..\..\lib\optional,..\..\lib\web,..\..\lib\extra]
+INFO   | jvm 1    | 2021/01/25 22:51:04 | ACTIVEMQ_HOME: ..\..
+INFO   | jvm 1    | 2021/01/25 22:51:04 | ACTIVEMQ_BASE: ..\..
+INFO   | jvm 1    | 2021/01/25 22:51:04 | ACTIVEMQ_CONF: ..\..\conf
+INFO   | jvm 1    | 2021/01/25 22:51:04 | ACTIVEMQ_DATA: ..\..\data
+INFO   | jvm 1    | 2021/01/25 22:51:04 | Loading message broker from: xbean:activemq.xml
+INFO   | jvm 1    | 2021/01/25 22:51:04 |  INFO | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@46085dda: startup date [Mon Jan 25 23:51:04 BRST 2021]; root of context hierarchy
+INFO   | jvm 1    | 2021/01/25 22:51:05 |  INFO | PListStore:[C:\GIT\GitHub\MyAluraProgress\JMS e ActiveMQ - Mensageria com Java\apache-activemq-5.12.0\bin\win64\..\..\data\localhost\tmp_storage] started
+INFO   | jvm 1    | 2021/01/25 22:51:05 |  INFO | Using Persistence Adapter: KahaDBPersistenceAdapter[C:\GIT\GitHub\MyAluraProgress\JMS e ActiveMQ - Mensageria com Java\apache-activemq-5.12.0\bin\win64\..\..\data\kahadb]
+INFO   | jvm 1    | 2021/01/25 22:51:05 |  INFO | KahaDB is version 6
+INFO   | jvm 1    | 2021/01/25 22:51:05 |  INFO | Recovering from the journal @1:1813
+INFO   | jvm 1    | 2021/01/25 22:51:05 |  INFO | Recovery replayed 38 operations from the journal in 0.013 seconds.
+INFO   | jvm 1    | 2021/01/25 22:51:05 |  INFO | Apache ActiveMQ 5.12.0 (localhost, ID:GuiDB-58212-1611625865588-0:1) is starting
+INFO   | jvm 1    | 2021/01/25 22:51:05 |  INFO | Listening for connections at: tcp://GuiDB:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2021/01/25 22:51:05 |  INFO | Connector openwire started
+INFO   | jvm 1    | 2021/01/25 22:51:05 |  INFO | Listening for connections at: amqp://GuiDB:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2021/01/25 22:51:05 |  INFO | Connector amqp started
+INFO   | jvm 1    | 2021/01/25 22:51:05 |  INFO | Listening for connections at: stomp://GuiDB:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2021/01/25 22:51:05 |  INFO | Connector stomp started
+INFO   | jvm 1    | 2021/01/25 22:51:05 |  INFO | Listening for connections at: mqtt://GuiDB:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2021/01/25 22:51:05 |  INFO | Connector mqtt started
+INFO   | jvm 1    | 2021/01/25 22:51:05 | {}
+INFO   | jvm 1    | 2021/01/25 22:51:05 |  INFO | Listening for connections at ws://GuiDB:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2021/01/25 22:51:05 |  INFO | Connector ws started
+INFO   | jvm 1    | 2021/01/25 22:51:05 |  INFO | Apache ActiveMQ 5.12.0 (localhost, ID:GuiDB-58212-1611625865588-0:1) started
+INFO   | jvm 1    | 2021/01/25 22:51:05 |  INFO | For help or more information please see: http://activemq.apache.org
+INFO   | jvm 1    | 2021/01/25 22:51:06 |  INFO | ActiveMQ WebConsole available at http://0.0.0.0:8161/
+INFO   | jvm 1    | 2021/01/25 22:51:06 |  INFO | ActiveMQ Jolokia REST API available at http://0.0.0.0:8161/api/jolokia/
+INFO   | jvm 1    | 2021/01/25 22:51:06 |  INFO | Initializing Spring FrameworkServlet 'dispatcher'
+INFO   | jvm 1    | 2021/01/25 22:51:06 |  INFO | jolokia-agent: No access restrictor found at classpath:/jolokia-access.xml, access to all MBeans is allowed
+STATUS | wrapper  | 2021/01/25 23:34:36 | CTRL-C trapped.  Shutting down.
+STATUS | wrapper  | 2021/01/25 23:34:36 | CTRL-C trapped.  Forcing immediate shutdown.
+ERROR  | wrapper  | 2021/01/25 23:34:36 | JVM did not exit on request, terminated
+STATUS | wrapper  | 2021/01/25 23:34:37 | CTRL-C trapped.  Forcing immediate shutdown.
+STATUS | wrapper  | 2021/01/25 23:34:37 | CTRL-C trapped.  Forcing immediate shutdown.
+STATUS | wrapper  | 2021/01/25 23:34:37 | CTRL-C trapped.  Forcing immediate shutdown.
+STATUS | wrapper  | 2021/01/25 23:34:37 | CTRL-C trapped.  Forcing immediate shutdown.
+FATAL  | wrapper  | 2021/01/25 23:34:37 | Critical error: wait for JVM process failed
+STATUS | wrapper  | 2021/01/25 23:34:41 | --> Wrapper Started as Console
+STATUS | wrapper  | 2021/01/25 23:34:41 | Launching a JVM...
+INFO   | jvm 1    | 2021/01/25 23:34:42 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2021/01/25 23:34:42 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2021/01/25 23:34:42 | 
+INFO   | jvm 1    | 2021/01/25 23:34:42 | Java Runtime: Oracle Corporation 1.8.0_191 C:\Program Files\Java\jre1.8.0_191
+INFO   | jvm 1    | 2021/01/25 23:34:42 |   Heap sizes: current=249344k  free=235022k  max=932352k
+INFO   | jvm 1    | 2021/01/25 23:34:42 |     JVM args: -Dactivemq.home=../.. -Dactivemq.base=../.. -Djavax.net.ssl.keyStorePassword=password -Djavax.net.ssl.trustStorePassword=password -Djavax.net.ssl.keyStore=../../conf/broker.ks -Djavax.net.ssl.trustStore=../../conf/broker.ts -Dcom.sun.management.jmxremote -Dorg.apache.activemq.UseDedicatedTaskRunner=true -Djava.util.logging.config.file=logging.properties -Dactivemq.conf=../../conf -Dactivemq.data=../../data -Djava.security.auth.login.config=../../conf/login.config -Xmx1024m -Djava.library.path=../../bin/win64 -Dwrapper.key=f4DK62bzrKEmGzlc -Dwrapper.port=32000 -Dwrapper.jvm.port.min=31000 -Dwrapper.jvm.port.max=31999 -Dwrapper.pid=23200 -Dwrapper.version=3.2.3 -Dwrapper.native_library=wrapper -Dwrapper.cpu.timeout=10 -Dwrapper.jvmid=1
+INFO   | jvm 1    | 2021/01/25 23:34:42 | Extensions classpath:
+INFO   | jvm 1    | 2021/01/25 23:34:42 |   [..\..\lib,..\..\lib\camel,..\..\lib\optional,..\..\lib\web,..\..\lib\extra]
+INFO   | jvm 1    | 2021/01/25 23:34:42 | ACTIVEMQ_HOME: ..\..
+INFO   | jvm 1    | 2021/01/25 23:34:42 | ACTIVEMQ_BASE: ..\..
+INFO   | jvm 1    | 2021/01/25 23:34:42 | ACTIVEMQ_CONF: ..\..\conf
+INFO   | jvm 1    | 2021/01/25 23:34:42 | ACTIVEMQ_DATA: ..\..\data
+INFO   | jvm 1    | 2021/01/25 23:34:42 | Loading message broker from: xbean:activemq.xml
+INFO   | jvm 1    | 2021/01/25 23:34:42 |  INFO | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@15ce9a56: startup date [Tue Jan 26 00:34:42 BRST 2021]; root of context hierarchy
+INFO   | jvm 1    | 2021/01/25 23:34:43 |  INFO | PListStore:[C:\GIT\GitHub\MyAluraProgress\JMS e ActiveMQ - Mensageria com Java\apache-activemq-5.12.0\bin\win64\..\..\data\localhost\tmp_storage] started
+INFO   | jvm 1    | 2021/01/25 23:34:43 |  INFO | Using Persistence Adapter: KahaDBPersistenceAdapter[C:\GIT\GitHub\MyAluraProgress\JMS e ActiveMQ - Mensageria com Java\apache-activemq-5.12.0\bin\win64\..\..\data\kahadb]
+INFO   | jvm 1    | 2021/01/25 23:34:43 |  INFO | KahaDB is version 6
+INFO   | jvm 1    | 2021/01/25 23:34:43 |  INFO | Recovering from the journal @1:6811
+INFO   | jvm 1    | 2021/01/25 23:34:43 |  INFO | Recovery replayed 519 operations from the journal in 0.037 seconds.
+INFO   | jvm 1    | 2021/01/25 23:34:43 |  INFO | Apache ActiveMQ 5.12.0 (localhost, ID:GuiDB-58781-1611628483709-0:1) is starting
+INFO   | jvm 1    | 2021/01/25 23:34:44 |  INFO | Listening for connections at: tcp://GuiDB:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2021/01/25 23:34:44 |  INFO | Connector openwire started
+INFO   | jvm 1    | 2021/01/25 23:34:44 |  INFO | Listening for connections at: amqp://GuiDB:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2021/01/25 23:34:44 |  INFO | Connector amqp started
+INFO   | jvm 1    | 2021/01/25 23:34:44 |  INFO | Listening for connections at: stomp://GuiDB:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2021/01/25 23:34:44 |  INFO | Connector stomp started
+INFO   | jvm 1    | 2021/01/25 23:34:44 |  INFO | Listening for connections at: mqtt://GuiDB:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2021/01/25 23:34:44 |  INFO | Connector mqtt started
+INFO   | jvm 1    | 2021/01/25 23:34:44 | {}
+INFO   | jvm 1    | 2021/01/25 23:34:44 |  INFO | Listening for connections at ws://GuiDB:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2021/01/25 23:34:44 |  INFO | Connector ws started
+INFO   | jvm 1    | 2021/01/25 23:34:44 |  INFO | Apache ActiveMQ 5.12.0 (localhost, ID:GuiDB-58781-1611628483709-0:1) started
+INFO   | jvm 1    | 2021/01/25 23:34:44 |  INFO | For help or more information please see: http://activemq.apache.org
+INFO   | jvm 1    | 2021/01/25 23:34:44 |  INFO | ActiveMQ WebConsole available at http://0.0.0.0:8161/
+INFO   | jvm 1    | 2021/01/25 23:34:44 |  INFO | ActiveMQ Jolokia REST API available at http://0.0.0.0:8161/api/jolokia/
+INFO   | jvm 1    | 2021/01/25 23:34:44 |  INFO | Initializing Spring FrameworkServlet 'dispatcher'
+INFO   | jvm 1    | 2021/01/25 23:34:45 |  INFO | jolokia-agent: No access restrictor found at classpath:/jolokia-access.xml, access to all MBeans is allowed
+STATUS | wrapper  | 2021/01/25 23:49:12 | CTRL-C trapped.  Shutting down.
+STATUS | wrapper  | 2021/01/25 23:49:13 | CTRL-C trapped.  Forcing immediate shutdown.
+ERROR  | wrapper  | 2021/01/25 23:49:13 | JVM did not exit on request, terminated
+STATUS | wrapper  | 2021/01/25 23:49:13 | CTRL-C trapped.  Forcing immediate shutdown.
+STATUS | wrapper  | 2021/01/25 23:49:13 | CTRL-C trapped.  Forcing immediate shutdown.
+STATUS | wrapper  | 2021/01/25 23:49:13 | <-- Wrapper Stopped
