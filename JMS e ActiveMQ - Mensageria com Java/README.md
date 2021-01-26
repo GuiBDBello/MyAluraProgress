@@ -27,3 +27,13 @@
 - Para criar uma fila, digite o nome desejado e clique em `Create`.
 - Para enviar uma mensagem, em *Operations*, clique em `Send To`. Defina o *Destination*, o *Message body* e clique em `Send`.
 - (*Windows*) `java -cp activemq-all-5.12.0.jar;aula-jms.jar br.com.caelum.TesteMensageria`: Executa a aplicação disponibilizada na aula. É possível consumir ou enviar mensagens, utilizando os parâmetros: `consome` e `envia X` (onde `X` é a quantidade de mensagens enviadas).
+
+### Atividade 07 - Para saber mais: Estilos de integração:
+
+- https://www.enterpriseintegrationpatterns.com
+
+Os 4 estilos são:
+- Mensageria
+- RPC
+- Banco de dados compartilhado
+- Troca de arquivos
