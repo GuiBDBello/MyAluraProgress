@@ -103,3 +103,20 @@ topic.MyTopic = example.MyTopic
 java.naming.provider.url = vm://localhost
 ```
 - Isso pode ser útil quando queremos ter as vantagens do *MOM* dentro de uma aplicação *web*, por exemplo, sem precisar manter uma instância separada do *ActiveMQ*.
+
+## Aula 03 - Recebendo mensagens com MessageListener
+
+### Atividade 01 - Recebendo mensagens com MessageListener:
+
+- Define um objeto que será responsável por receber e tratar a mensagem:
+```
+consumer.setMessageListener(new MessageListener() {
+    @Override
+    public void onMessage(Message message) {
+        TextMessage textMessage = (TextMessage) message;
+        System.out.println(textMessage.getText());
+    }
+});`
+```
+- *Docs* da *API* do *JMS*: https://s3.amazonaws.com/caelum-online-public/jms/jms-apidocs.zip
+- A interface `Message` possui algumas subinterfaces, e uma dessas é a `TextMessage`. É possível obter o conteúdo de uma `TextMessage` com o método `getText()`.
