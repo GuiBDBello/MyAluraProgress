@@ -54,7 +54,7 @@ Os 4 estilos são:
 - `(ConnectionFactory) context.lookup("ConnectionFactory");`: Utiliza o `InitialContext` para obter o `ConnectionFactory` do *MOM*. Retorna um `Object`, por isso é necessário o *casting* pra `ConnectionFactory`.
 - É necessário abrir a conexão: `connection.start();`.
 - E fechar a conexão, o contexto e a sessão: `connection.close();`, `context.close();` e `session.close()`.
-- `javax.jms.Session`: Uma sessão pode ser criada à partir de uma conexão. É uma camada que fica entre a `Connection` e o `MessageConsumer`, e abstrai a parte de "trabalho transacional" e a confirmação do recebimento de mensagem.
+- `javax.jms.Session`: Uma sessão pode ser criada à partir de uma conexão. É uma camada que fica entre a `Connection` e o `MessageConsumer`, e abstrai a parte de "trabalho transacional" e a confirmação do recebimento de mensagem. Além disso, também serve para produzir o `MessageConsumer`.
 
 #### JNDI Support:
 
@@ -85,7 +85,7 @@ topic.MyTopic = example.MyTopic
 #### Consumer:
 
 - `javax.jms.MessageConsumer`: Consumidor do *JMS*.
-- `connection.createSession(false, Session.AUTO_ACKNOWLEDGE);`: Retorna uma `Session`. O primeiro argumento representa se há uma transação, o segundo argumento representa o tipo de reconhecimento da transação.
+- `connection.createSession(false, Session.AUTO_ACKNOWLEDGE);`: Retorna uma `Session`. O primeiro argumento define que não é necessário chamar `session.commit()` ou `session.rollback()`, o segundo argumento define que o recebimento da mensagem deve ser confirmada automaticamente.
 - `session.createConsumer(fila)`: Retorna um `MessageConsumer`. O argumento `fila` representa um `Destination`.
 - `javax.jms.Destination`: O destino representa o lugar concreto onde a mensagem será salva dentro do *MOM*. O *ActiveMQ* ou *MOM* em geral pode ter vários consumidores e receber mensagens de vários clientes. Para organizar o recebimento e a entrega das mensagens criamos destinos (`Destination`) no *MOM*.
 - `Destination fila = (Destination) context.lookup("financeiro");`: Obtém a fila criada no *ActiveMQ* definida na propriedade `queue.xpto` do arquivo `jndi.properties`.
@@ -94,3 +94,12 @@ topic.MyTopic = example.MyTopic
 #### Dica:
 
 - `new Scanner(System.in).nextLine();`: Para a execução no local dessa linha e aguarda pelo *input*.
+
+### Atividade 10 - Para saber mais: Rodar ActiveMQ em memoria:
+
+- É possível subir o *ActiveMQ* a partir de uma aplicação *Java*. Para isso, basta alterar o arquivo `jndi.properties`:
+```
+#java.naming.provider.url = tcp://hostname:61616
+java.naming.provider.url = vm://localhost
+```
+- Isso pode ser útil quando queremos ter as vantagens do *MOM* dentro de uma aplicação *web*, por exemplo, sem precisar manter uma instância separada do *ActiveMQ*.
