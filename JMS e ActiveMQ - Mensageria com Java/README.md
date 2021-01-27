@@ -12,7 +12,7 @@
 
 #### ActiveMQ:
 
-- *Middleware* Orientado a Mensagem (*MOM*).
+- *Middleware* Orientado a Mensagem (*MOM*). Não é um servidor de aplicação, é um *Message Broker*.
 - **Obs.:** No Windows é preciso executar o script `InstallService.bat` no terminal da pasta `win32` ou `win64` antes de seguir os próximos passos.
 - Acesse por linha de comando o diretório `{ACTIVEMQ_HOME}/bin/` (no *Windows* talvez seja preciso entrar na pasta `win32` ou `win64`) e execute `activemq start` ou `sh activemq console`. O comando inicia o *ActiveMQ* em *foreground*, útil para *debugging*. Também inicia o *WebConsole* no endereço `http://0.0.0.0:8161` ou `localhost:8161`.
 - Acesse o *WebConsole*, clique em *Manage ActiveMQ broker* e utilize o usuário `admin` e senha `admin` para acessar.
@@ -44,7 +44,7 @@ Os 4 estilos são:
 
 - O *MOM* desacopla quem produz a mensagem (*producer*) de quem consome a mensagem (*consumer*).
 - *JMS* (*Java Messaging Service*) é um padrão *JavaEE* de mensageria.
-- `lookup`: Significa "pega pra mim". Utilizado para obter o `ConnectionFactory`.
+- `lookup`: Recurso muito comum em ambientes *JavaEE* para descobrir ou pegar um recurso que o servidor disponibiliza. É feito através da classe `InitialContext` que por sua vez se baseia no arquivo de configuração `jndi.properties`. Esse arquivo e essa classe fazem parte de um outro padrão *JavaEE*, o **JNDI** (*Java Naming and Directory Interface*).
 
 #### JMS:
 
@@ -87,7 +87,7 @@ topic.MyTopic = example.MyTopic
 - `javax.jms.MessageConsumer`: Consumidor do *JMS*.
 - `connection.createSession(false, Session.AUTO_ACKNOWLEDGE);`: Retorna uma `Session`. O primeiro argumento representa se há uma transação, o segundo argumento representa o tipo de reconhecimento da transação.
 - `session.createConsumer(fila)`: Retorna um `MessageConsumer`. O argumento `fila` representa um `Destination`.
-- `javax.jms.Destination`: O destino representa 
+- `javax.jms.Destination`: O destino representa o lugar concreto onde a mensagem será salva dentro do *MOM*. O *ActiveMQ* ou *MOM* em geral pode ter vários consumidores e receber mensagens de vários clientes. Para organizar o recebimento e a entrega das mensagens criamos destinos (`Destination`) no *MOM*.
 - `Destination fila = (Destination) context.lookup("financeiro");`: Obtém a fila criada no *ActiveMQ* definida na propriedade `queue.xpto` do arquivo `jndi.properties`.
 - `Message message = consumer.receive();`: Recebe uma mensagem.
 
