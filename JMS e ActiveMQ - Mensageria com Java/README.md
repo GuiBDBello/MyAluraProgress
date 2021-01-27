@@ -37,3 +37,60 @@ Os 4 estilos são:
 - RPC
 - Banco de dados compartilhado
 - Troca de arquivos
+
+## Aula 02 - Consumindo mensagens com JMS
+
+### Atividade 01 - Consumindo mensagens com JMS:
+
+- O *MOM* desacopla quem produz a mensagem (*producer*) de quem consome a mensagem (*consumer*).
+- *JMS* (*Java Messaging Service*) é um padrão *JavaEE* de mensageria.
+- `lookup`: Significa "pega pra mim". Utilizado para obter o `ConnectionFactory`.
+
+#### JMS:
+
+- `javax.jms.Connection`: Classe que estabelece uma conexão com o *ActiveMQ*.
+- `javax.jms.ConnectionFactory`: Fábrica de `Connection`. A fábrica é fornecida pelo *MOM*. O *ActiveMQ* disponibiliza uma espécie de "registro", conhecido por `JNDI`, obtido através de `lookup`.
+- `javax.naming.InitialContext`: Classe necessária para obter a `ConnectionFactory` do *MOM*.
+- `(ConnectionFactory) context.lookup("ConnectionFactory");`: Utiliza o `InitialContext` para obter o `ConnectionFactory` do *MOM*. Retorna um `Object`, por isso é necessário o *casting* pra `ConnectionFactory`.
+- É necessário abrir a conexão: `connection.start();`.
+- E fechar a conexão, o contexto e a sessão: `connection.close();`, `context.close();` e `session.close()`.
+- `javax.jms.Session`: Uma sessão pode ser criada à partir de uma conexão. É uma camada que fica entre a `Connection` e o `MessageConsumer`, e abstrai a parte de "trabalho transacional" e a confirmação do recebimento de mensagem.
+
+#### JNDI Support:
+
+- https://activemq.apache.org/jndi-support
+- Crie um arquivo `jndi.properties` em seu *classpath* (pasta `src` do projeto), com o seguinte conteúdo:
+```
+java.naming.factory.initial = org.apache.activemq.jndi.ActiveMQInitialContextFactory
+
+# use the following property to configure the default connector
+java.naming.provider.url = vm://localhost
+
+# use the following property to specify the JNDI name the connection factory
+# should appear as. 
+#connectionFactoryNames = connectionFactory, queueConnectionFactory, topicConnectionFactry
+
+# register some queues in JNDI using the form
+# queue.[jndiName] = [physicalName]
+queue.MyQueue = example.MyQueue
+
+
+# register some topics in JNDI using the form
+# topic.[jndiName] = [physicalName]
+topic.MyTopic = example.MyTopic
+```
+- Altere a propriedade `java.naming.provider.url` para a instância do *ActiveMQ* que você quer utilizar. **Ex.:** `tcp://localhost:61616`
+- Altere o nome da propriedade `queue.MyQueue` para `queue.financeiro`, e o valor da propriedade para `fila.financeiro` (que foi o nome da fila criada no *ActiveMQ* na aula passada).
+
+#### Consumer:
+
+- `javax.jms.MessageConsumer`: Consumidor do *JMS*.
+- `connection.createSession(false, Session.AUTO_ACKNOWLEDGE);`: Retorna uma `Session`. O primeiro argumento representa se há uma transação, o segundo argumento representa o tipo de reconhecimento da transação.
+- `session.createConsumer(fila)`: Retorna um `MessageConsumer`. O argumento `fila` representa um `Destination`.
+- `javax.jms.Destination`: O destino representa 
+- `Destination fila = (Destination) context.lookup("financeiro");`: Obtém a fila criada no *ActiveMQ* definida na propriedade `queue.xpto` do arquivo `jndi.properties`.
+- `Message message = consumer.receive();`: Recebe uma mensagem.
+
+#### Dica:
+
+- `new Scanner(System.in).nextLine();`: Para a execução no local dessa linha e aguarda pelo *input*.
