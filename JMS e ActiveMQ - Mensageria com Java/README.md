@@ -108,6 +108,7 @@ java.naming.provider.url = vm://localhost
 
 ### Atividade 01 - Recebendo mensagens com MessageListener:
 
+- `javax.jms.MessageListener`: Fica esperando, de forma contínua, o recebimento de mensagens.
 - Define um objeto que será responsável por receber e tratar a mensagem:
 ```
 consumer.setMessageListener(new MessageListener() {
@@ -120,3 +121,18 @@ consumer.setMessageListener(new MessageListener() {
 ```
 - *Docs* da *API* do *JMS*: https://s3.amazonaws.com/caelum-online-public/jms/jms-apidocs.zip
 - A interface `Message` possui algumas subinterfaces, e uma dessas é a `TextMessage`. É possível obter o conteúdo de uma `TextMessage` com o método `getText()`.
+
+### Atividade 05 - Para saber mais: Design Pattern Observer:
+
+- **Ex.:**
+```
+botao.setActionListener(new ActionListener() { //classe anônima
+    public void actionPerformed(ActionEvent event) {
+        //tratamento do evento
+    }
+});
+```
+- Quando o botão for acionado ele notifica todos os listeners cadastrados. De forma mais genérica, um lado cria um evento (o botão) e tem um outro lado que recebe o evento (o `ActionListener`). Ambos estão desacoplados.
+- O *JMS* segue o mesmo padrão de projeto *Observer*! A diferença é que *JMS* é remoto ou distribuído. Ou seja, no padrão *Observer* originalmente descrito no livro GOF, tudo acontece na memória, o *Observer* desacopla objetos. Com *JMS*, a comunicação entre *Producer* e *Consumer* é remota, desacoplamento arquitetural.
+- Para fazer a comparação com o exemplo apresentado na pergunta: O botão seria um produtor de mensagem (ainda não criamos um produtor pelo *JMS*, apenas usamos o console de administração, isso vem no próximo capítulo). O `ActionListener` representa o `MessageListener` do mundo *JMS* e o `ActionEvent` seria a `Message`. Faz sentido?
+- Mais informações sobre este padrão *Observer* na página do *Enterprise Integration Patterns*: http://www.enterpriseintegrationpatterns.com/patterns/messaging/ObserverJmsExample.html
