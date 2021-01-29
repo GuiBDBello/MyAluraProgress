@@ -1,19 +1,14 @@
 package br.com.caelum.jms;
 
-import java.util.Scanner;
-
 import javax.jms.Connection;
 import javax.jms.ConnectionFactory;
 import javax.jms.Destination;
-import javax.jms.JMSException;
-import javax.jms.Message;
-import javax.jms.MessageConsumer;
-import javax.jms.MessageListener;
+import javax.jms.MessageProducer;
 import javax.jms.Session;
 import javax.jms.TextMessage;
 import javax.naming.InitialContext;
 
-public class TesteConsumidor {
+public class TesteProdutor {
 
 	public static void main(String[] args) throws Exception {
 		
@@ -25,22 +20,14 @@ public class TesteConsumidor {
 		Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
 		
 		Destination fila = (Destination) context.lookup("financeiro");
-		MessageConsumer consumer = session.createConsumer(fila);
 		
-		//Message message = consumer.receive();
-		consumer.setMessageListener(new MessageListener() {
-		    @Override
-		    public void onMessage(Message message) {
-		    	TextMessage textMessage = (TextMessage) message;
-		        try {
-					System.out.println(textMessage.getText());
-				} catch (JMSException e) {
-					e.printStackTrace();
-				}
-		    }
-		});
+		MessageProducer producer = session.createProducer(fila);
 		
-		new Scanner(System.in).nextLine();
+		for (int i = 0; i < 1000; i++) {
+			TextMessage message = session.createTextMessage("<pedido><id>" + i + "</id></pedido>");
+			producer.send(message);
+		}
+		//new Scanner(System.in).nextLine();
 		
 		session.close();
 		connection.close();
@@ -49,4 +36,3 @@ public class TesteConsumidor {
 	}
 
 }
-
