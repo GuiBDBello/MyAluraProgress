@@ -155,3 +155,26 @@ producer.send(message);
 - Altere, no `jndi.properties`, o valor da propriedade `java.naming.provider.url` para o *IP* da máquina atual.
 - Ambas as aplicações que representam o `Producer` e o `Consumer` devem possuir o mesmo *IP* configurado na propriedade acima.
 - Mas essas configurações no `jndi.properties` podem variar de *MOM* para *MOM*, alguns precisam de autenticação e autorização, ou de alguma configuração a mais. No caso do *ActiveMQ*, é bem simples, basta colocar seu *ip*, o *ip* da sua máquina, no arquivo `jndi.properties` do produtor e dos consumidores.
+
+### Atividade 08 - Para saber mais: Usando um Properties:
+
+- Podemos usar duas formas de configuração do contexto *JNDI*:
+
+1) Arquivo `jndi.properties`:
+```
+java.naming.factory.initial = org.apache.activemq.jndi.ActiveMQInitialContextFactory
+
+java.naming.provider.url = tcp://192.168.0.94:61616
+
+queue.financeiro = fila.financeiro
+```
+2) Classe Properties:
+```
+Properties properties = new Properties();
+
+properties.setProperty("java.naming.factory.initial", "org.apache.activemq.jndi.ActiveMQInitialContextFactory");
+properties.setProperty("java.naming.provider.url", "tcp://192.168.0.94:61616");
+properties.setProperty("queue.financeiro", "fila.financeiro");
+
+InitialContext context = new InitialContext(properties);
+```
