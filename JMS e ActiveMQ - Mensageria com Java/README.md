@@ -136,3 +136,15 @@ botao.setActionListener(new ActionListener() { //classe anônima
 - O *JMS* segue o mesmo padrão de projeto *Observer*! A diferença é que *JMS* é remoto ou distribuído. Ou seja, no padrão *Observer* originalmente descrito no livro GOF, tudo acontece na memória, o *Observer* desacopla objetos. Com *JMS*, a comunicação entre *Producer* e *Consumer* é remota, desacoplamento arquitetural.
 - Para fazer a comparação com o exemplo apresentado na pergunta: O botão seria um produtor de mensagem (ainda não criamos um produtor pelo *JMS*, apenas usamos o console de administração, isso vem no próximo capítulo). O `ActionListener` representa o `MessageListener` do mundo *JMS* e o `ActionEvent` seria a `Message`. Faz sentido?
 - Mais informações sobre este padrão *Observer* na página do *Enterprise Integration Patterns*: http://www.enterpriseintegrationpatterns.com/patterns/messaging/ObserverJmsExample.html
+
+## Aula 04 - Enviando e distribuindo mensagens com JMS
+
+### Atividade 01 - Enviando mensagens e Competição entre Consumidores:
+
+- `javax.jms.MessageProducer`: Produtor do *JMS*.
+```
+MessageProducer producer = session.createProducer(fila);
+TextMessage message = session.createTextMessage("<pedido><id>123</id></pedido>");
+producer.send(message);
+```
+- A fila entrega as mensagens apenas para um consumidor. Em caso de haver mais de um *Consumer* rodando ao mesmo tempo, a carga de mensagens é balanceada automaticamente.
