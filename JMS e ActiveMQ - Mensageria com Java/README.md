@@ -54,7 +54,7 @@ Os 4 estilos são:
 - `(ConnectionFactory) context.lookup("ConnectionFactory");`: Utiliza o `InitialContext` para obter o `ConnectionFactory` do *MOM*. Retorna um `Object`, por isso é necessário o *casting* pra `ConnectionFactory`.
 - É necessário abrir a conexão: `connection.start();`.
 - E fechar a conexão, o contexto e a sessão: `connection.close();`, `context.close();` e `session.close()`.
-- `javax.jms.Session`: Uma sessão pode ser criada à partir de uma conexão. É uma camada que fica entre a `Connection` e o `MessageConsumer`, e abstrai a parte de "trabalho transacional" e a confirmação do recebimento de mensagem. Além disso, também serve para produzir o `MessageConsumer`.
+- `javax.jms.Session`: Uma sessão pode ser criada à partir de uma conexão. É uma camada que fica entre a `Connection` e o `MessageConsumer`, e abstrai a parte de "trabalho transacional" e a confirmação do recebimento de mensagem. Além disso, também serve para produzir o `MessageConsumer`. É o objeto responsável pela criação de diversos componentes do *JMS* como `Producer`, `Consumer`, `Browser` e implementações de `Message`.
 
 #### JNDI Support:
 
@@ -147,4 +147,11 @@ MessageProducer producer = session.createProducer(fila);
 TextMessage message = session.createTextMessage("<pedido><id>123</id></pedido>");
 producer.send(message);
 ```
-- A fila entrega as mensagens apenas para um consumidor. Em caso de haver mais de um *Consumer* rodando ao mesmo tempo, a carga de mensagens é balanceada automaticamente.
+- A fila entrega as mensagens apenas para um consumidor. Em caso de haver mais de um *Consumer* rodando ao mesmo tempo, a carga de mensagens é balanceada automaticamente. No mundo de padrões de integração esse modelo de entrega se chama *Competing Consumers*: http://www.enterpriseintegrationpatterns.com/patterns/messaging/CompetingConsumers.html
+
+### Atividade 06 - Trabalhando de forma distribuída:
+
+- Utilize o comando `ipconfig` (Windows) ou `ifconfig` (Unix) para obter o *IP* da máquina atual.
+- Altere, no `jndi.properties`, o valor da propriedade `java.naming.provider.url` para o *IP* da máquina atual.
+- Ambas as aplicações que representam o `Producer` e o `Consumer` devem possuir o mesmo *IP* configurado na propriedade acima.
+- Mas essas configurações no `jndi.properties` podem variar de *MOM* para *MOM*, alguns precisam de autenticação e autorização, ou de alguma configuração a mais. No caso do *ActiveMQ*, é bem simples, basta colocar seu *ip*, o *ip* da sua máquina, no arquivo `jndi.properties` do produtor e dos consumidores.
