@@ -178,3 +178,46 @@ properties.setProperty("queue.financeiro", "fila.financeiro");
 
 InitialContext context = new InitialContext(properties);
 ```
+
+## Aula 05 - Tópicos e assinaturas duráveis
+
+### Atividade 01 - Tópicos e assinaturas duráveis:
+
+- *Broadcast*: Enviar a mesma mensagem para vários consumidores.
+- *Topics*: Diferente das *Queues*, os *Topics* são entregues para todos que têm interesse na mensagem.
+- Criar um *Topic*: Vá no painel *web* do *ActiveMQ* e clique em *Topics*. Após, digite o *Topic Name* e clique em *Create*.
+
+#### Tópico:
+
+- Altere a propriedade `topic.MyTopic` do arquivo `jndi.properties` para `topic.loja`, e altere seu valor para `topico.loja`.
+- Altere o `Destination` para `Topic` (incluindo o *casting*) e o parâmetro do `lookup` para `loja`.
+- Não sabe quantos consumidores terá. É necessário avisá-lo quem receberá a mensagem.
+- Por padrão, não armazena a mensagem. É necessário configurá-lo.
+- `connection.setClientID("estoque");`: Identifica a conexão.
+- No lugar de `MessageConsumer consumer = session.createConsumer(topico);`, é utilizado `MessageConsumer consumer = session.createDurableSubscriber(topico, "assinatura");`.
+- É necessário executar ao menos uma vez o consumidor antes de enviar uma mensagem, para que essa `"assinatura"` fique registrada no *ActiveMQ* para que a mensagem seja armazenada até ser entregue na próxima vez que o consumidor estiver rodando.
+- Agora, se existir diversos consumidores definidos (isso ocorre pela execução de um `cliendID` diferente) todos terão suas mensagens armazenadas até ser entregue.
+
+## Aula 06 - Selectores e propriedades da Mensagem JMS
+
+### Atividade 01 - Selectores e propriedades da Mensagem JMS:
+
+- Uma fila e um tópico produzem a mensagem da mesma forma, porém entregam de formas diferentes.
+- Se não houver ninguém "inscrito" no tópico, a mensagem será perdida.
+- A fila faz **balanceamento** (divide as mensagens entre os consumidores), o tópico faz **difusão** (entrega todas as mensagens para todos os consumidores "inscritos").
+- Na fila, o *Producer* também é conhecido por *Sender* e o *Consumer* por *Receiver*.
+- No tópico, o *Producer* também é conhecido por *Publisher* e o *Consumer* por *Subscriber*.
+- O *Subscriber* pode decidir não receber algumas mensagens que atingirem certas condições.
+
+#### Selector:
+
+- `session.createDurableSubscriber(topico, "assinatura", "messageSelector", false);`: Retorna um `Consumer`. O *MessageSelector* não pode validar um valor dentro do *body* da mensagem. Ele busca dentro dos cabeçalhos e seletores da mensagem. O código a seguir deve substituir a `String` `messageSelector`:
+- **Ex.:** `"JMSType = 'car' AND color = 'blue' AND weight > 2500"`.
+- **Ex.2:** `ebook is null OR ebook=false`.
+- E, no *Producer* deve-se adicionar o seguinte código:
+- **Ex.:**
+```
+TextMessage message = session.createTextMessage("<pedido><id>123</id><e-book>false</e-book></pedido>");
+message.setBooleanProperty("ebook", true);
+```
+- O último parâmetro (`noLocal`) se referencia à conexão. O valor `false` define se deve receber mensagens da própria conexão. **Obs.:** Como nós utilizamos uma nova conexão para enviar as mensagens, isso não irá influenciar durante as aulas.

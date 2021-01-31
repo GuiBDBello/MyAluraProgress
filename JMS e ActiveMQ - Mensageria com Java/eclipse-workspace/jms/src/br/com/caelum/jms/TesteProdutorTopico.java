@@ -8,7 +8,7 @@ import javax.jms.Session;
 import javax.jms.TextMessage;
 import javax.naming.InitialContext;
 
-public class TesteProdutor {
+public class TesteProdutorTopico {
 
 	public static void main(String[] args) throws Exception {
 		
@@ -19,15 +19,15 @@ public class TesteProdutor {
 		connection.start();
 		Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
 		
-		Destination fila = (Destination) context.lookup("financeiro");
+		Destination topico = (Destination) context.lookup("loja");
 		
-		MessageProducer producer = session.createProducer(fila);
+		MessageProducer producer = session.createProducer(topico);
 		
-		for (int i = 0; i < 1000; i++) {
-			TextMessage message = session.createTextMessage("<pedido><id>" + i + "</id></pedido>");
-			producer.send(message);
-		}
-		//new Scanner(System.in).nextLine();
+		TextMessage message = session.createTextMessage(
+				"<pedido><id>123</id></pedido>");
+//		message.setBooleanProperty("ebook", true);
+		
+		producer.send(message);
 		
 		session.close();
 		connection.close();

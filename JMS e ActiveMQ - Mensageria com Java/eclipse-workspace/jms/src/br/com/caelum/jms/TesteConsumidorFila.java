@@ -16,7 +16,7 @@ import javax.jms.Session;
 import javax.jms.TextMessage;
 import javax.naming.InitialContext;
 
-public class TesteConsumidor {
+public class TesteConsumidorFila {
 
 	public static void main(String[] args) throws Exception {
 		
