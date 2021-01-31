@@ -316,7 +316,16 @@ try {
 }
 ```
 
-#### Entrega de mensagens:
+#### Redelivery:
 
-- Cada *MOM* define um limite de retentativa de entrega da mensagem.
+- Cada *MOM* define um limite de retentativa de entrega da mensagem. Se uma mensagem não é entregue, o *MOM* tenta entregar a mensagem de novo (*redelivery*).
 - Mensagem "venenosa": Mensagens que excedem o limite de retentativas, e não foram entregues. São movidas para uma fila especial de mensagens que não foram entregues. O nome dessa fila é `ActiveMQ.DLQ` (*Dead Letter Queue*).
+
+### Atividade 07 - Atenção: Exceção ao receber ObjectMessage:
+
+- A partir da versão 5.12.2 do ActiveMQ é preciso configurar explicitamente quais pacotes podem ser deserializados. Sem ter essa configuração você receberá um exceção na hora de consumir uma ObjectMessage. A exceção indica um problema de segurança:
+- `Caused by: java.lang.ClassNotFoundException: Forbidden class br.com.caelum.modelo.Pedido! This class is not allowed to be serialized. Add package with 'org.apache.activemq.SERIALIZABLE_PACKAGES' system property.`
+- É possível configurar sua aplicação com o seguinte código:
+- `System.setProperty("org.apache.activemq.SERIALIZABLE_PACKAGES","java.lang,br.com.caelum.modelo");`
+- Ou, se quiser deserializar todos os pacotes, utilize:
+- `System.setProperty("org.apache.activemq.SERIALIZABLE_PACKAGES","*");`
