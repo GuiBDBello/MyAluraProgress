@@ -344,3 +344,8 @@ try {
 - O método `connection.createSession(transacted, acknowledgeMode)` também possui o parâmetro `transacted`, que seria a "ativação do comportamento transacional". Isso faz com que, caso o recebimento da mensagem não for confirmado, ocorra o *ROLLBACK* do processamento e retorna a mensagem à fila.
 - `session.commit()` e `session.rollback()`: Confirma ou reverte o recebimento da mensagem.
 - `Session.DUPS_OK_ACKNOWLEDGE`: Aceita mensagens duplicadas.
+
+### Atividade 14: Para saber mais: Modelo Canonical:
+
+- Depois ter criado a classe `Pedido` baseado em boas práticas do mundo *OO* (*DDD*), devemos padronizar e definir o modelo padrão (ou **modelo canônico**) que é normalmente um *XML*/*XSD*.
+- O Modelo Canonical também é um padrão de integração. Mais informações no site: http://www.enterpriseintegrationpatterns.com/patterns/messaging/CanonicalDataModel.html
