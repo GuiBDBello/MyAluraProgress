@@ -334,3 +334,13 @@ try {
 
 - Adicione, no arquivo `jndi.properties`, a configuração da propriedade `queue.DLQ = ActiveMQ.DLQ`.
 - Altere, no código do consumidor, o `lookup` da fila para `Destination fila = (Destination) context.lookup("DLQ");`
+
+### Atividade 11 - Usando acknowledge:
+
+- `Session.AUTO_ACKNOWLEDGE`: Confirma automaticamente o recebimento da mensagem.
+- `Session.CLIENT_ACKNOWLEDGE`: Requer confirmação do cliente sobre o recebimento da mensagem.
+- A mensagem é confirmada pelo método `message.acknowledge();`. Se o método não for chamado, a mensagem continuará na fila para ser entregue até que ocorra a confirmação.
+- `Session.SESSION_TRANSACTED`: Realiza o comportamento transacional. Isto é, a realização do *COMMIT*/*ROLLBACK* na entrega da mensagem.
+- O método `connection.createSession(transacted, acknowledgeMode)` também possui o parâmetro `transacted`, que seria a "ativação do comportamento transacional". Isso faz com que, caso o recebimento da mensagem não for confirmado, ocorra o *ROLLBACK* do processamento e retorna a mensagem à fila.
+- `session.commit()` e `session.rollback()`: Confirma ou reverte o recebimento da mensagem.
+- `Session.DUPS_OK_ACKNOWLEDGE`: Aceita mensagens duplicadas.
