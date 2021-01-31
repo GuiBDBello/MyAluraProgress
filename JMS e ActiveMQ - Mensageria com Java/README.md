@@ -329,3 +329,8 @@ try {
 - `System.setProperty("org.apache.activemq.SERIALIZABLE_PACKAGES","java.lang,br.com.caelum.modelo");`
 - Ou, se quiser deserializar todos os pacotes, utilize:
 - `System.setProperty("org.apache.activemq.SERIALIZABLE_PACKAGES","*");`
+
+### Atividade 09 - Acessando DLQ:
+
+- Adicione, no arquivo `jndi.properties`, a configuração da propriedade `queue.DLQ = ActiveMQ.DLQ`.
+- Altere, no código do consumidor, o `lookup` da fila para `Destination fila = (Destination) context.lookup("DLQ");`
