@@ -1,21 +1,19 @@
 package br.com.caelum.jms;
 
-import java.util.Enumeration;
 import java.util.Scanner;
 
 import javax.jms.Connection;
 import javax.jms.ConnectionFactory;
-import javax.jms.Destination;
 import javax.jms.JMSException;
 import javax.jms.Message;
 import javax.jms.MessageConsumer;
 import javax.jms.MessageListener;
-import javax.jms.Queue;
-import javax.jms.QueueBrowser;
+import javax.jms.ObjectMessage;
 import javax.jms.Session;
-import javax.jms.TextMessage;
 import javax.jms.Topic;
 import javax.naming.InitialContext;
+
+import br.com.caelum.modelo.Pedido;
 
 public class TesteConsumidorTopicoComercial {
 
@@ -36,9 +34,10 @@ public class TesteConsumidorTopicoComercial {
 		consumer.setMessageListener(new MessageListener() {
 		    @Override
 		    public void onMessage(Message message) {
-		    	TextMessage textMessage = (TextMessage) message;
+		    	ObjectMessage objectMessage = (ObjectMessage) message;
 		        try {
-					System.out.println(textMessage.getText());
+					Pedido pedido = (Pedido) objectMessage.getObject();
+					System.out.println(pedido.getCodigo());
 				} catch (JMSException e) {
 					e.printStackTrace();
 				}

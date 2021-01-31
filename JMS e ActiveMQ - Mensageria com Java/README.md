@@ -281,3 +281,42 @@ message.setBooleanProperty("ebook", true);
 - Além do nosso tópico `comercial` e a fila `financeira`, existe uma terceira configuração relacionada ao tópico `ActiveMQ.Advisory`. Esse tópico já existe por padrão no *ActiveMQ* e recebe mensagens administrativas (`AdvisoryMessage`) sempre que for criado um *consumer*, *producer* e um novo *destination*. Mais infos em: http://activemq.apache.org/advisory-message.html
 - Uma vez feita toda a configuração dos plugins, basta reiniciar o *ActiveMQ*.
 - Você pode ver a configuração completa nesse arquivo: https://s3.amazonaws.com/caelum-online-public/jms/activemq.xml
+
+## Aula 07 - Enviando mensagens específicas e tratamento de erro
+
+### Atividade 01 - ObjectMessage e DLQ:
+
+- É muito comum utilizar *XML* na integração. O *XML* normalmente é criado à partir de um objeto *Java*.
+- `javax.xml.bind.JAXB` (*Jakarta XML Binding*) é a biblioteca que realiza a conversão de objeto *Java* para *XML*.
+- `JAXB.marshal`: Gera um *XML* à partir de um `Object`.
+- **Ex.:** 
+```
+StringWriter writer = new StringWriter();
+JAXB.marshal(pedido, writer);
+String xml = writer.toString();
+
+Message message = session.createTextMessage(xml);
+```
+- **Obs.:** `pedido` é um *Model*, do padrão *MVC*. A classe `Pedido` deve ter a anotação de classe `@XmlRootElement` para que possa ser convertida para *XML*.
+- **Obs.2:** O `JAXB`, por padrão, se baseia nos *getters* e *setters* das propriedades, mas como utilizamos a anotação de classe `@XmlAccessorType(XmlAccessType.FIELD)` o `JAXB` irá se basear nos atributos.
+- **Obs.3:** As anotações `@XmlElementWrapper(name="itens")` e `@XmlElement(name="item")` definem que a coleção deve ser representada por `<itens>` e cada elemento da coleção deve ser um `<item>`.
+- `JAXB.unmarshal`: Gera um `Object` à partir de um *XML*.
+
+#### ObjectMessage:
+
+- No produtor, altere a mensagem para `Message message = session.createObjectMessage(pedido);`. **Obs.:** O objeto `pedido` deve implementar a *interface* `Serializable`.
+- No consumidor, altere o método `onMessage` para:
+```
+ObjectMessage objectMessage = (ObjectMessage) message;
+try {
+    Pedido pedido = (Pedido) objectMessage.getObject();
+    System.out.println(pedido.getCodigo());
+} catch (JMSException e) {
+    e.printStackTrace();
+}
+```
+
+#### Entrega de mensagens:
+
+- Cada *MOM* define um limite de retentativa de entrega da mensagem.
+- Mensagem "venenosa": Mensagens que excedem o limite de retentativas, e não foram entregues. São movidas para uma fila especial de mensagens que não foram entregues. O nome dessa fila é `ActiveMQ.DLQ` (*Dead Letter Queue*).
