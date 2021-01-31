@@ -349,3 +349,12 @@ try {
 
 - Depois ter criado a classe `Pedido` baseado em boas práticas do mundo *OO* (*DDD*), devemos padronizar e definir o modelo padrão (ou **modelo canônico**) que é normalmente um *XML*/*XSD*.
 - O Modelo Canonical também é um padrão de integração. Mais informações no site: http://www.enterpriseintegrationpatterns.com/patterns/messaging/CanonicalDataModel.html
+
+## Aula 08 - Prioridade e Tempo de vida da mensagem
+
+### Atividade 01 - Prioridade e Tempo de vida da mensagem:
+
+- `producer.send(Message message, int deliveryMode, int priority, long timeToLive);`: Envia uma mensagem para o destino, especificando o modo de entrega, prioridade e tempo de vida.
+- `deliveryMode`: Define se a mensagem é persistente (`DeliveryMode.PERSISTENT`) ou não (`DeliveryMode.NON_PERSISTENT`). Se for persistente, a mensagem é armazenada em um banco de dados interno do *ActiveMQ*, o que permite manter a mensagem se o *ActiveMQ* for reiniciado.
+- `priority`: Define a prioridade da mensagem (isto é, a ordem que elas vão ser entregues). O valor pode ser de 0 a 9, sendo 0 a prioridade mais baixa e 9 a mais alta (consequentemente, a mensagem com prioridade 9 vai ser entregue antes). **Obs.:** É necessário uma configuração extra para que o *ActiveMQ* respeite essa prioridade. Isso é feito no arquivo `{ACTIVEMQ_HOME}/conf/activemq.xml`, adicionando a *tag* `<policyEntry queue=">" prioritizedMessages="true"/>` dentro de `<policyEntries>`.
+- `timeToLive`: Tempo que a mensagem deve ser armazenada. Se ninguém consumí-la após esse tempo, ela será apagada. **Obs.:** O tempo é definido em milissegundos.
