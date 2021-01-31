@@ -229,3 +229,55 @@ message.setBooleanProperty("ebook", true);
 - Uma desvantagem seria que a regra/condição do recebimento da mensagem está nos consumidores. Muitas vezes queremos centralizar essas regras no lado do servidor. Para isso não devemos usar *Selective Consumers* e sim apenas consumidores simples. No lado do servidor (*ActiveMQ*) aplicaríamos um filtro, central, que define se a mensagem pode passar ou não.
 - E claro que existe também para isso um padrão de integração, o *Message Filter*: http://www.enterpriseintegrationpatterns.com/patterns/messaging/Filter.html
 - O *JMS* e *ActiveMQ* não dão suporte ao este comportamento mas existem *brokers* mais sofisticados onde isso é possível. Exemplos disso são os *Enterprise Service Bus* (*ESB*) que implementam a maioria dos padrões de integração.
+
+### Atividade 07 - Para saber mais: Autenticação e Autorização:
+
+#### Definindo usuários e grupos:
+
+- Adicionar no arquivo `conf/activemq.xml` os usuários, senhas e seus grupos através do `<simpleAuthenticationPlugin>`.
+- No *XML*, logo após o elemento `<broker ...>` adicione:
+```
+<plugins>
+  <!-- anonymousAccessAllowed="false" define que não é mais possível conectar ao ActiveMQ sem ter um usuário definido. -->
+  <simpleAuthenticationPlugin anonymousAccessAllowed="false">
+    <users>
+        <authenticationUser username="admin" password="admin" groups="users,admins"/>
+        <authenticationUser username="user" password="senha" groups="users"/>
+        <authenticationUser username="guest" password="senha" groups="guests"/>
+    </users>
+  </simpleAuthenticationPlugin>
+
+  <!-- aqui vem ainda o authorizationPlugin -->
+</plugins>
+```
+
+#### Usando uma conexão com usuário e senha:
+
+- **Ex.:** `Connection connection = factory.createConnection("user", "senha");`
+
+#### Definindo permissões:
+
+- Existem 3 permissões disponíveis: leitura (*read*), escrita (*write*) e administrativa (*admin*).
+- Cada permissão fica associada a um tópico/fila e aos seus grupos. Repare que usamos os grupos *users*, *admins* e *guests*. Sabendo disso, segue um exemplo de autorização para o tópico `comercial`:
+- **Ex.:** `<authorizationEntry topic="comercial" read="users" write="users" admin="users,admins" />`
+- O grupo *users* pode ler, escrever e administrar o tópico e o grupo *admin* também possui a permissão administrativa.
+- Configuração completa do `conf/activemq.xml`:
+```
+<authorizationPlugin>
+    <map>
+      <authorizationMap>
+        <authorizationEntries>
+          <authorizationEntry queue="fila.financeiro" read="users" write="users" admin="users,admins" />
+          <authorizationEntry topic="comercial" read="users" write="users" admin="users,admins" />
+          <authorizationEntry topic="ActiveMQ.Advisory.>" read="users,admins" write="users,admins" admin="users,admins"/>
+        </authorizationEntries>
+        <tempDestinationAuthorizationEntry>
+          <tempDestinationAuthorizationEntry read="admin" write="admin" admin="admin"/>
+        </tempDestinationAuthorizationEntry>
+      </authorizationMap>
+    </map>
+</authorizationPlugin>
+```
+- Além do nosso tópico `comercial` e a fila `financeira`, existe uma terceira configuração relacionada ao tópico `ActiveMQ.Advisory`. Esse tópico já existe por padrão no *ActiveMQ* e recebe mensagens administrativas (`AdvisoryMessage`) sempre que for criado um *consumer*, *producer* e um novo *destination*. Mais infos em: http://activemq.apache.org/advisory-message.html
+- Uma vez feita toda a configuração dos plugins, basta reiniciar o *ActiveMQ*.
+- Você pode ver a configuração completa nesse arquivo: https://s3.amazonaws.com/caelum-online-public/jms/activemq.xml
