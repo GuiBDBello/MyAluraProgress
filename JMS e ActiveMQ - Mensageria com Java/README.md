@@ -221,3 +221,11 @@ TextMessage message = session.createTextMessage("<pedido><id>123</id><e-book>fal
 message.setBooleanProperty("ebook", true);
 ```
 - O último parâmetro (`noLocal`) se referencia à conexão. O valor `false` define se deve receber mensagens da própria conexão. **Obs.:** Como nós utilizamos uma nova conexão para enviar as mensagens, isso não irá influenciar durante as aulas.
+
+### Atividade 06 - Para saber mais: Selective Consumer:
+
+- Novamente o *JMS* segue um padrão de integração, o *Selective Consumer*.
+- http://www.enterpriseintegrationpatterns.com/patterns/messaging/MessageSelector.html
+- Uma desvantagem seria que a regra/condição do recebimento da mensagem está nos consumidores. Muitas vezes queremos centralizar essas regras no lado do servidor. Para isso não devemos usar *Selective Consumers* e sim apenas consumidores simples. No lado do servidor (*ActiveMQ*) aplicaríamos um filtro, central, que define se a mensagem pode passar ou não.
+- E claro que existe também para isso um padrão de integração, o *Message Filter*: http://www.enterpriseintegrationpatterns.com/patterns/messaging/Filter.html
+- O *JMS* e *ActiveMQ* não dão suporte ao este comportamento mas existem *brokers* mais sofisticados onde isso é possível. Exemplos disso são os *Enterprise Service Bus* (*ESB*) que implementam a maioria dos padrões de integração.
