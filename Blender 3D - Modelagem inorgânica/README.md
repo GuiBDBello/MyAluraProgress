@@ -6,3 +6,7 @@
 
 - *Concept*: Imagem base para exemplificar e auxilar na modelagem do *prop*.
 - *Prop*: Objeto 3D.
+
+### Atividade 03 - Arquivo para estudo:
+
+- `File > OPEN` ou `Ctrl + O`: Abre um arquivo no *Blender* (com extensão `.blend`).
