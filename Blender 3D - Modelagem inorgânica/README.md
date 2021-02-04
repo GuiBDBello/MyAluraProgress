@@ -42,3 +42,13 @@
 - *MOVE RÁPIDO* (`G`): Para isso basta selecionarmos algum objeto, e utilizarmos a tecla `G` (*move*) em seguida a coordenada que queremos movimentar o objeto, ou seja teclamos `G` em seguida teclamos `X`, `Y` ou `Z` e para concluirmos a alteração do objeto clicamos com o `botão esquerdo do mouse`.
 - *ROTATE RÁPIDO* (`R`): Repetimos o mesmo procedimento do *move*, porém selecionamos objeto desejado e utilizamos a tecla de atalho `R` em seguida finalizamos a alteração clicando com `botão esquerdo do mouse`.
 - *SCALE RÁPIDO* (`S`): Para o *scale*, é o mesmo procedimento, porém selecionamos objeto desejado e utilizamos a tecla de atalho `S` em seguida finalizamos a alteração clicando com `botão esquerdo do mouse`.
+
+### Atividade 11 - Lidando com Primitivas:
+
+- *3D Cursor*: Reposicionado com o `botão esquerdo do mouse`. Serve como ponto de criação de objetos na cena.
+- `Del + Enter`: Apaga um objeto da cena.
+- `Add > Mesh > Cube`: Adiciona um cubo na cena no local onde está posicionado o *3D cursor*.
+- Existem diversos outros primitivos além do cubo, como `UV Sphere`, `Cone`, etc.
+- `Shift + C`: Centraliza o *3D Cursor*.
+- `Shift + A`: Atalho para adicionar objetos à cena.
+- `N`: Abre as propriedades de um objeto. Nas propriedades também é possível mover um objeto pelas coordenadas em *Location*, e `Esc` para a alteração.
