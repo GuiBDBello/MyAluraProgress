@@ -10,3 +10,9 @@
 ### Atividade 03 - Arquivo para estudo:
 
 - `File > OPEN` ou `Ctrl + O`: Abre um arquivo no *Blender* (com extensão `.blend`).
+
+### Atividade 04 - Ferramentas de Navegação:
+
+- *PAN*: `Shift` + `Botão do meio do mouse`.
+- *ROTATE*: `Botão do meio do mouse`.
+- *ZOOM*: `Ctrl` + `Botão do meio do mouse`.
