@@ -28,3 +28,17 @@
 - No menu inferior de cada *view*, temos a opção `view`, onde podemos alterar para qual vista queremos.
 - `5 do teclado numérico`: Desativa a opção de perspectiva para as *views*.
 - Caso desejamos desfazer estas *views*, basta selecionarmos o mesmo ícone de criação, porém o mantemos pressionando e arrastamos nossa *view* para cima da desejada, veja que surge uma seta, indicando que o mesmo vai sobrepor a outra *view*, após termos deixado somente uma *view*, voltamos para o modo perspectiva, teclado 5.
+
+### Atividade 09 - Ferramentas de manipulação:
+
+- **Obs.:** Para que possamos selecionar nossos objetos, clicamos no objeto desejado com o `botão esquerdo do mouse`, e para voltarmos uma ação utilizamos o `Ctrl + Z`.
+- *MOVE*: Com um objeto selecionado, clicamos em nosso **manipulador 3D** e selecionamos o ícone de seta, podemos observar que nos surge 3 coordenadas, onde podemos movimentar nosso objeto na coordenada desejada, e caso clicamos no círculo branco o movimentamos livremente.
+- *ROTATE*: O mesmo principio do *move* vale para o *rotate*, basta selecionarmos o ícone representado por um pequeno arco.
+- *SCALE*: E não foge deste principio o *scale*, onde selecionando o ícone ao lado do *rotate*, conseguimos escalonar nosso objeto, ou seja aumentar ele de tamanho conforme desejarmos.
+- Após feito as alterações podemos pressionar `A` novamente para deselecionar nossa seleção.
+
+#### Ferramentas de manipulação Rápidas:
+
+- *MOVE RÁPIDO* (`G`): Para isso basta selecionarmos algum objeto, e utilizarmos a tecla `G` (*move*) em seguida a coordenada que queremos movimentar o objeto, ou seja teclamos `G` em seguida teclamos `X`, `Y` ou `Z` e para concluirmos a alteração do objeto clicamos com o `botão esquerdo do mouse`.
+- *ROTATE RÁPIDO* (`R`): Repetimos o mesmo procedimento do *move*, porém selecionamos objeto desejado e utilizamos a tecla de atalho `R` em seguida finalizamos a alteração clicando com `botão esquerdo do mouse`.
+- *SCALE RÁPIDO* (`S`): Para o *scale*, é o mesmo procedimento, porém selecionamos objeto desejado e utilizamos a tecla de atalho `S` em seguida finalizamos a alteração clicando com `botão esquerdo do mouse`.
