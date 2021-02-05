@@ -31,7 +31,7 @@
 
 ### Atividade 09 - Ferramentas de manipulação:
 
-- **Obs.:** Para que possamos selecionar nossos objetos, clicamos no objeto desejado com o `botão esquerdo do mouse`, e para voltarmos uma ação utilizamos o `Ctrl + Z`.
+- **Obs.:** Para que possamos selecionar nossos objetos, clicamos no objeto desejado com o `Botão esquerdo do mouse`, e para voltarmos uma ação utilizamos o `Ctrl + Z`.
 - *MOVE*: Com um objeto selecionado, clicamos em nosso **manipulador 3D** e selecionamos o ícone de seta, podemos observar que nos surge 3 coordenadas, onde podemos movimentar nosso objeto na coordenada desejada, e caso clicamos no círculo branco o movimentamos livremente.
 - *ROTATE*: O mesmo principio do *move* vale para o *rotate*, basta selecionarmos o ícone representado por um pequeno arco.
 - *SCALE*: E não foge deste principio o *scale*, onde selecionando o ícone ao lado do *rotate*, conseguimos escalonar nosso objeto, ou seja aumentar ele de tamanho conforme desejarmos.
@@ -39,9 +39,9 @@
 
 #### Ferramentas de manipulação Rápidas:
 
-- *MOVE RÁPIDO* (`G`): Para isso basta selecionarmos algum objeto, e utilizarmos a tecla `G` (*move*) em seguida a coordenada que queremos movimentar o objeto, ou seja teclamos `G` em seguida teclamos `X`, `Y` ou `Z` e para concluirmos a alteração do objeto clicamos com o `botão esquerdo do mouse`.
-- *ROTATE RÁPIDO* (`R`): Repetimos o mesmo procedimento do *move*, porém selecionamos objeto desejado e utilizamos a tecla de atalho `R` em seguida finalizamos a alteração clicando com `botão esquerdo do mouse`.
-- *SCALE RÁPIDO* (`S`): Para o *scale*, é o mesmo procedimento, porém selecionamos objeto desejado e utilizamos a tecla de atalho `S` em seguida finalizamos a alteração clicando com `botão esquerdo do mouse`.
+- *MOVE RÁPIDO* (`G`): Para isso basta selecionarmos algum objeto, e utilizarmos a tecla `G` (*move*) em seguida a coordenada que queremos movimentar o objeto, ou seja teclamos `G` em seguida teclamos `X`, `Y` ou `Z` e para concluirmos a alteração do objeto clicamos com o `Botão esquerdo do mouse`.
+- *ROTATE RÁPIDO* (`R`): Repetimos o mesmo procedimento do *move*, porém selecionamos objeto desejado e utilizamos a tecla de atalho `R` em seguida finalizamos a alteração clicando com `Botão esquerdo do mouse`.
+- *SCALE RÁPIDO* (`S`): Para o *scale*, é o mesmo procedimento, porém selecionamos objeto desejado e utilizamos a tecla de atalho `S` em seguida finalizamos a alteração clicando com `Botão esquerdo do mouse`.
 
 ### Atividade 11 - Lidando com Primitivas:
 
@@ -52,3 +52,12 @@
 - `Shift + C`: Centraliza o *3D Cursor*.
 - `Shift + A`: Atalho para adicionar objetos à cena.
 - `N`: Abre as propriedades de um objeto. Nas propriedades também é possível mover um objeto pelas coordenadas em *Location*, e `Esc` para a alteração.
+
+## Aula 02 - A pré-produção do projeto
+
+### Atividade 01 - Ferramentas de seleção:
+
+- `Botão direito do mouse`: Seleciona um objeto no *canvas*/cena. Segure `Shift` pressionado para ir adicionando mais objetos à seleção.
+- `B` ("Seleção em janela"): Habilita selecionar mais de um objeto. Para deseleção mantenha `Shift` pressionado e clique no objeto.
+- `Ctrl + Botão esquerdo do mouse`: Também permite selecionar mais de um objeto ao segurar e arrastar o *mouse*. Para deselecionar, utilize `Ctrl + Shift + Botão esquerdo do mouse`.
+- `A`: Seleciona/deseleciona todos elementos da cena.
