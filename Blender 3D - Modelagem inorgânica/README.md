@@ -76,3 +76,11 @@
 - *Vertex* (vértice): É um ponto que serve para formar bordas e faces.
 - *Edge* (borda/linha): É uma linha que conecta dois vértices.
 - *Face* (face): É composta por 3 ou mais linhas.
+
+### Atividade 05 - A formação dos polígonos:
+
+#### O que são Polígonos?:
+
+- São figuras fechadas compostas por 4 lados (*Edges*) ou mais.
+- Tudo que tiver mais que 4 lados, chamamos de *N polygons*.
+- O que tiver menos que 4 lados chamamos de triângulos, onde 2 triângulos podem formar um polígono de 4 lados.
