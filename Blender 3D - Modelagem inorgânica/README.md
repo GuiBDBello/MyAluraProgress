@@ -84,3 +84,21 @@
 - São figuras fechadas compostas por 4 lados (*Edges*) ou mais.
 - Tudo que tiver mais que 4 lados, chamamos de *N polygons*.
 - O que tiver menos que 4 lados chamamos de triângulos, onde 2 triângulos podem formar um polígono de 4 lados.
+
+### Atividade 06 - Utilizando Loops Extrude:
+
+- `Shift + A` (*Add*): Adiciona um objeto padrão do *Blender* à cena.
+
+#### Extrude:
+
+- `Alt + E` (*Extrude*) ou `E` (*Extrude Region*) ou *Extrude Individual*: .
+- Possibilita realizar uma extrusão (para dentro ou para fora de um objeto).
+- 99.9% das vezes o *Extrude* é utilizado em faces.
+- No *Edit Mode*, no lado esquerdo da tela, dentro do submenu *Add*, selecione `Extrude Individual`.
+- Para realizar um *Extrude* para dentro do objeto, selecione *Extrude* e pressione `S`, para escalonar o polígono que ficará na parte de dentro do objeto.
+
+#### Loop:
+
+- `Ctrl + R` (*Loop Cut and Slide*): "Recorta" uma face, criando novas faces nessa divisão.
+- Linha de um ponto à outro. O ponto inicial deve ser o mesmo que o final.
+- No *Edit Mode*, no lado esquerdo da tela, dentro do submenu *Add*, selecione `Loop Cut and Slide`. Agora, é preciso selecionar uma "face" para criar o *loop*. Selecione e clique com o `Botão esquerdo do mouse`.
