@@ -61,3 +61,18 @@
 - `B` ("Seleção em janela"): Habilita selecionar mais de um objeto. Para deseleção mantenha `Shift` pressionado e clique no objeto.
 - `Ctrl + Botão esquerdo do mouse`: Também permite selecionar mais de um objeto ao segurar e arrastar o *mouse*. Para deselecionar, utilize `Ctrl + Shift + Botão esquerdo do mouse`.
 - `A`: Seleciona/deseleciona todos elementos da cena.
+
+### Atividade 03 - Editando meshas modelagem:
+
+- `Ctrl + N` e `Enter`: Faz um *reset* na cena.
+- *Outliner*: Menu que fica no lado direito superior da tela em que aparecem todos os elementos da cena. É possível ocultar um elemento da cena clicando no ícone de olho, alinhado à direita do nome do elemento no *outliner*.
+- `File > Import > Wavefront (.obj)`: Importa um objeto de extensão `.obj`.
+
+#### Modo de edição:
+
+- No canto inferior esquerdo, há um seletor que, por padrão, está escrito *Object Mode*. Clique nele e selecione *Edit Mode* para alterar para o modo de edição de objetos.
+- `Tab`: Alterna entre os modos *Object Mode* e *Edit Mode*.
+- Um pouco à direita dos modos, existem três ícones: *Vertex select*, *Edge select* e *Face select*.
+- *Vertex* (vértice): É um ponto que serve para formar bordas e faces.
+- *Edge* (borda/linha): É uma linha que conecta dois vértices.
+- *Face* (face): É composta por 3 ou mais linhas.
