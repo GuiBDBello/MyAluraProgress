@@ -102,3 +102,25 @@
 - `Ctrl + R` (*Loop Cut and Slide*): "Recorta" uma face, criando novas faces nessa divisão.
 - Linha de um ponto à outro. O ponto inicial deve ser o mesmo que o final.
 - No *Edit Mode*, no lado esquerdo da tela, dentro do submenu *Add*, selecione `Loop Cut and Slide`. Agora, é preciso selecionar uma "face" para criar o *loop*. Selecione e clique com o `Botão esquerdo do mouse`.
+
+## Aula 03 - Da referência à primeira blocagem
+
+### Atividade 01 - Setando as blueprints blender:
+
+- `N`: Abre a janela *Properties*.
+- `Numpad 1`: Altera a visão da cena para *Front*.
+- `Numpad 3`: Altera a visão da cena para *Right*.
+- `Numpad 7`: Altera a visão da cena para *Top*.
+- `Ctrl + Numpad 1`: Altera a visão da cena para *Back*.
+- `Numpad 5`: Desabilita a perspectiva. Altera para o formato "ortogonal".
+
+#### Blueprints:
+
+- Um pouco mais limitado que outros *softwares* como o *Maya* ou o *3ds Max*.
+- Para cada imagem adicionada, faça o seguinte:
+1) `Numpad X` e `Numpad 5` (onde `X` é o número da visão): Altera a visão da cena e desabilita a perspectiva.
+2) Na janela de *Properties*, vá na opção `Background Images`, ative-a e clique em `Add Image`.
+3) Ainda nas *Properties*, clique em `Open` e selecione a imagem respectiva para a visão selecionada no passo 1.
+4) Repita os passos 1-3 para cada visão.
+- Pressione `Ctrl + Alt + Q` para alternar para a *Quad View*.
+- **Obs.:** Recomenda-se adicionar as imagens para as visões *Front*, *Right* e *Back*, pois a *Quad View* mostra essas visões.
