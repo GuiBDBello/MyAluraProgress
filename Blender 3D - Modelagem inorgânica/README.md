@@ -124,3 +124,8 @@
 4) Repita os passos 1-3 para cada visão.
 - Pressione `Ctrl + Alt + Q` para alternar para a *Quad View*.
 - **Obs.:** Recomenda-se adicionar as imagens para as visões *Front*, *Right* e *Back*, pois a *Quad View* mostra essas visões.
+
+### Atividade 03 - Finalizando adição de blueprints:
+
+- `Z`: Alterna entre o modo *Wireframe* (mostra apenas as linhas do objeto) e o modo *Solid*.
+- Alinhe o seu objeto primitivo com as imagens de referência. A imagem é movida na janela *Properties*, nos valores `X` e `Y`. Utilize as ferramentas do *Edit Mode*, como escala, para ajustar o seu modelo.
