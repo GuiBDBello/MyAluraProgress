@@ -144,3 +144,7 @@
 ### Atividade 01 - Adicionando a antena:
 
 - *Transform Orientation* (ao lado dos ícones de *Translate*, *Rotate* e *Scale*): Permite alterar a orientação da "transformação" de um objeto. Alterando essa propriedade de `Global` para `Local`, é possível mover, rotacionar e escalonar utilizando suas transformações locais.
+
+### Atividade 03 - Continuando a blocagem base:
+
+- *Smooth* (dentro de *Shading* no menu lateral esquerdo): Altera o ângulo dos polígonos, para deixá-los mais suaves.
