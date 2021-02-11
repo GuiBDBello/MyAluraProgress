@@ -129,3 +129,12 @@
 
 - `Z`: Alterna entre o modo *Wireframe* (mostra apenas as linhas do objeto) e o modo *Solid*.
 - Alinhe o seu objeto primitivo com as imagens de referência. A imagem é movida na janela *Properties*, nos valores `X` e `Y`. Utilize as ferramentas do *Edit Mode*, como escala, para ajustar o seu modelo.
+
+### Atividade 05 - Blocagem inicial da TV:
+
+- Ao criar objetos primitivos, é possível alterar a quantidade de vértices que ele possui, deixando-os mais ou menos detalhados.
+- Ao adicionar um objeto, é aberta uma janela no canto inferior esquerdo da tela. **Obs.:** Se você mover ou editar o objeto, essa janela irá fechar, pois é dada como finalizada a criação do objeto.
+
+### Atividade 07 - Compondo elementos menores:
+
+- `Shift + D`: Duplica o objeto selecionado.
