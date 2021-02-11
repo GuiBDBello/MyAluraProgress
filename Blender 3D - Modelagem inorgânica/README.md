@@ -138,3 +138,9 @@
 ### Atividade 07 - Compondo elementos menores:
 
 - `Shift + D`: Duplica o objeto selecionado.
+
+## Aula 04 - Definindo a estrutura final do blocking
+
+### Atividade 01 - Adicionando a antena:
+
+- *Transform Orientation* (ao lado dos ícones de *Translate*, *Rotate* e *Scale*): Permite alterar a orientação da "transformação" de um objeto. Alterando essa propriedade de `Global` para `Local`, é possível mover, rotacionar e escalonar utilizando suas transformações locais.
