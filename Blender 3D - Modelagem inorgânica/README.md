@@ -253,3 +253,9 @@ Você pode personalizar a aparência e os atalhos de teclado do *PureRef* para a
 
 - Selecione dois `Vertex` e pressione `J` para adicionar uma nova `Edge` entre eles.
 - `Alt + M` e `At Last` (*Merge*): Une dois vértices no último vértice selecionado.
+
+## Aula 05 - Refinando partes menores
+
+### Atividade 01 - Criando quadros menores:
+
+- `Ctrl + E` e `Bridge Edge Loops`: Preenche as lacunas entre dois loops.
