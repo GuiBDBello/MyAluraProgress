@@ -148,3 +148,54 @@
 ### Atividade 03 - Continuando a blocagem base:
 
 - *Smooth* (dentro de *Shading* no menu lateral esquerdo): Altera o ângulo dos polígonos, para deixá-los mais suaves.
+
+### Atividade 05 - Finalizando a guideline:
+
+- *Guideline*: Linha guia de referência. Seria a base do *concept*, ou seja, o nosso objeto na forma mais "bruta", sem estar lapidado.
+
+## Aula 05 - Trabalhando com profundidade
+
+### Atividade 01 - Comandos do Pure Ref:
+
+- https://www.pureref.com/about.php
+- O *PureRef* foi criado para ser uma ferramenta simples e leve para os artistas organizar e visualizar suas imagens de referência.
+
+#### Adicionar imagens:
+
+- Você pode arrastar e soltar arquivos do seu computador ou imagens diretamente dos navegadores.
+- Você também pode usar o menu do `Botão direito do mouse` ou `Ctrl + V` para colá-los.
+
+#### Edite imagens:
+
+Você pode editar suas imagens de algumas maneiras para atender às suas necessidades de referência. Você pode:
+- Selecionar uma ou mais
+- Focar em uma ou mais (`Duplo clique` / `Espaço`)
+- Girar (livremente usando `Ctrl` ou com *Snap* adicionando `Shift`)
+- Flipar
+- Escalonar
+- Cortar
+- Alterar a opacidade
+- Excluir
+- Salvar imagens
+
+#### Controle o canvas:
+
+O *canvas* é sua cena que também pode ser usada de várias maneiras. Essas características incluem:
+- Otimizar a tela em torno de suas imagens
+- Encaixar suas imagens.
+- Deixar ele sempre sobreposto sobre janelas
+- Ficar transparente para o uso do *mouse*
+- Bloqueie a tela para edição
+- Tela clara
+- Desfazer refazer
+- Reinicie a câmera
+- Salve / carregue suas cenas
+- Exporte cenas
+
+#### Costumização:
+
+Você pode personalizar a aparência e os atalhos de teclado do *PureRef* para atender às suas necessidades.
+- Personalize cores
+- Salvar temas de cores
+- Altere a opacidade mestre
+- Personalize as teclas de atalho
