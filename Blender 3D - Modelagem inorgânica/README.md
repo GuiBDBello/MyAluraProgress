@@ -199,3 +199,25 @@ Você pode personalizar a aparência e os atalhos de teclado do *PureRef* para a
 - Salvar temas de cores
 - Altere a opacidade mestre
 - Personalize as teclas de atalho
+
+### Atividade 03 - Marcações para cortes:
+
+#### PureRef:
+
+- *Download* do *PureRef*: https://www.pureref.com/download.php
+- `Botão direito do mouse` e `Arraste o mouse`: Move a janela do *PureRef*.
+- `Botão esquerdo do mouse` (nas extremidades da janela): Redimensiona a janela.
+- `Z + Botão esquerdo do mouse` e `Arraste o mouse para os lados`: Aumenta e diminui o *zoom*.
+- `Ctrl + Shift + A`: Força com que a janela do *PureRef* fique por cima de outras janelas, sempre à vista.
+
+#### Blender:
+
+- Selecione um objeto e pressione `Shift + H`: Esconde todos os objetos não selecionados. Serve para "isolar" um objeto, para trabalhar apenas com ele. `Alt + H` faz os outros objetos reaparecerem.
+
+##### Cortes/Curvas:
+
+- Entre no `Edit Mode`.
+- Altere para `Face Select` (seleção de face).
+- Selecione uma ou mais faces.
+- Pressione `Ctrl + F` e selecione `Inset Faces` (ou use o atalho `I`).
+- Arraste o *mouse* para definir o tamanho do corte e clique com o `Botão esquerdo do mouse` para concluir.
