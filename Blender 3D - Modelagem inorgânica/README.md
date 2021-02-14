@@ -221,3 +221,30 @@ Você pode personalizar a aparência e os atalhos de teclado do *PureRef* para a
 - Selecione uma ou mais faces.
 - Pressione `Ctrl + F` e selecione `Inset Faces` (ou use o atalho `I`).
 - Arraste o *mouse* para definir o tamanho do corte e clique com o `Botão esquerdo do mouse` para concluir.
+
+### Atividade 05 - Dando profundidade:
+
+#### Extrude:
+
+- Entre no `Edit Mode`.
+- Altere para `Face Select` (seleção de face).
+- Selecione uma ou mais faces.
+- Pressione `E` e arraste o *mouse* para fazer o *Extrude* e clique com o `Botão esquerdo do mouse` para concluir.
+
+#### Subdivision Surface:
+
+- No menu lateral direito, selecione o ícone da chave fixa, `Add Modifier` e selecione `Subdivision Surface`.
+
+#### Arredondando bordas:
+
+- Entre no `Edit Mode`.
+- Altere para `Edge Select` (seleção de linha).
+- Segure `Alt` e selecione uma ou mais linhas (selecione as bordas do objeto). Isso irá selecionar as linhas circularmente, até elas se encontrarem, formando um "círculo".
+- Pressione `Ctrl + E` e selecione `Bevel` (ou utilize o atalho `Ctrl + B`). A ferramenta também é acessível pelo menu do canto inferior esquerdo `Mesh > Edges > Bevel`.
+- Arraste o *mouse* para definir o `Bevel` e clique com o `Botão esquerdo do mouse` para concluir.
+- Pressione `F6` caso queira editar as propriedades do `Bevel`. O campo `Segments` é a quantidade de "cortes" que a borda terá.
+
+#### Dica:
+
+- Para auxiliar a visualização da profundidade do modelo, vá em `View > Properties > Shading` (atalho `N`) e ative `Ambient Occlusion`.
+- No `Face Select`, se você segurar `Alt` e selecionar uma `Edge`, serão selecionadas todas as faces "circularmente".
