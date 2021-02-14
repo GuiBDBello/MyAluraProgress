@@ -248,3 +248,8 @@ Você pode personalizar a aparência e os atalhos de teclado do *PureRef* para a
 
 - Para auxiliar a visualização da profundidade do modelo, vá em `View > Properties > Shading` (atalho `N`) e ative `Ambient Occlusion`.
 - No `Face Select`, se você segurar `Alt` e selecionar uma `Edge`, serão selecionadas todas as faces "circularmente".
+
+### Atividade 08 - Finalizando quadro TV:
+
+- Selecione dois `Vertex` e pressione `J` para adicionar uma nova `Edge` entre eles.
+- `Alt + M` e `At Last` (*Merge*): Une dois vértices no último vértice selecionado.
