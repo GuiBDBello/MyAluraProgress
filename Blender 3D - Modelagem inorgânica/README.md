@@ -266,3 +266,9 @@ Você pode personalizar a aparência e os atalhos de teclado do *PureRef* para a
 
 - `Ctrl + E` e selecione `Make Edge Face` (ou apenas `F`): Adiciona uma face dentro das linhas selecionadas.
 - `Ctrl + I`: "Inverte" uma seleção. **Ex.:** No `Edit Mode`, se você escolher algumas faces e pressionar `Ctrl + I` as faces que você selecionou serão deselecionadas, e as que não estavam selecionadas serão selecionadas.
+
+### Atividade 04 - Adicionando a tela:
+
+- Em `Edit Mode`, no menu do lado esquerdo, em `Mesh Tools > Add`, o botão `Knife` serve para adicionar vértices em qualquer linha no caminho entre dois vértices.
+- No menu inferior, há um botão *dropdown* com a função de `Proportional Editing mode` que vem desabilitado por padrão. Habilite-o para editar proporcionalmente seus objetos.
+- Pressione o `Botão esquerdo do mouse` e role o *scroll* do *mouse* para aumentar o raio que será alterado.
