@@ -247,15 +247,22 @@ Você pode personalizar a aparência e os atalhos de teclado do *PureRef* para a
 #### Dica:
 
 - Para auxiliar a visualização da profundidade do modelo, vá em `View > Properties > Shading` (atalho `N`) e ative `Ambient Occlusion`.
-- No `Face Select`, se você segurar `Alt` e selecionar uma `Edge`, serão selecionadas todas as faces "circularmente".
+- No `Face Select`, se você segurar `Alt` e selecionar uma face, serão selecionadas todas as faces "circularmente".
 
 ### Atividade 08 - Finalizando quadro TV:
 
-- Selecione dois `Vertex` e pressione `J` para adicionar uma nova `Edge` entre eles.
+- Selecione dois vértices e pressione `J` para adicionar uma nova linha entre eles.
 - `Alt + M` e `At Last` (*Merge*): Une dois vértices no último vértice selecionado.
 
-## Aula 05 - Refinando partes menores
+## Aula 06 - Refinando partes menores
 
 ### Atividade 01 - Criando quadros menores:
 
 - `Ctrl + E` e `Bridge Edge Loops`: Preenche as lacunas entre dois loops.
+
+## Aula 07 - Trabalhando no corpo do prop
+
+### Atividade 01 - Criando a base vidro:
+
+- `Ctrl + E` e selecione `Make Edge Face` (ou apenas `F`): Adiciona uma face dentro das linhas selecionadas.
+- `Ctrl + I`: "Inverte" uma seleção. **Ex.:** No `Edit Mode`, se você escolher algumas faces e pressionar `Ctrl + I` as faces que você selecionou serão deselecionadas, e as que não estavam selecionadas serão selecionadas.
