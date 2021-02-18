@@ -280,4 +280,22 @@ Você pode personalizar a aparência e os atalhos de teclado do *PureRef* para a
 
 ### Atividade 03 - Botões de canais:
 
-- Selecione dois vértices e pressione `J` para adicionar uma linha entre eles.
+- Selecione dois vértices e pressione `J` (*connect vertex*) para adicionar uma linha entre eles.
+
+## Aula 09 - Adicionando os fios
+
+### Atividade 03 - Um pouco de boolean:
+
+- O *boolean* serve para "N" funções, então podemos utilizar ele à nosso favor para agilizar ou facilitar o desenvolvimento de projetos específicos.
+
+#### Union:
+
+- Dentro da ferramenta de *boolean* localizada na aba *modifiers* temos 3 comandos. Começando pelo `Union`, como nome já disse, podemos utilizar essa opção, para unirmos nossas meshas, formando assim dois objetos em um só e podendo assim criar formas com mais facilidade sem perder tempo.
+
+#### Difference:
+
+- A utilização do `Difference` é umas das opções do *Boolean* mais usadas no 3D. Com essa opção, podemos criar desenhos complexos em nossa malha, de uma forma rápida e precisa, já obtendo assim uma ideia inicial do resultado final da modelagem.
+
+#### Insert:
+
+- Já o `Intersection` faz o processo inverso do `Difference`, onde ele pega nossos dois objetos, e preserva apenas ponto de intercessão desses objetos, dando assim nova forma para o mesmo.
