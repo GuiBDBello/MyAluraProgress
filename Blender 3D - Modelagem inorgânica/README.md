@@ -275,3 +275,9 @@ Você pode personalizar a aparência e os atalhos de teclado do *PureRef* para a
 
 - No menu inferior, há um botão *dropdown* com a função de `Proportional Editing mode` que vem desabilitado por padrão. Habilite-o para editar proporcionalmente seus objetos.
 - Pressione o `Botão esquerdo do mouse` e role o *scroll* do *mouse* para aumentar o raio que será alterado.
+
+## Aula 08 - Definindo o modelo central
+
+### Atividade 03 - Botões de canais:
+
+- Selecione dois vértices e pressione `J` para adicionar uma linha entre eles.
