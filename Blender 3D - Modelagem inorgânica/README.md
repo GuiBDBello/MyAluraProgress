@@ -299,3 +299,7 @@ Você pode personalizar a aparência e os atalhos de teclado do *PureRef* para a
 #### Insert:
 
 - Já o `Intersection` faz o processo inverso do `Difference`, onde ele pega nossos dois objetos, e preserva apenas ponto de intercessão desses objetos, dando assim nova forma para o mesmo.
+
+### Atividade 04 - Criando parafuso suporte:
+
+- Selecione um objeto e vá em `Add Modifier > Boolean`. Em *Object*, clique no seletor e selecione o segundo objeto que está em interseção com o seu. Em *Operation*, selecione `Difference` para que o segundo objeto faça um "corte" nos lugares que intersecciona com seu objeto inicial. Clique em `Apply` para fazer o corte, e delete o segundo objeto.
