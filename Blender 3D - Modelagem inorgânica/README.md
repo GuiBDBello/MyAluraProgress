@@ -322,3 +322,10 @@ Você pode personalizar a aparência e os atalhos de teclado do *PureRef* para a
 ### Atividade 08 - Finalizando a modelagem:
 
 - `Alt + C` e selecione `Mesh from Curve/Meta/Surf/Text`: Converte um `Path` para um objeto editável.
+
+## Aula 10 - Finalizando o projeto
+
+### Atividade 01 - Burlando a renderização:
+
+- Selecione uma luz e clique em *Object Data* para alterar a cor e energia (intensidade) da luz.
+- Em *Properties* (`N`), é possível desabilitar o *grid* que vem por padrão no *Blender* em `Display > Grid Floor`.
