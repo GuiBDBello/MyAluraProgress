@@ -303,3 +303,18 @@ Você pode personalizar a aparência e os atalhos de teclado do *PureRef* para a
 ### Atividade 04 - Criando parafuso suporte:
 
 - Selecione um objeto e vá em `Add Modifier > Boolean`. Em *Object*, clique no seletor e selecione o segundo objeto que está em interseção com o seu. Em *Operation*, selecione `Difference` para que o segundo objeto faça um "corte" nos lugares que intersecciona com seu objeto inicial. Clique em `Apply` para fazer o corte, e delete o segundo objeto.
+
+### Atividade 06 - Blocando os fios:
+
+- Pressione `Shift + A` e selecione `Curve > Path`:
+- **Obs.:** No menu lateral direito, há um ícone que fica ao lado direito do ícone *Modifiers* (chave fixa), esse ícone é o *Data*/*Object Data*, e nele configuramos o `Path`.
+
+#### Object Data:
+
+- `Bevel`: Possui as propriedades `Depth` (grossura/profundidade) e `Resolution` (quantidade de polígonos/"arredondamento").
+- `Fill`: Determina o formato do objeto.
+
+#### Curve:
+
+- No menu `Curve`, que fica no menu inferior, à esquerda, selecione `Curve > Segments > Subdivide` para criar um novo ponto no `Path`.
+- Selecione um ponto da extremidade do `Path` e pressione `E` para fazer um `Extrude`.
