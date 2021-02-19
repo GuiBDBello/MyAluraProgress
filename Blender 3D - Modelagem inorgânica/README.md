@@ -318,3 +318,7 @@ Você pode personalizar a aparência e os atalhos de teclado do *PureRef* para a
 
 - No menu `Curve`, que fica no menu inferior, à esquerda, selecione `Curve > Segments > Subdivide` para criar um novo ponto no `Path`.
 - Selecione um ponto da extremidade do `Path` e pressione `E` para fazer um `Extrude`.
+
+### Atividade 08 - Finalizando a modelagem:
+
+- `Alt + C` e selecione `Mesh from Curve/Meta/Surf/Text`: Converte um `Path` para um objeto editável.
