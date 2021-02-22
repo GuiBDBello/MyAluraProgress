@@ -39,4 +39,10 @@
 - `Numpad 7`: Visão de cima.
 - `Numpad 9`: Visão de baixo.
 - `Ctrl + Numpad 1`: Visão de trás.
- 
+
+### Atividade 11 - Lidando com primitivas:
+
+- `Shift + A`: Abre o menu de adição de primitivas.
+- Objetos são adicionados onde o `Cursor 3D` está posicionado.
+- Ao adicionar um objeto, aparecerá um menu no canto esquerdo inferior do *canvas*, que permite editar as propriedades do objeto. **Obs.:** Essas alterações só são possíveis de serem feitas antes de movimentar, escalonar, rotacionar ou selecionar outro objeto.
+- `N`: Abre as propriedades do objeto.
