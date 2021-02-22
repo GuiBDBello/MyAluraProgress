@@ -23,6 +23,7 @@
 ### Atividade 09 - As ferramentas de manipulação:
 
 - Segure `Shift` e clique com o `Botão esquerdo do mouse` para selecionar vários objetos.
+- Segure `Ctrl` e clique com o `Botão esquerdo do mouse` para deselecionar objetos.
 - `G`: Movimenta o objeto selecionado.
 - `S`: Escala o objeto selecionado.
 - `R`: Rotaciona o objeto selecionado.
@@ -46,3 +47,9 @@
 - Objetos são adicionados onde o `Cursor 3D` está posicionado.
 - Ao adicionar um objeto, aparecerá um menu no canto esquerdo inferior do *canvas*, que permite editar as propriedades do objeto. **Obs.:** Essas alterações só são possíveis de serem feitas antes de movimentar, escalonar, rotacionar ou selecionar outro objeto.
 - `N`: Abre as propriedades do objeto.
+
+## Aula 02 - A pré-produção do projeto
+
+### Atividade 01 - Ferramentas de seleção:
+
+- `W`: Alterna entre as ferramentas de seleção entre laço, retângulo, pintura, e assim por diante.
