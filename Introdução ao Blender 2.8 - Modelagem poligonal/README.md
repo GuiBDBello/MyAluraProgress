@@ -53,3 +53,17 @@
 ### Atividade 01 - Ferramentas de seleção:
 
 - `W`: Alterna entre as ferramentas de seleção entre laço, retângulo, pintura, e assim por diante.
+
+### Atividade 02 - A formação dos polígonos:
+
+#### O que são Polígonos?
+
+- Você já deve ter visto na escola que os polígonos são figuras fechadas compostas por segmentos de reta.
+- Traduzindo para a nossa linguagem 3D, polígonos são figuras fechadas compostas por segmento de *edges* que compõem todos os objetos dentro da computação gráfica.
+- Nós consideramos um polígono aquele cuja figura é composta por 4 lados ou mais.
+- Tudo que estiver com mais de 4 lados nós chamados de *N polygons*, os quais dependendo da situação, não é bom para o 3D.
+- O que tiver menos que 4 lados, chamamos de triângulos, e 2 triângulos podem formar um poligono de 4 lados.
+- Considerando então, que os polígonos são figuras fechadas compostas por *edges*, do que seriam formadas as *edges*? As *edges* são formadas por um Ponto (*vertex*) inicial "A" que vai até um ponto (*Vertex*) final "B". Sendo assim, quando tivermos um Ponto Inicial e um Ponto Final, podemos ter uma *edge*.
+- Para que possamos navegar entre esses componentes dentro do *Blender*, devemos entrar no modo de *Edit Mode*, através do menu localizado na parte superior do *Blender*, ou simplesmente utilizando a tecla de atalho `Tab` e em seguida clicar `1`.
+- Quando estamos no modo de edição do objeto podemos alternar entre os elementos de *Vertex*, *Edge* e *Face*.
+- Os elementos podem também ser movimentados, e podemos usar as ferramentas de seleção, como vimos nas atividades anteriores, tais quais ferramentas de *Scale* e *Rotate* para os elementos individuais.
