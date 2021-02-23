@@ -96,3 +96,8 @@
 ### Atividade 04 - Trabalhando na modelagem:
 
 - `Shift + D`: Duplica o objeto selecionado.
+
+### Atividade 06 - Blocando o cabo:
+
+- `W`: Alterna o modo de seleção.
+- `Ctrl + Botão direito do mouse`: Seleção em *Lasso*.
