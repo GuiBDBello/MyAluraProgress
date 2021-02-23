@@ -85,3 +85,8 @@
 - `J`: *Connect path*. Une dois *vertex*, criando uma *edge*.
 - `Z`: Abre as opções de *Shading* (*Rendered*, *Look Dev*, *Solid* e *Wireframe*).
 - `B`: Seleção em retângulo.
+
+### Atividade 08 - O subdivision surface:
+
+- `Subdivision Surface`: Adiciona divisões nas superfícies do objeto para deixá-lo mais detalhado.
+- Sustentação de borda: Adicionar *Loop Cut* nas bordas para deixá-las mais "quadradas".
