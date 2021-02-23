@@ -90,3 +90,9 @@
 
 - `Subdivision Surface`: Adiciona divisões nas superfícies do objeto para deixá-lo mais detalhado.
 - Sustentação de borda: Adicionar *Loop Cut* nas bordas para deixá-las mais "quadradas".
+
+## Aula 03 - Da referência à primeira blocagem
+
+### Atividade 04 - Trabalhando na modelagem:
+
+- `Shift + D`: Duplica o objeto selecionado.
