@@ -53,6 +53,7 @@
 ### Atividade 01 - Ferramentas de seleção:
 
 - `W`: Alterna entre as ferramentas de seleção entre laço, retângulo, pintura, e assim por diante.
+- `Alt + Botão esquerdo do mouse`: Seleção em *loop*.
 
 ### Atividade 02 - A formação dos polígonos:
 
@@ -106,3 +107,9 @@
 
 - `;` ou `/`: Esconde todos os objetos, exceto os que estão selecionados.
 - `O`: Ativa o *Proportional Editing*. Movimente o *scroll* do *mouse* para aumentar o raio.
+
+## Aula 04 - Trabalhando no corpo da arma
+
+### Atividade 02 - Modelando corpo esférico:
+
+- `I`: *Inset Faces*. Adiciona novas faces dentro das faces selecionadas.
