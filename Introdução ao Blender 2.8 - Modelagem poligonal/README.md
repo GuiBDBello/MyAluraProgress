@@ -78,3 +78,10 @@
 - `3`: Seleção de *Face*.
 - `Ctrl + R`: *Loop Cut*.
 - `E`: *Extrude*.
+
+### Atividade 05 - O bevel e connect vertex path:
+
+- `Ctrl + B`: *Bevel*.
+- `J`: *Connect path*. Une dois *vertex*, criando uma *edge*.
+- `Z`: Abre as opções de *Shading* (*Rendered*, *Look Dev*, *Solid* e *Wireframe*).
+- `B`: Seleção em retângulo.
