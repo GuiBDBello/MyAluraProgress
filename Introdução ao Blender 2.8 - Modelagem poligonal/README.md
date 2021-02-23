@@ -67,3 +67,14 @@
 - Para que possamos navegar entre esses componentes dentro do *Blender*, devemos entrar no modo de *Edit Mode*, através do menu localizado na parte superior do *Blender*, ou simplesmente utilizando a tecla de atalho `Tab` e em seguida clicar `1`.
 - Quando estamos no modo de edição do objeto podemos alternar entre os elementos de *Vertex*, *Edge* e *Face*.
 - Os elementos podem também ser movimentados, e podemos usar as ferramentas de seleção, como vimos nas atividades anteriores, tais quais ferramentas de *Scale* e *Rotate* para os elementos individuais.
+
+### Atividade 03 - Editando meshes para modelagem:
+
+#### Edit Mode:
+
+- `A` 2 vezes rapidamente: Deseleciona tudo.
+- `1`: Seleção de *Vertex*.
+- `2`: Seleção de *Edge*.
+- `3`: Seleção de *Face*.
+- `Ctrl + R`: *Loop Cut*.
+- `E`: *Extrude*.
