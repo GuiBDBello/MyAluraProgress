@@ -101,3 +101,8 @@
 
 - `W`: Alterna o modo de seleção.
 - `Ctrl + Botão direito do mouse`: Seleção em *Lasso*.
+
+### Atividade 08 - Adicionando o gatilho:
+
+- `;` ou `/`: Esconde todos os objetos, exceto os que estão selecionados.
+- `O`: Ativa o *Proportional Editing*. Movimente o *scroll* do *mouse* para aumentar o raio.
