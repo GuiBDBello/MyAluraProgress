@@ -113,3 +113,9 @@
 ### Atividade 02 - Modelando corpo esférico:
 
 - `I`: *Inset Faces*. Adiciona novas faces dentro das faces selecionadas.
+
+## Aula 05 - Adicionando as partes menores
+
+### Atividade 04 - Blocando partes menores:
+
+- `P` e selecione `Selection`: Separa os vértices/linhas/faces em outro objeto.
