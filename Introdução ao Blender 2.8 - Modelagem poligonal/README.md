@@ -130,3 +130,8 @@
 ### Atividade 06 - Modelando a lâmpada:
 
 - `Shift + Ctrl + B`: *Bevel Vertices*.
+
+### Atividade 08 - Finalizando a parte superior:
+
+- `Object > Set Origin > Origin to Geometry`: Define a origem do objeto (o *gizmo*/pivô) para o centro da geometria desse objeto.
+- Selecione dois objetos e pressione `Botão direito do mouse` e `Snap > Selection to Active`: Move o primeiro objeto para a mesma posição do segundo objeto.
