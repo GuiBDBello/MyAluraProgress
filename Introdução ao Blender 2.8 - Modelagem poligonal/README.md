@@ -126,3 +126,7 @@
 
 - `Ctrl + J`: *Attach*. Une os objetos selecionados no mesmo *base mesh*, ou seja, todos fazem parte do mesmo objeto.
 - `Ctrl + A`: *Apply*. Abre um menu com várias funcionalidades para aplicar sobre seus objetos.
+
+### Atividade 06 - Modelando a lâmpada:
+
+- `Shift + Ctrl + B`: *Bevel Vertices*.
