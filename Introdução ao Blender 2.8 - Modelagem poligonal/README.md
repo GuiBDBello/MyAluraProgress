@@ -119,3 +119,10 @@
 ### Atividade 04 - Blocando partes menores:
 
 - `P` e selecione `Selection`: Separa os vértices/linhas/faces em outro objeto.
+
+## Aula 06 - Criando os parafusos e adesivo
+
+### Atividade 04 - Criando Adesivo:
+
+- `Ctrl + J`: *Attach*. Une os objetos selecionados no mesmo *base mesh*, ou seja, todos fazem parte do mesmo objeto.
+- `Ctrl + A`: *Apply*. Abre um menu com várias funcionalidades para aplicar sobre seus objetos.
