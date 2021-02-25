@@ -135,3 +135,9 @@
 
 - `Object > Set Origin > Origin to Geometry`: Define a origem do objeto (o *gizmo*/pivô) para o centro da geometria desse objeto.
 - Selecione dois objetos e pressione `Botão direito do mouse` e `Snap > Selection to Active`: Move o primeiro objeto para a mesma posição do segundo objeto.
+
+## Aula 07 - Finalizando o modelo
+
+### Atividade 01 - O tudo de munição:
+
+- Selecione um objeto do tipo *Path*, clique com o `Botão direito do mouse` em qualquer lugar do *viewport* e selecione `Convert to Mesh` para converter uma *Curve* para uma *Mesh*.
