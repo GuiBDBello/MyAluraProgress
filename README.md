@@ -1,13 +1,14 @@
 # MyAluraProgress
 
-Repositório criado para gravar meu progresso nos cursos da Alura.
+Repositório criado para registrar meu progresso nos cursos da Alura.
 
-## Commit (padrão):
+## Como utilizar?
 
-Ao iniciar um curso, crie uma pasta com o nome do curso e, dentro dessa pasta, um arquivo README.md que servirá para anotações.
-Então, adicione a pasta ao repositório com a mensagem de commit:  
-> Start 'Nome do curso'
+1) Ao iniciar um curso, criar uma pasta com o nome do curso.
+2) Dentro da pasta do curso, criar um arquivo README.md para anotações.
+3) Adicionar a pasta ao repositório com a mensagem de commit: `{nome-do-recurso-na-url-do-curso}: Initial commit`<br>
+**Ex.:**: `blender-criando-primeiro-modelo-3d: Initial commit`
 
-A cada atividade, deve-se seguir o padrão de mensagem de commit abaixo:  
-> ('Nome do curso') 'Aula': 'Atividade' - 'Comentário'  
-> **Ex.:** (Java parte 1: Primeiros passos) O que é Java?: Introdução - Vídeo de introdução do curso Java parte 1: Primeiros passos
+**Obs.:** Padrão de mensagem de commit:
+- Novo: `{nome-do-recurso-na-url-do-curso}: {numero-aula}-{numero-atividade} # {comentario}`<br>
+**Ex.:** `blender-criando-primeiro-modelo-3d: 01-01 # Criar modelo 3D de um cubo`
