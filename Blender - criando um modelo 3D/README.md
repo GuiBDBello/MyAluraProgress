@@ -35,3 +35,27 @@ O Blender possui várias janelas, e vários tipos de janelas.
 - Shift + Spacebar, G: Ferramenta de movimentação (Move).
 - Shift + Spacebar, R: Ferramenta de rotação (Rotate).
 - Shift + Spacebar, S: Ferramenta de escala (Scale).
+
+## Criando o ambiente
+
+### Blocando o modelo
+
+#### Ponto de origem
+
+O Blender possui um "ponto de origem" que é visível na tela por um ícone de um cursor com um círculo pontilhado. Tudo o que for criado na cena será criado na posição desse cursor.
+- Shift + Botão direito do mouse: Altera o ponto de origem para o local clicado.
+
+#### Objetos
+
+- No menu superior, selecione "Add" e selecione um dos tipos disponíveis. Um objeto do tipo selecionado será criado no seu ponto de origem. Ao criar um objeto, aparecerá uma janela no canto inferior esquerdo com as propriedades iniciais do objeto. Você pode alterá-las antes de "criar" efetivamente aquele objeto.
+
+#### Atalhos
+
+- G: Ferramenta de movimentação.
+- G + X ou Y ou Z: Movimenta o objeto apenas no eixo selecionado.
+- S: Ferramenta de escala.
+- S + X ou Y ou Z: Escala o objeto apenas no eixo selecionado.
+- R: Ferramenta de rotação.
+- Shift + A: Atalho para adicionar um objeto.
+- Shift + D: Duplica um objeto.
+- X ou Delete: Deleta um objeto da cena.
