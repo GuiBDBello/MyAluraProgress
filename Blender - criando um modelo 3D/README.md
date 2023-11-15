@@ -66,3 +66,13 @@ O Blender possui um "ponto de origem" que é visível na tela por um ícone de u
 - Para editar vértices, arestas e faces de um objeto, é necessário alterar o modo de edição do Blender no canto superior esquerdo, no dropdown onde está escrito "Object Mode". O modo "Edit Mode" permite alterar essas propriedades de um objeto. Ao lado direito do dropdown do tipo de edição, após selecionar "Edit Mode", é possível escolher a seleção de vértices (tecla de atalho "1"), arestas (tecla de atalho "2") ou faces (tecla de atalho "3").
 - É importante diferenciar o modo de edição do modo de objeto. É necessário sair do modo de edição para persistir as mudanças em um objeto.
 - O modo de edição não permite selecionar ou apagar objetos, ou selecionar outros objetos.
+
+### Editando com modificadores
+
+Na janela de propriedades do objeto, selecione "Modifier Properties (o ícone de uma chave de boca/chave de aperto).
+- É possível adicionar modificadores aos objetos.
+- Bevel: Cria uma "borda suavizada".
+- Build: Cria um "tijolo" e duplica-o para ir construindo o objeto.
+- Mirror: Espelha o objeto.
+- Após adicionar um modificador, é possível alterar as propriedades dele.
+- É preciso "aplicar" o modificador para confirmar as mudanças.
