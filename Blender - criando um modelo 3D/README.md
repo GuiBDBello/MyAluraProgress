@@ -59,3 +59,10 @@ O Blender possui um "ponto de origem" que é visível na tela por um ícone de u
 - Shift + A: Atalho para adicionar um objeto.
 - Shift + D: Duplica um objeto.
 - X ou Delete: Deleta um objeto da cena.
+
+### Propriedades dos objetos
+
+- Um objeto 3D possui vértices, arestas (linhas) e faces.
+- Para editar vértices, arestas e faces de um objeto, é necessário alterar o modo de edição do Blender no canto superior esquerdo, no dropdown onde está escrito "Object Mode". O modo "Edit Mode" permite alterar essas propriedades de um objeto. Ao lado direito do dropdown do tipo de edição, após selecionar "Edit Mode", é possível escolher a seleção de vértices (tecla de atalho "1"), arestas (tecla de atalho "2") ou faces (tecla de atalho "3").
+- É importante diferenciar o modo de edição do modo de objeto. É necessário sair do modo de edição para persistir as mudanças em um objeto.
+- O modo de edição não permite selecionar ou apagar objetos, ou selecionar outros objetos.
