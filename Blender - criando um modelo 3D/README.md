@@ -112,3 +112,13 @@ Permite "pintar" um objeto 3D.
     - Selecione por último o objeto com o Material já aplicado
     - Pressione Ctrl + L
     - Selecione Link Materials
+
+### Para saber mais: Modos de texturização
+
+#### Hand painting
+
+A forma mais usada para games é o hand painting, que consiste em aplicar a mesma técnica que criamos para fazer o dado: nós precisamos separar o objeto em uma malha e levar essa malha para um software de pintura, pintar manualmente cada parte do objeto e levar de volta para o Blender. Podemos também pintar dentro do próprio Blender, mas normalmente são usadas outras ferramentas para pintura, como Photoshop, Paint Tool SAI, entre outras.
+
+#### Shading
+
+O processo de shading é quando usamos materiais e configurações mais complexas de como a luz interage com o objeto para conseguirmos construir nossa cor. É um processo mais complexo e usado principalmente para animações e modelos mais realistas.
