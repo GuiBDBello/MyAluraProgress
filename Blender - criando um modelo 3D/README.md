@@ -122,3 +122,13 @@ A forma mais usada para games é o hand painting, que consiste em aplicar a mesm
 #### Shading
 
 O processo de shading é quando usamos materiais e configurações mais complexas de como a luz interage com o objeto para conseguirmos construir nossa cor. É um processo mais complexo e usado principalmente para animações e modelos mais realistas.
+
+### Animando
+
+Para animar, é preciso adicionar Keyframes na linha do tempo do Blender, e então dar "Play" para que o Blender "percorra" as modificações entre os Keyframes.
+
+#### Link to Parent
+
+- Select > Select all by Type > Mesh
+- Segure Shift e selecione o objeto que será o "pai"
+- Clique com o botão direito do mouse e selecione Parent > Object
