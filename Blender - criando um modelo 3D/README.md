@@ -76,3 +76,26 @@ Na janela de propriedades do objeto, selecione "Modifier Properties (o ícone de
 - Mirror: Espelha o objeto.
 - Após adicionar um modificador, é possível alterar as propriedades dele.
 - É preciso "aplicar" o modificador para confirmar as mudanças.
+
+## Texturizando
+
+### Texturização
+
+- É possível aplicar um Material nos objetos. O Material possui propriedades de cor, textura, reflexão, opacidade, etc.
+- Uma das formas de "pintar" um objeto é através de sua Mesh (malha).
+
+#### UV Editing
+
+"Transforma" um objeto 3D em 2D. "Abre" as faces para visualizar o objeto em um plano 2D.
+- É possível definir imagens para as faces.
+
+#### Texture Paint
+
+Permite "pintar" um objeto 3D.
+- É possível utilizar cores para pintar as faces.
+- Para pintar, é necessário criar um Material.
+    - Para criar um Material, selecione o dropdown do Material (no Blender 4 está no menu superior da janela direita de Texture Paint), selecione o botão "+" e selecione o tipo do Material (Ex.: Base Color).
+
+##### Shading
+
+- Características e Materiais que o objeto possui. Ex.: Nível de reflexão, nível de opacidade, etc.
