@@ -99,3 +99,16 @@ Permite "pintar" um objeto 3D.
 ##### Shading
 
 - Características e Materiais que o objeto possui. Ex.: Nível de reflexão, nível de opacidade, etc.
+
+### Aplicando cores
+
+- Para adicionar uma cor em um objeto, é necessário adicionar um Material.
+    - Selecione o objeto, vá na janela de propriedades e selecione o penúltimo ícone de cima para baixo (o ícone de um círculo).
+    - Selecione "New" e altere o nome do Material criado. Ex.: telhado
+- Para visualizar as cores/texturas, é necessário alterar o modo de visualização do Blender, nos ícones do canto superior direito da janela principal de layout.
+- **Obs.:** Para aplicar o mesmo Material em vários objetos:
+    - Adicione o Material em um objeto
+    - Selecione todos os objetos segurando Shift
+    - Selecione por último o objeto com o Material já aplicado
+    - Pressione Ctrl + L
+    - Selecione Link Materials
