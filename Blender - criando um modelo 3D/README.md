@@ -132,3 +132,9 @@ Para animar, é preciso adicionar Keyframes na linha do tempo do Blender, e ent�
 - Select > Select all by Type > Mesh
 - Segure Shift e selecione o objeto que será o "pai"
 - Clique com o botão direito do mouse e selecione Parent > Object
+
+## Renderizando
+
+### Motores de render
+
+- É possível alterar o motor de render do Blender no canto superior esquerdo do painel de propriedades, selecionando o ícone de câmera fotográfica (Render properties). O campo "Render Engine" permite alterar o motor de renderização utilizado pelo Blender.
