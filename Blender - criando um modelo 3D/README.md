@@ -145,3 +145,19 @@ Para animar, é preciso adicionar Keyframes na linha do tempo do Blender, e ent�
 - Habilitar nas propriedades do Render: Sampling > Denoise
 - Selecionar na janela de propriedades, o ícone "World" > Ray Visibility > Deselecionar "Camera"
 - Selecionar no menu superior Render > Render image (ou F12).
+
+### Exportando a animação
+
+- A renderização é feita da visão da câmera virtual. É preciso ajustar a câmera virtual para renderizar o que essa câmera está vendo.
+- Após selecionar a câmera, é possível modificar as propriedades da câmera virtual na janela de propriedades do objeto, no ícone da câmera ("Data").
+- Existe outra forma mais fácil de arrumar a visualização da câmera: na janela principal da cena, ao lado direito dos Gizmos, existe uma setinha para a esquerda. Clique e arraste essa seta para a esquerda, um menu irá abrir. Nesse meu, selecione a aba "View", e em "Lock", selecione "Camera to View". Após isso, selecione "Toggle the camera view" (atalho: Numpad 0). Agora você pode navegar pela cena e essa será a visão da câmera até você deselecionar o "Camera to View".
+
+#### Otimizando a renderização
+
+- Nas propriedades do render (Render Properties):
+    - A propriedade "Sampling > Render > Max Samples" permite otimizar a performance do render, renderizando menos imagens em uma renderização. Altere o valor de 4096 para 8
+    - Em Sampling > Viewport > Denoise, alterar o "Denoiser" para OptiX.
+    - Em Sampling > Render > Denoise, alterar o "Denoiser" para OptiX.
+- Nas propriedades de saída (Output Properties):
+    - É possível selecionar o diretório de saída dos renders em "Output".
+    - Para renderizar uma animação e gerar um vídeo, é necessário alterar o valor de "Output > File Format" de PNG para um dos formatos de vídeo. Ex.: AVI JPEG.
