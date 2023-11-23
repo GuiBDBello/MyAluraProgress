@@ -6,8 +6,8 @@ Repositório criado para registrar meu progresso nos cursos da Alura.
 
 1) Ao iniciar um curso, criar uma pasta com o nome do curso.
 2) Dentro da pasta do curso, criar um arquivo README.md para anotações.
-3) Adicionar a pasta ao repositório com a mensagem de commit: `course/{nome-do-curso}: Initial commit`<br>
-**Ex.:**: `course/blender-criando-primeiro-modelo-3d: Initial commit`<br>
+3) Adicionar a pasta ao repositório com a mensagem de commit: `course/{nome-do-curso}`<br>
+**Ex.:**: `course/blender-criando-primeiro-modelo-3d`<br>
 
 **Obs.:** Padrão de mensagem de commit:
 - Novo: `course/{nome-do-curso}/task/{numero-da-task}: {comentario}`<br>
