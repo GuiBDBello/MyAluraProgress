@@ -52,6 +52,10 @@ Obs.: Shift + Numpad 1/3/7 altera as perspectivas.
 - Botão esquerdo do mouse + Arrasta: Seleciona vários vértices/arestas/faces.
 Obs.: Com o Raio X ativo, a seleção múltipla vai selecionar as arestas que estão atrás também.
 
+### Criando o fio da lâmina
+
+- Shift + Spacebar, Ctrl + R: Loop Cut.
+
 ## Extra
 
 Tip: If you're in the camera view you can press the shortcut 'shift + `' to enter the 'walk' navigation mode. If you're familiar with FPS video game controls (WASD to move around), this'll be a much easier way to navigate your scene. Left Click to confirm new camera position, or right click/esc to cancel
