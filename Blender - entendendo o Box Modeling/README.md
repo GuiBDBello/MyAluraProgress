@@ -31,3 +31,14 @@ Formas de inserir referências:
 3) Utilizar uma referência.
 - Shift + A > Image > Reference
 - Selecionar a imagem de referência
+
+### Organizando a área de trabalho
+
+- Mudar o modo de trabalho para "Modeling".
+- Gerar uma nova View (clicar no canto da janela e arrastar).
+- Gerar outra View, no lado esquerdo, de cima para baixo, deixando a tela dividida no meio, sendo que no lado direito existe uma View e no lado esquerdo existem duas Views.
+- Na janela do canto superior esquerdo, selecione o eixo X dos Gizmos.
+- Na janela do canto inferior esquerdo, selecione o eixo Y dos Gizmos.
+Obs.: Shift + Numpad 1/3/7 altera as perspectivas.
+
+Tip: If you're in the camera view you can press the shortcut 'shift + `' to enter the 'walk' navigation mode. If you're familiar with FPS video game controls (WASD to move around), this'll be a much easier way to navigate your scene. Left Click to confirm new camera position, or right click/esc to cancel
