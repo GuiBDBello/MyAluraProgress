@@ -40,5 +40,18 @@ Formas de inserir referências:
 - Na janela do canto superior esquerdo, selecione o eixo X dos Gizmos.
 - Na janela do canto inferior esquerdo, selecione o eixo Y dos Gizmos.
 Obs.: Shift + Numpad 1/3/7 altera as perspectivas.
+- Shift + A > Image > Reference, e selecione a imagem de referência.
+- Selecione as referências e, no menu de propriedades, em "Data", deselecionar "Perspective".
+
+## Modelando a lâmina
+
+### Forma base da lâmina
+
+- Tab: Alterna entre "Object Mode" e "Edit Mode".
+- Alt + Z: Raio X do modelo 3D.
+- Botão esquerdo do mouse + Arrasta: Seleciona vários vértices/arestas/faces.
+Obs.: Com o Raio X ativo, a seleção múltipla vai selecionar as arestas que estão atrás também.
+
+## Extra
 
 Tip: If you're in the camera view you can press the shortcut 'shift + `' to enter the 'walk' navigation mode. If you're familiar with FPS video game controls (WASD to move around), this'll be a much easier way to navigate your scene. Left Click to confirm new camera position, or right click/esc to cancel
