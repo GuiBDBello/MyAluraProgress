@@ -56,6 +56,12 @@ Obs.: Com o Raio X ativo, a seleção múltipla vai selecionar as arestas que es
 
 - Shift + Spacebar, Ctrl + R: Loop Cut.
 
+### Finalizando a lâmina
+
+- No "Object Mode", selecione o objeto, clique com o botão direito do mouse e selecione "Shade Smooth".
+- Selecionar o objeto novamente, no menu de propriedades, selecione o sub-menu "Data" > Normals, e habilite o "Auto Smooth".
+- Shift + Spacebar, K: Knife. "Liga" vértices, criando novas arestas entre eles. Para utilizar, clique em um vértice com o botão esquerdo do mouse e arraste até outro vértice. Ao soltar o botão esquerdo do mouse, pressione Spacebar para concluir o "corte".
+
 ## Extra
 
 Tip: If you're in the camera view you can press the shortcut 'shift + `' to enter the 'walk' navigation mode. If you're familiar with FPS video game controls (WASD to move around), this'll be a much easier way to navigate your scene. Left Click to confirm new camera position, or right click/esc to cancel
