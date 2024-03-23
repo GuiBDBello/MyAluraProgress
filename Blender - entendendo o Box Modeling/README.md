@@ -70,7 +70,13 @@ Obs.: Com o Raio X ativo, a seleção múltipla vai selecionar as arestas que es
 
 ### Extrusão do cabo
 
-- E: Realiza a Extrusão.
+- E: A ferramenta de extrusão tem a capacidade de criar novas faces a partir da face selecionada, ou uma nova aresta a partir da aresta selecionada, e até mesmo um vértice a partir do vértice selecionado.
+
+### Finalizando o cabo
+
+- Antes de aplicar o modificador "Mirror", remova as faces que ficam "dentro" do espelho. Para isso, selecione as faces e pressione "Delete" > Faces.
+- Para aplicar o "Mirror", selecione o objeto, vá no menu de propriedades, sub-menu "Modifiers", e clique no ícone de "Check" > Apply.
+- Shift + Spacebar, I: Inset Faces. Gera novas faces a partir de outras faces selecionadas.
 
 ## Extra
 
