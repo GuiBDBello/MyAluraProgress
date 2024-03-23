@@ -68,6 +68,10 @@ Obs.: Com o Raio X ativo, a seleção múltipla vai selecionar as arestas que es
 - Para utilizar o modificador Mirror, é necessário alterar o ponto de origem do objeto. Para isso, primeiro certifique-se de estar no "Object Mode", então selecione a ferramenta de movimentação (Shift + Spacebar, G) e selecione no menu de propriedades, o sub-menu "Tool". Em Options > Transform > Affect Only, selecione "Origins". Agora você pode mover a origem do objeto para o canto dele.
 - Mirror: Selecione um objeto, no menu de propriedades selecione o sub-menu "Modifier Properties", clique em "Add Modifier" e selecione o modificador "Mirror". O objeto será duplicado no eixo selecionado, a partir do seu ponto de origem.
 
+### Extrusão do cabo
+
+- E: Realiza a Extrusão.
+
 ## Extra
 
 Tip: If you're in the camera view you can press the shortcut 'shift + `' to enter the 'walk' navigation mode. If you're familiar with FPS video game controls (WASD to move around), this'll be a much easier way to navigate your scene. Left Click to confirm new camera position, or right click/esc to cancel
