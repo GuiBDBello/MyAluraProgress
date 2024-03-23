@@ -91,6 +91,13 @@ Obs.: Com o Raio X ativo, a seleção múltipla vai selecionar as arestas que es
 - CTRL + B - Esse é o atalho para a ferramenta BEVEL, que ainda não usamos dentro do nosso modelo, mas iremos usá-la em vários momentos.
 - SHIFT ESPAÇO - Essa tecla de atalho é responsável por acessar um menu rápido e conseguir selecionar outra ferramenta de edição. Por exemplo: devemos apertar SHIFT ESPAÇO e em seguida a tecla E para escolher a ferramenta de extrusão. Podemos também escolher com o mouse qual ferramenta queremos, e nesta janela podemos ver todos os atalhos.
 
+## O altar
+
+### Criando o altar
+
+- Ctrl + B: Bevel. Gera uma "suavidade" entre uma borda e outra. A suavidade ocorre pois são criadas novas faces entre as faces selecionadas. O Bevel pode afetar Arestas ou Vértices (é possível alterando a propriedade "Affects" na geração de um Bevel).
+- Ctrl + J: Join. Junta todos os objetos selecionados em um.
+
 ## Extra
 
 Tip: If you're in the camera view you can press the shortcut 'shift + `' to enter the 'walk' navigation mode. If you're familiar with FPS video game controls (WASD to move around), this'll be a much easier way to navigate your scene. Left Click to confirm new camera position, or right click/esc to cancel
