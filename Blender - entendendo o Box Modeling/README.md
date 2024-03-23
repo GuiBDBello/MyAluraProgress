@@ -54,13 +54,13 @@ Obs.: Com o Raio X ativo, a seleção múltipla vai selecionar as arestas que es
 
 ### Criando o fio da lâmina
 
-- Shift + Spacebar, Ctrl + R: Loop Cut.
+- Ctrl + R: Loop Cut.
 
 ### Finalizando a lâmina
 
 - No "Object Mode", selecione o objeto, clique com o botão direito do mouse e selecione "Shade Smooth".
 - Selecionar o objeto novamente, no menu de propriedades, selecione o sub-menu "Data" > Normals, e habilite o "Auto Smooth".
-- Shift + Spacebar, K: Knife. "Liga" vértices, criando novas arestas entre eles. Para utilizar, clique em um vértice com o botão esquerdo do mouse e arraste até outro vértice. Ao soltar o botão esquerdo do mouse, pressione Spacebar para concluir o "corte".
+- K: Knife. "Liga" vértices, criando novas arestas entre eles. Para utilizar, clique em um vértice com o botão esquerdo do mouse e arraste até outro vértice. Ao soltar o botão esquerdo do mouse, pressione Spacebar para concluir o "corte".
 
 ### Criando o cabo
 
@@ -76,7 +76,20 @@ Obs.: Com o Raio X ativo, a seleção múltipla vai selecionar as arestas que es
 
 - Antes de aplicar o modificador "Mirror", remova as faces que ficam "dentro" do espelho. Para isso, selecione as faces e pressione "Delete" > Faces.
 - Para aplicar o "Mirror", selecione o objeto, vá no menu de propriedades, sub-menu "Modifiers", e clique no ícone de "Check" > Apply.
-- Shift + Spacebar, I: Inset Faces. Gera novas faces a partir de outras faces selecionadas.
+- I: Inset Faces. Gera novas faces a partir de outras faces selecionadas.
+
+### Para saber mais: reforçando atalhos
+
+#### Teclas de atalho para o modo edição
+
+- TAB - O tab vai fazer a troca para o modo de edição e o último modo que estávamos usando o objeto, por exemplo, se estamos no object mode, ao apertar TAB vamos para o Edit Mode, e vice-versa.
+- W - É a tecla de atalho para ativar a ferramenta de seleção, uma ótima saída para após usar a extrusão, não ficar com a ferramenta ainda ativa.
+- E - Apertando a tecla E ao entrar no modo edição, aplicamos a ferramenta de extrusão no objeto.
+- CTRL + R - Essa tecla de atalho é usada para conseguir selecionar de forma rápida a ferramenta LOOPCUT
+- K - Essa é a tecla de atalho para conseguir selecionar a ferramenta KNIFE.
+- I - A tecla de atalho i funciona para pegar a ferramenta inset faces. Ela funciona igual a ferramenta de extrusão: ao clicar no atalho, já aplica a ferramenta, portanto tome cuidado ao usá-la!
+- CTRL + B - Esse é o atalho para a ferramenta BEVEL, que ainda não usamos dentro do nosso modelo, mas iremos usá-la em vários momentos.
+- SHIFT ESPAÇO - Essa tecla de atalho é responsável por acessar um menu rápido e conseguir selecionar outra ferramenta de edição. Por exemplo: devemos apertar SHIFT ESPAÇO e em seguida a tecla E para escolher a ferramenta de extrusão. Podemos também escolher com o mouse qual ferramenta queremos, e nesta janela podemos ver todos os atalhos.
 
 ## Extra
 
