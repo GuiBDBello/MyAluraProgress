@@ -96,7 +96,14 @@ Obs.: Com o Raio X ativo, a seleção múltipla vai selecionar as arestas que es
 ### Criando o altar
 
 - Ctrl + B: Bevel. Gera uma "suavidade" entre uma borda e outra. A suavidade ocorre pois são criadas novas faces entre as faces selecionadas. O Bevel pode afetar Arestas ou Vértices (é possível alterando a propriedade "Affects" na geração de um Bevel).
-- Ctrl + J: Join. Junta todos os objetos selecionados em um.
+- Ctrl + J: Join. Junta todos os objetos selecionados em um. Após juntar, é possível selecionar separadamente cada objeto no "Edit Mode" ao clicar em um vértice/aresta/face e pressionar "Ctrl + L".
+
+### A composição
+
+- Z: Abre um menu circular com os modos de Viewport.
+- Z + Número: Muda o modo de Viewport.
+- Um objeto pode ter vários materiais.
+- É possível aplicar materiais em um grupo de faces. Para isso, selecione as faces e no menu de propriedades, sub-menu "Materials", selecione o material e clique em "Assign".
 
 ## Extra
 
