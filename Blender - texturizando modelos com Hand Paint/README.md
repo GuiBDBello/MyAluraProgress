@@ -21,3 +21,23 @@
 - O Blender gera os UVs automaticamente de suas formas primitivas.
 - Cada forma primitiva possui um formato diferente do UV.
 - No modo de edição de um objeto, há o menu "UV" no topo da viewport, que permite fazer o "Unwrap" da UV de diferentes formas.
+
+### Para saber mais: tipos de projeção
+
+Como vimos em aula, a malha do objeto depende da sua forma base, pois todo objeto criado inicialmente possui uma malha predefinida e quanto mais moldamos a forma, criamos face, rotacionamos arestas, mais essa malha UV se distorce.
+
+Para conseguir controlar melhor essa distorção e ajustar a malha no formato que queremos, podemos criar uma projeção automática quebrando as partes do objeto, como fizemos com o cubo. Muitas vezes, essas projeções facilitam muito a vida de quem vai abrir a malha do modelo.
+
+#### Projeção Cilíndrica
+
+A projeção cilíndrica vai tomar como base que a forma do objeto é um cilindro e vai gerar um corte no centro dele e abri-lo, como uma folha enrolada:
+
+#### Projeção Planar
+
+A projeção planar vai tomar como base um plano para criar o mapa UV (é um tipo de projeção comum nos softwares 3D). Dentro do Blender, podemos reconhecer como project from view, que é basicamente uma projeção plana baseada no que a câmera está vendo.
+
+#### Projeção Esférica
+
+A projeção esférica vai abrir a malha do objeto como se ele fosse uma esfera, gerando um corte de cima a baixo do objeto.
+
+Também existe a projeção em caixa, que é a mais básica e que vimos nos primeiros vídeos.
