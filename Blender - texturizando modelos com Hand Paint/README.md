@@ -63,5 +63,12 @@ Também existe a projeção em caixa, que é a mais básica e que vimos nos prim
 ### A UV do cabo com UNWRAP
 
 - Shift + H: Oculta todos os objetos, exceto o objeto selecionado.
+- Alt + H: Revela objetos ocultos.
 - Seleção de aresta + Shift + Alt + Botão esquerdo do mouse: "Loop selection". Seleciona o "corte" do modelo 3D.
 - Ao selecionar um "corte" inteiro da espada (por exemplo, a parte da frente, a parte de trás, a parte do lado, etc.) é possível clicar com o botão direito do mouse e selecionar "Mark Seam". Isso "separa" aquele pedaço selecionado para que o Blender saiba como separar a malha da melhor forma ao mapear o UV.
+
+### Testando a UV
+
+- Na janela "UV Editor" é possível abrir uma imagem para utilizar como referência.
+- Selecione "New" e altere "Generated Type" para "Color Grid". Obs.: Essa imagem não é salva em seu computador, ela existe apenas no "cache" do Blender.
+- A imagem de teste serve para verificar se a orientação da textura está correta, se existem distorções na textura, etc.
