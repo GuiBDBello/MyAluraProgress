@@ -41,3 +41,21 @@ A projeção planar vai tomar como base um plano para criar o mapa UV (é um tip
 A projeção esférica vai abrir a malha do objeto como se ele fosse uma esfera, gerando um corte de cima a baixo do objeto.
 
 Também existe a projeção em caixa, que é a mais básica e que vimos nos primeiros vídeos.
+
+## Organizando a UV da espada
+
+### Abrindo a UV da lâmina
+
+- A UV só aparece quando o objeto selecionado está no "Edit Mode".
+- No UV Editor só aparecem as **faces selecionadas** do modelo 3D.
+- Utilize a tecla de atalho "A" para mostrar o UV completo do objeto selecionado.
+- "UV Sync Selection": Sincroniza a seleção das faces da UV com as faces do objeto em outras Viewports. O botão se encontra no canto superior esquerdo da janela "UV Editor".
+
+#### Projetar UV
+
+- É possível alterar o "modo de projeção" para faces específicas. Para isso, selecione as faces desejadas e selecione o tipo de "Unwrap" desejado.
+- Para objetos simples é possível abrir o UV da seguinte forma:
+1) Alterar o Viewpoint para o eixo X (Numpad 3)
+2) Selecionar todas as faces do lado X do objeto
+3) Selecionar no menu "UV" a opção "Project From View".
+- A parte da frente do objeto deve ser corretamente representada na janela "UV Editor". Após isso, você pode escalar, movimentar e ajustar a UV livremente no "UV Editor".
