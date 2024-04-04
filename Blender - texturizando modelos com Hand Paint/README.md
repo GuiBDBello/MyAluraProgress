@@ -59,3 +59,9 @@ Também existe a projeção em caixa, que é a mais básica e que vimos nos prim
 2) Selecionar todas as faces do lado X do objeto
 3) Selecionar no menu "UV" a opção "Project From View".
 - A parte da frente do objeto deve ser corretamente representada na janela "UV Editor". Após isso, você pode escalar, movimentar e ajustar a UV livremente no "UV Editor".
+
+### A UV do cabo com UNWRAP
+
+- Shift + H: Oculta todos os objetos, exceto o objeto selecionado.
+- Seleção de aresta + Shift + Alt + Botão esquerdo do mouse: "Loop selection". Seleciona o "corte" do modelo 3D.
+- Ao selecionar um "corte" inteiro da espada (por exemplo, a parte da frente, a parte de trás, a parte do lado, etc.) é possível clicar com o botão direito do mouse e selecionar "Mark Seam". Isso "separa" aquele pedaço selecionado para que o Blender saiba como separar a malha da melhor forma ao mapear o UV.
