@@ -72,3 +72,12 @@ Também existe a projeção em caixa, que é a mais básica e que vimos nos prim
 - Na janela "UV Editor" é possível abrir uma imagem para utilizar como referência.
 - Selecione "New" e altere "Generated Type" para "Color Grid". Obs.: Essa imagem não é salva em seu computador, ela existe apenas no "cache" do Blender.
 - A imagem de teste serve para verificar se a orientação da textura está correta, se existem distorções na textura, etc.
+
+### Resolução e Mapa UV
+
+- Quanto maior as faces no UV Editor, maior a resolução da textura aplicada na face. Quanto menor a face, menor a resolução da textura.
+- Para jogos, os modelos 3D possuem toda a sua "pintura" em apenas uma textura. Uma forma de fazer isso é:
+1) Selecionar todas as partes do objeto e pressionar "Ctrl + J" para juntar todas as partes em um objeto só.
+2) Pressionar "Tab" para entrar no modo de edição do objeto.
+3) Pressionar "A" para selecionar todas as faces.
+4) No menu "UV" selecione "Pack Islands". O Blender "encaixa" todas as UVs no espaço definido para texturização.
