@@ -81,3 +81,11 @@ Também existe a projeção em caixa, que é a mais básica e que vimos nos prim
 2) Pressionar "Tab" para entrar no modo de edição do objeto.
 3) Pressionar "A" para selecionar todas as faces.
 4) No menu "UV" selecione "Pack Islands". O Blender "encaixa" todas as UVs no espaço definido para texturização.
+
+## Técnica de pintura Hand Painting
+
+### Organizando materiais
+
+- Para começar a pintura, troque o layout do Blender para "Texture Paint".
+- Crie uma textura para cada parte da espada.
+- As texturas do Blender, quando criadas, ficam apenas em "cache" no Blender. Para salvar a textura em um arquivo, no Layout "Texture Paint", vá na janela "Paint", selecione "Image" e "Save".
