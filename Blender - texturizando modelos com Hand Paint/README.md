@@ -89,3 +89,31 @@ Também existe a projeção em caixa, que é a mais básica e que vimos nos prim
 - Para começar a pintura, troque o layout do Blender para "Texture Paint".
 - Crie uma textura para cada parte da espada.
 - As texturas do Blender, quando criadas, ficam apenas em "cache" no Blender. Para salvar a textura em um arquivo, no Layout "Texture Paint", vá na janela "Paint", selecione "Image" e "Save".
+
+### Como pintar a lâmina
+
+- É possível utilizar uma imagem de referência para pintar seu objeto. Na janela esquerda do layout "Texture Paint", adicione uma nova janela verticalmente, e no menu superior esquerdo altere o modo de "Paint" para "View", então selecione a imagem de referência.
+- Para pintar simetricamente em ambos lados do modelo (por exemplo, na frente e atrás) deve-se selecionar o ícone "Enable mesh symmetry in the X axis." que se encontra no canto superior direito da janela "Texture Paint".
+- Ctrl + Spacebar: Aplica tela cheia na janela em destaque.
+- F: Altera o Radius do Brush.
+
+### Dicas de Hand Painting
+
+- Alt + S: Salva a textura.
+- Para facilitar a pintura, é possível habilitar o Wireframe no menu superior direito, em Overlays > Geometry > Wireframe.
+- Para pintar apenas algumas faces específicas, mude para o Edit Mode, selecione as faces que você deseja pintar, volte ao Texture Paint e selecione "Paint Mask" ao lado de "Texture Paint".
+
+#### Tipos de Brush
+
+- Draw: Pinta utilizando o pincel e cor base.
+- Soften: Suaviza a pintura entre um tom e outro.
+- Smear: "Arrasta" a cor selecionada para o resto da pintura.
+- Clone (carimbo): Copia de uma área da imagem e cola em outra.
+- Fill: Preenche o local selecionado.
+- Mask: Não será utilizado nesse curso.
+
+#### Propriedades do Brush
+
+- Brush: Altera o formato do pincel.
+- Stroke: Altera como a linha do pincel funciona.
+- Falloff: Auxilia bastante quem usa mouse. Altera a intensidade do pincel do seu centro às bordas.
