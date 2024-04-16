@@ -117,3 +117,10 @@ Também existe a projeção em caixa, que é a mais básica e que vimos nos prim
 - Brush: Altera o formato do pincel.
 - Stroke: Altera como a linha do pincel funciona.
 - Falloff: Auxilia bastante quem usa mouse. Altera a intensidade do pincel do seu centro às bordas.
+
+### Para saber mais: atalhos para o Hand Painting
+
+- F: Entra no modo de definição do tamanho do brush. Preste atenção: é apertar "F" arrastar para direita ou para a esquerda e dar um clique para confirmar o tamanho escolhido.
+- Botão direito do mouse: Aparece uma janela flutuante onde você pode definir as configurações de tamanho, força e cor do seu brush.
+- S: Acessar o conta gotas. Porém diferentemente de uma ferramenta a conta gotas, ela ficará ativa enquanto o "S" estiver pressionado e, ao soltá-lo, significa que a cor desejada foi pega.
+- Shift + Spacebar: Trocar de forma rápida entre as ferramentas de pintura como o brush, a smudge, o blur, a carimbo ou o balde de tintas. A lista rápida das ferramentas vai aparecer. Assim que esse menu aparecer, basta pressionar 1 até o 6 para selecionar qual ferramenta você quer utilizar.
