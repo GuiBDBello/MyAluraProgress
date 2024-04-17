@@ -146,3 +146,7 @@ Também bastante usado na indústria de games e cinematográfica, por suportar p
 #### Formato 3DS
 
 Esse é um formato nativo da Autodesk, uma empresa que consolidou o uso de 3D no mercado. É um dos formatos mais antigos e abrange setores da arquitetura, engenharia e até mesmo na área educacional, que utiliza o 3D como apoio.
+
+### O portfólio 3D
+
+- https://sketchfab.com/GuiBDBello
