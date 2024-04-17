@@ -124,3 +124,25 @@ Também existe a projeção em caixa, que é a mais básica e que vimos nos prim
 - Botão direito do mouse: Aparece uma janela flutuante onde você pode definir as configurações de tamanho, força e cor do seu brush.
 - S: Acessar o conta gotas. Porém diferentemente de uma ferramenta a conta gotas, ela ficará ativa enquanto o "S" estiver pressionado e, ao soltá-lo, significa que a cor desejada foi pega.
 - Shift + Spacebar: Trocar de forma rápida entre as ferramentas de pintura como o brush, a smudge, o blur, a carimbo ou o balde de tintas. A lista rápida das ferramentas vai aparecer. Assim que esse menu aparecer, basta pressionar 1 até o 6 para selecionar qual ferramenta você quer utilizar.
+
+### Para saber mais: formatos de 3D
+
+#### Formato STL
+
+Esse é um formato que vem ganhando muito espaço, pois ele é ótimo de ser utilizado no segmento de prototipagem rápida. Para quem utiliza uma impressora 3D, esse é o formato que vai ser reconhecido para gerar os modelos na vida real.
+
+#### Formato OBJ
+
+Esse formato é o mais famoso entre os formatos 3D. Ele também pode ser usado em impressões 3D, bem como compartilhar entre vários outros softwares 3D. Eu faria a referência de que o OBJ é o JPG do mundo 3D, pois todos os softwares 3D acabam por entender esse formato.
+
+#### Formato FBX
+
+O FBX é um formato usado bastante na indústria de games, pelas propriedades que são armazenadas no seu arquivo, e por ser um formato adotado pela empresa Autodesk em 2006.
+
+#### Formato COLLADA ou DAE
+
+Também bastante usado na indústria de games e cinematográfica, por suportar propriedades de animação, textura e geometria do objeto, é bastante aceito por esses mercados.
+
+#### Formato 3DS
+
+Esse é um formato nativo da Autodesk, uma empresa que consolidou o uso de 3D no mercado. É um dos formatos mais antigos e abrange setores da arquitetura, engenharia e até mesmo na área educacional, que utiliza o 3D como apoio.
