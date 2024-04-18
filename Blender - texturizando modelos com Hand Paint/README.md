@@ -125,6 +125,8 @@ Também existe a projeção em caixa, que é a mais básica e que vimos nos prim
 - S: Acessar o conta gotas. Porém diferentemente de uma ferramenta a conta gotas, ela ficará ativa enquanto o "S" estiver pressionado e, ao soltá-lo, significa que a cor desejada foi pega.
 - Shift + Spacebar: Trocar de forma rápida entre as ferramentas de pintura como o brush, a smudge, o blur, a carimbo ou o balde de tintas. A lista rápida das ferramentas vai aparecer. Assim que esse menu aparecer, basta pressionar 1 até o 6 para selecionar qual ferramenta você quer utilizar.
 
+## Criando o portfólio
+
 ### Para saber mais: formatos de 3D
 
 #### Formato STL
