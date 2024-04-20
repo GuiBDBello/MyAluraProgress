@@ -40,3 +40,11 @@ Essa é a etapa que vamos entender melhor durante o curso: a construção **Poly
 A retopologia é um termo usado para definir o processo de pegar o modelo esculpido, sem limites de polígono e nem organização de malha, e remodelar em cima dessa escultura, organizando sua malha para que seja funcional em animações e engines de games e também para reduzir a quantidade de faces (polígonos) e otimizar o peso do modelo.
 
 Após esses processos, as próximas etapas são animação, texturização entre outras, mas que já não fazem mais parte do processo de modelagem em si.
+
+### Organizando o Blender
+
+- Criar novas áreas com visão ortogonal para visualizar as referências.
+- Adicionar as imagens de referência.
+- Desabilitar os Overlays "Floor", "X" e "Y".
+- Acessar "Edit > Preferences... > Keymap" e habilitar "Tab for Pie Menu".
+- Habilitar os filtros de seleção de objetos no menu de Hierarquia da cena, e desabilitar a seleção das referências.
