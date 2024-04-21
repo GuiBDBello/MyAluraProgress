@@ -48,3 +48,17 @@ Após esses processos, as próximas etapas são animação, texturização entre
 - Desabilitar os Overlays "Floor", "X" e "Y".
 - Acessar "Edit > Preferences... > Keymap" e habilitar "Tab for Pie Menu".
 - Habilitar os filtros de seleção de objetos no menu de Hierarquia da cena, e desabilitar a seleção das referências.
+
+## Modelando a cabeça
+
+- Criar um objeto plano (Shift + A > Mesh > Plane).
+- Posicionar centralizado na imagem de referência.
+- Criar um ponto de referência.
+    - Alterar o ponto de origem (Shift + Botão direito do mouse) para o centro da face.
+    - Shift + A > Empty > Plain Axes
+- Criar um loop cut (Ctrl + R) na vertical.
+- Deletar a face da esquerda.
+- Adicionar modificador Mirror
+    - Verificar se o "Axis" habilitado está correto.
+    - Em "Mirror Object", selecione o objeto Plain Axes criado acima.
+    - Habilitar "Clipping" e "Merge"
