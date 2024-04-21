@@ -93,3 +93,11 @@ Podemos também usar esses Adds de maneira externa, ou seja, baixar ou comprar e
     - Selecione a aresta da lateral e faça a extrusão para o centro da cabeça.
     - Para evitar a utilização de triângulos, selecione dois vértices e pressione "M", e selecione "Merge At Center" para ir "fechando" a lateral da cabeça, e mantendo o fluxo da malha.
 - Selecione duas arestas próximas e pressione "F" para juntá-las, criando uma nova face.
+
+### Modelando a orelha
+
+- Ao criar um novo Mesh dentro do modo de edição, o novo Mesh fará parte do objeto existente.
+- "L": Seleciona todos os elementos linkados àquele objeto 3D.
+- "Shift + H": Esconde todos os objetos da sua visão, exceto o que está selecionado.
+- "Alt + H": Mostra todos os objetos na sua visão.
+- Para juntar os dois objetos, delete as faces que vão se juntar, selecione os vértices dos dois objetos e pressione "M" > "Merge At Center".
