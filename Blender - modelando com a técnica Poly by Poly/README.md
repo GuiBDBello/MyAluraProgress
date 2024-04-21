@@ -86,3 +86,10 @@ Podemos também usar esses Adds de maneira externa, ou seja, baixar ou comprar e
 - Comece selecionando as arestas superior e inferior e use a extrusão para moldar a visão lateral da referência.
 - Dica: não faça muitas extrusões, deixe o objeto mais "quadrado". Não é necessário muito detalhamento nessa fase da criação do modelo 3D. É assim que a modelagem "Poly by poly" funciona, primeiro faça o simples para depois ir para o complexo.
 - Selecione uma das arestas laterais, e então segurando Alt, selecione a aresta adjacente, para que todo o "corte" lateral seja selecionado. O processo a seguir é: extrusão ("E"), escala ("S"), posicionamento ("G"). Mas atenção: Não "feche" a cabeça, pois terá problemas com o fluxo de malha. Faça esse processo até a orelha, e depois no curso veremos como fechar a cabeça.
+
+### Fluxo de malha
+
+- Para a lateral da face, é possível utilizar a ferramenta "Poly builder" ou realizar a extrusão das arestas.
+    - Selecione a aresta da lateral e faça a extrusão para o centro da cabeça.
+    - Para evitar a utilização de triângulos, selecione dois vértices e pressione "M", e selecione "Merge At Center" para ir "fechando" a lateral da cabeça, e mantendo o fluxo da malha.
+- Selecione duas arestas próximas e pressione "F" para juntá-las, criando uma nova face.
