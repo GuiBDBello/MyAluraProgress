@@ -101,3 +101,26 @@ Podemos também usar esses Adds de maneira externa, ou seja, baixar ou comprar e
 - "Shift + H": Esconde todos os objetos da sua visão, exceto o que está selecionado.
 - "Alt + H": Mostra todos os objetos na sua visão.
 - Para juntar os dois objetos, delete as faces que vão se juntar, selecione os vértices dos dois objetos e pressione "M" > "Merge At Center".
+
+### Para saber mais: Join e Merge
+
+#### JOIN
+
+A propriedade Join tem como objetivo unir dois **OBJETOS** distintos, por exemplo: se formos modelar um carro, será um modelo composto por várias formas e, por mais simples que seja, teremos o chassi do carro e os pneus de forma separada.
+
+Ao usar a propriedade **JOIN**, estamos informando para o Blender que os dois objetos que foram criados e modelados de forma separada agora fazem parte de uma coisa só, ambos se tornaram um objeto único.
+
+Usamos essa propriedade para conseguir reduzir a quantidade de objetos, vincular duas malhas distintas em uma única malha (como fizemos com a orelha do nosso personagem), organizar elementos entre outras funções a depender do projeto.
+
+#### MERGE
+
+A propriedade de **MERGE** tem como finalidade unir as propriedades básicas do objeto. Quando usamos a propriedade JOIN, apesar dos dois objetos agora fazerem parte de uma coisa só dentro da sua edição, o Blender consegue entender que são duas coisas distintas e, por isso, eles não estão de fato juntos.
+
+Com o **MERGE** sendo usado, podemos selecionar o vértice de um com o vértice de outro objeto e mesclá-los em um só. Existem algumas formas de executar essa tarefa, são elas:
+
+- *Merge at center* - Vai unir no centro dos dois ou mais vértices selecionados.
+- *Merge at cursor* - Vai unir baseado onde o cursor se encontra.
+- *Collapse* - Vai unir os vértices ao centro mas individualmente entre objetos unidos.
+- *Merge at last* - Vai unir todos os vértices em cima do último vértice selecionado.
+- *Merge at first* - Vai unir todos os vértices em cima do primeiro vértice selecionado.
+- *Merge by distance* - Vai unir os vértices baseado em uma distância mínima definida dentro do Blender.
