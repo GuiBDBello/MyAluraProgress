@@ -51,6 +51,8 @@ Após esses processos, as próximas etapas são animação, texturização entre
 
 ## Modelando a cabeça
 
+### Iniciando a cabeça
+
 - Criar um objeto plano (Shift + A > Mesh > Plane).
 - Posicionar centralizado na imagem de referência.
 - Criar um ponto de referência.
@@ -62,3 +64,19 @@ Após esses processos, as próximas etapas são animação, texturização entre
     - Verificar se o "Axis" habilitado está correto.
     - Em "Mirror Object", selecione o objeto Plain Axes criado acima.
     - Habilitar "Clipping" e "Merge"
+
+### Para saber mais: Add-ons
+
+O Blender é uma ferramenta open source, ou seja, é uma ferramenta em que a comunidade que a utiliza tem liberdade de interagir com seu código-fonte para indicar novas funcionalidades e corrigir problemas.
+
+Essa liberdade é o que incentiva a criação de muitos Add-ons, que é a mesma coisa que “plugins para a ferramenta”. Existem vários desses já inseridos no Blender, assim como outros que você pode baixar e instalar para auxiliar em seu projeto.
+
+#### ADD-ON INTERNO
+
+Para encontrá-los, podemos ir em EDIT > PREFERENCES > ADD-ON
+
+Podemos, por exemplo, habilitar um ADD-ON cujo nome é CELL FRACTURE, que permite criar um elemento quebrado de forma rápida e simples. Caso queira trabalhar com animação de simulação, onde algo vai ser “espatifado”, esse é um ótimo ADD-ON para se utilizar.
+
+#### ADD-ON EXTERNO
+
+Podemos também usar esses Adds de maneira externa, ou seja, baixar ou comprar em algum site para inseri-los no Blender e utilizá-los.
