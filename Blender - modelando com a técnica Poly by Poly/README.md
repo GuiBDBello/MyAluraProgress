@@ -80,3 +80,9 @@ Podemos, por exemplo, habilitar um ADD-ON cujo nome é CELL FRACTURE, que permit
 #### ADD-ON EXTERNO
 
 Podemos também usar esses Adds de maneira externa, ou seja, baixar ou comprar em algum site para inseri-los no Blender e utilizá-los.
+
+### Dando forma à cabeça
+
+- Comece selecionando as arestas superior e inferior e use a extrusão para moldar a visão lateral da referência.
+- Dica: não faça muitas extrusões, deixe o objeto mais "quadrado". Não é necessário muito detalhamento nessa fase da criação do modelo 3D. É assim que a modelagem "Poly by poly" funciona, primeiro faça o simples para depois ir para o complexo.
+- Selecione uma das arestas laterais, e então segurando Alt, selecione a aresta adjacente, para que todo o "corte" lateral seja selecionado. O processo a seguir é: extrusão ("E"), escala ("S"), posicionamento ("G"). Mas atenção: Não "feche" a cabeça, pois terá problemas com o fluxo de malha. Faça esse processo até a orelha, e depois no curso veremos como fechar a cabeça.
