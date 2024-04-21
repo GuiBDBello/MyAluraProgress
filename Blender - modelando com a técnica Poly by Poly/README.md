@@ -124,3 +124,12 @@ Com o **MERGE** sendo usado, podemos selecionar o vértice de um com o vértice 
 - *Merge at last* - Vai unir todos os vértices em cima do último vértice selecionado.
 - *Merge at first* - Vai unir todos os vértices em cima do primeiro vértice selecionado.
 - *Merge by distance* - Vai unir os vértices baseado em uma distância mínima definida dentro do Blender.
+
+## Modelando o corpo
+
+### Modelando braços e pernas
+
+- Ferramenta "Snap": A ferramenta Snap "gruda" vértices/arestas/faces durante o "Transform, porém mantém os dois separados.
+    - Habilitar a ferramenta "Snap" e alterar "Snap To" de "Increment" para "Vertex".
+- "N": Propriedades.
+    - "N" > Tool > Options > "Auto Merge": Ativando o "Auto Merge" juntamente com o "Snap", habilita a fusão de vértices próximos durante o "Transform".
