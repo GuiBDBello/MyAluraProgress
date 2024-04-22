@@ -158,3 +158,9 @@ Ela possui também formas distintas de uso, como:
 - *Selection*: Separa o que está selecionado;
 - *Faces by Edges*: Separa a edge da face selecionada;
 - *Faces e Edges by vertex*: Separa os vértices das faces selecionadas.
+
+## Modelando os acessórios
+
+### Criando a roupa
+
+- Edge slide: Ferramenta que permite movimentar um loop cut inteiro pela sua malha.
