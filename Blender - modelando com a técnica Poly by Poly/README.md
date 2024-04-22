@@ -169,3 +169,23 @@ Ela possui também formas distintas de uso, como:
 
 - "P": Separate. Gera um novo objeto com as vértices/arestas/faces selecionadas.
 - Solidify: Modificador que "solidifica" planos, dando "grossura" (thickness) a eles.
+
+### Para saber mais: modificadores
+
+#### MIRROR
+
+Imagem da metade do modelo da cabeça de um macaco sendo aplicado o efeito mirror e espelhando a cabeça
+
+Esse modificador é exatamente o que a tradução do seu nome indica: um espelho. Ele é o modificador que usamos para conseguir espelhar um objeto para que seja possível modelá-lo de forma simétrica. É também muito usado na criação de outros tipos de modelo que são menos orgânicos e mais arquitetônicos.
+
+#### SOLIDIFY
+
+Ele permite criar uma camada sólida nos objetos, o que é muito útil para criar uma espessura a partir de um plano, como em nosso modelo, no momento de criar o cinto, por exemplo.
+
+#### SUBDIVISION SURFACE
+
+Esse modificador tem a função de inserir mais faces de forma automática em seu objeto para que ele fique com a malha mais suave. Normalmente é usado no final do modelo, para deixar suas bordas e elementos mais suaves.
+
+#### BEVEL
+
+Usamos esse modificador em vários momentos. Ele é o responsável por criar um corte nas bordas do objeto e em português ele é chamado de “chanfro”. É muito útil para suavizar pontas acentuadas nos objetos.
