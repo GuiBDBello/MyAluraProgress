@@ -133,3 +133,28 @@ Com o **MERGE** sendo usado, podemos selecionar o vértice de um com o vértice 
     - Habilitar a ferramenta "Snap" e alterar "Snap To" de "Increment" para "Vertex".
 - "N": Propriedades.
     - "N" > Tool > Options > "Auto Merge": Ativando o "Auto Merge" juntamente com o "Snap", habilita a fusão de vértices próximos durante o "Transform".
+
+### Para saber mais: Separate e Split
+
+#### SEPARATE
+
+Separate tem o nome auto-explicativo. Quando usamos essa propriedade em um objeto, estamos **destacando as partes selecionadas** do objeto real e, quando estamos no modo de edição de objeto, podemos selecionar suas faces de forma independente e é exatamente por esse motivo que podemos destacar essas partes. O interessante é que esse objeto vai se tornar algo novo e que pode ser selecionado dentro do modo de objeto.
+
+Essa propriedade é importante, pois imagine se você estiver modelando um braço, mas ao uni-lo de forma equivocada ou se por algum motivo você quiser destacar essa parte do modelo para fazer algum ajuste, é possível usar o separate.
+
+Para encontrar o separate, basta ir até o Menu>Mesh>Separate ou apertar a tecla de atalho P e dentro das suas propriedades temos:
+
+- *Separate Selection*: Como o nome diz, essa função pega o que está selecionado e faz a separação do objeto real;
+- *Separate by Material*: Esse método de separação identifica todos os materiais diferentes aplicados no objeto e os separa;
+- *Separate by Loose parts*: Esse método vai identificar todos os objetos que não estão vinculados em uma única malha, mas que ainda fazem parte do mesmo objeto. O Separate by Loose faz o contrário da ferramenta JOIN (lembra dela?): tudo o que foi dado “join” volta a ser separado.
+Importante: o separate é muito útil para trabalhar em modelos mais complexos.
+
+#### SPLIT
+
+Essa propriedade separa partes do objeto sem criar um novo. Ela faz o contrário do que a propriedade Merge, então se quisermos separar uma face do objeto podemos apenas aplicar a propriedade MESH > SPLIT.
+
+Ela possui também formas distintas de uso, como:
+
+- *Selection*: Separa o que está selecionado;
+- *Faces by Edges*: Separa a edge da face selecionada;
+- *Faces e Edges by vertex*: Separa os vértices das faces selecionadas.
