@@ -164,3 +164,8 @@ Ela possui também formas distintas de uso, como:
 ### Criando a roupa
 
 - Edge slide: Ferramenta que permite movimentar um loop cut inteiro pela sua malha.
+
+### Modelando o cinto
+
+- "P": Separate. Gera um novo objeto com as vértices/arestas/faces selecionadas.
+- Solidify: Modificador que "solidifica" planos, dando "grossura" (thickness) a eles.
