@@ -189,3 +189,13 @@ Esse modificador tem a função de inserir mais faces de forma automática em se
 #### BEVEL
 
 Usamos esse modificador em vários momentos. Ele é o responsável por criar um corte nas bordas do objeto e em português ele é chamado de “chanfro”. É muito útil para suavizar pontas acentuadas nos objetos.
+
+## Textura e finalização
+
+### Colorindo o personagem
+
+- Ctrl + I: Inverte a seleção.
+
+### Inserindo a espada
+
+- "File > Append...": Adiciona outros modelos 3D feitos no Blender em seu projeto atual.
