@@ -1,0 +1,72 @@
+# Blender 4.1.1 MTL File: 'model.blend'
+# www.blender.org
+
+newmtl Background
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.420882 0.802331 0.802331
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl Base
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd C:/Users/guilh/workspaces/workspace-guibdbello/MyAluraProgress/Blender - texturizando modelos com Hand Paint/base-texture.png
+
+newmtl Blade
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd C:/Users/guilh/workspaces/workspace-guibdbello/MyAluraProgress/Blender - texturizando modelos com Hand Paint/blade-texture.png
+
+newmtl Grip
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/guilh/workspaces/workspace-guibdbello/MyAluraProgress/Blender - texturizando modelos com Hand Paint/grip-texture.png
+
+newmtl Guard
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd C:/Users/guilh/workspaces/workspace-guibdbello/MyAluraProgress/Blender - texturizando modelos com Hand Paint/guard-texture.png
+
+newmtl Jewel
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/guilh/workspaces/workspace-guibdbello/MyAluraProgress/Blender - texturizando modelos com Hand Paint/jewel-texture.png
+
+newmtl Texture
+Ns 62.500000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd char-texture.png
