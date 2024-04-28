@@ -50,3 +50,19 @@ Imagem da janela de nonlinear animation
 Esta janela é responsável por criar animações baseadas em ações criadas pela pessoa animadora. Por exemplo, podemos criar um bloco de animação da personagem andando e reutilizar esse bloco de animação sempre que for preciso.
 
 Essa janela permite visualizar os Sets de animação que exportamos para as engines de games quando queremos que a personagem tenha a ação de pular, andar, correr etc.
+
+### Entendendo os keyframes
+
+- Z: Altera modo de visualização.
+- As propriedades dos objetos estão no sub-menu "Object Properties", na janela de propriedades.
+- A animação no Blender consiste em:
+    - Selecionar frame inicial
+    - Definir estado inicial do objeto
+    - Marcar quadro-chave
+    - Selecionar próximo frame
+    - Modificar estado do objeto
+    - Marcar quadro-chave novamente
+- É possível animar qualquer propriedade de um objeto que possua o ícone de um "ponto" (Animate property) no lado da propriedade.
+- A animação funciona baseado em "quadros-chave" (keyframes). O Blender interpreta os valores que deve salvar o estado do objeto.
+- I: Adicionar keyset.
+- K: Adicionar keyset por grupo/tipo.
