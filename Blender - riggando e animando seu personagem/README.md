@@ -79,3 +79,14 @@ Essa janela permite visualizar os Sets de animação que exportamos para as engi
     - Bone Properties: propriedades do osso.
     - Bone Constraint Properties: propriedades das "tensões" que o osso possui.
 - Para começar, selecione a Armature/Bone > Object Data Properties > Viewport Display, marcar "Name" e "In Front".
+
+### Montando o esqueleto
+
+- Numpad 1: Visão -Y.
+- Ctrl + Numpad 1: Visão Y.
+- Numpad 3: Visão X.
+- Selecionar o osso e pressionar Tab para mudar para o "Edit Mode".
+- Selecionar a "saída" do osso e pressionar "E" para extrusão de um novo osso. Isso cria uma estrutura em "família" dos ossos, em que cada osso novo é dependente do osso anterior. Ou seja, se movimentar um osso, também irá movimentar os ossos criados a partir dele.
+- É importante renomear os ossos para seguir um padrão.
+- No modo edição de um osso, Shift + A: Cria um novo osso.
+- Após criar os ossos de um lado, selecione todos os ossos, por exemplo, do lado direito, e então no menu superior "Armature", selecione "Names > Auto-Name Left-Right".
