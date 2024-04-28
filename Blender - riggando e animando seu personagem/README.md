@@ -125,3 +125,10 @@ O Blender reconhece outras extensões além de apenas L ou R, esta é a lista de
     - Faça isso para todas as "juntas" do personagem.
     - Quando finalizar, selecione algum dos ossos e, no sub-menu "Object Data Properties", em Viewport Display, deselecione "Names" e "In Front". Isso facilitará a etapa de animação do personagem.
 - Selecionar todos os ossos do lado direito, clicar com o botão direito do mouse e selecionar "Symmetrize" para criar os ossos do lado esquerdo.
+
+## Pintura de peso
+
+### Vinculando a malha
+
+- Selecione o modelo 3D do personagem e simultaneamente selecione a Armature. Pressione Ctrl + P > With Automatic Weights. Isso define automaticamente o peso que cada osso tem na malha.
+- Weight Painting: Definição da área que o osso vai movimentar em sua malha. Quando mais "quente" a cor, maior a interferência daquele osso na malha. Quanto mais "fria", menor a interferência.
