@@ -66,3 +66,16 @@ Essa janela permite visualizar os Sets de animação que exportamos para as engi
 - A animação funciona baseado em "quadros-chave" (keyframes). O Blender interpreta os valores que deve salvar o estado do objeto.
 - I: Adicionar keyset.
 - K: Adicionar keyset por grupo/tipo.
+
+## Animação por Bones
+
+### O que são Bones
+
+- Para modelar um personagem, é utilizado uma "Armature".
+- Armature: são os "ossos" do personagem. Deve ser vinculado à malha do objeto para quando movimentar o osso, a malha seja movimentada também.
+- Dica: antes de criar a Armature, verifique se o personagem está apontando para o eixo Y. Se não estiver, podem ocorrer problemas com as técnicas de simetria, técnicas de espelho com os ossos (o Blender pega como referência o eixo X).
+- Ao selecionar o osso, aparecem novos sub-menus na janela de propriedades:
+    - Object Data Properties: propriedades da Armature.
+    - Bone Properties: propriedades do osso.
+    - Bone Constraint Properties: propriedades das "tensões" que o osso possui.
+- Para começar, selecione a Armature/Bone > Object Data Properties > Viewport Display, marcar "Name" e "In Front".
