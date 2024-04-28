@@ -90,3 +90,22 @@ Essa janela permite visualizar os Sets de animação que exportamos para as engi
 - É importante renomear os ossos para seguir um padrão.
 - No modo edição de um osso, Shift + A: Cria um novo osso.
 - Após criar os ossos de um lado, selecione todos os ossos, por exemplo, do lado direito, e então no menu superior "Armature", selecione "Names > Auto-Name Left-Right".
+
+### Para saber mais: convenção de nomes
+
+#### OS BONES
+
+Os bones possuem propriedades distintas e sua organização afeta diretamente essas propriedades e script. Por isso, existe uma certa “convenção” no Blender para que você consiga nomear de forma correta os ossos para que ocorra tudo de maneira correta ao tentar espelhar ou aplicar outros tipos de script.
+
+De acordo com o próprio manual do Blender estas são as indicações:
+
+- Primeiro você deve dar nomes que tenham um bom significado aos ossos, como perna, braço, pé, etc.. Evite usar nomes vagos como bone01 ou parte_cima_perna.
+- Se você for criar bones que serão replicados depois como um espelho use os separadores:
+    - Esses separadores podem vir antes ou depois do nome “L_antebraco” ou “antebraco.R”: o L representa a palavra LEFT (esquerda) e o R representa a palavra RIGHT (direita)
+
+O Blender reconhece outras extensões além de apenas L ou R, esta é a lista de extensões que podem ser usadas nos nomes:
+- nada separando a palavra left ou right -> maoLeft → maoRight
+- “_” (símbolo de underline) -> mao_L → mao_R
+- “.” (símbolo de ponto) -> mao.l → mao.r
+- “-” (símbolo de traço) -> mao-l → mao-r
+- ” ” (símbolo de espaço) -> mao LEFT → mao RIGHT
