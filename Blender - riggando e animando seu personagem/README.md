@@ -109,3 +109,11 @@ O Blender reconhece outras extensões além de apenas L ou R, esta é a lista de
 - “.” (símbolo de ponto) -> mao.l → mao.r
 - “-” (símbolo de traço) -> mao-l → mao-r
 - ” ” (símbolo de espaço) -> mao LEFT → mao RIGHT
+
+### Criando as IK
+
+- Ctrl + P: Para vincular ossos separados, selecione ambos os ossos e então selecione no menu superior "Armature > Parent" a opção "Make" e então clique em "Keep Offset" (ou use as teclas de atalho).
+- IK (Inverse Kinematic): Tensão entre os ossos que causa um movimento "natural".
+- Para fazer o IK da perna, siga os passos:
+    - Edit Mode, extrusão de novo osso na "dobra", Alt + P > Clear Parent, selecionar osso, sub-menu "Bone Properties", desabilitar Deform. Isso ocorre pois esses elementos não se comportarão como ossos, mas sim como "Controladores".
+    - Pose Mode, selecione o osso oposto adjacente ao osso do IK, sub-menu "Bone Constraint Properties" > Add Bone Constraint > Tracking > Inverse Kinematics. Em "Target", selecione a Armature. Em "Bone", selecione o osso oposto adjacente (o osso criado para o IK). Desmarcar "Use Tail". Em "Chain Lenght", selecionar a quantidade de ossos até o osso Root. Em "Pole Target", selecione Armature, e em "Bone", selecione o IK do joelho. Caso o pé rotacionar, altere o "Pole Angle" para 90°.
