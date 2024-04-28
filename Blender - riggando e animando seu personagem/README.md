@@ -117,3 +117,11 @@ O Blender reconhece outras extensões além de apenas L ou R, esta é a lista de
 - Para fazer o IK da perna, siga os passos:
     - Edit Mode, extrusão de novo osso na "dobra", Alt + P > Clear Parent, selecionar osso, sub-menu "Bone Properties", desabilitar Deform. Isso ocorre pois esses elementos não se comportarão como ossos, mas sim como "Controladores".
     - Pose Mode, selecione o osso oposto adjacente ao osso do IK, sub-menu "Bone Constraint Properties" > Add Bone Constraint > Tracking > Inverse Kinematics. Em "Target", selecione a Armature. Em "Bone", selecione o osso oposto adjacente (o osso criado para o IK). Desmarcar "Use Tail". Em "Chain Lenght", selecionar a quantidade de ossos até o osso Root. Em "Pole Target", selecione Armature, e em "Bone", selecione o IK do joelho. Caso o pé rotacionar, altere o "Pole Angle" para 90°.
+
+### Criando controladores
+
+- Shift + A > Mesh > Circle: Criar um circulo que servirá como controlador do seu rig.
+    - No "Pose Mode", selecionar o osso, e no sub-menu "Bone Properties" > Viewport Display > Custom Shape, selecionar o círculo criado anteriormente.
+    - Faça isso para todas as "juntas" do personagem.
+    - Quando finalizar, selecione algum dos ossos e, no sub-menu "Object Data Properties", em Viewport Display, deselecione "Names" e "In Front". Isso facilitará a etapa de animação do personagem.
+- Selecionar todos os ossos do lado direito, clicar com o botão direito do mouse e selecionar "Symmetrize" para criar os ossos do lado esquerdo.
