@@ -132,3 +132,18 @@ O Blender reconhece outras extensões além de apenas L ou R, esta é a lista de
 
 - Selecione o modelo 3D do personagem e simultaneamente selecione a Armature. Pressione Ctrl + P > With Automatic Weights. Isso define automaticamente o peso que cada osso tem na malha.
 - Weight Painting: Definição da área que o osso vai movimentar em sua malha. Quando mais "quente" a cor, maior a interferência daquele osso na malha. Quanto mais "fria", menor a interferência.
+
+### Pintura de peso
+
+- Tab > "Weight Paint": Acessa o modo de pintura de peso.
+- Acessar o sub-menu "Object Data Properties".
+    - Em Vertex Groups, vemos os ossos. Ao selecionar um osso, é possível ver quais vértices são afetados por aquele osso.
+    - De forma similar ao Texture Paint, podemos pintar o peso do modelo 3D com pincéis.
+    - Para pintar, selecione o osso, defina o "Weight" do pincel, e clique em um vértice para pintar.
+- Outra forma de fazer a pintura de peso é pelo modo "Edit Mode", no sub-menu "Object Data Properties":
+    - Selecione utilizando a tecla "L" os grupos de vértices que você deseja pintar.
+    - Em Vertex Groups, selecione o osso, altere o "Weight" e pressione "Assign".
+- Habilitar novamente a visão dos ossos em "Object Data Properties" > Viewport Display > In Front. Após isso, selecione o osso, segure Shift e selecione a mesh, e então Tab > "Weight Paint Mode".
+    - Verificar se "Paint Mask" está desabilitado ao lado do dropdown do tipo da janela "Weight Paint".
+- Utilizar a ferramenta "Mirror" para pintar ambos os lados do modelo.
+    - Abrir o menu lateral > Tool > Symmetry, marcar "Topology Mirror" e "Mirror X".
