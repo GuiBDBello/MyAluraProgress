@@ -172,3 +172,9 @@ Essa é uma etapa bastante importante na animação e existem profissionais para
 - Para vincular um objeto em uma posição, selecione o objeto e vá no sub-menu "Constraints" > Add Object Constraints > Transform > "Copy Location" e também selecione "Copy Rotation".
     - Em "Target", selecione a Armature.
     - Em "Bone" selecione a mão do personagem.
+
+## Finalizando a animação
+
+### Animando o personagem
+
+- Ao mexer um Bone no "Pose Mode", não é alterada a propriedade do sub-menu "Object", mas sim é alterada a propriedade do sub-menu "Bone".
