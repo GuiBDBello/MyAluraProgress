@@ -147,3 +147,19 @@ O Blender reconhece outras extensões além de apenas L ou R, esta é a lista de
     - Verificar se "Paint Mask" está desabilitado ao lado do dropdown do tipo da janela "Weight Paint".
 - Utilizar a ferramenta "Mirror" para pintar ambos os lados do modelo.
     - Abrir o menu lateral > Tool > Symmetry, marcar "Topology Mirror" e "Mirror X".
+
+### Para saber mais: pintura de peso
+
+Quando criamos o esqueleto (bones) e temos toda a estrutura feita do personagem ou objeto a ser animado na cena, chega o momento de pedir para o Blender entender que quando vamos movimentar o bone, o objeto também deve ser mover, como se fosse o nosso braço.
+
+Ao movimentar o cotovelo, eu movimento a mão junto e também o restante do braço, mas temos que lembrar que o que é lógico e simples para nós, humanos, não significa que é simples para o computador, então precisamos olhar para o Blender e definir qual osso do personagem vai movimentar qual parte do objeto. Isso é o que chamamos de **pintura de peso**.
+
+#### SKIN WEIGHT
+
+Ao vincular a malha 3D ao bone criado, o Blender define quais vértices desta malha vai atender qual osso, isso usando a técnica de pintura de peso automática, que foi a que usamos em aula.
+
+Mas por muitas vezes esse modo automático pode gerar pequenos problemas, como, juntamente com o ombro, movimentar parte da cabeça.
+
+Para evitar esse problema, usamos a pintura de peso, que nada mais é do que definir manualmente quais áreas do modelo devem ser alteradas para cada osso criado, dando assim um maior controle da animação final e da malha do objeto.
+
+Essa é uma etapa bastante importante na animação e existem profissionais para lidar especificamente com ela, que é uma das funções da pessoa artista técnica dentro de um estúdio de game.
