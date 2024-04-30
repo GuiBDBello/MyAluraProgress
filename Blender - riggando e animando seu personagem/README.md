@@ -163,3 +163,12 @@ Mas por muitas vezes esse modo automático pode gerar pequenos problemas, como, 
 Para evitar esse problema, usamos a pintura de peso, que nada mais é do que definir manualmente quais áreas do modelo devem ser alteradas para cada osso criado, dando assim um maior controle da animação final e da malha do objeto.
 
 Essa é uma etapa bastante importante na animação e existem profissionais para lidar especificamente com ela, que é uma das funções da pessoa artista técnica dentro de um estúdio de game.
+
+### Objetos externos
+
+- File > Append...: Adiciona um objeto externo em seu projeto atual.
+- Para fazer o personagem "segurar" um objeto, deve-se alterar a origem do objeto (Botão direito do Mouse > Set Origin) para o local no objeto que o personagem irá segurar o objeto.
+    - **Obs.**: é possível alterar a "Origin" do objeto no menu de propriedades, sub-menu "Tool" (Active Tool and Workspace Settings) ao selecionar "Options > Transform > Affect Only > Origins".
+- Para vincular um objeto em uma posição, selecione o objeto e vá no sub-menu "Constraints" > Add Object Constraints > Transform > "Copy Location" e também selecione "Copy Rotation".
+    - Em "Target", selecione a Armature.
+    - Em "Bone" selecione a mão do personagem.
