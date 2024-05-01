@@ -210,3 +210,13 @@ Este método de animação é importante para a criação de games, pois é assi
 Por exemplo, ao apertar o botão que faz a personagem pular, a animação criada neste ciclo chamado “pular” vai ser executada, por isso, sem ter esse processo, levar a animação para engine de games é inviável.
 
 Mas como exportar isso para ser utilizado em outros ambientes? É uma dúvida que vamos solucionar agora no curso.
+
+### Exportando o personagem
+
+- Selecionar o personagem e a Armature
+- File > Export > FBX (.fbx)
+- Include > Limit to > Selecionar "Selected Object"
+- Object Types > Selecionar "Armature" e "Mesh"
+- Geometry > Selecionar "Apply Modifiers"
+- Bake Animation > Selecionar "Key All Bones" e "NLA Strips"
+- Export FBX
