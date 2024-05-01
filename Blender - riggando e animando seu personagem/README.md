@@ -178,3 +178,8 @@ Essa é uma etapa bastante importante na animação e existem profissionais para
 ### Animando o personagem
 
 - Ao mexer um Bone no "Pose Mode", não é alterada a propriedade do sub-menu "Object", mas sim é alterada a propriedade do sub-menu "Bone".
+
+### O que é NonLinear Animation
+
+- NonLinear Animation: Permite criar "blocos" de animação para reutilizar animações. É muito utilizado para criar animações para exportá-las para outros softwares.
+- Auto keyframe: Salva automaticamente os keyframes a cada mudança de estado dos objetos.
