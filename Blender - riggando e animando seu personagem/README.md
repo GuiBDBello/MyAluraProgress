@@ -183,3 +183,30 @@ Essa é uma etapa bastante importante na animação e existem profissionais para
 
 - NonLinear Animation: Permite criar "blocos" de animação para reutilizar animações. É muito utilizado para criar animações para exportá-las para outros softwares.
 - Auto keyframe: Salva automaticamente os keyframes a cada mudança de estado dos objetos.
+
+### Para saber mais: ciclos de animação
+
+Quando animamos um personagem ou um objeto em ambiente 3D, não finalizamos a animação em apenas um estado, pois a personagem, em alguns momentos, vai estar andando, correndo, parada, ou fazendo outra ação, e essas ações serão reutilizadas em outro momento, como andar, por exemplo.
+
+Devido a isso, podemos criar ciclos de animação para reutilizar em outros momentos. Essa técnica é usada para criar blocos de animações para games também.
+
+#### NonLinear Animation
+
+Para criar este blocos dentro do Blender, nós usamos a janela de animação não linear, que consiste em salvar em blocos de memória do arquivo sequências de animação, por exemplo, nós podemos ter duas animações padrões de um personagem, uma que vamos chamar de IDLE (estado parado) e wave (acenando).
+
+Para fazer uma animação mais complexa, é necessário migrar entre este dois estados de movimento, ou seja, em vez de reanimar tudo fazendo ele ficar parado, é usada a janela nonlinear animation, que é onde conseguimos utilizar e manipular estes estados animados.
+
+Basicamente, seu método funciona da seguinte maneira:
+
+- Criamos uma animação padrão na janela de keyframes do Blender
+- Após criar a animação, devemos ir na janela de nonlinear animation e clicar no botão PUSH.DOWN ACTION
+
+Ao fazer isso, já construímos um espaço na memória do Blender para armazenar aquele ciclo de animação.
+
+#### NonLinear Animation em games
+
+Este método de animação é importante para a criação de games, pois é assim que conseguimos exportar esse blocos para serem usados de maneira dinâmica em jogos.
+
+Por exemplo, ao apertar o botão que faz a personagem pular, a animação criada neste ciclo chamado “pular” vai ser executada, por isso, sem ter esse processo, levar a animação para engine de games é inviável.
+
+Mas como exportar isso para ser utilizado em outros ambientes? É uma dúvida que vamos solucionar agora no curso.
