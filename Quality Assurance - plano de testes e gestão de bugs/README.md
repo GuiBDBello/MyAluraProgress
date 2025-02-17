@@ -60,3 +60,23 @@ Exemplo:
 - E: senha corretamente
 - E: Apertar o botão confirmar
 - Então: devo ser redirecionado para a página principal do sistema.
+
+## Qualidade
+
+### O que é qualidade?
+
+#### Atividades da pessoa de QA:
+
+- **Testes**
+- **Debug e logs**: Descobrir a origem do problema para reportar os erros e entender o que falhou.
+- **Pequenas implementações com pair programming**
+- **Gestão de erros**: Saber como reportar melhor os erros do sistema.
+- **Papel na metodologia ágil**: Participar de todo o processo, da concepção à entrega.
+
+#### Manifesto de Teste Ágil
+
+- **Testar durante o desenvolvimento**: Testar em partes, conforme as coisas ficarem prontas, para pegar os erros o mais rápido possível.
+- **Prevenir bugs**: Interagir com o time para ver se todos entenderam o que será construído.
+- **Testar o entendimento, não só funcionalidades**
+- **Construir um sistema melhor**
+- **Time todo é responsável pela qualidade**
