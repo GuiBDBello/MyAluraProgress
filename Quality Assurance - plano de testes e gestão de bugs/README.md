@@ -86,3 +86,8 @@ Exemplo:
 - São os valores mínimos aceitáveis para um projeto.
 - Eles podem ser funcionais (como campos obrigatórios e redirecionamento em caso de sucesso) ou não funcionais (como acessibilidade e redimensionamento da tela).
 - Devem ser mensuráveis, e não subjetivos.
+
+### Definição de Pronto
+
+- O DOD (Definition of Done) é uma lista de critérios que precisam ser atendidos para que uma atividade ou funcionalidade seja considerada concluída. Ele serve para alinhar as expectativas de todos os envolvidos no projeto e garantir que o sistema esteja pronto para ser lançado.
+- O DOD deve ser genérico e valer para todas as funcionalidades do sistema, e pode ser revisado e atualizado conforme o sistema for crescendo.
