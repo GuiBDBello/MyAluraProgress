@@ -80,3 +80,9 @@ Exemplo:
 - **Testar o entendimento, não só funcionalidades**
 - **Construir um sistema melhor**
 - **Time todo é responsável pela qualidade**
+
+### Critérios de Aceite
+
+- São os valores mínimos aceitáveis para um projeto.
+- Eles podem ser funcionais (como campos obrigatórios e redirecionamento em caso de sucesso) ou não funcionais (como acessibilidade e redimensionamento da tela).
+- Devem ser mensuráveis, e não subjetivos.
