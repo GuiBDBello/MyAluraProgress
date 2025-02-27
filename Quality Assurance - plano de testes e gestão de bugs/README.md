@@ -105,14 +105,14 @@ Após desenvolver uma nova funcionalidade é necessário garantir que todas as f
 ### Mais técnicas de teste
 
 - Teste de Limite: Verifica o valor mínimo e valor máximo de um campo (pois geralmente é onde os problemas ocorrem).
-- Testes de estado: Verifica se o sistema está mudando corretamente o estado de um elemento (como o ícone de curtir) quando uma ação é realizada.
+- Testes de Estado: Verifica se o sistema está mudando corretamente o estado de um elemento (como o ícone de curtir) quando uma ação é realizada.
 - Teste Exploratório: Teste mais informal, sem um "roteiro", sem cenários pré-definidos. Esse tipo de teste ajuda a conhecer melhor o sistema e identificar problemas de usabilidade.
 
 ### Testes não-funcionais
 
 Testes não funcionais avaliam a qualidade geral do sistema, como a performance.
 
-- Teste de performance: verifica como o sistema se comporta quando várias pessoas acessam ao mesmo tempo, por exemplo, no login. A ferramenta Google Lighthouse é uma extensão do Google Chrome que permite fazer testes de performance básicos de forma gratuita.
+- Teste de Performance: verifica como o sistema se comporta quando várias pessoas acessam ao mesmo tempo, por exemplo, no login. A ferramenta Google Lighthouse é uma extensão do Google Chrome que permite fazer testes de performance básicos de forma gratuita.
 
 #### Google Lighthouse
 
@@ -121,3 +121,9 @@ Ao testar o site com o Lighthouse, ele gera um relatório com métricas como o t
 O relatório também fornece uma nota geral de performance (neste caso 58 de 100) e sugere oportunidades de melhoria, como compressão de texto.
 
 Esse tipo de teste é importante para identificar gargalos de performance e compartilhar com a equipe de desenvolvimento para que possam ser resolvidos, melhorando a experiência do usuário.
+
+### Outros testes não-funcionais
+
+- Teste de Usabilidade: Observar usuários utilizando o sistema sem dar instruções, para avaliar a facilidade de uso.
+- Teste de Acessibilidade: Verificar se o sistema pode ser utilizado por pessoas com deficiência, usando ferramentas como o Google Lighthouse.
+- Teste de Segurança: Não é feito pelo time de QA. Serve para verificar a proteção de dados e resiliência do sistema a ataques, geralmente feitos por um time especializado.
