@@ -101,3 +101,9 @@ Após desenvolver uma nova funcionalidade é necessário garantir que todas as f
 - Teste de Regressão: Quando uma nova funcionalidade é adicionada, é necessário testar todas as funcionalidades relacionadas para garantir que nada foi quebrado. Isso envolve analisar quais componentes são afetados pela mudança e testá-los novamente.
 - Smoke Test: Teste mais simples e rápido das principais funcionalidades afetadas pela mudança. Não testa todos os cenários, apenas os mais críticos.
 - Teste de Sanidade: Também um teste mais enxuto, focado em verificar se as funcionalidades mais importantes do sistema como um todo ainda estão funcionando corretamente. Geralmente inclui apenas os cenários felizes.
+
+### Mais técnicas de teste
+
+- Teste de Limite: Verifica o valor mínimo e valor máximo de um campo (pois geralmente é onde os problemas ocorrem).
+- Testes de estado: Verifica se o sistema está mudando corretamente o estado de um elemento (como o ícone de curtir) quando uma ação é realizada.
+- Teste Exploratório: Teste mais informal, sem um "roteiro", sem cenários pré-definidos. Esse tipo de teste ajuda a conhecer melhor o sistema e identificar problemas de usabilidade.
