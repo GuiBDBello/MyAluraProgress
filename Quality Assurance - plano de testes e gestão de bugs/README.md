@@ -91,3 +91,13 @@ Exemplo:
 
 - O DOD (Definition of Done) é uma lista de critérios que precisam ser atendidos para que uma atividade ou funcionalidade seja considerada concluída. Ele serve para alinhar as expectativas de todos os envolvidos no projeto e garantir que o sistema esteja pronto para ser lançado.
 - O DOD deve ser genérico e valer para todas as funcionalidades do sistema, e pode ser revisado e atualizado conforme o sistema for crescendo.
+
+## Aprofundando nos tipos testes
+
+### Teste relacionado à mudança
+
+Após desenvolver uma nova funcionalidade é necessário garantir que todas as funcionalidades continuam funcionando como antes.
+
+- Teste de Regressão: Quando uma nova funcionalidade é adicionada, é necessário testar todas as funcionalidades relacionadas para garantir que nada foi quebrado. Isso envolve analisar quais componentes são afetados pela mudança e testá-los novamente.
+- Smoke Test: Teste mais simples e rápido das principais funcionalidades afetadas pela mudança. Não testa todos os cenários, apenas os mais críticos.
+- Teste de Sanidade: Também um teste mais enxuto, focado em verificar se as funcionalidades mais importantes do sistema como um todo ainda estão funcionando corretamente. Geralmente inclui apenas os cenários felizes.
