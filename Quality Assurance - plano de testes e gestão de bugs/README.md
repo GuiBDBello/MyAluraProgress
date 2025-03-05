@@ -127,3 +127,19 @@ Esse tipo de teste é importante para identificar gargalos de performance e comp
 - Teste de Usabilidade: Observar usuários utilizando o sistema sem dar instruções, para avaliar a facilidade de uso.
 - Teste de Acessibilidade: Verificar se o sistema pode ser utilizado por pessoas com deficiência, usando ferramentas como o Google Lighthouse.
 - Teste de Segurança: Não é feito pelo time de QA. Serve para verificar a proteção de dados e resiliência do sistema a ataques, geralmente feitos por um time especializado.
+
+## Pirâmide de testes
+
+### Testes de Caixa Branca vs testes de Caixa Preta
+
+Teste de caixa branca: realizado com base na arquitetura do sistema, permitindo que o tester compreenda como o código e os módulos funcionam. Esse tipo de teste é feito por QA's mais técnicos.
+- Testes unitários
+- Testes de integração
+
+Teste de caixa preta: não requer conhecimento sobre o código. Ele se baseia nos requisitos e no plano de teste, permitindo que qualquer pessoa teste a funcionalidade do sistema.
+- Testes de aceitação
+- Testes de usabilidade
+
+#### Pirâmide de testes
+
+Ilustra a relação entre o custo e a velocidade dos testes. Os testes unitários são mais baratos e rápidos, seguidos pelos testes de serviço, enquanto os testes de interface são mais caros e lentos. A pirâmide sugere que devemos priorizar testes unitários e de serviço para garantir uma estratégia de testes eficiente e eficaz.
