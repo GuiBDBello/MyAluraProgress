@@ -143,3 +143,8 @@ Teste de caixa preta: não requer conhecimento sobre o código. Ele se baseia no
 #### Pirâmide de testes
 
 Ilustra a relação entre o custo e a velocidade dos testes. Os testes unitários são mais baratos e rápidos, seguidos pelos testes de serviço, enquanto os testes de interface são mais caros e lentos. A pirâmide sugere que devemos priorizar testes unitários e de serviço para garantir uma estratégia de testes eficiente e eficaz.
+
+### Evidência de teste
+
+- No Windows: utilizar a ferramenta "gravador de passos" para registrar a execução de um teste. Essa ferramenta captura cada ação realizada, como cliques e entradas de texto, e permite adicionar comentários, evidenciando os resultados dos testes.
+- Outras formas: tirar prints da tela ou gravar vídeos. A documentação pode variar de acordo com as necessidades do time.
