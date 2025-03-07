@@ -167,3 +167,11 @@ Ilustra a relação entre o custo e a velocidade dos testes. Os testes unitário
 - Testes de performance: testar o tempo de resposta de uma query, de uma request, etc.
 - Testes de mutação: introduzir um bug no código e rodar o teste unitário, se o teste passar, tem algo errado com o teste.
 - BDD (Behaviour Driven Development): escrever os testes utilizando uma sintaxe que uma pessoa não-técnica deve conseguir entendê-lo.
+
+### Bugs, falhas defeitos
+
+- Defeito: erro no código
+- Falha: manifestação do erro
+- Ambos são englobados pelo termo "bug", que representa qualquer comportamento inesperado ou indesejado no sistema.
+- É muito importante prevenir bugs desde a concepção do projeto, pois quanto mais cedo um bug é encontrado, menor é o custo e o retrabalho para corrigi-lo.
+- Também é muito importânte reportar os bugs de forma clara e eficiente para o time de desenvolvimento.
