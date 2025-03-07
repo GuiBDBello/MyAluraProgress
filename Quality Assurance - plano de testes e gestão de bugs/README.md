@@ -148,3 +148,22 @@ Ilustra a relação entre o custo e a velocidade dos testes. Os testes unitário
 
 - No Windows: utilizar a ferramenta "gravador de passos" para registrar a execução de um teste. Essa ferramenta captura cada ação realizada, como cliques e entradas de texto, e permite adicionar comentários, evidenciando os resultados dos testes.
 - Outras formas: tirar prints da tela ou gravar vídeos. A documentação pode variar de acordo com as necessidades do time.
+
+### Para saber mais: Pirâmide de testes
+
+- A Pirâmide de Testes define que a "base" dos nossos testes são os testes de unidade (não confundir com "unitários"), o meio são os testes de integração, e no topo são os testes e2e (end-to-end), e ainda acima ficam os testes manuais.
+- Quanto mais na "base" da pirâmide, mais rápidos são os testes. Quanto mais no topo, mais recursos são necessários, e podem quebrar com mais facilidade.
+- Teste de Unidade: é um teste que verifica o funcionamento da menor unidade testável do seu sistema (normalmente, isso é um método público de uma classe).
+    - Dublês de teste: Mocks, Stubs, Spies.
+- Teste de Integração: testes que combinam uma funcionalidade do seu código com algum sistema externo. Exemplos:
+    - Testes que utilizam mais de uma classe (sem mocks), ou seja, uma funcionalidade completa
+    - Testes que realizam persistência no banco de dados
+    - Testes que chamam API externa
+    - Testes que realizam envio de email
+- Teste de Ponta a Ponta: testar o sistema real, em funcionamento, porém em um ambiente controlado.
+
+#### O que mais estudar?
+
+- Testes de performance: testar o tempo de resposta de uma query, de uma request, etc.
+- Testes de mutação: introduzir um bug no código e rodar o teste unitário, se o teste passar, tem algo errado com o teste.
+- BDD (Behaviour Driven Development): escrever os testes utilizando uma sintaxe que uma pessoa não-técnica deve conseguir entendê-lo.
