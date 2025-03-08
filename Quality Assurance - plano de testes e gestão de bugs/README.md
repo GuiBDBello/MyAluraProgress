@@ -175,3 +175,19 @@ Ilustra a relação entre o custo e a velocidade dos testes. Os testes unitário
 - Ambos são englobados pelo termo "bug", que representa qualquer comportamento inesperado ou indesejado no sistema.
 - É muito importante prevenir bugs desde a concepção do projeto, pois quanto mais cedo um bug é encontrado, menor é o custo e o retrabalho para corrigi-lo.
 - Também é muito importânte reportar os bugs de forma clara e eficiente para o time de desenvolvimento.
+
+### Reportando bugs
+
+É importantíssimo reportar bugs de forma clara e precisa. Ao encontrar um bug, devemos:
+
+- Fornecer um título conciso que resuma o problema.
+- Fornecer um passo a passo detalhado para reproduzi-lo, incluindo informações como usuário, senha e a sequência exata de ações que levam ao erro.
+- É crucial indicar o resultado esperado, a versão do sistema, a plataforma (como Windows, Mac ou Linux) e o navegador utilizado.
+- A criticidade do bug (quão impactante ele é) e o status (novo, em correção, corrigido) também são informações valiosas.
+
+#### Boas práticas
+
+- Reportar o bug o mais rápido possível.
+- Reproduzí-lo pelo menos três vezes para confirmar sua ocorrência.
+- Testá-lo em diferentes plataformas.
+- Evitar linguagem abusiva ao descrever o problema.
