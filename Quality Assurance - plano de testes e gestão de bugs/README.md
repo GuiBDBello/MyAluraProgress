@@ -275,3 +275,13 @@ O objetivo é garantir que todos saibam como os testes serão realizados e quais
 
 7. Retrabalhos:
 - É importante considerar o tempo para retestar funcionalidades devido a bugs encontrados.
+
+### Métricas de Qualidade
+
+1. Número de defeitos: Acompanhar o total de bugs no sistema, idealmente analisando a distribuição desses defeitos ao longo das diferentes fases do projeto (documentação, desenvolvimento, testes, produção).
+2. Tempo médio de reparo: Medir quanto tempo leva para corrigir os defeitos encontrados, combinando essa informação com o total de defeitos para avaliar a eficiência do time em priorizar e resolver problemas.
+3. Quantidade de testes automatizados: Monitorar a quantidade de testes automatizados em todos os níveis da pirâmide de testes, verificando quantos estão funcionando, quantos precisam de reparo, e se a cobertura está adequada.
+4. Cobertura de código: Avaliar a porcentagem do código coberta por testes unitários, que são importantes para garantir a qualidade do código base.
+5. Satisfação do usuário: Coletar feedbacks dos usuários através de pesquisas de satisfação e avaliações em lojas de aplicativos, buscando entender a percepção deles sobre a qualidade do sistema.
+
+Essas métricas fornecem uma visão mais clara e objetiva da qualidade do software, permitindo que as equipes tomem decisões mais informadas e melhorem continuamente seus processos.
