@@ -237,6 +237,8 @@ O escopo deve responder a perguntas como:
 
 O objetivo é garantir que todos saibam como os testes serão realizados e quais recursos serão necessários, como licenças de ferramentas pagas, por exemplo.
 
+## Refinamentos e conclusões
+
 ### Para saber mais: Ferramentas para QAs
 
 - [TestLink](https://www.testlink.org/) é uma ferramenta open source de gerenciamento de testes. Com ela conseguimos cadastrar projetos de teste, bem como seus respectivos planos e casos de testes. É possível controlar e armazenar a execução dos casos especificados e também gerar um relatório dos testes que já foram executados. Além disso, permite a integração com diversas ferramentas de rastreamento de defeitos como Jira, Mantis, Bugzilla, dentre outras.
@@ -244,3 +246,32 @@ O objetivo é garantir que todos saibam como os testes serão realizados e quais
 - **Bugzilla** e **Mantis** são duas ferramentas populares para o rastreamento de bugs. Ambas são de código aberto e oferecem recursos como reporte de bugs, relatórios, gráficos, além da possibilidade de definição de prioridades de bugs envolvendo clientes e opções como mandar e-mails quando um bug é reportado ou resolvido, por exemplo.
 
 - **Jira** tem interação com ferramentas da Microsoft e é muito utilizada pelas empresas, servindo para a gestão de todo o projeto e suas atividades. Oferece suporte para qualquer metodologia ágil, como Scrum e Kanban. Com ela é possível acompanhar as tarefas sendo desenvolvidas, reportar e acompanhar bugs. Por meio de um plugin chamado **XRay**, ela se torna uma ferramenta poderosa para a gestão, permitindo planejar, projetar e executar testes, bem como gerar relatórios.
+
+### Estimativa de testes
+
+É nesessário saber estimar o tempo e o esforço necessários para realizar testes de software de forma eficiente.
+
+1. Estimativa de Tempo:
+- Começamos com testes simples, como o login, para criar uma base de tempo.
+- A complexidade do teste influencia diretamente no tempo necessário.
+
+2. Fatores que Influenciam a Estimativa:
+- Tamanho do Produto: Quanto maior o produto, mais tempo será necessário para testá-lo.
+- Complexidade do Software: Testes complexos e a necessidade de criar massas de dados aumentam o tempo.
+- Testes de Regressão: Softwares acoplados exigem mais testes de regressão.
+
+3. Formas de Estimativa:
+- Horas: Estimativa tradicional em horas.
+- Pontos: Utilizada em metodologias ágeis, considerando a complexidade e o esforço.
+
+4. Nível de Detalhe da Documentação:
+- A quantidade de detalhes e evidências necessárias impacta o tempo gasto.
+
+5. Ferramentas:
+- O conhecimento e acesso às ferramentas são cruciais. A curva de aprendizado também deve ser considerada.
+
+6. Habilidade da Equipe:
+- A experiência da equipe com o sistema e as ferramentas influencia na estimativa.
+
+7. Retrabalhos:
+- É importante considerar o tempo para retestar funcionalidades devido a bugs encontrados.
