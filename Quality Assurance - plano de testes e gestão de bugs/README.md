@@ -226,3 +226,13 @@ O escopo deve responder a perguntas como:
 - O que será deixado de fora dos testes?
 - De quem é a responsabilidade de cada teste?
 - Como será feito o lançamento do sistema?
+
+### Ambiente e ferramentas
+
+É importante definir o ambiente e as ferramentas que serão utilizadas na estratégia de testes.
+
+- Especificar o ambiente.
+- Preparar uma massa de dados relevante para os testes.
+- Listar ferramentas (como POSTMAN para testes de API, Jasmine para testes unitários e Selenium para automação de testes de tela).
+
+O objetivo é garantir que todos saibam como os testes serão realizados e quais recursos serão necessários, como licenças de ferramentas pagas, por exemplo.
