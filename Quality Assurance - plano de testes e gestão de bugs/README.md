@@ -191,3 +191,17 @@ Ilustra a relação entre o custo e a velocidade dos testes. Os testes unitário
 - Reproduzí-lo pelo menos três vezes para confirmar sua ocorrência.
 - Testá-lo em diferentes plataformas.
 - Evitar linguagem abusiva ao descrever o problema.
+
+### Classificação de bugs
+
+#### Severidade dos Bugs
+
+- Crítico (Blocker): Impede o uso ou o teste de uma funcionalidade, muitas vezes causando um "crash" na aplicação. A correção é essencial antes do lançamento.
+- Grave: A funcionalidade não funciona como esperado em alguns casos, mas ainda é utilizável. A correção também é importante antes do lançamento.
+- Moderado: A funcionalidade não atinge todos os critérios de aceitação, mas a experiência geral não é afetada significativamente.
+- Pequeno: Bugs com pouco ou nenhum impacto na funcionalidade, como erros ortográficos ou pequenos problemas de interface.
+
+#### Prioridade dos Bugs
+
+- A prioridade é definida pelo líder do projeto e indica qual bug deve ser corrigido primeiro. Geralmente, bugs mais severos têm maior prioridade.
+- A prioridade pode variar dependendo da importância da funcionalidade afetada.
