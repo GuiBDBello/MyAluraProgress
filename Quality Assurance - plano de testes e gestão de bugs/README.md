@@ -215,3 +215,14 @@ Ilustra a relação entre o custo e a velocidade dos testes. Os testes unitário
 É importante entender a arquitetura do sistema para criar testes mais eficazes. Embora a arquitetura seja geralmente definida pelos desenvolvedores, é crucial que os profissionais de QA compreendam como o sistema funciona para identificar as ferramentas adequadas para os testes.
 - A comunicação com a equipe de desenvolvimento é essencial para esclarecer termos técnicos e entender o fluxo de dados.
 - O conhecimento da arquitetura permite aos profissionais de QA fazer perguntas relevantes e identificar áreas críticas para testes, incluindo aspectos não funcionais, como testes de API e de banco de dados. Isso contribui para garantir a qualidade e robustez do sistema.
+
+### Escopo do plano de teste
+
+- Escopo de teste: O que será testado e o que não será testado.
+
+O escopo deve responder a perguntas como:
+- Quais tipos de testes serão executados?
+- Em quais níveis os testes serão realizados?
+- O que será deixado de fora dos testes?
+- De quem é a responsabilidade de cada teste?
+- Como será feito o lançamento do sistema?
