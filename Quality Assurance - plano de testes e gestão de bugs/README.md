@@ -168,6 +168,8 @@ Ilustra a relação entre o custo e a velocidade dos testes. Os testes unitário
 - Testes de mutação: introduzir um bug no código e rodar o teste unitário, se o teste passar, tem algo errado com o teste.
 - BDD (Behaviour Driven Development): escrever os testes utilizando uma sintaxe que uma pessoa não-técnica deve conseguir entendê-lo.
 
+## Gestão de erros
+
 ### Bugs, falhas defeitos
 
 - Defeito: erro no código
@@ -205,3 +207,11 @@ Ilustra a relação entre o custo e a velocidade dos testes. Os testes unitário
 
 - A prioridade é definida pelo líder do projeto e indica qual bug deve ser corrigido primeiro. Geralmente, bugs mais severos têm maior prioridade.
 - A prioridade pode variar dependendo da importância da funcionalidade afetada.
+
+## Estratégia de teste
+
+### Arquitetura
+
+É importante entender a arquitetura do sistema para criar testes mais eficazes. Embora a arquitetura seja geralmente definida pelos desenvolvedores, é crucial que os profissionais de QA compreendam como o sistema funciona para identificar as ferramentas adequadas para os testes.
+- A comunicação com a equipe de desenvolvimento é essencial para esclarecer termos técnicos e entender o fluxo de dados.
+- O conhecimento da arquitetura permite aos profissionais de QA fazer perguntas relevantes e identificar áreas críticas para testes, incluindo aspectos não funcionais, como testes de API e de banco de dados. Isso contribui para garantir a qualidade e robustez do sistema.
