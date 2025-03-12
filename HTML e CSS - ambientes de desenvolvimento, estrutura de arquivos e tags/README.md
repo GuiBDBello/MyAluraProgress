@@ -17,3 +17,7 @@
 - `<body>`: define o corpo do documento e é um contêiner para todo o conteúdo visível, como títulos, parágrafos, imagens, hiperlinks, tabelas, listas, etc.
 - `<h1>`: define um grande título
 - `<p>`: define um parágrafo
+
+### Criando o corpo da página
+
+- Propriedade: Ex.: `<img src="html.png>` onde `src` é uma propriedade da tag `<img>`
