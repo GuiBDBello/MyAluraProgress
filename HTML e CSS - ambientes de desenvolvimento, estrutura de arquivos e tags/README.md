@@ -25,4 +25,12 @@
 ### Quirks Mode e Live Server
 
 - Quirks Mode: modo de renderização que os navegadores utilizam para exibir páginas da web que não seguem os padrões modernos de HTML e CSS. Ele foi criado para garantir que páginas mais antigas, que foram desenvolvidas em tempos em que os navegadores não seguiam um padrão unificado, ainda fossem exibidas corretamente.
-- Extensão "Live Server": Adiciona um botão "Go Live" no canto inferior direito do VS Code. Ao clicar no botão, abre uma página no seu navegador que possui "live reload".
+- Extensão "Live Server": Adiciona um botão "Go Live" no canto inferior direito do VS Code. Ao clicar no botão, abre uma página no seu navegador que possui "hot reload".
+
+### Para saber mais: estruturando uma página HTML
+
+1. [O que é o HTML e suas tags: estrutura básica](https://www.alura.com.br/artigos/o-que-e-html-suas-tags-parte-1-estrutura-basica)
+1. [O que é o HTML e suas tags? Parte 2: elementos inline](https://www.alura.com.br/artigos/o-que-e-html-suas-tags-parte-2-elementos-inline)
+1. [O que é o HTML e suas tags? Parte 3: elementos block-level](https://www.alura.com.br/artigos/html-tags-elementos-block-level)
+1. [O que é o HTML e suas tags? Parte 4: elementos de um formulário](https://www.alura.com.br/artigos/o-que-e-html-suas-tags-parte-4-elementos-formulario)
+1. [O que é o HTML e suas tags? Parte 5: atributos dos elementos](https://www.alura.com.br/artigos/o-que-e-html-suas-tags-parte-5-atributos-elementos)
