@@ -20,4 +20,9 @@
 
 ### Criando o corpo da página
 
-- Propriedade: Ex.: `<img src="html.png>` onde `src` é uma propriedade da tag `<img>`
+- Propriedade: é um atributo que fornece informações adicionais sobre uma tag. As propriedades são escritas dentro da tag e geralmente têm um formato de "nome=valor".
+
+### Quirks Mode e Live Server
+
+- Quirks Mode: modo de renderização que os navegadores utilizam para exibir páginas da web que não seguem os padrões modernos de HTML e CSS. Ele foi criado para garantir que páginas mais antigas, que foram desenvolvidas em tempos em que os navegadores não seguiam um padrão unificado, ainda fossem exibidas corretamente.
+- Extensão "Live Server": Adiciona um botão "Go Live" no canto inferior direito do VS Code. Ao clicar no botão, abre uma página no seu navegador que possui "live reload".
