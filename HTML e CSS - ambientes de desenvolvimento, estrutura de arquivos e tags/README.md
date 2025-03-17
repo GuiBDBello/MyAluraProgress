@@ -34,3 +34,10 @@
 1. [O que é o HTML e suas tags? Parte 3: elementos block-level](https://www.alura.com.br/artigos/html-tags-elementos-block-level)
 1. [O que é o HTML e suas tags? Parte 4: elementos de um formulário](https://www.alura.com.br/artigos/o-que-e-html-suas-tags-parte-4-elementos-formulario)
 1. [O que é o HTML e suas tags? Parte 5: atributos dos elementos](https://www.alura.com.br/artigos/o-que-e-html-suas-tags-parte-5-atributos-elementos)
+
+## Layout e tags semânticas
+
+### Tags semânticas
+
+`!`: Atalho do VS Code para criar a estrutura básica HTML.
+`<header>, <main> e <footer>`: Tags para estruturar a página de forma organizada e compreensível.
