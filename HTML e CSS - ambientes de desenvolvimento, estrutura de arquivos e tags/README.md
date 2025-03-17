@@ -41,3 +41,16 @@
 
 `!`: Atalho do VS Code para criar a estrutura básica HTML.
 `<header>, <main> e <footer>`: Tags para estruturar a página de forma organizada e compreensível.
+
+### Acelere sua produtividade no VSCode com Emmet
+
+- https://docs.emmet.io/
+- O Emmet é uma ferramenta que permite escrever códigos HTML e CSS de forma extremamente rápida e produtiva. Ele utiliza abreviações para gerar estruturas complexas de código com apenas alguns comandos, aumentando significativamente a eficiência do desenvolvedor.
+- O Emmet utiliza a sintaxe CSS-like para criar código HTML e CSS. Com apenas algumas letras-chave, você pode gerar rapidamente blocos inteiros de código. Por exemplo, ao digitar `ul>li*3`, o Emmet criará automaticamente uma lista não ordenada (ul) com três itens de lista (li).
+
+#### Exemplos
+
+- `html`: Gera a estrutura básica de um documento HTML.
+- `ul>li*5`: Cria uma lista não ordenada com cinco itens de lista.
+- `div>h1+p`: Cria uma div contendo um cabeçalho (h1) seguido de um parágrafo (p).
+- `input[type=text]+input[type=password]`: Cria dois campos de entrada, um para texto e outro para senha.
