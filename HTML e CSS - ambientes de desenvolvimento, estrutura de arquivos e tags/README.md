@@ -60,3 +60,9 @@
 ### Como funciona o CSS
 
 - CSS (Cascading Style Sheets): Responsável por definir como os elementos devem ser exibidos visualmente, incluindo cores, tamanhos, posicionamentos e outros detalhes estéticos.
+
+## Super estilizando o seu CSS
+
+### Cores no CSS
+
+- Adobe Color: https://color.adobe.com/pt/create/color-wheel
