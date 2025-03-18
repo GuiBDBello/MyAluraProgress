@@ -54,3 +54,9 @@
 - `ul>li*5`: Cria uma lista não ordenada com cinco itens de lista.
 - `div>h1+p`: Cria uma div contendo um cabeçalho (h1) seguido de um parágrafo (p).
 - `input[type=text]+input[type=password]`: Cria dois campos de entrada, um para texto e outro para senha.
+
+## Estilizando o projeto com CSS
+
+### Como funciona o CSS
+
+- CSS (Cascading Style Sheets): Responsável por definir como os elementos devem ser exibidos visualmente, incluindo cores, tamanhos, posicionamentos e outros detalhes estéticos.
