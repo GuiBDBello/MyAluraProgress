@@ -21,3 +21,10 @@
 
 - No HTML: `<tag class="nome-da-classe">Conteúdo</tag>`.
 - No CSS: `.nome-da-classe { propriedades: valores; }`.
+
+### Para saber mais: seletores
+
+- [Organizando o CSS no seu projeto](https://www.alura.com.br/artigos/organizando-o-css-no-seu-projeto)
+- [SMACSS (Scalable and Modular Architecture for CSS)](https://smacss.com/)
+- [Nomes de classes no CSS](https://www.alura.com.br/artigos/nomes-de-classes-no-css)
+- [BEM (Block Element Modifier)](https://getbem.com/introduction/)
