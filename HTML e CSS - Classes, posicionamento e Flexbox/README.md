@@ -36,3 +36,20 @@
 - [Reset CSS](https://www.alura.com.br/artigos/o-que-e-reset-css)
 - [Eric Meyer's Reset CSS](https://meyerweb.com/eric/tools/css/reset/)
 - [CSS: Seletores avançados][https://www.alura.com.br/artigos/css-seletores-avancados-aplicacoes-web]
+
+### Box Model
+
+O **Box Model** é um conceito fundamental no CSS que descreve como os elementos HTML são representados como caixas retangulares na página. Cada elemento possui quatro áreas principais que compõem essa caixa:
+1. **Conteúdo**: É a parte visível do elemento, onde o texto, imagens ou outros conteúdos são exibidos. É o núcleo da caixa.
+2. **Padding (preenchimento)**: É o espaço entre o conteúdo e a borda do elemento. O padding cria um espaço interno, afastando o conteúdo das bordas.
+3. **Border (borda)**: É a linha que envolve o padding e o conteúdo. A borda pode ter diferentes estilos, espessuras e cores.
+4. **Margin (margem)**: É o espaço externo que separa o elemento de outros elementos ao seu redor. A margem cria um espaço entre a borda do elemento e os elementos adjacentes.
+
+- Reset CSS simples: 
+```css
+* {
+    margin: 0;
+    padding: 0;
+}
+
+```
