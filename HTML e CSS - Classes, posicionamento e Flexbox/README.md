@@ -53,3 +53,10 @@ O **Box Model** é um conceito fundamental no CSS que descreve como os elementos
 }
 
 ```
+
+## Posicionando mais elementos
+
+### Height e box-sizing
+
+- `vh`: Viewport Height. Ex.: `height: 100vh`.
+- `box-sizing`: Define como as dimensões de um elemento são calculadas. Ex.: `box-sizing: content-box` e `box-sizing: border-box`.
