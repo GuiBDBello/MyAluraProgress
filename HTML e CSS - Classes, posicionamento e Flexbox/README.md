@@ -60,3 +60,7 @@ O **Box Model** é um conceito fundamental no CSS que descreve como os elementos
 
 - `vh`: Viewport Height. Ex.: `height: 100vh`.
 - `box-sizing`: Define como as dimensões de um elemento são calculadas. Ex.: `box-sizing: content-box` e `box-sizing: border-box`.
+
+### Para saber mais: Viewport
+
+- https://www.alura.com.br/artigos/guia-de-unidades-no-css
