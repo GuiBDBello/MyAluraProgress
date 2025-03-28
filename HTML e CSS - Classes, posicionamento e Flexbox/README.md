@@ -64,3 +64,9 @@ O **Box Model** é um conceito fundamental no CSS que descreve como os elementos
 ### Para saber mais: Viewport
 
 - https://www.alura.com.br/artigos/guia-de-unidades-no-css
+
+### Flexbox
+
+- Flexbox, ou "Flexible Box Layout", é uma tecnologia de layout do CSS que facilita a criação de layouts responsivos e flexíveis em páginas web. Ele permite que os desenvolvedores alinhem e distribuam espaço entre os itens de um contêiner, mesmo quando suas dimensões são desconhecidas ou dinâmicas.
+- https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Core/CSS_layout/Flexbox
+- https://css-tricks.com/snippets/css/a-guide-to-flexbox/
