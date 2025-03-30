@@ -84,3 +84,8 @@ O **Box Model** é um conceito fundamental no CSS que descreve como os elementos
 
 - `@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Krona+One&display=swap');`: Adicionar no arquivo .css para importar a fonte.
 - `font-family: "Krona One", sans-serif;`: Propriedade HTML para utilizar a fonte importada.
+
+### Para saber mais: Google Fonts
+
+- [Google Fonts](https://fonts.google.com/) é uma biblioteca da Google com mais de 1000 fontes livres licenciadas. Além de um diretório web interativo para navegar na biblioteca, existem atalhos para usar convenientemente as fontes através do CSS.
+- [Primeiros passos com a API Google Fonts](https://developers.google.com/fonts/docs/getting_started?hl=pt-br)
