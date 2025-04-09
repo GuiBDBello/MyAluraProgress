@@ -89,3 +89,9 @@ O **Box Model** é um conceito fundamental no CSS que descreve como os elementos
 
 - [Google Fonts](https://fonts.google.com/) é uma biblioteca da Google com mais de 1000 fontes livres licenciadas. Além de um diretório web interativo para navegar na biblioteca, existem atalhos para usar convenientemente as fontes através do CSS.
 - [Primeiros passos com a API Google Fonts](https://developers.google.com/fonts/docs/getting_started?hl=pt-br)
+
+## Manipulando botões
+
+### Posicionando os botões
+
+- `<div></div>`: Tag HTML que serve para criar uma "divisão" ou um agrupamento de elementos dentro de uma página web. É uma estrutura puramente visual e não possui valor semântico.
