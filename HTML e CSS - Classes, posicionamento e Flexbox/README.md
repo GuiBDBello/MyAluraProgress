@@ -95,3 +95,9 @@ O **Box Model** é um conceito fundamental no CSS que descreve como os elementos
 ### Posicionando os botões
 
 - `<div></div>`: Tag HTML que serve para criar uma "divisão" ou um agrupamento de elementos dentro de uma página web. É uma estrutura puramente visual e não possui valor semântico.
+
+## Ajustando o espaçamento
+
+### Recurso Gap
+
+- `gap: 40px;`: Propriedade CSS que adiciona um espaço entre os elementos de um display flex.
