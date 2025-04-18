@@ -10,3 +10,9 @@
 
 - Comentário no HTML: `<!-- Isso é um comentário em HTML -->`
 - Comentário no CSS: `/* Isso é um comentário em CSS */`
+
+## Criando ícones clicáveis
+
+### Hover
+
+- `.class:hover { background-color: #272727 }`: Altera o estilo quando o mouse está em cima do elemento.
