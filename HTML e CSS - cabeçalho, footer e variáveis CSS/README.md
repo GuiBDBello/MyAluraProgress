@@ -16,3 +16,9 @@
 ### Hover
 
 - `.class:hover { background-color: #272727 }`: Altera o estilo quando o mouse está em cima do elemento.
+
+## Criando header e footer
+
+### Desenvolvendo o footer
+
+- `padding: 24px;`: Propriedade CSS que adiciona um preenchimento entre o conteúdo do elemento e a borda do elemento.
