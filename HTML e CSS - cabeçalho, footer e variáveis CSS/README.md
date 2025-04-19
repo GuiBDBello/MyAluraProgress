@@ -22,3 +22,7 @@
 ### Desenvolvendo o footer
 
 - `padding: 24px;`: Propriedade CSS que adiciona um preenchimento entre o conteúdo do elemento e a borda do elemento.
+
+### Desenvolvendo o cabeçalho
+
+- `<nav></nav>`: Tag HTML que indica quais são os links de navegação do site.
