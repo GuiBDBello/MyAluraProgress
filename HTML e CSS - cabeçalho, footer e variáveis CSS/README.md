@@ -26,3 +26,10 @@
 ### Desenvolvendo o cabeçalho
 
 - `<nav></nav>`: Tag HTML que indica quais são os links de navegação do site.
+
+## Aplicando variáveis CSS
+
+### Variáveis CSS
+
+- `element { --main-bg-color: #F6F6F6; }`: Define uma variável para ser aplicada em um elemento específico no seu arquivo HTML.
+- `:root { --main-bg-color: #F6F6F6; }`: Define uma variável para ser aplicada globalmente no seu arquivo HTML.
